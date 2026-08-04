@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="zh-Hant"><head><meta charset="UTF-8"><title>TRIUMPH Pilot Trainer v145</title><meta name="viewport" content="width=device-width,initial-scale=1.0"><style>
+<!DOCTYPE html><html lang="zh-Hant"><head><meta charset="UTF-8"><title>TRIUMPH Pilot Trainer v148</title><meta name="viewport" content="width=device-width,initial-scale=1.0"><style>
 :root{--bg1:#eef4f8;--bg2:#dbe6ee;--card:rgba(255,255,255,.88);--text:#223044;--muted:#7d8aa0;--line:rgba(34,48,68,.12);--accent:#ff7a3d;--navy:#26364f;--soft:#edf2f7;--green:#4c8067;--danger:#d75b5b;--shadow:0 24px 70px rgba(38,54,79,.15);--panel:rgba(255,255,255,.45)}body[data-theme=gray]{--bg1:#5b5d5e;--bg2:#323435;--card:rgba(75,76,77,.92);--text:#fff;--muted:#d6d9de;--line:rgba(255,255,255,.16);--soft:rgba(255,255,255,.12);--panel:rgba(255,255,255,.06);--shadow:0 24px 70px rgba(0,0,0,.28)}body[data-theme=black]{--bg1:#171717;--bg2:#050505;--card:rgba(14,14,14,.95);--text:#fff;--muted:#d7d9dc;--line:rgba(255,255,255,.14);--soft:rgba(255,255,255,.1);--panel:rgba(255,255,255,.045);--shadow:0 24px 70px rgba(0,0,0,.45)}*{box-sizing:border-box}body{margin:0;min-height:100vh;padding:24px;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans TC",sans-serif;background:radial-gradient(circle at 12% 4%,rgba(255,122,61,.18),transparent 32%),linear-gradient(135deg,var(--bg1),var(--bg2));color:var(--text)}.app{max-width:1480px;margin:0 auto;display:grid;grid-template-columns:1.55fr.85fr;gap:20px}.card{background:var(--card);border:1px solid rgba(255,255,255,.5);border-radius:28px;box-shadow:var(--shadow);backdrop-filter:blur(18px)}.main,.sidecard{padding:26px}.side{display:grid;gap:20px;align-content:start}.header{display:grid;grid-template-columns:1fr auto auto;gap:14px;align-items:center;border-bottom:1px solid var(--line);padding-bottom:18px;margin-bottom:18px}.logo{font-size:24px;font-weight:900;letter-spacing:.06em}.logo small{display:block;font-size:12px;color:var(--muted);letter-spacing:.14em;margin-top:4px}.badge{background:var(--navy);color:#fff;padding:9px 13px;border-radius:999px;font-size:13px;font-weight:850}.theme{display:flex;gap:8px}button{font-family:inherit}.tab,.chip,.btn{border:0;border-radius:14px;font-weight:850;cursor:pointer;transition:.18s}.tab{padding:11px 14px;background:var(--soft);color:var(--text);border:1px solid var(--line)}.tab.active{background:var(--navy);color:#fff}.chip{padding:10px 13px;background:var(--soft);border:1px solid var(--line);color:var(--text)}.btn{padding:14px 18px;font-size:16px}.primary{background:var(--navy);color:#fff}.secondary{background:var(--soft);color:var(--text);border:1px solid var(--line)}.green{background:var(--green);color:#fff}.danger{background:var(--danger);color:#fff}.tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px}.questionbox{border:1px solid var(--line);background:var(--panel);border-radius:24px;padding:26px}.category{color:var(--accent);font-size:13px;font-weight:900;letter-spacing:.12em;margin-bottom:12px}.question{font-size:32px;line-height:1.25;font-weight:900;margin:0 0 18px}.hint{color:var(--muted);line-height:1.65;font-size:15px}.tag{display:inline-block;background:rgba(255,122,61,.12);color:var(--accent);border:1px solid rgba(255,122,61,.28);padding:5px 8px;border-radius:999px;font-size:12px;font-weight:850;margin:3px}.timerrow{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:18px 0}.timercard{border:1px solid var(--line);border-radius:20px;padding:18px;background:var(--panel);text-align:center}.timerlabel{font-size:13px;color:var(--muted);font-weight:850}.timer{font-variant-numeric:tabular-nums;font-size:56px;font-weight:900;letter-spacing:-.04em}.barwrap{height:9px;background:rgba(125,138,160,.22);border-radius:999px;overflow:hidden;margin-top:10px}.bar{height:100%;width:0%;background:linear-gradient(90deg,var(--accent),#ffb47e);transition:width.3s linear}.controls{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-top:16px}.answer{display:none;margin-top:18px;border-top:1px solid var(--line);padding-top:18px}.answer h3{margin:0 0 8px;color:var(--accent)}.answer p{line-height:1.7;margin:0 0 12px}.subnav{display:none;gap:10px;justify-content:space-between;margin-top:16px}.subq{border:1px solid var(--line);border-radius:18px;padding:14px;margin-top:14px;background:var(--panel)}.subqtitle{font-weight:900;color:var(--accent);margin-bottom:6px}.choices{display:grid;gap:10px;margin-top:14px}.choice{border:1px solid var(--line);background:var(--soft);padding:13px 15px;border-radius:14px;cursor:pointer;font-weight:850}.choice.correct{background:rgba(76,128,103,.18);border-color:rgba(76,128,103,.55)}.diagram{display:none;margin:16px 0;border:1px solid var(--line);border-radius:18px;background:var(--soft);padding:14px;overflow:auto}.diagram svg{max-width:100%;height:auto;color:var(--text)}.choice.wrong{background:rgba(215,91,91,.16);border-color:rgba(215,91,91,.55)}.stats{display:grid;gap:10px}.stat{display:flex;justify-content:space-between;border:1px solid var(--line);border-radius:14px;padding:13px}.stat b{color:var(--accent)}label{display:block;font-size:13px;color:var(--muted);font-weight:850;margin:12px 0 7px}input,select,textarea{width:100%;border:1px solid var(--line);border-radius:13px;padding:11px 12px;font-size:15px;color:#223044;background:rgba(255,255,255,.75)}body[data-theme=gray] input,body[data-theme=black] input,body[data-theme=gray] select,body[data-theme=black] select,body[data-theme=gray] textarea,body[data-theme=black] textarea{background:rgba(255,255,255,.12);color:#fff}option{color:#111}textarea{min-height:160px;resize:vertical}.favoriteItem{border:1px solid var(--line);border-radius:14px;padding:12px;margin:8px 0;background:var(--soft);cursor:pointer}.favoriteItem b{color:var(--accent);display:block;margin-bottom:4px}@media(max-width:1000px){.app{grid-template-columns:1fr}.question{font-size:26px}.timerrow{grid-template-columns:1fr}.header{grid-template-columns:1fr}}
 
 .diagram{display:none;border:1px solid var(--line);border-radius:18px;padding:14px;margin:14px 0;background:rgba(255,255,255,.35);overflow:auto}.diagram svg{max-width:100%;height:auto}.answer p{white-space:normal}.answer b{font-weight:900;color:var(--accent)}
@@ -801,7 +801,134 @@ Non-math questions added: 0
 TOEIC modified: no
 -->
 
-</head><body data-theme="white"><div class="app"><main class="main card"><div class="header"><div class="logo">TRIUMPH Pilot Trainer v144<small>PILOT SELECTION TRAINER</small></div><div class="theme"><button class="chip" data-theme="white">白</button><button class="chip" data-theme="gray">灰</button><button class="chip" data-theme="black">黑</button><button class="chip timer-quick active" id="timerQuickToggle" type="button" title="開啟／關閉計時" aria-label="開啟／關閉計時" aria-pressed="true">⏰</button></div><div class="badge" id="sessionBadge">Today: 0 questions</div></div>
+
+<style id="v146-daily-timer-style">
+.dt-topbar-actions{display:flex;align-items:center;gap:9px;flex:0 0 auto}
+.dt-timer-toggle{width:46px;height:46px;display:grid;place-items:center;border:1px solid var(--dt-line,var(--line));border-radius:14px;background:var(--dt-soft,var(--soft));color:var(--dt-muted,var(--muted));font-size:21px;cursor:pointer;filter:grayscale(1);opacity:.58;transition:transform .16s ease,opacity .16s ease,filter .16s ease,background .16s ease,border-color .16s ease}
+.dt-timer-toggle:hover{transform:translateY(-1px)}
+.dt-timer-toggle.active{filter:none;opacity:1;background:#fff2a8!important;border-color:#e4b930!important;color:#4d3c00!important;box-shadow:0 7px 18px rgba(228,185,48,.22)}
+body[data-theme="black"] .dt-timer-toggle.active{background:#322807!important;border-color:#d39e1a!important;color:#ffd565!important}
+@media(max-width:620px){.dt-topbar-actions{gap:7px}.dt-timer-toggle{width:44px;height:44px;border-radius:13px}.dt-close{padding:10px 13px}}
+</style>
+
+<style id="v147-daily-question-timer-style">
+/* Daily Test: TOEIC-style preparation / answer timers */
+.dt-progress-head>div:first-child{gap:14px}
+.dt-progress-times{display:flex;align-items:flex-end;gap:16px;margin-left:auto}
+.dt-progress-time-line{display:flex;flex-direction:column;align-items:flex-end;gap:2px}
+.dt-progress-time-line span{font-size:9px!important;letter-spacing:.08em;text-transform:uppercase}
+.dt-progress-time-line strong{font-size:14px!important;font-variant-numeric:tabular-nums}
+.dt-question-timers{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:14px;
+  margin:17px 0 4px;
+}
+.dt-question-timer-card{
+  border:1px solid var(--dt-line,var(--line));
+  background:var(--dt-elevated,var(--card));
+  border-radius:19px;
+  padding:17px 18px 13px;
+  text-align:center;
+  transition:border-color .2s ease,background .2s ease,opacity .2s ease;
+}
+.dt-question-timer-card .dt-timer-label{
+  color:var(--dt-muted,var(--muted));
+  font-size:11px;
+  font-weight:900;
+  letter-spacing:.04em;
+}
+.dt-question-timer-card .dt-timer-value{
+  color:var(--dt-text,var(--text));
+  font-size:42px;
+  line-height:1;
+  margin:12px 0 13px;
+  font-weight:950;
+  font-variant-numeric:tabular-nums;
+  letter-spacing:-.035em;
+}
+.dt-question-timer-card .dt-timer-track{
+  height:8px;
+  background:var(--dt-soft,var(--soft));
+  border-radius:999px;
+  overflow:hidden;
+}
+.dt-question-timer-card .dt-timer-fill{
+  height:100%;
+  width:100%;
+  border-radius:inherit;
+  background:var(--accent);
+  transition:width .18s linear;
+}
+.dt-question-timer-card.waiting{opacity:.72}
+.dt-question-timer-card.active{
+  border-color:var(--accent);
+  box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--accent) 35%,transparent);
+}
+.dt-question-timer-card.done{opacity:.58}
+.dt-question-timer-card.time-up{
+  border-color:#c25555;
+  background:color-mix(in srgb,#c25555 8%,var(--dt-elevated,var(--card)));
+}
+.dt-question-timer-card.time-up .dt-timer-value{color:#b84646}
+.dt-timer-phase-note{
+  grid-column:1/-1;
+  text-align:center;
+  font-size:10px;
+  font-weight:850;
+  color:var(--dt-muted,var(--muted));
+  margin-top:-4px;
+}
+.dt-overlay{--dt-score:#2f7b70}
+body[data-theme="gray"] .dt-overlay{--dt-score:#245f58}
+body[data-theme="black"] .dt-overlay{--dt-score:#7bc7b8}
+.dt-score-ring{
+  border-color:var(--dt-score)!important;
+  box-shadow:inset 0 0 0 2px color-mix(in srgb,var(--dt-score) 18%,transparent);
+}
+.dt-score-ring strong{color:var(--dt-score)!important}
+.dt-result-hero .dt-kicker{color:var(--dt-score)!important}
+.dt-review-time{
+  display:inline-flex;
+  margin:5px 0 2px;
+  padding:5px 8px;
+  border-radius:999px;
+  background:color-mix(in srgb,var(--dt-score) 12%,var(--dt-soft,var(--soft)));
+  color:var(--dt-score);
+  font-weight:900;
+}
+@media(max-width:620px){
+  .dt-progress-head>div:first-child{align-items:flex-start!important;gap:8px}
+  .dt-progress-times{gap:10px}
+  .dt-progress-time-line strong{font-size:13px!important}
+  .dt-question-timers{gap:9px}
+  .dt-question-timer-card{padding:14px 10px 11px;border-radius:16px}
+  .dt-question-timer-card .dt-timer-value{font-size:34px;margin:10px 0 11px}
+  .dt-question-timer-card .dt-timer-label{font-size:9px}
+}
+@media(max-width:410px){
+  .dt-progress-head>div:first-child{display:grid!important;grid-template-columns:1fr}
+  .dt-progress-times{margin-left:0;justify-content:space-between;width:100%}
+}
+</style>
+
+
+<style id="v148-daily-toeic-start-style">
+/* v148: TOEIC-only countdown; elapsed clocks always remain visible. */
+.dt-progress-times{display:flex!important}
+.dt-timer-start-row{grid-column:1/-1;display:flex;justify-content:center;margin-top:1px}
+.dt-timer-start{
+  min-width:128px;border:0;border-radius:14px;padding:12px 22px;
+  background:var(--green,#4c8067);color:#fff;font:inherit;font-weight:900;
+  cursor:pointer;box-shadow:0 8px 20px color-mix(in srgb,var(--green,#4c8067) 24%,transparent);
+}
+.dt-timer-start:hover{transform:translateY(-1px)}
+.dt-timer-start:disabled{opacity:.5;cursor:not-allowed;transform:none}
+.dt-question-timers.toeic-waiting .dt-question-timer-card{opacity:.82}
+@media(max-width:620px){.dt-timer-start{width:100%;min-width:0;padding:12px 18px}}
+</style>
+
+</head><body data-theme="white"><div class="app"><main class="main card"><div class="header"><div class="logo">TRIUMPH Pilot Trainer v148<small>PILOT SELECTION TRAINER</small></div><div class="theme"><button class="chip" data-theme="white">白</button><button class="chip" data-theme="gray">灰</button><button class="chip" data-theme="black">黑</button><button class="chip timer-quick active" id="timerQuickToggle" type="button" title="開啟／關閉計時" aria-label="開啟／關閉計時" aria-pressed="true">⏰</button></div><div class="badge" id="sessionBadge">Today: 0 questions</div></div>
 <div class="dt-entry-wrap">
   <button type="button" class="dt-entry" id="dailyTestLaunch">
     <span class="dt-entry-icon">✓</span>
@@ -812,7 +939,7 @@ TOEIC modified: no
     <span class="dt-entry-arrow">Start →</span>
   </button>
 </div>
-<div class="tabs" id="tabs"></div><section class="questionbox"><div class="category" id="category">READY</div><h1 class="question" id="question">Click “New Question” to start your training.</h1><div class="hint" id="hint">v145：Daily Test 可提前結算 Overall、測驗中可加入星號；新增 Advanced Math 題庫並完成新一輪全題庫 QA。</div><div id="tags"></div><div class="diagram" id="diagramBox"></div><div id="subqBox"></div><div class="choices" id="choices"></div><div class="timerrow" id="timerRow"><div class="timercard" id="prepCard"><div class="timerlabel">PREPARATION</div><div class="timer" id="prepTimer">00:30</div><div class="barwrap"><div class="bar" id="prepProgress"></div></div></div><div class="timercard"><div class="timerlabel" id="answerLabel">ANSWER</div><div class="timer" id="answerTimer">01:30</div><div class="barwrap"><div class="bar" id="answerProgress"></div></div></div></div><div class="controls"><button class="btn primary" id="newBtn">New Question</button><button class="btn secondary" id="prevBtn">Previous</button><button class="btn green" id="startPauseBtn">Start</button><button class="btn secondary" id="showBtn">Show Answer</button><button class="btn secondary" id="favBtn"><span id="starIcon">☆</span> Favorite</button><button class="btn danger" id="resetBtn">Reset</button></div><div class="subnav" id="subqNav"><button class="btn secondary" id="subPrevBtn">題組上一小題</button><button class="btn secondary" id="subNextBtn">題組下一小題</button></div><div class="answer" id="answerBox"><div id="acronymBox"></div><h3 id="suggestedHeading">Suggested Answer / Explanation</h3><p id="suggested"></p><div id="legacyAnswerMeta" hidden><p id="short"></p><div id="v100Meta"><div id="v100Difficulty"></div><div id="v100Method"></div><div id="v100Trap"></div><div id="v100Connection"></div></div></div><h3 id="chineseHeading">中文詳解 / 考試理解</h3><p id="chinese"></p></div></section></main><aside class="side"><section class="sidecard card"><h3>Practice Settings</h3><label>模式</label><select id="modeSelect"><option value="all">全部題庫</option><option value="pilot">Interview EN</option><option value="interview_cn">Interview CN</option><option value="aviation">Aviation EN</option><option value="aviation_cn">Aviation CN</option><option value="toeic11">TOEIC Q11</option><option value="toeic567">TOEIC Q5–7</option><option value="math_en">Math&Physics EN</option><option value="math_cn">Math&Physics CN</option><option value="classical_cn">Classical CN</option><option value="favorites">Favorites Only</option></select><select id="timerEnabled" hidden aria-hidden="true"><option value="true">開啟計時</option><option value="false">關閉計時</option></select><div id="mathDifficultySetting" hidden><label>Math 難易度</label><select id="difficultySelect"><option value="all">全部難度</option><option value="basic">Basic 基礎</option><option value="intermediate">Intermediate 中階</option><option value="advanced">Advanced 進階</option></select></div><label>準備時間（秒）</label><input type="number" id="prepSeconds" value="30"><label>回答/思考時間（秒）</label><input type="number" id="answerSeconds" value="90"><div class="setting-switch-row" id="soundSwitchRow">
+<div class="tabs" id="tabs"></div><section class="questionbox"><div class="category" id="category">READY</div><h1 class="question" id="question">Click “New Question” to start your training.</h1><div class="hint" id="hint">v148：Daily Test 的 TOEIC 倒數僅在 Q5–7／Q11 題目顯示，需按 Start 才開始；總測驗時間與本題答題時間固定顯示。</div><div id="tags"></div><div class="diagram" id="diagramBox"></div><div id="subqBox"></div><div class="choices" id="choices"></div><div class="timerrow" id="timerRow"><div class="timercard" id="prepCard"><div class="timerlabel">PREPARATION</div><div class="timer" id="prepTimer">00:30</div><div class="barwrap"><div class="bar" id="prepProgress"></div></div></div><div class="timercard"><div class="timerlabel" id="answerLabel">ANSWER</div><div class="timer" id="answerTimer">01:30</div><div class="barwrap"><div class="bar" id="answerProgress"></div></div></div></div><div class="controls"><button class="btn primary" id="newBtn">New Question</button><button class="btn secondary" id="prevBtn">Previous</button><button class="btn green" id="startPauseBtn">Start</button><button class="btn secondary" id="showBtn">Show Answer</button><button class="btn secondary" id="favBtn"><span id="starIcon">☆</span> Favorite</button><button class="btn danger" id="resetBtn">Reset</button></div><div class="subnav" id="subqNav"><button class="btn secondary" id="subPrevBtn">題組上一小題</button><button class="btn secondary" id="subNextBtn">題組下一小題</button></div><div class="answer" id="answerBox"><div id="acronymBox"></div><h3 id="suggestedHeading">Suggested Answer / Explanation</h3><p id="suggested"></p><div id="legacyAnswerMeta" hidden><p id="short"></p><div id="v100Meta"><div id="v100Difficulty"></div><div id="v100Method"></div><div id="v100Trap"></div><div id="v100Connection"></div></div></div><h3 id="chineseHeading">中文詳解 / 考試理解</h3><p id="chinese"></p></div></section></main><aside class="side"><section class="sidecard card"><h3>Practice Settings</h3><label>模式</label><select id="modeSelect"><option value="all">全部題庫</option><option value="pilot">Interview EN</option><option value="interview_cn">Interview CN</option><option value="aviation">Aviation EN</option><option value="aviation_cn">Aviation CN</option><option value="toeic11">TOEIC Q11</option><option value="toeic567">TOEIC Q5–7</option><option value="math_en">Math&Physics EN</option><option value="math_cn">Math&Physics CN</option><option value="classical_cn">Classical CN</option><option value="favorites">Favorites Only</option></select><select id="timerEnabled" hidden aria-hidden="true"><option value="true">開啟計時</option><option value="false">關閉計時</option></select><div id="mathDifficultySetting" hidden><label>Math 難易度</label><select id="difficultySelect"><option value="all">全部難度</option><option value="basic">Basic 基礎</option><option value="intermediate">Intermediate 中階</option><option value="advanced">Advanced 進階</option></select></div><label>準備時間（秒）</label><input type="number" id="prepSeconds" value="30"><label>回答/思考時間（秒）</label><input type="number" id="answerSeconds" value="90"><div class="setting-switch-row" id="soundSwitchRow">
   <div class="setting-switch-copy">
     <strong>提示音</strong>
     <span>控制題庫、心算與飛行記憶全部音效</span>
@@ -3269,7 +3396,10 @@ body[data-theme="gray"] .timer-quick.active{
         <h2>Daily Test</h2>
         <p>快速混合抽題，維持題感、知識與回答穩定度。</p>
       </div>
-      <button type="button" class="dt-close" id="dtClose" aria-label="Close Daily Test">關閉</button>
+      <div class="dt-topbar-actions">
+        <button type="button" class="dt-timer-toggle active" id="dtTimerToggle" aria-label="開啟或關閉 Daily Test 計時" aria-pressed="true" title="Daily Test 計時已開啟｜點擊關閉"><span aria-hidden="true">⏰</span></button>
+        <button type="button" class="dt-close" id="dtClose" aria-label="Close Daily Test">關閉</button>
+      </div>
     </header>
 
     <section class="dt-panel" id="dtSetupPanel">
@@ -3307,7 +3437,7 @@ body[data-theme="gray"] .timer-quick.active{
         <span>Balanced random selection</span>
       </button>
       <p class="dt-setup-note">
-        選擇題會判定正確／錯誤；Interview 與其他開放式題目採自我評估。提前結束仍會依已完成題目計算 Overall，遇到需要複習的題目可直接加入星號。
+        選擇題會判定正確／錯誤；Interview 與其他開放式題目採自我評估。右上角時鐘只控制 TOEIC Q5–7／Q11 的準備與回答倒數，並需按 Start 才開始；總測驗時間與本題答題時間固定記錄。提前結束仍會依已完成題目計算 Overall，遇到需要複習的題目可直接加入星號。
       </p>
     </section>
 
@@ -3315,7 +3445,16 @@ body[data-theme="gray"] .timer-quick.active{
       <div class="dt-progress-head">
         <div>
           <span id="dtProgressText">Question 1 / 10</span>
-          <strong id="dtElapsed">00:00</strong>
+          <div class="dt-progress-times" id="dtProgressTimes">
+            <div class="dt-progress-time-line">
+              <span>總測驗時間</span>
+              <strong id="dtElapsed">00:00</strong>
+            </div>
+            <div class="dt-progress-time-line">
+              <span>本題答題時間</span>
+              <strong id="dtQuestionElapsed">00:00</strong>
+            </div>
+          </div>
         </div>
         <div class="dt-progress-track"><div id="dtProgressBar"></div></div>
       </div>
@@ -3331,6 +3470,23 @@ body[data-theme="gray"] .timer-quick.active{
         <h3 id="dtQuestion"></h3>
         <p id="dtHint"></p>
         <div class="dt-tags" id="dtTags"></div>
+
+        <div class="dt-question-timers" id="dtQuestionTimers">
+          <div class="dt-question-timer-card" id="dtPrepTimerCard">
+            <div class="dt-timer-label">PREPARATION</div>
+            <div class="dt-timer-value" id="dtPrepCountdown">00:00</div>
+            <div class="dt-timer-track"><div class="dt-timer-fill" id="dtPrepCountdownBar"></div></div>
+          </div>
+          <div class="dt-question-timer-card waiting" id="dtAnswerTimerCard">
+            <div class="dt-timer-label">ANSWER</div>
+            <div class="dt-timer-value" id="dtAnswerCountdown">00:00</div>
+            <div class="dt-timer-track"><div class="dt-timer-fill" id="dtAnswerCountdownBar"></div></div>
+          </div>
+          <div class="dt-timer-start-row" id="dtTimerStartRow">
+            <button type="button" class="dt-timer-start" id="dtQuestionTimerStart">Start</button>
+          </div>
+          <div class="dt-timer-phase-note" id="dtTimerPhaseNote">按 Start 後，先進入準備時間，再進入回答時間。</div>
+        </div>
 
         <div class="dt-objective-choices" id="dtChoices"></div>
 
@@ -3431,6 +3587,21 @@ body[data-theme="gray"] .timer-quick.active{
   let elapsedTimer = null;
   let currentAnswered = false;
   let activeConfig = null;
+  let dailyTestRunning = false;
+  let dailyTimerEnabled = true;
+  let dailyElapsedBase = 0;
+  let dailyTimerSegmentAt = 0;
+  let dailyTimerWasUsed = false;
+  let questionElapsedBase = 0;
+  let questionTimerSegmentAt = 0;
+  let questionTimerWasUsed = false;
+  let questionTimingStopped = true;
+  let questionPrepSeconds = 0;
+  let questionAnswerSeconds = 0;
+  let pendingSubjectiveTiming = null;
+  let toeicCountdownStarted = false;
+  let toeicCountdownElapsedBase = 0;
+  let toeicCountdownSegmentAt = 0;
 
   function escapeHTML(value){
     return String(value ?? "")
@@ -3452,6 +3623,224 @@ body[data-theme="gray"] .timer-quick.active{
   function formatTime(seconds){
     const s=Math.max(0,Math.floor(seconds));
     return String(Math.floor(s/60)).padStart(2,"0")+":"+String(s%60).padStart(2,"0");
+  }
+  function isToeicQuestion(q){
+    return !!q && (q.type==="toeic11" || q.type==="toeic567");
+  }
+  function questionTiming(q){
+    if(!isToeicQuestion(q))return {prep:0,answer:0};
+    if(q.type==="toeic11")return {prep:45,answer:60};
+    const label=String(q._toeicLabel||q.q||"");
+    const prep=Number(q._dailyPrep ?? q.prepTime ?? 3);
+    const answer=Number(q._dailyAns ?? q.ansTime ?? (/Q7/i.test(label)?30:15));
+    return {prep:Math.max(0,prep||0),answer:Math.max(1,answer||15)};
+  }
+  function getQuestionElapsedSeconds(){
+    let seconds=questionElapsedBase;
+    if(dailyTestRunning&&!questionTimingStopped&&questionTimerSegmentAt){
+      seconds+=(Date.now()-questionTimerSegmentAt)/1000;
+    }
+    return Math.max(0,seconds);
+  }
+  function pauseQuestionClock(){
+    if(dailyTestRunning&&!questionTimingStopped&&questionTimerSegmentAt){
+      questionElapsedBase+=(Date.now()-questionTimerSegmentAt)/1000;
+    }
+    questionTimerSegmentAt=0;
+  }
+  function resumeQuestionClock(){
+    if(!dailyTestRunning||questionTimingStopped||questionTimerSegmentAt)return;
+    questionTimerWasUsed=true;
+    questionTimerSegmentAt=Date.now();
+  }
+  function getToeicCountdownElapsedSeconds(){
+    let seconds=toeicCountdownElapsedBase;
+    if(dailyTestRunning&&dailyTimerEnabled&&toeicCountdownStarted&&!questionTimingStopped&&toeicCountdownSegmentAt){
+      seconds+=(Date.now()-toeicCountdownSegmentAt)/1000;
+    }
+    return Math.max(0,seconds);
+  }
+  function pauseToeicCountdown(){
+    if(dailyTestRunning&&toeicCountdownStarted&&!questionTimingStopped&&toeicCountdownSegmentAt){
+      toeicCountdownElapsedBase+=(Date.now()-toeicCountdownSegmentAt)/1000;
+    }
+    toeicCountdownSegmentAt=0;
+  }
+  function resumeToeicCountdown(){
+    if(!dailyTestRunning||!dailyTimerEnabled||!toeicCountdownStarted||questionTimingStopped||toeicCountdownSegmentAt)return;
+    toeicCountdownSegmentAt=Date.now();
+  }
+  function resetToeicCountdown(q){
+    const timing=questionTiming(q);
+    questionPrepSeconds=timing.prep;
+    questionAnswerSeconds=timing.answer;
+    toeicCountdownStarted=false;
+    toeicCountdownElapsedBase=0;
+    toeicCountdownSegmentAt=0;
+  }
+  function resetQuestionClock(q){
+    questionElapsedBase=0;
+    questionTimerSegmentAt=0;
+    questionTimerWasUsed=false;
+    questionTimingStopped=false;
+    pendingSubjectiveTiming=null;
+    resetToeicCountdown(q);
+    resumeQuestionClock();
+  }
+  function stopQuestionClock(){
+    pauseQuestionClock();
+    pauseToeicCountdown();
+    questionTimingStopped=true;
+    return {timeSeconds:Math.round(questionElapsedBase),timed:true};
+  }
+  function startToeicCountdown(){
+    const q=currentQuestion();
+    if(!isToeicQuestion(q)||!dailyTimerEnabled||questionTimingStopped)return;
+    if(!toeicCountdownStarted){
+      toeicCountdownStarted=true;
+      toeicCountdownElapsedBase=0;
+    }
+    resumeToeicCountdown();
+    renderQuestionTimerUI();
+  }
+  function renderQuestionTimerUI(){
+    const container=$dt("dtQuestionTimers");
+    const questionElapsed=$dt("dtQuestionElapsed");
+    const prepValue=$dt("dtPrepCountdown");
+    const answerValue=$dt("dtAnswerCountdown");
+    const prepBar=$dt("dtPrepCountdownBar");
+    const answerBar=$dt("dtAnswerCountdownBar");
+    const prepCard=$dt("dtPrepTimerCard");
+    const answerCard=$dt("dtAnswerTimerCard");
+    const note=$dt("dtTimerPhaseNote");
+    const startRow=$dt("dtTimerStartRow");
+    const startButton=$dt("dtQuestionTimerStart");
+    const q=currentQuestion();
+    const actualElapsed=getQuestionElapsedSeconds();
+    if(questionElapsed)questionElapsed.textContent=formatTime(actualElapsed);
+    if(!container)return;
+
+    const showToeicCountdown=isToeicQuestion(q)&&dailyTimerEnabled;
+    container.style.display=showToeicCountdown?"":"none";
+    container.classList.toggle("toeic-waiting",showToeicCountdown&&!toeicCountdownStarted);
+    if(!showToeicCountdown)return;
+
+    [prepCard,answerCard].forEach(card=>card&&card.classList.remove("active","waiting","done","time-up"));
+    if(!toeicCountdownStarted){
+      if(prepValue)prepValue.textContent=formatTime(questionPrepSeconds);
+      if(answerValue)answerValue.textContent=formatTime(questionAnswerSeconds);
+      if(prepBar)prepBar.style.width="100%";
+      if(answerBar)answerBar.style.width="100%";
+      prepCard?.classList.add("waiting");
+      answerCard?.classList.add("waiting");
+      if(startRow)startRow.hidden=false;
+      if(startButton){startButton.hidden=false;startButton.disabled=false;startButton.textContent="Start";}
+      if(note)note.textContent="按 Start 後開始本題 TOEIC 準備與回答倒數。";
+      return;
+    }
+
+    if(startRow)startRow.hidden=true;
+    if(startButton)startButton.hidden=true;
+    const elapsed=getToeicCountdownElapsedSeconds();
+    const prepRemaining=Math.max(0,questionPrepSeconds-elapsed);
+    const answerElapsed=Math.max(0,elapsed-questionPrepSeconds);
+    const answerRemaining=Math.max(0,questionAnswerSeconds-answerElapsed);
+    if(prepValue)prepValue.textContent=formatTime(Math.ceil(prepRemaining));
+    if(answerValue)answerValue.textContent=formatTime(Math.ceil(answerRemaining));
+    if(prepBar)prepBar.style.width=(questionPrepSeconds?Math.max(0,Math.min(100,prepRemaining/questionPrepSeconds*100)):0)+"%";
+    if(answerBar){
+      const pct=elapsed<questionPrepSeconds?100:Math.max(0,Math.min(100,answerRemaining/questionAnswerSeconds*100));
+      answerBar.style.width=pct+"%";
+    }
+    if(questionTimingStopped){
+      prepCard?.classList.add("done");
+      answerCard?.classList.add(answerRemaining<=0?"time-up":"done");
+      if(note)note.textContent="本題倒數已停止；實際答題時間已另行記錄。";
+    }else if(questionPrepSeconds>0&&elapsed<questionPrepSeconds){
+      prepCard?.classList.add("active");
+      answerCard?.classList.add("waiting");
+      if(note)note.textContent=`準備階段 · ${questionPrepSeconds} 秒後進入回答階段`;
+    }else if(answerElapsed<questionAnswerSeconds){
+      prepCard?.classList.add("done");
+      answerCard?.classList.add("active");
+      if(note)note.textContent=`回答階段 · 建議在 ${questionAnswerSeconds} 秒內完成`;
+    }else{
+      prepCard?.classList.add("done");
+      answerCard?.classList.add("time-up");
+      if(note)note.textContent="建議回答時間已結束；仍可完成作答，系統會繼續記錄實際答題時間。";
+    }
+  }
+  function readGlobalTimerEnabled(){
+    const control=document.getElementById("timerEnabled");
+    if(control)return control.value!=="false";
+    try{return typeof state!=="undefined"?state.timerEnabled!==false:true;}catch(e){return true;}
+  }
+  function getDailyElapsedSeconds(){
+    let seconds=dailyElapsedBase;
+    if(dailyTestRunning&&dailyTimerSegmentAt){
+      seconds+=(Date.now()-dailyTimerSegmentAt)/1000;
+    }
+    return Math.max(0,seconds);
+  }
+  function pauseDailyElapsedClock(){
+    if(dailyTestRunning&&dailyTimerSegmentAt){
+      dailyElapsedBase+=(Date.now()-dailyTimerSegmentAt)/1000;
+    }
+    dailyTimerSegmentAt=0;
+    pauseQuestionClock();
+    pauseToeicCountdown();
+    if(elapsedTimer){clearInterval(elapsedTimer);elapsedTimer=null;}
+  }
+  function resumeDailyElapsedClock(){
+    if(!dailyTestRunning)return;
+    dailyTimerWasUsed=true;
+    if(!dailyTimerSegmentAt)dailyTimerSegmentAt=Date.now();
+    resumeQuestionClock();
+    resumeToeicCountdown();
+    if(elapsedTimer)clearInterval(elapsedTimer);
+    elapsedTimer=setInterval(updateElapsed,250);
+  }
+  function hasToeicSelection(){
+    try{return selectedTypes().some(type=>type==="toeic11"||type==="toeic567");}
+    catch(e){return !!activeConfig?.types?.some(type=>type==="toeic11"||type==="toeic567");}
+  }
+  function timerToggleRelevant(){
+    if(!runPanel.hidden)return isToeicQuestion(currentQuestion());
+    if(!setupPanel.hidden)return hasToeicSelection();
+    return false;
+  }
+  function syncDailyTimerUI(){
+    const button=$dt("dtTimerToggle");
+    const progressTimes=$dt("dtProgressTimes");
+    const questionTimers=$dt("dtQuestionTimers");
+    const relevant=timerToggleRelevant();
+    if(button){
+      button.hidden=!relevant;
+      button.classList.toggle("active",dailyTimerEnabled);
+      button.setAttribute("aria-pressed",String(dailyTimerEnabled));
+      button.title=dailyTimerEnabled?"TOEIC 準備／回答倒數已開啟｜點擊關閉":"TOEIC 準備／回答倒數已關閉｜點擊開啟";
+      button.setAttribute("aria-label",dailyTimerEnabled?"關閉 TOEIC 準備與回答倒數":"開啟 TOEIC 準備與回答倒數");
+    }
+    if(progressTimes)progressTimes.style.display="";
+    if(questionTimers)questionTimers.style.display=(isToeicQuestion(currentQuestion())&&dailyTimerEnabled)?"":"none";
+    renderQuestionTimerUI();
+  }
+  function setDailyTimerEnabled(enabled,{syncGlobal=true}={}){
+    const next=!!enabled;
+    if(next===dailyTimerEnabled){syncDailyTimerUI();return;}
+    if(!next)pauseToeicCountdown();
+    dailyTimerEnabled=next;
+    if(next&&toeicCountdownStarted)resumeToeicCountdown();
+    if(syncGlobal){
+      const control=document.getElementById("timerEnabled");
+      if(control&&control.value!==String(next)){
+        control.value=String(next);
+        control.dispatchEvent(new Event("change",{bubbles:true}));
+      }
+      try{if(typeof state!=="undefined")state.timerEnabled=next;if(typeof save==="function")save();}catch(e){}
+    }
+    syncDailyTimerUI();
+    updateElapsed();
   }
   function isInterview(q){
     return q.type==="pilot" || q.type==="interview_cn";
@@ -3528,6 +3917,11 @@ body[data-theme="gray"] .timer-quick.active{
         choices:null,
         correct:null,
         _dailyVirtual:true,
+        _toeicLabel:g.label || "Q"+(i+1),
+        _dailyPrep:Number(g.prepTime ?? 3),
+        _dailyAns:Number(g.ansTime ?? ((g.label || "Q"+(i+1))==="Q7"?30:15)),
+        prep:Number(g.prepTime ?? 3),
+        ans:Number(g.ansTime ?? ((g.label || "Q"+(i+1))==="Q7"?30:15)),
         _favoriteKey:keyOf(q)
       }));
     }
@@ -3608,11 +4002,13 @@ body[data-theme="gray"] .timer-quick.active{
         input.checked=!input.checked;
         label.classList.toggle("selected",input.checked);
         label.querySelector(".dt-bank-check").textContent=input.checked?"✓":"";
+        syncDailyTimerUI();
       });
       bankGrid.appendChild(label);
     });
     $dt("dtCount").value=saved.count;
     renderLastSummary();
+    syncDailyTimerUI();
   }
 
   function selectedTypes(){
@@ -3635,6 +4031,8 @@ body[data-theme="gray"] .timer-quick.active{
   }
   function openOverlay(){
     try{if(typeof pauseFlow==="function"&&typeof phase!=="undefined"&&phase&&!paused)pauseFlow();}catch(e){}
+    dailyTimerEnabled=readGlobalTimerEnabled();
+    syncDailyTimerUI();
     overlay.classList.add("open");
     overlay.setAttribute("aria-hidden","false");
     document.body.style.overflow="hidden";
@@ -3642,7 +4040,8 @@ body[data-theme="gray"] .timer-quick.active{
     renderBankOptions();
   }
   function closeOverlay(){
-    if(elapsedTimer)clearInterval(elapsedTimer);
+    pauseDailyElapsedClock();
+    dailyTestRunning=false;
     overlay.classList.remove("open");
     overlay.setAttribute("aria-hidden","true");
     document.body.style.overflow="";
@@ -3652,6 +4051,7 @@ body[data-theme="gray"] .timer-quick.active{
     runPanel.hidden=which!=="run";
     resultPanel.hidden=which!=="result";
     overlay.scrollTop=0;
+    syncDailyTimerUI();
   }
 
   function startTest(useExisting=false){
@@ -3672,14 +4072,27 @@ body[data-theme="gray"] .timer-quick.active{
     index=0;
     startedAt=Date.now();
     currentAnswered=false;
+    dailyTestRunning=true;
+    dailyTimerEnabled=readGlobalTimerEnabled();
+    dailyElapsedBase=0;
+    dailyTimerSegmentAt=0;
+    dailyTimerWasUsed=false;
+    questionElapsedBase=0;
+    questionTimerSegmentAt=0;
+    questionTimerWasUsed=false;
+    questionTimingStopped=true;
+    pendingSubjectiveTiming=null;
     showPanel("run");
-    if(elapsedTimer)clearInterval(elapsedTimer);
-    elapsedTimer=setInterval(updateElapsed,1000);
+    if(elapsedTimer){clearInterval(elapsedTimer);elapsedTimer=null;}
+    resumeDailyElapsedClock();
+    syncDailyTimerUI();
     renderCurrent();
   }
 
   function updateElapsed(){
-    $dt("dtElapsed").textContent=formatTime((Date.now()-startedAt)/1000);
+    const display=$dt("dtElapsed");
+    if(display)display.textContent=formatTime(getDailyElapsedSeconds());
+    renderQuestionTimerUI();
   }
 
   function currentQuestion(){
@@ -3737,6 +4150,8 @@ body[data-theme="gray"] .timer-quick.active{
     $dt("dtSelfRating").hidden=true;
     $dt("dtSelfRating").querySelectorAll("button").forEach(b=>b.classList.remove("active"));
     updateDailyFavoriteButton(q);
+    resetQuestionClock(q);
+    syncDailyTimerUI();
 
     if(objective){
       q.choices.forEach((choice,choiceIndex)=>{
@@ -3763,6 +4178,7 @@ body[data-theme="gray"] .timer-quick.active{
       if(i===selectedIndex&&i!==q.correct)button.classList.add("wrong");
     });
 
+    const timing=stopQuestionClock();
     const result={
       q,
       mode:"objective",
@@ -3771,6 +4187,8 @@ body[data-theme="gray"] .timer-quick.active{
       correctAnswer:q.choices[q.correct],
       correct,
       rating:null,
+      timeSeconds:timing.timeSeconds,
+      timed:timing.timed,
       attention:attentionReason(q,correct,null)
     };
     results[index]=result;
@@ -3783,12 +4201,14 @@ body[data-theme="gray"] .timer-quick.active{
       <p><b>你的答案：</b>${escapeHTML(result.selected)}</p>
       <p><b>正確答案：</b>${escapeHTML(result.correctAnswer)}</p>
       <p><b>應注意：</b>${escapeHTML(result.attention)}</p>
+      <p><b>本題作答時間：</b>${formatTime(result.timeSeconds)}</p>
       <p>${escapeHTML(languageExplanation(q)).replace(/\n/g,"<br>")}</p>`;
     $dt("dtNext").disabled=false;
   }
 
   function revealSubjective(){
     const q=currentQuestion();
+    if(!pendingSubjectiveTiming)pendingSubjectiveTiming=stopQuestionClock();
     const feedback=$dt("dtFeedback");
     feedback.hidden=false;
     feedback.classList.add("self");
@@ -3805,6 +4225,8 @@ body[data-theme="gray"] .timer-quick.active{
     button.classList.add("active");
 
     const labels={1:"Developing",2:"Adequate",3:"Proficient"};
+    const timing=pendingSubjectiveTiming || stopQuestionClock();
+    pendingSubjectiveTiming=timing;
     results[index]={
       q,
       mode:"subjective",
@@ -3812,6 +4234,8 @@ body[data-theme="gray"] .timer-quick.active{
       rating,
       ratingLabel:labels[rating],
       correct:null,
+      timeSeconds:timing.timeSeconds,
+      timed:timing.timed,
       attention:attentionReason(q,null,rating)
     };
 
@@ -3821,6 +4245,7 @@ body[data-theme="gray"] .timer-quick.active{
       <div class="dt-rating-summary">
         <p><b>Self-rating：</b>${labels[rating]}</p>
         <p><b>下一步：</b>${escapeHTML(results[index].attention)}</p>
+        <p><b>本題作答時間：</b>${formatTime(results[index].timeSeconds)}</p>
       </div>`);
     $dt("dtNext").disabled=false;
   }
@@ -3839,8 +4264,9 @@ body[data-theme="gray"] .timer-quick.active{
       alert("尚未完成任何題目，至少完成一題後才能結算 Overall。");
       return;
     }
-    if(elapsedTimer)clearInterval(elapsedTimer);
-    const duration=Math.round((Date.now()-startedAt)/1000);
+    pauseDailyElapsedClock();
+    dailyTestRunning=false;
+    const duration=Math.round(dailyElapsedBase);
     const objective=completed.filter(r=>r.mode==="objective");
     const subjective=completed.filter(r=>r.mode==="subjective");
     const correctCount=objective.filter(r=>r.correct).length;
@@ -3927,6 +4353,7 @@ body[data-theme="gray"] .timer-quick.active{
           </summary>
           <div class="dt-review-body">
             ${answerBlock}
+            <p class="dt-review-time">本題作答時間：${formatTime(r.timeSeconds)}</p>
             <p><b>應注意的原因：</b>${escapeHTML(r.attention)}</p>
             <p><b>完整解析／參考答案：</b><br>${escapeHTML(languageExplanation(q)).replace(/\n/g,"<br>")}</p>
             <button type="button" class="dt-review-favorite ${isDailyFavorite(q)?"active":""}" data-review-index="${i}">${isDailyFavorite(q)?"★ 已加入星號":"☆ 加入星號，之後複習"}</button>
@@ -3950,12 +4377,19 @@ body[data-theme="gray"] .timer-quick.active{
 
   $dt("dailyTestLaunch")?.addEventListener("click",openOverlay);
   $dt("dtClose")?.addEventListener("click",closeOverlay);
+  $dt("dtTimerToggle")?.addEventListener("click",()=>setDailyTimerEnabled(!dailyTimerEnabled));
+  document.getElementById("timerEnabled")?.addEventListener("change",()=>{
+    const next=readGlobalTimerEnabled();
+    if(next!==dailyTimerEnabled)setDailyTimerEnabled(next,{syncGlobal:false});
+    else syncDailyTimerUI();
+  });
   $dt("dtSelectAll")?.addEventListener("click",()=>{
     bankGrid.querySelectorAll(".dt-bank-option").forEach(label=>{
       label.classList.add("selected");
       label.querySelector("input").checked=true;
       label.querySelector(".dt-bank-check").textContent="✓";
     });
+    syncDailyTimerUI();
   });
   $dt("dtClearAll")?.addEventListener("click",()=>{
     bankGrid.querySelectorAll(".dt-bank-option").forEach(label=>{
@@ -3963,6 +4397,7 @@ body[data-theme="gray"] .timer-quick.active{
       label.querySelector("input").checked=false;
       label.querySelector(".dt-bank-check").textContent="";
     });
+    syncDailyTimerUI();
   });
   $dt("dtCountMinus")?.addEventListener("click",()=>{
     $dt("dtCount").value=Math.max(1,selectedCount()-1);
@@ -3972,6 +4407,7 @@ body[data-theme="gray"] .timer-quick.active{
   });
   $dt("dtCount")?.addEventListener("change",selectedCount);
   $dt("dtStart")?.addEventListener("click",()=>startTest(false));
+  $dt("dtQuestionTimerStart")?.addEventListener("click",startToeicCountdown);
   $dt("dtRevealModel")?.addEventListener("click",revealSubjective);
   const ratingBox=$dt("dtSelfRating");
   if(ratingBox){
@@ -5055,4 +5491,208 @@ That's why I think so.`;
   };
 })();
 </script>
+
+<script id="v146-content-qa-and-advanced-math">
+(()=>{
+  const VERSION='v146';
+  const DATA={"interviewEN":{"Do you know which cities XX airlines flies to?":["I would answer with the airline’s current official route map, not with an old number from memory. Before the interview, I would group the network by region, mention several representative hubs or destinations, and clearly state the date of the information because routes change. If I were unsure about one city, I would say so rather than guess. The purpose of the question is to show preparation, commercial awareness, and accuracy.","我會依航空公司最新官方航網回答，而不是背誦可能已過期的數字。面試前會依區域整理航點，舉出具代表性的樞紐或城市，並說明資料日期，因為航線會調整。若對某一城市沒有把握，我不會猜測。這題主要在確認準備程度、商業理解與資訊精確性。"],"What's your impression of our airline?":["My impression should be based on verified facts. I would describe the airline’s safety and training culture, network and fleet strategy, service positioning, and one recent development from its official information. I would then explain why those characteristics fit my long-term goal of becoming a disciplined, trainable, and reliable pilot. I would avoid giving only general compliments that could apply to any airline.","我會根據查證過的事實回答，包括公司的安全與訓練文化、航網與機隊策略、服務定位，以及一項近期官方發展，再說明這些特點為何符合我希望成為自律、可訓練且可靠飛行員的長期目標。我不會只給任何航空公司都能套用的空泛稱讚。"],"What aircraft types are in our fleet?":["I would list the exact aircraft families and important variants shown on the airline’s current official fleet page, and distinguish passenger, cargo, leased, or group-company aircraft when relevant. I would also check current orders and retirements because fleet information changes. If asked for numbers, I would quote the latest official source and date instead of guessing.","我會依航空公司最新官方機隊頁面列出正確機型與重要子型號，必要時區分客機、貨機、租賃或集團其他公司的飛機，也會確認新機訂單與退役規畫。若被問到數量，我會說明官方資料日期，不憑印象猜測。"],"Why did you choose our company?":["I chose this company after comparing its verified training system, safety culture, fleet and network development, and expectations for cadet pilots. Those factors match my goal of building a long-term career in an organization that values discipline, standardization, teamwork, and continuous learning. My answer would include two or three company-specific facts so it is clear that I am choosing this airline deliberately, not simply applying everywhere.","我是在比較公司的訓練制度、安全文化、機隊與航網發展，以及對培訓機師的期待後做出選擇。這些特點符合我希望在重視紀律、標準化、團隊合作與持續學習的組織中長期發展。回答時應加入兩到三項公司專屬事實，讓面試官知道這不是能套用到任何公司的答案。"],"What do you know about our company?":["I would organize my answer into four parts: the airline’s position and history, current fleet and network, safety and training culture, and recent strategic development. I would use official sources and connect the facts to the role of a cadet pilot. This structure shows that I understand both the company’s business direction and the professional standards expected from its flight crew.","我會用四個部分回答：公司的定位與歷史、目前機隊與航網、安全及訓練文化，以及近期策略發展，並以官方資料為準，再把這些資訊連結到培訓機師的角色。這樣能同時展現對公司營運方向及飛航人員專業標準的理解。"],"Do you know how many aircraft and how many flight crews Air operates?":["These figures change, so I would quote the latest official annual report, sustainability report, or company fact sheet and state its reporting date. I would separate aircraft in service from orders, and flight-crew headcount from total employees. If the exact figure were not confirmed, I would explain the verified range or source rather than create a number.","這些數字會變動，因此我會引用最新的公司年報、永續報告或官方資料表，並說明統計日期；同時區分現役機隊與訂單，也區分飛航組員與全體員工。若無法確認精確數字，我會說明查證來源或範圍，而不是自行編造。"],"If both A Air and B Air both hire you for cadet training program, which company do you prefer?":["If I am interviewing with this airline, I should answer clearly whether it is my first choice and support that choice with company-specific reasons such as training culture, career path, network, and values. If I received two offers, I would compare the actual contracts and responsibilities carefully, honor every commitment, and communicate promptly. I would not use one airline merely as leverage against another.","如果我正在這家公司面試，我應清楚說明它是否為第一選擇，並以訓練文化、職涯路徑、航網與價值觀等公司專屬理由支持。若真的同時取得兩份錄取，我會仔細比較實際合約與責任、尊重承諾並及時溝通，不會把其中一家公司當成談判籌碼。"],"What was your weakest subject in school?":["One subject I had to work harder at was mathematics. I could understand the concepts, but I was not always fast or systematic when solving multi-step questions. During my pilot preparation, I changed this by reviewing the principle first, writing units clearly, tracking repeated errors, and practicing under time limits. The improvement taught me that a weakness should be managed with a measurable process rather than hidden.","我在學校時需要花較多力氣的科目是數學。我能理解觀念，但遇到多步驟題目時，速度與系統性不一定穩定。準備培訓機師期間，我改成先確認原理、清楚標示單位、追蹤重複錯誤並進行限時練習。這讓我學到，弱點應透過可衡量的流程改善，而不是隱藏。"],"Have you ever been an exchange student at an overseas university?":["No, I have not been an exchange student. However, I have planned and completed independent overseas travel, including Austria and the Czech Republic, which required preparation, adaptation, and cross-cultural communication. I understand that living abroad for flight training would be much more demanding, so I would prepare my English, daily routine, finances, and communication with instructors in advance.","沒有，我沒有海外大學交換學生的經驗。不過我曾自行規畫奧地利與捷克旅行，需要事前準備、適應陌生環境與跨文化溝通。我理解海外飛行訓練的要求高得多，因此會提前準備英文、生活作息、財務安排及與教官溝通的方式。"],"How can you convince us that you are qualified for the one-year training program at a flight school overseas?":["I have managed long-term responsibilities in my family business, prepared systematically for aviation, mathematics, English, and simulator training, and learned to adjust my methods when results were below target. I can live with a structured routine, accept direct feedback, and ask for clarification early instead of hiding confusion. I also have family support for the time away. These points show that I can adapt, remain disciplined, and use an overseas training year effectively.","我長期承擔家族事業責任，也有系統地準備航空、數理、英文與模擬機，並在成績未達標時調整方法。我能維持規律生活、接受直接回饋，也會在不清楚時及早詢問而不隱藏問題，加上家人支持我離家受訓。這些條件能證明我具備適應力、紀律與有效完成海外訓練的能力。"],"If you disagree with ATC, what would you do?":["I would first confirm that I heard and understood the clearance correctly by using a clear readback or requesting clarification. If the aircraft could not safely or legally comply because of performance, weather, terrain, or another operational limitation, I would state ‘unable,’ give the essential reason, and request an alternative clearance. I would then comply with the amended clearance. In an emergency, the pilot-in-command may deviate as necessary for safety and should advise ATC as soon as possible.","我會先以清楚覆誦或要求澄清，確認自己正確聽懂指令。若因性能、天氣、地形或其他運作限制而無法安全或合法執行，我會明確說「unable」、簡要說明原因並請求替代許可，再依修正後的許可執行。若為緊急情況，機長可基於安全採取必要偏離，並在可行時儘快通知 ATC。"],"If a captain becomes angry at you in the cockpit, what would you do?":["I would not mirror the emotion. I would keep monitoring the aircraft, use concise standard communication, and confirm the task or concern. If safety were affected, I would use assertive CRM and graded intervention, repeating the safety-critical point clearly and escalating according to procedure. When workload was lower, I would discuss the interaction privately and professionally. Respect for authority does not mean remaining silent about a safety risk.","我不會跟著情緒反應，而會持續監控飛機、使用簡潔標準的溝通，並確認任務或疑慮。若安全受到影響，我會運用堅定式 CRM 與分級介入，清楚重申安全重點並依程序升級。工作負荷降低後，再私下以專業方式討論。尊重職權不代表面對安全風險時保持沉默。"],"What does discipline mean outside the cockpit?":["Outside the cockpit, discipline means protecting fitness for duty and professional trust. It includes sleep and fatigue management, responsible use of alcohol and medication, punctuality, recurrent study, physical health, confidentiality, appropriate social-media behavior, and compliance with company rules. These habits are mostly invisible to passengers, but they directly affect readiness and judgment when a pilot reports for duty.","駕駛艙外的紀律，是維持適勤狀態與專業信任，包括睡眠與疲勞管理、負責任地處理酒精與藥物、準時、持續複習、維持健康、保密、適當使用社群媒體及遵守公司規範。這些習慣旅客通常看不到，卻會直接影響飛行員報到時的準備度與判斷。"],"Tell me about a time you disagreed with a teammate.":["While managing our family tea business, I once had a different view from a family member about how quickly we should reduce inventory risk. Instead of arguing from preference, I compared sales data, cash-flow impact, and the downside of each option. We agreed on a staged adjustment with review points rather than making one large change immediately. The result taught me to separate the person from the problem, use evidence, and create a solution the team can monitor together.","經營家族茶行時，我曾與家人對降低庫存風險的速度有不同看法。我沒有停留在個人偏好，而是比較銷售資料、現金流影響及各方案風險，最後採取分階段調整並設定檢查點，而不是一次大幅改變。這讓我學到要把人與問題分開、用證據溝通，並建立團隊能共同追蹤的方案。"],"Do you have any experience in solving emergency problems? Please list them.":["I have not handled an in-flight emergency, so I would not claim that experience. In business, however, I have managed urgent situations involving customers, inventory, and unexpected operational changes. My method is to identify the immediate risk, protect people and critical resources, communicate responsibilities, choose the safest reversible action, and document the follow-up. The environment is different from aviation, but the habits of staying calm, prioritizing, and escalating early are transferable.","我沒有處理過飛行中的緊急狀況，因此不會假稱有這項經驗。不過在事業經營中，我曾處理客戶、庫存與突發營運變化等急迫問題。我的方式是先辨識立即風險、保護人員與關鍵資源、清楚分工、採取最安全且可逆的行動，並完成後續紀錄。情境雖與航空不同，但冷靜、排序與及早升級的習慣可以轉移。"]},"interviewCN":{"你想成為什麼樣的飛行員？":["我希望成為一位安全、可靠、可訓練，而且能讓團隊信任的飛行員。我不只想把操作做對，也希望持續維持情境意識、遵守 SOP、清楚溝通並接受修正。長期來說，我希望在經驗增加後仍保有謙虛與學習能力，讓每一次決策都以安全與團隊為優先。","I want to become a safe, reliable, and trainable pilot whom the team can trust. I want not only to operate correctly, but also to maintain situational awareness, follow SOPs, communicate clearly, and remain open to correction. Even after gaining experience, I want to keep the humility to learn and place safety and teamwork first."],"請舉一個你持續改進的例子。":["我近期持續改進的例子是 TOEIC Speaking and Writing。這次成績仍未達到自己的目標，所以我沒有只增加練習量，而是重新檢查 Q11 的結構、重複轉折詞、例子是否切題，以及實際作答時間。我把錯誤分類並逐題修正，再用錄音確認流暢度。這讓我學到，持續改進必須根據證據調整方法，而不是重複相同練習。","A recent example is my TOEIC Speaking and Writing preparation. My result still did not reach my target, so I reviewed the structure of Q11, repeated transitions, relevance of examples, and actual response timing instead of only increasing practice volume. I categorized errors, revised answers, and used recordings to check fluency. This taught me to improve through evidence, not repetition alone."],"如果訓練比預期困難很多，你會怎麼處理？":["我會先接受困難是訓練的一部分，不用情緒掩蓋問題。接著確認落差來自知識、操作、英文、壓力或準備方法，再和教官確認標準，建立有期限的修正計畫。我會優先處理安全與核心弱點，同時維持睡眠與體能；若進度仍無改善，就提早求助而不是拖到考核前。","I would accept that difficulty is part of training and identify whether the gap comes from knowledge, operation, English, pressure, or preparation method. I would confirm the standard with the instructor, build a time-bound improvement plan, protect sleep and fitness, and ask for help early if progress remained limited."],"請分享一次你建立信任的經驗。":["經營茶行時，客戶信任來自長期一致，而不是一次說服。我會如實說明產品差異、價格與限制，遇到問題時先承認並提出處理方式，也會遵守答應的交期。這些做法讓客戶知道我不會為了短期成交犧牲資訊透明。這段經驗讓我理解，航空中的信任同樣建立在誠實、標準化與持續可靠的行為上。","In the tea business, I built trust through consistent honesty about products, prices, and limitations, by handling problems early, and by keeping delivery commitments. It taught me that trust in aviation is also built through transparency, standardization, and reliable behavior over time."],"如果其他培訓生表現比你好，你會怎麼看待？":["我會承認對方目前表現較好，觀察其準備方法並向他學習，而不是把比較變成自我否定或競爭情緒。同時，我會回到自己的標準與數據，找出真正落後的項目並改善。培訓是團隊環境，別人的優點可以成為共同資源；但我仍要對自己的進度與安全標準負責。","I would acknowledge the other trainee's stronger performance, learn from the method behind it, and compare my progress against clear standards rather than react emotionally. Training is a team environment, so another person's strength can become a shared resource, while I remain accountable for my own progress."],"知道XX 航空飛哪些國家與城市嗎?":["我會依該航空公司最新官方航網回答，先按東北亞、東南亞、歐洲、北美或其他區域整理，再舉出代表性航點。由於航線會隨季節與策略調整，我也會說明查詢日期；若對某個城市沒有把握，我不會猜測。這題測試的是面試前準備與資訊精確性，不只是背城市名稱。","I would answer from the airline's current official route map, organize destinations by region, give representative cities, and state the date because routes change. I would not guess an uncertain destination."],"你曾經當過海外大學的交換學生嗎?":["沒有，我沒有海外大學交換學生的經驗。不過我曾自行規畫奧地利與捷克旅行，需要適應陌生環境、處理交通與跨文化溝通。我知道海外飛行訓練的壓力遠高於旅行，因此會提前準備英文、作息、財務與和教官溝通的方式，並在不清楚時及早求助。","No, I have not been an exchange student. I have completed independent travel in Austria and the Czech Republic, but I understand overseas flight training is far more demanding. I would prepare my English, routine, finances, and communication with instructors in advance."],"如果你不同意 ATC 指令，你會怎麼做？":["我會先透過覆誦或要求澄清，確認自己沒有聽錯。若因飛機性能、天氣、地形或其他運作限制而無法安全或合法執行，我會明確說「unable」、簡要說明原因並請求替代許可，再依修正後的許可執行。若屬緊急情況，機長可為安全採取必要偏離，並在可行時儘快通知 ATC。","I would verify the clearance, state 'unable' if the aircraft could not safely or legally comply, give the essential reason, request an alternative, and comply with the amended clearance. In an emergency, the PIC may deviate as necessary and advise ATC as soon as possible."],"如果訓練中的隊友一直犯錯，你會怎麼做？":["我會先區分是單次失誤、觀念不清，還是已形成重複風險。情況允許時，我會私下用具體事實提醒，確認他是否理解標準並提供協助；若錯誤持續、影響安全或超出我的角色，就應及早告知教官。團隊合作不是替對方隱藏錯誤，而是讓問題透明並在適當層級獲得修正。","I would identify whether it was an isolated error or a repeated risk, discuss specific facts privately, offer appropriate help, and inform the instructor early if the problem continued or affected safety. Teamwork does not mean hiding another person's errors."],"你最大的失敗是什麼？":["我目前最直接的失敗經驗，是 TOEIC Speaking and Writing 再次沒有達到自己設定的目標。這讓我失望，但也證明原本的練習方式仍有缺口。我重新分析題型、錄音、時間分配與常犯文法，並調整 Q11 的模板與例子，而不是只增加題數。這次經驗提醒我，真正的復原不是立刻說沒關係，而是能找出原因、改變流程並用下一次結果驗證。","My most immediate failure is not reaching my TOEIC Speaking and Writing target again. I reviewed the question structure, recordings, timing, and repeated grammar errors, then changed the process instead of only doing more questions. Recovery means identifying the cause, changing the method, and verifying improvement with the next result."],"如果訓練期間長時間不能回家，你能接受嗎？":["可以。我理解海外或密集飛行訓練可能需要長時間離家，這是職涯選擇的一部分。我會事前和家人確認支持方式、安排固定但不干擾訓練的聯繫時間，並管理睡眠、生活與情緒。若感到壓力，我會及早使用適當資源，而不讓思鄉或家庭問題累積到影響學習與安全。","Yes. I understand intensive or overseas flight training may require a long time away from home. I would coordinate family support in advance, maintain appropriate contact, manage sleep and daily routines, and seek help early if personal stress began to affect training."],"責任感對你來說是什麼？":["責任感是對自己的準備、決策、行動與結果負責，不把問題推給環境或他人。它包括事前確認標準、資訊不清時主動詢問、犯錯時及早通報並控制影響，以及事後改變流程避免重複。經營事業讓我理解，真正的責任不是口頭說我負責，而是讓問題被看見、被修正並留下可追蹤的改善。","Responsibility means being accountable for preparation, decisions, actions, and results. It includes clarifying uncertainty, reporting errors early, containing their effects, and changing the process so they do not recur."],"你參加學校什麼社團?":["我在學校參加足球隊。這段經驗讓我學到固定訓練、遵守紀律、清楚溝通，以及即使個人狀態不好也要完成對團隊的責任。足球也讓我理解，團隊表現來自每個人對共同目標的配合，而不是只靠個人能力。","I joined the school football team. It taught me regular training, discipline, communication, and responsibility to the team even when my individual condition was not ideal."],"你在參加社團期間有擔任任何幹部嗎?":["我曾在足球隊承擔帶領與協調的角色。我的重點不是只下指令，而是先確認共同目標、理解隊友狀況、分配任務並在壓力下保持溝通。這段經驗讓我學到，領導者仍需要接受意見，也要對團隊結果負責。","I took a leadership and coordination role in the football team. I learned to clarify the shared goal, understand teammates, assign tasks, communicate under pressure, and remain accountable for the team result."],"請描述你在校時都做些什麼活動。":["在校期間，我除了完成行銷與物流管理相關課業，也參與足球隊訓練與團體活動。課業培養我分析市場、流程與資源配置的能力；足球則訓練紀律、溝通與團隊合作。這兩類經驗後來都成為我經營事業及準備培訓機師的重要基礎。","At school, I studied marketing and logistics management and participated in football training and group activities. Academics developed analytical thinking, while football developed discipline, communication, and teamwork."],"你在校時有參加學校或任何的團體活動嗎?":["有，我參加足球隊與團體活動。足球需要固定訓練、角色分工與即時溝通，也讓我體會個人表現不能凌駕團隊目標。這些經驗使我更能接受回饋、支援隊友，並在壓力下維持紀律。","Yes. I participated in the football team and group activities, which taught me role clarity, communication, feedback, and discipline under pressure."]},"aviation":{"What is a stabilized approach gate?":["A stabilized approach gate is the operator-defined height by which the aircraft must meet specified criteria such as flight path, speed, configuration, power, descent rate, checklist completion, and only small corrections. The exact gate and criteria come from the operator’s SOP; they should not be treated as one universal number. If the criteria are not met by the gate, or are lost below it, the crew should execute the required go-around rather than try to rescue the landing.","穩定進場門檻是航空公司 SOP 規定的高度；飛機必須在此之前符合航跡、速度、構型、推力、下降率、檢查表及只需小幅修正等標準。實際高度與條件依公司而定，不能把單一數字當成全球通則。未達標或在門檻以下失去穩定時，應依程序重飛，而不是勉強挽救落地。","FAA Airplane Flying Handbook, Ch. 9; operator SOP"],"What is RVSM?":["RVSM means Reduced Vertical Separation Minimum. In RVSM airspace, appropriately approved aircraft can use 1,000 ft vertical separation, generally from FL290 through FL410 inclusive, instead of the former 2,000 ft standard. It requires approved equipment and procedures, accurate altitude keeping, cross-checking, and reporting of relevant failures because even a small height deviation can rapidly reduce the separation margin.","RVSM 是縮減垂直隔離標準。一般在 FL290 至 FL410（含）之間，符合核准要求的航空器可使用 1,000 ft 垂直隔離，而非原先的 2,000 ft。它要求核准設備與程序、精確高度保持、交互檢查，以及在相關設備失效時通報，因小幅高度偏差也可能快速侵蝕隔離裕度。","FAA AIM, RVSM Operations"],"What is QNE and when is it used?":["QNE is the altitude indication obtained when the altimeter is set to standard pressure, 1013.25 hPa or 29.92 inHg; operationally, crews often refer to setting standard and then use flight levels. Above the transition altitude, aircraft use this common pressure reference so vertical separation is consistent. It is not the aircraft’s exact true altitude above mean sea level, and crews must change to the local QNH when descending through the applicable transition level.","QNE 是高度表設定標準氣壓 1013.25 hPa／29.92 inHg 後所得的高度指示；實務上機組會說設定 standard，並以飛航空層表示。通過轉換高度後使用共同壓力基準，能維持一致垂直隔離。它不是飛機相對平均海平面的精確真高度，下降通過適用轉換高度層時必須改設當地 QNH。","ICAO/FAA altimetry conventions"],"What is a go-around and why is it a sign of good judgment?":["A go-around discontinues an approach or landing and transitions the aircraft to a safe climb so the crew can reconfigure, reassess, attempt another approach, or divert. It is appropriate for an unstable approach, runway conflict, windshear, loss of visual reference, spacing problem, or any condition that makes landing unsafe. Good judgment means recognizing the reduced margin early and acting promptly; continuing an unsafe approach to avoid inconvenience is the poor decision.","重飛是中止進場或落地並轉入安全爬升，使機組能重新構型、重新評估、再次進場或備降。進場不穩、跑道衝突、風切、失去目視參考、間隔不足或任何不安全條件，都可能需要重飛。良好判斷是及早看見裕度下降並果斷行動；為避免麻煩而勉強落地才是不良決策。","FAA Go-Arounds Explained; FAA stabilized approach guidance"],"What is the operational purpose of V1?":["V1 is a takeoff decision speed used in certified performance planning. It separates the accelerate-stop and accelerate-go decision framework: for a recognized failure at or before the applicable decision point, a reject may be performed within the calculated stopping performance; after V1, the planned response is normally to continue the takeoff because stopping distance may no longer be assured. Exact reject criteria remain aircraft- and operator-specific, and an aircraft that is clearly incapable of flight is an exceptional case.","V1 是經認證起飛性能規畫中的決定速度，用來區分加速停止與加速繼續的決策架構。在適用決策點以前辨識到符合標準的故障時，可依計算性能中止；通過 V1 後通常應繼續起飛，因為已不能保證在剩餘距離內安全停止。實際中止標準仍依機型與公司程序而定；飛機明顯無法飛行則屬例外。","FAA transport-category takeoff performance concepts"]},"aviationCN":{"什麼是 RVSM？":["RVSM 是縮減垂直隔離標準。一般在 FL290 至 FL410（含）之間，符合核准要求的航空器可使用 1,000 ft 垂直隔離，而非原先的 2,000 ft。它要求核准設備與程序、精確高度保持、交互檢查及設備異常通報，因小幅高度偏差也可能快速侵蝕與其他航空器的隔離裕度。","Reduced Vertical Separation Minimum allows approved aircraft to use 1,000 ft vertical separation generally from FL290 through FL410 inclusive, with strict equipment, procedure, and altitude-keeping requirements.","FAA AIM, RVSM Operations"],"什麼是 QNE？通常在什麼時候使用？":["QNE 是高度表設定標準氣壓 1013.25 hPa／29.92 inHg 後所得的高度指示；實務上機組會說設定 standard，並以飛航空層表示。通過轉換高度後使用共同壓力基準，以維持一致垂直隔離。它不是相對平均海平面的精確真高度；下降通過適用轉換高度層時，必須改設當地 QNH。","QNE is the altitude indication with standard pressure set. Above the transition altitude, crews use the common standard-pressure reference and flight levels.","ICAO/FAA altimetry conventions"],"請說明起飛階段的 V1、Vr 與 V2。":["V1 是起飛決定速度，連結加速停止與加速繼續性能；通過 V1 後通常繼續起飛，因剩餘跑道不一定足以安全停止。Vr 是開始抬機頭的速度，不代表已離地。V2 是起飛安全速度，用於滿足起飛後尤其單發失效時的規定爬升性能。三者都是經性能計算得到的參考，不能簡化成固定速度或只靠背誦。","V1 is the takeoff decision speed, Vr is the speed to initiate rotation, and V2 is the takeoff safety speed used to provide required climb performance, especially with one engine inoperative.","FAA takeoff performance concepts"],"什麼是重飛？為什麼它代表良好的判斷？":["重飛是中止進場或落地並轉入安全爬升，使機組能重新構型、重新評估、再次進場或備降。進場不穩、跑道衝突、風切、失去目視參考、間隔不足或其他不安全條件，都可能需要重飛。良好判斷是及早看見安全裕度下降並果斷行動；為避免麻煩而勉強落地才是不良決策。","A go-around safely discontinues the approach or landing. It is a normal risk-control action when the landing cannot be continued safely.","FAA Go-Arounds Explained"]},"advanced":[{"topic":"Relative Velocity","en_q":"An aircraft must maintain a due-north ground track. Its true airspeed is 150 kt and the wind blows 40 kt toward the east. Approximately what heading correction and ground speed are required?","cn_q":"一架飛機必須維持正北地面航跡。真空速為 150 kt，風向東吹 40 kt。所需修正航向與地速約為多少？","choices":["15.5° west; 145 kt","15.5° east; 145 kt","15.5° west; 150 kt","23.0° west; 110 kt"],"correct":0,"en_s":"To cancel the 40 kt eastward wind, the aircraft needs a 40 kt westward airspeed component. The wind-correction angle is arcsin(40/150)=15.5° west of north. The remaining northward component is √(150²−40²)=144.6 kt, so ground speed is about 145 kt. Common mistake: using arctan(40/150) without resolving the airspeed triangle.","cn_s":"要抵消向東 40 kt 的風，飛機空速必須有向西 40 kt 分量。風修正角為 arcsin(40/150)=15.5°，因此航向應在正北以西 15.5°。剩餘北向分量為 √(150²−40²)=144.6 kt，地速約 145 kt。常見錯誤是沒有先建立速度三角形。","short":"15.5° west; 145 kt"},{"topic":"Descent Planning","en_q":"At a ground speed of 120 kt, what vertical speed approximately maintains a 3° descent path?","cn_q":"地速 120 kt 時，要維持約 3° 下降路徑，垂直速度約多少？","choices":["320 ft/min","480 ft/min","640 ft/min","900 ft/min"],"correct":2,"en_s":"Ground speed 120 kt equals 2 NM/min. A 3° path descends about 318 ft per NM, so vertical speed ≈2×318=636 ft/min, rounded to 640 ft/min. The common cockpit approximation is GS×5, which gives 600 ft/min; the trigonometric value is closer to 640.","cn_s":"120 kt 等於每分鐘 2 NM。3° 路徑每 1 NM 約下降 318 ft，因此垂直速度約 2×318=636 ft/min，取 640 ft/min。常用心算 GS×5 得 600 ft/min，是近似值；精確三角值較接近 640。","short":"640 ft/min"},{"topic":"Kinematics","en_q":"A vehicle accelerates uniformly from 10 m/s to 30 m/s over 200 m. What is its acceleration?","cn_q":"一物體由 10 m/s 均勻加速至 30 m/s，期間位移 200 m。加速度是多少？","choices":["1 m/s²","2 m/s²","4 m/s²","5 m/s²"],"correct":1,"en_s":"Use v²=u²+2as because time is not given. Thus a=(30²−10²)/(2×200)=800/400=2 m/s². Common mistake: dividing the velocity change by distance, which does not produce acceleration units.","cn_s":"因題目沒有時間，使用 v²=u²+2as。a=(30²−10²)/(2×200)=800/400=2 m/s²。常見錯誤是直接用速度差除以距離，所得單位並不是加速度。","short":"2 m/s²"},{"topic":"Stopping Distance","en_q":"A car travels at 25 m/s. The driver reacts for 0.8 s, then brakes with a constant deceleration of 5 m/s². What is the total stopping distance?","cn_q":"汽車速度 25 m/s，駕駛反應時間 0.8 s，之後以 5 m/s² 等減速度煞停。總停止距離是多少？","choices":["62.5 m","72.5 m","82.5 m","102.5 m"],"correct":2,"en_s":"Reaction distance is vt=25×0.8=20 m. Braking distance follows 0=v²−2ad, so d=25²/(2×5)=62.5 m. Total stopping distance=20+62.5=82.5 m. Common mistake: calculating braking distance but forgetting reaction distance.","cn_s":"反應距離=vt=25×0.8=20 m。煞車距離由 0=v²−2ad 得 d=25²/(2×5)=62.5 m。總停止距離=20+62.5=82.5 m。常見錯誤是只算煞車距離，漏掉反應距離。","short":"82.5 m"},{"topic":"Power and Efficiency","en_q":"A 1,200 kg load is lifted 300 m in 60 s. If the system is 75% efficient, what input power is required? Use g=9.8 m/s².","cn_q":"將 1,200 kg 負載在 60 s 內提升 300 m。若系統效率為 75%，所需輸入功率是多少？取 g=9.8 m/s²。","choices":["44.1 kW","58.8 kW","78.4 kW","98.0 kW"],"correct":2,"en_s":"Useful power=mgh/t=(1200×9.8×300)/60=58.8 kW. Efficiency=useful/input, so input power=58.8/0.75=78.4 kW. Common mistake: multiplying by efficiency instead of dividing, which would make input power smaller than useful power.","cn_s":"有效功率=mgh/t=(1200×9.8×300)/60=58.8 kW。效率=有效輸出/輸入，因此輸入功率=58.8/0.75=78.4 kW。常見錯誤是乘上效率，導致輸入功率反而小於輸出。","short":"78.4 kW"},{"topic":"Work and Energy","en_q":"A 15 kg crate is moved 6 m up a 20° incline at constant speed. Friction is 30 N. How much work must the applied force do? Use g=9.8 m/s².","cn_q":"15 kg 箱子以等速沿 20° 斜面向上移動 6 m，摩擦力為 30 N。外力需做多少功？取 g=9.8 m/s²。","choices":["302 J","360 J","482 J","662 J"],"correct":2,"en_s":"At constant speed, applied work supplies both gravitational potential energy and friction loss. Height=6sin20°=2.052 m, so mgh≈15×9.8×2.052=301.6 J. Friction work=30×6=180 J. Total≈481.6 J, or 482 J.","cn_s":"等速表示動能不變，外力作功用於增加重力位能並克服摩擦。高度=6sin20°=2.052 m，mgh≈301.6 J；摩擦耗功=30×6=180 J。合計約 481.6 J，取 482 J。","short":"482 J"},{"topic":"Impulse and Momentum","en_q":"A 0.15 kg ball changes velocity from 20 m/s left to 30 m/s right in 0.025 s. What is the magnitude of the average force?","cn_q":"0.15 kg 球的速度由向左 20 m/s 變成向右 30 m/s，作用時間 0.025 s。平均力大小是多少？","choices":["60 N","180 N","300 N","450 N"],"correct":2,"en_s":"Choose right as positive: vi=−20 m/s and vf=+30 m/s. Impulse Δp=m(vf−vi)=0.15×50=7.5 N·s. Average force=7.5/0.025=300 N. Common mistake: subtracting speed magnitudes as 30−20 instead of accounting for the reversal of direction.","cn_s":"取向右為正，vi=−20 m/s、vf=+30 m/s。衝量 Δp=m(vf−vi)=0.15×50=7.5 N·s，平均力=7.5/0.025=300 N。常見錯誤是忽略方向反轉，只算 30−20。","short":"300 N"},{"topic":"Torque","en_q":"A 400 N load acts 0.30 m from a pivot. What perpendicular force applied 1.20 m from the pivot balances it?","cn_q":"400 N 負載作用在距支點 0.30 m 處。若在距支點 1.20 m 處垂直施力，需多大力才能平衡？","choices":["75 N","100 N","133 N","160 N"],"correct":1,"en_s":"For rotational equilibrium, clockwise torque equals counterclockwise torque: 400×0.30=F×1.20. Therefore F=100 N. Common mistake: equating forces rather than torques.","cn_s":"轉動平衡需順時針力矩等於逆時針力矩：400×0.30=F×1.20，因此 F=100 N。常見錯誤是直接令兩側力量相等，而忽略力臂。","short":"100 N"},{"topic":"Angular Momentum","en_q":"A rotating system has moment of inertia 4.0 kg·m² and angular speed 3.0 rad/s. If its moment of inertia decreases to 1.6 kg·m² with negligible external torque, what is the new angular speed?","cn_q":"旋轉系統的轉動慣量為 4.0 kg·m²、角速度 3.0 rad/s。若外力矩可忽略，轉動慣量降至 1.6 kg·m²，新角速度是多少？","choices":["4.8 rad/s","6.0 rad/s","7.5 rad/s","12.0 rad/s"],"correct":2,"en_s":"Conserve angular momentum: I1ω1=I2ω2. Thus ω2=(4.0×3.0)/1.6=7.5 rad/s. Rotational kinetic energy need not remain constant because internal work can change it.","cn_s":"角動量守恆：I₁ω₁=I₂ω₂，因此 ω₂=(4.0×3.0)/1.6=7.5 rad/s。轉動動能不一定守恆，因系統內部作功可能改變動能。","short":"7.5 rad/s"},{"topic":"Coordinated Turn","en_q":"An aircraft makes a coordinated level turn at 60 m/s with a radius of 400 m. Using g=10 m/s², what bank angle is required?","cn_q":"飛機以 60 m/s、半徑 400 m 做協調水平轉彎。取 g=10 m/s²，所需坡度角約多少？","choices":["30°","37°","42°","60°"],"correct":2,"en_s":"For a coordinated level turn, tanφ=v²/(rg)=3600/(400×10)=0.9. Therefore φ=arctan(0.9)≈42°. Common mistake: using sinφ or forgetting to square the speed.","cn_s":"協調水平轉彎滿足 tanφ=v²/(rg)=3600/(400×10)=0.9，因此 φ=arctan(0.9)≈42°。常見錯誤是誤用 sinφ，或忘記速度要平方。","short":"42°"},{"topic":"Load Factor","en_q":"An aircraft stalls at 50 kt in level unaccelerated flight. Approximately what is its stall speed in a coordinated 45° level turn, assuming the same configuration and weight?","cn_q":"飛機在平直未加速飛行中失速速度為 50 kt。相同重量與構型下，做 45° 協調水平轉彎時失速速度約多少？","choices":["55 kt","60 kt","71 kt","84 kt"],"correct":1,"en_s":"At 45° bank, load factor n=1/cos45°=1.414. Stall speed varies with √n, so Vs,new=50√1.414≈59.5 kt, about 60 kt. Common mistake: multiplying stall speed directly by the load factor.","cn_s":"45° 坡度時負載因數 n=1/cos45°=1.414。失速速度隨 √n 增加，因此新失速速度=50√1.414≈59.5 kt，約 60 kt。常見錯誤是直接乘上 n。","short":"60 kt"},{"topic":"Hydrostatic Pressure","en_q":"What is the gauge pressure 8 m below the surface of fresh water? Use ρ=1000 kg/m³ and g=9.8 m/s².","cn_q":"淡水水面下 8 m 處的表壓是多少？取 ρ=1000 kg/m³、g=9.8 m/s²。","choices":["7.84 kPa","39.2 kPa","78.4 kPa","178.4 kPa"],"correct":2,"en_s":"Gauge pressure is ρgh=1000×9.8×8=78,400 Pa=78.4 kPa. Atmospheric pressure is excluded because the question asks for gauge pressure.","cn_s":"表壓 P=ρgh=1000×9.8×8=78,400 Pa=78.4 kPa。題目問表壓，因此不需再加大氣壓。","short":"78.4 kPa"},{"topic":"Pascal's Law","en_q":"A hydraulic input piston has area 4 cm² and is pushed with 120 N. The output piston area is 60 cm². Ignoring losses, what output force is produced?","cn_q":"液壓系統輸入活塞面積 4 cm²，施力 120 N；輸出活塞面積 60 cm²。忽略損失，輸出力是多少？","choices":["450 N","900 N","1,800 N","3,600 N"],"correct":2,"en_s":"Equal pressure gives F1/A1=F2/A2. Thus F2=120×(60/4)=1,800 N. The distance moved by the output piston is proportionally smaller; hydraulics multiply force, not energy.","cn_s":"依帕斯卡定律 F₁/A₁=F₂/A₂，因此 F₂=120×(60/4)=1,800 N。輸出活塞位移會按比例變小；液壓放大力量，不會創造能量。","short":"1,800 N"},{"topic":"Continuity Equation","en_q":"Water flows through a 6 cm diameter pipe at 2 m/s and enters a 3 cm diameter section. What is the speed in the narrower section?","cn_q":"水以 2 m/s 流過直徑 6 cm 的管道，之後進入直徑 3 cm 的管段。窄管中的流速是多少？","choices":["4 m/s","6 m/s","8 m/s","12 m/s"],"correct":2,"en_s":"Continuity gives A1v1=A2v2. Area is proportional to diameter squared, so A1/A2=(6/3)²=4. Therefore v2=4×2=8 m/s. Common mistake: using the diameter ratio instead of the area ratio.","cn_s":"連續方程 A₁v₁=A₂v₂。面積與直徑平方成正比，因此 A₁/A₂=(6/3)²=4，v₂=4×2=8 m/s。常見錯誤是只使用直徑比。","short":"8 m/s"},{"topic":"Bernoulli Equation","en_q":"In a horizontal water pipe, speed increases from 4 m/s to 10 m/s. Ignoring losses, by how much does static pressure decrease? Use ρ=1000 kg/m³.","cn_q":"水平水管內流速由 4 m/s 增至 10 m/s。忽略損失，靜壓降低多少？取 ρ=1000 kg/m³。","choices":["18 kPa","32 kPa","42 kPa","58 kPa"],"correct":2,"en_s":"For equal height, p1+½ρv1²=p2+½ρv2². Thus p1−p2=½ρ(v2²−v1²)=500(100−16)=42,000 Pa=42 kPa.","cn_s":"同一高度下，p₁+½ρv₁²=p₂+½ρv₂²。故 p₁−p₂=½ρ(v₂²−v₁²)=500(100−16)=42,000 Pa=42 kPa。","short":"42 kPa"},{"topic":"Buoyancy","en_q":"A 10 kg object of volume 0.015 m³ is fully submerged in fresh water. Using g=9.8 m/s², what is the net force before it accelerates?","cn_q":"10 kg、體積 0.015 m³ 的物體完全浸沒於淡水中。取 g=9.8 m/s²，在開始加速前所受合力是多少？","choices":["49 N upward","49 N downward","98 N upward","147 N downward"],"correct":0,"en_s":"Buoyant force=ρVg=1000×0.015×9.8=147 N upward. Weight=mg=98 N downward. Net force=147−98=49 N upward.","cn_s":"浮力=ρVg=1000×0.015×9.8=147 N 向上，重量=mg=98 N 向下，因此合力=147−98=49 N 向上。","short":"49 N upward"},{"topic":"Ideal Gas","en_q":"A sealed rigid tank contains gas at 100 kPa and 300 K. If it is heated to 360 K, what is the final absolute pressure?","cn_q":"密閉剛性容器中的氣體初始為 100 kPa、300 K。加熱至 360 K 後，最終絕對壓力是多少？","choices":["83.3 kPa","100 kPa","120 kPa","160 kPa"],"correct":2,"en_s":"At constant volume and amount of gas, P/T is constant. P2=100×(360/300)=120 kPa. Temperatures must be in kelvin, not Celsius.","cn_s":"體積與氣體莫耳數固定時，P/T 為常數。P₂=100×(360/300)=120 kPa。溫度必須使用 K，不能直接使用攝氏。","short":"120 kPa"},{"topic":"Calorimetry","en_q":"Two samples of water, 0.20 kg at 80°C and 0.30 kg at 20°C, are mixed with no heat loss. What is the final temperature?","cn_q":"0.20 kg、80°C 的水與 0.30 kg、20°C 的水混合，忽略熱損失。平衡溫度是多少？","choices":["36°C","40°C","44°C","50°C"],"correct":2,"en_s":"Because both samples are water, the specific heat cancels. Tf=(m1T1+m2T2)/(m1+m2)=(0.2×80+0.3×20)/0.5=44°C. The answer must lie between 20°C and 80°C.","cn_s":"兩者都是水，比熱可約去。T=(m₁T₁+m₂T₂)/(m₁+m₂)=(0.2×80+0.3×20)/0.5=44°C。答案必須介於 20°C 與 80°C 之間。","short":"44°C"},{"topic":"DC Circuits","en_q":"A 6 Ω resistor and a 3 Ω resistor are connected in parallel, and that combination is in series with 4 Ω across a 12 V source. What is the total current?","cn_q":"6 Ω 與 3 Ω 電阻並聯後，再與 4 Ω 串聯接到 12 V 電源。總電流是多少？","choices":["1 A","2 A","3 A","4 A"],"correct":1,"en_s":"The parallel equivalent is (6×3)/(6+3)=2 Ω. Total resistance=2+4=6 Ω, so total current=12/6=2 A. Common mistake: adding all three resistances directly.","cn_s":"並聯等效電阻=(6×3)/(6+3)=2 Ω。再與 4 Ω 串聯，總電阻=6 Ω，因此總電流=12/6=2 A。常見錯誤是把三個電阻直接相加。","short":"2 A"},{"topic":"Internal Resistance","en_q":"A battery has emf 12 V and internal resistance 1 Ω. It supplies a 5 Ω load. What is the terminal voltage while current flows?","cn_q":"電池電動勢 12 V、內阻 1 Ω，外接 5 Ω 負載。通電時端電壓是多少？","choices":["2 V","10 V","12 V","14 V"],"correct":1,"en_s":"Total resistance=5+1=6 Ω, so current=12/6=2 A. Terminal voltage across the load is IR=2×5=10 V, also E−Ir=12−2×1=10 V.","cn_s":"總電阻=5+1=6 Ω，電流=12/6=2 A。負載兩端端電壓=IR=2×5=10 V，也可用 E−Ir=12−2×1=10 V。","short":"10 V"},{"topic":"Electrical Energy","en_q":"A 24 V device draws 3 A continuously for 10 minutes. How much electrical energy does it use?","cn_q":"24 V 裝置持續取用 3 A 電流 10 分鐘。消耗多少電能？","choices":["4.32 kJ","7.2 kJ","43.2 kJ","72 kJ"],"correct":2,"en_s":"Power=VI=24×3=72 W. Time=10 min=600 s. Energy=Pt=72×600=43,200 J=43.2 kJ. Common mistake: using 10 as seconds.","cn_s":"功率 P=VI=24×3=72 W。時間 10 min=600 s，能量 E=Pt=72×600=43,200 J=43.2 kJ。常見錯誤是沒有把分鐘換成秒。","short":"43.2 kJ"},{"topic":"Capacitor Energy","en_q":"A 200 μF capacitor is charged to 50 V. How much energy is stored?","cn_q":"200 μF 電容充電至 50 V。儲存能量是多少？","choices":["0.025 J","0.25 J","2.5 J","25 J"],"correct":1,"en_s":"Use U=½CV². Convert 200 μF=200×10⁻⁶ F. U=0.5×200×10⁻⁶×50²=0.25 J. Common mistake: failing to convert microfarads to farads.","cn_s":"使用 U=½CV²。先換算 200 μF=200×10⁻⁶ F，U=0.5×200×10⁻⁶×50²=0.25 J。常見錯誤是漏掉 μF 到 F 的換算。","short":"0.25 J"},{"topic":"Wave Speed","en_q":"A wave has frequency 500 Hz and wavelength 0.68 m. What is its speed?","cn_q":"波的頻率為 500 Hz、波長 0.68 m。波速是多少？","choices":["170 m/s","250 m/s","340 m/s","735 m/s"],"correct":2,"en_s":"Wave speed v=fλ=500×0.68=340 m/s. Frequency is cycles per second and wavelength is metres per cycle, so the units combine to m/s.","cn_s":"波速 v=fλ=500×0.68=340 m/s。Hz 是每秒週期數，乘上每週期的公尺數後得到 m/s。","short":"340 m/s"},{"topic":"Beat Frequency","en_q":"Two tones have frequencies 440 Hz and 444 Hz. What beat frequency is heard?","cn_q":"兩個聲音頻率分別為 440 Hz 與 444 Hz。拍頻是多少？","choices":["2 Hz","4 Hz","442 Hz","884 Hz"],"correct":1,"en_s":"Beat frequency is the absolute difference: |444−440|=4 Hz. It is not the average frequency.","cn_s":"拍頻等於兩頻率差的絕對值：|444−440|=4 Hz，不是兩頻率的平均。","short":"4 Hz"},{"topic":"Thin Lens","en_q":"A converging lens has focal length 20 cm. An object is placed 60 cm from the lens. Where is the real image formed?","cn_q":"會聚透鏡焦距 20 cm，物體放在距透鏡 60 cm 處。實像形成在何處？","choices":["15 cm","20 cm","30 cm","60 cm"],"correct":2,"en_s":"Use 1/f=1/do+1/di. Thus 1/di=1/20−1/60=2/60=1/30, so di=30 cm on the opposite side. Magnification=−di/do=−0.5, so the image is inverted and half size.","cn_s":"使用 1/f=1/dₒ+1/dᵢ。1/dᵢ=1/20−1/60=1/30，因此像距為 30 cm，位於另一側。放大率=−30/60=−0.5，為倒立縮小實像。","short":"30 cm"},{"topic":"Concave Mirror","en_q":"A concave mirror has focal length 15 cm. An object is placed 30 cm in front of it. Which description is correct?","cn_q":"凹面鏡焦距 15 cm，物體放在鏡前 30 cm。下列何者正確？","choices":["Image at 10 cm, upright and smaller","Image at 15 cm, no magnification","Image at 30 cm, inverted and same size","Virtual image at 30 cm, upright"],"correct":2,"en_s":"The object is at 2f. From 1/f=1/do+1/di, di=30 cm. Magnification m=−di/do=−1, so the image is real, inverted, and the same size.","cn_s":"物體位於 2f。由 1/f=1/dₒ+1/dᵢ 得 dᵢ=30 cm，放大率 m=−dᵢ/dₒ=−1，因此為倒立、等大實像。","short":"Image at 30 cm, inverted and same size"},{"topic":"Systems of Equations","en_q":"A theater sells 50 tickets. Adult tickets cost $12 and child tickets cost $7. Total revenue is $480. How many adult tickets were sold?","cn_q":"劇院共售出 50 張票，成人票 $12、兒童票 $7，總收入 $480。成人票售出幾張？","choices":["24","26","28","30"],"correct":1,"en_s":"Let a be adult tickets and c be child tickets. a+c=50 and 12a+7c=480. Substitute c=50−a: 12a+350−7a=480, so 5a=130 and a=26.","cn_s":"設成人票 a 張、兒童票 c 張。a+c=50、12a+7c=480。代入 c=50−a：12a+350−7a=480，5a=130，因此 a=26。","short":"26"},{"topic":"Mixture","en_q":"How many litres of a 30% solution should be mixed with a 10% solution to make 20 L of an 18% solution?","cn_q":"要以 30% 與 10% 溶液混合成 20 L、濃度 18% 的溶液，需要多少公升 30% 溶液？","choices":["6 L","8 L","10 L","12 L"],"correct":1,"en_s":"Let x litres be 30% solution. Solute balance: 0.30x+0.10(20−x)=0.18×20. This gives 0.20x+2=3.6, so x=8 L. Volume alone is not enough; conserve the amount of solute.","cn_s":"設 30% 溶液為 x L。溶質守恆：0.30x+0.10(20−x)=0.18×20，得 0.20x+2=3.6，因此 x=8 L。關鍵是守恆溶質量，而非只看體積。","short":"8 L"},{"topic":"Quadratic Functions","en_q":"The height of an object is h(t)=−5t²+20t+2 metres. What is its maximum height?","cn_q":"物體高度 h(t)=−5t²+20t+2（公尺）。最大高度是多少？","choices":["20 m","22 m","25 m","42 m"],"correct":1,"en_s":"The parabola opens downward. Vertex time t=−b/(2a)=−20/(−10)=2 s. h(2)=−5(4)+40+2=22 m. Common mistake: using t=−a/(2b).","cn_s":"拋物線開口向下，頂點時間 t=−b/(2a)=−20/(−10)=2 s。h(2)=−5×4+40+2=22 m。常見錯誤是頂點公式代錯係數。","short":"22 m"},{"topic":"Vector Components","en_q":"A force of 80 N acts at 35° above the horizontal. What is its vertical component?","cn_q":"80 N 力與水平線夾角 35°。垂直分量是多少？","choices":["45.9 N","65.5 N","80.0 N","97.7 N"],"correct":0,"en_s":"Vertical component Fy=Fsinθ=80sin35°≈45.9 N. The horizontal component would use cosine. Common mistake: swapping sine and cosine without checking which side is opposite the angle.","cn_s":"垂直分量 Fᵧ=Fsinθ=80sin35°≈45.9 N；水平分量才使用 cos。常見錯誤是沒有看角度基準就交換 sin 與 cos。","short":"45.9 N"},{"topic":"Probability","en_q":"A bag contains 5 red and 3 blue balls. Two balls are drawn without replacement. What is the probability that both are red?","cn_q":"袋中有 5 顆紅球、3 顆藍球，不放回抽兩顆。兩顆皆為紅球的機率是多少？","choices":["5/16","5/14","10/21","25/64"],"correct":1,"en_s":"P(red then red)=(5/8)(4/7)=20/56=5/14. Without replacement, the second denominator is 7 and only 4 red balls remain.","cn_s":"兩次皆紅的機率=(5/8)(4/7)=20/56=5/14。不放回抽取時，第二次總數變 7，紅球只剩 4。","short":"5/14"},{"topic":"Bayes Theorem","en_q":"A condition affects 2% of people. A test detects it 90% of the time and has a 5% false-positive rate. If a person tests positive, approximately what is the probability they actually have the condition?","cn_q":"某狀況盛行率 2%，檢測靈敏度 90%，偽陽性率 5%。若檢測為陽性，實際有此狀況的機率約多少？","choices":["15.5%","26.9%","64.3%","90.0%"],"correct":1,"en_s":"True-positive probability=0.02×0.90=0.018. False-positive probability=0.98×0.05=0.049. Therefore P(condition|positive)=0.018/(0.018+0.049)=0.2687≈26.9%. Common mistake: answering 90% and ignoring the low base rate.","cn_s":"真陽性機率=0.02×0.90=0.018，偽陽性機率=0.98×0.05=0.049。因此陽性後實際有狀況的機率=0.018/(0.018+0.049)=0.2687≈26.9%。常見錯誤是直接回答靈敏度 90%，忽略基準率。","short":"26.9%"},{"topic":"Arithmetic Sequence","en_q":"An arithmetic sequence has first term 12 and common difference 5. What is the sum of the first 20 terms?","cn_q":"等差數列首項 12、公差 5。前 20 項和是多少？","choices":["1,070","1,140","1,190","2,140"],"correct":2,"en_s":"The 20th term is a20=12+19×5=107. Sum S20=20(12+107)/2=10×119=1,190.","cn_s":"第 20 項 a₂₀=12+19×5=107。前 20 項和 S₂₀=20(12+107)/2=1,190。","short":"1,190"},{"topic":"Exponential Decay","en_q":"A quantity starts at 1,600 and halves every 3 hours. What remains after 12 hours?","cn_q":"某量初始為 1,600，每 3 小時減半。12 小時後剩多少？","choices":["50","100","200","400"],"correct":1,"en_s":"Twelve hours is four half-lives. Remaining quantity=1600(1/2)^4=1600/16=100.","cn_s":"12 小時等於 4 個半衰期。剩餘量=1600(1/2)^4=1600/16=100。","short":"100"},{"topic":"Weighted Average","en_q":"A final score is based on three components: 20% at 80, 30% at 70, and 50% at 90. What is the weighted score?","cn_q":"總成績由三部分組成：20% 得 80 分、30% 得 70 分、50% 得 90 分。加權成績是多少？","choices":["80","81","82","84"],"correct":2,"en_s":"Weighted score=0.20×80+0.30×70+0.50×90=16+21+45=82. The weights sum to 1.00, so no further division is needed.","cn_s":"加權成績=0.20×80+0.30×70+0.50×90=16+21+45=82。權重總和已為 1，不需再除一次。","short":"82"},{"topic":"Density","en_q":"A metal sample has mass 2.7 kg and volume 1,000 cm³. What is its density in kg/m³?","cn_q":"金屬樣品質量 2.7 kg、體積 1,000 cm³。密度是多少 kg/m³？","choices":["270 kg/m³","1,000 kg/m³","2,700 kg/m³","27,000 kg/m³"],"correct":2,"en_s":"Convert 1,000 cm³ to 0.001 m³. Density=m/V=2.7/0.001=2,700 kg/m³. Common mistake: treating 1,000 cm³ as 1 m³.","cn_s":"1,000 cm³=0.001 m³。密度 ρ=m/V=2.7/0.001=2,700 kg/m³。常見錯誤是把 1,000 cm³ 誤當成 1 m³。","short":"2,700 kg/m³"},{"topic":"Fuel Planning","en_q":"A flight is expected to burn 2,400 kg of fuel. If a 15% planning allowance is added, how much fuel does this portion of the plan require?","cn_q":"某航班預計消耗 2,400 kg 燃油，若加計 15% 規畫裕度，此部分共需多少燃油？","choices":["2,520 kg","2,640 kg","2,760 kg","3,000 kg"],"correct":2,"en_s":"Allowance=0.15×2400=360 kg. Required fuel=2400+360=2760 kg, or 2400×1.15. Common mistake: calculating 15% but forgetting to add the original amount.","cn_s":"裕度=0.15×2400=360 kg，總需求=2400+360=2760 kg，也可直接算 2400×1.15。常見錯誤是只算出 360 kg 而未加回原需求。","short":"2,760 kg"},{"topic":"Descent Planning","en_q":"An aircraft must lose 27,000 ft at 1,500 ft/min while maintaining 240 kt ground speed. Ignoring level segments, how far from the target should descent begin?","cn_q":"飛機需以 1,500 ft/min 下降 27,000 ft，地速維持 240 kt。忽略平飛段，應在距目標多少海里處開始下降？","choices":["54 NM","60 NM","72 NM","90 NM"],"correct":2,"en_s":"Time required=27,000/1,500=18 min. Ground speed 240 kt=4 NM/min. Distance=18×4=72 NM. Common mistake: mixing hours and minutes.","cn_s":"所需時間=27,000/1,500=18 min。240 kt=每分鐘 4 NM，因此距離=18×4=72 NM。常見錯誤是混用小時與分鐘。","short":"72 NM"},{"topic":"Mechanical Advantage","en_q":"An ideal block-and-tackle has six rope segments supporting a 900 N load. What pull force is required?","cn_q":"理想滑輪組有 6 段繩索支撐 900 N 負載。所需拉力是多少？","choices":["100 N","150 N","300 N","5,400 N"],"correct":1,"en_s":"Ideal mechanical advantage equals the number of supporting rope segments: IMA=6. Required pull=900/6=150 N. In return, six times as much rope must be pulled for a given lift distance.","cn_s":"理想機械利益等於支撐繩段數 IMA=6，因此拉力=900/6=150 N。代價是負載上升一定距離時，需拉動六倍長度的繩子。","short":"150 N"},{"topic":"Standard Score","en_q":"A test has mean 70 and standard deviation 8. What is the z-score of a result of 86?","cn_q":"某測驗平均 70、標準差 8。分數 86 的 z 分數是多少？","choices":["1.0","1.5","2.0","2.5"],"correct":2,"en_s":"z=(x−μ)/σ=(86−70)/8=16/8=2.0. The score is two standard deviations above the mean.","cn_s":"z=(x−μ)/σ=(86−70)/8=16/8=2.0，表示此分數高於平均數兩個標準差。","short":"2.0"}]};
+  const norm=v=>String(v??'').normalize('NFKC').toLowerCase().replace(/[【】「」『』"'`.,，。！？!?：:；;（）()\[\]{}<>\-–—_\/\\s]/g,'');
+  let interviewENFixed=0,interviewCNFixed=0,aviationFixed=0,aviationCNFixed=0,duplicatesRemoved=0,invalidRemoved=0,advancedAddedEN=0,advancedAddedCN=0;
+
+  for(const q of bank){
+    if(!q||!q.q)continue;
+    if(q.type==='pilot'&&DATA.interviewEN[q.q]){
+      const [en,zh]=DATA.interviewEN[q.q];q.s=en;q.cn='【中文參考答案】\n'+zh;q.tags=[...new Set([...(q.tags||[]),'v146-reviewed','answer-aligned'])];interviewENFixed++;
+    }
+    if(q.type==='interview_cn'&&DATA.interviewCN[q.q]){
+      const [zh,en]=DATA.interviewCN[q.q];q.s=zh;q.cn='【English Support】\n'+en;q.tags=[...new Set([...(q.tags||[]),'v146-reviewed','answer-aligned'])];interviewCNFixed++;
+    }
+    if(q.type==='aviation'&&DATA.aviation[q.q]){
+      const [en,zh,source]=DATA.aviation[q.q];q.s=en;q.cn='【中文題目】'+q.q+'\n【中文詳解】'+zh;q.source=source;q.tags=[...new Set([...(q.tags||[]),'v146-verified','FAA-reviewed'])];aviationFixed++;
+    }
+    if(q.type==='aviation_cn'&&DATA.aviationCN[q.q]){
+      const [zh,en,source]=DATA.aviationCN[q.q];q.s=zh;q.cn='【English Support】\n'+en;q.source=source;q.tags=[...new Set([...(q.tags||[]),'v146-verified','FAA-reviewed'])];aviationCNFixed++;
+    }
+  }
+
+  const existing=new Set(bank.map(q=>(q?.type||'')+'|'+norm(q?.q||'')));
+  for(const item of DATA.advanced){
+    const common={difficulty:'advanced',topic:item.topic,defaultPrep:0,defaultAns:180,prep:0,ans:180,diagram:''};
+    const en={...common,type:'math_en',cat:'MATH&PHYSICS EN',q:item.en_q,hint:'Advanced: identify the governing principle, keep units consistent, solve step by step, and check reasonableness.',tags:[item.topic,'advanced','v146','verified'],choices:item.choices,correct:item.correct,s:item.en_s,short:item.short,cn:'【中文題目】'+item.cn_q+'\n【中文詳解】'+item.cn_s};
+    const cn={...common,type:'math_cn',cat:'MATH&PHYSICS CN',q:item.cn_q,hint:'進階題：先判斷核心原理、統一單位、分步計算，再檢查答案是否合理。',tags:[item.topic,'advanced','v146','verified'],choices:item.choices,correct:item.correct,s:'【解題步驟】\n'+item.cn_s,short:item.short,cn:'【English Support】\n'+item.en_s};
+    const ek=en.type+'|'+norm(en.q),ck=cn.type+'|'+norm(cn.q);
+    if(!existing.has(ek)){bank.push(en);existing.add(ek);advancedAddedEN++;}
+    if(!existing.has(ck)){bank.push(cn);existing.add(ck);advancedAddedCN++;}
+  }
+
+  // Remove exact and punctuation-only duplicate questions, preserving the earliest reviewed item.
+  const seen=new Set();
+  for(let i=0;i<bank.length;i++){
+    const q=bank[i];if(!q)continue;
+    const key=(q.type||'')+'|'+norm(q.q||'');
+    if(!key.split('|')[1]||seen.has(key)){bank.splice(i,1);i--;duplicatesRemoved++;continue;}
+    seen.add(key);
+  }
+
+  // Final structural QA.
+  for(let i=bank.length-1;i>=0;i--){
+    const q=bank[i];
+    const choices=q?.choices;
+    const invalid=!q||!String(q.q||'').trim()||!String(q.s||q.cn||'').trim()||
+      (choices&&(!Array.isArray(choices)||choices.length<2||!Number.isInteger(q.correct)||q.correct<0||q.correct>=choices.length||new Set(choices.map(x=>norm(x))).size!==choices.length));
+    if(invalid){bank.splice(i,1);invalidRemoved++;}
+  }
+
+  document.title='TRIUMPH Pilot Trainer '+VERSION;
+  const logo=document.querySelector('.logo');
+  if(logo)logo.innerHTML='TRIUMPH Pilot Trainer '+VERSION+'<small>PILOT SELECTION TRAINER</small>';
+  const hint=document.getElementById('hint');
+  if(hint)hint.textContent='v146：Daily Test 右上角新增可切換計時時鐘；本階段修正面試與航空題答錯置，新增 '+advancedAddedEN+' 組中英 Advanced Math 題。';
+  try{if(typeof refreshPool==='function')refreshPool();if(typeof renderTabs==='function')renderTabs();if(typeof updateStats==='function')updateStats();}catch(e){}
+  window.TRIUMPH_V146_QA={version:VERSION,interviewENFixed,interviewCNFixed,aviationFixed,aviationCNFixed,duplicatesRemoved,invalidRemoved,advancedAddedEN,advancedAddedCN,total:bank.length,dailyTimerToggle:true,dailyTimerSyncedToGlobal:true};
+})();
+</script>
+
+<script id="v146-final-advanced-balance-and-dedup">
+(()=>{
+ const DATA={"en":[{"type":"math_en","cat":"MATH&PHYSICS EN","difficulty":"advanced","topic":"Hydrostatic Pressure","q":"A tank is open to the atmosphere. What is the absolute pressure 6 m below the surface of fresh water if atmospheric pressure is 101 kPa? Use ρ=1000 kg/m³ and g=9.8 m/s².","hint":"Advanced: distinguish gauge pressure from absolute pressure, then keep units consistent.","tags":["Hydrostatic Pressure","advanced","v146","verified"],"choices":["58.8 kPa","101.0 kPa","159.8 kPa","689.0 kPa"],"correct":2,"s":"Gauge pressure at 6 m is ρgh=1000×9.8×6=58.8 kPa. Absolute pressure equals atmospheric plus gauge pressure: 101+58.8=159.8 kPa. Common mistake: reporting only 58.8 kPa even though the question asks for absolute pressure.","short":"159.8 kPa","cn":"【中文題目】水槽與大氣相通。若大氣壓為 101 kPa，淡水水面下 6 m 處的絕對壓力是多少？取 ρ=1000 kg/m³、g=9.8 m/s²。\n【中文詳解】6 m 深處的表壓為 ρgh=58.8 kPa。絕對壓力=大氣壓+表壓=101+58.8=159.8 kPa。常見錯誤是題目問絕對壓力，卻只回答表壓。","defaultPrep":0,"defaultAns":180,"prep":0,"ans":180,"diagram":""},{"type":"math_en","cat":"MATH&PHYSICS EN","difficulty":"advanced","topic":"Electrical Energy","q":"A 1.5 kW heater operates for 40 minutes. How much electrical energy does it consume in kilowatt-hours?","hint":"Advanced: convert minutes to hours before multiplying power by time.","tags":["Electrical Energy","advanced","v146","verified"],"choices":["0.6 kWh","1.0 kWh","40 kWh","60 kWh"],"correct":1,"s":"Convert 40 minutes to 2/3 hour. Energy=Pt=1.5×(2/3)=1.0 kWh. Common mistake: multiplying 1.5 by 40 without converting minutes to hours.","short":"1.0 kWh","cn":"【中文題目】1.5 kW 電熱器運轉 40 分鐘，消耗多少度電（kWh）？\n【中文詳解】40 分鐘=2/3 小時。E=Pt=1.5×2/3=1.0 kWh，也就是 1 度電。常見錯誤是把分鐘直接代入小時單位。","defaultPrep":0,"defaultAns":180,"prep":0,"ans":180,"diagram":""},{"type":"math_en","cat":"MATH&PHYSICS EN","difficulty":"advanced","topic":"Capacitance","q":"Two capacitors of 100 μF and 200 μF are connected in series. What is their equivalent capacitance?","hint":"Advanced: for capacitors in series, reciprocals add.","tags":["Capacitance","advanced","v146","verified"],"choices":["50.0 μF","66.7 μF","150 μF","300 μF"],"correct":1,"s":"For series capacitors, 1/Ceq=1/100+1/200=3/200 μF⁻¹. Therefore Ceq=200/3≈66.7 μF. The equivalent capacitance must be smaller than the smallest individual capacitor.","short":"66.7 μF","cn":"【中文題目】100 μF 與 200 μF 電容串聯，等效電容是多少？\n【中文詳解】串聯電容倒數相加：1/Ceq=1/100+1/200=3/200，因此 Ceq=200/3≈66.7 μF。串聯等效電容必小於最小的單顆電容。","defaultPrep":0,"defaultAns":180,"prep":0,"ans":180,"diagram":""},{"type":"math_en","cat":"MATH&PHYSICS EN","difficulty":"advanced","topic":"Quadratic Equations","q":"For the equation 3x²−12x+7=0, what is the discriminant and what does it imply about the roots?","hint":"Advanced: use Δ=b²−4ac and interpret its sign.","tags":["Quadratic Equations","advanced","v146","verified"],"choices":["Δ=60; two distinct real roots","Δ=60; one repeated root","Δ=144; two distinct real roots","Δ=−60; no real roots"],"correct":0,"s":"Here a=3, b=−12, and c=7. The discriminant is Δ=b²−4ac=144−84=60. Because Δ>0, the equation has two distinct real roots. Common mistake: forgetting that b is −12 before squaring.","short":"Δ=60; two distinct real roots","cn":"【中文題目】方程式 3x²−12x+7=0 的判別式是多少？根的情況為何？\n【中文詳解】a=3、b=−12、c=7。Δ=b²−4ac=144−84=60。因 Δ>0，所以有兩個相異實根。常見錯誤是代入 b 時漏掉負號。","defaultPrep":0,"defaultAns":180,"prep":0,"ans":180,"diagram":""},{"type":"math_en","cat":"MATH&PHYSICS EN","difficulty":"advanced","topic":"Probability","q":"A bag contains 5 red and 3 blue balls. Two balls are drawn without replacement. What is the probability of drawing at least one blue ball?","hint":"Advanced: use the complement of drawing two red balls.","tags":["Probability","advanced","v146","verified"],"choices":["5/14","9/14","3/4","11/14"],"correct":1,"s":"Use the complement. P(two red)=(5/8)(4/7)=5/14. Therefore P(at least one blue)=1−5/14=9/14. Common mistake: adding the probabilities of blue on each draw without accounting for overlap.","short":"9/14","cn":"【中文題目】袋中有 5 顆紅球與 3 顆藍球，不放回抽兩顆。至少抽到一顆藍球的機率是多少？\n【中文詳解】使用補事件。兩顆皆紅的機率=(5/8)(4/7)=5/14，所以至少一顆藍球=1−5/14=9/14。","defaultPrep":0,"defaultAns":180,"prep":0,"ans":180,"diagram":""}],"cn":[{"type":"math_cn","cat":"MATH&PHYSICS CN","difficulty":"advanced","topic":"流體壓力","q":"水槽與大氣相通。若大氣壓為 101 kPa，淡水水面下 6 m 處的絕對壓力是多少？取 ρ=1000 kg/m³、g=9.8 m/s²。","hint":"進階題：先區分表壓與絕對壓力，再統一單位。","tags":["Hydrostatic Pressure","advanced","v146","verified"],"choices":["58.8 kPa","101.0 kPa","159.8 kPa","689.0 kPa"],"correct":2,"s":"【解題步驟】\n6 m 深處表壓=ρgh=1000×9.8×6=58.8 kPa。絕對壓力=大氣壓+表壓=101+58.8=159.8 kPa。常見錯誤是題目問絕對壓力，卻只回答 58.8 kPa。","short":"159.8 kPa","cn":"【English Support】Gauge pressure is 58.8 kPa, so absolute pressure is 101+58.8=159.8 kPa.","defaultPrep":0,"defaultAns":180,"prep":0,"ans":180,"diagram":""},{"type":"math_cn","cat":"MATH&PHYSICS CN","difficulty":"advanced","topic":"電能","q":"1.5 kW 電熱器運轉 40 分鐘，消耗多少電能（kWh）？","hint":"進階題：先把分鐘換成小時。","tags":["Electrical Energy","advanced","v146","verified"],"choices":["0.6 kWh","1.0 kWh","40 kWh","60 kWh"],"correct":1,"s":"【解題步驟】\n40 分鐘=2/3 小時。E=Pt=1.5×2/3=1.0 kWh，也就是 1 度電。常見錯誤是把 40 分鐘直接當成 40 小時。","short":"1.0 kWh","cn":"【English Support】Convert 40 minutes to 2/3 hour, then E=1.5×2/3=1.0 kWh.","defaultPrep":0,"defaultAns":180,"prep":0,"ans":180,"diagram":""},{"type":"math_cn","cat":"MATH&PHYSICS CN","difficulty":"advanced","topic":"電容","q":"100 μF 與 200 μF 電容串聯，等效電容是多少？","hint":"進階題：串聯電容需使用倒數相加。","tags":["Capacitance","advanced","v146","verified"],"choices":["50.0 μF","66.7 μF","150 μF","300 μF"],"correct":1,"s":"【解題步驟】\n1/Ceq=1/100+1/200=3/200，因此 Ceq=200/3≈66.7 μF。串聯等效電容必小於最小單顆電容，可作合理性檢查。","short":"66.7 μF","cn":"【English Support】For series capacitors, reciprocals add, giving Ceq≈66.7 μF.","defaultPrep":0,"defaultAns":180,"prep":0,"ans":180,"diagram":""}]};
+ const norm=v=>String(v??'').normalize('NFKC').toLowerCase().replace(/[【】「」『』"'`.,，。！？!?：:；;（）()\[\]{}<>+＝=\-−–—_、\/\\\s]/g,'');
+ const existing=new Set(bank.map(q=>(q?.type||'')+'|'+norm(q?.q||'')));
+ let addedEN=0,addedCN=0,removed=0;
+ for(const q of DATA.en){const k=q.type+'|'+norm(q.q);if(!existing.has(k)){bank.push(q);existing.add(k);addedEN++;}}
+ for(const q of DATA.cn){const k=q.type+'|'+norm(q.q);if(!existing.has(k)){bank.push(q);existing.add(k);addedCN++;}}
+ const seen=new Set();
+ for(let i=0;i<bank.length;i++){const q=bank[i];const k=(q?.type||'')+'|'+norm(q?.q||'');if(!k.split('|')[1]||seen.has(k)){bank.splice(i,1);i--;removed++;}else seen.add(k);}
+ try{if(typeof refreshPool==='function')refreshPool();if(typeof renderTabs==='function')renderTabs();if(typeof updateStats==='function')updateStats();}catch(e){}
+ window.TRIUMPH_V146_QA=Object.assign(window.TRIUMPH_V146_QA||{},{finalExtraAdvancedEN:addedEN,finalExtraAdvancedCN:addedCN,finalDeduplicated:removed,total:bank.length});
+})();
+</script>
+
+<script id="v148-timers-content-qa-and-advanced-math">
+(() => {
+  const VERSION="v148";
+  const DATA={
+    advancedEN:[{"difficulty":"advanced","topic":"Wind Triangle","defaultPrep":0,"defaultAns":180,"prep":0,"ans":180,"diagram":"","type":"math_en","cat":"MATH&PHYSICS EN","q":"An aircraft must maintain a true track of 000° with a true airspeed of 200 kt. A wind from 270° blows at 40 kt. Approximately what heading and ground speed are required?","hint":"Advanced: identify the governing principle, keep units consistent, solve step by step, and check reasonableness.","tags":["Wind Triangle","advanced","v147","verified"],"choices":["Heading 348.5°; GS 196 kt","Heading 011.5°; GS 196 kt","Heading 348.5°; GS 204 kt","Heading 000°; GS 160 kt"],"correct":0,"s":"To hold a northbound track, the aircraft must point into the westerly wind. The wind-correction angle is sin⁻¹(40/200)≈11.5°, so the heading is about 348.5°. The northward component of the airspeed is √(200²−40²)≈196 kt, which is the ground speed. Common mistake: adding the crosswind directly to the airspeed.","short":"Heading 348.5°; GS 196 kt","cn":"【中文題目】飛機必須維持真航跡 000°，真空速 200 kt，風從 270° 以 40 kt 吹來。約需使用何種航向與地速？\n【中文詳解】要維持正北航跡，機頭必須朝西側迎風修正。風修正角=sin⁻¹(40/200)≈11.5°，因此航向約 348.5°。真空速的北向分量為 √(200²−40²)≈196 kt，即地速。常見錯誤是把側風直接與真空速相加。"},{"difficulty":"advanced","topic":"Climb Gradient","defaultPrep":0,"defaultAns":180,"prep":0,"ans":180,"diagram":"","type":"math_en","cat":"MATH&PHYSICS EN","q":"An aircraft must achieve a climb gradient of 300 ft per nautical mile at a ground speed of 120 kt. What rate of climb is required?","hint":"Advanced: identify the governing principle, keep units consistent, solve step by step, and check reasonableness.","tags":["Climb Gradient","advanced","v147","verified"],"choices":["300 ft/min","450 ft/min","600 ft/min","900 ft/min"],"correct":2,"s":"A ground speed of 120 kt equals 2 NM per minute. Required climb rate=300 ft/NM×2 NM/min=600 ft/min. Common mistake: using 120 directly without converting knots to nautical miles per minute.","short":"600 ft/min","cn":"【中文題目】飛機在地速 120 kt 時必須達到每海里 300 ft 的爬升梯度。所需爬升率是多少？\n【中文詳解】120 kt=每分鐘 2 NM。所需爬升率=300 ft/NM×2 NM/min=600 ft/min。常見錯誤是未把節換算成每分鐘海里數。"},{"difficulty":"advanced","topic":"Descent Planning","defaultPrep":0,"defaultAns":180,"prep":0,"ans":180,"diagram":"","type":"math_en","cat":"MATH&PHYSICS EN","q":"An aircraft must descend 18,000 ft at 1,200 ft/min while maintaining a ground speed of 180 kt. Ignoring level segments, how far from the target should descent begin?","hint":"Advanced: identify the governing principle, keep units consistent, solve step by step, and check reasonableness.","tags":["Descent Planning","advanced","v147","verified"],"choices":["30 NM","36 NM","45 NM","54 NM"],"correct":2,"s":"Descent time=18,000/1,200=15 min. A ground speed of 180 kt equals 3 NM/min. Distance=15×3=45 NM. Common mistake: mixing hours and minutes.","short":"45 NM","cn":"【中文題目】飛機需以 1,200 ft/min 下降 18,000 ft，地速維持 180 kt。忽略平飛段，應在距目標多遠處開始下降？\n【中文詳解】下降時間=18,000/1,200=15 分鐘。180 kt=每分鐘 3 NM，因此距離=15×3=45 NM。常見錯誤是混用小時與分鐘。"},{"difficulty":"advanced","topic":"Piecewise Motion","defaultPrep":0,"defaultAns":180,"prep":0,"ans":180,"diagram":"","type":"math_en","cat":"MATH&PHYSICS EN","q":"A vehicle accelerates uniformly from rest to 20 m/s in 10 s, then continues at 20 m/s for 15 s. What total distance does it travel?","hint":"Advanced: identify the governing principle, keep units consistent, solve step by step, and check reasonableness.","tags":["Piecewise Motion","advanced","v147","verified"],"choices":["300 m","350 m","400 m","500 m"],"correct":2,"s":"During acceleration, average speed=(0+20)/2=10 m/s, so distance=10×10=100 m. During constant speed, distance=20×15=300 m. Total=400 m.","short":"400 m","cn":"【中文題目】一輛車由靜止在 10 秒內均勻加速至 20 m/s，接著以 20 m/s 行駛 15 秒。總路程是多少？\n【中文詳解】加速階段平均速度=(0+20)/2=10 m/s，路程=10×10=100 m。等速階段路程=20×15=300 m。總路程=400 m。"},{"difficulty":"advanced","topic":"Projectile Motion","defaultPrep":0,"defaultAns":180,"prep":0,"ans":180,"diagram":"","type":"math_en","cat":"MATH&PHYSICS EN","q":"A ball is launched horizontally at 20 m/s from a height of 45 m. Neglect air resistance and use g=10 m/s². How far horizontally does it travel before hitting the ground?","hint":"Advanced: identify the governing principle, keep units consistent, solve step by step, and check reasonableness.","tags":["Projectile Motion","advanced","v147","verified"],"choices":["30 m","45 m","60 m","90 m"],"correct":2,"s":"Vertical motion gives 45=½(10)t², so t=3 s. Horizontal speed is constant, so range=20×3=60 m. Common mistake: using the launch speed in the vertical equation.","short":"60 m","cn":"【中文題目】一顆球從 45 m 高處以 20 m/s 水平射出，忽略空氣阻力並取 g=10 m/s²。落地前水平飛行多遠？\n【中文詳解】垂直方向：45=½×10×t²，因此 t=3 s。水平方向速度維持 20 m/s，所以射程=20×3=60 m。常見錯誤是把水平初速代入垂直運動。"},{"difficulty":"advanced","topic":"Inclined Plane with Friction","defaultPrep":0,"defaultAns":180,"prep":0,"ans":180,"diagram":"","type":"math_en","cat":"MATH&PHYSICS EN","q":"A block slides down a 30° incline with coefficient of kinetic friction 0.20. Using g=9.8 m/s², what is its acceleration along the plane?","hint":"Advanced: identify the governing principle, keep units consistent, solve step by step, and check reasonableness.","tags":["Inclined Plane with Friction","advanced","v147","verified"],"choices":["1.24 m/s²","3.20 m/s²","4.90 m/s²","6.60 m/s²"],"correct":1,"s":"Along the plane, a=g(sinθ−μcosθ)=9.8(0.5−0.20×0.866)≈3.20 m/s². Mass cancels. Common mistake: using μmg rather than μmgcosθ for friction.","short":"3.20 m/s²","cn":"【中文題目】一物體沿 30° 斜面下滑，動摩擦係數為 0.20。取 g=9.8 m/s²，沿斜面的加速度是多少？\n【中文詳解】沿斜面方向 a=g(sinθ−μcosθ)=9.8(0.5−0.20×0.866)≈3.20 m/s²，質量會消去。常見錯誤是把摩擦力寫成 μmg，漏掉 cosθ。"},{"difficulty":"advanced","topic":"Atwood Machine","defaultPrep":0,"defaultAns":180,"prep":0,"ans":180,"diagram":"","type":"math_en","cat":"MATH&PHYSICS EN","q":"Two masses of 6 kg and 4 kg are connected by a light rope over an ideal pulley. Using g=10 m/s², what are the acceleration magnitude and rope tension?","hint":"Advanced: identify the governing principle, keep units consistent, solve step by step, and check reasonableness.","tags":["Atwood Machine","advanced","v147","verified"],"choices":["1 m/s² and 44 N","2 m/s² and 48 N","2 m/s² and 60 N","4 m/s² and 40 N"],"correct":1,"s":"The acceleration is (6−4)g/(6+4)=2 m/s². For the 4 kg mass moving upward, T−40=4×2, so T=48 N. Common mistake: using the weight difference as the tension.","short":"2 m/s² and 48 N","cn":"【中文題目】6 kg 與 4 kg 兩物體以輕繩跨過理想滑輪連接。取 g=10 m/s²，加速度大小與繩張力是多少？\n【中文詳解】加速度=(6−4)g/(6+4)=2 m/s²。對向上運動的 4 kg 物體：T−40=4×2，因此 T=48 N。常見錯誤是把兩物體重量差直接當成張力。"},{"difficulty":"advanced","topic":"Power and Efficiency","defaultPrep":0,"defaultAns":180,"prep":0,"ans":180,"diagram":"","type":"math_en","cat":"MATH&PHYSICS EN","q":"A motor lifts a 500 kg load vertically by 12 m in 20 s. If the motor is 70% efficient, what input power is required? Use g=9.8 m/s².","hint":"Advanced: identify the governing principle, keep units consistent, solve step by step, and check reasonableness.","tags":["Power and Efficiency","advanced","v147","verified"],"choices":["1.47 kW","2.10 kW","2.94 kW","4.20 kW"],"correct":3,"s":"Useful work=mgh=500×9.8×12=58,800 J. Useful output power=58,800/20=2,940 W. Input power=2,940/0.70=4,200 W. Therefore the correct value is 4.20 kW.","short":"4.20 kW","cn":"【中文題目】馬達在 20 秒內將 500 kg 負載垂直提升 12 m。若效率為 70%，所需輸入功率是多少？取 g=9.8 m/s²。\n【中文詳解】有效功=mgh=500×9.8×12=58,800 J，有效輸出功率=58,800/20=2,940 W。輸入功率=2,940/0.70=4,200 W=4.20 kW。"},{"difficulty":"advanced","topic":"Impulse","defaultPrep":0,"defaultAns":180,"prep":0,"ans":180,"diagram":"","type":"math_en","cat":"MATH&PHYSICS EN","q":"A 0.15 kg ball moving at 20 m/s rebounds in the opposite direction at 30 m/s. The contact time is 0.050 s. What is the magnitude of the average force?","hint":"Advanced: identify the governing principle, keep units consistent, solve step by step, and check reasonableness.","tags":["Impulse","advanced","v147","verified"],"choices":["30 N","75 N","150 N","300 N"],"correct":2,"s":"Take the initial direction as positive: Δp=m(vf−vi)=0.15(−30−20)=−7.5 N·s. The impulse magnitude is 7.5 N·s, so average force=7.5/0.050=150 N. Common mistake: subtracting speed magnitudes instead of accounting for reversal.","short":"150 N","cn":"【中文題目】0.15 kg 球以 20 m/s 前進，碰撞後以 30 m/s 反向彈回，接觸時間 0.050 s。平均作用力大小是多少？\n【中文詳解】取初始方向為正：Δp=m(vf−vi)=0.15(−30−20)=−7.5 N·s，衝量大小為 7.5 N·s。平均力=7.5/0.050=150 N。常見錯誤是忽略反向，僅用 30−20。"},{"difficulty":"advanced","topic":"Elastic Collision","defaultPrep":0,"defaultAns":180,"prep":0,"ans":180,"diagram":"","type":"math_en","cat":"MATH&PHYSICS EN","q":"Two identical carts undergo a one-dimensional elastic collision. Cart A moves at 8 m/s and cart B is initially at rest. What happens immediately after the collision?","hint":"Advanced: identify the governing principle, keep units consistent, solve step by step, and check reasonableness.","tags":["Elastic Collision","advanced","v147","verified"],"choices":["A continues at 8 m/s and B remains at rest","A stops and B moves at 8 m/s","Both move at 4 m/s","A rebounds at 8 m/s and B remains at rest"],"correct":1,"s":"For a head-on elastic collision between equal masses, the velocities are exchanged. Cart A stops and cart B leaves at 8 m/s. Both momentum and kinetic energy are conserved.","short":"A stops and B moves at 8 m/s","cn":"【中文題目】兩台相同質量的小車進行一維彈性碰撞。A 車以 8 m/s 前進，B 車初始靜止。碰撞後立即發生什麼？\n【中文詳解】相同質量物體正碰且為彈性碰撞時，兩者交換速度。因此 A 車停止，B 車以 8 m/s 前進；動量與動能皆守恆。"},{"difficulty":"advanced","topic":"Rotational Kinetic Energy","defaultPrep":0,"defaultAns":180,"prep":0,"ans":180,"diagram":"","type":"math_en","cat":"MATH&PHYSICS EN","q":"A solid disk has mass 4.0 kg, radius 0.30 m, and angular speed 10 rad/s. What is its rotational kinetic energy?","hint":"Advanced: identify the governing principle, keep units consistent, solve step by step, and check reasonableness.","tags":["Rotational Kinetic Energy","advanced","v147","verified"],"choices":["4.5 J","9.0 J","18 J","36 J"],"correct":1,"s":"For a solid disk, I=½MR²=0.5×4×0.30²=0.18 kg·m². Rotational kinetic energy=½Iω²=0.5×0.18×10²=9.0 J.","short":"9.0 J","cn":"【中文題目】實心圓盤質量 4.0 kg、半徑 0.30 m、角速度 10 rad/s。轉動動能是多少？\n【中文詳解】實心圓盤轉動慣量 I=½MR²=0.5×4×0.30²=0.18 kg·m²。轉動動能=½Iω²=0.5×0.18×10²=9.0 J。"},{"difficulty":"advanced","topic":"Rolling Motion","defaultPrep":0,"defaultAns":180,"prep":0,"ans":180,"diagram":"","type":"math_en","cat":"MATH&PHYSICS EN","q":"A solid sphere rolls without slipping from rest down a vertical height of 1.4 m. Using g=9.8 m/s², what is its speed at the bottom?","hint":"Advanced: identify the governing principle, keep units consistent, solve step by step, and check reasonableness.","tags":["Rolling Motion","advanced","v147","verified"],"choices":["3.13 m/s","4.43 m/s","5.24 m/s","7.00 m/s"],"correct":1,"s":"For a solid sphere, I=2MR²/5. Energy conservation gives mgh=½Mv²+½I(v²/R²)=7Mv²/10. Thus v²=10gh/7=19.6, so v≈4.43 m/s.","short":"4.43 m/s","cn":"【中文題目】實心球由靜止開始無滑動滾下 1.4 m 的垂直高度。取 g=9.8 m/s²，底端速度是多少？\n【中文詳解】實心球 I=2MR²/5。能量守恆：mgh=½Mv²+½I(v²/R²)=7Mv²/10，因此 v²=10gh/7=19.6，v≈4.43 m/s。"},{"difficulty":"advanced","topic":"Load Factor","defaultPrep":0,"defaultAns":180,"prep":0,"ans":180,"diagram":"","type":"math_en","cat":"MATH&PHYSICS EN","q":"In a coordinated level turn at a bank angle of 60°, what is the load factor?","hint":"Advanced: identify the governing principle, keep units consistent, solve step by step, and check reasonableness.","tags":["Load Factor","advanced","v147","verified"],"choices":["1.15 g","1.41 g","2.00 g","4.00 g"],"correct":2,"s":"For a level coordinated turn, load factor n=1/cosφ. At 60°, cos60°=0.5, so n=2.00. This means the wings must produce twice the aircraft weight in lift.","short":"2.00 g","cn":"【中文題目】協調水平轉彎坡度角為 60° 時，負載因數是多少？\n【中文詳解】協調水平轉彎負載因數 n=1/cosφ。60° 時 cos60°=0.5，因此 n=2.00，表示機翼須產生相當於兩倍重量的升力。"},{"difficulty":"advanced","topic":"Torque Equilibrium","defaultPrep":0,"defaultAns":180,"prep":0,"ans":180,"diagram":"","type":"math_en","cat":"MATH&PHYSICS EN","q":"A 200 N force acts 1.5 m to the left of a pivot. What downward force applied 2.0 m to the right will balance the beam?","hint":"Advanced: identify the governing principle, keep units consistent, solve step by step, and check reasonableness.","tags":["Torque Equilibrium","advanced","v147","verified"],"choices":["100 N","150 N","200 N","267 N"],"correct":1,"s":"For rotational equilibrium, clockwise torque equals counterclockwise torque: 200×1.5=F×2.0. Therefore F=150 N.","short":"150 N","cn":"【中文題目】200 N 力作用在支點左側 1.5 m 處。若要平衡橫桿，在支點右側 2.0 m 處需施加多少向下力？\n【中文詳解】轉動平衡時順、逆時針力矩相等：200×1.5=F×2.0，因此 F=150 N。"},{"difficulty":"advanced","topic":"Hydrostatic Force","defaultPrep":0,"defaultAns":180,"prep":0,"ans":180,"diagram":"","type":"math_en","cat":"MATH&PHYSICS EN","q":"A vertical rectangular hatch is 2.0 m wide and 1.0 m high. Its top edge is 3.0 m below the surface of fresh water. What is the resultant hydrostatic force? Use ρ=1000 kg/m³ and g=9.8 m/s².","hint":"Advanced: identify the governing principle, keep units consistent, solve step by step, and check reasonableness.","tags":["Hydrostatic Force","advanced","v147","verified"],"choices":["34.3 kN","58.8 kN","68.6 kN","78.4 kN"],"correct":2,"s":"For a plane surface, resultant force=ρghcA, where hc is centroid depth. The centroid is at 3.5 m and area is 2.0 m². F=1000×9.8×3.5×2=68,600 N=68.6 kN.","short":"68.6 kN","cn":"【中文題目】一垂直矩形艙門寬 2.0 m、高 1.0 m，上緣位於淡水面下 3.0 m。總靜水壓力是多少？取 ρ=1000 kg/m³、g=9.8 m/s²。\n【中文詳解】平面所受總靜水壓力 F=ρghcA。形心深度 hc=3.5 m，面積 A=2.0 m²，因此 F=1000×9.8×3.5×2=68,600 N=68.6 kN。"},{"difficulty":"advanced","topic":"Continuity Equation","defaultPrep":0,"defaultAns":180,"prep":0,"ans":180,"diagram":"","type":"math_en","cat":"MATH&PHYSICS EN","q":"Water flows through a pipe that narrows from 6.0 cm diameter to 3.0 cm diameter. If the speed in the wider section is 2.0 m/s, what is the speed in the narrow section?","hint":"Advanced: identify the governing principle, keep units consistent, solve step by step, and check reasonableness.","tags":["Continuity Equation","advanced","v147","verified"],"choices":["4.0 m/s","6.0 m/s","8.0 m/s","12.0 m/s"],"correct":2,"s":"Continuity requires A1v1=A2v2. Area is proportional to diameter squared, so A1/A2=(6/3)²=4. Therefore v2=4×2.0=8.0 m/s.","short":"8.0 m/s","cn":"【中文題目】水流經管徑由 6.0 cm 縮小至 3.0 cm 的管路。若寬管段流速為 2.0 m/s，窄管段流速是多少？\n【中文詳解】連續方程 A1v1=A2v2。截面積與直徑平方成正比，A1/A2=(6/3)²=4，因此 v2=4×2.0=8.0 m/s。"},{"difficulty":"advanced","topic":"Bernoulli Equation","defaultPrep":0,"defaultAns":180,"prep":0,"ans":180,"diagram":"","type":"math_en","cat":"MATH&PHYSICS EN","q":"Air of density 1.2 kg/m³ flows horizontally. Its speed increases from 50 m/s to 100 m/s. Ignoring losses, by how much does the static pressure decrease?","hint":"Advanced: identify the governing principle, keep units consistent, solve step by step, and check reasonableness.","tags":["Bernoulli Equation","advanced","v147","verified"],"choices":["1.5 kPa","3.0 kPa","4.5 kPa","9.0 kPa"],"correct":2,"s":"For horizontal flow, P1+½ρv1²=P2+½ρv2². Pressure drop=½ρ(v2²−v1²)=0.5×1.2×(10000−2500)=4500 Pa=4.5 kPa.","short":"4.5 kPa","cn":"【中文題目】密度 1.2 kg/m³ 的空氣水平流動，速度由 50 m/s 增加至 100 m/s。忽略損失，靜壓降低多少？\n【中文詳解】水平流動使用 P1+½ρv1²=P2+½ρv2²。壓降=½ρ(v2²−v1²)=0.5×1.2×(10000−2500)=4500 Pa=4.5 kPa。"},{"difficulty":"advanced","topic":"Buoyancy","defaultPrep":0,"defaultAns":180,"prep":0,"ans":180,"diagram":"","type":"math_en","cat":"MATH&PHYSICS EN","q":"An object of average density 750 kg/m³ floats in water of density 1000 kg/m³. What fraction of its volume is submerged?","hint":"Advanced: identify the governing principle, keep units consistent, solve step by step, and check reasonableness.","tags":["Buoyancy","advanced","v147","verified"],"choices":["25%","50%","75%","100%"],"correct":2,"s":"For floating equilibrium, submerged fraction=object density/fluid density=750/1000=0.75. Therefore 75% of the volume is submerged.","short":"75%","cn":"【中文題目】平均密度 750 kg/m³ 的物體浮在密度 1000 kg/m³ 的水中。其體積有多少比例浸在水下？\n【中文詳解】漂浮平衡時，浸沒比例=物體密度/流體密度=750/1000=0.75，因此 75% 體積浸在水下。"},{"difficulty":"advanced","topic":"Combined Gas Law","defaultPrep":0,"defaultAns":180,"prep":0,"ans":180,"diagram":"","type":"math_en","cat":"MATH&PHYSICS EN","q":"A gas initially has pressure 100 kPa, volume 2.0 L, and temperature 300 K. It changes to volume 1.5 L and temperature 330 K. What is the final pressure?","hint":"Advanced: identify the governing principle, keep units consistent, solve step by step, and check reasonableness.","tags":["Combined Gas Law","advanced","v147","verified"],"choices":["110 kPa","133 kPa","147 kPa","220 kPa"],"correct":2,"s":"Use P1V1/T1=P2V2/T2. P2=100×2.0×330/(300×1.5)=146.7 kPa≈147 kPa. Temperature must be in kelvins.","short":"147 kPa","cn":"【中文題目】氣體初始壓力 100 kPa、體積 2.0 L、溫度 300 K；之後體積變為 1.5 L、溫度 330 K。最終壓力是多少？\n【中文詳解】使用 P1V1/T1=P2V2/T2。P2=100×2.0×330/(300×1.5)=146.7 kPa≈147 kPa。溫度必須使用絕對溫標 K。"},{"difficulty":"advanced","topic":"Calorimetry","defaultPrep":0,"defaultAns":180,"prep":0,"ans":180,"diagram":"","type":"math_en","cat":"MATH&PHYSICS EN","q":"Equal masses of water at 80°C and 20°C are mixed in an insulated container. Neglecting heat capacity of the container, what is the final temperature?","hint":"Advanced: identify the governing principle, keep units consistent, solve step by step, and check reasonableness.","tags":["Calorimetry","advanced","v147","verified"],"choices":["30°C","40°C","50°C","60°C"],"correct":2,"s":"The substances have equal mass and the same specific heat, so the final temperature is the arithmetic average: (80+20)/2=50°C.","short":"50°C","cn":"【中文題目】等質量的 80°C 與 20°C 水在絕熱容器中混合，忽略容器熱容量。最終溫度是多少？\n【中文詳解】兩份水質量相同且比熱相同，因此平衡溫度為算術平均：(80+20)/2=50°C。"},{"difficulty":"advanced","topic":"Thermal Expansion","defaultPrep":0,"defaultAns":180,"prep":0,"ans":180,"diagram":"","type":"math_en","cat":"MATH&PHYSICS EN","q":"A 2.0 m aluminum rod has coefficient of linear expansion 23×10⁻⁶/°C. How much does it lengthen when heated by 50°C?","hint":"Advanced: identify the governing principle, keep units consistent, solve step by step, and check reasonableness.","tags":["Thermal Expansion","advanced","v147","verified"],"choices":["0.23 mm","1.15 mm","2.30 mm","23.0 mm"],"correct":2,"s":"ΔL=αLΔT=23×10⁻⁶×2.0×50=0.0023 m=2.30 mm. Common mistake: leaving the result in metres but labeling it millimetres.","short":"2.30 mm","cn":"【中文題目】2.0 m 鋁桿的線膨脹係數為 23×10⁻⁶/°C。升溫 50°C 時伸長多少？\n【中文詳解】ΔL=αLΔT=23×10⁻⁶×2.0×50=0.0023 m=2.30 mm。常見錯誤是單位換算後標示錯誤。"},{"difficulty":"advanced","topic":"Resistor Network","defaultPrep":0,"defaultAns":180,"prep":0,"ans":180,"diagram":"","type":"math_en","cat":"MATH&PHYSICS EN","q":"A 6 Ω resistor and a 3 Ω resistor are connected in parallel, and this combination is in series with a 4 Ω resistor across 12 V. What is the total current?","hint":"Advanced: identify the governing principle, keep units consistent, solve step by step, and check reasonableness.","tags":["Resistor Network","advanced","v147","verified"],"choices":["1 A","2 A","3 A","4 A"],"correct":1,"s":"The parallel equivalent is (6×3)/(6+3)=2 Ω. Total resistance=2+4=6 Ω. Total current=12/6=2 A.","short":"2 A","cn":"【中文題目】6 Ω 與 3 Ω 電阻並聯後，再與 4 Ω 電阻串聯接在 12 V 電源上。總電流是多少？\n【中文詳解】並聯等效電阻=(6×3)/(6+3)=2 Ω，總電阻=2+4=6 Ω，因此總電流=12/6=2 A。"},{"difficulty":"advanced","topic":"Battery Internal Resistance","defaultPrep":0,"defaultAns":180,"prep":0,"ans":180,"diagram":"","type":"math_en","cat":"MATH&PHYSICS EN","q":"A 24 V battery with internal resistance 0.5 Ω supplies a 5.5 Ω load. What are the current and terminal voltage?","hint":"Advanced: identify the governing principle, keep units consistent, solve step by step, and check reasonableness.","tags":["Battery Internal Resistance","advanced","v147","verified"],"choices":["4 A and 22 V","4 A and 24 V","4.36 A and 21.8 V","6 A and 21 V"],"correct":0,"s":"Total resistance=5.5+0.5=6.0 Ω, so current=24/6=4 A. Terminal voltage across the load=IR=4×5.5=22 V, also equal to E−Ir.","short":"4 A and 22 V","cn":"【中文題目】24 V 電池內阻 0.5 Ω，外接 5.5 Ω 負載。電流與端電壓是多少？\n【中文詳解】總電阻=5.5+0.5=6.0 Ω，因此電流=24/6=4 A。負載端電壓=IR=4×5.5=22 V，也可用 E−Ir 求得。"},{"difficulty":"advanced","topic":"RC Circuit","defaultPrep":0,"defaultAns":180,"prep":0,"ans":180,"diagram":"","type":"math_en","cat":"MATH&PHYSICS EN","q":"A 200 kΩ resistor and a 50 μF capacitor form a charging circuit. After one time constant, approximately what percentage of the final charge is stored?","hint":"Advanced: identify the governing principle, keep units consistent, solve step by step, and check reasonableness.","tags":["RC Circuit","advanced","v147","verified"],"choices":["36.8%","50.0%","63.2%","86.5%"],"correct":2,"s":"The time constant is τ=RC=200,000×50×10⁻⁶=10 s. During charging, q/Qfinal=1−e⁻¹≈0.632, so 63.2% is stored after one time constant.","short":"63.2%","cn":"【中文題目】200 kΩ 電阻與 50 μF 電容形成充電電路。經過一個時間常數後，約儲存最終電量的多少比例？\n【中文詳解】時間常數 τ=RC=200,000×50×10⁻⁶=10 s。充電時 q/Qfinal=1−e⁻¹≈0.632，因此一個時間常數後約達 63.2%。"},{"difficulty":"advanced","topic":"Transformer","defaultPrep":0,"defaultAns":180,"prep":0,"ans":180,"diagram":"","type":"math_en","cat":"MATH&PHYSICS EN","q":"An ideal transformer steps 240 V down to 24 V. If the primary current is 0.50 A, what is the secondary current?","hint":"Advanced: identify the governing principle, keep units consistent, solve step by step, and check reasonableness.","tags":["Transformer","advanced","v147","verified"],"choices":["0.05 A","0.50 A","5.0 A","50 A"],"correct":2,"s":"For an ideal transformer, input power equals output power: 240×0.50=24×Is. Therefore Is=5.0 A. Current changes inversely with voltage.","short":"5.0 A","cn":"【中文題目】理想變壓器將 240 V 降至 24 V。若一次側電流為 0.50 A，二次側電流是多少？\n【中文詳解】理想變壓器輸入功率等於輸出功率：240×0.50=24×Is，因此 Is=5.0 A。電壓降低時電流按反比增加。"},{"difficulty":"advanced","topic":"Doppler Effect","defaultPrep":0,"defaultAns":180,"prep":0,"ans":180,"diagram":"","type":"math_en","cat":"MATH&PHYSICS EN","q":"A 500 Hz sound source moves toward a stationary observer at 30 m/s. If the speed of sound is 340 m/s, what frequency is heard?","hint":"Advanced: identify the governing principle, keep units consistent, solve step by step, and check reasonableness.","tags":["Doppler Effect","advanced","v147","verified"],"choices":["459 Hz","500 Hz","548 Hz","594 Hz"],"correct":2,"s":"For a source approaching a stationary observer, f'=fv/(v−vs)=500×340/(340−30)=548.4 Hz≈548 Hz. The denominator decreases, so the observed frequency must increase.","short":"548 Hz","cn":"【中文題目】500 Hz 聲源以 30 m/s 朝靜止觀察者移動，聲速為 340 m/s。觀察者聽到的頻率是多少？\n【中文詳解】聲源接近靜止觀察者時，f'=fv/(v−vs)=500×340/(340−30)=548.4 Hz≈548 Hz。分母變小，因此聽到的頻率升高。"},{"difficulty":"advanced","topic":"Sound Level","defaultPrep":0,"defaultAns":180,"prep":0,"ans":180,"diagram":"","type":"math_en","cat":"MATH&PHYSICS EN","q":"Sound intensity increases by a factor of 100. By how many decibels does the sound level increase?","hint":"Advanced: identify the governing principle, keep units consistent, solve step by step, and check reasonableness.","tags":["Sound Level","advanced","v147","verified"],"choices":["10 dB","20 dB","40 dB","100 dB"],"correct":1,"s":"The change is Δβ=10log10(I2/I1)=10log10(100)=20 dB. A factor of 10 corresponds to 10 dB; a factor of 100 corresponds to 20 dB.","short":"20 dB","cn":"【中文題目】聲音強度增加為原來的 100 倍。聲強級增加多少分貝？\n【中文詳解】變化量 Δβ=10log10(I2/I1)=10log10(100)=20 dB。強度增加 10 倍為 10 dB，100 倍為 20 dB。"},{"difficulty":"advanced","topic":"Thin Lens Magnification","defaultPrep":0,"defaultAns":180,"prep":0,"ans":180,"diagram":"","type":"math_en","cat":"MATH&PHYSICS EN","q":"A converging lens has focal length 10 cm and an object is placed 15 cm from the lens. What are the image distance and magnification?","hint":"Advanced: identify the governing principle, keep units consistent, solve step by step, and check reasonableness.","tags":["Thin Lens Magnification","advanced","v147","verified"],"choices":["15 cm and +1","20 cm and −1.33","30 cm and −2","30 cm and +2"],"correct":2,"s":"1/f=1/do+1/di gives 1/di=1/10−1/15=1/30, so di=30 cm. Magnification m=−di/do=−30/15=−2, meaning an inverted image twice the size.","short":"30 cm and −2","cn":"【中文題目】會聚透鏡焦距 10 cm，物體距透鏡 15 cm。像距與放大率是多少？\n【中文詳解】由 1/f=1/do+1/di 得 1/di=1/10−1/15=1/30，所以 di=30 cm。放大率 m=−di/do=−30/15=−2，表示倒立且放大 2 倍。"},{"difficulty":"advanced","topic":"Convex Mirror","defaultPrep":0,"defaultAns":180,"prep":0,"ans":180,"diagram":"","type":"math_en","cat":"MATH&PHYSICS EN","q":"A convex mirror has focal length −20 cm. An object is 60 cm in front of it. What is the image distance and image character?","hint":"Advanced: identify the governing principle, keep units consistent, solve step by step, and check reasonableness.","tags":["Convex Mirror","advanced","v147","verified"],"choices":["−15 cm; virtual, upright, reduced","15 cm; real, inverted, reduced","−30 cm; virtual, upright, same size","30 cm; real, inverted, enlarged"],"correct":0,"s":"Using 1/f=1/do+1/di: 1/di=−1/20−1/60=−1/15, so di=−15 cm. The negative image distance means a virtual image. Magnification=−di/do=0.25, so it is upright and reduced.","short":"−15 cm; virtual, upright, reduced","cn":"【中文題目】凸面鏡焦距 −20 cm，物體位於鏡前 60 cm。像距與成像性質為何？\n【中文詳解】使用 1/f=1/do+1/di：1/di=−1/20−1/60=−1/15，因此 di=−15 cm。負像距代表虛像；放大率=−di/do=0.25，所以正立縮小。"},{"difficulty":"advanced","topic":"Rational Equation","defaultPrep":0,"defaultAns":180,"prep":0,"ans":180,"diagram":"","type":"math_en","cat":"MATH&PHYSICS EN","q":"Solve 3/(x−1)=2/(x+2).","hint":"Advanced: identify the governing principle, keep units consistent, solve step by step, and check reasonableness.","tags":["Rational Equation","advanced","v147","verified"],"choices":["x=−8","x=−1","x=4","x=8"],"correct":0,"s":"Cross-multiply: 3(x+2)=2(x−1). Thus 3x+6=2x−2, so x=−8. It is valid because x is neither 1 nor −2.","short":"x=−8","cn":"【中文題目】解方程式 3/(x−1)=2/(x+2)。\n【中文詳解】交叉相乘：3(x+2)=2(x−1)，得 3x+6=2x−2，因此 x=−8。此值不等於 1 或 −2，符合原式定義域。"},{"difficulty":"advanced","topic":"Quadratic Optimization","defaultPrep":0,"defaultAns":180,"prep":0,"ans":180,"diagram":"","type":"math_en","cat":"MATH&PHYSICS EN","q":"A rectangle has a fixed perimeter of 100 m. What is the maximum possible area?","hint":"Advanced: identify the governing principle, keep units consistent, solve step by step, and check reasonableness.","tags":["Quadratic Optimization","advanced","v147","verified"],"choices":["500 m²","600 m²","625 m²","2500 m²"],"correct":2,"s":"Let width=x and length=50−x. Area A=x(50−x)=−x²+50x, whose vertex is at x=25. The maximum occurs for a 25 m by 25 m square, giving 625 m².","short":"625 m²","cn":"【中文題目】矩形周長固定為 100 m。最大可能面積是多少？\n【中文詳解】設寬 x、長 50−x，面積 A=x(50−x)=−x²+50x。頂點在 x=25，因此最大面積出現在 25 m×25 m 正方形，為 625 m²。"},{"difficulty":"advanced","topic":"Law of Cosines","defaultPrep":0,"defaultAns":180,"prep":0,"ans":180,"diagram":"","type":"math_en","cat":"MATH&PHYSICS EN","q":"Two sides of a triangle are 7 m and 9 m with an included angle of 60°. What is the length of the third side?","hint":"Advanced: identify the governing principle, keep units consistent, solve step by step, and check reasonableness.","tags":["Law of Cosines","advanced","v147","verified"],"choices":["6.40 m","8.19 m","10.39 m","13.86 m"],"correct":1,"s":"By the law of cosines, c²=7²+9²−2(7)(9)cos60°=49+81−63=67. Thus c=√67≈8.19 m.","short":"8.19 m","cn":"【中文題目】三角形兩邊為 7 m 與 9 m，夾角 60°。第三邊長多少？\n【中文詳解】餘弦定理：c²=7²+9²−2×7×9×cos60°=49+81−63=67，因此 c=√67≈8.19 m。"},{"difficulty":"advanced","topic":"Trigonometric Height","defaultPrep":0,"defaultAns":180,"prep":0,"ans":180,"diagram":"","type":"math_en","cat":"MATH&PHYSICS EN","q":"From a point 50 m from the base of a tower, the angle of elevation to the top is 30°. What is the tower height, ignoring eye height?","hint":"Advanced: identify the governing principle, keep units consistent, solve step by step, and check reasonableness.","tags":["Trigonometric Height","advanced","v147","verified"],"choices":["25.0 m","28.9 m","43.3 m","50.0 m"],"correct":1,"s":"tan30°=height/50, so height=50tan30°≈28.9 m.","short":"28.9 m","cn":"【中文題目】距塔底 50 m 處仰望塔頂，仰角為 30°。忽略眼睛高度，塔高多少？\n【中文詳解】tan30°=塔高/50，因此塔高=50tan30°≈28.9 m。"},{"difficulty":"advanced","topic":"Binomial Probability","defaultPrep":0,"defaultAns":180,"prep":0,"ans":180,"diagram":"","type":"math_en","cat":"MATH&PHYSICS EN","q":"A component has a 20% probability of failure. For five independent components, what is the probability that exactly two fail?","hint":"Advanced: identify the governing principle, keep units consistent, solve step by step, and check reasonableness.","tags":["Binomial Probability","advanced","v147","verified"],"choices":["0.1024","0.2048","0.3277","0.4096"],"correct":1,"s":"Use the binomial formula: C(5,2)(0.2)²(0.8)³=10×0.04×0.512=0.2048.","short":"0.2048","cn":"【中文題目】單一元件故障機率為 20%。五個彼此獨立的元件中，恰有兩個故障的機率是多少？\n【中文詳解】使用二項分配：C(5,2)(0.2)²(0.8)³=10×0.04×0.512=0.2048。"},{"difficulty":"advanced","topic":"Conditional Probability","defaultPrep":0,"defaultAns":180,"prep":0,"ans":180,"diagram":"","type":"math_en","cat":"MATH&PHYSICS EN","q":"A card is drawn from a standard deck and is known to be a face card. What is the probability that it is a king?","hint":"Advanced: identify the governing principle, keep units consistent, solve step by step, and check reasonableness.","tags":["Conditional Probability","advanced","v147","verified"],"choices":["1/13","1/4","1/3","4/13"],"correct":2,"s":"There are 12 face cards in total: four jacks, four queens, and four kings. Given that the card is a face card, the probability of a king is 4/12=1/3.","short":"1/3","cn":"【中文題目】從標準撲克牌抽一張，已知它是人頭牌。它是 K 的機率是多少？\n【中文詳解】人頭牌共有 12 張：J、Q、K 各 4 張。已知抽到人頭牌後，是 K 的機率=4/12=1/3。"},{"difficulty":"advanced","topic":"Combinations","defaultPrep":0,"defaultAns":180,"prep":0,"ans":180,"diagram":"","type":"math_en","cat":"MATH&PHYSICS EN","q":"How many different three-person committees can be selected from eight people?","hint":"Advanced: identify the governing principle, keep units consistent, solve step by step, and check reasonableness.","tags":["Combinations","advanced","v147","verified"],"choices":["24","56","336","512"],"correct":1,"s":"Order does not matter, so use combinations: C(8,3)=8!/(3!5!)=56.","short":"56","cn":"【中文題目】從 8 人中選出 3 人委員會，共有多少種不同選法？\n【中文詳解】委員會成員順序不重要，因此使用組合：C(8,3)=8!/(3!5!)=56。"},{"difficulty":"advanced","topic":"Geometric Series","defaultPrep":0,"defaultAns":180,"prep":0,"ans":180,"diagram":"","type":"math_en","cat":"MATH&PHYSICS EN","q":"A geometric sequence has first term 5, common ratio 1.5, and six terms. What is the sum?","hint":"Advanced: identify the governing principle, keep units consistent, solve step by step, and check reasonableness.","tags":["Geometric Series","advanced","v147","verified"],"choices":["75.94","93.75","103.91","113.91"],"correct":2,"s":"Sn=a(rⁿ−1)/(r−1)=5(1.5⁶−1)/0.5. Since 1.5⁶=11.390625, Sn≈103.90625, or 103.91.","short":"103.91","cn":"【中文題目】等比數列首項 5、公比 1.5，共 6 項。總和是多少？\n【中文詳解】Sn=a(rⁿ−1)/(r−1)=5(1.5⁶−1)/0.5。因 1.5⁶=11.390625，所以 Sn≈103.90625，取 103.91。"},{"difficulty":"advanced","topic":"Exponential Growth","defaultPrep":0,"defaultAns":180,"prep":0,"ans":180,"diagram":"","type":"math_en","cat":"MATH&PHYSICS EN","q":"An investment of $1,200 grows at 4% compounded annually. Approximately how much is it worth after five years?","hint":"Advanced: identify the governing principle, keep units consistent, solve step by step, and check reasonableness.","tags":["Exponential Growth","advanced","v147","verified"],"choices":["$1,392","$1,440","$1,460","$1,500"],"correct":2,"s":"Future value=1200(1.04)⁵≈1200×1.21665≈$1,460. Compound growth applies interest to previous interest as well.","short":"$1,460","cn":"【中文題目】$1,200 以年利率 4% 每年複利成長。五年後約為多少？\n【中文詳解】終值=1200(1.04)⁵≈1200×1.21665≈$1,460。複利會讓利息也繼續產生利息。"},{"difficulty":"advanced","topic":"Logarithms","defaultPrep":0,"defaultAns":180,"prep":0,"ans":180,"diagram":"","type":"math_en","cat":"MATH&PHYSICS EN","q":"If log10(x)=2.5, what is x?","hint":"Advanced: identify the governing principle, keep units consistent, solve step by step, and check reasonableness.","tags":["Logarithms","advanced","v147","verified"],"choices":["25","100","250","316.2"],"correct":3,"s":"Convert from logarithmic to exponential form: x=10²·⁵=10²√10≈100×3.162=316.2.","short":"316.2","cn":"【中文題目】若 log10(x)=2.5，x 是多少？\n【中文詳解】改寫成指數形式：x=10²·⁵=10²√10≈100×3.162=316.2。"},{"difficulty":"advanced","topic":"Coordinate Geometry","defaultPrep":0,"defaultAns":180,"prep":0,"ans":180,"diagram":"","type":"math_en","cat":"MATH&PHYSICS EN","q":"What is the distance from the point (3,−2) to the line 4x−3y+6=0?","hint":"Advanced: identify the governing principle, keep units consistent, solve step by step, and check reasonableness.","tags":["Coordinate Geometry","advanced","v147","verified"],"choices":["2.4","3.6","4.8","6.0"],"correct":2,"s":"Point-to-line distance=|Ax0+By0+C|/√(A²+B²)=|4(3)−3(−2)+6|/5=24/5=4.8.","short":"4.8","cn":"【中文題目】點 (3,−2) 到直線 4x−3y+6=0 的距離是多少？\n【中文詳解】點到直線距離=|Ax0+By0+C|/√(A²+B²)=|4×3−3×(−2)+6|/5=24/5=4.8。"},{"difficulty":"advanced","topic":"Combined Work Rate","defaultPrep":0,"defaultAns":180,"prep":0,"ans":180,"diagram":"","type":"math_en","cat":"MATH&PHYSICS EN","q":"Pipe A fills a tank in 6 hours and pipe B fills it in 4 hours. A drain empties the full tank in 12 hours. If all three are open, how long does it take to fill the tank?","hint":"Advanced: identify the governing principle, keep units consistent, solve step by step, and check reasonableness.","tags":["Combined Work Rate","advanced","v147","verified"],"choices":["2 h","3 h","4 h","6 h"],"correct":1,"s":"Net rate=1/6+1/4−1/12=2/12+3/12−1/12=4/12=1/3 tank per hour. Time=3 hours.","short":"3 h","cn":"【中文題目】A 管 6 小時注滿水槽，B 管 4 小時注滿，排水管 12 小時排空。三者同時開啟時，多久注滿？\n【中文詳解】淨速率=1/6+1/4−1/12=2/12+3/12−1/12=4/12=1/3 槽/小時，因此需 3 小時。"},{"difficulty":"advanced","topic":"Fuel Planning","defaultPrep":0,"defaultAns":180,"prep":0,"ans":180,"diagram":"","type":"math_en","cat":"MATH&PHYSICS EN","q":"A flight requires 2,400 kg trip fuel, 5% contingency fuel, 400 kg alternate fuel, 600 kg final reserve, and 100 kg taxi fuel. What block fuel is required?","hint":"Advanced: identify the governing principle, keep units consistent, solve step by step, and check reasonableness.","tags":["Fuel Planning","advanced","v147","verified"],"choices":["3,500 kg","3,620 kg","3,720 kg","4,020 kg"],"correct":1,"s":"Contingency fuel=0.05×2400=120 kg. Block fuel=2400+120+400+600+100=3,620 kg. Common mistake: applying 5% to every fuel component rather than to trip fuel as stated.","short":"3,620 kg","cn":"【中文題目】某航班需 2,400 kg 航程燃油、5% 應變燃油、400 kg 備降燃油、600 kg 最終備份燃油及 100 kg 滑行燃油。所需 block fuel 是多少？\n【中文詳解】應變燃油=0.05×2400=120 kg。Block fuel=2400+120+400+600+100=3,620 kg。常見錯誤是把 5% 套用到所有燃油項目。"}],
+    advancedCN:[{"difficulty":"advanced","topic":"Wind Triangle","defaultPrep":0,"defaultAns":180,"prep":0,"ans":180,"diagram":"","type":"math_cn","cat":"MATH&PHYSICS CN","q":"飛機必須維持真航跡 000°，真空速 200 kt，風從 270° 以 40 kt 吹來。約需使用何種航向與地速？","hint":"進階題：先判斷核心原理、統一單位、分步計算，再檢查答案是否合理。","tags":["Wind Triangle","advanced","v147","verified"],"choices":["航向 348.5°；地速 196 kt","航向 011.5°；地速 196 kt","航向 348.5°；地速 204 kt","航向 000°；地速 160 kt"],"correct":0,"s":"【解題步驟】\n要維持正北航跡，機頭必須朝西側迎風修正。風修正角=sin⁻¹(40/200)≈11.5°，因此航向約 348.5°。真空速的北向分量為 √(200²−40²)≈196 kt，即地速。常見錯誤是把側風直接與真空速相加。","short":"航向 348.5°；地速 196 kt","cn":"【English Support】\nTo hold a northbound track, the aircraft must point into the westerly wind. The wind-correction angle is sin⁻¹(40/200)≈11.5°, so the heading is about 348.5°. The northward component of the airspeed is √(200²−40²)≈196 kt, which is the ground speed. Common mistake: adding the crosswind directly to the airspeed."},{"difficulty":"advanced","topic":"Climb Gradient","defaultPrep":0,"defaultAns":180,"prep":0,"ans":180,"diagram":"","type":"math_cn","cat":"MATH&PHYSICS CN","q":"飛機在地速 120 kt 時必須達到每海里 300 ft 的爬升梯度。所需爬升率是多少？","hint":"進階題：先判斷核心原理、統一單位、分步計算，再檢查答案是否合理。","tags":["Climb Gradient","advanced","v147","verified"],"choices":["300 ft/min","450 ft/min","600 ft/min","900 ft/min"],"correct":2,"s":"【解題步驟】\n120 kt=每分鐘 2 NM。所需爬升率=300 ft/NM×2 NM/min=600 ft/min。常見錯誤是未把節換算成每分鐘海里數。","short":"600 ft/min","cn":"【English Support】\nA ground speed of 120 kt equals 2 NM per minute. Required climb rate=300 ft/NM×2 NM/min=600 ft/min. Common mistake: using 120 directly without converting knots to nautical miles per minute."},{"difficulty":"advanced","topic":"Descent Planning","defaultPrep":0,"defaultAns":180,"prep":0,"ans":180,"diagram":"","type":"math_cn","cat":"MATH&PHYSICS CN","q":"飛機需以 1,200 ft/min 下降 18,000 ft，地速維持 180 kt。忽略平飛段，應在距目標多遠處開始下降？","hint":"進階題：先判斷核心原理、統一單位、分步計算，再檢查答案是否合理。","tags":["Descent Planning","advanced","v147","verified"],"choices":["30 NM","36 NM","45 NM","54 NM"],"correct":2,"s":"【解題步驟】\n下降時間=18,000/1,200=15 分鐘。180 kt=每分鐘 3 NM，因此距離=15×3=45 NM。常見錯誤是混用小時與分鐘。","short":"45 NM","cn":"【English Support】\nDescent time=18,000/1,200=15 min. A ground speed of 180 kt equals 3 NM/min. Distance=15×3=45 NM. Common mistake: mixing hours and minutes."},{"difficulty":"advanced","topic":"Piecewise Motion","defaultPrep":0,"defaultAns":180,"prep":0,"ans":180,"diagram":"","type":"math_cn","cat":"MATH&PHYSICS CN","q":"一輛車由靜止在 10 秒內均勻加速至 20 m/s，接著以 20 m/s 行駛 15 秒。總路程是多少？","hint":"進階題：先判斷核心原理、統一單位、分步計算，再檢查答案是否合理。","tags":["Piecewise Motion","advanced","v147","verified"],"choices":["300 m","350 m","400 m","500 m"],"correct":2,"s":"【解題步驟】\n加速階段平均速度=(0+20)/2=10 m/s，路程=10×10=100 m。等速階段路程=20×15=300 m。總路程=400 m。","short":"400 m","cn":"【English Support】\nDuring acceleration, average speed=(0+20)/2=10 m/s, so distance=10×10=100 m. During constant speed, distance=20×15=300 m. Total=400 m."},{"difficulty":"advanced","topic":"Projectile Motion","defaultPrep":0,"defaultAns":180,"prep":0,"ans":180,"diagram":"","type":"math_cn","cat":"MATH&PHYSICS CN","q":"一顆球從 45 m 高處以 20 m/s 水平射出，忽略空氣阻力並取 g=10 m/s²。落地前水平飛行多遠？","hint":"進階題：先判斷核心原理、統一單位、分步計算，再檢查答案是否合理。","tags":["Projectile Motion","advanced","v147","verified"],"choices":["30 m","45 m","60 m","90 m"],"correct":2,"s":"【解題步驟】\n垂直方向：45=½×10×t²，因此 t=3 s。水平方向速度維持 20 m/s，所以射程=20×3=60 m。常見錯誤是把水平初速代入垂直運動。","short":"60 m","cn":"【English Support】\nVertical motion gives 45=½(10)t², so t=3 s. Horizontal speed is constant, so range=20×3=60 m. Common mistake: using the launch speed in the vertical equation."},{"difficulty":"advanced","topic":"Inclined Plane with Friction","defaultPrep":0,"defaultAns":180,"prep":0,"ans":180,"diagram":"","type":"math_cn","cat":"MATH&PHYSICS CN","q":"一物體沿 30° 斜面下滑，動摩擦係數為 0.20。取 g=9.8 m/s²，沿斜面的加速度是多少？","hint":"進階題：先判斷核心原理、統一單位、分步計算，再檢查答案是否合理。","tags":["Inclined Plane with Friction","advanced","v147","verified"],"choices":["1.24 m/s²","3.20 m/s²","4.90 m/s²","6.60 m/s²"],"correct":1,"s":"【解題步驟】\n沿斜面方向 a=g(sinθ−μcosθ)=9.8(0.5−0.20×0.866)≈3.20 m/s²，質量會消去。常見錯誤是把摩擦力寫成 μmg，漏掉 cosθ。","short":"3.20 m/s²","cn":"【English Support】\nAlong the plane, a=g(sinθ−μcosθ)=9.8(0.5−0.20×0.866)≈3.20 m/s². Mass cancels. Common mistake: using μmg rather than μmgcosθ for friction."},{"difficulty":"advanced","topic":"Atwood Machine","defaultPrep":0,"defaultAns":180,"prep":0,"ans":180,"diagram":"","type":"math_cn","cat":"MATH&PHYSICS CN","q":"6 kg 與 4 kg 兩物體以輕繩跨過理想滑輪連接。取 g=10 m/s²，加速度大小與繩張力是多少？","hint":"進階題：先判斷核心原理、統一單位、分步計算，再檢查答案是否合理。","tags":["Atwood Machine","advanced","v147","verified"],"choices":["1 m/s²、44 N","2 m/s²、48 N","2 m/s²、60 N","4 m/s²、40 N"],"correct":1,"s":"【解題步驟】\n加速度=(6−4)g/(6+4)=2 m/s²。對向上運動的 4 kg 物體：T−40=4×2，因此 T=48 N。常見錯誤是把兩物體重量差直接當成張力。","short":"2 m/s²、48 N","cn":"【English Support】\nThe acceleration is (6−4)g/(6+4)=2 m/s². For the 4 kg mass moving upward, T−40=4×2, so T=48 N. Common mistake: using the weight difference as the tension."},{"difficulty":"advanced","topic":"Power and Efficiency","defaultPrep":0,"defaultAns":180,"prep":0,"ans":180,"diagram":"","type":"math_cn","cat":"MATH&PHYSICS CN","q":"馬達在 20 秒內將 500 kg 負載垂直提升 12 m。若效率為 70%，所需輸入功率是多少？取 g=9.8 m/s²。","hint":"進階題：先判斷核心原理、統一單位、分步計算，再檢查答案是否合理。","tags":["Power and Efficiency","advanced","v147","verified"],"choices":["1.47 kW","2.10 kW","2.94 kW","4.20 kW"],"correct":3,"s":"【解題步驟】\n有效功=mgh=500×9.8×12=58,800 J，有效輸出功率=58,800/20=2,940 W。輸入功率=2,940/0.70=4,200 W=4.20 kW。","short":"4.20 kW","cn":"【English Support】\nUseful work=mgh=500×9.8×12=58,800 J. Useful output power=58,800/20=2,940 W. Input power=2,940/0.70=4,200 W. Therefore the correct value is 4.20 kW."},{"difficulty":"advanced","topic":"Impulse","defaultPrep":0,"defaultAns":180,"prep":0,"ans":180,"diagram":"","type":"math_cn","cat":"MATH&PHYSICS CN","q":"0.15 kg 球以 20 m/s 前進，碰撞後以 30 m/s 反向彈回，接觸時間 0.050 s。平均作用力大小是多少？","hint":"進階題：先判斷核心原理、統一單位、分步計算，再檢查答案是否合理。","tags":["Impulse","advanced","v147","verified"],"choices":["30 N","75 N","150 N","300 N"],"correct":2,"s":"【解題步驟】\n取初始方向為正：Δp=m(vf−vi)=0.15(−30−20)=−7.5 N·s，衝量大小為 7.5 N·s。平均力=7.5/0.050=150 N。常見錯誤是忽略反向，僅用 30−20。","short":"150 N","cn":"【English Support】\nTake the initial direction as positive: Δp=m(vf−vi)=0.15(−30−20)=−7.5 N·s. The impulse magnitude is 7.5 N·s, so average force=7.5/0.050=150 N. Common mistake: subtracting speed magnitudes instead of accounting for reversal."},{"difficulty":"advanced","topic":"Elastic Collision","defaultPrep":0,"defaultAns":180,"prep":0,"ans":180,"diagram":"","type":"math_cn","cat":"MATH&PHYSICS CN","q":"兩台相同質量的小車進行一維彈性碰撞。A 車以 8 m/s 前進，B 車初始靜止。碰撞後立即發生什麼？","hint":"進階題：先判斷核心原理、統一單位、分步計算，再檢查答案是否合理。","tags":["Elastic Collision","advanced","v147","verified"],"choices":["A 車維持 8 m/s，B 車仍靜止","A 車停止，B 車以 8 m/s 前進","兩車皆以 4 m/s 前進","A 車以 8 m/s 反彈，B 車仍靜止"],"correct":1,"s":"【解題步驟】\n相同質量物體正碰且為彈性碰撞時，兩者交換速度。因此 A 車停止，B 車以 8 m/s 前進；動量與動能皆守恆。","short":"A 車停止，B 車以 8 m/s 前進","cn":"【English Support】\nFor a head-on elastic collision between equal masses, the velocities are exchanged. Cart A stops and cart B leaves at 8 m/s. Both momentum and kinetic energy are conserved."},{"difficulty":"advanced","topic":"Rotational Kinetic Energy","defaultPrep":0,"defaultAns":180,"prep":0,"ans":180,"diagram":"","type":"math_cn","cat":"MATH&PHYSICS CN","q":"實心圓盤質量 4.0 kg、半徑 0.30 m、角速度 10 rad/s。轉動動能是多少？","hint":"進階題：先判斷核心原理、統一單位、分步計算，再檢查答案是否合理。","tags":["Rotational Kinetic Energy","advanced","v147","verified"],"choices":["4.5 J","9.0 J","18 J","36 J"],"correct":1,"s":"【解題步驟】\n實心圓盤轉動慣量 I=½MR²=0.5×4×0.30²=0.18 kg·m²。轉動動能=½Iω²=0.5×0.18×10²=9.0 J。","short":"9.0 J","cn":"【English Support】\nFor a solid disk, I=½MR²=0.5×4×0.30²=0.18 kg·m². Rotational kinetic energy=½Iω²=0.5×0.18×10²=9.0 J."},{"difficulty":"advanced","topic":"Rolling Motion","defaultPrep":0,"defaultAns":180,"prep":0,"ans":180,"diagram":"","type":"math_cn","cat":"MATH&PHYSICS CN","q":"實心球由靜止開始無滑動滾下 1.4 m 的垂直高度。取 g=9.8 m/s²，底端速度是多少？","hint":"進階題：先判斷核心原理、統一單位、分步計算，再檢查答案是否合理。","tags":["Rolling Motion","advanced","v147","verified"],"choices":["3.13 m/s","4.43 m/s","5.24 m/s","7.00 m/s"],"correct":1,"s":"【解題步驟】\n實心球 I=2MR²/5。能量守恆：mgh=½Mv²+½I(v²/R²)=7Mv²/10，因此 v²=10gh/7=19.6，v≈4.43 m/s。","short":"4.43 m/s","cn":"【English Support】\nFor a solid sphere, I=2MR²/5. Energy conservation gives mgh=½Mv²+½I(v²/R²)=7Mv²/10. Thus v²=10gh/7=19.6, so v≈4.43 m/s."},{"difficulty":"advanced","topic":"Load Factor","defaultPrep":0,"defaultAns":180,"prep":0,"ans":180,"diagram":"","type":"math_cn","cat":"MATH&PHYSICS CN","q":"協調水平轉彎坡度角為 60° 時，負載因數是多少？","hint":"進階題：先判斷核心原理、統一單位、分步計算，再檢查答案是否合理。","tags":["Load Factor","advanced","v147","verified"],"choices":["1.15 g","1.41 g","2.00 g","4.00 g"],"correct":2,"s":"【解題步驟】\n協調水平轉彎負載因數 n=1/cosφ。60° 時 cos60°=0.5，因此 n=2.00，表示機翼須產生相當於兩倍重量的升力。","short":"2.00 g","cn":"【English Support】\nFor a level coordinated turn, load factor n=1/cosφ. At 60°, cos60°=0.5, so n=2.00. This means the wings must produce twice the aircraft weight in lift."},{"difficulty":"advanced","topic":"Torque Equilibrium","defaultPrep":0,"defaultAns":180,"prep":0,"ans":180,"diagram":"","type":"math_cn","cat":"MATH&PHYSICS CN","q":"200 N 力作用在支點左側 1.5 m 處。若要平衡橫桿，在支點右側 2.0 m 處需施加多少向下力？","hint":"進階題：先判斷核心原理、統一單位、分步計算，再檢查答案是否合理。","tags":["Torque Equilibrium","advanced","v147","verified"],"choices":["100 N","150 N","200 N","267 N"],"correct":1,"s":"【解題步驟】\n轉動平衡時順、逆時針力矩相等：200×1.5=F×2.0，因此 F=150 N。","short":"150 N","cn":"【English Support】\nFor rotational equilibrium, clockwise torque equals counterclockwise torque: 200×1.5=F×2.0. Therefore F=150 N."},{"difficulty":"advanced","topic":"Hydrostatic Force","defaultPrep":0,"defaultAns":180,"prep":0,"ans":180,"diagram":"","type":"math_cn","cat":"MATH&PHYSICS CN","q":"一垂直矩形艙門寬 2.0 m、高 1.0 m，上緣位於淡水面下 3.0 m。總靜水壓力是多少？取 ρ=1000 kg/m³、g=9.8 m/s²。","hint":"進階題：先判斷核心原理、統一單位、分步計算，再檢查答案是否合理。","tags":["Hydrostatic Force","advanced","v147","verified"],"choices":["34.3 kN","58.8 kN","68.6 kN","78.4 kN"],"correct":2,"s":"【解題步驟】\n平面所受總靜水壓力 F=ρghcA。形心深度 hc=3.5 m，面積 A=2.0 m²，因此 F=1000×9.8×3.5×2=68,600 N=68.6 kN。","short":"68.6 kN","cn":"【English Support】\nFor a plane surface, resultant force=ρghcA, where hc is centroid depth. The centroid is at 3.5 m and area is 2.0 m². F=1000×9.8×3.5×2=68,600 N=68.6 kN."},{"difficulty":"advanced","topic":"Continuity Equation","defaultPrep":0,"defaultAns":180,"prep":0,"ans":180,"diagram":"","type":"math_cn","cat":"MATH&PHYSICS CN","q":"水流經管徑由 6.0 cm 縮小至 3.0 cm 的管路。若寬管段流速為 2.0 m/s，窄管段流速是多少？","hint":"進階題：先判斷核心原理、統一單位、分步計算，再檢查答案是否合理。","tags":["Continuity Equation","advanced","v147","verified"],"choices":["4.0 m/s","6.0 m/s","8.0 m/s","12.0 m/s"],"correct":2,"s":"【解題步驟】\n連續方程 A1v1=A2v2。截面積與直徑平方成正比，A1/A2=(6/3)²=4，因此 v2=4×2.0=8.0 m/s。","short":"8.0 m/s","cn":"【English Support】\nContinuity requires A1v1=A2v2. Area is proportional to diameter squared, so A1/A2=(6/3)²=4. Therefore v2=4×2.0=8.0 m/s."},{"difficulty":"advanced","topic":"Bernoulli Equation","defaultPrep":0,"defaultAns":180,"prep":0,"ans":180,"diagram":"","type":"math_cn","cat":"MATH&PHYSICS CN","q":"密度 1.2 kg/m³ 的空氣水平流動，速度由 50 m/s 增加至 100 m/s。忽略損失，靜壓降低多少？","hint":"進階題：先判斷核心原理、統一單位、分步計算，再檢查答案是否合理。","tags":["Bernoulli Equation","advanced","v147","verified"],"choices":["1.5 kPa","3.0 kPa","4.5 kPa","9.0 kPa"],"correct":2,"s":"【解題步驟】\n水平流動使用 P1+½ρv1²=P2+½ρv2²。壓降=½ρ(v2²−v1²)=0.5×1.2×(10000−2500)=4500 Pa=4.5 kPa。","short":"4.5 kPa","cn":"【English Support】\nFor horizontal flow, P1+½ρv1²=P2+½ρv2². Pressure drop=½ρ(v2²−v1²)=0.5×1.2×(10000−2500)=4500 Pa=4.5 kPa."},{"difficulty":"advanced","topic":"Buoyancy","defaultPrep":0,"defaultAns":180,"prep":0,"ans":180,"diagram":"","type":"math_cn","cat":"MATH&PHYSICS CN","q":"平均密度 750 kg/m³ 的物體浮在密度 1000 kg/m³ 的水中。其體積有多少比例浸在水下？","hint":"進階題：先判斷核心原理、統一單位、分步計算，再檢查答案是否合理。","tags":["Buoyancy","advanced","v147","verified"],"choices":["25%","50%","75%","100%"],"correct":2,"s":"【解題步驟】\n漂浮平衡時，浸沒比例=物體密度/流體密度=750/1000=0.75，因此 75% 體積浸在水下。","short":"75%","cn":"【English Support】\nFor floating equilibrium, submerged fraction=object density/fluid density=750/1000=0.75. Therefore 75% of the volume is submerged."},{"difficulty":"advanced","topic":"Combined Gas Law","defaultPrep":0,"defaultAns":180,"prep":0,"ans":180,"diagram":"","type":"math_cn","cat":"MATH&PHYSICS CN","q":"氣體初始壓力 100 kPa、體積 2.0 L、溫度 300 K；之後體積變為 1.5 L、溫度 330 K。最終壓力是多少？","hint":"進階題：先判斷核心原理、統一單位、分步計算，再檢查答案是否合理。","tags":["Combined Gas Law","advanced","v147","verified"],"choices":["110 kPa","133 kPa","147 kPa","220 kPa"],"correct":2,"s":"【解題步驟】\n使用 P1V1/T1=P2V2/T2。P2=100×2.0×330/(300×1.5)=146.7 kPa≈147 kPa。溫度必須使用絕對溫標 K。","short":"147 kPa","cn":"【English Support】\nUse P1V1/T1=P2V2/T2. P2=100×2.0×330/(300×1.5)=146.7 kPa≈147 kPa. Temperature must be in kelvins."},{"difficulty":"advanced","topic":"Calorimetry","defaultPrep":0,"defaultAns":180,"prep":0,"ans":180,"diagram":"","type":"math_cn","cat":"MATH&PHYSICS CN","q":"等質量的 80°C 與 20°C 水在絕熱容器中混合，忽略容器熱容量。最終溫度是多少？","hint":"進階題：先判斷核心原理、統一單位、分步計算，再檢查答案是否合理。","tags":["Calorimetry","advanced","v147","verified"],"choices":["30°C","40°C","50°C","60°C"],"correct":2,"s":"【解題步驟】\n兩份水質量相同且比熱相同，因此平衡溫度為算術平均：(80+20)/2=50°C。","short":"50°C","cn":"【English Support】\nThe substances have equal mass and the same specific heat, so the final temperature is the arithmetic average: (80+20)/2=50°C."},{"difficulty":"advanced","topic":"Thermal Expansion","defaultPrep":0,"defaultAns":180,"prep":0,"ans":180,"diagram":"","type":"math_cn","cat":"MATH&PHYSICS CN","q":"2.0 m 鋁桿的線膨脹係數為 23×10⁻⁶/°C。升溫 50°C 時伸長多少？","hint":"進階題：先判斷核心原理、統一單位、分步計算，再檢查答案是否合理。","tags":["Thermal Expansion","advanced","v147","verified"],"choices":["0.23 mm","1.15 mm","2.30 mm","23.0 mm"],"correct":2,"s":"【解題步驟】\nΔL=αLΔT=23×10⁻⁶×2.0×50=0.0023 m=2.30 mm。常見錯誤是單位換算後標示錯誤。","short":"2.30 mm","cn":"【English Support】\nΔL=αLΔT=23×10⁻⁶×2.0×50=0.0023 m=2.30 mm. Common mistake: leaving the result in metres but labeling it millimetres."},{"difficulty":"advanced","topic":"Resistor Network","defaultPrep":0,"defaultAns":180,"prep":0,"ans":180,"diagram":"","type":"math_cn","cat":"MATH&PHYSICS CN","q":"6 Ω 與 3 Ω 電阻並聯後，再與 4 Ω 電阻串聯接在 12 V 電源上。總電流是多少？","hint":"進階題：先判斷核心原理、統一單位、分步計算，再檢查答案是否合理。","tags":["Resistor Network","advanced","v147","verified"],"choices":["1 A","2 A","3 A","4 A"],"correct":1,"s":"【解題步驟】\n並聯等效電阻=(6×3)/(6+3)=2 Ω，總電阻=2+4=6 Ω，因此總電流=12/6=2 A。","short":"2 A","cn":"【English Support】\nThe parallel equivalent is (6×3)/(6+3)=2 Ω. Total resistance=2+4=6 Ω. Total current=12/6=2 A."},{"difficulty":"advanced","topic":"Battery Internal Resistance","defaultPrep":0,"defaultAns":180,"prep":0,"ans":180,"diagram":"","type":"math_cn","cat":"MATH&PHYSICS CN","q":"24 V 電池內阻 0.5 Ω，外接 5.5 Ω 負載。電流與端電壓是多少？","hint":"進階題：先判斷核心原理、統一單位、分步計算，再檢查答案是否合理。","tags":["Battery Internal Resistance","advanced","v147","verified"],"choices":["4 A、22 V","4 A、24 V","4.36 A、21.8 V","6 A、21 V"],"correct":0,"s":"【解題步驟】\n總電阻=5.5+0.5=6.0 Ω，因此電流=24/6=4 A。負載端電壓=IR=4×5.5=22 V，也可用 E−Ir 求得。","short":"4 A、22 V","cn":"【English Support】\nTotal resistance=5.5+0.5=6.0 Ω, so current=24/6=4 A. Terminal voltage across the load=IR=4×5.5=22 V, also equal to E−Ir."},{"difficulty":"advanced","topic":"RC Circuit","defaultPrep":0,"defaultAns":180,"prep":0,"ans":180,"diagram":"","type":"math_cn","cat":"MATH&PHYSICS CN","q":"200 kΩ 電阻與 50 μF 電容形成充電電路。經過一個時間常數後，約儲存最終電量的多少比例？","hint":"進階題：先判斷核心原理、統一單位、分步計算，再檢查答案是否合理。","tags":["RC Circuit","advanced","v147","verified"],"choices":["36.8%","50.0%","63.2%","86.5%"],"correct":2,"s":"【解題步驟】\n時間常數 τ=RC=200,000×50×10⁻⁶=10 s。充電時 q/Qfinal=1−e⁻¹≈0.632，因此一個時間常數後約達 63.2%。","short":"63.2%","cn":"【English Support】\nThe time constant is τ=RC=200,000×50×10⁻⁶=10 s. During charging, q/Qfinal=1−e⁻¹≈0.632, so 63.2% is stored after one time constant."},{"difficulty":"advanced","topic":"Transformer","defaultPrep":0,"defaultAns":180,"prep":0,"ans":180,"diagram":"","type":"math_cn","cat":"MATH&PHYSICS CN","q":"理想變壓器將 240 V 降至 24 V。若一次側電流為 0.50 A，二次側電流是多少？","hint":"進階題：先判斷核心原理、統一單位、分步計算，再檢查答案是否合理。","tags":["Transformer","advanced","v147","verified"],"choices":["0.05 A","0.50 A","5.0 A","50 A"],"correct":2,"s":"【解題步驟】\n理想變壓器輸入功率等於輸出功率：240×0.50=24×Is，因此 Is=5.0 A。電壓降低時電流按反比增加。","short":"5.0 A","cn":"【English Support】\nFor an ideal transformer, input power equals output power: 240×0.50=24×Is. Therefore Is=5.0 A. Current changes inversely with voltage."},{"difficulty":"advanced","topic":"Doppler Effect","defaultPrep":0,"defaultAns":180,"prep":0,"ans":180,"diagram":"","type":"math_cn","cat":"MATH&PHYSICS CN","q":"500 Hz 聲源以 30 m/s 朝靜止觀察者移動，聲速為 340 m/s。觀察者聽到的頻率是多少？","hint":"進階題：先判斷核心原理、統一單位、分步計算，再檢查答案是否合理。","tags":["Doppler Effect","advanced","v147","verified"],"choices":["459 Hz","500 Hz","548 Hz","594 Hz"],"correct":2,"s":"【解題步驟】\n聲源接近靜止觀察者時，f'=fv/(v−vs)=500×340/(340−30)=548.4 Hz≈548 Hz。分母變小，因此聽到的頻率升高。","short":"548 Hz","cn":"【English Support】\nFor a source approaching a stationary observer, f'=fv/(v−vs)=500×340/(340−30)=548.4 Hz≈548 Hz. The denominator decreases, so the observed frequency must increase."},{"difficulty":"advanced","topic":"Sound Level","defaultPrep":0,"defaultAns":180,"prep":0,"ans":180,"diagram":"","type":"math_cn","cat":"MATH&PHYSICS CN","q":"聲音強度增加為原來的 100 倍。聲強級增加多少分貝？","hint":"進階題：先判斷核心原理、統一單位、分步計算，再檢查答案是否合理。","tags":["Sound Level","advanced","v147","verified"],"choices":["10 dB","20 dB","40 dB","100 dB"],"correct":1,"s":"【解題步驟】\n變化量 Δβ=10log10(I2/I1)=10log10(100)=20 dB。強度增加 10 倍為 10 dB，100 倍為 20 dB。","short":"20 dB","cn":"【English Support】\nThe change is Δβ=10log10(I2/I1)=10log10(100)=20 dB. A factor of 10 corresponds to 10 dB; a factor of 100 corresponds to 20 dB."},{"difficulty":"advanced","topic":"Thin Lens Magnification","defaultPrep":0,"defaultAns":180,"prep":0,"ans":180,"diagram":"","type":"math_cn","cat":"MATH&PHYSICS CN","q":"會聚透鏡焦距 10 cm，物體距透鏡 15 cm。像距與放大率是多少？","hint":"進階題：先判斷核心原理、統一單位、分步計算，再檢查答案是否合理。","tags":["Thin Lens Magnification","advanced","v147","verified"],"choices":["15 cm、+1","20 cm、−1.33","30 cm、−2","30 cm、+2"],"correct":2,"s":"【解題步驟】\n由 1/f=1/do+1/di 得 1/di=1/10−1/15=1/30，所以 di=30 cm。放大率 m=−di/do=−30/15=−2，表示倒立且放大 2 倍。","short":"30 cm、−2","cn":"【English Support】\n1/f=1/do+1/di gives 1/di=1/10−1/15=1/30, so di=30 cm. Magnification m=−di/do=−30/15=−2, meaning an inverted image twice the size."},{"difficulty":"advanced","topic":"Convex Mirror","defaultPrep":0,"defaultAns":180,"prep":0,"ans":180,"diagram":"","type":"math_cn","cat":"MATH&PHYSICS CN","q":"凸面鏡焦距 −20 cm，物體位於鏡前 60 cm。像距與成像性質為何？","hint":"進階題：先判斷核心原理、統一單位、分步計算，再檢查答案是否合理。","tags":["Convex Mirror","advanced","v147","verified"],"choices":["−15 cm；虛像、正立、縮小","15 cm；實像、倒立、縮小","−30 cm；虛像、正立、等大","30 cm；實像、倒立、放大"],"correct":0,"s":"【解題步驟】\n使用 1/f=1/do+1/di：1/di=−1/20−1/60=−1/15，因此 di=−15 cm。負像距代表虛像；放大率=−di/do=0.25，所以正立縮小。","short":"−15 cm；虛像、正立、縮小","cn":"【English Support】\nUsing 1/f=1/do+1/di: 1/di=−1/20−1/60=−1/15, so di=−15 cm. The negative image distance means a virtual image. Magnification=−di/do=0.25, so it is upright and reduced."},{"difficulty":"advanced","topic":"Rational Equation","defaultPrep":0,"defaultAns":180,"prep":0,"ans":180,"diagram":"","type":"math_cn","cat":"MATH&PHYSICS CN","q":"解方程式 3/(x−1)=2/(x+2)。","hint":"進階題：先判斷核心原理、統一單位、分步計算，再檢查答案是否合理。","tags":["Rational Equation","advanced","v147","verified"],"choices":["x=−8","x=−1","x=4","x=8"],"correct":0,"s":"【解題步驟】\n交叉相乘：3(x+2)=2(x−1)，得 3x+6=2x−2，因此 x=−8。此值不等於 1 或 −2，符合原式定義域。","short":"x=−8","cn":"【English Support】\nCross-multiply: 3(x+2)=2(x−1). Thus 3x+6=2x−2, so x=−8. It is valid because x is neither 1 nor −2."},{"difficulty":"advanced","topic":"Quadratic Optimization","defaultPrep":0,"defaultAns":180,"prep":0,"ans":180,"diagram":"","type":"math_cn","cat":"MATH&PHYSICS CN","q":"矩形周長固定為 100 m。最大可能面積是多少？","hint":"進階題：先判斷核心原理、統一單位、分步計算，再檢查答案是否合理。","tags":["Quadratic Optimization","advanced","v147","verified"],"choices":["500 m²","600 m²","625 m²","2500 m²"],"correct":2,"s":"【解題步驟】\n設寬 x、長 50−x，面積 A=x(50−x)=−x²+50x。頂點在 x=25，因此最大面積出現在 25 m×25 m 正方形，為 625 m²。","short":"625 m²","cn":"【English Support】\nLet width=x and length=50−x. Area A=x(50−x)=−x²+50x, whose vertex is at x=25. The maximum occurs for a 25 m by 25 m square, giving 625 m²."},{"difficulty":"advanced","topic":"Law of Cosines","defaultPrep":0,"defaultAns":180,"prep":0,"ans":180,"diagram":"","type":"math_cn","cat":"MATH&PHYSICS CN","q":"三角形兩邊為 7 m 與 9 m，夾角 60°。第三邊長多少？","hint":"進階題：先判斷核心原理、統一單位、分步計算，再檢查答案是否合理。","tags":["Law of Cosines","advanced","v147","verified"],"choices":["6.40 m","8.19 m","10.39 m","13.86 m"],"correct":1,"s":"【解題步驟】\n餘弦定理：c²=7²+9²−2×7×9×cos60°=49+81−63=67，因此 c=√67≈8.19 m。","short":"8.19 m","cn":"【English Support】\nBy the law of cosines, c²=7²+9²−2(7)(9)cos60°=49+81−63=67. Thus c=√67≈8.19 m."},{"difficulty":"advanced","topic":"Trigonometric Height","defaultPrep":0,"defaultAns":180,"prep":0,"ans":180,"diagram":"","type":"math_cn","cat":"MATH&PHYSICS CN","q":"距塔底 50 m 處仰望塔頂，仰角為 30°。忽略眼睛高度，塔高多少？","hint":"進階題：先判斷核心原理、統一單位、分步計算，再檢查答案是否合理。","tags":["Trigonometric Height","advanced","v147","verified"],"choices":["25.0 m","28.9 m","43.3 m","50.0 m"],"correct":1,"s":"【解題步驟】\ntan30°=塔高/50，因此塔高=50tan30°≈28.9 m。","short":"28.9 m","cn":"【English Support】\ntan30°=height/50, so height=50tan30°≈28.9 m."},{"difficulty":"advanced","topic":"Binomial Probability","defaultPrep":0,"defaultAns":180,"prep":0,"ans":180,"diagram":"","type":"math_cn","cat":"MATH&PHYSICS CN","q":"單一元件故障機率為 20%。五個彼此獨立的元件中，恰有兩個故障的機率是多少？","hint":"進階題：先判斷核心原理、統一單位、分步計算，再檢查答案是否合理。","tags":["Binomial Probability","advanced","v147","verified"],"choices":["0.1024","0.2048","0.3277","0.4096"],"correct":1,"s":"【解題步驟】\n使用二項分配：C(5,2)(0.2)²(0.8)³=10×0.04×0.512=0.2048。","short":"0.2048","cn":"【English Support】\nUse the binomial formula: C(5,2)(0.2)²(0.8)³=10×0.04×0.512=0.2048."},{"difficulty":"advanced","topic":"Conditional Probability","defaultPrep":0,"defaultAns":180,"prep":0,"ans":180,"diagram":"","type":"math_cn","cat":"MATH&PHYSICS CN","q":"從標準撲克牌抽一張，已知它是人頭牌。它是 K 的機率是多少？","hint":"進階題：先判斷核心原理、統一單位、分步計算，再檢查答案是否合理。","tags":["Conditional Probability","advanced","v147","verified"],"choices":["1/13","1/4","1/3","4/13"],"correct":2,"s":"【解題步驟】\n人頭牌共有 12 張：J、Q、K 各 4 張。已知抽到人頭牌後，是 K 的機率=4/12=1/3。","short":"1/3","cn":"【English Support】\nThere are 12 face cards in total: four jacks, four queens, and four kings. Given that the card is a face card, the probability of a king is 4/12=1/3."},{"difficulty":"advanced","topic":"Combinations","defaultPrep":0,"defaultAns":180,"prep":0,"ans":180,"diagram":"","type":"math_cn","cat":"MATH&PHYSICS CN","q":"從 8 人中選出 3 人委員會，共有多少種不同選法？","hint":"進階題：先判斷核心原理、統一單位、分步計算，再檢查答案是否合理。","tags":["Combinations","advanced","v147","verified"],"choices":["24","56","336","512"],"correct":1,"s":"【解題步驟】\n委員會成員順序不重要，因此使用組合：C(8,3)=8!/(3!5!)=56。","short":"56","cn":"【English Support】\nOrder does not matter, so use combinations: C(8,3)=8!/(3!5!)=56."},{"difficulty":"advanced","topic":"Geometric Series","defaultPrep":0,"defaultAns":180,"prep":0,"ans":180,"diagram":"","type":"math_cn","cat":"MATH&PHYSICS CN","q":"等比數列首項 5、公比 1.5，共 6 項。總和是多少？","hint":"進階題：先判斷核心原理、統一單位、分步計算，再檢查答案是否合理。","tags":["Geometric Series","advanced","v147","verified"],"choices":["75.94","93.75","103.91","113.91"],"correct":2,"s":"【解題步驟】\nSn=a(rⁿ−1)/(r−1)=5(1.5⁶−1)/0.5。因 1.5⁶=11.390625，所以 Sn≈103.90625，取 103.91。","short":"103.91","cn":"【English Support】\nSn=a(rⁿ−1)/(r−1)=5(1.5⁶−1)/0.5. Since 1.5⁶=11.390625, Sn≈103.90625, or 103.91."},{"difficulty":"advanced","topic":"Exponential Growth","defaultPrep":0,"defaultAns":180,"prep":0,"ans":180,"diagram":"","type":"math_cn","cat":"MATH&PHYSICS CN","q":"$1,200 以年利率 4% 每年複利成長。五年後約為多少？","hint":"進階題：先判斷核心原理、統一單位、分步計算，再檢查答案是否合理。","tags":["Exponential Growth","advanced","v147","verified"],"choices":["$1,392","$1,440","$1,460","$1,500"],"correct":2,"s":"【解題步驟】\n終值=1200(1.04)⁵≈1200×1.21665≈$1,460。複利會讓利息也繼續產生利息。","short":"$1,460","cn":"【English Support】\nFuture value=1200(1.04)⁵≈1200×1.21665≈$1,460. Compound growth applies interest to previous interest as well."},{"difficulty":"advanced","topic":"Logarithms","defaultPrep":0,"defaultAns":180,"prep":0,"ans":180,"diagram":"","type":"math_cn","cat":"MATH&PHYSICS CN","q":"若 log10(x)=2.5，x 是多少？","hint":"進階題：先判斷核心原理、統一單位、分步計算，再檢查答案是否合理。","tags":["Logarithms","advanced","v147","verified"],"choices":["25","100","250","316.2"],"correct":3,"s":"【解題步驟】\n改寫成指數形式：x=10²·⁵=10²√10≈100×3.162=316.2。","short":"316.2","cn":"【English Support】\nConvert from logarithmic to exponential form: x=10²·⁵=10²√10≈100×3.162=316.2."},{"difficulty":"advanced","topic":"Coordinate Geometry","defaultPrep":0,"defaultAns":180,"prep":0,"ans":180,"diagram":"","type":"math_cn","cat":"MATH&PHYSICS CN","q":"點 (3,−2) 到直線 4x−3y+6=0 的距離是多少？","hint":"進階題：先判斷核心原理、統一單位、分步計算，再檢查答案是否合理。","tags":["Coordinate Geometry","advanced","v147","verified"],"choices":["2.4","3.6","4.8","6.0"],"correct":2,"s":"【解題步驟】\n點到直線距離=|Ax0+By0+C|/√(A²+B²)=|4×3−3×(−2)+6|/5=24/5=4.8。","short":"4.8","cn":"【English Support】\nPoint-to-line distance=|Ax0+By0+C|/√(A²+B²)=|4(3)−3(−2)+6|/5=24/5=4.8."},{"difficulty":"advanced","topic":"Combined Work Rate","defaultPrep":0,"defaultAns":180,"prep":0,"ans":180,"diagram":"","type":"math_cn","cat":"MATH&PHYSICS CN","q":"A 管 6 小時注滿水槽，B 管 4 小時注滿，排水管 12 小時排空。三者同時開啟時，多久注滿？","hint":"進階題：先判斷核心原理、統一單位、分步計算，再檢查答案是否合理。","tags":["Combined Work Rate","advanced","v147","verified"],"choices":["2 h","3 h","4 h","6 h"],"correct":1,"s":"【解題步驟】\n淨速率=1/6+1/4−1/12=2/12+3/12−1/12=4/12=1/3 槽/小時，因此需 3 小時。","short":"3 h","cn":"【English Support】\nNet rate=1/6+1/4−1/12=2/12+3/12−1/12=4/12=1/3 tank per hour. Time=3 hours."},{"difficulty":"advanced","topic":"Fuel Planning","defaultPrep":0,"defaultAns":180,"prep":0,"ans":180,"diagram":"","type":"math_cn","cat":"MATH&PHYSICS CN","q":"某航班需 2,400 kg 航程燃油、5% 應變燃油、400 kg 備降燃油、600 kg 最終備份燃油及 100 kg 滑行燃油。所需 block fuel 是多少？","hint":"進階題：先判斷核心原理、統一單位、分步計算，再檢查答案是否合理。","tags":["Fuel Planning","advanced","v147","verified"],"choices":["3,500 kg","3,620 kg","3,720 kg","4,020 kg"],"correct":1,"s":"【解題步驟】\n應變燃油=0.05×2400=120 kg。Block fuel=2400+120+400+600+100=3,620 kg。常見錯誤是把 5% 套用到所有燃油項目。","short":"3,620 kg","cn":"【English Support】\nContingency fuel=0.05×2400=120 kg. Block fuel=2400+120+400+600+100=3,620 kg. Common mistake: applying 5% to every fuel component rather than to trip fuel as stated."}],
+    repairs:{"pilot":{"Tell me about yourself.":["My name is Ying Chen. I graduated from Southern Taiwan University of Science and Technology with a degree in Marketing and Logistics Management, and I have managed my family’s tea business for about ten years. My work has required me to handle customers, negotiate important deals, control inventory, and make decisions under pressure. These experiences strengthened my responsibility, communication, and risk awareness. In recent years, I have prepared systematically for a cadet-pilot career by improving my English, studying aviation knowledge and mathematics, practicing with a flight simulator, and maintaining my physical condition. I believe my maturity, discipline, and willingness to learn can help me adapt well to professional flight training.","我叫陳穎，畢業於南臺科技大學行銷與物流管理系，並經營家中茶行約十年。工作中，我需要服務客戶、處理重要談判、管理庫存，並在壓力下做決定，這些經驗培養了我的責任感、溝通能力與風險意識。近年來，我有系統地準備培訓機師甄選，包括提升英文、學習航空知識與數理、使用飛行模擬器練習，以及維持體能。我相信自己的成熟度、紀律與學習意願，能幫助我適應專業飛行訓練。"],"Why do you want to become a pilot?":["I want to become a pilot because the profession combines responsibility, continuous learning, teamwork, and the pursuit of high standards. Whenever I take a flight, I am moved by the fact that an aircraft carries not only passengers, but also families, plans, and trust. I want to take responsibility for bringing people safely to where they need to go. I also hope to build a stable professional career and provide a better life for my family. I understand that becoming a pilot requires long-term discipline rather than only enthusiasm, so I have been preparing my English, mathematics, aviation knowledge, simulator skills, and physical condition step by step. Regardless of the difficulty, I want to keep improving and pursue the best standard I can reach.","我想成為飛行員，因為這份工作結合了責任、持續學習、團隊合作與對高標準的追求。每次搭飛機時，我都會感受到飛機承載的不只是乘客，也包含許多家庭、計畫與信任。我希望能承擔責任，安全地將人們送到目的地，也希望建立穩定的專業職涯，讓家人過上更好的生活。我知道成為飛行員不能只靠熱情，而需要長期紀律，因此我正逐步準備英文、數理、航空知識、模擬機與體能。不論過程多困難，我都希望持續進步，追求自己能達到的最高標準。"],"How do you maintain your weight and health?":["I maintain my health through a routine that I can sustain instead of using short-term dieting. Each week, I combine strength training, smaller-muscle exercises, and aerobic training. For cardio, I use Zone 2 sessions and short runs, and I adjust lower-body exercises to protect my reconstructed right knee. I also monitor my weight, sleep, hydration, and alcohol intake. When pain or unusual fatigue appears, I reduce the training load and recover rather than forcing the session. This approach has helped me gradually control my weight and, more importantly, build the consistency and self-awareness required for pilot training.","我以能長期維持的生活方式管理健康，而不是依靠短期節食。每週我會安排重訓、小肌群訓練與有氧運動；有氧以 Zone 2 和短距離跑步為主，下肢訓練則會依右膝重建史調整。我也會觀察體重、睡眠、水分與飲酒量。如果出現疼痛或異常疲勞，我會降低訓練量並恢復，而不是勉強完成。這樣的方式幫助我逐步控制體重，也培養了培訓機師所需要的持續性與自我覺察。"],"What have you done to prepare for pilot training?":["I have prepared in several areas because cadet-pilot selection requires balanced ability. First, I completed the required aviation medical examination and improved my English to a TOEIC score of 955 while continuing speaking and writing practice. Second, I study mathematics, physics, aviation knowledge, CRM, and TEM on a regular schedule. Third, I practice flight procedures in X-Plane, including route setup, LNAV and VNAV use, and ILS approaches, while reminding myself that a simulator is a learning tool rather than a substitute for formal training. I also review interview questions, refine my résumé and autobiography, and maintain my physical condition. My goal is not only to pass the selection process, but to enter training with disciplined study habits and a realistic understanding of the profession.","我從多個面向準備，因為培訓機師甄選需要均衡能力。首先，我已完成航空體檢，並將 TOEIC 提升至 955 分，同時持續練習口說與寫作。第二，我依固定進度學習數理、航空知識、CRM 與 TEM。第三，我使用 X-Plane 練習航路設定、LNAV／VNAV 與 ILS 進場，同時提醒自己模擬器只是學習工具，不能取代正式訓練。我也持續整理面試題、履歷與自傳，並維持體能。我的目標不只是通過甄選，而是帶著有紀律的學習習慣與對職業的務實理解進入訓練。"]},"interview_cn":{"請你自我介紹。":["我叫陳穎，畢業於南臺科技大學行銷與物流管理系，並經營家中茶行約十年。工作中，我需要服務客戶、處理重要談判、管理庫存，並在壓力下做決定，這些經驗培養了我的責任感、溝通能力與風險意識。近年來，我有系統地準備培訓機師甄選，包括提升英文、學習航空知識與數理、使用飛行模擬器練習，以及維持體能。我相信自己的成熟度、紀律與學習意願，能幫助我適應專業飛行訓練。","My name is Ying Chen. I graduated with a degree in Marketing and Logistics Management and have managed my family’s tea business for about ten years. My work developed my responsibility, communication, and risk awareness. I have also prepared systematically in English, aviation knowledge, mathematics, simulator practice, and physical fitness. I believe my maturity, discipline, and willingness to learn will help me adapt to professional flight training."],"你如何保持你的體重與健康?":["我以能長期維持的生活方式管理健康，而不是依靠短期節食。每週我會安排重訓、小肌群訓練與有氧運動；有氧以 Zone 2 和短距離跑步為主，下肢訓練則會依右膝重建史調整。我也會觀察體重、睡眠、水分與飲酒量。如果出現疼痛或異常疲勞，我會降低訓練量並恢復，而不是勉強完成。這樣的方式幫助我逐步控制體重，也培養了培訓機師所需要的持續性與自我覺察。","I manage my health through a sustainable routine rather than short-term dieting. I combine strength training and aerobic exercise, adjust lower-body work for my reconstructed knee, and monitor weight, sleep, hydration, and alcohol intake. If pain or unusual fatigue appears, I reduce the load and recover. This helps me maintain consistency and self-awareness."],"我們為什麼應該錄取你成為培訓機師？":["我認為自己能帶來成熟度、責任感、溝通能力與持續學習的紀律。經營家中茶行約十年，讓我習慣對結果負責、處理不同客戶、管理風險，也學會在壓力下依事實做決定。為了轉職成為飛行員，我已完成航空體檢，提升英文，並持續準備數理、航空知識、模擬機與面試。我不會把過去的工作經驗視為飛行能力本身，但它證明我能長期投入、接受回饋並維持專業標準。我相信這些特質能讓我成為一名可訓練、可靠且重視安全的學員。","I can bring maturity, responsibility, communication skills, and disciplined learning. Ten years of managing a family business taught me to take ownership, handle different customers, manage risk, and make fact-based decisions under pressure. I have also completed the aviation medical examination and prepared English, mathematics, aviation knowledge, simulator practice, and interviews. I believe these qualities make me a trainable and reliable candidate."],"你為什麼想成為飛行員？":["我想成為飛行員，因為這份工作結合了責任、持續學習、團隊合作與對高標準的追求。每次搭飛機時，我都會感受到飛機承載的不只是乘客，也包含許多家庭、計畫與信任。我希望能承擔責任，安全地將人們送到目的地，也希望建立穩定的專業職涯，讓家人過上更好的生活。我知道成為飛行員不能只靠熱情，而需要長期紀律，因此我正逐步準備英文、數理、航空知識、模擬機與體能。","I want to become a pilot because the profession combines responsibility, continuous learning, teamwork, and high standards. Every flight carries passengers, families, plans, and trust. I want to take responsibility for bringing people safely to their destinations and build a stable professional career for my family. I understand that this goal requires long-term discipline, so I am preparing step by step."]}}
+  };
+  const norm=v=>String(v??"").normalize("NFKC").toLowerCase()
+    .replace(/[【】「」『』"'`.,，。！？!?：:；;（）()\[\]{}<>+＝=\-−–—_、\/\\\s]/g,"");
+
+  let repaired=0,addedEN=0,addedCN=0,invalidRemoved=0,duplicateRemoved=0;
+  let shortSynced=0,q11TransitionFixed=0,toeicTimingFixed=0,missingChineseSupport=0,shortExplanationCount=0;
+
+  // Targeted manual answer alignment.
+  for(const q of bank){
+    const group=DATA.repairs[q?.type];
+    const fix=group?.[q?.q];
+    if(!fix)continue;
+    if(q.type==="pilot"){
+      q.s=fix[0];
+      q.cn="【中文參考答案】\n"+fix[1];
+    }else if(q.type==="interview_cn"){
+      q.s=fix[0];
+      q.cn="【English Support】\n"+fix[1];
+    }
+    q.tags=[...new Set([...(q.tags||[]),"v148-reviewed","answer-aligned"])];
+    repaired++;
+  }
+
+  // Enforce official practice timing requested by the user.
+  for(const q of bank){
+    if(!q)continue;
+    if(q.type==="toeic11"){
+      if(q.prep!==45||q.ans!==60||q.defaultPrep!==45||q.defaultAns!==60)toeicTimingFixed++;
+      q.prep=q.defaultPrep=45;
+      q.ans=q.defaultAns=60;
+      const matches=[...String(q.s||"").matchAll(/In addition,/gi)];
+      if(matches.length>1){
+        let seen=0;
+        const total=matches.length;
+        q.s=String(q.s).replace(/In addition,/gi,m=>{seen++;return seen<total?"Also,":m;});
+        q11TransitionFixed++;
+      }
+    }
+    if(q.type==="toeic567"&&Array.isArray(q.group)){
+      q.group.forEach((g,i)=>{
+        const label=String(g.label||`Q${i+5}`).toUpperCase();
+        const answer=/Q7/.test(label)?30:15;
+        if(g.prepTime!==3||g.ansTime!==answer)toeicTimingFixed++;
+        g.prepTime=3;
+        g.ansTime=answer;
+      });
+    }
+  }
+
+  const existing=new Set(bank.map(q=>(q?.type||"")+"|"+norm(q?.q||"")));
+  for(const q of DATA.advancedEN){
+    const key=q.type+"|"+norm(q.q);
+    if(!existing.has(key)){bank.push(q);existing.add(key);addedEN++;}
+  }
+  for(const q of DATA.advancedCN){
+    const key=q.type+"|"+norm(q.q);
+    if(!existing.has(key)){bank.push(q);existing.add(key);addedCN++;}
+  }
+
+  // Structural and answer-index QA across the complete runtime bank.
+  const seen=new Set();
+  for(let i=0;i<bank.length;i++){
+    const q=bank[i];
+    const key=(q?.type||"")+"|"+norm(q?.q||"");
+    if(!q||!norm(q.q)||seen.has(key)){
+      bank.splice(i,1);i--;
+      if(q&&seen.has(key))duplicateRemoved++;else invalidRemoved++;
+      continue;
+    }
+    seen.add(key);
+    q.q=String(q.q).trim();
+    if(Array.isArray(q.choices)){
+      q.choices=q.choices.map(x=>String(x).trim());
+      const valid=q.choices.length>=2&&Number.isInteger(q.correct)&&q.correct>=0&&q.correct<q.choices.length&&new Set(q.choices.map(norm)).size===q.choices.length;
+      if(!valid){bank.splice(i,1);i--;invalidRemoved++;continue;}
+      if(q.short!==q.choices[q.correct]){q.short=q.choices[q.correct];shortSynced++;}
+    }
+    const explanation=String(q.s||q.cn||"").trim();
+    if(!explanation){bank.splice(i,1);i--;invalidRemoved++;continue;}
+    if(explanation.length<45)shortExplanationCount++;
+    if(["pilot","aviation","toeic11","toeic567","math_en"].includes(q.type)&&!/[㐀-鿿]/.test(String(q.cn||"")))missingChineseSupport++;
+  }
+
+  document.title=`TRIUMPH Pilot Trainer ${VERSION}`;
+  const logo=document.querySelector(".logo");
+  if(logo)logo.innerHTML=`TRIUMPH Pilot Trainer ${VERSION}<small>PILOT SELECTION TRAINER</small>`;
+  const hint=document.getElementById("hint");
+  if(hint)hint.textContent=`v148：Daily Test 的 TOEIC 倒數僅在 Q5–7／Q11 題目顯示，並需按 Start 啟動；總測驗時間與本題答題時間固定顯示。本版延續全庫結構 QA。`;
+
+  try{
+    if(typeof refreshPool==="function")refreshPool();
+    if(typeof renderTabs==="function")renderTabs();
+    if(typeof updateStats==="function")updateStats();
+  }catch(e){}
+
+  window.TRIUMPH_V148_QA={
+    version:VERSION,
+    dailyTestToeicStyleTimers:true,
+    dailyTestToeicOnlyCountdown:true,
+    dailyTestCountdownRequiresStart:true,
+    dailyTestElapsedAlwaysVisible:true,
+    dailyTestTotalAndQuestionElapsed:true,
+    toeicQ567Timing:"Q5/Q6 3+15; Q7 3+30",
+    toeicQ11Timing:"45+60",
+    overallColor:"teal",
+    repaired,
+    addedEN,
+    addedCN,
+    invalidRemoved,
+    duplicateRemoved,
+    shortSynced,
+    q11TransitionFixed,
+    toeicTimingFixed,
+    missingChineseSupport,
+    shortExplanationCount,
+    total:bank.length
+  };
+})();
+</script>
+
 </body></html>
