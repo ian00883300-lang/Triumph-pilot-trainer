@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="zh-Hant"><head><meta charset="UTF-8"><title>TRIUMPH Pilot Trainer v151</title><meta name="viewport" content="width=device-width,initial-scale=1.0"><style>
+<!DOCTYPE html><html lang="zh-Hant"><head><meta charset="UTF-8"><title>TRIUMPH Pilot Trainer v152</title><meta name="viewport" content="width=device-width,initial-scale=1.0"><style>
 :root{--bg1:#eef4f8;--bg2:#dbe6ee;--card:rgba(255,255,255,.88);--text:#223044;--muted:#7d8aa0;--line:rgba(34,48,68,.12);--accent:#ff7a3d;--navy:#26364f;--soft:#edf2f7;--green:#4c8067;--danger:#d75b5b;--shadow:0 24px 70px rgba(38,54,79,.15);--panel:rgba(255,255,255,.45)}body[data-theme=gray]{--bg1:#5b5d5e;--bg2:#323435;--card:rgba(75,76,77,.92);--text:#fff;--muted:#d6d9de;--line:rgba(255,255,255,.16);--soft:rgba(255,255,255,.12);--panel:rgba(255,255,255,.06);--shadow:0 24px 70px rgba(0,0,0,.28)}body[data-theme=black]{--bg1:#171717;--bg2:#050505;--card:rgba(14,14,14,.95);--text:#fff;--muted:#d7d9dc;--line:rgba(255,255,255,.14);--soft:rgba(255,255,255,.1);--panel:rgba(255,255,255,.045);--shadow:0 24px 70px rgba(0,0,0,.45)}*{box-sizing:border-box}body{margin:0;min-height:100vh;padding:24px;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans TC",sans-serif;background:radial-gradient(circle at 12% 4%,rgba(255,122,61,.18),transparent 32%),linear-gradient(135deg,var(--bg1),var(--bg2));color:var(--text)}.app{max-width:1480px;margin:0 auto;display:grid;grid-template-columns:1.55fr.85fr;gap:20px}.card{background:var(--card);border:1px solid rgba(255,255,255,.5);border-radius:28px;box-shadow:var(--shadow);backdrop-filter:blur(18px)}.main,.sidecard{padding:26px}.side{display:grid;gap:20px;align-content:start}.header{display:grid;grid-template-columns:1fr auto auto;gap:14px;align-items:center;border-bottom:1px solid var(--line);padding-bottom:18px;margin-bottom:18px}.logo{font-size:24px;font-weight:900;letter-spacing:.06em}.logo small{display:block;font-size:12px;color:var(--muted);letter-spacing:.14em;margin-top:4px}.badge{background:var(--navy);color:#fff;padding:9px 13px;border-radius:999px;font-size:13px;font-weight:850}.theme{display:flex;gap:8px}button{font-family:inherit}.tab,.chip,.btn{border:0;border-radius:14px;font-weight:850;cursor:pointer;transition:.18s}.tab{padding:11px 14px;background:var(--soft);color:var(--text);border:1px solid var(--line)}.tab.active{background:var(--navy);color:#fff}.chip{padding:10px 13px;background:var(--soft);border:1px solid var(--line);color:var(--text)}.btn{padding:14px 18px;font-size:16px}.primary{background:var(--navy);color:#fff}.secondary{background:var(--soft);color:var(--text);border:1px solid var(--line)}.green{background:var(--green);color:#fff}.danger{background:var(--danger);color:#fff}.tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px}.questionbox{border:1px solid var(--line);background:var(--panel);border-radius:24px;padding:26px}.category{color:var(--accent);font-size:13px;font-weight:900;letter-spacing:.12em;margin-bottom:12px}.question{font-size:32px;line-height:1.25;font-weight:900;margin:0 0 18px}.hint{color:var(--muted);line-height:1.65;font-size:15px}.tag{display:inline-block;background:rgba(255,122,61,.12);color:var(--accent);border:1px solid rgba(255,122,61,.28);padding:5px 8px;border-radius:999px;font-size:12px;font-weight:850;margin:3px}.timerrow{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:18px 0}.timercard{border:1px solid var(--line);border-radius:20px;padding:18px;background:var(--panel);text-align:center}.timerlabel{font-size:13px;color:var(--muted);font-weight:850}.timer{font-variant-numeric:tabular-nums;font-size:56px;font-weight:900;letter-spacing:-.04em}.barwrap{height:9px;background:rgba(125,138,160,.22);border-radius:999px;overflow:hidden;margin-top:10px}.bar{height:100%;width:0%;background:linear-gradient(90deg,var(--accent),#ffb47e);transition:width.3s linear}.controls{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-top:16px}.answer{display:none;margin-top:18px;border-top:1px solid var(--line);padding-top:18px}.answer h3{margin:0 0 8px;color:var(--accent)}.answer p{line-height:1.7;margin:0 0 12px}.subnav{display:none;gap:10px;justify-content:space-between;margin-top:16px}.subq{border:1px solid var(--line);border-radius:18px;padding:14px;margin-top:14px;background:var(--panel)}.subqtitle{font-weight:900;color:var(--accent);margin-bottom:6px}.choices{display:grid;gap:10px;margin-top:14px}.choice{border:1px solid var(--line);background:var(--soft);padding:13px 15px;border-radius:14px;cursor:pointer;font-weight:850}.choice.correct{background:rgba(76,128,103,.18);border-color:rgba(76,128,103,.55)}.diagram{display:none;margin:16px 0;border:1px solid var(--line);border-radius:18px;background:var(--soft);padding:14px;overflow:auto}.diagram svg{max-width:100%;height:auto;color:var(--text)}.choice.wrong{background:rgba(215,91,91,.16);border-color:rgba(215,91,91,.55)}.stats{display:grid;gap:10px}.stat{display:flex;justify-content:space-between;border:1px solid var(--line);border-radius:14px;padding:13px}.stat b{color:var(--accent)}label{display:block;font-size:13px;color:var(--muted);font-weight:850;margin:12px 0 7px}input,select,textarea{width:100%;border:1px solid var(--line);border-radius:13px;padding:11px 12px;font-size:15px;color:#223044;background:rgba(255,255,255,.75)}body[data-theme=gray] input,body[data-theme=black] input,body[data-theme=gray] select,body[data-theme=black] select,body[data-theme=gray] textarea,body[data-theme=black] textarea{background:rgba(255,255,255,.12);color:#fff}option{color:#111}textarea{min-height:160px;resize:vertical}.favoriteItem{border:1px solid var(--line);border-radius:14px;padding:12px;margin:8px 0;background:var(--soft);cursor:pointer}.favoriteItem b{color:var(--accent);display:block;margin-bottom:4px}@media(max-width:1000px){.app{grid-template-columns:1fr}.question{font-size:26px}.timerrow{grid-template-columns:1fr}.header{grid-template-columns:1fr}}
 
 .diagram{display:none;border:1px solid var(--line);border-radius:18px;padding:14px;margin:14px 0;background:rgba(255,255,255,.35);overflow:auto}.diagram svg{max-width:100%;height:auto}.answer p{white-space:normal}.answer b{font-weight:900;color:var(--accent)}
@@ -985,7 +985,7 @@ body[data-theme="black"] .dt-overlay{--dt-score:#7bc7b8}
 }
 </style>
 
-</head><body data-theme="white"><div class="app"><main class="main card"><div class="header"><div class="logo">TRIUMPH Pilot Trainer v151<small>PILOT SELECTION TRAINER</small></div><div class="theme"><button class="chip" data-theme="white">白</button><button class="chip" data-theme="gray">灰</button><button class="chip" data-theme="black">黑</button><button class="chip timer-quick active" id="timerQuickToggle" type="button" title="開啟／關閉計時" aria-label="開啟／關閉計時" aria-pressed="true">⏰</button></div><div class="badge" id="sessionBadge">Today: 0 questions</div></div>
+</head><body data-theme="white"><div class="app"><main class="main card"><div class="header"><div class="logo">TRIUMPH Pilot Trainer v152<small>PILOT SELECTION TRAINER</small></div><div class="theme"><button class="chip" data-theme="white">白</button><button class="chip" data-theme="gray">灰</button><button class="chip" data-theme="black">黑</button><button class="chip timer-quick active" id="timerQuickToggle" type="button" title="開啟／關閉計時" aria-label="開啟／關閉計時" aria-pressed="true">⏰</button></div><div class="badge" id="sessionBadge">Today: 0 questions</div></div>
 <div class="dt-entry-wrap">
   <button type="button" class="dt-entry" id="dailyTestLaunch">
     <span class="dt-entry-icon">✓</span>
@@ -5855,7 +5855,7 @@ That's why I think so.`;
 
 <script id="v150-classical-and-interview-expansion">
 (() => {
-  const VERSION = "v151";
+  const VERSION = "v152";
   const incoming = [{"type":"classical_cn","cat":"CLASSICAL CN","topic":"墨子・以人為鏡","q":"墨子：「君子不鏡於水，而鏡於人。鏡於水，見面之容；鏡於人，則知吉與凶。」請解釋這段話，並舉一個自身相關經驗。","hint":"先說明原文語意，再提出自己的理解；若題目要求，可連結工作、生活或飛行員所需特質。","tags":["classical","open-response","source-image-2026","v150"],"defaultPrep":45,"defaultAns":150,"prep":45,"ans":150,"s":"【語意】鏡子只能照見外表，而他人的言行與回饋能讓我們看見自己的得失。真正有用的自我檢查，不只是看自己想看到的部分，而是願意接受外部回饋。\n\n【作答示範】準備重要考試或面試時，我不只看自己完成了多少，也會從實際成績、模擬結果與他人的回饋檢查不足。若結果沒有達到預期，我會找出是知識、表達、時間分配或練習方法出了問題，再調整下一輪計畫。\n\n【延伸】這種態度可連結飛行員的 cross-check、debrief 與接受 feedback：重點不是證明自己原本是對的，而是透過可靠資訊持續修正。","short":"","cn":""},{"type":"classical_cn","cat":"CLASSICAL CN","topic":"《論語》・遠慮","q":"孔子：「人無遠慮，必有近憂。」請將此句套用到機師的工作或生活上，並說明自己的看法。","hint":"先說明原文語意，再提出自己的理解；若題目要求，可連結工作、生活或飛行員所需特質。","tags":["classical","open-response","source-image-2026","v150"],"defaultPrep":45,"defaultAns":150,"prep":45,"ans":150,"s":"【語意】如果只處理眼前問題、沒有長期規畫，未來很容易出現原本可以避免的麻煩。\n\n【套用到飛行】飛行前的天氣、油量、備降場、性能、疲勞與可能威脅，都需要事前思考。若只等問題發生才處理，當時間、油量或高度縮小後，可選方案也會跟著變少。\n\n【我的看法】遠慮不是過度擔心，而是提早辨識風險、準備備案並保留安全裕度。這與 TEM 的精神一致：在威脅真正變成錯誤或不良狀態之前，就先管理它。","short":"","cn":""},{"type":"classical_cn","cat":"CLASSICAL CN","topic":"《道德經》第八章・上善若水","q":"老子《道德經》：「上善若水。水善利萬物而不爭，處眾人之所惡，故幾於道……夫唯不爭，故無尤。」這段話有什麼意涵？你對這段話有什麼看法？","hint":"先說明原文語意，再提出自己的理解；若題目要求，可連結工作、生活或飛行員所需特質。","tags":["classical","open-response","source-image-2026","v150"],"defaultPrep":45,"defaultAns":150,"prep":45,"ans":150,"s":"【語意】老子以水比喻理想的品格：能利益他人、保持柔韌、適應環境，不必處處與人爭高下；同時在不同位置都能發揮應有作用。\n\n【我的理解】「不爭」不等於沒有原則或消極退讓，而是不把個人面子放在共同目標之前。團隊合作時，若每個人都只想證明自己正確，反而容易破壞溝通；真正成熟的做法是讓事實、程序與共同目標決定下一步。\n\n【飛行員連結】可連結 CRM、humility 與 adaptability：保持立場清楚，但不為了自我而爭。","short":"","cn":""},{"type":"classical_cn","cat":"CLASSICAL CN","topic":"《論語・述而》","q":"孔子《論語》：「三人行，必有我師焉；擇其善者而從之，其不善者而改之。」請說明其意涵，並連結到學習或訓練。","hint":"先說明原文語意，再提出自己的理解；若題目要求，可連結工作、生活或飛行員所需特質。","tags":["classical","open-response","v150-classical","v150"],"defaultPrep":45,"defaultAns":150,"prep":45,"ans":150,"s":"【語意】與人相處時，每個人都有值得學習或可以提醒自己的地方；看到優點就學習，看到缺點也可反省自己是否有相同問題。\n\n【訓練連結】在團隊訓練中，不應只向最資深的人學習。隊友的好習慣、失誤、溝通方式與準備程度都能成為教材。重點是保持觀察、反思與可訓練性，而不是只比較誰表現得比較好。","short":"","cn":""},{"type":"classical_cn","cat":"CLASSICAL CN","topic":"《論語・為政》","q":"孔子《論語》：「學而不思則罔，思而不學則殆。」這句話對技術學習有何啟示？","hint":"先說明原文語意，再提出自己的理解；若題目要求，可連結工作、生活或飛行員所需特質。","tags":["classical","open-response","v150-classical","v150"],"defaultPrep":45,"defaultAns":150,"prep":45,"ans":150,"s":"【語意】只吸收知識而不思考，容易只會背誦；只憑自己的想法而不持續學習，也容易陷入錯誤。\n\n【技術學習】數理、航空知識或 SOP 都不能只背答案。先學正確原理，再用題目、情境與口頭解釋去驗證自己是否真正理解；若推理與教材或標準有衝突，就回頭查證。學習與思考必須互相校正。","short":"","cn":""},{"type":"classical_cn","cat":"CLASSICAL CN","topic":"《論語・為政》","q":"孔子《論語》：「知之為知之，不知為不知，是知也。」若放在飛行員訓練中，你會如何理解？","hint":"先說明原文語意，再提出自己的理解；若題目要求，可連結工作、生活或飛行員所需特質。","tags":["classical","open-response","v150-classical","v150"],"defaultPrep":45,"defaultAns":150,"prep":45,"ans":150,"s":"【語意】知道就是知道，不知道就承認不知道，這才是真正的明智。\n\n【飛行員連結】訓練中最危險的不是不知道，而是不知道卻假裝知道。對程序、指令或系統有疑問時，應及早詢問與確認。承認知識缺口可以被補強；隱藏疑問則可能在高工作負荷時放大成錯誤。","short":"","cn":""},{"type":"classical_cn","cat":"CLASSICAL CN","topic":"《論語・衛靈公》","q":"孔子《論語》：「過而不改，是謂過矣。」請說明你如何把這句話用在錯誤管理上。","hint":"先說明原文語意，再提出自己的理解；若題目要求，可連結工作、生活或飛行員所需特質。","tags":["classical","open-response","v150-classical","v150"],"defaultPrep":45,"defaultAns":150,"prep":45,"ans":150,"s":"【語意】犯錯本身不一定代表真正的失敗；知道錯誤卻不改正，才讓錯誤持續存在。\n\n【錯誤管理】發現錯誤後要先承認、確認影響、修正能修正的部分，再分析根本原因並建立防止再發的方法。若只說「下次小心」，卻沒有改變流程或習慣，學習就沒有真正發生。","short":"","cn":""},{"type":"classical_cn","cat":"CLASSICAL CN","topic":"《論語・子路》","q":"孔子《論語》：「君子和而不同，小人同而不和。」這句話如何套用到團隊合作？","hint":"先說明原文語意，再提出自己的理解；若題目要求，可連結工作、生活或飛行員所需特質。","tags":["classical","open-response","v150-classical","v150"],"defaultPrep":45,"defaultAns":150,"prep":45,"ans":150,"s":"【語意】真正成熟的合作可以保持和諧，但不需要每個人意見都完全相同；表面上一致卻缺乏真誠溝通，反而不是健康的合作。\n\n【團隊連結】CRM 需要尊重，也需要適當 challenge。若看到安全疑慮，不能因怕破壞氣氛而沉默；應以事實、標準與清楚語氣提出不同意見，同時維持對人的尊重。","short":"","cn":""},{"type":"classical_cn","cat":"CLASSICAL CN","topic":"《論語・里仁》","q":"孔子《論語》：「見賢思齊焉，見不賢而內自省也。」請說明這句話對自我成長的價值。","hint":"先說明原文語意，再提出自己的理解；若題目要求，可連結工作、生活或飛行員所需特質。","tags":["classical","open-response","v150-classical","v150"],"defaultPrep":45,"defaultAns":150,"prep":45,"ans":150,"s":"【語意】看到優秀的人，要思考自己能向他學什麼；看到他人的不足，也要反省自己是否存在相同問題。\n\n【自我成長】這能把比較轉化成學習。看到別人表現好，不只是羨慕；看到別人犯錯，也不是只批評。更重要的是找出具體行為，轉化成自己的改進項目。","short":"","cn":""},{"type":"classical_cn","cat":"CLASSICAL CN","topic":"《道德經》第三十三章","q":"老子《道德經》：「知人者智，自知者明；勝人者有力，自勝者強。」請說明其對自我管理的啟示。","hint":"先說明原文語意，再提出自己的理解；若題目要求，可連結工作、生活或飛行員所需特質。","tags":["classical","open-response","v150-classical","v150"],"defaultPrep":45,"defaultAns":150,"prep":45,"ans":150,"s":"【語意】了解別人是智慧，真正認識自己更難；能勝過別人代表有能力，能控制自己的弱點、情緒與欲望才是真正的強大。\n\n【自我管理】培訓準備不能只看自己是否比別人好，而要知道自己的弱項、壓力反應與能力限制，並建立可持續改善的方法。對飛行員而言，自知也是避免 overconfidence 的重要基礎。","short":"","cn":""},{"type":"classical_cn","cat":"CLASSICAL CN","topic":"《道德經》第六十四章","q":"老子《道德經》：「合抱之木，生於毫末；九層之臺，起於累土；千里之行，始於足下。」請說明其對長期訓練的啟示。","hint":"先說明原文語意，再提出自己的理解；若題目要求，可連結工作、生活或飛行員所需特質。","tags":["classical","open-response","v150-classical","v150"],"defaultPrep":45,"defaultAns":150,"prep":45,"ans":150,"s":"【語意】再大的成果，都由很小的起點累積而成。\n\n【訓練連結】英文、數理、航空知識、程序與體能都不可能靠短期衝刺一次完成。把大目標拆成每天可以執行的練習，再用成績與錯題持續校正，長期累積才會形成可靠能力。","short":"","cn":""},{"type":"classical_cn","cat":"CLASSICAL CN","topic":"《道德經》第六十四章","q":"老子《道德經》：「慎終如始，則無敗事。」請說明這句話與程序紀律的關係。","hint":"先說明原文語意，再提出自己的理解；若題目要求，可連結工作、生活或飛行員所需特質。","tags":["classical","open-response","v150-classical","v150"],"defaultPrep":45,"defaultAns":150,"prep":45,"ans":150,"s":"【語意】事情到了最後階段，若仍能像剛開始一樣謹慎，就比較不會因鬆懈而失敗。\n\n【程序紀律】人在熟悉或接近完成時最容易放鬆。飛行從起飛到落地，每個階段都需要相同的檢查與標準；不能因前面順利，就在最後一段省略程序或降低警覺。","short":"","cn":""},{"type":"classical_cn","cat":"CLASSICAL CN","topic":"《道德經》第四十四章","q":"老子《道德經》：「知足不辱，知止不殆，可以長久。」你如何理解「知止」？","hint":"先說明原文語意，再提出自己的理解；若題目要求，可連結工作、生活或飛行員所需特質。","tags":["classical","open-response","v150-classical","v150"],"defaultPrep":45,"defaultAns":150,"prep":45,"ans":150,"s":"【語意】知道什麼時候應該停止，不讓欲望或逞強超過能力與條件，才能避免危險並維持長久。\n\n【飛行員連結】知止不是保守，而是尊重限制。例如天氣、油量、疲勞或進場條件已超過可接受範圍時，應選擇重飛、備降或停止任務，而不是為了完成目標繼續勉強。","short":"","cn":""},{"type":"classical_cn","cat":"CLASSICAL CN","topic":"《墨子・修身》","q":"墨子：「志不強者智不達，言不信者行不果。」請說明志向與誠信如何影響一個人的行動。","hint":"先說明原文語意，再提出自己的理解；若題目要求，可連結工作、生活或飛行員所需特質。","tags":["classical","open-response","v150-classical","v150"],"defaultPrep":45,"defaultAns":150,"prep":45,"ans":150,"s":"【語意】沒有堅定志向，能力難以充分發揮；說話缺乏信用，行動也難以真正取得成果。\n\n【我的理解】長期目標需要持續投入，而信用則讓他人願意與你合作。對培訓機師而言，光有理想不夠，還要把目標轉化為每日準備；同時對自己的能力、錯誤與承諾保持誠實，才能建立專業信任。","short":"","cn":""},{"type":"classical_cn","cat":"CLASSICAL CN","topic":"《墨子・兼愛》","q":"墨子：「兼相愛，交相利。」若放在團隊環境中，你會如何解釋？","hint":"先說明原文語意，再提出自己的理解；若題目要求，可連結工作、生活或飛行員所需特質。","tags":["classical","open-response","v150-classical","v150"],"defaultPrep":45,"defaultAns":150,"prep":45,"ans":150,"s":"【語意】人與人之間若能互相關心、互相成就，就能降低只顧自身利益造成的衝突。\n\n【團隊連結】工作上的合作不是討好每個人，而是理解自己的行為會影響整個團隊。主動分享資訊、協助隊友、清楚交接與避免把風險留給下一個人，都是把共同利益放在個人便利之前。","short":"","cn":""},{"type":"classical_cn","cat":"CLASSICAL CN","topic":"《墨子・法儀》","q":"墨子：「天下從事者，不可以無法儀；無法儀而其事能成者，無有也。」請說明「法儀」對航空工作的意義。","hint":"先說明原文語意，再提出自己的理解；若題目要求，可連結工作、生活或飛行員所需特質。","tags":["classical","open-response","v150-classical","v150"],"defaultPrep":45,"defaultAns":150,"prep":45,"ans":150,"s":"【語意】做事情若沒有可遵循的標準，就很難穩定完成。\n\n【航空連結】航空高度依賴 SOP、checklist、限制值與標準通話。標準不是限制專業，而是讓不同人、不同班次與高壓情境下仍能維持一致品質。真正的專業是在理解標準目的後，持續依標準執行並在需要時正確升級。","short":"","cn":""},{"type":"classical_cn","cat":"CLASSICAL CN","topic":"《孟子・公孫丑下》","q":"孟子：「天時不如地利，地利不如人和。」若套用到團隊任務，你會如何理解？","hint":"先說明原文語意，再提出自己的理解；若題目要求，可連結工作、生活或飛行員所需特質。","tags":["classical","open-response","v150-classical","v150"],"defaultPrep":45,"defaultAns":150,"prep":45,"ans":150,"s":"【語意】有利時機不如有利環境，而良好環境又不如團隊真正同心協力。\n\n【團隊連結】設備、制度與條件再好，如果資訊不共享、彼此不信任或不敢提出疑慮，團隊表現仍可能失敗。航空中的 CRM 強調共同心智模型、角色分工與溝通，就是把「人和」轉化成可操作的安全能力。","short":"","cn":""},{"type":"classical_cn","cat":"CLASSICAL CN","topic":"《孟子・告子下》","q":"孟子：「生於憂患，死於安樂。」你認為這句話是否代表人一定要處在壓力中才能進步？","hint":"先說明原文語意，再提出自己的理解；若題目要求，可連結工作、生活或飛行員所需特質。","tags":["classical","open-response","v150-classical","v150"],"defaultPrep":45,"defaultAns":150,"prep":45,"ans":150,"s":"【語意】這句話強調適度挑戰能促使人成長，而長期安逸可能讓人失去警覺；但不代表壓力越大越好。\n\n【我的看法】有效訓練需要可管理的挑戰、回饋與恢復。壓力過低可能沒有成長，過高則可能降低學習與判斷。真正重要的是在安全範圍內逐步提高難度，並從每次錯誤中學習。","short":"","cn":""},{"type":"classical_cn","cat":"CLASSICAL CN","topic":"《荀子・勸學》","q":"荀子《勸學》：「不積跬步，無以至千里；不積小流，無以成江海。」請連結到你的學習方法。","hint":"先說明原文語意，再提出自己的理解；若題目要求，可連結工作、生活或飛行員所需特質。","tags":["classical","open-response","v150-classical","v150"],"defaultPrep":45,"defaultAns":150,"prep":45,"ans":150,"s":"【語意】長距離由每一步累積，大江大海由細小水流匯聚；持續的小進步會形成大成果。\n\n【學習連結】與其偶爾一次讀很多，更重要的是建立固定節奏，例如每日口說、數理題、航空知識與錯題回顧。每次進步可能很小，但只要能追蹤並持續，就會形成長期能力。","short":"","cn":""},{"type":"classical_cn","cat":"CLASSICAL CN","topic":"《荀子・勸學》","q":"荀子《勸學》：「鍥而舍之，朽木不折；鍥而不舍，金石可鏤。」請說明它與毅力之間的關係。","hint":"先說明原文語意，再提出自己的理解；若題目要求，可連結工作、生活或飛行員所需特質。","tags":["classical","open-response","v150-classical","v150"],"defaultPrep":45,"defaultAns":150,"prep":45,"ans":150,"s":"【語意】做一下就停止，即使腐朽木頭也不一定能刻斷；持續不放棄，即使堅硬金石也能雕刻。\n\n【延伸】毅力不是盲目重複同一個錯誤，而是持續投入、檢查方法並調整。有效的堅持應該同時包含 consistency 與 feedback，否則只是把低效率的做法做得更久。","short":"","cn":""},{"type":"classical_cn","cat":"CLASSICAL CN","topic":"《荀子・勸學》","q":"荀子《勸學》：「君子生非異也，善假於物也。」請說明善用工具與真正能力之間的關係。","hint":"先說明原文語意，再提出自己的理解；若題目要求，可連結工作、生活或飛行員所需特質。","tags":["classical","open-response","v150-classical","v150"],"defaultPrep":45,"defaultAns":150,"prep":45,"ans":150,"s":"【語意】人的天賦未必有巨大差異，重要的是懂得善用工具與環境來放大能力。\n\n【學習連結】模擬器、題庫、計時器、筆記與 AI 都可以幫助學習，但工具不能取代理解。真正的能力是知道何時使用工具、如何交叉驗證，以及在沒有工具幫助時仍能掌握核心原理。","short":"","cn":""},{"type":"interview_cn","cat":"INTERVIEW CN","topic":"人格優勢","q":"個性上的優勢以及它們給你什麼正面影響？","hint":"直接回答題目 → 具體例子 → 你的處理方式 → 學到什麼；避免只講抽象特質。","tags":["interview-cn","2026-reference-image","v150"],"defaultPrep":30,"defaultAns":100,"prep":30,"ans":100,"s":"我認為自己的優勢是責任感、持續性與在壓力下維持結構的能力。責任感讓我不會只完成表面工作，而會確認結果是否真的達到要求；持續性讓我能長期準備英文、數理與航空知識；遇到壓力時，我則會先排序問題，再一步一步處理。這些特質的正面影響是，我比較能維持穩定表現，也更願意面對錯誤而不是逃避。對培訓機師而言，我認為這些特質能幫助我保持可訓練性與可靠度。","short":"","cn":""},{"type":"interview_cn","cat":"INTERVIEW CN","topic":"挫折與調適","q":"你有沒有在學業或工作上無法達到師長或別人期望的經驗？說明你是如何應對並自我調適的。","hint":"直接回答題目 → 具體例子 → 你的處理方式 → 學到什麼；避免只講抽象特質。","tags":["interview-cn","2026-reference-image","v150"],"defaultPrep":30,"defaultAns":100,"prep":30,"ans":100,"s":"有。最近一次明確的例子是 TOEIC Speaking 成績仍沒有達到我設定的目標。第一時間當然會失望，但我不希望只用情緒解釋結果，所以我會拆開看：哪些題型表達不夠穩、哪些句型容易出錯、是否因時間壓力讓內容失去結構。接著我會調整模板、增加限時口說並記錄重複錯誤。這件事讓我學到，沒有達到期望並不代表努力沒有價值，更重要的是能不能把結果轉化成下一輪更精準的練習。","short":"","cn":""},{"type":"interview_cn","cat":"INTERVIEW CN","topic":"感恩與價值觀","q":"分享一位在你生命中令你感恩的人，並分享你從他們身上學到了什麼？","hint":"直接回答題目 → 具體例子 → 你的處理方式 → 學到什麼；避免只講抽象特質。","tags":["interview-cn","2026-reference-image","v150"],"defaultPrep":30,"defaultAns":100,"prep":30,"ans":100,"s":"我會選擇一位長期支持我的家人。對我而言，真正重要的不是他替我解決所有問題，而是在我需要做重大選擇時，願意聽我把原因說清楚，也提醒我要對自己的決定負責。我從這段關係學到兩件事：第一，支持不等於替別人做決定；第二，信任要靠長期一致的行動建立。這也影響我在團隊中的方式——我希望給隊友支持，但同時尊重角色與責任。","short":"","cn":""},{"type":"interview_cn","cat":"INTERVIEW CN","topic":"適應力","q":"你有沒有遇到過讓你沒有其他辦法、只能順應情勢的事件？你如何處理？","hint":"直接回答題目 → 具體例子 → 你的處理方式 → 學到什麼；避免只講抽象特質。","tags":["interview-cn","2026-reference-image","v150"],"defaultPrep":30,"defaultAns":100,"prep":30,"ans":100,"s":"有。當外部環境快速改變時，有些條件不是個人努力可以直接改變的。我的做法是先把事情分成「可以控制」與「無法控制」兩部分；不能改變的條件就接受，能調整的部分則立即重新安排資源、時程與優先順序。這讓我體會到，適應不是被動放棄，而是在限制條件下重新找到最安全、最有效的方案。航空工作也需要這種彈性，因為天氣、流量或技術狀況都可能改變原計畫。","short":"","cn":""},{"type":"interview_cn","cat":"INTERVIEW CN","topic":"工作負荷與求援","q":"有沒有因為其他外務而耽誤原本要做的事的例子？你如何求援並解決這件事？","hint":"直接回答題目 → 具體例子 → 你的處理方式 → 學到什麼；避免只講抽象特質。","tags":["interview-cn","2026-reference-image","v150"],"defaultPrep":30,"defaultAns":100,"prep":30,"ans":100,"s":"有。當工作上的臨時事項和原本的學習計畫重疊時，我曾經發現自己如果什麼都想獨自完成，反而會讓兩邊品質都下降。後來我先確認哪些事情一定要由我處理，哪些可以請家人或團隊協助，再重新安排學習時段並明確說明期限。這讓我學到求援不是把責任丟給別人，而是及早讓團隊知道工作量與風險，避免等到最後才失控。","short":"","cn":""},{"type":"interview_cn","cat":"INTERVIEW CN","topic":"團隊文化","q":"團隊中你比較喜歡嚴肅還是和諧的氣氛？請舉例說明。","hint":"直接回答題目 → 具體例子 → 你的處理方式 → 學到什麼；避免只講抽象特質。","tags":["interview-cn","2026-reference-image","v150"],"defaultPrep":30,"defaultAns":100,"prep":30,"ans":100,"s":"我比較喜歡「和諧但專業」的氣氛。團隊如果過度緊繃，成員可能不敢提出問題；但如果太隨意，也可能降低標準。我理想的狀態是平常可以自然溝通、互相支持，但遇到重要決策、風險或程序時能立即切換到清楚、直接的工作模式。這種氣氛最有利於資訊共享，也能讓不同意見被提出而不變成人身衝突。","short":"","cn":""},{"type":"interview_cn","cat":"INTERVIEW CN","topic":"公平與工作分配","q":"你認為是否應根據每個人的狀況分配工作，即使可能讓部分能力較強的人負擔更多責任？","hint":"直接回答題目 → 具體例子 → 你的處理方式 → 學到什麼；避免只講抽象特質。","tags":["interview-cn","2026-reference-image","v150"],"defaultPrep":30,"defaultAns":100,"prep":30,"ans":100,"s":"我認為工作分配應同時考量能力、資格、當下負荷與任務風險，而不是機械式平均。短期內讓較有經驗的人多承擔一些責任可能合理，但若長期都依賴同一批人，就會造成疲勞與不公平。因此主管還需要安排輪替、培養其他成員、確認負荷是否可接受。公平不一定代表每個人做一樣多，而是分配原則透明、風險可控，而且團隊能力能長期成長。","short":"","cn":""},{"type":"interview_cn","cat":"INTERVIEW CN","topic":"誠實與誠信","q":"解釋誠實的重要性，請舉例說明，並描述誠實如何影響你的行為模式。","hint":"直接回答題目 → 具體例子 → 你的處理方式 → 學到什麼；避免只講抽象特質。","tags":["interview-cn","2026-reference-image","v150"],"defaultPrep":30,"defaultAns":100,"prep":30,"ans":100,"s":"我認為誠實是信任與安全的基礎。對我來說，誠實不只是「不說謊」，也包括不知道時承認不知道、犯錯時及早說明，以及不把資訊修飾成對自己比較有利的樣子。例如在準備考試時，如果成績或弱項沒有達標，我寧可直接承認並修改方法，而不是用理由掩飾。久而久之，這讓我的行為模式更偏向先確認事實、說清楚限制，再討論解決方案。","short":"","cn":""},{"type":"interview_cn","cat":"INTERVIEW CN","topic":"壓力管理","q":"家人或朋友給了你過高的期許，對你造成壓力時，你如何調適？","hint":"直接回答題目 → 具體例子 → 你的處理方式 → 學到什麼；避免只講抽象特質。","tags":["interview-cn","2026-reference-image","v150"],"defaultPrep":30,"defaultAns":100,"prep":30,"ans":100,"s":"我會先確認壓力來自真正的外部要求，還是我自己把期待放大。接著把結果目標改成可以控制的過程目標，例如每天完成多少練習、每週檢查哪些指標。如果家人的期待真的造成負擔，我也會直接說明目前進度、需要的時間與可能風險。這樣做可以把抽象壓力轉化成具體行動，也能避免為了證明自己而做出不合理的決定。","short":"","cn":""},{"type":"interview_cn","cat":"INTERVIEW CN","topic":"情緒管理","q":"你是否有強烈表達負面情緒的經驗，例如生氣或沮喪？這麼做最後有助於達成目的嗎？","hint":"直接回答題目 → 具體例子 → 你的處理方式 → 學到什麼；避免只講抽象特質。","tags":["interview-cn","2026-reference-image","v150"],"defaultPrep":30,"defaultAns":100,"prep":30,"ans":100,"s":"我曾經有過因結果不如預期而感到明顯沮喪的時候，但我發現情緒本身如果直接用在溝通上，通常不會讓事情更有效。現在我會先讓自己從情緒高點下降，確認真正的問題是什麼，再討論需要改變的行動。如果必須表達不滿，我會聚焦在事件、影響與需求，而不是攻擊人。負面情緒可以提醒我有問題需要處理，但不能取代判斷。","short":"","cn":""},{"type":"interview_cn","cat":"INTERVIEW CN","topic":"學習能力","q":"你在高中時期學過最困難的科目是什麼？你是如何克服的？現在回頭看，你覺得自己的程度如何？","hint":"直接回答題目 → 具體例子 → 你的處理方式 → 學到什麼；避免只講抽象特質。","tags":["interview-cn","2026-reference-image","v150"],"defaultPrep":30,"defaultAns":100,"prep":30,"ans":100,"s":"這題我會選擇一個真實、能說明改進過程的科目。若以數學為例，我過去對多步驟題目的掌握沒有那麼穩，尤其容易在公式選擇或單位上出錯。後來我改成先理解原理、把步驟寫清楚、整理錯題類型，再用限時題目提高速度。現在我不會說自己已經完全沒有弱點，但我比以前更知道如何拆解問題，也建立了持續補強的方法。","short":"","cn":""},{"type":"interview_cn","cat":"INTERVIEW CN","topic":"求援與韌性","q":"當你的生活發生困境時你如何應對？你有尋求師長或同儕的幫忙嗎？結果如何？","hint":"直接回答題目 → 具體例子 → 你的處理方式 → 學到什麼；避免只講抽象特質。","tags":["interview-cn","2026-reference-image","v150"],"defaultPrep":30,"defaultAns":100,"prep":30,"ans":100,"s":"遇到困境時，我會先處理最急迫的問題，再把剩餘問題拆成可行的小步驟。如果自己卡住太久，我會找真正能提供資訊或經驗的人求助，而不是只找人安慰。例如遇到學習瓶頸時，我會把不懂的地方整理成具體問題，再請教老師、同學或使用可靠教材。通常這能更快找出盲點，也提醒我：及早求援是成熟的風險管理，不是能力不足。","short":"","cn":""},{"type":"interview_cn","cat":"INTERVIEW CN","topic":"大學學習與應用","q":"你以前大學的科目中，覺得哪一科比較有用？現在還用得上嗎？又對你的人生有什麼幫助？","hint":"直接回答題目 → 具體例子 → 你的處理方式 → 學到什麼；避免只講抽象特質。","tags":["interview-cn","2026-reference-image","v150"],"defaultPrep":30,"defaultAns":100,"prep":30,"ans":100,"s":"我認為物流與管理相關科目對我很有用，因為它不只是理論，也教我如何看流程、資源、成本與風險。工作後，我仍會用類似的思維安排庫存、時間與工作優先順序。對我的幫助是，遇到複雜問題時，我比較習慣先看整體系統，再找瓶頸與關鍵變數，而不是只處理眼前症狀。這種系統化思考也能延伸到航空訓練。","short":"","cn":""},{"type":"interview_cn","cat":"INTERVIEW CN","topic":"鼓勵他人","q":"你有什麼事情能夠激勵正在面對困境或挫折的人嗎？","hint":"直接回答題目 → 具體例子 → 你的處理方式 → 學到什麼；避免只講抽象特質。","tags":["interview-cn","2026-reference-image","v150"],"defaultPrep":30,"defaultAns":100,"prep":30,"ans":100,"s":"我會先讓對方知道挫折不需要被美化，但也不必把一次結果解讀成對整個人的否定。我會陪他把問題拆成三件事：哪些已經發生、哪些還能控制、下一步最小可行行動是什麼。如果可以，我會分享自己沒有達到目標後重新調整練習的經驗。對我來說，真正有用的鼓勵不是只說『加油』，而是幫助對方重新看到可行的下一步。","short":"","cn":""},{"type":"interview_cn","cat":"INTERVIEW CN","topic":"職涯動機","q":"你在工作上如何維持熱忱？未來要如何繼續維持？","hint":"直接回答題目 → 具體例子 → 你的處理方式 → 學到什麼；避免只講抽象特質。","tags":["interview-cn","2026-reference-image","v150"],"defaultPrep":30,"defaultAns":100,"prep":30,"ans":100,"s":"我不把熱忱理解成每天都很興奮，而是即使工作重複或辛苦，仍知道自己為什麼要把它做好。我會透過設定階段目標、持續學習新知、檢討流程與保留生活平衡來維持投入感。未來若進入航空業，我會把熱忱建立在專業成長與責任感上，而不是只依賴新鮮感，因為真正長期的職涯需要穩定紀律。","short":"","cn":""},{"type":"interview_cn","cat":"INTERVIEW CN","topic":"家庭分工與溝通","q":"請問你一週花多少時間幫忙家務，以及如何分工？分配工作時有沒有衝突或意見不同的狀況？","hint":"直接回答題目 → 具體例子 → 你的處理方式 → 學到什麼；避免只講抽象特質。","tags":["interview-cn","2026-reference-image","v150"],"defaultPrep":30,"defaultAns":100,"prep":30,"ans":100,"s":"我會依家庭實際作息分工，而不是只追求每個人花完全相同的時間。通常會先把固定家務與臨時事項列出，再依當週工作量、體力與時間安排。如果有意見不同，我會先確認對方在意的是公平、時間還是完成標準，再重新分配。這種經驗讓我學到，分工最重要的是把期待說清楚、及早調整，而不是等累積不滿後才處理。","short":"","cn":""},{"type":"interview_cn","cat":"INTERVIEW CN","topic":"給予建議","q":"你覺得給予建議時，最重要的考量是什麼？你的人生中得到過最好的建議是什麼？","hint":"直接回答題目 → 具體例子 → 你的處理方式 → 學到什麼；避免只講抽象特質。","tags":["interview-cn","2026-reference-image","v150"],"defaultPrep":30,"defaultAns":100,"prep":30,"ans":100,"s":"我認為給建議前最重要的是先理解對方的目標、限制與真正問題，否則再好的建議也可能不適用。我也會區分『分享自己的經驗』和『替對方做決定』。對我影響很大的建議是：把注意力放在自己可以控制的事情，並持續把基本功做好。這讓我在遇到考試、工作或長期目標時，不會只盯著結果，而會回到每天能改善的行動。","short":"","cn":""},{"type":"pilot","cat":"INTERVIEW EN","topic":"Behavioral Interview","q":"What are your personality strengths, and what positive effects have they had on you?","hint":"Answer directly, give a specific example, explain your action, then state what you learned and why it matters for pilot training.","tags":["interview","2026-reference-image","v150"],"defaultPrep":30,"defaultAns":100,"prep":30,"ans":100,"s":"I would describe my main strengths as responsibility, consistency, and the ability to keep a clear structure under pressure. Responsibility makes me check whether the result truly meets the requirement instead of only finishing the task. Consistency helps me continue long-term preparation even when progress is slow. Under pressure, I try to prioritize the problem and deal with it step by step. These strengths help me perform more steadily and face mistakes directly. I believe they are also useful for pilot training because they support reliability, discipline, and trainability.","short":"","cn":"【中文作答重點】\n可從責任感、持續性與壓力下的結構化處理切入，再說明這些特質如何轉化成穩定表現與可訓練性。"},{"type":"pilot","cat":"INTERVIEW EN","topic":"Behavioral Interview","q":"Tell me about a time you did not meet a teacher's, supervisor's, or another person's expectations. How did you respond and adjust yourself?","hint":"Answer directly, give a specific example, explain your action, then state what you learned and why it matters for pilot training.","tags":["interview","2026-reference-image","v150"],"defaultPrep":30,"defaultAns":100,"prep":30,"ans":100,"s":"A recent example is my TOEIC Speaking result, which still did not reach the target I had set. I was disappointed, but I did not want to explain the result only through emotion. I broke the performance down into specific issues, such as answer structure, repeated language errors, and time pressure. Then I adjusted my practice by refining my templates, doing more timed speaking, and tracking repeated mistakes. The experience reminded me that missing a target is useful only if I turn the result into a more precise improvement plan.","short":"","cn":"【中文作答重點】\n可用近期 TOEIC Speaking 未達目標為例：先承認結果，再分析具體弱點、調整練習，最後說明如何把挫折轉化成可衡量改進。"},{"type":"pilot","cat":"INTERVIEW EN","topic":"Behavioral Interview","q":"Tell me about someone in your life whom you are grateful for. What have you learned from that person?","hint":"Answer directly, give a specific example, explain your action, then state what you learned and why it matters for pilot training.","tags":["interview","2026-reference-image","v150"],"defaultPrep":30,"defaultAns":100,"prep":30,"ans":100,"s":"I would choose a family member who has supported me through important decisions. What I value most is not that this person solves every problem for me, but that they listen carefully and still expect me to take responsibility for my choices. From that relationship, I learned that support does not mean making decisions for someone else, and that trust is built through consistent actions over time. This has influenced the way I work with other people: I want to support teammates while still respecting their roles and responsibilities.","short":"","cn":"【中文作答重點】\n選一位真實人物，避免只說「他很好」；重點是具體說明對方如何影響你的責任感、決策或合作方式。"},{"type":"pilot","cat":"INTERVIEW EN","topic":"Behavioral Interview","q":"Have you ever faced a situation in which you had little choice but to adapt to changing circumstances? How did you handle it?","hint":"Answer directly, give a specific example, explain your action, then state what you learned and why it matters for pilot training.","tags":["interview","2026-reference-image","v150"],"defaultPrep":30,"defaultAns":100,"prep":30,"ans":100,"s":"Yes. When external conditions change quickly, some factors cannot be controlled by individual effort. I first separate the situation into what I can control and what I cannot. I accept the fixed constraints, then adjust resources, timing, and priorities in the areas I can influence. This taught me that adaptation is not passive surrender. It is the ability to build the safest and most effective plan under new constraints. I believe this mindset is relevant to aviation because weather, traffic, and technical conditions can all change an original plan.","short":"","cn":"【中文作答重點】\n先區分可控與不可控，再說明如何重新安排資源與優先順序。強調 adaptability 不等於被動放棄。"},{"type":"pilot","cat":"INTERVIEW EN","topic":"Behavioral Interview","q":"Give an example of when other responsibilities delayed something you had originally planned to do. How did you ask for help and solve the problem?","hint":"Answer directly, give a specific example, explain your action, then state what you learned and why it matters for pilot training.","tags":["interview","2026-reference-image","v150"],"defaultPrep":30,"defaultAns":100,"prep":30,"ans":100,"s":"I have had times when an urgent work responsibility overlapped with a planned study session. I realized that trying to do everything alone would reduce the quality of both tasks. I identified what truly required my attention and what could be delegated, then asked family members or teammates for specific help and rescheduled the study block. The experience taught me that asking for help is not avoiding responsibility. It is communicating workload and risk early enough for the team to respond before the situation becomes unmanageable.","short":"","cn":"【中文作答重點】\n說明外務造成衝突、哪些工作可委派、如何具體求援，最後連結 workload management 與及早溝通。"},{"type":"pilot","cat":"INTERVIEW EN","topic":"Behavioral Interview","q":"Do you prefer a serious or a harmonious atmosphere in a team? Please give an example.","hint":"Answer directly, give a specific example, explain your action, then state what you learned and why it matters for pilot training.","tags":["interview","2026-reference-image","v150"],"defaultPrep":30,"defaultAns":100,"prep":30,"ans":100,"s":"I prefer a harmonious but professional atmosphere. If a team is too tense, people may hesitate to ask questions or report concerns. If it is too casual, standards may become unclear. My preferred environment is one where people can communicate naturally and support one another, but can immediately become concise and task-focused when safety, risk, or an important decision is involved. That balance encourages information sharing while still protecting professional standards.","short":"","cn":"【中文作答重點】\n不要把嚴肅與和諧當成二選一；可回答「和諧但專業」，並說明何時需要切換成明確、任務導向的溝通。"},{"type":"pilot","cat":"INTERVIEW EN","topic":"Behavioral Interview","q":"Should work be assigned according to each person's situation, even if some more capable people may carry more responsibility?","hint":"Answer directly, give a specific example, explain your action, then state what you learned and why it matters for pilot training.","tags":["interview","2026-reference-image","v150"],"defaultPrep":30,"defaultAns":100,"prep":30,"ans":100,"s":"I think work should be assigned according to competence, qualification, current workload, and the risk of the task rather than being divided mechanically. It can be reasonable for a more experienced person to carry more responsibility for a limited period, but that should not become a permanent dependency. A leader also needs to monitor fatigue, rotate duties, and develop other team members. Fairness does not always mean identical workload; it means transparent reasoning, acceptable risk, and sustainable team development.","short":"","cn":"【中文作答重點】\n公平不等於平均。可談能力、資格、工作負荷、輪替與避免長期過度依賴高能力者。"},{"type":"pilot","cat":"INTERVIEW EN","topic":"Behavioral Interview","q":"Why is honesty important? Give an example and explain how honesty influences your behavior.","hint":"Answer directly, give a specific example, explain your action, then state what you learned and why it matters for pilot training.","tags":["interview","2026-reference-image","v150"],"defaultPrep":30,"defaultAns":100,"prep":30,"ans":100,"s":"Honesty is the foundation of trust and safety. To me, it means more than not telling a lie. It also means admitting when I do not know something, reporting an error early, and not presenting information in a way that only protects my image. For example, when an exam result or a weak area is below my target, I prefer to acknowledge it and change my method instead of making excuses. This habit has made me more likely to confirm facts first, state limitations clearly, and then discuss a solution.","short":"","cn":"【中文作答重點】\n誠實可從「承認不知道、及早報錯、不粉飾資訊」切入，再用考試或工作例子說明它如何改變你的行為模式。"},{"type":"pilot","cat":"INTERVIEW EN","topic":"Behavioral Interview","q":"How do you handle pressure when family or friends have expectations that feel too high?","hint":"Answer directly, give a specific example, explain your action, then state what you learned and why it matters for pilot training.","tags":["interview","2026-reference-image","v150"],"defaultPrep":30,"defaultAns":100,"prep":30,"ans":100,"s":"I first ask whether the pressure comes from an actual external expectation or from the way I am interpreting it. Then I convert the result goal into process goals that I can control, such as a daily practice target or a weekly progress check. If the expectation is genuinely creating pressure, I communicate my current progress, the time required, and the realistic risks. This helps me turn an abstract pressure into specific actions and prevents me from making unreasonable decisions just to prove myself.","short":"","cn":"【中文作答重點】\n先辨識壓力來源，再把結果目標轉成過程目標；必要時與家人溝通真實進度與限制。"},{"type":"pilot","cat":"INTERVIEW EN","topic":"Behavioral Interview","q":"Have you ever expressed a strong negative emotion, such as anger or frustration? Did it help you achieve your goal?","hint":"Answer directly, give a specific example, explain your action, then state what you learned and why it matters for pilot training.","tags":["interview","2026-reference-image","v150"],"defaultPrep":30,"defaultAns":100,"prep":30,"ans":100,"s":"I have experienced strong frustration when a result was below my expectation. I learned that using the emotion directly in communication usually does not improve the outcome. Now I try to let the emotional intensity decrease first, identify the real problem, and then discuss what action needs to change. If I need to express dissatisfaction, I focus on the event, its impact, and the required next step rather than attacking the person. Emotion can signal that something matters, but it should not replace judgment.","short":"","cn":"【中文作答重點】\n承認負面情緒，但說明直接宣洩通常無助於解決問題；重點是降溫、辨識問題、針對事件與行動溝通。"},{"type":"pilot","cat":"INTERVIEW EN","topic":"Behavioral Interview","q":"What was the most difficult subject for you in high school? How did you overcome it, and how would you evaluate your ability in that subject now?","hint":"Answer directly, give a specific example, explain your action, then state what you learned and why it matters for pilot training.","tags":["interview","2026-reference-image","v150"],"defaultPrep":30,"defaultAns":100,"prep":30,"ans":100,"s":"I would choose a real subject that shows an improvement process. Mathematics is a useful example if it is accurate for my experience. Multi-step problems were more difficult for me because I could make mistakes in formula selection or units. I improved by learning the principle first, writing the steps clearly, grouping repeated errors, and then practicing under time limits. I would not claim that I have no weakness now, but I understand the subject more systematically and know how to improve when I get stuck.","short":"","cn":"【中文作答重點】\n務必選真實科目。可用數學作為示例：公式選擇、單位、多步驟題 → 建立錯題分類與限時訓練 → 說明現在已更系統化。"},{"type":"pilot","cat":"INTERVIEW EN","topic":"Behavioral Interview","q":"When you face a difficult period in life, how do you respond? Do you ask teachers, peers, or others for help? What usually happens?","hint":"Answer directly, give a specific example, explain your action, then state what you learned and why it matters for pilot training.","tags":["interview","2026-reference-image","v150"],"defaultPrep":30,"defaultAns":100,"prep":30,"ans":100,"s":"When I face a difficult period, I handle the most urgent risk first and then break the remaining problem into smaller actions. If I stay stuck for too long, I ask someone who can provide relevant information or experience instead of only asking for reassurance. For a learning problem, for example, I organize the exact point I do not understand and ask a focused question. This usually helps me find the blind spot faster. It has taught me that asking for help early is a form of mature risk management, not a sign of weakness.","short":"","cn":"【中文作答重點】\n處理順序：先急迫風險 → 拆小問題 → 卡住時向有相關能力的人提出具體問題 → 說明求援是成熟的風險管理。"},{"type":"pilot","cat":"INTERVIEW EN","topic":"Behavioral Interview","q":"Which university subject has been most useful to you? Do you still use it, and how has it helped your life?","hint":"Answer directly, give a specific example, explain your action, then state what you learned and why it matters for pilot training.","tags":["interview","2026-reference-image","v150"],"defaultPrep":30,"defaultAns":100,"prep":30,"ans":100,"s":"One useful area from university was logistics and management because it taught me to look at processes, resources, cost, and risk as one system. I still use similar thinking when I plan inventory, time, or work priorities. The biggest benefit is that I tend to look for the bottleneck and the key variables instead of only treating the visible symptom. I believe this systems-thinking habit is also useful in aviation training, where decisions often involve several interacting factors.","short":"","cn":"【中文作答重點】\n可連結行銷與物流管理背景，強調流程、資源、成本、風險與系統化思考，而不是只說「這科很實用」。"},{"type":"pilot","cat":"INTERVIEW EN","topic":"Behavioral Interview","q":"How would you encourage someone who is facing a difficult situation or setback?","hint":"Answer directly, give a specific example, explain your action, then state what you learned and why it matters for pilot training.","tags":["interview","2026-reference-image","v150"],"defaultPrep":30,"defaultAns":100,"prep":30,"ans":100,"s":"I would first acknowledge that the setback is real instead of trying to make it sound positive immediately. Then I would help the person separate three things: what has already happened, what is still controllable, and what the smallest useful next action is. If appropriate, I would share an example of adjusting my own practice after missing a target. To me, useful encouragement is more than saying 'keep going.' It helps the person see a practical next step again.","short":"","cn":"【中文作答重點】\n先承認挫折，再幫對方區分已發生／可控制／下一步。避免只說空泛的「加油」。"},{"type":"pilot","cat":"INTERVIEW EN","topic":"Behavioral Interview","q":"How do you maintain enthusiasm at work, and how will you continue to maintain it in the future?","hint":"Answer directly, give a specific example, explain your action, then state what you learned and why it matters for pilot training.","tags":["interview","2026-reference-image","v150"],"defaultPrep":30,"defaultAns":100,"prep":30,"ans":100,"s":"I do not define enthusiasm as feeling excited every day. For me, it means remembering why the work matters even when the task becomes repetitive or difficult. I maintain it by setting short-term goals, continuing to learn, improving the process, and protecting a reasonable life balance. In an aviation career, I would want my motivation to come from professional growth and responsibility rather than novelty, because a long career depends more on disciplined commitment than on constant excitement.","short":"","cn":"【中文作答重點】\n熱忱不等於每天興奮。回答可連結目標、學習、流程改善與生活平衡，並強調長期職涯靠紀律維持。"},{"type":"pilot","cat":"INTERVIEW EN","topic":"Behavioral Interview","q":"How much time do you spend on household responsibilities each week, and how do you divide the work? Have you had conflicts about the division?","hint":"Answer directly, give a specific example, explain your action, then state what you learned and why it matters for pilot training.","tags":["interview","2026-reference-image","v150"],"defaultPrep":30,"defaultAns":100,"prep":30,"ans":100,"s":"I would divide household work according to the actual schedule and workload rather than insisting that every person spend exactly the same amount of time. We can list the fixed tasks and the temporary tasks first, then adjust them according to availability and energy. If we disagree, I try to identify whether the real issue is fairness, timing, or the standard of completion. Clear expectations and early adjustment usually prevent small differences from becoming personal conflict.","short":"","cn":"【中文作答重點】\n可說明依作息與負荷分工；若有衝突，先釐清公平、時間或完成標準，再重新協調。"},{"type":"pilot","cat":"INTERVIEW EN","topic":"Behavioral Interview","q":"What is the most important consideration when giving advice? What is the best advice you have received in your life?","hint":"Answer directly, give a specific example, explain your action, then state what you learned and why it matters for pilot training.","tags":["interview","2026-reference-image","v150"],"defaultPrep":30,"defaultAns":100,"prep":30,"ans":100,"s":"The most important thing is to understand the other person's goal, constraints, and real problem before giving advice. Otherwise, even good advice may not fit the situation. I also try to separate sharing my experience from making a decision for someone else. One piece of advice that has influenced me is to focus on what I can control and keep improving the fundamentals. It helps me return to practical daily actions when I face an exam, work pressure, or a long-term goal.","short":"","cn":"【中文作答重點】\n給建議前先理解目標、限制與問題；人生好建議可用「專注可控制的事、把基本功做好」，再說明它如何影響你。"},{"type":"pilot","cat":"INTERVIEW EN","topic":"English Autobiography","q":"Write a one-page English autobiography that helps an airline understand your motivation, key traits, and determination to become a pilot.","hint":"Answer directly, give a specific example, explain your action, then state what you learned and why it matters for pilot training.","tags":["interview","2026-reference-image","v150"],"defaultPrep":30,"defaultAns":100,"prep":30,"ans":100,"s":"A strong structure is: Paragraph 1 — who I am and my current professional background. Paragraph 2 — the experiences that developed responsibility, communication, discipline, and decision-making. Paragraph 3 — why I want to become a pilot and what I have already done to prepare, such as English, mathematics, aviation knowledge, simulator practice, medical requirements, and fitness. Paragraph 4 — why I am ready for demanding training and what kind of pilot I want to become. The autobiography should use specific evidence instead of adjectives alone, remain consistent with the résumé, and make the motivation for aviation clear.","short":"","cn":"【中文作答重點】\n英文自傳可分四段：背景 → 形成特質的具體經歷 → 飛行員動機與已做準備 → 為何能承受訓練及想成為何種飛行員。重點是具體證據、與履歷一致、動機清楚。"}];
   const norm = v => String(v ?? "").normalize("NFKC").toLowerCase()
     .replace(/[【】「」『』"'`.,，。！？!?：:；;（）()\[\]{}<>+＝=\-−–—_、\/\\\s]/g, "");
@@ -5948,6 +5948,482 @@ That's why I think so.`;
     prepCue:"920Hz / short",
     answerCue:"740Hz / long",
     respectsGlobalSoundSetting:true
+  };
+})();
+</script>
+
+
+<script id="v152-math-formula-answer-quality-pass">
+(() => {
+  const VERSION = "v152";
+
+  const norm = v => String(v ?? "")
+    .normalize("NFKC")
+    .toLowerCase()
+    .replace(/[【】「」『』"'`.,，。！？!?：:；;（）()\[\]{}<>+＝=\-−–—_、\/\\\s]/g, "");
+
+  const isAdvancedMath = q =>
+    (q?.type === "math_en" || q?.type === "math_cn") &&
+    (q?.difficulty === "advanced" || (q?.tags || []).includes("advanced"));
+
+  const info = q => [
+    q?.topic || "",
+    ...(q?.tags || []),
+    q?.q || ""
+  ].join(" ").toLowerCase();
+
+  function reasonFor(q, lang){
+    const k = info(q);
+    const zh = lang === "zh";
+    const pick = (en, cn) => zh ? cn : en;
+
+    const rules = [
+      [/mixture|concentration|混合|濃度/,
+        pick("The key idea is conservation of solute: the amount of solute before mixing must equal the amount after mixing.",
+             "關鍵是「溶質量守恆」：混合前兩種溶液中的溶質總量，必須等於混合後成品中的溶質量。")],
+      [/simultaneous|聯立/,
+        pick("There are two unknown quantities and two independent conditions, so two linear equations are enough to determine both unknowns.",
+             "題目有兩個未知量，也提供兩個彼此獨立的條件，因此建立兩條一次方程式即可求出兩個未知數。")],
+      [/vector resultant|向量合成/,
+        pick("The horizontal and vertical components are perpendicular, so the magnitude follows the Pythagorean theorem and the direction follows the tangent ratio.",
+             "水平與垂直分量互相垂直，因此大小用畢氏定理，方向再用正切比求出。")],
+      [/vector subtraction|向量相減/,
+        pick("Vector subtraction is performed component by component; the resulting components then form a right triangle for the magnitude.",
+             "向量相減要先分別處理各方向分量，再利用合成後的垂直分量求大小。")],
+      [/arithmetic sequence|等差/,
+        pick("An arithmetic sequence changes by a constant difference, so its terms and sum can be expressed from the first term and common difference.",
+             "等差數列每一項都增加相同公差，因此可由首項與公差建立第 n 項與前 n 項和。")],
+      [/geometric sequence|等比/,
+        pick("A geometric sequence changes by a constant ratio, so repeated multiplication gives the nth term.",
+             "等比數列相鄰兩項的比值固定，因此可用首項乘上公比的次方求第 n 項。")],
+      [/circular motion|centripetal|圓周|向心/,
+        pick("Circular motion requires inward acceleration a=v²/r; combining this with F=ma gives the required centripetal force.",
+             "圓周運動需要指向圓心的加速度 a=v²/r，再配合 F=ma 即可得到所需向心力。")],
+      [/newton.*friction|friction|摩擦/,
+        pick("First determine friction from the normal force, then use the remaining net force in F=ma.",
+             "先由正向力求摩擦力，再把各方向力合成為淨力，最後使用 F=ma。")],
+      [/newton|牛頓/,
+        pick("Newton's second law connects net force and acceleration, so the force balance must be found before solving for motion.",
+             "牛頓第二定律把淨力與加速度連結起來，因此要先確認合力，再求物體的運動狀態。")],
+      [/probability without replacement|不放回/,
+        pick("Because the first draw changes both the total number of objects and the favorable count, the second probability is conditional on the first draw.",
+             "因為第一次抽取後總數與有利數量都會改變，所以第二次機率必須依第一次結果重新計算。")],
+      [/probability|機率/,
+        pick("Probability compares favorable outcomes with all equally likely outcomes; for successive dependent events, conditional probabilities must be multiplied.",
+             "機率是有利結果相對於所有等可能結果的比例；若事件前後相依，則要使用條件機率相乘。")],
+      [/quadratic roots|root.*coefficient|根與係數/,
+        pick("The sum and product of the roots come directly from the quadratic coefficients, which avoids solving each root separately.",
+             "二次方程式的根和、根積可直接由係數取得，因此不需要先把兩個根各自解出。")],
+      [/quadratic optimization|二次.*最大|二次.*最小/,
+        pick("A quadratic reaches its maximum or minimum at its vertex, so completing the square or using the vertex formula identifies the optimum directly.",
+             "二次函數的最大值或最小值出現在頂點，因此配方或頂點公式可以直接找出最佳值。")],
+      [/quadratic functions|discriminant|判別式/,
+        pick("A tangent touches a quadratic at exactly one real point, so the resulting quadratic equation must have discriminant zero.",
+             "切線與二次曲線只有一個實數交點，因此聯立後的二次方程式判別式必須等於 0。")],
+      [/remainder theorem|餘式/,
+        pick("When dividing P(x) by x−a, the remainder theorem says the remainder is simply P(a).",
+             "P(x) 除以 x−a 時，餘式定理告訴我們餘數就是 P(a)，可直接代入求值。")],
+      [/polynomial|factor theorem|因式/,
+        pick("If x−a is a factor, then P(a)=0; this converts the factor condition into a direct equation.",
+             "若 x−a 是多項式的因式，則 P(a)=0，可把「因式」條件直接轉成方程式。")],
+      [/torque equilibrium|力矩平衡/,
+        pick("With no angular acceleration, the net torque is zero, so clockwise and counterclockwise torques must balance.",
+             "沒有角加速度時淨力矩為 0，因此順時針與逆時針力矩必須互相平衡。")],
+      [/torque|力矩/,
+        pick("Torque depends on the perpendicular component of force and its lever arm, so τ=rFsinθ.",
+             "力矩取決於力臂與力的垂直分量，因此使用 τ=rFsinθ。")],
+      [/buoyancy|浮力/,
+        pick("Archimedes' principle gives the buoyant force as the weight of displaced fluid; compare it with weight and any support/tether force.",
+             "依阿基米德原理，浮力等於排開流體的重量，再與物體重量及其他外力一起比較。")],
+      [/ideal gas|理想氣體/,
+        pick("For a fixed amount of ideal gas, pressure, volume, and absolute temperature are linked by PV=nRT, provided units are consistent.",
+             "對固定莫耳數的理想氣體，壓力、體積與絕對溫度由 PV=nRT 連結；代入前必須確認單位一致。")],
+      [/impulse|衝量/,
+        pick("Impulse is the change in momentum, so force multiplied by acting time equals m(vf−vi).",
+             "衝量就是動量的改變，因此力乘作用時間等於 m(vf−vi)。")],
+      [/momentum conservation|inelastic|collision|碰撞|動量守恆/,
+        pick("If external impulse is negligible during the collision, total momentum before and after the collision is conserved.",
+             "碰撞時間很短且外力衝量可忽略時，系統碰撞前後的總動量守恆。")],
+      [/momentum|動量/,
+        pick("Momentum is mass times velocity, and its change must include the direction/sign of the velocity.",
+             "動量為質量乘速度；計算動量變化時必須保留速度方向與正負號。")],
+      [/inequalit|不等式/,
+        pick("The same algebraic operation is applied to both sides; multiplying or dividing by a negative number reverses the inequality sign.",
+             "不等式兩邊要做相同運算；若乘或除以負數，不等號方向必須反轉。")],
+      [/absolute.*inequality|絕對值/,
+        pick("Absolute value represents distance from zero, so |A|≤b means A must lie between −b and b.",
+             "絕對值代表與 0 的距離，因此 |A|≤b 表示 A 必須落在 −b 到 b 之間。")],
+      [/permutation|排列/,
+        pick("Order matters in a permutation, so each different ordering counts as a different outcome.",
+             "排列問題中順序不同就算不同結果，因此必須把不同排列方式都計入。")],
+      [/combination|組合/,
+        pick("Order does not matter in a combination, so selecting the same set in a different order is not counted again.",
+             "組合問題不考慮順序，因此同一組元素換排列順序不會重複計算。")],
+      [/perpendicular line|垂直直線/,
+        pick("For nonvertical perpendicular lines, the slopes are negative reciprocals; the point condition then fixes the line.",
+             "非垂直直線互相垂直時斜率互為負倒數，再利用已知通過點即可決定直線。")],
+      [/slope of a line|斜率/,
+        pick("Slope is vertical change divided by horizontal change between two points.",
+             "斜率就是兩點之間的垂直變化量除以水平變化量。")],
+      [/midpoint|中點/,
+        pick("The midpoint lies halfway between the two endpoints, so each coordinate is the average of the corresponding endpoint coordinates.",
+             "中點位在兩端點正中央，因此 x、y 座標分別取兩端點對應座標的平均。")],
+      [/point-to-line|點到直線/,
+        pick("The shortest distance from a point to a line is measured along the perpendicular direction, which leads to the standard point-to-line distance formula.",
+             "點到直線的最短距離沿著垂直方向，因此可使用標準的點到直線距離公式。")],
+      [/circle equation|圓方程/,
+        pick("Every point on a circle is the same distance r from its center, so the distance formula becomes the circle equation.",
+             "圓上的每一點到圓心距離都等於 r，把距離公式平方後就是圓方程式。")],
+      [/circle geometry|圓.*弦/,
+        pick("The radius to the midpoint of a chord is perpendicular to the chord, creating a right triangle.",
+             "圓心連到弦中點會垂直於弦，因此可形成直角三角形求解。")],
+      [/right-triangle|pythagorean|直角三角/,
+        pick("The two perpendicular lengths are the legs of a right triangle, so the Pythagorean theorem relates them to the hypotenuse.",
+             "兩個互相垂直的長度形成直角三角形，因此用畢氏定理連結兩股與斜邊。")],
+      [/trigonometric application|三角.*應用/,
+        pick("The known angle and side lengths form a right-triangle relationship, so sine, cosine, or tangent gives the missing quantity.",
+             "已知角度與邊長構成直角三角形關係，因此利用正弦、餘弦或正切求未知量。")],
+      [/trigonometric identities|三角恆等/,
+        pick("The Pythagorean identity links sine and cosine, and tangent is their ratio.",
+             "畢氏恆等式連結正弦與餘弦，而正切等於正弦除以餘弦。")],
+      [/uniform acceleration|kinematics|等加速度|運動學/,
+        pick("Acceleration is constant, so the standard constant-acceleration equations are valid; choose the one that uses the known quantities and desired unknown.",
+             "加速度固定，因此可以使用等加速度公式；應選擇只包含已知量與目標未知量的那一條。")],
+      [/work.?energy|功能定理|work-energy/,
+        pick("The net work done on an object equals its change in kinetic energy, linking force/displacement to speed.",
+             "合力所做的淨功等於動能改變，因此可把作功與速度變化直接連結。")],
+      [/energy conservation|能量守恆/,
+        pick("When non-conservative work is negligible, total mechanical energy remains constant, allowing potential and kinetic energy to be exchanged.",
+             "若可忽略非保守力作功，總機械能維持不變，因此位能與動能可以互相轉換。")],
+      [/power and efficiency|功率.*效率/,
+        pick("Power is energy transferred per unit time, while efficiency compares useful output with input.",
+             "功率表示單位時間傳遞的能量；效率則比較有效輸出與總輸入。")],
+      [/power|功率/,
+        pick("Power measures how quickly work is done, so divide work or energy by elapsed time.",
+             "功率表示作功或能量轉換的速率，因此以作功／能量除以時間。")],
+      [/pressure|壓力/,
+        pick("Pressure is force distributed over area, so the same force produces greater pressure on a smaller area.",
+             "壓力是力分布在面積上的程度，因此同樣的力作用在較小面積時壓力較大。")],
+      [/thermal equilibrium|thermal-energy conservation|熱平衡|熱.*守恆/,
+        pick("In an isolated system, heat lost by the hotter object equals heat gained by the colder object.",
+             "若忽略散熱，較熱物體放出的熱量等於較冷物體吸收的熱量。")],
+      [/thermal expansion|熱膨脹/,
+        pick("For small temperature changes, linear expansion is proportional to original length and temperature change.",
+             "在一般線性熱膨脹範圍內，長度變化與原長及溫度變化成正比。")],
+      [/heat|熱量/,
+        pick("For a temperature change without a phase change, heat is proportional to mass, specific heat, and ΔT.",
+             "沒有相變時，吸收或放出的熱量與質量、比熱及溫度變化量成正比。")],
+      [/parallel circuit|series-parallel|並聯|串並聯/,
+        pick("Use the circuit connection to find equivalent resistance first, then apply Ohm's law to the whole circuit.",
+             "先依串並聯關係求等效電阻，再對整個電路使用歐姆定律。")],
+      [/electric circuits|電路/,
+        pick("Use the equivalent resistance to find current, then use the appropriate voltage/current relation for each component.",
+             "先由等效電阻求總電流，再依各元件的電壓與電流關係計算。")],
+      [/capacitance|capacitor|電容/,
+        pick("The capacitor connection determines whether voltage or charge is shared; compute the equivalent capacitance before using Q=CV.",
+             "先依電容器的串並聯判斷電壓或電荷關係，求出等效電容後再使用 Q=CV。")],
+      [/electric field|電場/,
+        pick("A point charge produces an electric field that follows the inverse-square relation E=kQ/r².",
+             "點電荷產生的電場遵循反平方關係 E=kQ/r²，距離加倍時電場會降為四分之一。")],
+      [/thin lens|透鏡/,
+        pick("The thin-lens equation links focal length, object distance, and image distance; magnification then determines image size and orientation.",
+             "薄透鏡公式連結焦距、物距與像距；再由放大率判斷影像大小與正倒。")],
+      [/optics|wave relation|光學/,
+        pick("The source fixes frequency, while wave speed and wavelength satisfy v=fλ.",
+             "頻率由波源決定，而波速、頻率與波長之間滿足 v=fλ。")],
+      [/wave speed|standing wave|波速|駐波/,
+        pick("Wave speed satisfies v=fλ; boundary conditions determine the allowed wavelength when a standing wave is involved.",
+             "波速滿足 v=fλ；若是駐波，還要先由邊界條件判斷允許的波長。")],
+      [/angular momentum|角動量/,
+        pick("With negligible external torque, total angular momentum is conserved, so a change in moment of inertia changes angular speed inversely.",
+             "外力矩可忽略時角動量守恆，因此轉動慣量改變時角速度會反向調整。")],
+      [/rotation|轉動/,
+        pick("With constant angular acceleration, rotational motion follows equations analogous to linear constant-acceleration motion.",
+             "角加速度固定時，轉動運動可使用與直線等加速度相對應的角運動公式。")],
+      [/center of mass|質心/,
+        pick("The center of mass is a mass-weighted average of position, so heavier masses contribute more strongly.",
+             "質心位置是各位置的質量加權平均，因此質量越大的物體影響越大。")],
+      [/data and mean|data and averages|mean|average|平均/,
+        pick("The mean is the total of all values divided by the number of values; changes to every data point affect the mean predictably.",
+             "平均數等於所有資料總和除以資料筆數；若每筆資料都做相同變化，平均數也會相應改變。")],
+      [/exponential|指數/,
+        pick("After rewriting both sides with the same base, equal positive bases imply equal exponents.",
+             "把等式兩邊改寫成相同底數後，同底且底數合法時可以直接令指數相等。")],
+      [/logarith|對數/,
+        pick("Logarithms convert products into sums and powers into coefficients; the logarithm definition then converts between logarithmic and exponential form.",
+             "對數律可把乘法轉成加法、次方轉成係數；必要時再用對數定義轉回指數形式。")],
+      [/function composition|函數合成/,
+        pick("Function composition means evaluating the inner function first and using that result as the input of the outer function.",
+             "函數合成要先計算內層函數，再把結果當成外層函數的輸入。")],
+      [/functions|函數/,
+        pick("For a linear function, the rate of change is constant, so two points determine its slope and equation.",
+             "一次函數的變化率固定，因此利用兩點即可決定斜率與函數關係。")],
+      [/linear equations|一次方程/,
+        pick("Translate each verbal condition directly into an equality; no special formula is needed beyond the stated fixed and variable parts.",
+             "把題目的固定量與變動量直接翻成等式即可，不需要額外套用複雜公式。")],
+      [/relative motion|相對運動/,
+        pick("For catch-up motion in the same direction, the gap closes at the relative speed, so time = initial gap ÷ relative speed.",
+             "同方向追及時，兩者距離以相對速度縮短，因此時間＝初始距離差÷相對速度。")],
+      [/ratio|比例/,
+        pick("A ratio or scale is a direct multiplicative relationship, so keep the units consistent and scale the known quantity.",
+             "比例或比例尺是直接的倍數關係，只要先統一單位，再依比例放大或縮小。")]
+    ];
+
+    for(const [re, reason] of rules){
+      if(re.test(k)) return reason;
+    }
+    return pick(
+      "Use the relationship that directly describes the quantities in the question, and verify that its assumptions and units match the situation.",
+      "應選擇能直接描述題目已知量與未知量關係的方法，並確認使用條件及單位都符合題意。"
+    );
+  }
+
+  function simplifyFormulaLine(text, q, lang){
+    if(!text) return text;
+    const k = info(q);
+    const zh = lang === "zh";
+
+    let line = null;
+    if(/mixture|concentration|混合|濃度/.test(k)){
+      line = zh
+        ? "最簡單觀念：溶質量守恆 → 高濃度溶液的溶質 + 低濃度溶液的溶質 = 混合後的溶質。"
+        : "Simplest idea: conserve solute → solute from the stronger solution + solute from the weaker solution = solute in the final mixture.";
+    }else if(/simultaneous|聯立/.test(k)){
+      line = zh
+        ? "最簡單觀念：不需要背特殊公式；把「總數量」與「總金額／總差」各寫成一條方程式。"
+        : "Simplest idea: no special formula is needed; write one equation for the total quantity and another for the total value/difference.";
+    }else if(/data and mean|data and averages|mean|average|平均/.test(k)){
+      line = zh
+        ? "最簡單關係：平均數 = 資料總和 ÷ 資料筆數。"
+        : "Simplest relation: mean = total of the data ÷ number of data values.";
+    }else if(/relative motion|相對運動/.test(k)){
+      line = zh
+        ? "最簡單關係：追及時間 = 初始距離差 ÷ 相對速度。"
+        : "Simplest relation: catch-up time = initial separation ÷ relative speed.";
+    }else if(/linear equations|一次方程/.test(k)){
+      line = zh
+        ? "最簡單觀念：把題目的固定量與每單位變動量直接寫成等式。"
+        : "Simplest idea: translate the fixed amount and per-unit amount directly into one equation.";
+    }
+
+    if(!line) return text;
+    return zh
+      ? text.replace(/^使用公式：[^\n]*/m, line)
+      : text.replace(/^Formula used:[^\n]*/m, line);
+  }
+
+  function replaceGenericReason(text, q, lang){
+    if(!text) return text;
+    const reason = reasonFor(q, lang);
+    if(lang === "zh"){
+      return text
+        .replace(/為什麼使用這個公式：題目提供的已知量正好對應公式中的變數，因此可以直接建立關係並求解。?/g,
+                 "為什麼這樣做：" + reason)
+        .replace(/為什麼使用這個公式：題目提供的已知量正好對應公式中的變數。?/g,
+                 "為什麼這樣做：" + reason);
+    }
+    return text
+      .replace(/Why this formula applies: the given quantities match the variables in the formula, so no extra assumption is required\.?/g,
+               "Why this approach works: " + reason)
+      .replace(/Why this formula applies: the given quantities directly match the variables in the formula\.?/g,
+               "Why this approach works: " + reason);
+  }
+
+  function fixMixture(q){
+    const isEN = q.type === "math_en";
+    const raw = q.q || "";
+    let vals = null;
+
+    if(isEN){
+      const m = raw.match(/How many liters of a (\d+(?:\.\d+)?)% solution must be mixed with a (\d+(?:\.\d+)?)% solution to make (\d+(?:\.\d+)?) L of a (\d+(?:\.\d+)?)% solution\?/i);
+      if(m) vals = {hi:+m[1], lo:+m[2], total:+m[3], target:+m[4]};
+    }else{
+      const m = raw.match(/要調製\s*(\d+(?:\.\d+)?)\s*L、濃度\s*(\d+(?:\.\d+)?)%\s*的溶液，需要多少公升的\s*(\d+(?:\.\d+)?)%\s*溶液與\s*(\d+(?:\.\d+)?)%\s*溶液混合？/);
+      if(m) vals = {total:+m[1], target:+m[2], hi:+m[3], lo:+m[4]};
+    }
+    if(!vals || vals.hi === vals.lo) return false;
+
+    const x = vals.total * (vals.target - vals.lo) / (vals.hi - vals.lo);
+    const y = vals.total - x;
+    const f = n => Number.isInteger(n) ? String(n) : String(Math.round(n*100)/100);
+    const xS=f(x), yS=f(y);
+
+    q.q = isEN
+      ? `To make ${f(vals.total)} L of a ${f(vals.target)}% solution by mixing ${f(vals.hi)}% and ${f(vals.lo)}% solutions, how many liters of the ${f(vals.hi)}% solution are needed?`
+      : `要用 ${f(vals.hi)}% 與 ${f(vals.lo)}% 溶液調製 ${f(vals.total)} L、濃度 ${f(vals.target)}% 的溶液，需要多少公升的 ${f(vals.hi)}% 溶液？`;
+
+    q.choices = (q.choices || []).map(v => {
+      const s=String(v).trim();
+      return /^-?\d+(?:\.\d+)?$/.test(s) ? `${s} L` : s;
+    });
+
+    const answerIndex=q.choices.findIndex(v => Math.abs(parseFloat(v)-x)<1e-9);
+    if(answerIndex>=0)q.correct=answerIndex;
+    q.short=`${xS} L`;
+
+    const en =
+`Simplest idea: conserve solute. There is no need to memorize the abstract C₁V₁+C₂V₂ formula.
+Step-by-step:
+1. Let x be the liters of ${f(vals.hi)}% solution. Then ${f(vals.total)}−x liters is the ${f(vals.lo)}% solution.
+2. Amount of solute before mixing = amount of solute after mixing:
+   ${vals.hi/100}x + ${vals.lo/100}(${f(vals.total)}−x) = ${vals.target/100}×${f(vals.total)}.
+3. Solving gives x=${xS} L.
+Final answer: ${xS} L of the ${f(vals.hi)}% solution.
+The remaining ${yS} L is the ${f(vals.lo)}% solution.
+Check: ${vals.hi/100}×${xS} + ${vals.lo/100}×${yS} = ${vals.target/100}×${f(vals.total)}, so both the total volume and target concentration are satisfied.
+Why this approach works: concentration × volume gives the amount of solute, and the total amount of solute is conserved during mixing.`;
+
+    const zh =
+`最簡單觀念：使用「溶質量守恆」，不需要背 C₁V₁+C₂V₂ 這種抽象符號公式。
+詳細步驟：
+1. 設 ${f(vals.hi)}% 溶液為 x L，則 ${f(vals.lo)}% 溶液為 ${f(vals.total)}−x L。
+2. 混合前的溶質總量 = 混合後的溶質總量：
+   ${vals.hi/100}x + ${vals.lo/100}(${f(vals.total)}−x) = ${vals.target/100}×${f(vals.total)}。
+3. 解得 x=${xS} L。
+最終答案：${xS} L 的 ${f(vals.hi)}% 溶液。
+剩下 ${yS} L 為 ${f(vals.lo)}% 溶液。
+檢查：${vals.hi/100}×${xS} + ${vals.lo/100}×${yS} = ${vals.target/100}×${f(vals.total)}，同時符合總體積與目標濃度。
+為什麼這樣做：濃度 × 體積代表溶質量；混合時溶質總量不會憑空增加或減少。`;
+
+    if(isEN){q.s=en;q.cn=zh;}else{q.s=zh;q.cn=en;}
+    return true;
+  }
+
+  let advancedAudited=0;
+  let mixtureFixed=0;
+  let genericReasonUpgraded=0;
+  let logBugFixed=0;
+
+  for(const q of bank){
+    if(!isAdvancedMath(q))continue;
+    advancedAudited++;
+
+    if(fixMixture(q)){
+      mixtureFixed++;
+      q.hint=q.type==="math_cn"
+        ?"Advanced：先找出最簡單的關係式，再逐步計算並檢查單位、方向或定義域。"
+        :"Advanced: identify the simplest relationship first, then calculate step by step and check units, signs, or domain.";
+      continue;
+    }
+
+    // Actual answer contradiction found during v152 audit.
+    if(/log₂75/.test(q.q || "")){
+      q.short="a+2b";
+      const idx=(q.choices||[]).findIndex(v=>norm(v)===norm("a+2b"));
+      if(idx>=0)q.correct=idx;
+
+      if(q.type==="math_en"){
+        q.s=q.s
+          .replace(/Final answer:\s*a\+b/g,"Final answer: a+2b")
+          .replace(/Verification:[^\n]*/g,"Verification: 75=3×5², so log₂75=a+2b.");
+        q.cn=q.cn
+          .replace(/最終答案：\s*a\+b/g,"最終答案：a+2b")
+          .replace(/答案檢查：[^\n]*/g,"答案檢查：75=3×5²，因此 log₂75=a+2b。");
+      }else{
+        q.s=q.s
+          .replace(/最終答案：\s*a\+b/g,"最終答案：a+2b")
+          .replace(/答案檢查：[^\n]*/g,"答案檢查：75=3×5²，因此 log₂75=a+2b。");
+        q.cn=q.cn
+          .replace(/Final answer:\s*a\+b/g,"Final answer: a+2b")
+          .replace(/Verification:[^\n]*/g,"Verification: 75=3×5², so log₂75=a+2b.");
+      }
+      logBugFixed++;
+    }
+
+    const sLang=q.type==="math_cn"?"zh":"en";
+    const cnLang=q.type==="math_cn"?"en":"zh";
+    const before=(q.s||"")+"\n"+(q.cn||"");
+
+    q.s=simplifyFormulaLine(q.s,q,sLang);
+    q.cn=simplifyFormulaLine(q.cn,q,cnLang);
+    q.s=replaceGenericReason(q.s,q,sLang);
+    q.cn=replaceGenericReason(q.cn,q,cnLang);
+
+    if(before!==((q.s||"")+"\n"+(q.cn||"")))genericReasonUpgraded++;
+
+    q.hint=q.type==="math_cn"
+      ?"Advanced：先找出最簡單的關係式，再逐步計算並檢查單位、方向或定義域。"
+      :"Advanced: identify the simplest relationship first, then calculate step by step and check units, signs, or domain.";
+  }
+
+  // Standardize one notation that was mathematically correct but visually unclear.
+  for(const q of bank){
+    if(!isAdvancedMath(q))continue;
+    q.s=(q.s||"")
+      .replace(/xcm=Σmixi\/Σmi/g,"x_cm=(Σmᵢxᵢ)/(Σmᵢ)")
+      .replace(/x_cm=Σmixi\/Σmi/g,"x_cm=(Σmᵢxᵢ)/(Σmᵢ)");
+    q.cn=(q.cn||"")
+      .replace(/xcm=Σmixi\/Σmi/g,"x_cm=(Σmᵢxᵢ)/(Σmᵢ)")
+      .replace(/x_cm=Σmixi\/Σmi/g,"x_cm=(Σmᵢxᵢ)/(Σmᵢ)");
+  }
+
+  // Remove exact duplicate Advanced Math questions only; keep the later/newer copy.
+  let duplicateAdvancedRemoved=0;
+  const seen=new Set();
+  for(let i=bank.length-1;i>=0;i--){
+    const q=bank[i];
+    if(!isAdvancedMath(q))continue;
+    const key=`${q.type}|${norm(q.q)}`;
+    if(seen.has(key)){
+      bank.splice(i,1);
+      duplicateAdvancedRemoved++;
+    }else seen.add(key);
+  }
+
+  // Runtime structural QA.
+  let invalidCorrectIndex=0;
+  let duplicateChoices=0;
+  let primaryFinalAnswerConflicts=0;
+  let remainingGenericReasons=0;
+  let advancedAfterDedup=0;
+
+  for(const q of bank){
+    if(!isAdvancedMath(q))continue;
+    advancedAfterDedup++;
+
+    if(Array.isArray(q.choices)){
+      if(!Number.isInteger(q.correct)||q.correct<0||q.correct>=q.choices.length)invalidCorrectIndex++;
+      if(new Set(q.choices.map(norm)).size!==q.choices.length)duplicateChoices++;
+    }
+
+    const cc=Array.isArray(q.choices)&&Number.isInteger(q.correct)&&q.correct>=0&&q.correct<q.choices.length
+      ?String(q.choices[q.correct]):"";
+    const t=q.s||"";
+    const m=t.match(/(?:Final answer:|最終答案：)\s*([^\n]+)/);
+    if(m&&cc&&norm(m[1])!==norm(cc)&&!norm(m[1]).includes(norm(cc))&&!norm(cc).includes(norm(m[1]))){
+      primaryFinalAnswerConflicts++;
+    }
+
+    if(/given quantities match the variables|題目提供的已知量正好對應公式中的變數/.test((q.s||"")+" "+(q.cn||""))){
+      remainingGenericReasons++;
+    }
+  }
+
+  document.title=`TRIUMPH Pilot Trainer ${VERSION}`;
+  const logo=document.querySelector(".logo");
+  if(logo)logo.innerHTML=`TRIUMPH Pilot Trainer ${VERSION}<small>PILOT SELECTION TRAINER</small>`;
+  const hint=document.getElementById("hint");
+  if(hint)hint.textContent=
+    "v152：Advanced Math 全題庫進行公式／答案一致性 QA；優先顯示最簡單關係式，混合濃度改用溶質量守恆，並修正題幹、重複題與對數答案矛盾。";
+
+  try{
+    if(typeof refreshPool==="function")refreshPool();
+    if(typeof renderTabs==="function")renderTabs();
+    if(typeof updateStats==="function")updateStats();
+  }catch(e){}
+
+  window.TRIUMPH_V152_MATH_QA={
+    version:VERSION,
+    advancedAudited,
+    advancedAfterDedup,
+    mixtureFixed,
+    logBugFixed,
+    genericReasonUpgraded,
+    duplicateAdvancedRemoved,
+    invalidCorrectIndex,
+    duplicateChoices,
+    primaryFinalAnswerConflicts,
+    remainingGenericReasons
   };
 })();
 </script>
