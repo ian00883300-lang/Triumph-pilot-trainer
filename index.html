@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="zh-Hant"><head><meta charset="UTF-8"><title>TRIUMPH Pilot Trainer v148</title><meta name="viewport" content="width=device-width,initial-scale=1.0"><style>
+<!DOCTYPE html><html lang="zh-Hant"><head><meta charset="UTF-8"><title>TRIUMPH Pilot Trainer v151</title><meta name="viewport" content="width=device-width,initial-scale=1.0"><style>
 :root{--bg1:#eef4f8;--bg2:#dbe6ee;--card:rgba(255,255,255,.88);--text:#223044;--muted:#7d8aa0;--line:rgba(34,48,68,.12);--accent:#ff7a3d;--navy:#26364f;--soft:#edf2f7;--green:#4c8067;--danger:#d75b5b;--shadow:0 24px 70px rgba(38,54,79,.15);--panel:rgba(255,255,255,.45)}body[data-theme=gray]{--bg1:#5b5d5e;--bg2:#323435;--card:rgba(75,76,77,.92);--text:#fff;--muted:#d6d9de;--line:rgba(255,255,255,.16);--soft:rgba(255,255,255,.12);--panel:rgba(255,255,255,.06);--shadow:0 24px 70px rgba(0,0,0,.28)}body[data-theme=black]{--bg1:#171717;--bg2:#050505;--card:rgba(14,14,14,.95);--text:#fff;--muted:#d7d9dc;--line:rgba(255,255,255,.14);--soft:rgba(255,255,255,.1);--panel:rgba(255,255,255,.045);--shadow:0 24px 70px rgba(0,0,0,.45)}*{box-sizing:border-box}body{margin:0;min-height:100vh;padding:24px;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans TC",sans-serif;background:radial-gradient(circle at 12% 4%,rgba(255,122,61,.18),transparent 32%),linear-gradient(135deg,var(--bg1),var(--bg2));color:var(--text)}.app{max-width:1480px;margin:0 auto;display:grid;grid-template-columns:1.55fr.85fr;gap:20px}.card{background:var(--card);border:1px solid rgba(255,255,255,.5);border-radius:28px;box-shadow:var(--shadow);backdrop-filter:blur(18px)}.main,.sidecard{padding:26px}.side{display:grid;gap:20px;align-content:start}.header{display:grid;grid-template-columns:1fr auto auto;gap:14px;align-items:center;border-bottom:1px solid var(--line);padding-bottom:18px;margin-bottom:18px}.logo{font-size:24px;font-weight:900;letter-spacing:.06em}.logo small{display:block;font-size:12px;color:var(--muted);letter-spacing:.14em;margin-top:4px}.badge{background:var(--navy);color:#fff;padding:9px 13px;border-radius:999px;font-size:13px;font-weight:850}.theme{display:flex;gap:8px}button{font-family:inherit}.tab,.chip,.btn{border:0;border-radius:14px;font-weight:850;cursor:pointer;transition:.18s}.tab{padding:11px 14px;background:var(--soft);color:var(--text);border:1px solid var(--line)}.tab.active{background:var(--navy);color:#fff}.chip{padding:10px 13px;background:var(--soft);border:1px solid var(--line);color:var(--text)}.btn{padding:14px 18px;font-size:16px}.primary{background:var(--navy);color:#fff}.secondary{background:var(--soft);color:var(--text);border:1px solid var(--line)}.green{background:var(--green);color:#fff}.danger{background:var(--danger);color:#fff}.tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px}.questionbox{border:1px solid var(--line);background:var(--panel);border-radius:24px;padding:26px}.category{color:var(--accent);font-size:13px;font-weight:900;letter-spacing:.12em;margin-bottom:12px}.question{font-size:32px;line-height:1.25;font-weight:900;margin:0 0 18px}.hint{color:var(--muted);line-height:1.65;font-size:15px}.tag{display:inline-block;background:rgba(255,122,61,.12);color:var(--accent);border:1px solid rgba(255,122,61,.28);padding:5px 8px;border-radius:999px;font-size:12px;font-weight:850;margin:3px}.timerrow{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:18px 0}.timercard{border:1px solid var(--line);border-radius:20px;padding:18px;background:var(--panel);text-align:center}.timerlabel{font-size:13px;color:var(--muted);font-weight:850}.timer{font-variant-numeric:tabular-nums;font-size:56px;font-weight:900;letter-spacing:-.04em}.barwrap{height:9px;background:rgba(125,138,160,.22);border-radius:999px;overflow:hidden;margin-top:10px}.bar{height:100%;width:0%;background:linear-gradient(90deg,var(--accent),#ffb47e);transition:width.3s linear}.controls{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-top:16px}.answer{display:none;margin-top:18px;border-top:1px solid var(--line);padding-top:18px}.answer h3{margin:0 0 8px;color:var(--accent)}.answer p{line-height:1.7;margin:0 0 12px}.subnav{display:none;gap:10px;justify-content:space-between;margin-top:16px}.subq{border:1px solid var(--line);border-radius:18px;padding:14px;margin-top:14px;background:var(--panel)}.subqtitle{font-weight:900;color:var(--accent);margin-bottom:6px}.choices{display:grid;gap:10px;margin-top:14px}.choice{border:1px solid var(--line);background:var(--soft);padding:13px 15px;border-radius:14px;cursor:pointer;font-weight:850}.choice.correct{background:rgba(76,128,103,.18);border-color:rgba(76,128,103,.55)}.diagram{display:none;margin:16px 0;border:1px solid var(--line);border-radius:18px;background:var(--soft);padding:14px;overflow:auto}.diagram svg{max-width:100%;height:auto;color:var(--text)}.choice.wrong{background:rgba(215,91,91,.16);border-color:rgba(215,91,91,.55)}.stats{display:grid;gap:10px}.stat{display:flex;justify-content:space-between;border:1px solid var(--line);border-radius:14px;padding:13px}.stat b{color:var(--accent)}label{display:block;font-size:13px;color:var(--muted);font-weight:850;margin:12px 0 7px}input,select,textarea{width:100%;border:1px solid var(--line);border-radius:13px;padding:11px 12px;font-size:15px;color:#223044;background:rgba(255,255,255,.75)}body[data-theme=gray] input,body[data-theme=black] input,body[data-theme=gray] select,body[data-theme=black] select,body[data-theme=gray] textarea,body[data-theme=black] textarea{background:rgba(255,255,255,.12);color:#fff}option{color:#111}textarea{min-height:160px;resize:vertical}.favoriteItem{border:1px solid var(--line);border-radius:14px;padding:12px;margin:8px 0;background:var(--soft);cursor:pointer}.favoriteItem b{color:var(--accent);display:block;margin-bottom:4px}@media(max-width:1000px){.app{grid-template-columns:1fr}.question{font-size:26px}.timerrow{grid-template-columns:1fr}.header{grid-template-columns:1fr}}
 
 .diagram{display:none;border:1px solid var(--line);border-radius:18px;padding:14px;margin:14px 0;background:rgba(255,255,255,.35);overflow:auto}.diagram svg{max-width:100%;height:auto}.answer p{white-space:normal}.answer b{font-weight:900;color:var(--accent)}
@@ -928,7 +928,64 @@ body[data-theme="black"] .dt-overlay{--dt-score:#7bc7b8}
 @media(max-width:620px){.dt-timer-start{width:100%;min-width:0;padding:12px 18px}}
 </style>
 
-</head><body data-theme="white"><div class="app"><main class="main card"><div class="header"><div class="logo">TRIUMPH Pilot Trainer v148<small>PILOT SELECTION TRAINER</small></div><div class="theme"><button class="chip" data-theme="white">白</button><button class="chip" data-theme="gray">灰</button><button class="chip" data-theme="black">黑</button><button class="chip timer-quick active" id="timerQuickToggle" type="button" title="開啟／關閉計時" aria-label="開啟／關閉計時" aria-pressed="true">⏰</button></div><div class="badge" id="sessionBadge">Today: 0 questions</div></div>
+
+<style id="v149-daily-total-pause-style">
+/* v149: pause / resume control beside the always-visible total Daily Test time. */
+.dt-time-value-row{display:flex;align-items:center;justify-content:flex-end;gap:7px}
+.dt-total-pause{width:28px;height:28px;display:inline-flex;align-items:center;justify-content:center;border:1px solid var(--dt-border,#d8cbb7);border-radius:9px;background:var(--dt-surface,#f4ead9);color:inherit;font-size:12px;font-weight:900;line-height:1;cursor:pointer;transition:.15s ease}
+.dt-total-pause:hover{transform:translateY(-1px)}
+.dt-total-pause.paused{background:var(--dt-accent,#ff7440);color:#fff;border-color:var(--dt-accent,#ff7440)}
+.dt-total-pause:disabled{opacity:.45;cursor:not-allowed;transform:none}
+@media(max-width:680px){.dt-total-pause{width:27px;height:27px;border-radius:8px}.dt-time-value-row{gap:5px}}
+</style>
+
+<style id="v151-daily-pause-position-and-toeic-audio-style">
+/* v151: pause control sits before the Daily Test clock group, not inside the total-time value. */
+.dt-progress-right{
+  display:flex;
+  align-items:center;
+  justify-content:flex-end;
+  gap:12px;
+  margin-left:auto;
+}
+.dt-progress-right .dt-progress-times{
+  margin-left:0!important;
+}
+.dt-total-pause{
+  width:42px!important;
+  height:42px!important;
+  flex:0 0 42px;
+  border-radius:13px!important;
+  font-size:15px!important;
+  background:var(--dt-soft,var(--soft))!important;
+  border:1px solid var(--dt-line,var(--line))!important;
+  color:var(--dt-text,var(--text))!important;
+  box-shadow:none!important;
+}
+.dt-total-pause.paused{
+  background:var(--accent)!important;
+  border-color:var(--accent)!important;
+  color:#fff!important;
+}
+.dt-progress-time-line{
+  min-width:86px;
+}
+@media(max-width:680px){
+  .dt-progress-right{gap:8px}
+  .dt-total-pause{width:38px!important;height:38px!important;flex-basis:38px;border-radius:12px!important}
+  .dt-progress-time-line{min-width:72px}
+}
+@media(max-width:410px){
+  .dt-progress-right{
+    width:100%;
+    margin-left:0;
+    justify-content:flex-end;
+  }
+  .dt-progress-right .dt-progress-times{width:auto!important}
+}
+</style>
+
+</head><body data-theme="white"><div class="app"><main class="main card"><div class="header"><div class="logo">TRIUMPH Pilot Trainer v151<small>PILOT SELECTION TRAINER</small></div><div class="theme"><button class="chip" data-theme="white">白</button><button class="chip" data-theme="gray">灰</button><button class="chip" data-theme="black">黑</button><button class="chip timer-quick active" id="timerQuickToggle" type="button" title="開啟／關閉計時" aria-label="開啟／關閉計時" aria-pressed="true">⏰</button></div><div class="badge" id="sessionBadge">Today: 0 questions</div></div>
 <div class="dt-entry-wrap">
   <button type="button" class="dt-entry" id="dailyTestLaunch">
     <span class="dt-entry-icon">✓</span>
@@ -939,7 +996,7 @@ body[data-theme="black"] .dt-overlay{--dt-score:#7bc7b8}
     <span class="dt-entry-arrow">Start →</span>
   </button>
 </div>
-<div class="tabs" id="tabs"></div><section class="questionbox"><div class="category" id="category">READY</div><h1 class="question" id="question">Click “New Question” to start your training.</h1><div class="hint" id="hint">v148：Daily Test 的 TOEIC 倒數僅在 Q5–7／Q11 題目顯示，需按 Start 才開始；總測驗時間與本題答題時間固定顯示。</div><div id="tags"></div><div class="diagram" id="diagramBox"></div><div id="subqBox"></div><div class="choices" id="choices"></div><div class="timerrow" id="timerRow"><div class="timercard" id="prepCard"><div class="timerlabel">PREPARATION</div><div class="timer" id="prepTimer">00:30</div><div class="barwrap"><div class="bar" id="prepProgress"></div></div></div><div class="timercard"><div class="timerlabel" id="answerLabel">ANSWER</div><div class="timer" id="answerTimer">01:30</div><div class="barwrap"><div class="bar" id="answerProgress"></div></div></div></div><div class="controls"><button class="btn primary" id="newBtn">New Question</button><button class="btn secondary" id="prevBtn">Previous</button><button class="btn green" id="startPauseBtn">Start</button><button class="btn secondary" id="showBtn">Show Answer</button><button class="btn secondary" id="favBtn"><span id="starIcon">☆</span> Favorite</button><button class="btn danger" id="resetBtn">Reset</button></div><div class="subnav" id="subqNav"><button class="btn secondary" id="subPrevBtn">題組上一小題</button><button class="btn secondary" id="subNextBtn">題組下一小題</button></div><div class="answer" id="answerBox"><div id="acronymBox"></div><h3 id="suggestedHeading">Suggested Answer / Explanation</h3><p id="suggested"></p><div id="legacyAnswerMeta" hidden><p id="short"></p><div id="v100Meta"><div id="v100Difficulty"></div><div id="v100Method"></div><div id="v100Trap"></div><div id="v100Connection"></div></div></div><h3 id="chineseHeading">中文詳解 / 考試理解</h3><p id="chinese"></p></div></section></main><aside class="side"><section class="sidecard card"><h3>Practice Settings</h3><label>模式</label><select id="modeSelect"><option value="all">全部題庫</option><option value="pilot">Interview EN</option><option value="interview_cn">Interview CN</option><option value="aviation">Aviation EN</option><option value="aviation_cn">Aviation CN</option><option value="toeic11">TOEIC Q11</option><option value="toeic567">TOEIC Q5–7</option><option value="math_en">Math&Physics EN</option><option value="math_cn">Math&Physics CN</option><option value="classical_cn">Classical CN</option><option value="favorites">Favorites Only</option></select><select id="timerEnabled" hidden aria-hidden="true"><option value="true">開啟計時</option><option value="false">關閉計時</option></select><div id="mathDifficultySetting" hidden><label>Math 難易度</label><select id="difficultySelect"><option value="all">全部難度</option><option value="basic">Basic 基礎</option><option value="intermediate">Intermediate 中階</option><option value="advanced">Advanced 進階</option></select></div><label>準備時間（秒）</label><input type="number" id="prepSeconds" value="30"><label>回答/思考時間（秒）</label><input type="number" id="answerSeconds" value="90"><div class="setting-switch-row" id="soundSwitchRow">
+<div class="tabs" id="tabs"></div><section class="questionbox"><div class="category" id="category">READY</div><h1 class="question" id="question">Click “New Question” to start your training.</h1><div class="hint" id="hint">v150：Classical CN 新增老子、墨子、孔子等短篇；Interview 題庫依 2026 中英文問卷參考題擴充。</div><div id="tags"></div><div class="diagram" id="diagramBox"></div><div id="subqBox"></div><div class="choices" id="choices"></div><div class="timerrow" id="timerRow"><div class="timercard" id="prepCard"><div class="timerlabel">PREPARATION</div><div class="timer" id="prepTimer">00:30</div><div class="barwrap"><div class="bar" id="prepProgress"></div></div></div><div class="timercard"><div class="timerlabel" id="answerLabel">ANSWER</div><div class="timer" id="answerTimer">01:30</div><div class="barwrap"><div class="bar" id="answerProgress"></div></div></div></div><div class="controls"><button class="btn primary" id="newBtn">New Question</button><button class="btn secondary" id="prevBtn">Previous</button><button class="btn green" id="startPauseBtn">Start</button><button class="btn secondary" id="showBtn">Show Answer</button><button class="btn secondary" id="favBtn"><span id="starIcon">☆</span> Favorite</button><button class="btn danger" id="resetBtn">Reset</button></div><div class="subnav" id="subqNav"><button class="btn secondary" id="subPrevBtn">題組上一小題</button><button class="btn secondary" id="subNextBtn">題組下一小題</button></div><div class="answer" id="answerBox"><div id="acronymBox"></div><h3 id="suggestedHeading">Suggested Answer / Explanation</h3><p id="suggested"></p><div id="legacyAnswerMeta" hidden><p id="short"></p><div id="v100Meta"><div id="v100Difficulty"></div><div id="v100Method"></div><div id="v100Trap"></div><div id="v100Connection"></div></div></div><h3 id="chineseHeading">中文詳解 / 考試理解</h3><p id="chinese"></p></div></section></main><aside class="side"><section class="sidecard card"><h3>Practice Settings</h3><label>模式</label><select id="modeSelect"><option value="all">全部題庫</option><option value="pilot">Interview EN</option><option value="interview_cn">Interview CN</option><option value="aviation">Aviation EN</option><option value="aviation_cn">Aviation CN</option><option value="toeic11">TOEIC Q11</option><option value="toeic567">TOEIC Q5–7</option><option value="math_en">Math&Physics EN</option><option value="math_cn">Math&Physics CN</option><option value="classical_cn">Classical CN</option><option value="favorites">Favorites Only</option></select><select id="timerEnabled" hidden aria-hidden="true"><option value="true">開啟計時</option><option value="false">關閉計時</option></select><div id="mathDifficultySetting" hidden><label>Math 難易度</label><select id="difficultySelect"><option value="all">全部難度</option><option value="basic">Basic 基礎</option><option value="intermediate">Intermediate 中階</option><option value="advanced">Advanced 進階</option></select></div><label>準備時間（秒）</label><input type="number" id="prepSeconds" value="30"><label>回答/思考時間（秒）</label><input type="number" id="answerSeconds" value="90"><div class="setting-switch-row" id="soundSwitchRow">
   <div class="setting-switch-copy">
     <strong>提示音</strong>
     <span>控制題庫、心算與飛行記憶全部音效</span>
@@ -3437,7 +3494,7 @@ body[data-theme="gray"] .timer-quick.active{
         <span>Balanced random selection</span>
       </button>
       <p class="dt-setup-note">
-        選擇題會判定正確／錯誤；Interview 與其他開放式題目採自我評估。右上角時鐘只控制 TOEIC Q5–7／Q11 的準備與回答倒數，並需按 Start 才開始；總測驗時間與本題答題時間固定記錄。提前結束仍會依已完成題目計算 Overall，遇到需要複習的題目可直接加入星號。
+        選擇題會判定正確／錯誤；Interview 與其他開放式題目採自我評估。右上角時鐘只控制 TOEIC Q5–7／Q11 的準備與回答倒數，並需按 Start 才開始；總測驗時間與本題答題時間固定記錄，總測驗時間旁可隨時暫停／繼續。提前結束仍會依已完成題目計算 Overall，遇到需要複習的題目可直接加入星號。
       </p>
     </section>
 
@@ -3445,14 +3502,17 @@ body[data-theme="gray"] .timer-quick.active{
       <div class="dt-progress-head">
         <div>
           <span id="dtProgressText">Question 1 / 10</span>
-          <div class="dt-progress-times" id="dtProgressTimes">
-            <div class="dt-progress-time-line">
-              <span>總測驗時間</span>
-              <strong id="dtElapsed">00:00</strong>
-            </div>
-            <div class="dt-progress-time-line">
-              <span>本題答題時間</span>
-              <strong id="dtQuestionElapsed">00:00</strong>
+          <div class="dt-progress-right">
+            <button type="button" class="dt-total-pause" id="dtTotalPause" aria-label="暫停 Daily Test 計時" aria-pressed="false" title="暫停計時"><span aria-hidden="true" id="dtTotalPauseIcon">Ⅱ</span></button>
+            <div class="dt-progress-times" id="dtProgressTimes">
+              <div class="dt-progress-time-line">
+                <span>總測驗時間</span>
+                <strong id="dtElapsed">00:00</strong>
+              </div>
+              <div class="dt-progress-time-line">
+                <span>本題答題時間</span>
+                <strong id="dtQuestionElapsed">00:00</strong>
+              </div>
             </div>
           </div>
         </div>
@@ -3592,6 +3652,7 @@ body[data-theme="gray"] .timer-quick.active{
   let dailyElapsedBase = 0;
   let dailyTimerSegmentAt = 0;
   let dailyTimerWasUsed = false;
+  let dailyElapsedManuallyPaused = false;
   let questionElapsedBase = 0;
   let questionTimerSegmentAt = 0;
   let questionTimerWasUsed = false;
@@ -3602,6 +3663,9 @@ body[data-theme="gray"] .timer-quick.active{
   let toeicCountdownStarted = false;
   let toeicCountdownElapsedBase = 0;
   let toeicCountdownSegmentAt = 0;
+  let toeicPrepCuePlayed = false;
+  let toeicAnswerCuePlayed = false;
+  let dailyToeicAudioCtx = null;
 
   function escapeHTML(value){
     return String(value ?? "")
@@ -3634,6 +3698,55 @@ body[data-theme="gray"] .timer-quick.active{
     const prep=Number(q._dailyPrep ?? q.prepTime ?? 3);
     const answer=Number(q._dailyAns ?? q.ansTime ?? (/Q7/i.test(label)?30:15));
     return {prep:Math.max(0,prep||0),answer:Math.max(1,answer||15)};
+  }
+  function dailyTestSoundEnabled(){
+    try{
+      if(typeof window.triumphSoundOn==="function")return !!window.triumphSoundOn();
+    }catch(e){}
+    const control=document.getElementById("soundEnabled");
+    return !control || control.value!=="false";
+  }
+  function unlockDailyToeicAudio(){
+    try{
+      const AudioCtor=window.AudioContext||window.webkitAudioContext;
+      if(!AudioCtor)return;
+      if(!dailyToeicAudioCtx)dailyToeicAudioCtx=new AudioCtor();
+      if(dailyToeicAudioCtx.state==="suspended")dailyToeicAudioCtx.resume();
+    }catch(e){}
+  }
+  function playDailyToeicCue(kind){
+    if(!dailyTestSoundEnabled())return;
+    try{
+      unlockDailyToeicAudio();
+      const ctx=dailyToeicAudioCtx;
+      if(!ctx)return;
+      const osc=ctx.createOscillator();
+      const gain=ctx.createGain();
+      const isAnswer=kind==="answer";
+      const duration=isAnswer?0.55:0.18;
+      const volume=typeof window.triumphSoundVolume==="function"
+        ? window.triumphSoundVolume(0.12)
+        : 0.12;
+      osc.type="sine";
+      osc.frequency.value=isAnswer?740:920;
+      gain.gain.setValueAtTime(Math.max(0.0001,volume),ctx.currentTime);
+      gain.gain.exponentialRampToValueAtTime(0.0001,ctx.currentTime+duration);
+      osc.connect(gain).connect(ctx.destination);
+      osc.start();
+      osc.stop(ctx.currentTime+duration);
+    }catch(e){}
+  }
+  function checkDailyToeicCues(elapsed){
+    if(!toeicCountdownStarted || questionTimingStopped || !dailyTimerEnabled)return;
+    if(questionPrepSeconds>0 && elapsed>=questionPrepSeconds && !toeicPrepCuePlayed){
+      toeicPrepCuePlayed=true;
+      playDailyToeicCue("prep");
+    }
+    const total=questionPrepSeconds+questionAnswerSeconds;
+    if(questionAnswerSeconds>0 && elapsed>=total && !toeicAnswerCuePlayed){
+      toeicAnswerCuePlayed=true;
+      playDailyToeicCue("answer");
+    }
   }
   function getQuestionElapsedSeconds(){
     let seconds=questionElapsedBase;
@@ -3677,6 +3790,8 @@ body[data-theme="gray"] .timer-quick.active{
     toeicCountdownStarted=false;
     toeicCountdownElapsedBase=0;
     toeicCountdownSegmentAt=0;
+    toeicPrepCuePlayed=false;
+    toeicAnswerCuePlayed=false;
   }
   function resetQuestionClock(q){
     questionElapsedBase=0;
@@ -3685,7 +3800,7 @@ body[data-theme="gray"] .timer-quick.active{
     questionTimingStopped=false;
     pendingSubjectiveTiming=null;
     resetToeicCountdown(q);
-    resumeQuestionClock();
+    if(!dailyElapsedManuallyPaused)resumeQuestionClock();
   }
   function stopQuestionClock(){
     pauseQuestionClock();
@@ -3695,10 +3810,13 @@ body[data-theme="gray"] .timer-quick.active{
   }
   function startToeicCountdown(){
     const q=currentQuestion();
-    if(!isToeicQuestion(q)||!dailyTimerEnabled||questionTimingStopped)return;
+    if(!isToeicQuestion(q)||!dailyTimerEnabled||questionTimingStopped||dailyElapsedManuallyPaused)return;
+    unlockDailyToeicAudio();
     if(!toeicCountdownStarted){
       toeicCountdownStarted=true;
       toeicCountdownElapsedBase=0;
+      toeicPrepCuePlayed=false;
+      toeicAnswerCuePlayed=false;
     }
     resumeToeicCountdown();
     renderQuestionTimerUI();
@@ -3734,14 +3852,15 @@ body[data-theme="gray"] .timer-quick.active{
       prepCard?.classList.add("waiting");
       answerCard?.classList.add("waiting");
       if(startRow)startRow.hidden=false;
-      if(startButton){startButton.hidden=false;startButton.disabled=false;startButton.textContent="Start";}
-      if(note)note.textContent="按 Start 後開始本題 TOEIC 準備與回答倒數。";
+      if(startButton){startButton.hidden=false;startButton.disabled=dailyElapsedManuallyPaused;startButton.textContent="Start";}
+      if(note)note.textContent=dailyElapsedManuallyPaused?"Daily Test 已暫停；繼續總測驗計時後即可按 Start。":"按 Start 後開始本題 TOEIC 準備與回答倒數。";
       return;
     }
 
     if(startRow)startRow.hidden=true;
     if(startButton)startButton.hidden=true;
     const elapsed=getToeicCountdownElapsedSeconds();
+    checkDailyToeicCues(elapsed);
     const prepRemaining=Math.max(0,questionPrepSeconds-elapsed);
     const answerElapsed=Math.max(0,elapsed-questionPrepSeconds);
     const answerRemaining=Math.max(0,questionAnswerSeconds-answerElapsed);
@@ -3800,6 +3919,30 @@ body[data-theme="gray"] .timer-quick.active{
     if(elapsedTimer)clearInterval(elapsedTimer);
     elapsedTimer=setInterval(updateElapsed,250);
   }
+  function syncDailyPauseUI(){
+    const button=$dt("dtTotalPause");
+    const icon=$dt("dtTotalPauseIcon");
+    if(!button)return;
+    const canUse=dailyTestRunning&&!runPanel.hidden;
+    button.disabled=!canUse;
+    button.classList.toggle("paused",dailyElapsedManuallyPaused);
+    button.setAttribute("aria-pressed",String(dailyElapsedManuallyPaused));
+    button.setAttribute("aria-label",dailyElapsedManuallyPaused?"繼續 Daily Test 計時":"暫停 Daily Test 計時");
+    button.title=dailyElapsedManuallyPaused?"繼續計時":"暫停計時";
+    if(icon)icon.textContent=dailyElapsedManuallyPaused?"▶":"Ⅱ";
+  }
+  function toggleDailyElapsedPause(){
+    if(!dailyTestRunning||runPanel.hidden)return;
+    if(dailyElapsedManuallyPaused){
+      dailyElapsedManuallyPaused=false;
+      resumeDailyElapsedClock();
+    }else{
+      pauseDailyElapsedClock();
+      dailyElapsedManuallyPaused=true;
+    }
+    syncDailyPauseUI();
+    updateElapsed();
+  }
   function hasToeicSelection(){
     try{return selectedTypes().some(type=>type==="toeic11"||type==="toeic567");}
     catch(e){return !!activeConfig?.types?.some(type=>type==="toeic11"||type==="toeic567");}
@@ -3823,6 +3966,7 @@ body[data-theme="gray"] .timer-quick.active{
     }
     if(progressTimes)progressTimes.style.display="";
     if(questionTimers)questionTimers.style.display=(isToeicQuestion(currentQuestion())&&dailyTimerEnabled)?"":"none";
+    syncDailyPauseUI();
     renderQuestionTimerUI();
   }
   function setDailyTimerEnabled(enabled,{syncGlobal=true}={}){
@@ -4041,6 +4185,7 @@ body[data-theme="gray"] .timer-quick.active{
   }
   function closeOverlay(){
     pauseDailyElapsedClock();
+    dailyElapsedManuallyPaused=false;
     dailyTestRunning=false;
     overlay.classList.remove("open");
     overlay.setAttribute("aria-hidden","true");
@@ -4077,6 +4222,7 @@ body[data-theme="gray"] .timer-quick.active{
     dailyElapsedBase=0;
     dailyTimerSegmentAt=0;
     dailyTimerWasUsed=false;
+    dailyElapsedManuallyPaused=false;
     questionElapsedBase=0;
     questionTimerSegmentAt=0;
     questionTimerWasUsed=false;
@@ -4265,7 +4411,9 @@ body[data-theme="gray"] .timer-quick.active{
       return;
     }
     pauseDailyElapsedClock();
+    dailyElapsedManuallyPaused=false;
     dailyTestRunning=false;
+    syncDailyPauseUI();
     const duration=Math.round(dailyElapsedBase);
     const objective=completed.filter(r=>r.mode==="objective");
     const subjective=completed.filter(r=>r.mode==="subjective");
@@ -4378,6 +4526,7 @@ body[data-theme="gray"] .timer-quick.active{
   $dt("dailyTestLaunch")?.addEventListener("click",openOverlay);
   $dt("dtClose")?.addEventListener("click",closeOverlay);
   $dt("dtTimerToggle")?.addEventListener("click",()=>setDailyTimerEnabled(!dailyTimerEnabled));
+  $dt("dtTotalPause")?.addEventListener("click",toggleDailyElapsedPause);
   document.getElementById("timerEnabled")?.addEventListener("change",()=>{
     const next=readGlobalTimerEnabled();
     if(next!==dailyTimerEnabled)setDailyTimerEnabled(next,{syncGlobal:false});
@@ -5691,6 +5840,114 @@ That's why I think so.`;
     missingChineseSupport,
     shortExplanationCount,
     total:bank.length
+  };
+})();
+</script>
+
+
+<script id="v149-daily-total-pause-qa">
+(() => {
+  const hint=document.getElementById("hint");
+  if(hint)hint.textContent="v149：Daily Test 總測驗時間旁新增暫停／繼續按鍵；暫停時同步凍結本題作答時間與 TOEIC 倒數，恢復後由原時間繼續。";
+  window.TRIUMPH_V149_QA={version:"v149",dailyTotalPause:true,pauseFreezesQuestionClock:true,pauseFreezesToeicCountdown:true};
+})();
+</script>
+
+<script id="v150-classical-and-interview-expansion">
+(() => {
+  const VERSION = "v151";
+  const incoming = [{"type":"classical_cn","cat":"CLASSICAL CN","topic":"墨子・以人為鏡","q":"墨子：「君子不鏡於水，而鏡於人。鏡於水，見面之容；鏡於人，則知吉與凶。」請解釋這段話，並舉一個自身相關經驗。","hint":"先說明原文語意，再提出自己的理解；若題目要求，可連結工作、生活或飛行員所需特質。","tags":["classical","open-response","source-image-2026","v150"],"defaultPrep":45,"defaultAns":150,"prep":45,"ans":150,"s":"【語意】鏡子只能照見外表，而他人的言行與回饋能讓我們看見自己的得失。真正有用的自我檢查，不只是看自己想看到的部分，而是願意接受外部回饋。\n\n【作答示範】準備重要考試或面試時，我不只看自己完成了多少，也會從實際成績、模擬結果與他人的回饋檢查不足。若結果沒有達到預期，我會找出是知識、表達、時間分配或練習方法出了問題，再調整下一輪計畫。\n\n【延伸】這種態度可連結飛行員的 cross-check、debrief 與接受 feedback：重點不是證明自己原本是對的，而是透過可靠資訊持續修正。","short":"","cn":""},{"type":"classical_cn","cat":"CLASSICAL CN","topic":"《論語》・遠慮","q":"孔子：「人無遠慮，必有近憂。」請將此句套用到機師的工作或生活上，並說明自己的看法。","hint":"先說明原文語意，再提出自己的理解；若題目要求，可連結工作、生活或飛行員所需特質。","tags":["classical","open-response","source-image-2026","v150"],"defaultPrep":45,"defaultAns":150,"prep":45,"ans":150,"s":"【語意】如果只處理眼前問題、沒有長期規畫，未來很容易出現原本可以避免的麻煩。\n\n【套用到飛行】飛行前的天氣、油量、備降場、性能、疲勞與可能威脅，都需要事前思考。若只等問題發生才處理，當時間、油量或高度縮小後，可選方案也會跟著變少。\n\n【我的看法】遠慮不是過度擔心，而是提早辨識風險、準備備案並保留安全裕度。這與 TEM 的精神一致：在威脅真正變成錯誤或不良狀態之前，就先管理它。","short":"","cn":""},{"type":"classical_cn","cat":"CLASSICAL CN","topic":"《道德經》第八章・上善若水","q":"老子《道德經》：「上善若水。水善利萬物而不爭，處眾人之所惡，故幾於道……夫唯不爭，故無尤。」這段話有什麼意涵？你對這段話有什麼看法？","hint":"先說明原文語意，再提出自己的理解；若題目要求，可連結工作、生活或飛行員所需特質。","tags":["classical","open-response","source-image-2026","v150"],"defaultPrep":45,"defaultAns":150,"prep":45,"ans":150,"s":"【語意】老子以水比喻理想的品格：能利益他人、保持柔韌、適應環境，不必處處與人爭高下；同時在不同位置都能發揮應有作用。\n\n【我的理解】「不爭」不等於沒有原則或消極退讓，而是不把個人面子放在共同目標之前。團隊合作時，若每個人都只想證明自己正確，反而容易破壞溝通；真正成熟的做法是讓事實、程序與共同目標決定下一步。\n\n【飛行員連結】可連結 CRM、humility 與 adaptability：保持立場清楚，但不為了自我而爭。","short":"","cn":""},{"type":"classical_cn","cat":"CLASSICAL CN","topic":"《論語・述而》","q":"孔子《論語》：「三人行，必有我師焉；擇其善者而從之，其不善者而改之。」請說明其意涵，並連結到學習或訓練。","hint":"先說明原文語意，再提出自己的理解；若題目要求，可連結工作、生活或飛行員所需特質。","tags":["classical","open-response","v150-classical","v150"],"defaultPrep":45,"defaultAns":150,"prep":45,"ans":150,"s":"【語意】與人相處時，每個人都有值得學習或可以提醒自己的地方；看到優點就學習，看到缺點也可反省自己是否有相同問題。\n\n【訓練連結】在團隊訓練中，不應只向最資深的人學習。隊友的好習慣、失誤、溝通方式與準備程度都能成為教材。重點是保持觀察、反思與可訓練性，而不是只比較誰表現得比較好。","short":"","cn":""},{"type":"classical_cn","cat":"CLASSICAL CN","topic":"《論語・為政》","q":"孔子《論語》：「學而不思則罔，思而不學則殆。」這句話對技術學習有何啟示？","hint":"先說明原文語意，再提出自己的理解；若題目要求，可連結工作、生活或飛行員所需特質。","tags":["classical","open-response","v150-classical","v150"],"defaultPrep":45,"defaultAns":150,"prep":45,"ans":150,"s":"【語意】只吸收知識而不思考，容易只會背誦；只憑自己的想法而不持續學習，也容易陷入錯誤。\n\n【技術學習】數理、航空知識或 SOP 都不能只背答案。先學正確原理，再用題目、情境與口頭解釋去驗證自己是否真正理解；若推理與教材或標準有衝突，就回頭查證。學習與思考必須互相校正。","short":"","cn":""},{"type":"classical_cn","cat":"CLASSICAL CN","topic":"《論語・為政》","q":"孔子《論語》：「知之為知之，不知為不知，是知也。」若放在飛行員訓練中，你會如何理解？","hint":"先說明原文語意，再提出自己的理解；若題目要求，可連結工作、生活或飛行員所需特質。","tags":["classical","open-response","v150-classical","v150"],"defaultPrep":45,"defaultAns":150,"prep":45,"ans":150,"s":"【語意】知道就是知道，不知道就承認不知道，這才是真正的明智。\n\n【飛行員連結】訓練中最危險的不是不知道，而是不知道卻假裝知道。對程序、指令或系統有疑問時，應及早詢問與確認。承認知識缺口可以被補強；隱藏疑問則可能在高工作負荷時放大成錯誤。","short":"","cn":""},{"type":"classical_cn","cat":"CLASSICAL CN","topic":"《論語・衛靈公》","q":"孔子《論語》：「過而不改，是謂過矣。」請說明你如何把這句話用在錯誤管理上。","hint":"先說明原文語意，再提出自己的理解；若題目要求，可連結工作、生活或飛行員所需特質。","tags":["classical","open-response","v150-classical","v150"],"defaultPrep":45,"defaultAns":150,"prep":45,"ans":150,"s":"【語意】犯錯本身不一定代表真正的失敗；知道錯誤卻不改正，才讓錯誤持續存在。\n\n【錯誤管理】發現錯誤後要先承認、確認影響、修正能修正的部分，再分析根本原因並建立防止再發的方法。若只說「下次小心」，卻沒有改變流程或習慣，學習就沒有真正發生。","short":"","cn":""},{"type":"classical_cn","cat":"CLASSICAL CN","topic":"《論語・子路》","q":"孔子《論語》：「君子和而不同，小人同而不和。」這句話如何套用到團隊合作？","hint":"先說明原文語意，再提出自己的理解；若題目要求，可連結工作、生活或飛行員所需特質。","tags":["classical","open-response","v150-classical","v150"],"defaultPrep":45,"defaultAns":150,"prep":45,"ans":150,"s":"【語意】真正成熟的合作可以保持和諧，但不需要每個人意見都完全相同；表面上一致卻缺乏真誠溝通，反而不是健康的合作。\n\n【團隊連結】CRM 需要尊重，也需要適當 challenge。若看到安全疑慮，不能因怕破壞氣氛而沉默；應以事實、標準與清楚語氣提出不同意見，同時維持對人的尊重。","short":"","cn":""},{"type":"classical_cn","cat":"CLASSICAL CN","topic":"《論語・里仁》","q":"孔子《論語》：「見賢思齊焉，見不賢而內自省也。」請說明這句話對自我成長的價值。","hint":"先說明原文語意，再提出自己的理解；若題目要求，可連結工作、生活或飛行員所需特質。","tags":["classical","open-response","v150-classical","v150"],"defaultPrep":45,"defaultAns":150,"prep":45,"ans":150,"s":"【語意】看到優秀的人，要思考自己能向他學什麼；看到他人的不足，也要反省自己是否存在相同問題。\n\n【自我成長】這能把比較轉化成學習。看到別人表現好，不只是羨慕；看到別人犯錯，也不是只批評。更重要的是找出具體行為，轉化成自己的改進項目。","short":"","cn":""},{"type":"classical_cn","cat":"CLASSICAL CN","topic":"《道德經》第三十三章","q":"老子《道德經》：「知人者智，自知者明；勝人者有力，自勝者強。」請說明其對自我管理的啟示。","hint":"先說明原文語意，再提出自己的理解；若題目要求，可連結工作、生活或飛行員所需特質。","tags":["classical","open-response","v150-classical","v150"],"defaultPrep":45,"defaultAns":150,"prep":45,"ans":150,"s":"【語意】了解別人是智慧，真正認識自己更難；能勝過別人代表有能力，能控制自己的弱點、情緒與欲望才是真正的強大。\n\n【自我管理】培訓準備不能只看自己是否比別人好，而要知道自己的弱項、壓力反應與能力限制，並建立可持續改善的方法。對飛行員而言，自知也是避免 overconfidence 的重要基礎。","short":"","cn":""},{"type":"classical_cn","cat":"CLASSICAL CN","topic":"《道德經》第六十四章","q":"老子《道德經》：「合抱之木，生於毫末；九層之臺，起於累土；千里之行，始於足下。」請說明其對長期訓練的啟示。","hint":"先說明原文語意，再提出自己的理解；若題目要求，可連結工作、生活或飛行員所需特質。","tags":["classical","open-response","v150-classical","v150"],"defaultPrep":45,"defaultAns":150,"prep":45,"ans":150,"s":"【語意】再大的成果，都由很小的起點累積而成。\n\n【訓練連結】英文、數理、航空知識、程序與體能都不可能靠短期衝刺一次完成。把大目標拆成每天可以執行的練習，再用成績與錯題持續校正，長期累積才會形成可靠能力。","short":"","cn":""},{"type":"classical_cn","cat":"CLASSICAL CN","topic":"《道德經》第六十四章","q":"老子《道德經》：「慎終如始，則無敗事。」請說明這句話與程序紀律的關係。","hint":"先說明原文語意，再提出自己的理解；若題目要求，可連結工作、生活或飛行員所需特質。","tags":["classical","open-response","v150-classical","v150"],"defaultPrep":45,"defaultAns":150,"prep":45,"ans":150,"s":"【語意】事情到了最後階段，若仍能像剛開始一樣謹慎，就比較不會因鬆懈而失敗。\n\n【程序紀律】人在熟悉或接近完成時最容易放鬆。飛行從起飛到落地，每個階段都需要相同的檢查與標準；不能因前面順利，就在最後一段省略程序或降低警覺。","short":"","cn":""},{"type":"classical_cn","cat":"CLASSICAL CN","topic":"《道德經》第四十四章","q":"老子《道德經》：「知足不辱，知止不殆，可以長久。」你如何理解「知止」？","hint":"先說明原文語意，再提出自己的理解；若題目要求，可連結工作、生活或飛行員所需特質。","tags":["classical","open-response","v150-classical","v150"],"defaultPrep":45,"defaultAns":150,"prep":45,"ans":150,"s":"【語意】知道什麼時候應該停止，不讓欲望或逞強超過能力與條件，才能避免危險並維持長久。\n\n【飛行員連結】知止不是保守，而是尊重限制。例如天氣、油量、疲勞或進場條件已超過可接受範圍時，應選擇重飛、備降或停止任務，而不是為了完成目標繼續勉強。","short":"","cn":""},{"type":"classical_cn","cat":"CLASSICAL CN","topic":"《墨子・修身》","q":"墨子：「志不強者智不達，言不信者行不果。」請說明志向與誠信如何影響一個人的行動。","hint":"先說明原文語意，再提出自己的理解；若題目要求，可連結工作、生活或飛行員所需特質。","tags":["classical","open-response","v150-classical","v150"],"defaultPrep":45,"defaultAns":150,"prep":45,"ans":150,"s":"【語意】沒有堅定志向，能力難以充分發揮；說話缺乏信用，行動也難以真正取得成果。\n\n【我的理解】長期目標需要持續投入，而信用則讓他人願意與你合作。對培訓機師而言，光有理想不夠，還要把目標轉化為每日準備；同時對自己的能力、錯誤與承諾保持誠實，才能建立專業信任。","short":"","cn":""},{"type":"classical_cn","cat":"CLASSICAL CN","topic":"《墨子・兼愛》","q":"墨子：「兼相愛，交相利。」若放在團隊環境中，你會如何解釋？","hint":"先說明原文語意，再提出自己的理解；若題目要求，可連結工作、生活或飛行員所需特質。","tags":["classical","open-response","v150-classical","v150"],"defaultPrep":45,"defaultAns":150,"prep":45,"ans":150,"s":"【語意】人與人之間若能互相關心、互相成就，就能降低只顧自身利益造成的衝突。\n\n【團隊連結】工作上的合作不是討好每個人，而是理解自己的行為會影響整個團隊。主動分享資訊、協助隊友、清楚交接與避免把風險留給下一個人，都是把共同利益放在個人便利之前。","short":"","cn":""},{"type":"classical_cn","cat":"CLASSICAL CN","topic":"《墨子・法儀》","q":"墨子：「天下從事者，不可以無法儀；無法儀而其事能成者，無有也。」請說明「法儀」對航空工作的意義。","hint":"先說明原文語意，再提出自己的理解；若題目要求，可連結工作、生活或飛行員所需特質。","tags":["classical","open-response","v150-classical","v150"],"defaultPrep":45,"defaultAns":150,"prep":45,"ans":150,"s":"【語意】做事情若沒有可遵循的標準，就很難穩定完成。\n\n【航空連結】航空高度依賴 SOP、checklist、限制值與標準通話。標準不是限制專業，而是讓不同人、不同班次與高壓情境下仍能維持一致品質。真正的專業是在理解標準目的後，持續依標準執行並在需要時正確升級。","short":"","cn":""},{"type":"classical_cn","cat":"CLASSICAL CN","topic":"《孟子・公孫丑下》","q":"孟子：「天時不如地利，地利不如人和。」若套用到團隊任務，你會如何理解？","hint":"先說明原文語意，再提出自己的理解；若題目要求，可連結工作、生活或飛行員所需特質。","tags":["classical","open-response","v150-classical","v150"],"defaultPrep":45,"defaultAns":150,"prep":45,"ans":150,"s":"【語意】有利時機不如有利環境，而良好環境又不如團隊真正同心協力。\n\n【團隊連結】設備、制度與條件再好，如果資訊不共享、彼此不信任或不敢提出疑慮，團隊表現仍可能失敗。航空中的 CRM 強調共同心智模型、角色分工與溝通，就是把「人和」轉化成可操作的安全能力。","short":"","cn":""},{"type":"classical_cn","cat":"CLASSICAL CN","topic":"《孟子・告子下》","q":"孟子：「生於憂患，死於安樂。」你認為這句話是否代表人一定要處在壓力中才能進步？","hint":"先說明原文語意，再提出自己的理解；若題目要求，可連結工作、生活或飛行員所需特質。","tags":["classical","open-response","v150-classical","v150"],"defaultPrep":45,"defaultAns":150,"prep":45,"ans":150,"s":"【語意】這句話強調適度挑戰能促使人成長，而長期安逸可能讓人失去警覺；但不代表壓力越大越好。\n\n【我的看法】有效訓練需要可管理的挑戰、回饋與恢復。壓力過低可能沒有成長，過高則可能降低學習與判斷。真正重要的是在安全範圍內逐步提高難度，並從每次錯誤中學習。","short":"","cn":""},{"type":"classical_cn","cat":"CLASSICAL CN","topic":"《荀子・勸學》","q":"荀子《勸學》：「不積跬步，無以至千里；不積小流，無以成江海。」請連結到你的學習方法。","hint":"先說明原文語意，再提出自己的理解；若題目要求，可連結工作、生活或飛行員所需特質。","tags":["classical","open-response","v150-classical","v150"],"defaultPrep":45,"defaultAns":150,"prep":45,"ans":150,"s":"【語意】長距離由每一步累積，大江大海由細小水流匯聚；持續的小進步會形成大成果。\n\n【學習連結】與其偶爾一次讀很多，更重要的是建立固定節奏，例如每日口說、數理題、航空知識與錯題回顧。每次進步可能很小，但只要能追蹤並持續，就會形成長期能力。","short":"","cn":""},{"type":"classical_cn","cat":"CLASSICAL CN","topic":"《荀子・勸學》","q":"荀子《勸學》：「鍥而舍之，朽木不折；鍥而不舍，金石可鏤。」請說明它與毅力之間的關係。","hint":"先說明原文語意，再提出自己的理解；若題目要求，可連結工作、生活或飛行員所需特質。","tags":["classical","open-response","v150-classical","v150"],"defaultPrep":45,"defaultAns":150,"prep":45,"ans":150,"s":"【語意】做一下就停止，即使腐朽木頭也不一定能刻斷；持續不放棄，即使堅硬金石也能雕刻。\n\n【延伸】毅力不是盲目重複同一個錯誤，而是持續投入、檢查方法並調整。有效的堅持應該同時包含 consistency 與 feedback，否則只是把低效率的做法做得更久。","short":"","cn":""},{"type":"classical_cn","cat":"CLASSICAL CN","topic":"《荀子・勸學》","q":"荀子《勸學》：「君子生非異也，善假於物也。」請說明善用工具與真正能力之間的關係。","hint":"先說明原文語意，再提出自己的理解；若題目要求，可連結工作、生活或飛行員所需特質。","tags":["classical","open-response","v150-classical","v150"],"defaultPrep":45,"defaultAns":150,"prep":45,"ans":150,"s":"【語意】人的天賦未必有巨大差異，重要的是懂得善用工具與環境來放大能力。\n\n【學習連結】模擬器、題庫、計時器、筆記與 AI 都可以幫助學習，但工具不能取代理解。真正的能力是知道何時使用工具、如何交叉驗證，以及在沒有工具幫助時仍能掌握核心原理。","short":"","cn":""},{"type":"interview_cn","cat":"INTERVIEW CN","topic":"人格優勢","q":"個性上的優勢以及它們給你什麼正面影響？","hint":"直接回答題目 → 具體例子 → 你的處理方式 → 學到什麼；避免只講抽象特質。","tags":["interview-cn","2026-reference-image","v150"],"defaultPrep":30,"defaultAns":100,"prep":30,"ans":100,"s":"我認為自己的優勢是責任感、持續性與在壓力下維持結構的能力。責任感讓我不會只完成表面工作，而會確認結果是否真的達到要求；持續性讓我能長期準備英文、數理與航空知識；遇到壓力時，我則會先排序問題，再一步一步處理。這些特質的正面影響是，我比較能維持穩定表現，也更願意面對錯誤而不是逃避。對培訓機師而言，我認為這些特質能幫助我保持可訓練性與可靠度。","short":"","cn":""},{"type":"interview_cn","cat":"INTERVIEW CN","topic":"挫折與調適","q":"你有沒有在學業或工作上無法達到師長或別人期望的經驗？說明你是如何應對並自我調適的。","hint":"直接回答題目 → 具體例子 → 你的處理方式 → 學到什麼；避免只講抽象特質。","tags":["interview-cn","2026-reference-image","v150"],"defaultPrep":30,"defaultAns":100,"prep":30,"ans":100,"s":"有。最近一次明確的例子是 TOEIC Speaking 成績仍沒有達到我設定的目標。第一時間當然會失望，但我不希望只用情緒解釋結果，所以我會拆開看：哪些題型表達不夠穩、哪些句型容易出錯、是否因時間壓力讓內容失去結構。接著我會調整模板、增加限時口說並記錄重複錯誤。這件事讓我學到，沒有達到期望並不代表努力沒有價值，更重要的是能不能把結果轉化成下一輪更精準的練習。","short":"","cn":""},{"type":"interview_cn","cat":"INTERVIEW CN","topic":"感恩與價值觀","q":"分享一位在你生命中令你感恩的人，並分享你從他們身上學到了什麼？","hint":"直接回答題目 → 具體例子 → 你的處理方式 → 學到什麼；避免只講抽象特質。","tags":["interview-cn","2026-reference-image","v150"],"defaultPrep":30,"defaultAns":100,"prep":30,"ans":100,"s":"我會選擇一位長期支持我的家人。對我而言，真正重要的不是他替我解決所有問題，而是在我需要做重大選擇時，願意聽我把原因說清楚，也提醒我要對自己的決定負責。我從這段關係學到兩件事：第一，支持不等於替別人做決定；第二，信任要靠長期一致的行動建立。這也影響我在團隊中的方式——我希望給隊友支持，但同時尊重角色與責任。","short":"","cn":""},{"type":"interview_cn","cat":"INTERVIEW CN","topic":"適應力","q":"你有沒有遇到過讓你沒有其他辦法、只能順應情勢的事件？你如何處理？","hint":"直接回答題目 → 具體例子 → 你的處理方式 → 學到什麼；避免只講抽象特質。","tags":["interview-cn","2026-reference-image","v150"],"defaultPrep":30,"defaultAns":100,"prep":30,"ans":100,"s":"有。當外部環境快速改變時，有些條件不是個人努力可以直接改變的。我的做法是先把事情分成「可以控制」與「無法控制」兩部分；不能改變的條件就接受，能調整的部分則立即重新安排資源、時程與優先順序。這讓我體會到，適應不是被動放棄，而是在限制條件下重新找到最安全、最有效的方案。航空工作也需要這種彈性，因為天氣、流量或技術狀況都可能改變原計畫。","short":"","cn":""},{"type":"interview_cn","cat":"INTERVIEW CN","topic":"工作負荷與求援","q":"有沒有因為其他外務而耽誤原本要做的事的例子？你如何求援並解決這件事？","hint":"直接回答題目 → 具體例子 → 你的處理方式 → 學到什麼；避免只講抽象特質。","tags":["interview-cn","2026-reference-image","v150"],"defaultPrep":30,"defaultAns":100,"prep":30,"ans":100,"s":"有。當工作上的臨時事項和原本的學習計畫重疊時，我曾經發現自己如果什麼都想獨自完成，反而會讓兩邊品質都下降。後來我先確認哪些事情一定要由我處理，哪些可以請家人或團隊協助，再重新安排學習時段並明確說明期限。這讓我學到求援不是把責任丟給別人，而是及早讓團隊知道工作量與風險，避免等到最後才失控。","short":"","cn":""},{"type":"interview_cn","cat":"INTERVIEW CN","topic":"團隊文化","q":"團隊中你比較喜歡嚴肅還是和諧的氣氛？請舉例說明。","hint":"直接回答題目 → 具體例子 → 你的處理方式 → 學到什麼；避免只講抽象特質。","tags":["interview-cn","2026-reference-image","v150"],"defaultPrep":30,"defaultAns":100,"prep":30,"ans":100,"s":"我比較喜歡「和諧但專業」的氣氛。團隊如果過度緊繃，成員可能不敢提出問題；但如果太隨意，也可能降低標準。我理想的狀態是平常可以自然溝通、互相支持，但遇到重要決策、風險或程序時能立即切換到清楚、直接的工作模式。這種氣氛最有利於資訊共享，也能讓不同意見被提出而不變成人身衝突。","short":"","cn":""},{"type":"interview_cn","cat":"INTERVIEW CN","topic":"公平與工作分配","q":"你認為是否應根據每個人的狀況分配工作，即使可能讓部分能力較強的人負擔更多責任？","hint":"直接回答題目 → 具體例子 → 你的處理方式 → 學到什麼；避免只講抽象特質。","tags":["interview-cn","2026-reference-image","v150"],"defaultPrep":30,"defaultAns":100,"prep":30,"ans":100,"s":"我認為工作分配應同時考量能力、資格、當下負荷與任務風險，而不是機械式平均。短期內讓較有經驗的人多承擔一些責任可能合理，但若長期都依賴同一批人，就會造成疲勞與不公平。因此主管還需要安排輪替、培養其他成員、確認負荷是否可接受。公平不一定代表每個人做一樣多，而是分配原則透明、風險可控，而且團隊能力能長期成長。","short":"","cn":""},{"type":"interview_cn","cat":"INTERVIEW CN","topic":"誠實與誠信","q":"解釋誠實的重要性，請舉例說明，並描述誠實如何影響你的行為模式。","hint":"直接回答題目 → 具體例子 → 你的處理方式 → 學到什麼；避免只講抽象特質。","tags":["interview-cn","2026-reference-image","v150"],"defaultPrep":30,"defaultAns":100,"prep":30,"ans":100,"s":"我認為誠實是信任與安全的基礎。對我來說，誠實不只是「不說謊」，也包括不知道時承認不知道、犯錯時及早說明，以及不把資訊修飾成對自己比較有利的樣子。例如在準備考試時，如果成績或弱項沒有達標，我寧可直接承認並修改方法，而不是用理由掩飾。久而久之，這讓我的行為模式更偏向先確認事實、說清楚限制，再討論解決方案。","short":"","cn":""},{"type":"interview_cn","cat":"INTERVIEW CN","topic":"壓力管理","q":"家人或朋友給了你過高的期許，對你造成壓力時，你如何調適？","hint":"直接回答題目 → 具體例子 → 你的處理方式 → 學到什麼；避免只講抽象特質。","tags":["interview-cn","2026-reference-image","v150"],"defaultPrep":30,"defaultAns":100,"prep":30,"ans":100,"s":"我會先確認壓力來自真正的外部要求，還是我自己把期待放大。接著把結果目標改成可以控制的過程目標，例如每天完成多少練習、每週檢查哪些指標。如果家人的期待真的造成負擔，我也會直接說明目前進度、需要的時間與可能風險。這樣做可以把抽象壓力轉化成具體行動，也能避免為了證明自己而做出不合理的決定。","short":"","cn":""},{"type":"interview_cn","cat":"INTERVIEW CN","topic":"情緒管理","q":"你是否有強烈表達負面情緒的經驗，例如生氣或沮喪？這麼做最後有助於達成目的嗎？","hint":"直接回答題目 → 具體例子 → 你的處理方式 → 學到什麼；避免只講抽象特質。","tags":["interview-cn","2026-reference-image","v150"],"defaultPrep":30,"defaultAns":100,"prep":30,"ans":100,"s":"我曾經有過因結果不如預期而感到明顯沮喪的時候，但我發現情緒本身如果直接用在溝通上，通常不會讓事情更有效。現在我會先讓自己從情緒高點下降，確認真正的問題是什麼，再討論需要改變的行動。如果必須表達不滿，我會聚焦在事件、影響與需求，而不是攻擊人。負面情緒可以提醒我有問題需要處理，但不能取代判斷。","short":"","cn":""},{"type":"interview_cn","cat":"INTERVIEW CN","topic":"學習能力","q":"你在高中時期學過最困難的科目是什麼？你是如何克服的？現在回頭看，你覺得自己的程度如何？","hint":"直接回答題目 → 具體例子 → 你的處理方式 → 學到什麼；避免只講抽象特質。","tags":["interview-cn","2026-reference-image","v150"],"defaultPrep":30,"defaultAns":100,"prep":30,"ans":100,"s":"這題我會選擇一個真實、能說明改進過程的科目。若以數學為例，我過去對多步驟題目的掌握沒有那麼穩，尤其容易在公式選擇或單位上出錯。後來我改成先理解原理、把步驟寫清楚、整理錯題類型，再用限時題目提高速度。現在我不會說自己已經完全沒有弱點，但我比以前更知道如何拆解問題，也建立了持續補強的方法。","short":"","cn":""},{"type":"interview_cn","cat":"INTERVIEW CN","topic":"求援與韌性","q":"當你的生活發生困境時你如何應對？你有尋求師長或同儕的幫忙嗎？結果如何？","hint":"直接回答題目 → 具體例子 → 你的處理方式 → 學到什麼；避免只講抽象特質。","tags":["interview-cn","2026-reference-image","v150"],"defaultPrep":30,"defaultAns":100,"prep":30,"ans":100,"s":"遇到困境時，我會先處理最急迫的問題，再把剩餘問題拆成可行的小步驟。如果自己卡住太久，我會找真正能提供資訊或經驗的人求助，而不是只找人安慰。例如遇到學習瓶頸時，我會把不懂的地方整理成具體問題，再請教老師、同學或使用可靠教材。通常這能更快找出盲點，也提醒我：及早求援是成熟的風險管理，不是能力不足。","short":"","cn":""},{"type":"interview_cn","cat":"INTERVIEW CN","topic":"大學學習與應用","q":"你以前大學的科目中，覺得哪一科比較有用？現在還用得上嗎？又對你的人生有什麼幫助？","hint":"直接回答題目 → 具體例子 → 你的處理方式 → 學到什麼；避免只講抽象特質。","tags":["interview-cn","2026-reference-image","v150"],"defaultPrep":30,"defaultAns":100,"prep":30,"ans":100,"s":"我認為物流與管理相關科目對我很有用，因為它不只是理論，也教我如何看流程、資源、成本與風險。工作後，我仍會用類似的思維安排庫存、時間與工作優先順序。對我的幫助是，遇到複雜問題時，我比較習慣先看整體系統，再找瓶頸與關鍵變數，而不是只處理眼前症狀。這種系統化思考也能延伸到航空訓練。","short":"","cn":""},{"type":"interview_cn","cat":"INTERVIEW CN","topic":"鼓勵他人","q":"你有什麼事情能夠激勵正在面對困境或挫折的人嗎？","hint":"直接回答題目 → 具體例子 → 你的處理方式 → 學到什麼；避免只講抽象特質。","tags":["interview-cn","2026-reference-image","v150"],"defaultPrep":30,"defaultAns":100,"prep":30,"ans":100,"s":"我會先讓對方知道挫折不需要被美化，但也不必把一次結果解讀成對整個人的否定。我會陪他把問題拆成三件事：哪些已經發生、哪些還能控制、下一步最小可行行動是什麼。如果可以，我會分享自己沒有達到目標後重新調整練習的經驗。對我來說，真正有用的鼓勵不是只說『加油』，而是幫助對方重新看到可行的下一步。","short":"","cn":""},{"type":"interview_cn","cat":"INTERVIEW CN","topic":"職涯動機","q":"你在工作上如何維持熱忱？未來要如何繼續維持？","hint":"直接回答題目 → 具體例子 → 你的處理方式 → 學到什麼；避免只講抽象特質。","tags":["interview-cn","2026-reference-image","v150"],"defaultPrep":30,"defaultAns":100,"prep":30,"ans":100,"s":"我不把熱忱理解成每天都很興奮，而是即使工作重複或辛苦，仍知道自己為什麼要把它做好。我會透過設定階段目標、持續學習新知、檢討流程與保留生活平衡來維持投入感。未來若進入航空業，我會把熱忱建立在專業成長與責任感上，而不是只依賴新鮮感，因為真正長期的職涯需要穩定紀律。","short":"","cn":""},{"type":"interview_cn","cat":"INTERVIEW CN","topic":"家庭分工與溝通","q":"請問你一週花多少時間幫忙家務，以及如何分工？分配工作時有沒有衝突或意見不同的狀況？","hint":"直接回答題目 → 具體例子 → 你的處理方式 → 學到什麼；避免只講抽象特質。","tags":["interview-cn","2026-reference-image","v150"],"defaultPrep":30,"defaultAns":100,"prep":30,"ans":100,"s":"我會依家庭實際作息分工，而不是只追求每個人花完全相同的時間。通常會先把固定家務與臨時事項列出，再依當週工作量、體力與時間安排。如果有意見不同，我會先確認對方在意的是公平、時間還是完成標準，再重新分配。這種經驗讓我學到，分工最重要的是把期待說清楚、及早調整，而不是等累積不滿後才處理。","short":"","cn":""},{"type":"interview_cn","cat":"INTERVIEW CN","topic":"給予建議","q":"你覺得給予建議時，最重要的考量是什麼？你的人生中得到過最好的建議是什麼？","hint":"直接回答題目 → 具體例子 → 你的處理方式 → 學到什麼；避免只講抽象特質。","tags":["interview-cn","2026-reference-image","v150"],"defaultPrep":30,"defaultAns":100,"prep":30,"ans":100,"s":"我認為給建議前最重要的是先理解對方的目標、限制與真正問題，否則再好的建議也可能不適用。我也會區分『分享自己的經驗』和『替對方做決定』。對我影響很大的建議是：把注意力放在自己可以控制的事情，並持續把基本功做好。這讓我在遇到考試、工作或長期目標時，不會只盯著結果，而會回到每天能改善的行動。","short":"","cn":""},{"type":"pilot","cat":"INTERVIEW EN","topic":"Behavioral Interview","q":"What are your personality strengths, and what positive effects have they had on you?","hint":"Answer directly, give a specific example, explain your action, then state what you learned and why it matters for pilot training.","tags":["interview","2026-reference-image","v150"],"defaultPrep":30,"defaultAns":100,"prep":30,"ans":100,"s":"I would describe my main strengths as responsibility, consistency, and the ability to keep a clear structure under pressure. Responsibility makes me check whether the result truly meets the requirement instead of only finishing the task. Consistency helps me continue long-term preparation even when progress is slow. Under pressure, I try to prioritize the problem and deal with it step by step. These strengths help me perform more steadily and face mistakes directly. I believe they are also useful for pilot training because they support reliability, discipline, and trainability.","short":"","cn":"【中文作答重點】\n可從責任感、持續性與壓力下的結構化處理切入，再說明這些特質如何轉化成穩定表現與可訓練性。"},{"type":"pilot","cat":"INTERVIEW EN","topic":"Behavioral Interview","q":"Tell me about a time you did not meet a teacher's, supervisor's, or another person's expectations. How did you respond and adjust yourself?","hint":"Answer directly, give a specific example, explain your action, then state what you learned and why it matters for pilot training.","tags":["interview","2026-reference-image","v150"],"defaultPrep":30,"defaultAns":100,"prep":30,"ans":100,"s":"A recent example is my TOEIC Speaking result, which still did not reach the target I had set. I was disappointed, but I did not want to explain the result only through emotion. I broke the performance down into specific issues, such as answer structure, repeated language errors, and time pressure. Then I adjusted my practice by refining my templates, doing more timed speaking, and tracking repeated mistakes. The experience reminded me that missing a target is useful only if I turn the result into a more precise improvement plan.","short":"","cn":"【中文作答重點】\n可用近期 TOEIC Speaking 未達目標為例：先承認結果，再分析具體弱點、調整練習，最後說明如何把挫折轉化成可衡量改進。"},{"type":"pilot","cat":"INTERVIEW EN","topic":"Behavioral Interview","q":"Tell me about someone in your life whom you are grateful for. What have you learned from that person?","hint":"Answer directly, give a specific example, explain your action, then state what you learned and why it matters for pilot training.","tags":["interview","2026-reference-image","v150"],"defaultPrep":30,"defaultAns":100,"prep":30,"ans":100,"s":"I would choose a family member who has supported me through important decisions. What I value most is not that this person solves every problem for me, but that they listen carefully and still expect me to take responsibility for my choices. From that relationship, I learned that support does not mean making decisions for someone else, and that trust is built through consistent actions over time. This has influenced the way I work with other people: I want to support teammates while still respecting their roles and responsibilities.","short":"","cn":"【中文作答重點】\n選一位真實人物，避免只說「他很好」；重點是具體說明對方如何影響你的責任感、決策或合作方式。"},{"type":"pilot","cat":"INTERVIEW EN","topic":"Behavioral Interview","q":"Have you ever faced a situation in which you had little choice but to adapt to changing circumstances? How did you handle it?","hint":"Answer directly, give a specific example, explain your action, then state what you learned and why it matters for pilot training.","tags":["interview","2026-reference-image","v150"],"defaultPrep":30,"defaultAns":100,"prep":30,"ans":100,"s":"Yes. When external conditions change quickly, some factors cannot be controlled by individual effort. I first separate the situation into what I can control and what I cannot. I accept the fixed constraints, then adjust resources, timing, and priorities in the areas I can influence. This taught me that adaptation is not passive surrender. It is the ability to build the safest and most effective plan under new constraints. I believe this mindset is relevant to aviation because weather, traffic, and technical conditions can all change an original plan.","short":"","cn":"【中文作答重點】\n先區分可控與不可控，再說明如何重新安排資源與優先順序。強調 adaptability 不等於被動放棄。"},{"type":"pilot","cat":"INTERVIEW EN","topic":"Behavioral Interview","q":"Give an example of when other responsibilities delayed something you had originally planned to do. How did you ask for help and solve the problem?","hint":"Answer directly, give a specific example, explain your action, then state what you learned and why it matters for pilot training.","tags":["interview","2026-reference-image","v150"],"defaultPrep":30,"defaultAns":100,"prep":30,"ans":100,"s":"I have had times when an urgent work responsibility overlapped with a planned study session. I realized that trying to do everything alone would reduce the quality of both tasks. I identified what truly required my attention and what could be delegated, then asked family members or teammates for specific help and rescheduled the study block. The experience taught me that asking for help is not avoiding responsibility. It is communicating workload and risk early enough for the team to respond before the situation becomes unmanageable.","short":"","cn":"【中文作答重點】\n說明外務造成衝突、哪些工作可委派、如何具體求援，最後連結 workload management 與及早溝通。"},{"type":"pilot","cat":"INTERVIEW EN","topic":"Behavioral Interview","q":"Do you prefer a serious or a harmonious atmosphere in a team? Please give an example.","hint":"Answer directly, give a specific example, explain your action, then state what you learned and why it matters for pilot training.","tags":["interview","2026-reference-image","v150"],"defaultPrep":30,"defaultAns":100,"prep":30,"ans":100,"s":"I prefer a harmonious but professional atmosphere. If a team is too tense, people may hesitate to ask questions or report concerns. If it is too casual, standards may become unclear. My preferred environment is one where people can communicate naturally and support one another, but can immediately become concise and task-focused when safety, risk, or an important decision is involved. That balance encourages information sharing while still protecting professional standards.","short":"","cn":"【中文作答重點】\n不要把嚴肅與和諧當成二選一；可回答「和諧但專業」，並說明何時需要切換成明確、任務導向的溝通。"},{"type":"pilot","cat":"INTERVIEW EN","topic":"Behavioral Interview","q":"Should work be assigned according to each person's situation, even if some more capable people may carry more responsibility?","hint":"Answer directly, give a specific example, explain your action, then state what you learned and why it matters for pilot training.","tags":["interview","2026-reference-image","v150"],"defaultPrep":30,"defaultAns":100,"prep":30,"ans":100,"s":"I think work should be assigned according to competence, qualification, current workload, and the risk of the task rather than being divided mechanically. It can be reasonable for a more experienced person to carry more responsibility for a limited period, but that should not become a permanent dependency. A leader also needs to monitor fatigue, rotate duties, and develop other team members. Fairness does not always mean identical workload; it means transparent reasoning, acceptable risk, and sustainable team development.","short":"","cn":"【中文作答重點】\n公平不等於平均。可談能力、資格、工作負荷、輪替與避免長期過度依賴高能力者。"},{"type":"pilot","cat":"INTERVIEW EN","topic":"Behavioral Interview","q":"Why is honesty important? Give an example and explain how honesty influences your behavior.","hint":"Answer directly, give a specific example, explain your action, then state what you learned and why it matters for pilot training.","tags":["interview","2026-reference-image","v150"],"defaultPrep":30,"defaultAns":100,"prep":30,"ans":100,"s":"Honesty is the foundation of trust and safety. To me, it means more than not telling a lie. It also means admitting when I do not know something, reporting an error early, and not presenting information in a way that only protects my image. For example, when an exam result or a weak area is below my target, I prefer to acknowledge it and change my method instead of making excuses. This habit has made me more likely to confirm facts first, state limitations clearly, and then discuss a solution.","short":"","cn":"【中文作答重點】\n誠實可從「承認不知道、及早報錯、不粉飾資訊」切入，再用考試或工作例子說明它如何改變你的行為模式。"},{"type":"pilot","cat":"INTERVIEW EN","topic":"Behavioral Interview","q":"How do you handle pressure when family or friends have expectations that feel too high?","hint":"Answer directly, give a specific example, explain your action, then state what you learned and why it matters for pilot training.","tags":["interview","2026-reference-image","v150"],"defaultPrep":30,"defaultAns":100,"prep":30,"ans":100,"s":"I first ask whether the pressure comes from an actual external expectation or from the way I am interpreting it. Then I convert the result goal into process goals that I can control, such as a daily practice target or a weekly progress check. If the expectation is genuinely creating pressure, I communicate my current progress, the time required, and the realistic risks. This helps me turn an abstract pressure into specific actions and prevents me from making unreasonable decisions just to prove myself.","short":"","cn":"【中文作答重點】\n先辨識壓力來源，再把結果目標轉成過程目標；必要時與家人溝通真實進度與限制。"},{"type":"pilot","cat":"INTERVIEW EN","topic":"Behavioral Interview","q":"Have you ever expressed a strong negative emotion, such as anger or frustration? Did it help you achieve your goal?","hint":"Answer directly, give a specific example, explain your action, then state what you learned and why it matters for pilot training.","tags":["interview","2026-reference-image","v150"],"defaultPrep":30,"defaultAns":100,"prep":30,"ans":100,"s":"I have experienced strong frustration when a result was below my expectation. I learned that using the emotion directly in communication usually does not improve the outcome. Now I try to let the emotional intensity decrease first, identify the real problem, and then discuss what action needs to change. If I need to express dissatisfaction, I focus on the event, its impact, and the required next step rather than attacking the person. Emotion can signal that something matters, but it should not replace judgment.","short":"","cn":"【中文作答重點】\n承認負面情緒，但說明直接宣洩通常無助於解決問題；重點是降溫、辨識問題、針對事件與行動溝通。"},{"type":"pilot","cat":"INTERVIEW EN","topic":"Behavioral Interview","q":"What was the most difficult subject for you in high school? How did you overcome it, and how would you evaluate your ability in that subject now?","hint":"Answer directly, give a specific example, explain your action, then state what you learned and why it matters for pilot training.","tags":["interview","2026-reference-image","v150"],"defaultPrep":30,"defaultAns":100,"prep":30,"ans":100,"s":"I would choose a real subject that shows an improvement process. Mathematics is a useful example if it is accurate for my experience. Multi-step problems were more difficult for me because I could make mistakes in formula selection or units. I improved by learning the principle first, writing the steps clearly, grouping repeated errors, and then practicing under time limits. I would not claim that I have no weakness now, but I understand the subject more systematically and know how to improve when I get stuck.","short":"","cn":"【中文作答重點】\n務必選真實科目。可用數學作為示例：公式選擇、單位、多步驟題 → 建立錯題分類與限時訓練 → 說明現在已更系統化。"},{"type":"pilot","cat":"INTERVIEW EN","topic":"Behavioral Interview","q":"When you face a difficult period in life, how do you respond? Do you ask teachers, peers, or others for help? What usually happens?","hint":"Answer directly, give a specific example, explain your action, then state what you learned and why it matters for pilot training.","tags":["interview","2026-reference-image","v150"],"defaultPrep":30,"defaultAns":100,"prep":30,"ans":100,"s":"When I face a difficult period, I handle the most urgent risk first and then break the remaining problem into smaller actions. If I stay stuck for too long, I ask someone who can provide relevant information or experience instead of only asking for reassurance. For a learning problem, for example, I organize the exact point I do not understand and ask a focused question. This usually helps me find the blind spot faster. It has taught me that asking for help early is a form of mature risk management, not a sign of weakness.","short":"","cn":"【中文作答重點】\n處理順序：先急迫風險 → 拆小問題 → 卡住時向有相關能力的人提出具體問題 → 說明求援是成熟的風險管理。"},{"type":"pilot","cat":"INTERVIEW EN","topic":"Behavioral Interview","q":"Which university subject has been most useful to you? Do you still use it, and how has it helped your life?","hint":"Answer directly, give a specific example, explain your action, then state what you learned and why it matters for pilot training.","tags":["interview","2026-reference-image","v150"],"defaultPrep":30,"defaultAns":100,"prep":30,"ans":100,"s":"One useful area from university was logistics and management because it taught me to look at processes, resources, cost, and risk as one system. I still use similar thinking when I plan inventory, time, or work priorities. The biggest benefit is that I tend to look for the bottleneck and the key variables instead of only treating the visible symptom. I believe this systems-thinking habit is also useful in aviation training, where decisions often involve several interacting factors.","short":"","cn":"【中文作答重點】\n可連結行銷與物流管理背景，強調流程、資源、成本、風險與系統化思考，而不是只說「這科很實用」。"},{"type":"pilot","cat":"INTERVIEW EN","topic":"Behavioral Interview","q":"How would you encourage someone who is facing a difficult situation or setback?","hint":"Answer directly, give a specific example, explain your action, then state what you learned and why it matters for pilot training.","tags":["interview","2026-reference-image","v150"],"defaultPrep":30,"defaultAns":100,"prep":30,"ans":100,"s":"I would first acknowledge that the setback is real instead of trying to make it sound positive immediately. Then I would help the person separate three things: what has already happened, what is still controllable, and what the smallest useful next action is. If appropriate, I would share an example of adjusting my own practice after missing a target. To me, useful encouragement is more than saying 'keep going.' It helps the person see a practical next step again.","short":"","cn":"【中文作答重點】\n先承認挫折，再幫對方區分已發生／可控制／下一步。避免只說空泛的「加油」。"},{"type":"pilot","cat":"INTERVIEW EN","topic":"Behavioral Interview","q":"How do you maintain enthusiasm at work, and how will you continue to maintain it in the future?","hint":"Answer directly, give a specific example, explain your action, then state what you learned and why it matters for pilot training.","tags":["interview","2026-reference-image","v150"],"defaultPrep":30,"defaultAns":100,"prep":30,"ans":100,"s":"I do not define enthusiasm as feeling excited every day. For me, it means remembering why the work matters even when the task becomes repetitive or difficult. I maintain it by setting short-term goals, continuing to learn, improving the process, and protecting a reasonable life balance. In an aviation career, I would want my motivation to come from professional growth and responsibility rather than novelty, because a long career depends more on disciplined commitment than on constant excitement.","short":"","cn":"【中文作答重點】\n熱忱不等於每天興奮。回答可連結目標、學習、流程改善與生活平衡，並強調長期職涯靠紀律維持。"},{"type":"pilot","cat":"INTERVIEW EN","topic":"Behavioral Interview","q":"How much time do you spend on household responsibilities each week, and how do you divide the work? Have you had conflicts about the division?","hint":"Answer directly, give a specific example, explain your action, then state what you learned and why it matters for pilot training.","tags":["interview","2026-reference-image","v150"],"defaultPrep":30,"defaultAns":100,"prep":30,"ans":100,"s":"I would divide household work according to the actual schedule and workload rather than insisting that every person spend exactly the same amount of time. We can list the fixed tasks and the temporary tasks first, then adjust them according to availability and energy. If we disagree, I try to identify whether the real issue is fairness, timing, or the standard of completion. Clear expectations and early adjustment usually prevent small differences from becoming personal conflict.","short":"","cn":"【中文作答重點】\n可說明依作息與負荷分工；若有衝突，先釐清公平、時間或完成標準，再重新協調。"},{"type":"pilot","cat":"INTERVIEW EN","topic":"Behavioral Interview","q":"What is the most important consideration when giving advice? What is the best advice you have received in your life?","hint":"Answer directly, give a specific example, explain your action, then state what you learned and why it matters for pilot training.","tags":["interview","2026-reference-image","v150"],"defaultPrep":30,"defaultAns":100,"prep":30,"ans":100,"s":"The most important thing is to understand the other person's goal, constraints, and real problem before giving advice. Otherwise, even good advice may not fit the situation. I also try to separate sharing my experience from making a decision for someone else. One piece of advice that has influenced me is to focus on what I can control and keep improving the fundamentals. It helps me return to practical daily actions when I face an exam, work pressure, or a long-term goal.","short":"","cn":"【中文作答重點】\n給建議前先理解目標、限制與問題；人生好建議可用「專注可控制的事、把基本功做好」，再說明它如何影響你。"},{"type":"pilot","cat":"INTERVIEW EN","topic":"English Autobiography","q":"Write a one-page English autobiography that helps an airline understand your motivation, key traits, and determination to become a pilot.","hint":"Answer directly, give a specific example, explain your action, then state what you learned and why it matters for pilot training.","tags":["interview","2026-reference-image","v150"],"defaultPrep":30,"defaultAns":100,"prep":30,"ans":100,"s":"A strong structure is: Paragraph 1 — who I am and my current professional background. Paragraph 2 — the experiences that developed responsibility, communication, discipline, and decision-making. Paragraph 3 — why I want to become a pilot and what I have already done to prepare, such as English, mathematics, aviation knowledge, simulator practice, medical requirements, and fitness. Paragraph 4 — why I am ready for demanding training and what kind of pilot I want to become. The autobiography should use specific evidence instead of adjectives alone, remain consistent with the résumé, and make the motivation for aviation clear.","short":"","cn":"【中文作答重點】\n英文自傳可分四段：背景 → 形成特質的具體經歷 → 飛行員動機與已做準備 → 為何能承受訓練及想成為何種飛行員。重點是具體證據、與履歷一致、動機清楚。"}];
+  const norm = v => String(v ?? "").normalize("NFKC").toLowerCase()
+    .replace(/[【】「」『』"'`.,，。！？!?：:；;（）()\[\]{}<>+＝=\-−–—_、\/\\\s]/g, "");
+
+  const existing = new Set(bank.map(q => `${q?.type || ""}|${norm(q?.q || "")}`));
+  let addedClassical = 0;
+  let addedInterviewCN = 0;
+  let addedInterviewEN = 0;
+  let skippedDuplicate = 0;
+
+  for (const q of incoming) {
+    const key = `${q.type || ""}|${norm(q.q || "")}`;
+    if (existing.has(key)) {
+      skippedDuplicate++;
+      continue;
+    }
+    if (q.type === "classical_cn") {
+      // Classical Chinese intentionally uses one Chinese answer panel only.
+      q.cn = "";
+      addedClassical++;
+    } else if (q.type === "interview_cn") {
+      addedInterviewCN++;
+    } else if (q.type === "pilot") {
+      addedInterviewEN++;
+    }
+    bank.push(q);
+    existing.add(key);
+  }
+
+  // Keep every Classical Chinese entry in the single-answer format requested by the user.
+  for (const q of bank) {
+    if (q?.type === "classical_cn") q.cn = "";
+  }
+
+  // Basic structural QA for the newly expanded bank.
+  let invalidObjective = 0;
+  let emptyQuestionOrAnswer = 0;
+  for (const q of bank) {
+    if (!String(q?.q || "").trim() || !String(q?.s || "").trim()) emptyQuestionOrAnswer++;
+    if (Array.isArray(q?.choices)) {
+      const ok = q.choices.length >= 2 &&
+        Number.isInteger(q.correct) &&
+        q.correct >= 0 &&
+        q.correct < q.choices.length &&
+        new Set(q.choices.map(norm)).size === q.choices.length;
+      if (!ok) invalidObjective++;
+    }
+  }
+
+  document.title = `TRIUMPH Pilot Trainer ${VERSION}`;
+  const logo = document.querySelector(".logo");
+  if (logo) logo.innerHTML = `TRIUMPH Pilot Trainer ${VERSION}<small>PILOT SELECTION TRAINER</small>`;
+  const hint = document.getElementById("hint");
+  if (hint) hint.textContent =
+    "v150：Classical CN 新增老子、墨子、孔子、孟子與荀子短篇；Interview CN/EN 依 2026 中英文問卷參考題擴充。文言文維持單一中文解答。";
+
+  try {
+    if (typeof refreshPool === "function") refreshPool();
+    if (typeof renderTabs === "function") renderTabs();
+    if (typeof updateStats === "function") updateStats();
+  } catch (e) {}
+
+  window.TRIUMPH_V150_QA = {
+    version: VERSION,
+    sourceReference: "user-supplied 2026 cadet-pilot questionnaire image",
+    addedClassical,
+    addedInterviewCN,
+    addedInterviewEN,
+    skippedDuplicate,
+    classicalSingleChineseAnswer: true,
+    invalidObjective,
+    emptyQuestionOrAnswer,
+    total: bank.length
+  };
+})();
+</script>
+
+
+<script id="v151-daily-pause-and-toeic-sound-qa">
+(() => {
+  document.title="TRIUMPH Pilot Trainer v151";
+  const logo=document.querySelector(".logo");
+  if(logo)logo.innerHTML="TRIUMPH Pilot Trainer v151<small>PILOT SELECTION TRAINER</small>";
+  const hint=document.getElementById("hint");
+  if(hint)hint.textContent="v151：Daily Test 暫停鍵移至總／單題計時區左側；TOEIC Q5–7／Q11 倒數恢復原本的準備結束與回答結束提示音。";
+  window.TRIUMPH_V151_QA={
+    version:"v151",
+    pauseButtonPosition:"before elapsed-time group",
+    toeicCountdownSound:true,
+    prepCue:"920Hz / short",
+    answerCue:"740Hz / long",
+    respectsGlobalSoundSetting:true
   };
 })();
 </script>
