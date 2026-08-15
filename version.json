@@ -1,0 +1,6 @@
+{
+  "version": "v169",
+  "build": "2026-08-15-advanced-math-interview",
+  "entry": "./index.html",
+  "cache_policy": "network-first-navigation-no-store"
+}
