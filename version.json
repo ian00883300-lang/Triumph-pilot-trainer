@@ -1,6 +1,6 @@
 {
-  "version": "v169",
-  "build": "2026-08-15-advanced-math-interview",
+  "version": "v170",
+  "build": "2026-08-16-math-earthscience-quality",
   "entry": "./index.html",
   "cache_policy": "network-first-navigation-no-store"
 }
