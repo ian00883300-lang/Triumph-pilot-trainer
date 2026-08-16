@@ -1,6 +1,6 @@
 {
-  "version": "v170",
-  "build": "2026-08-16-math-earthscience-quality",
+  "version": "v171",
+  "build": "2026-08-17-flight-deck-quick-cards",
   "entry": "./index.html",
   "cache_policy": "network-first-navigation-no-store"
 }
