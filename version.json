@@ -1,6 +1,6 @@
 {
-  "version": "v171",
-  "build": "2026-08-17-flight-deck-quick-cards",
+  "version": "v172",
+  "build": "2026-08-17-stability-fix",
   "entry": "./index.html",
-  "cache_policy": "network-first-navigation-no-store"
+  "behavior": "no automatic version redirects or controllerchange reloads"
 }

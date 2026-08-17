@@ -1,1 +1,31 @@
-<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"><title>TRIUMPH Refresh v171</title><style>body{font-family:system-ui,-apple-system,sans-serif;background:#f4ede1;color:#231f1b;display:grid;place-items:center;min-height:100vh;margin:0}main{padding:28px;border:1px solid #d7c9b4;border-radius:24px;background:#fffaf3;max-width:640px;margin:24px}</style></head><body><main><h1>TRIUMPH Pilot Trainer v171</h1><p>正在清除舊快取並載入最新版…</p></main><script>(async()=>{try{if("serviceWorker"in navigator){const r=await navigator.serviceWorker.getRegistrations();await Promise.all(r.map(x=>x.unregister()));}}catch(e){}try{if("caches"in window){const k=await caches.keys();await Promise.all(k.map(x=>caches.delete(x)));}}catch(e){}const u=new URL("./",location.href);u.searchParams.set("v","171");u.searchParams.set("force",Date.now().toString());setTimeout(()=>location.replace(u.href),350);})();</script></body></html>
+<!doctype html>
+<html lang="zh-Hant"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<title>TRIUMPH v172 Refresh</title>
+<style>body{font-family:system-ui,-apple-system,sans-serif;background:#f4ede1;color:#231f1b;display:grid;place-items:center;min-height:100vh;margin:0}main{padding:28px;border:1px solid #d7c9b4;border-radius:24px;background:#fffaf3;max-width:640px;margin:24px}</style>
+</head><body><main>
+<h1>TRIUMPH Pilot Trainer v172</h1>
+<p>只會在你手動開啟此頁時清除舊 Service Worker / Cache，完成後進入 v172。正式 Trainer 不會再自動跳轉。</p>
+</main>
+<script>
+(async()=>{
+  try{
+    if("serviceWorker" in navigator){
+      const regs=await navigator.serviceWorker.getRegistrations();
+      await Promise.all(regs.map(r=>r.unregister()));
+    }
+  }catch(_){}
+  try{
+    if("caches" in window){
+      const keys=await caches.keys();
+      await Promise.all(keys.map(k=>caches.delete(k)));
+    }
+  }catch(_){}
+  const u=new URL("./",location.href);
+  u.searchParams.set("v","172");
+  u.searchParams.set("refresh",Date.now().toString());
+  setTimeout(()=>location.replace(u.href),500);
+})();
+</script>
+</body></html>
