@@ -1,6 +1,6 @@
 {
-  "version": "v172",
-  "build": "2026-08-17-stability-fix",
+  "version": "v173",
+  "build": "2026-08-17-math-scope-answer-fix",
   "entry": "./index.html",
-  "behavior": "no automatic version redirects or controllerchange reloads"
+  "behavior": "stable-no-auto-redirect"
 }
