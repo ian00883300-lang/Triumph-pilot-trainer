@@ -1,0 +1,27 @@
+{
+  "version": "v174",
+  "source_concepts": 32,
+  "planned_records": {
+    "aviation_en": 32,
+    "aviation_cn": 32,
+    "flight_deck_cards": 32
+  },
+  "content_policy": [
+    "English Aviation questions include English answer plus full Chinese explanation.",
+    "Chinese Aviation questions contain Chinese answer only.",
+    "Quick cards are shortened to roughly one-minute review.",
+    "Course/type-specific techniques are labeled as heuristics or type-specific rather than universal SOP."
+  ],
+  "accuracy_normalizations": [
+    "Standard-rate turn defined by turn rate, not fixed 30-degree bank.",
+    "Three-degree glidepath VSI uses GS×5 as a rough rule; exact geometry is about GS×5.3.",
+    "Operational FAA ILS glide-slope paired channels are 329.15–335.00 MHz; wider 328.6–335.4 MHz wording is treated as an engineering spectrum band.",
+    "Straight-and-level trim is described as relieving sustained control pressure, not trimming a VSI value.",
+    "VREF+5–10 and 20/80 visual scan are labeled training heuristics, not universal SOP."
+  ],
+  "duplicate_question_strings_in_new_payload": 32,
+  "javascript_blocks_checked": 66,
+  "javascript_syntax_errors": [],
+  "main_html_has_auto_location_replace": false,
+  "sha256": "24caba82de68d3f2c7c0faec97cef9c4ac2f283675655253e02e8acd906b5c5f"
+}

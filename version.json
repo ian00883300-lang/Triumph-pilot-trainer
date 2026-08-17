@@ -1,6 +1,6 @@
 {
-  "version": "v173",
-  "build": "2026-08-17-math-scope-answer-fix",
+  "version": "v174",
+  "build": "2026-08-17-aviation-screenshot-expansion",
   "entry": "./index.html",
-  "behavior": "stable-no-auto-redirect"
+  "behavior": "stability-first; no automatic version redirect"
 }
