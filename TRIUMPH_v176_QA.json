@@ -1,0 +1,41 @@
+{
+  "version": "v176",
+  "math": {
+    "new_concepts": 31,
+    "new_bilingual_records": 62,
+    "choice_index_errors": 0,
+    "duplicate_choices": 0,
+    "scope_notes": [
+      "No beat-frequency questions added.",
+      "No mid-ocean-ridge/geology question added.",
+      "Optics additions stay within the user's pinhole-imaging notes and similar-triangle scope."
+    ]
+  },
+  "aviation_quick_cards": {
+    "renamed_from": "Flight Deck Cards",
+    "renamed_to": "Aviation Quick Cards",
+    "internal_type_preserved": "flight_cards",
+    "new_cards": 26,
+    "new_card_duplicates": 0
+  },
+  "daily_test": {
+    "active_timer_yellow_background_removed": true,
+    "toeic_reset_button_added": true,
+    "reset_behavior": "resets only TOEIC prep/answer countdown for another rehearsal; total Daily Test time and real question elapsed time continue",
+    "cue_sound": "calls the same normal trainer beep(kind) function, therefore same frequency/duration/volume",
+    "main_timer_button_yellow_background_removed": true
+  },
+  "answer_review": {
+    "interview_targets_reviewed": 10,
+    "aviation_topics_reviewed": 9,
+    "strengthening_is_conditional": "runtime patch only appends the extra paragraph if the existing answer is still below the configured length threshold"
+  },
+  "performance": {
+    "fast_cache_strategy_preserved": true,
+    "main_html_mb": 5.51
+  },
+  "javascript_blocks_checked": 68,
+  "javascript_syntax_errors": [],
+  "main_app_location_replace_count": 0,
+  "sha256": "a394c385495c5990a71f4542e7297ec851ffc8ca64b586ddffecd694e3aedc02"
+}

@@ -1,6 +1,13 @@
 {
-  "version": "v174",
-  "build": "2026-08-17-aviation-screenshot-expansion",
+  "version": "v176",
+  "build": "2026-08-19-content-timer-update",
   "entry": "./index.html",
-  "behavior": "stability-first; no automatic version redirect"
+  "features": [
+    "Aviation Quick Cards rename with favorite continuity",
+    "31 new bilingual math concepts / 62 bank records",
+    "26 new Aviation Quick Cards",
+    "Daily Test TOEIC countdown Reset",
+    "Daily Test cue uses the normal trainer beep function",
+    "active timer buttons no longer use yellow background"
+  ]
 }
