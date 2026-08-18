@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="zh-Hant"><head><meta charset="UTF-8"><title>TRIUMPH Pilot Trainer v177</title><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<!DOCTYPE html><html lang="zh-Hant"><head><meta charset="UTF-8"><title>TRIUMPH Pilot Trainer v178</title><meta name="viewport" content="width=device-width,initial-scale=1.0">
 <meta name="theme-color" content="#0b1c31">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -1101,15 +1101,15 @@ body[data-theme="green"] .dt-overlay{
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="TRIUMPH Pilot">
-<link rel="manifest" href="./triumph-pilot.webmanifest?v=177">
-<link rel="icon" type="image/png" sizes="192x192" href="./triumph-icon-192.png?v=177">
-<link rel="icon" type="image/png" sizes="512x512" href="./triumph-icon-512.png?v=177">
-<link rel="apple-touch-icon" sizes="180x180" href="./triumph-apple-touch-icon.png?v=177">
+<link rel="manifest" href="./triumph-pilot.webmanifest?v=178">
+<link rel="icon" type="image/png" sizes="192x192" href="./triumph-icon-192.png?v=178">
+<link rel="icon" type="image/png" sizes="512x512" href="./triumph-icon-512.png?v=178">
+<link rel="apple-touch-icon" sizes="180x180" href="./triumph-apple-touch-icon.png?v=178">
 
 
-<script id="triumph-v177-cache-bootstrap">
+<script id="triumph-v178-cache-bootstrap">
 (() => {
-  const CURRENT_VERSION = "v177";
+  const CURRENT_VERSION = "v178";
   window.TRIUMPH_CACHE_VERSION = CURRENT_VERSION;
 
   // Fast-open policy:
@@ -1117,7 +1117,7 @@ body[data-theme="green"] .dt-overlay{
   // and refreshes it in the background. No automatic reload/redirect.
   if ("serviceWorker" in navigator) {
     window.addEventListener("load", () => {
-      navigator.serviceWorker.register("./sw.js?v=177", {
+      navigator.serviceWorker.register("./sw.js?v=178", {
         scope: "./",
         updateViaCache: "none"
       }).catch(() => {});
@@ -1400,7 +1400,7 @@ body[data-theme="green"] .dt-overlay{
 }
 </style>
 
-</head><body data-theme="white"><div class="app"><main class="main card"><div class="header"><div class="logo">TRIUMPH Pilot Trainer v177<span class="creator">created by Ying Chen</span><small>PILOT SELECTION TRAINER</small></div><div class="theme"><button class="chip" data-theme="white">白</button><button class="chip" data-theme="gray">灰</button><button class="chip" data-theme="black">黑</button><button class="chip" data-theme="blue">藍</button><button class="chip" data-theme="green">綠</button><button class="chip timer-quick active" id="timerQuickToggle" type="button" title="開啟／關閉計時" aria-label="開啟／關閉計時" aria-pressed="true">⏰</button></div><div class="badge" id="sessionBadge">Today: 0 questions</div></div>
+</head><body data-theme="white"><div class="app"><main class="main card"><div class="header"><div class="logo">TRIUMPH Pilot Trainer v178<span class="creator">created by Ying Chen</span><small>PILOT SELECTION TRAINER</small></div><div class="theme"><button class="chip" data-theme="white">白</button><button class="chip" data-theme="gray">灰</button><button class="chip" data-theme="black">黑</button><button class="chip" data-theme="blue">藍</button><button class="chip" data-theme="green">綠</button><button class="chip timer-quick active" id="timerQuickToggle" type="button" title="開啟／關閉計時" aria-label="開啟／關閉計時" aria-pressed="true">⏰</button></div><div class="badge" id="sessionBadge">Today: 0 questions</div></div>
 <div class="dt-entry-wrap">
   <button type="button" class="dt-entry" id="dailyTestLaunch">
     <span class="dt-entry-icon">✓</span>
@@ -9985,6 +9985,288 @@ That's why I think so.`;
   }else refresh();
 
   window.TRIUMPH_V177_STABLE=true;
+})();
+</script>
+
+
+
+<style id="v178-mobile-theme-flight-memory-fixes">
+/* ================================================================
+   v178 — targeted UI adjustments only.
+   Existing question banks, localStorage keys, favorites migration,
+   Daily Test logic, timer behavior and GitHub/PWA file structure are
+   intentionally left unchanged.
+================================================================ */
+
+/* Gray: more neutral and one step darker while keeping dark text readable. */
+body[data-theme="gray"]{
+  --bg1:#8f9290;
+  --bg2:#626664;
+  --card:#a4a7a4;
+  --text:#121412;
+  --muted:#373b39;
+  --line:#686d69;
+  --soft:#b4b7b4;
+  --panel:#999d99;
+  --navy:#22344b;
+  --shadow:0 24px 70px rgba(0,0,0,.31);
+}
+body[data-theme="gray"] input,
+body[data-theme="gray"] select,
+body[data-theme="gray"] textarea{
+  background:#b2b5b2!important;
+  color:#121412!important;
+  border-color:#727773!important;
+}
+body[data-theme="gray"] .dt-overlay{
+  --dt-bg:#737774;
+  --dt-card:#969a96;
+  --dt-soft:#858985;
+  --dt-elevated:#a6aaa6;
+  --dt-line:#5b605c;
+  --dt-text:#111311;
+  --dt-muted:#343936;
+}
+
+/* Navy: deeper cockpit navy, still visibly blue rather than black. */
+body[data-theme="blue"]{
+  --bg1:#0b1725;
+  --bg2:#020811;
+  --card:#0e1a2a;
+  --text:#f3f7fb;
+  --muted:#a7b7c8;
+  --line:#2d435b;
+  --accent:#6f98c6;
+  --navy:#04101f;
+  --soft:#15283b;
+  --green:#425f52;
+  --danger:#ad5555;
+  --shadow:0 24px 70px rgba(0,0,0,.45);
+  --panel:#0a1625;
+}
+body[data-theme="blue"] input,
+body[data-theme="blue"] select,
+body[data-theme="blue"] textarea{
+  background:#14263a;color:#f3f7fb;border-color:#344d67
+}
+body[data-theme="blue"] .dt-overlay{
+  --dt-bg:#020811;
+  --dt-card:#0a1625;
+  --dt-soft:#102238;
+  --dt-elevated:#0e1f33;
+  --dt-line:#35506a;
+  --dt-text:#f4f8fc;
+  --dt-muted:#a8b8ca;
+  --dt-score:#719fc5;
+}
+
+/* Army green: deeper, darker and less washed-out. */
+body[data-theme="green"]{
+  --bg1:#414a3e;
+  --bg2:#20261f;
+  --card:#3b4438;
+  --text:#f4f2e8;
+  --muted:#c1c5b6;
+  --line:#666f60;
+  --accent:#c3a863;
+  --navy:#252c24;
+  --soft:#4b5547;
+  --green:#354335;
+  --danger:#9f5550;
+  --shadow:0 24px 70px rgba(12,16,12,.46);
+  --panel:#343c32;
+}
+body[data-theme="green"] input,
+body[data-theme="green"] select,
+body[data-theme="green"] textarea{
+  background:#475143;color:#f4f2e8;border-color:#6f7867
+}
+body[data-theme="green"] .dt-overlay{
+  --dt-bg:#20261f;
+  --dt-card:#384136;
+  --dt-soft:#444e40;
+  --dt-elevated:#3d473a;
+  --dt-line:#687161;
+  --dt-text:#f6f4ea;
+  --dt-muted:#c1c5b7;
+  --dt-score:#c3a863;
+}
+
+/* Phone timer mode: preserve the v177 button hierarchy, but center the
+   two half-width single buttons (Previous / Reset). */
+@media(max-width:640px){
+  .questionbox > .controls{
+    display:grid!important;
+    grid-template-columns:minmax(0,1fr) minmax(0,1fr)!important;
+    gap:10px!important;
+    justify-content:stretch!important;
+    align-items:stretch!important;
+    width:100%!important;
+  }
+  .questionbox > .controls .btn{
+    width:100%!important;
+    min-width:0!important;
+    margin:0!important;
+    display:flex!important;
+    align-items:center!important;
+    justify-content:center!important;
+    text-align:center!important;
+  }
+  #newBtn,#startPauseBtn{grid-column:1 / -1!important}
+  #prevBtn,#resetBtn{
+    grid-column:1 / -1!important;
+    width:calc(50% - 5px)!important;
+    justify-self:center!important;
+  }
+  #showBtn{grid-column:1!important}
+  #favBtn{grid-column:2!important}
+}
+
+/* Flight-memory header: the close button no longer shifts the brand center. */
+.fm-top{
+  position:relative!important;
+  display:block!important;
+  width:100%!important;
+  text-align:center!important;
+}
+.fm-brand{
+  width:100%!important;
+  max-width:100%!important;
+  padding-left:82px!important;
+  padding-right:82px!important;
+  text-align:center!important;
+}
+.fm-title,.fm-sub{ text-align:center!important; }
+.fm-close{
+  position:absolute!important;
+  right:0!important;
+  top:50%!important;
+  transform:translateY(-50%)!important;
+  z-index:2!important;
+}
+
+/* Slightly smaller flight-memory frame so all controls stay safely inside
+   portrait-phone viewports. Desktop sizing remains essentially unchanged. */
+@media(max-width:620px){
+  .fm-shell{
+    width:100%!important;
+    max-width:100%!important;
+    padding:12px 8px 42px!important;
+    overflow-x:hidden!important;
+  }
+  .fm-top{
+    min-height:82px!important;
+    padding:4px 2px 16px!important;
+    margin-bottom:16px!important;
+  }
+  .fm-brand{
+    padding-left:68px!important;
+    padding-right:68px!important;
+  }
+  .fm-title{
+    font-size:22px!important;
+    line-height:1.18!important;
+    letter-spacing:.055em!important;
+  }
+  .fm-sub{
+    max-width:270px!important;
+    margin:7px auto 0!important;
+    font-size:10.5px!important;
+    line-height:1.38!important;
+    letter-spacing:.11em!important;
+  }
+  .fm-close{
+    right:2px!important;
+    padding:9px 11px!important;
+    border-radius:11px!important;
+    font-size:13px!important;
+  }
+  .fm-card{
+    width:100%!important;
+    max-width:100%!important;
+    padding:17px 13px!important;
+    border-radius:19px!important;
+    margin-bottom:16px!important;
+    overflow:hidden!important;
+  }
+  .fm-card h2{font-size:19px!important}
+  .fm-muted{font-size:13px!important;line-height:1.62!important}
+  .fm-range-row{
+    gap:11px!important;
+    margin:18px 0!important;
+    min-width:0!important;
+  }
+  .fm-range-row input{
+    min-width:0!important;
+    flex:1 1 auto!important;
+  }
+  .fm-count{
+    min-width:72px!important;
+    flex:0 0 72px!important;
+    padding:9px 7px!important;
+    font-size:21px!important;
+  }
+  .fm-interference-toggle{
+    max-width:100%!important;
+    min-width:0!important;
+    padding-left:62px!important;
+    padding-right:62px!important;
+  }
+  .fm-interference-toggle .fm-toggle-state{
+    right:9px!important;
+  }
+  .fm-btn{
+    max-width:100%!important;
+    padding:15px 14px!important;
+    font-size:16px!important;
+  }
+  .fm-coach{
+    padding:14px!important;
+    font-size:13.5px!important;
+    line-height:1.65!important;
+  }
+  .fm-command-list li{
+    grid-template-columns:30px minmax(0,1fr)!important;
+    gap:8px!important;
+    padding:15px 0!important;
+    font-size:16px!important;
+  }
+  .fm-command-head{
+    gap:8px!important;
+    min-width:0!important;
+  }
+  .fm-countdown{
+    padding:8px 10px!important;
+    font-size:12px!important;
+    white-space:nowrap!important;
+  }
+}
+
+@media(max-width:390px){
+  .fm-shell{padding-left:6px!important;padding-right:6px!important}
+  .fm-card{padding-left:11px!important;padding-right:11px!important}
+  .fm-brand{padding-left:60px!important;padding-right:60px!important}
+  .fm-title{font-size:20px!important}
+  .fm-sub{max-width:238px!important;font-size:9.8px!important}
+  .fm-close{font-size:12px!important;padding:8px 9px!important}
+  .fm-interference-toggle{padding-left:56px!important;padding-right:56px!important}
+}
+</style>
+
+<script id="v178-final-marker">
+(() => {
+  document.title="TRIUMPH Pilot Trainer v178";
+  const logo=document.querySelector(".logo");
+  if(logo)logo.innerHTML=
+    'TRIUMPH Pilot Trainer v178'
+    +'<span class="creator">created by Ying Chen</span>'
+    +'<small>PILOT SELECTION TRAINER</small>';
+
+  const hint=document.getElementById("hint");
+  if(hint)hint.textContent=
+    "v178：手機計時模式將 Previous／Reset 置中；灰／藍／綠主題再加深；飛行指令記憶訓練標題置中並縮小手機版框架。";
+
+  window.TRIUMPH_V178_STABLE=true;
 })();
 </script>
 
