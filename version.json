@@ -1,13 +1,14 @@
 {
-  "version": "v176",
-  "build": "2026-08-19-content-timer-update",
+  "version": "v177",
+  "build": "2026-08-19-mobile-layout-theme-torque-fix",
   "entry": "./index.html",
-  "features": [
-    "Aviation Quick Cards rename with favorite continuity",
-    "31 new bilingual math concepts / 62 bank records",
-    "26 new Aviation Quick Cards",
-    "Daily Test TOEIC countdown Reset",
-    "Daily Test cue uses the normal trainer beep function",
-    "active timer buttons no longer use yellow background"
+  "changes": [
+    "Repair torque-equilibrium multiple-choice mismatch, including 150 N × 3 m / 225 N = 2.0 m",
+    "Reduce mobile outer and inner frame width",
+    "Disable text-wrap:balance / overflow-wrap:anywhere for normal question wrapping",
+    "Add created by Ying Chen below title",
+    "Gray theme slightly more gray",
+    "Navy theme darker",
+    "Matte army green theme darker"
   ]
 }

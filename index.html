@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="zh-Hant"><head><meta charset="UTF-8"><title>TRIUMPH Pilot Trainer v176</title><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<!DOCTYPE html><html lang="zh-Hant"><head><meta charset="UTF-8"><title>TRIUMPH Pilot Trainer v177</title><meta name="viewport" content="width=device-width,initial-scale=1.0">
 <meta name="theme-color" content="#0b1c31">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -1101,15 +1101,15 @@ body[data-theme="green"] .dt-overlay{
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="TRIUMPH Pilot">
-<link rel="manifest" href="./triumph-pilot.webmanifest?v=176">
-<link rel="icon" type="image/png" sizes="192x192" href="./triumph-icon-192.png?v=176">
-<link rel="icon" type="image/png" sizes="512x512" href="./triumph-icon-512.png?v=176">
-<link rel="apple-touch-icon" sizes="180x180" href="./triumph-apple-touch-icon.png?v=176">
+<link rel="manifest" href="./triumph-pilot.webmanifest?v=177">
+<link rel="icon" type="image/png" sizes="192x192" href="./triumph-icon-192.png?v=177">
+<link rel="icon" type="image/png" sizes="512x512" href="./triumph-icon-512.png?v=177">
+<link rel="apple-touch-icon" sizes="180x180" href="./triumph-apple-touch-icon.png?v=177">
 
 
-<script id="triumph-v176-cache-bootstrap">
+<script id="triumph-v177-cache-bootstrap">
 (() => {
-  const CURRENT_VERSION = "v176";
+  const CURRENT_VERSION = "v177";
   window.TRIUMPH_CACHE_VERSION = CURRENT_VERSION;
 
   // Fast-open policy:
@@ -1117,7 +1117,7 @@ body[data-theme="green"] .dt-overlay{
   // and refreshes it in the background. No automatic reload/redirect.
   if ("serviceWorker" in navigator) {
     window.addEventListener("load", () => {
-      navigator.serviceWorker.register("./sw.js?v=176", {
+      navigator.serviceWorker.register("./sw.js?v=177", {
         scope: "./",
         updateViaCache: "none"
       }).catch(() => {});
@@ -1197,7 +1197,210 @@ body[data-theme="black"] .dt-timer-toggle.active{
 @media(max-width:620px){.dt-timer-reset{width:100%;min-width:0;padding:12px 18px}}
 </style>
 
-</head><body data-theme="white"><div class="app"><main class="main card"><div class="header"><div class="logo">TRIUMPH Pilot Trainer v174<small>PILOT SELECTION TRAINER</small></div><div class="theme"><button class="chip" data-theme="white">白</button><button class="chip" data-theme="gray">灰</button><button class="chip" data-theme="black">黑</button><button class="chip" data-theme="blue">藍</button><button class="chip" data-theme="green">綠</button><button class="chip timer-quick active" id="timerQuickToggle" type="button" title="開啟／關閉計時" aria-label="開啟／關閉計時" aria-pressed="true">⏰</button></div><div class="badge" id="sessionBadge">Today: 0 questions</div></div>
+
+<style id="v177-mobile-theme-layout">
+/* Creator credit directly below the TRIUMPH title */
+.logo .creator{
+  display:block;
+  margin-top:5px;
+  font-size:10px;
+  line-height:1.2;
+  font-weight:700;
+  letter-spacing:.055em;
+  color:var(--muted);
+}
+.logo small{margin-top:5px!important}
+
+/* Theme tuning ----------------------------------------------------- */
+/* Gray: slightly more neutral / visibly gray, but still readable. */
+body[data-theme="gray"]{
+  --bg1:#aaacab;
+  --bg2:#7f8280;
+  --card:rgba(197,199,197,.94);
+  --text:#151615;
+  --muted:#454846;
+  --line:rgba(25,28,26,.27);
+  --soft:rgba(237,239,237,.31);
+  --panel:rgba(238,240,238,.20);
+  --navy:#26384f;
+  --shadow:0 24px 70px rgba(0,0,0,.25);
+}
+body[data-theme="gray"] .dt-overlay{
+  --dt-bg:#8e918f;
+  --dt-card:#b7bab7;
+  --dt-soft:#a7aaa7;
+  --dt-elevated:#c4c6c4;
+  --dt-line:#686c69;
+  --dt-text:#141615;
+  --dt-muted:#3f4441;
+}
+body[data-theme="gray"] .tab.active{
+  color:#fff!important;
+  background:var(--navy)!important;
+}
+
+/* Navy blue: one step darker than v176. */
+body[data-theme="blue"]{
+  --bg1:#101d2d;
+  --bg2:#050d17;
+  --card:#122033;
+  --text:#f3f7fb;
+  --muted:#aebdcd;
+  --line:#344a62;
+  --accent:#739dcc;
+  --navy:#071628;
+  --soft:#1a2e44;
+  --green:#486b5b;
+  --danger:#b95b5b;
+  --shadow:0 24px 70px rgba(0,0,0,.39);
+  --panel:#0e1b2c;
+}
+body[data-theme="blue"] input,
+body[data-theme="blue"] select,
+body[data-theme="blue"] textarea{
+  background:#192d43;color:#f3f7fb;border-color:#3b536c
+}
+body[data-theme="blue"] .dt-overlay{
+  --dt-bg:#050d17;
+  --dt-card:#0e1b2c;
+  --dt-soft:#15283c;
+  --dt-elevated:#12243a;
+  --dt-line:#3c5671;
+  --dt-text:#f4f8fc;
+  --dt-muted:#adbdce;
+  --dt-score:#76a6cb;
+}
+
+/* Matte army green: one step darker than v176. */
+body[data-theme="green"]{
+  --bg1:#505849;
+  --bg2:#282f27;
+  --card:#485043;
+  --text:#f4f2e8;
+  --muted:#c7c9ba;
+  --line:#747b69;
+  --accent:#c8ad68;
+  --navy:#2b3129;
+  --soft:#5d6555;
+  --green:#3e4b3d;
+  --danger:#a95b55;
+  --shadow:0 24px 70px rgba(17,21,16,.39);
+  --panel:#40473c;
+}
+body[data-theme="green"] input,
+body[data-theme="green"] select,
+body[data-theme="green"] textarea{
+  background:#596151;color:#f4f2e8;border-color:#7d846f
+}
+body[data-theme="green"] .dt-overlay{
+  --dt-bg:#293027;
+  --dt-card:#444c40;
+  --dt-soft:#51594a;
+  --dt-elevated:#4a5345;
+  --dt-line:#777f6c;
+  --dt-text:#f6f4ea;
+  --dt-muted:#c7c9bb;
+  --dt-score:#c8ad68;
+}
+
+/* Question text should wrap only when width genuinely requires it.
+   v176 used text-wrap:balance + overflow-wrap:anywhere, which made mobile
+   questions break into extra lines. */
+#question.question,
+.dt-question-card h3{
+  text-wrap:wrap!important;
+  overflow-wrap:normal!important;
+  word-break:normal!important;
+}
+
+/* Mobile: slightly narrower outside frame + slightly less inner padding.
+   This gives the question and answer text more usable width. */
+@media(max-width:640px){
+  body{padding:8px!important}
+  .app{gap:10px!important}
+  .card{border-radius:22px!important}
+  .main{padding:16px 12px!important}
+  .sidecard{padding:16px 12px!important}
+  .header{
+    gap:8px!important;
+    padding-bottom:14px!important;
+    margin-bottom:14px!important;
+  }
+  .logo{
+    font-size:clamp(22px,6.7vw,27px)!important;
+    letter-spacing:.035em!important;
+  }
+  .logo .creator{font-size:9px!important}
+  .logo small{
+    font-size:10px!important;
+    letter-spacing:.12em!important;
+  }
+  .tabs{
+    gap:7px!important;
+    margin-bottom:14px!important;
+  }
+  .tab{
+    min-height:46px!important;
+    padding:9px 7px!important;
+    font-size:12.5px!important;
+    line-height:1.12!important;
+  }
+  .questionbox{
+    padding:14px 12px!important;
+    border-radius:20px!important;
+  }
+  #question.question{
+    max-width:none!important;
+    font-size:clamp(21px,5.8vw,25px)!important;
+    line-height:1.17!important;
+    letter-spacing:-.012em!important;
+  }
+  body.flight-card-mode #question{
+    max-width:none!important;
+  }
+  #hint.hint{
+    font-size:12.5px!important;
+    line-height:1.48!important;
+  }
+  .category{
+    font-size:11.5px!important;
+    margin-bottom:10px!important;
+  }
+  .tag{
+    padding:4px 7px!important;
+    font-size:10.5px!important;
+  }
+  .answer{
+    margin-top:15px!important;
+    padding-top:15px!important;
+  }
+  body.flight-card-mode #suggested{
+    font-size:16px!important;
+    line-height:1.64!important;
+  }
+
+  /* Daily Test gets the same width/wrapping treatment. */
+  .dt-shell{padding-left:7px!important;padding-right:7px!important}
+  .dt-run-panel{padding:12px!important}
+  .dt-question-card{
+    padding:15px 13px!important;
+    border-radius:19px!important;
+  }
+  .dt-question-card h3{
+    font-size:clamp(21px,5.8vw,25px)!important;
+    line-height:1.18!important;
+    letter-spacing:-.01em!important;
+  }
+}
+@media(max-width:390px){
+  body{padding:6px!important}
+  .main,.sidecard{padding-left:10px!important;padding-right:10px!important}
+  .questionbox{padding-left:11px!important;padding-right:11px!important}
+  .dt-shell{padding-left:5px!important;padding-right:5px!important}
+}
+</style>
+
+</head><body data-theme="white"><div class="app"><main class="main card"><div class="header"><div class="logo">TRIUMPH Pilot Trainer v177<span class="creator">created by Ying Chen</span><small>PILOT SELECTION TRAINER</small></div><div class="theme"><button class="chip" data-theme="white">白</button><button class="chip" data-theme="gray">灰</button><button class="chip" data-theme="black">黑</button><button class="chip" data-theme="blue">藍</button><button class="chip" data-theme="green">綠</button><button class="chip timer-quick active" id="timerQuickToggle" type="button" title="開啟／關閉計時" aria-label="開啟／關閉計時" aria-pressed="true">⏰</button></div><div class="badge" id="sessionBadge">Today: 0 questions</div></div>
 <div class="dt-entry-wrap">
   <button type="button" class="dt-entry" id="dailyTestLaunch">
     <span class="dt-entry-icon">✓</span>
@@ -9741,19 +9944,47 @@ That's why I think so.`;
 </script>
 
 
-<script id="v176-final-marker">
+<script id="v177-torque-repair">
 (() => {
-  document.title="TRIUMPH Pilot Trainer v176";
+  const repairs={"槓桿以中心為支點，左側 0.9 m 處有 40 N 向下力。右側 1.5 m 處需要多大的向下力才能平衡？":{"choices":["18 N","24 N","36 N","60 N"],"correct":1,"solution":"【使用公式】轉動平衡：Στ=0，也就是順時針力矩 = 逆時針力矩。單一力的力矩大小 τ=rF（力與力臂垂直時）。\n\n【已知】左側 F₁=40 N、r₁=0.9 m；右側 r₂=1.5 m，求 F₂。\n\n【計算】40×0.9=F₂×1.5 → 36=1.5F₂ → F₂=24 N。\n\n【單位】力矩單位 N·m；最後題目問力，所以答案單位是 N。\n\n【答案】24 N。"},"一個 300 N 的重物位於支點左側 2.0 m。若右側施力為 500 N，應距支點多遠才能維持轉動平衡？":{"choices":["0.8 m","1.0 m","1.2 m","1.5 m"],"correct":2,"solution":"【使用公式】轉動平衡：F₁r₁=F₂r₂。\n\n【已知】F₁=300 N、r₁=2.0 m、F₂=500 N。\n\n【計算】300×2.0=500×r₂ → 600=500r₂ → r₂=1.2 m。\n\n【單位】N×m=N·m；兩側力矩相等。題目問距離，因此答案是 m。\n\n【答案】1.2 m。"},"一個 200 N 重物位於支點左側 1.5 m。右側施加 120 N 的力時，距支點多遠可達平衡？":{"choices":["1.5 m","2.0 m","2.5 m","3.0 m"],"correct":2,"solution":"【使用公式】F₁r₁=F₂r₂。\n\n【計算】200×1.5=120×r₂ → 300=120r₂ → r₂=2.5 m。\n\n【觀念】右側力較小，所以必須使用更長的力臂才能產生相同力矩。\n\n【答案】2.5 m。"},"一個 200 N 重物位於支點左側 1.5 m。若右側施力為 120 N，距支點多遠可達轉動平衡？":{"choices":["1.5 m","2.0 m","2.5 m","3.0 m"],"correct":2,"solution":"【使用公式】轉動平衡：F₁r₁=F₂r₂。\n\n【計算】200×1.5=120×r₂ → r₂=300/120=2.5 m。\n\n【答案檢查】左側力矩=300 N·m；右側=120×2.5=300 N·m，兩側相等。\n\n【答案】2.5 m。"},"一個 300 N 重物位於支點左側 2 m。若右側施力為 500 N，距支點多遠可達轉動平衡？":{"choices":["0.8 m","1.0 m","1.2 m","1.5 m"],"correct":2,"solution":"【使用公式】F₁r₁=F₂r₂。\n\n【計算】300×2=500×r₂ → r₂=600/500=1.2 m。\n\n【答案檢查】300×2=600 N·m；500×1.2=600 N·m。\n\n【答案】1.2 m。"},"一個 150 N 重物位於支點左側 3 m。若右側施力為 225 N，距支點多遠可達轉動平衡？":{"choices":["1.0 m","1.5 m","2.0 m","2.5 m"],"correct":2,"solution":"【使用公式】轉動平衡：Στ=0；因此順時針力矩=逆時針力矩。當力與力臂垂直時，τ=rF。\n\n【已知】左側 150 N、力臂 3 m；右側 225 N、力臂為 r。\n\n【計算】150×3=225×r → 450=225r → r=2.0 m。\n\n【單位】左側力矩 150 N×3 m=450 N·m。右側必須也產生 450 N·m，因此 225 N×2 m=450 N·m。\n\n【答案】2.0 m。"},"一個 400 N 重物位於支點左側 1.2 m。若右側施力為 240 N，距支點多遠可達轉動平衡？":{"choices":["1.2 m","1.5 m","2.0 m","2.4 m"],"correct":2,"solution":"【使用公式】F₁r₁=F₂r₂。\n\n【計算】400×1.2=240×r₂ → 480=240r₂ → r₂=2.0 m。\n\n【答案檢查】兩側力矩皆為 480 N·m。\n\n【答案】2.0 m。"},"一個 250 N 重物位於支點左側 2.4 m。若右側施力為 300 N，距支點多遠可達轉動平衡？":{"choices":["1.5 m","1.8 m","2.0 m","2.4 m"],"correct":2,"solution":"【使用公式】F₁r₁=F₂r₂。\n\n【計算】250×2.4=300×r₂ → 600=300r₂ → r₂=2.0 m。\n\n【答案檢查】250×2.4=600 N·m；300×2.0=600 N·m。\n\n【答案】2.0 m。"}};
+  const norm=v=>String(v??"").normalize("NFKC").replace(/\s+/g," ").trim();
+  let repaired=0;
+  for(const q of bank){
+    if(q.type!=="math_cn")continue;
+    const fix=repairs[norm(q.q)];
+    if(!fix)continue;
+    q.choices=[...fix.choices];
+    q.correct=fix.correct;
+    q.short=q.choices[q.correct];
+    q.s=fix.solution;
+    q.cn="";
+    q.tags=Array.from(new Set([...(q.tags||[]),"v177-torque-corrected"]));
+    repaired++;
+  }
+  window.TRIUMPH_V177_TORQUE_REPAIRED=repaired;
+})();
+</script>
+
+
+<script id="v177-final-marker">
+(() => {
+  document.title="TRIUMPH Pilot Trainer v177";
   const logo=document.querySelector(".logo");
-  if(logo)logo.innerHTML='TRIUMPH Pilot Trainer v176<small>PILOT SELECTION TRAINER</small>';
+  if(logo)logo.innerHTML=
+    'TRIUMPH Pilot Trainer v177'
+    +'<span class="creator">created by Ying Chen</span>'
+    +'<small>PILOT SELECTION TRAINER</small>';
+
   const hint=document.getElementById("hint");
   if(hint)hint.textContent=
-    "v176：Flight Deck Cards 改名 Aviation Quick Cards；新增數理與航空快速小卡；Daily Test TOEIC 倒數加入 Reset，提示音與一般題庫統一；計時鬧鐘啟用時取消黃色底色。";
+    "v177：修正力矩題選項與答案不一致；手機外框與內距縮窄、減少題目不必要換行；新增 created by Ying Chen；灰／藍／綠主題微調。";
 
   const refresh=()=>{try{renderTabs();updateStats();}catch(e){}};
-  if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",refresh,{once:true});
-  else refresh();
-  window.TRIUMPH_V176_STABLE=true;
+  if(document.readyState==="loading"){
+    document.addEventListener("DOMContentLoaded",refresh,{once:true});
+  }else refresh();
+
+  window.TRIUMPH_V177_STABLE=true;
 })();
 </script>
 

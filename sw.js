@@ -1,4 +1,4 @@
-const CACHE="triumph-v176-fast-shell";
+const CACHE="triumph-v177-fast-shell";
 const CORE=["./","./index.html","./triumph-pilot.webmanifest","./triumph-icon-192.png","./triumph-icon-512.png","./triumph-apple-touch-icon.png"];
 self.addEventListener("install",event=>event.waitUntil((async()=>{
   const cache=await caches.open(CACHE);

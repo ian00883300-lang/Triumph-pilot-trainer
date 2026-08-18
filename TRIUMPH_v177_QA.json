@@ -1,0 +1,41 @@
+{
+  "version": "v177",
+  "reported_wrong_question": {
+    "question": "一個 150 N 重物位於支點左側 3 m。若右側施力為 225 N，距支點多遠可達轉動平衡？",
+    "correct_calculation": "150 N × 3 m = 225 N × r -> r = 2.0 m",
+    "correct_choice": "2.0 m",
+    "status": "fixed"
+  },
+  "torque_bank": {
+    "chinese_torque_questions_repaired": 8,
+    "reason": "v173 had a topic-wide distractor override for 力矩平衡; v177 restores question-specific choices and solutions"
+  },
+  "mobile_layout": {
+    "body_padding_max_640": "8px",
+    "body_padding_max_390": "6px",
+    "main_horizontal_padding": "12px (10px on <=390px)",
+    "questionbox_horizontal_padding": "12px (11px on <=390px)",
+    "question_text_wrap": "normal wrap",
+    "text_wrap_balance_removed_by_override": true,
+    "overflow_wrap_anywhere_removed_by_override": true,
+    "mobile_question_font": "clamp(21px, 5.8vw, 25px)"
+  },
+  "branding": {
+    "creator_line": "created by Ying Chen",
+    "location": "directly below TRIUMPH Pilot Trainer title"
+  },
+  "themes": {
+    "gray": "slightly more neutral gray",
+    "blue": "darker navy",
+    "green": "darker matte army green"
+  },
+  "javascript": {
+    "blocks_checked": 69,
+    "syntax_errors": []
+  },
+  "performance": {
+    "fast_cache_strategy_preserved": true,
+    "main_html_mb": 5.51
+  },
+  "sha256": "9c1b1c2aec80b06d4086b5b5d32d346f2a0fb4d1b1ca85e9cb0070ae5bbeb761"
+}
