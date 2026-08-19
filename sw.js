@@ -1,37 +1,58 @@
-const CACHE="triumph-v177-fast-shell";
-const CORE=["./","./index.html","./triumph-pilot.webmanifest","./triumph-icon-192.png","./triumph-icon-512.png","./triumph-apple-touch-icon.png"];
-self.addEventListener("install",event=>event.waitUntil((async()=>{
-  const cache=await caches.open(CACHE);
-  await Promise.allSettled(CORE.map(url=>fetch(new Request(url,{cache:"no-store"})).then(r=>{if(r&&r.ok)return cache.put(url,r.clone());})));
-  await self.skipWaiting();
-})()));
-self.addEventListener("activate",event=>event.waitUntil((async()=>{
-  const keys=await caches.keys();
-  await Promise.all(keys.filter(k=>k!==CACHE).map(k=>caches.delete(k)));
-  await self.clients.claim();
-})()));
-async function nav(request,event){
-  const cache=await caches.open(CACHE);
-  const cached=await cache.match("./index.html")||await cache.match("./")||await cache.match(request,{ignoreSearch:true});
-  const network=fetch(new Request(request,{cache:"no-store"})).then(async r=>{
-    if(r&&r.ok){await cache.put("./index.html",r.clone());await cache.put("./",r.clone());}
-    return r;
-  }).catch(()=>null);
-  event.waitUntil(network);
-  return cached||await network||new Response("Offline",{status:503});
-}
-self.addEventListener("fetch",event=>{
-  const r=event.request;if(r.method!=="GET")return;
-  const u=new URL(r.url);
-  if(r.mode==="navigate"){event.respondWith(nav(r,event));return;}
-  if(u.pathname.endsWith("/version.json")){
-    event.respondWith(fetch(new Request(r,{cache:"no-store"})).catch(()=>caches.match(r,{ignoreSearch:true})));return;
-  }
-  if(u.origin===self.location.origin){
-    event.respondWith((async()=>{
-      const c=await caches.match(r,{ignoreSearch:true});if(c)return c;
-      const x=await fetch(r);if(x&&x.ok){const cache=await caches.open(CACHE);cache.put(r,x.clone());}
-      return x;
-    })());
-  }
+/* TRIUMPH Pilot Trainer v182 service worker
+   Online navigation: network first (bypass browser HTTP cache).
+   Offline fallback: most recently fetched index.html.
+*/
+const CACHE_NAME = 'triumph-pilot-v182';
+const INDEX_FALLBACK = './index.html';
+
+self.addEventListener('install', () => {
+  self.skipWaiting();
+});
+
+self.addEventListener('activate', (event) => {
+  event.waitUntil((async () => {
+    const keys = await caches.keys();
+    const staleKeys = keys.filter(
+      (key) => key.startsWith('triumph-pilot-') && key !== CACHE_NAME
+    );
+    await Promise.all(staleKeys.map((key) => caches.delete(key)));
+    await self.clients.claim();
+
+    // If an older TRIUMPH app-shell cache existed, refresh controlled windows
+    // once so users do not remain on the stale shell that launched this update.
+    if (staleKeys.length) {
+      const clients = await self.clients.matchAll({ type: 'window', includeUncontrolled: true });
+      await Promise.all(clients.map(async (client) => {
+        try { await client.navigate(client.url); } catch (_) {}
+      }));
+    }
+  })());
+});
+
+self.addEventListener('fetch', (event) => {
+  const request = event.request;
+  if (request.method !== 'GET') return;
+
+  const url = new URL(request.url);
+  if (url.origin !== self.location.origin) return;
+
+  const isDocument = request.mode === 'navigate' || request.destination === 'document';
+  if (!isDocument) return;
+
+  event.respondWith((async () => {
+    try {
+      // Bypass both the old service-worker app shell and browser HTTP cache.
+      const response = await fetch(request, { cache: 'no-store' });
+      if (response && response.ok) {
+        const cache = await caches.open(CACHE_NAME);
+        await cache.put(INDEX_FALLBACK, response.clone());
+      }
+      return response;
+    } catch (error) {
+      const cache = await caches.open(CACHE_NAME);
+      const cached = await cache.match(INDEX_FALLBACK);
+      if (cached) return cached;
+      throw error;
+    }
+  })());
 });
