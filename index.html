@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="zh-Hant"><head><meta charset="UTF-8"><title>TRIUMPH Pilot Trainer v178</title><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<!DOCTYPE html><html lang="zh-Hant"><head><meta charset="UTF-8"><title>TRIUMPH Pilot Trainer v181</title><meta name="viewport" content="width=device-width,initial-scale=1.0">
 <meta name="theme-color" content="#0b1c31">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -1101,15 +1101,15 @@ body[data-theme="green"] .dt-overlay{
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="TRIUMPH Pilot">
-<link rel="manifest" href="./triumph-pilot.webmanifest?v=178">
-<link rel="icon" type="image/png" sizes="192x192" href="./triumph-icon-192.png?v=178">
-<link rel="icon" type="image/png" sizes="512x512" href="./triumph-icon-512.png?v=178">
-<link rel="apple-touch-icon" sizes="180x180" href="./triumph-apple-touch-icon.png?v=178">
+<link rel="manifest" href="./triumph-pilot.webmanifest?v=181">
+<link rel="icon" type="image/png" sizes="192x192" href="./triumph-icon-192.png?v=181">
+<link rel="icon" type="image/png" sizes="512x512" href="./triumph-icon-512.png?v=181">
+<link rel="apple-touch-icon" sizes="180x180" href="./triumph-apple-touch-icon.png?v=181">
 
 
-<script id="triumph-v178-cache-bootstrap">
+<script id="triumph-v181-cache-bootstrap">
 (() => {
-  const CURRENT_VERSION = "v178";
+  const CURRENT_VERSION = "v181";
   window.TRIUMPH_CACHE_VERSION = CURRENT_VERSION;
 
   // Fast-open policy:
@@ -1117,7 +1117,7 @@ body[data-theme="green"] .dt-overlay{
   // and refreshes it in the background. No automatic reload/redirect.
   if ("serviceWorker" in navigator) {
     window.addEventListener("load", () => {
-      navigator.serviceWorker.register("./sw.js?v=178", {
+      navigator.serviceWorker.register("./sw.js?v=181", {
         scope: "./",
         updateViaCache: "none"
       }).catch(() => {});
@@ -1400,7 +1400,7 @@ body[data-theme="green"] .dt-overlay{
 }
 </style>
 
-</head><body data-theme="white"><div class="app"><main class="main card"><div class="header"><div class="logo">TRIUMPH Pilot Trainer v178<span class="creator">created by Ying Chen</span><small>PILOT SELECTION TRAINER</small></div><div class="theme"><button class="chip" data-theme="white">白</button><button class="chip" data-theme="gray">灰</button><button class="chip" data-theme="black">黑</button><button class="chip" data-theme="blue">藍</button><button class="chip" data-theme="green">綠</button><button class="chip timer-quick active" id="timerQuickToggle" type="button" title="開啟／關閉計時" aria-label="開啟／關閉計時" aria-pressed="true">⏰</button></div><div class="badge" id="sessionBadge">Today: 0 questions</div></div>
+</head><body data-theme="white"><div class="app"><main class="main card"><div class="header"><div class="logo">TRIUMPH Pilot Trainer v180<span class="creator">created by Ying Chen</span><small>PILOT SELECTION TRAINER</small></div><div class="theme"><button class="chip" data-theme="white">White</button><button class="chip" data-theme="black">Black</button><button class="chip" data-theme="blue">Blue</button><button class="chip" data-theme="green">Green</button><button class="chip timer-quick active" id="timerQuickToggle" type="button" title="開啟／關閉計時" aria-label="開啟／關閉計時" aria-pressed="true">⏰</button></div><div class="badge" id="sessionBadge">Today: 0 questions</div></div>
 <div class="dt-entry-wrap">
   <button type="button" class="dt-entry" id="dailyTestLaunch">
     <span class="dt-entry-icon">✓</span>
@@ -1420,7 +1420,7 @@ body[data-theme="green"] .dt-overlay{
     <span class="ios-switch-state">ON</span><span class="ios-switch-knob"></span>
   </button>
 </div>
-<select id="soundEnabled" hidden aria-hidden="true"><option value="true">開啟提示音</option><option value="false">關閉提示音</option></select><label>提示音音量</label><input type="range" id="soundVolume" min="0" max="150" value="120"><div class="hint" style="font-size:12px">全域音效：題庫倒數、心算倒數與答題、飛行記憶指令完成及任務完成。</div><button class="btn secondary" id="applyDefaultsBtn" style="width:100%;margin-top:10px">套用此題庫預設時間</button><button class="btn memory-launch" id="flightMemoryBtn">✈ 飛行指令記憶訓練</button><button class="btn mental-launch" id="mentalMathBtn">∑ 數學心算 Mental Math</button></section><section class="sidecard card"><h3>Question Bank</h3><div class="stats"><div class="stat"><span>目前題庫</span><b id="currentMode">ALL</b></div><div class="stat"><span>題庫數量</span><b id="bankCount">0</b></div><div class="stat"><span>目前題號</span><b id="currentIndex">-</b></div><div class="stat"><span>已練題數</span><b id="doneCount">0</b></div><div class="stat"><span>收藏題</span><b id="favCount">0</b></div></div><div class="controls"><button class="btn secondary" id="copyBtn">複製題目</button><button class="btn danger" id="clearDataBtn">清除儲存</button></div></section><section class="sidecard card" id="v100Dashboard"><h3>v100 Performance</h3><div class="stats"><div class="stat"><span>答對題數</span><b id="correctCount">0</b></div><div class="stat"><span>答錯題數</span><b id="wrongCount">0</b></div><div class="stat"><span>作答正確率</span><b id="accuracyRate">-</b></div><div class="stat"><span>錯題待複習</span><b id="reviewCount">0</b></div></div><div class="controls"><button class="btn secondary" id="reviewWrongBtn">Review Wrong</button><button class="btn secondary" id="markMasteredBtn">Mark Mastered</button></div></section><section class="sidecard card"><h3>Favorites</h3><div id="favoriteSyncStatus" style="font-size:12px;color:var(--muted);margin:-4px 0 10px">跨版本收藏同步中…</div><div id="favoriteList"></div></section><section class="sidecard card"><h3>Your Notes</h3><textarea id="notes" placeholder="這題的卡點、公式、單字、回答弱點..."></textarea></section></aside></div>
+<select id="soundEnabled" hidden aria-hidden="true"><option value="true">開啟提示音</option><option value="false">關閉提示音</option></select><label>提示音音量 <span aria-hidden="true">🔊</span></label><input type="range" id="soundVolume" min="0" max="150" value="120"><div class="hint" style="font-size:12px">全域音效：題庫倒數、心算倒數與答題、飛行記憶指令完成及任務完成。</div><button class="btn secondary" id="applyDefaultsBtn" style="width:100%;margin-top:10px">套用此題庫預設時間</button><button class="btn memory-launch" id="flightMemoryBtn">✈ 飛行指令記憶訓練</button><button class="btn mental-launch" id="mentalMathBtn">∑ 數學心算 Mental Math</button></section><section class="sidecard card"><h3>Question Bank</h3><div class="stats"><div class="stat"><span>目前題庫</span><b id="currentMode">ALL</b></div><div class="stat"><span>題庫數量</span><b id="bankCount">0</b></div><div class="stat"><span>目前題號</span><b id="currentIndex">-</b></div><div class="stat"><span>已練題數</span><b id="doneCount">0</b></div><div class="stat"><span>收藏題</span><b id="favCount">0</b></div></div><div class="controls"><button class="btn secondary" id="copyBtn">複製題目</button><button class="btn danger" id="clearDataBtn">清除儲存</button></div></section><section class="sidecard card" id="v100Dashboard"><h3>v100 Performance</h3><div class="stats"><div class="stat"><span>答對題數</span><b id="correctCount">0</b></div><div class="stat"><span>答錯題數</span><b id="wrongCount">0</b></div><div class="stat"><span>作答正確率</span><b id="accuracyRate">-</b></div><div class="stat"><span>錯題待複習</span><b id="reviewCount">0</b></div></div><div class="controls"><button class="btn secondary" id="reviewWrongBtn">Review Wrong</button><button class="btn secondary" id="markMasteredBtn">Mark Mastered</button></div></section><section class="sidecard card"><h3>Favorites</h3><div id="favoriteSyncStatus" style="font-size:12px;color:var(--muted);margin:-4px 0 10px">跨版本收藏同步中…</div><div id="favoriteList"></div></section><section class="sidecard card"><h3>Your Notes</h3><textarea id="notes" placeholder="這題的卡點、公式、單字、回答弱點..."></textarea></section></aside></div>
 <script id="v125-global-audio-controller">
 (() => {
   const STORE = "triumph_pc_v100_state";
@@ -1512,6 +1512,7 @@ const cats=[["all","All"],["pilot","Interview EN"],["interview_cn","Interview CN
 const STORE="triumph_pc_v100_state";
 let state={done:0,favs:{},notes:{},mode:"all",theme:"white",difficulty:"all",prep:30,ans:90,soundEnabled:true,soundVolume:120,timerEnabled:true};
 try{state={...state,...JSON.parse(localStorage.getItem(STORE)||"{}")}}catch(e){console.warn(e)}
+if(state.theme==="gray") state.theme="white";
 let current=null,subIndex=0,history=[],prepTimer=null,answerTimer=null,phase=null,paused=false;let prepLeft=30,answerLeft=90,prepTotal=30,answerTotal=90;let audioCtx=null;
 const $=id=>document.getElementById(id);
 function isMathType(t){return t==="math_en"||t==="math_cn";}
@@ -9990,9 +9991,9 @@ That's why I think so.`;
 
 
 
-<style id="v178-mobile-theme-flight-memory-fixes">
+<style id="v179-mobile-theme-flight-memory-fixes">
 /* ================================================================
-   v178 — targeted UI adjustments only.
+   v179 — targeted UI adjustments only.
    Existing question banks, localStorage keys, favorites migration,
    Daily Test logic, timer behavior and GitHub/PWA file structure are
    intentionally left unchanged.
@@ -10253,20 +10254,302 @@ body[data-theme="green"] .dt-overlay{
 }
 </style>
 
-<script id="v178-final-marker">
+<script id="v179-final-marker">
 (() => {
-  document.title="TRIUMPH Pilot Trainer v178";
+  document.title="TRIUMPH Pilot Trainer v179";
   const logo=document.querySelector(".logo");
   if(logo)logo.innerHTML=
-    'TRIUMPH Pilot Trainer v178'
+    'TRIUMPH Pilot Trainer v179'
     +'<span class="creator">created by Ying Chen</span>'
     +'<small>PILOT SELECTION TRAINER</small>';
 
   const hint=document.getElementById("hint");
   if(hint)hint.textContent=
-    "v178：手機計時模式將 Previous／Reset 置中；灰／藍／綠主題再加深；飛行指令記憶訓練標題置中並縮小手機版框架。";
+    "v179：手機計時模式將 Previous／Reset 置中；灰／藍／綠主題再加深；飛行指令記憶訓練標題置中並縮小手機版框架。";
 
   window.TRIUMPH_V178_STABLE=true;
+})();
+</script>
+
+
+<style id="v179-mobile-timer-formula-card-style">
+/* v179: mobile timer-off must hide Start even though the mobile grid uses !important. */
+body.timer-disabled #startPauseBtn{display:none!important}
+
+/* Physics formula cards share the compact flash-card presentation. */
+body.physics-card-mode .questionbox{position:relative}
+body.physics-card-mode #choices,body.physics-card-mode #subqNav{display:none!important}
+body.physics-card-mode #answerBox{border:1.5px solid var(--accent);box-shadow:0 12px 34px rgba(16,31,55,.08)}
+body.physics-card-mode #suggested{font-size:18px;line-height:1.72}
+@media(max-width:640px){
+  body.physics-card-mode #suggested{font-size:16px!important;line-height:1.68!important}
+}
+</style>
+
+<script id="v179-physics-formula-cards-and-mobile-timer-fix">
+(() => {
+  if(typeof bank==='undefined' || !Array.isArray(bank)) return;
+
+  const formulaCards=[{"type":"physics_cards","cat":"PHYSICS FORMULA CARDS","topic":"運動學","q":"平均速率／平均速度怎麼算？","hint":"先自己說出公式、各符號與使用時機，再按「Flip Formula」看背面。每張只抓一個核心關係式。","tags":["v179","formula-card","physics","運動學"],"defaultPrep":5,"defaultAns":55,"prep":5,"ans":55,"s":"<b>公式</b>：平均速率 = 總路程 ÷ 總時間；平均速度 = 位移 ÷ 總時間\n<b>何時用</b>：題目給一段或多段運動，要求整體快慢或整體速度變化。\n<b>符號／單位</b>：路程：實際走過的總路徑長度（m）；位移 Δx：起點到終點的位置改變（m）；時間 t：時間（s）；速率／速度 v：每秒移動量（m/s）。\n<b>應用</b>：走 100 m 再走回 100 m，平均速率不為 0，但總位移為 0，所以平均速度為 0。\n<b>注意</b>：速率是純量；速度具有方向。","short":"平均速率 = 總路程 ÷ 總時間；平均速度 = 位移 ÷ 總時間","cn":""},{"type":"physics_cards","cat":"PHYSICS FORMULA CARDS","topic":"運動學","q":"加速度公式是什麼？","hint":"先自己說出公式、各符號與使用時機，再按「Flip Formula」看背面。每張只抓一個核心關係式。","tags":["v179","formula-card","physics","運動學"],"defaultPrep":5,"defaultAns":55,"prep":5,"ans":55,"s":"<b>公式</b>：a = Δv / Δt = (v − u) / t\n<b>何時用</b>：速度在一段時間內改變，要求加速度。\n<b>符號／單位</b>：a：加速度（m/s²）；u：初速度（m/s）；v：末速度（m/s）；t：時間（s）。\n<b>應用</b>：速度由 10 m/s 增至 20 m/s，若花 5 s，a = 2 m/s²。\n<b>注意</b>：負加速度不一定代表減速，要看速度方向。","short":"a = Δv / Δt = (v − u) / t","cn":""},{"type":"physics_cards","cat":"PHYSICS FORMULA CARDS","topic":"等加速度","q":"v = u + at 什麼時候用？","hint":"先自己說出公式、各符號與使用時機，再按「Flip Formula」看背面。每張只抓一個核心關係式。","tags":["v179","formula-card","physics","等加速度"],"defaultPrep":5,"defaultAns":55,"prep":5,"ans":55,"s":"<b>公式</b>：v = u + at\n<b>何時用</b>：等加速度直線運動，已知初速、加速度、時間，求末速；或反推其他量。\n<b>符號／單位</b>：u：初速度（m/s）；v：末速度（m/s）；a：加速度（m/s²）；t：時間（s）。\n<b>應用</b>：汽車由 5 m/s 以 2 m/s² 加速 4 s，v = 13 m/s。\n<b>注意</b>：只適用於加速度為常數的區間。","short":"v = u + at","cn":""},{"type":"physics_cards","cat":"PHYSICS FORMULA CARDS","topic":"等加速度","q":"s = ut + ½at² 什麼時候用？","hint":"先自己說出公式、各符號與使用時機，再按「Flip Formula」看背面。每張只抓一個核心關係式。","tags":["v179","formula-card","physics","等加速度"],"defaultPrep":5,"defaultAns":55,"prep":5,"ans":55,"s":"<b>公式</b>：s = ut + ½at²\n<b>何時用</b>：等加速度運動，已知初速、加速度與時間，要求位移。\n<b>符號／單位</b>：s：位移（m）；u：初速度（m/s）；a：加速度（m/s²）；t：時間（s）。\n<b>應用</b>：由靜止以 3 m/s² 加速 4 s，s = 24 m。\n<b>注意</b>：s 是位移；若題目問路程，要確認是否曾改變方向。","short":"s = ut + ½at²","cn":""},{"type":"physics_cards","cat":"PHYSICS FORMULA CARDS","topic":"等加速度","q":"v² = u² + 2as 什麼時候最好用？","hint":"先自己說出公式、各符號與使用時機，再按「Flip Formula」看背面。每張只抓一個核心關係式。","tags":["v179","formula-card","physics","等加速度"],"defaultPrep":5,"defaultAns":55,"prep":5,"ans":55,"s":"<b>公式</b>：v² = u² + 2as\n<b>何時用</b>：等加速度運動，而且題目沒有時間 t；常用於煞車距離、落下速度。\n<b>符號／單位</b>：u：初速度（m/s）；v：末速度（m/s）；a：加速度（m/s²）；s：位移（m）。\n<b>應用</b>：已知初速與煞車減速度，可直接求停止距離。\n<b>注意</b>：先選定正方向，減速時 a 常為負值。","short":"v² = u² + 2as","cn":""},{"type":"physics_cards","cat":"PHYSICS FORMULA CARDS","topic":"等加速度","q":"s = (u + v)t / 2 的意義是什麼？","hint":"先自己說出公式、各符號與使用時機，再按「Flip Formula」看背面。每張只抓一個核心關係式。","tags":["v179","formula-card","physics","等加速度"],"defaultPrep":5,"defaultAns":55,"prep":5,"ans":55,"s":"<b>公式</b>：s = ((u + v) / 2)t\n<b>何時用</b>：等加速度運動；平均速度等於初、末速度平均值。\n<b>符號／單位</b>：s：位移（m）；u：初速度（m/s）；v：末速度（m/s）；t：時間（s）。\n<b>應用</b>：速度由 10 增至 20 m/s，持續 6 s，位移 = 15×6 = 90 m。\n<b>注意</b>：這個平均值關係建立在加速度為常數。","short":"s = ((u + v) / 2)t","cn":""},{"type":"physics_cards","cat":"PHYSICS FORMULA CARDS","topic":"自由落體","q":"自由落體由靜止開始的核心公式？","hint":"先自己說出公式、各符號與使用時機，再按「Flip Formula」看背面。每張只抓一個核心關係式。","tags":["v179","formula-card","physics","自由落體"],"defaultPrep":5,"defaultAns":55,"prep":5,"ans":55,"s":"<b>公式</b>：v = gt；h = ½gt²；v² = 2gh\n<b>何時用</b>：忽略空氣阻力、物體由靜止自由落下。\n<b>符號／單位</b>：g：重力加速度（m/s²）；h：落下高度／位移（m）；t：時間（s）；v：速度（m/s）。\n<b>應用</b>：落下 20 m、取 g=10，可由 v=√(2gh)=20 m/s。\n<b>注意</b>：若有初速度，改用一般等加速度公式。","short":"v = gt；h = ½gt²；v² = 2gh","cn":""},{"type":"physics_cards","cat":"PHYSICS FORMULA CARDS","topic":"拋體運動","q":"斜拋運動如何把初速度分解？","hint":"先自己說出公式、各符號與使用時機，再按「Flip Formula」看背面。每張只抓一個核心關係式。","tags":["v179","formula-card","physics","拋體運動"],"defaultPrep":5,"defaultAns":55,"prep":5,"ans":55,"s":"<b>公式</b>：uₓ = u cosθ；uᵧ = u sinθ\n<b>何時用</b>：斜向拋射，把水平與垂直方向分開處理。\n<b>符號／單位</b>：u：初速度（m/s）；uₓ：水平初速度（m/s）；uᵧ：垂直初速度（m/s）；θ：發射角（° 或 rad）。\n<b>應用</b>：水平向通常 aₓ=0；垂直向 aᵧ=−g，再分別套用運動公式。\n<b>注意</b>：忽略空氣阻力時，水平與垂直運動可獨立分析。","short":"uₓ = u cosθ；uᵧ = u sinθ","cn":""},{"type":"physics_cards","cat":"PHYSICS FORMULA CARDS","topic":"力學","q":"牛頓第二定律公式？","hint":"先自己說出公式、各符號與使用時機，再按「Flip Formula」看背面。每張只抓一個核心關係式。","tags":["v179","formula-card","physics","力學"],"defaultPrep":5,"defaultAns":55,"prep":5,"ans":55,"s":"<b>公式</b>：ΣF = ma\n<b>何時用</b>：已知物體所受合力，求加速度；或由加速度反推合力。\n<b>符號／單位</b>：ΣF：合力（N）；m：質量（kg）；a：加速度（m/s²）。\n<b>應用</b>：10 kg 物體受到 30 N 淨力，a = 3 m/s²。\n<b>注意</b>：一定要用「合力」而不是任一單獨作用力。","short":"ΣF = ma","cn":""},{"type":"physics_cards","cat":"PHYSICS FORMULA CARDS","topic":"力學","q":"重量怎麼算？","hint":"先自己說出公式、各符號與使用時機，再按「Flip Formula」看背面。每張只抓一個核心關係式。","tags":["v179","formula-card","physics","力學"],"defaultPrep":5,"defaultAns":55,"prep":5,"ans":55,"s":"<b>公式</b>：F_g = mg\n<b>何時用</b>：求物體受到的重力。\n<b>符號／單位</b>：F_g：重量／重力（N）；m：質量（kg）；g：重力加速度（m/s²）。\n<b>應用</b>：60 kg 人在 g=10 m/s² 時重量約 600 N。\n<b>注意</b>：質量 kg 與重量 N 不同。","short":"F_g = mg","cn":""},{"type":"physics_cards","cat":"PHYSICS FORMULA CARDS","topic":"摩擦力","q":"摩擦力公式怎麼用？","hint":"先自己說出公式、各符號與使用時機，再按「Flip Formula」看背面。每張只抓一個核心關係式。","tags":["v179","formula-card","physics","摩擦力"],"defaultPrep":5,"defaultAns":55,"prep":5,"ans":55,"s":"<b>公式</b>：動摩擦 f_k = μ_kN；最大靜摩擦 f_s,max = μ_sN\n<b>何時用</b>：接觸面有摩擦，且已知摩擦係數與正向力。\n<b>符號／單位</b>：f_k：動摩擦力（N）；f_s,max：最大靜摩擦力（N）；μ_k、μ_s：摩擦係數（無單位）；N：正向力（N）。\n<b>應用</b>：水平面上若 N=100 N、μ_k=0.2，動摩擦力為 20 N。\n<b>注意</b>：靜摩擦實際值可小於 μ_sN，只有「最大靜摩擦」等於 μ_sN。","short":"動摩擦 f_k = μ_kN；最大靜摩擦 f_s,max = μ_sN","cn":""},{"type":"physics_cards","cat":"PHYSICS FORMULA CARDS","topic":"彈簧","q":"胡克定律是什麼？","hint":"先自己說出公式、各符號與使用時機，再按「Flip Formula」看背面。每張只抓一個核心關係式。","tags":["v179","formula-card","physics","彈簧"],"defaultPrep":5,"defaultAns":55,"prep":5,"ans":55,"s":"<b>公式</b>：F = kx\n<b>何時用</b>：彈簧在彈性限度內被拉伸或壓縮。\n<b>符號／單位</b>：F：彈簧力大小（N）；k：彈簧常數（N/m）；x：伸長或壓縮量（m）。\n<b>應用</b>：k=200 N/m 的彈簧拉長 0.10 m，需要 20 N。\n<b>注意</b>：方向上恢復力與位移相反，向量常寫 F = −kx。","short":"F = kx","cn":""},{"type":"physics_cards","cat":"PHYSICS FORMULA CARDS","topic":"動量","q":"動量公式與單位？","hint":"先自己說出公式、各符號與使用時機，再按「Flip Formula」看背面。每張只抓一個核心關係式。","tags":["v179","formula-card","physics","動量"],"defaultPrep":5,"defaultAns":55,"prep":5,"ans":55,"s":"<b>公式</b>：p = mv\n<b>何時用</b>：物體運動、碰撞或衝量問題，先表示單一物體的動量。\n<b>符號／單位</b>：p：動量（kg·m/s）；m：質量（kg）；v：速度（m/s）。\n<b>應用</b>：2 kg 物體以 5 m/s 向右，動量為 10 kg·m/s 向右。\n<b>注意</b>：動量有方向，計算前先定正方向。","short":"p = mv","cn":""},{"type":"physics_cards","cat":"PHYSICS FORMULA CARDS","topic":"衝量","q":"衝量與動量改變的關係？","hint":"先自己說出公式、各符號與使用時機，再按「Flip Formula」看背面。每張只抓一個核心關係式。","tags":["v179","formula-card","physics","衝量"],"defaultPrep":5,"defaultAns":55,"prep":5,"ans":55,"s":"<b>公式</b>：J = FΔt = Δp\n<b>何時用</b>：力作用一段時間，要求速度／動量改變；碰撞也常使用。\n<b>符號／單位</b>：J：衝量（N·s = kg·m/s）；F：平均力（N）；Δt：作用時間（s）；Δp：動量改變（kg·m/s）。\n<b>應用</b>：平均力 100 N 作用 0.2 s，衝量為 20 N·s。\n<b>注意</b>：FΔt 使用平均力；若力隨時間變化，衝量是 F–t 圖下面積。","short":"J = FΔt = Δp","cn":""},{"type":"physics_cards","cat":"PHYSICS FORMULA CARDS","topic":"動量守恆","q":"碰撞時的動量守恆怎麼寫？","hint":"先自己說出公式、各符號與使用時機，再按「Flip Formula」看背面。每張只抓一個核心關係式。","tags":["v179","formula-card","physics","動量守恆"],"defaultPrep":5,"defaultAns":55,"prep":5,"ans":55,"s":"<b>公式</b>：Σp_before = Σp_after\n<b>何時用</b>：碰撞／爆炸期間外力衝量可忽略。\n<b>符號／單位</b>：p：動量（kg·m/s）；m：質量（kg）；u：碰撞前速度（m/s）；v：碰撞後速度（m/s）。\n<b>應用</b>：兩物體黏在一起：m₁u₁ + m₂u₂ = (m₁+m₂)v。\n<b>注意</b>：完全非彈性碰撞仍守恆動量，但動能通常不守恆。","short":"Σp_before = Σp_after","cn":""},{"type":"physics_cards","cat":"PHYSICS FORMULA CARDS","topic":"功與能","q":"功的公式？","hint":"先自己說出公式、各符號與使用時機，再按「Flip Formula」看背面。每張只抓一個核心關係式。","tags":["v179","formula-card","physics","功與能"],"defaultPrep":5,"defaultAns":55,"prep":5,"ans":55,"s":"<b>公式</b>：W = Fs cosθ\n<b>何時用</b>：恆力作用造成位移，求該力做的功。\n<b>符號／單位</b>：W：功（J）；F：力（N）；s：位移（m）；θ：力與位移夾角（° 或 rad）。\n<b>應用</b>：力與位移同方向 θ=0°，W=Fs；垂直時 θ=90°，功為 0。\n<b>注意</b>：功可正、負或 0。","short":"W = Fs cosθ","cn":""},{"type":"physics_cards","cat":"PHYSICS FORMULA CARDS","topic":"功率","q":"功率常用哪兩個公式？","hint":"先自己說出公式、各符號與使用時機，再按「Flip Formula」看背面。每張只抓一個核心關係式。","tags":["v179","formula-card","physics","功率"],"defaultPrep":5,"defaultAns":55,"prep":5,"ans":55,"s":"<b>公式</b>：P = W/t；若力與速度同方向，P = Fv\n<b>何時用</b>：求做功快慢；或穩定拉／升物體時由力與速度求功率。\n<b>符號／單位</b>：P：功率（W）；W：功（J）；t：時間（s）；F：力（N）；v：速度（m/s）。\n<b>應用</b>：4000 N 的力以 1 m/s 穩定提升，功率 4000 W。\n<b>注意</b>：P=Fv 一般形式為 P = F·v。","short":"P = W/t；若力與速度同方向，P = Fv","cn":""},{"type":"physics_cards","cat":"PHYSICS FORMULA CARDS","topic":"動能","q":"動能公式？","hint":"先自己說出公式、各符號與使用時機，再按「Flip Formula」看背面。每張只抓一個核心關係式。","tags":["v179","formula-card","physics","動能"],"defaultPrep":5,"defaultAns":55,"prep":5,"ans":55,"s":"<b>公式</b>：K = ½mv²\n<b>何時用</b>：已知質量與速率，求運動能量；常搭配功—動能或能量守恆。\n<b>符號／單位</b>：K：動能（J）；m：質量（kg）；v：速率（m/s）。\n<b>應用</b>：速度加倍時，動能變為 4 倍。\n<b>注意</b>：動能只看速率平方，沒有方向正負。","short":"K = ½mv²","cn":""},{"type":"physics_cards","cat":"PHYSICS FORMULA CARDS","topic":"位能","q":"近地面重力位能公式？","hint":"先自己說出公式、各符號與使用時機，再按「Flip Formula」看背面。每張只抓一個核心關係式。","tags":["v179","formula-card","physics","位能"],"defaultPrep":5,"defaultAns":55,"prep":5,"ans":55,"s":"<b>公式</b>：U_g = mgh\n<b>何時用</b>：高度變化不大、g 可視為常數時求重力位能變化。\n<b>符號／單位</b>：U_g：重力位能（J）；m：質量（kg）；g：重力加速度（m/s²）；h：相對基準高度（m）。\n<b>應用</b>：2 kg 物體升高 5 m、g=10，位能增加 100 J。\n<b>注意</b>：真正重要的是位能差 ΔU，零位準可自行選定。","short":"U_g = mgh","cn":""},{"type":"physics_cards","cat":"PHYSICS FORMULA CARDS","topic":"彈性位能","q":"彈簧儲存的能量？","hint":"先自己說出公式、各符號與使用時機，再按「Flip Formula」看背面。每張只抓一個核心關係式。","tags":["v179","formula-card","physics","彈性位能"],"defaultPrep":5,"defaultAns":55,"prep":5,"ans":55,"s":"<b>公式</b>：U_s = ½kx²\n<b>何時用</b>：理想彈簧被壓縮或拉伸，求彈性位能。\n<b>符號／單位</b>：U_s：彈性位能（J）；k：彈簧常數（N/m）；x：伸長或壓縮量（m）。\n<b>應用</b>：k=200 N/m、x=0.30 m，U=9 J。\n<b>注意</b>：需在胡克定律適用的彈性範圍內。","short":"U_s = ½kx²","cn":""},{"type":"physics_cards","cat":"PHYSICS FORMULA CARDS","topic":"能量守恆","q":"機械能守恆怎麼寫？","hint":"先自己說出公式、各符號與使用時機，再按「Flip Formula」看背面。每張只抓一個核心關係式。","tags":["v179","formula-card","physics","能量守恆"],"defaultPrep":5,"defaultAns":55,"prep":5,"ans":55,"s":"<b>公式</b>：K₁ + U₁ = K₂ + U₂\n<b>何時用</b>：只有保守力做功，或可忽略摩擦／阻力時。\n<b>符號／單位</b>：E_mech：機械能（J）；K：動能（J）；U：位能（J）。\n<b>應用</b>：無摩擦下落：mgh = ½mv²。\n<b>注意</b>：有摩擦時不能直接令機械能相等，應加入非保守力做功或能量損失。","short":"K₁ + U₁ = K₂ + U₂","cn":""},{"type":"physics_cards","cat":"PHYSICS FORMULA CARDS","topic":"效率","q":"效率公式？","hint":"先自己說出公式、各符號與使用時機，再按「Flip Formula」看背面。每張只抓一個核心關係式。","tags":["v179","formula-card","physics","效率"],"defaultPrep":5,"defaultAns":55,"prep":5,"ans":55,"s":"<b>公式</b>：η = E_out/E_in = P_out/P_in\n<b>何時用</b>：機械、電器或能量轉換問題，求有效輸出占輸入比例。\n<b>符號／單位</b>：η：效率（無單位，常寫成 %）；E_out：有效輸出能量（J）；E_in：輸入能量（J）；也可用功率比計算。\n<b>應用</b>：輸入 5000 W、效率 80%，有效輸出 4000 W。\n<b>注意</b>：效率小於或等於 100%。","short":"η = E_out/E_in = P_out/P_in","cn":""},{"type":"physics_cards","cat":"PHYSICS FORMULA CARDS","topic":"圓周運動","q":"向心加速度公式？","hint":"先自己說出公式、各符號與使用時機，再按「Flip Formula」看背面。每張只抓一個核心關係式。","tags":["v179","formula-card","physics","圓周運動"],"defaultPrep":5,"defaultAns":55,"prep":5,"ans":55,"s":"<b>公式</b>：a_c = v²/r\n<b>何時用</b>：物體沿圓周運動，求指向圓心的加速度。\n<b>符號／單位</b>：a_c：向心加速度（m/s²）；v：切線速率（m/s）；r：圓周半徑（m）。\n<b>應用</b>：速度加倍時，向心加速度變 4 倍。\n<b>注意</b>：向心加速度改變的是速度方向，即使速率不變仍有加速度。","short":"a_c = v²/r","cn":""},{"type":"physics_cards","cat":"PHYSICS FORMULA CARDS","topic":"圓周運動","q":"向心力公式？","hint":"先自己說出公式、各符號與使用時機，再按「Flip Formula」看背面。每張只抓一個核心關係式。","tags":["v179","formula-card","physics","圓周運動"],"defaultPrep":5,"defaultAns":55,"prep":5,"ans":55,"s":"<b>公式</b>：F_c = mv²/r\n<b>何時用</b>：求維持圓周運動所需的「合向心力」。\n<b>符號／單位</b>：F_c：向心力／徑向合力（N）；m：質量（kg）；v：切線速率（m/s）；r：半徑（m）。\n<b>應用</b>：水平轉彎時，實際提供向心力的可能是摩擦力或升力的水平分量。\n<b>注意</b>：向心力不是額外新增的一種力，而是指向圓心的合力。","short":"F_c = mv²/r","cn":""},{"type":"physics_cards","cat":"PHYSICS FORMULA CARDS","topic":"角運動","q":"角速度與線速度關係？","hint":"先自己說出公式、各符號與使用時機，再按「Flip Formula」看背面。每張只抓一個核心關係式。","tags":["v179","formula-card","physics","角運動"],"defaultPrep":5,"defaultAns":55,"prep":5,"ans":55,"s":"<b>公式</b>：ω = 2π/T = 2πf；v = ωr\n<b>何時用</b>：週期、頻率、角速度或圓周線速度互換。\n<b>符號／單位</b>：v：切線速率（m/s）；ω：角速度（rad/s）；r：半徑（m）。\n<b>應用</b>：同一剛體轉動時 ω 相同，但半徑越大，線速度 v 越大。\n<b>注意</b>：弧度 rad 在量綱上可視為無單位。","short":"ω = 2π/T = 2πf；v = ωr","cn":""},{"type":"physics_cards","cat":"PHYSICS FORMULA CARDS","topic":"力矩","q":"力矩公式？","hint":"先自己說出公式、各符號與使用時機，再按「Flip Formula」看背面。每張只抓一個核心關係式。","tags":["v179","formula-card","physics","力矩"],"defaultPrep":5,"defaultAns":55,"prep":5,"ans":55,"s":"<b>公式</b>：τ = rF sinθ\n<b>何時用</b>：力使物體繞支點轉動，求轉動效果。\n<b>符號／單位</b>：τ：力矩（N·m）；r：力臂／位置向量長度（m）；F：力（N）；θ：r 與 F 的夾角（° 或 rad）。\n<b>應用</b>：門把離鉸鏈越遠，同樣的力產生越大力矩。\n<b>注意</b>：N·m 是力矩單位，雖形式相同但概念上不要把它當成能量 J。","short":"τ = rF sinθ","cn":""},{"type":"physics_cards","cat":"PHYSICS FORMULA CARDS","topic":"靜力平衡","q":"物體靜止平衡要滿足什麼？","hint":"先自己說出公式、各符號與使用時機，再按「Flip Formula」看背面。每張只抓一個核心關係式。","tags":["v179","formula-card","physics","靜力平衡"],"defaultPrep":5,"defaultAns":55,"prep":5,"ans":55,"s":"<b>公式</b>：ΣF = 0；Στ = 0\n<b>何時用</b>：剛體保持靜止或無線加速度、無角加速度。\n<b>符號／單位</b>：ΣF：合力（N）；Στ：合力矩（N·m）。靜力平衡時兩者都必須為 0。\n<b>應用</b>：槓桿題通常先選支點，使未知支點力的力矩為 0，再列 Στ=0。\n<b>注意</b>：平移平衡與轉動平衡要同時成立。","short":"ΣF = 0；Στ = 0","cn":""},{"type":"physics_cards","cat":"PHYSICS FORMULA CARDS","topic":"角動量","q":"角動量守恆公式與單位？","hint":"先自己說出公式、各符號與使用時機，再按「Flip Formula」看背面。每張只抓一個核心關係式。","tags":["v179","formula-card","physics","角動量"],"defaultPrep":5,"defaultAns":55,"prep":5,"ans":55,"s":"<b>公式</b>：L = Iω；若外力矩≈0，I₁ω₁ = I₂ω₂\n<b>何時用</b>：轉動系統外力矩可忽略，例如旋轉者收手臂。\n<b>符號／單位</b>：L：角動量（kg·m²/s）；I：轉動慣量（kg·m²）；ω：角速度（rad/s）。\n<b>應用</b>：I 變小時，為保持 L 不變，ω 會增大。\n<b>注意</b>：守恆條件是系統所受外力矩近似為 0。","short":"L = Iω；若外力矩≈0，I₁ω₁ = I₂ω₂","cn":""},{"type":"physics_cards","cat":"PHYSICS FORMULA CARDS","topic":"流體","q":"密度公式？","hint":"先自己說出公式、各符號與使用時機，再按「Flip Formula」看背面。每張只抓一個核心關係式。","tags":["v179","formula-card","physics","流體"],"defaultPrep":5,"defaultAns":55,"prep":5,"ans":55,"s":"<b>公式</b>：ρ = m/V\n<b>何時用</b>：已知質量與體積，求物質密度；浮沉題也常先算密度。\n<b>符號／單位</b>：ρ：密度（kg/m³）；m：質量（kg）；V：體積（m³）。\n<b>應用</b>：物體平均密度小於液體密度時，通常能浮在液面。\n<b>注意</b>：單位換算常是失分點：1 g/cm³ = 1000 kg/m³。","short":"ρ = m/V","cn":""},{"type":"physics_cards","cat":"PHYSICS FORMULA CARDS","topic":"流體","q":"壓力公式？","hint":"先自己說出公式、各符號與使用時機，再按「Flip Formula」看背面。每張只抓一個核心關係式。","tags":["v179","formula-card","physics","流體"],"defaultPrep":5,"defaultAns":55,"prep":5,"ans":55,"s":"<b>公式</b>：P = F/A\n<b>何時用</b>：力均勻作用在面積上，求壓力。\n<b>符號／單位</b>：P：壓力（Pa = N/m²）；F：垂直作用力（N）；A：受力面積（m²）。\n<b>應用</b>：同樣的力作用在更小面積上，壓力更大。\n<b>注意</b>：A 必須換成 m² 才能得到 Pa。","short":"P = F/A","cn":""},{"type":"physics_cards","cat":"PHYSICS FORMULA CARDS","topic":"流體","q":"液體深度造成的壓差？","hint":"先自己說出公式、各符號與使用時機，再按「Flip Formula」看背面。每張只抓一個核心關係式。","tags":["v179","formula-card","physics","流體"],"defaultPrep":5,"defaultAns":55,"prep":5,"ans":55,"s":"<b>公式</b>：ΔP = ρgh\n<b>何時用</b>：靜止液體中兩個不同深度的壓力差。\n<b>符號／單位</b>：ΔP：壓力差（Pa）；ρ：液體密度（kg/m³）；g：重力加速度（m/s²）；h：深度差（m）。\n<b>應用</b>：水中每增加約 10 m 深度，壓力約增加 1 個大氣壓量級。\n<b>注意</b>：若求絕對壓力，要再加液面上方壓力。","short":"ΔP = ρgh","cn":""},{"type":"physics_cards","cat":"PHYSICS FORMULA CARDS","topic":"浮力","q":"阿基米德浮力公式？","hint":"先自己說出公式、各符號與使用時機，再按「Flip Formula」看背面。每張只抓一個核心關係式。","tags":["v179","formula-card","physics","浮力"],"defaultPrep":5,"defaultAns":55,"prep":5,"ans":55,"s":"<b>公式</b>：F_b = ρ_fluid g V_displaced\n<b>何時用</b>：物體浸入流體，求受到的浮力。\n<b>符號／單位</b>：F_b：浮力（N）；ρ_fluid：流體密度（kg/m³）；g：重力加速度（m/s²）；V_displaced：排開流體體積（m³）。\n<b>應用</b>：物體完全浸沒時，排開體積等於物體浸入體積。\n<b>注意</b>：浮力等於「排開流體的重量」，不是物體本身重量。","short":"F_b = ρ_fluid g V_displaced","cn":""},{"type":"physics_cards","cat":"PHYSICS FORMULA CARDS","topic":"液壓","q":"帕斯卡原理的液壓公式？","hint":"先自己說出公式、各符號與使用時機，再按「Flip Formula」看背面。每張只抓一個核心關係式。","tags":["v179","formula-card","physics","液壓"],"defaultPrep":5,"defaultAns":55,"prep":5,"ans":55,"s":"<b>公式</b>：F₁/A₁ = F₂/A₂\n<b>何時用</b>：液壓千斤頂、活塞放大力。\n<b>符號／單位</b>：F₁、F₂：兩端活塞受力（N）；A₁、A₂：兩端活塞面積（m²）。\n<b>應用</b>：大活塞面積為小活塞 10 倍，理想情況輸出力可為 10 倍。\n<b>注意</b>：理想系統放大力會交換成較短位移：A₁d₁=A₂d₂。","short":"F₁/A₁ = F₂/A₂","cn":""},{"type":"physics_cards","cat":"PHYSICS FORMULA CARDS","topic":"流體連續","q":"連續方程式？","hint":"先自己說出公式、各符號與使用時機，再按「Flip Formula」看背面。每張只抓一個核心關係式。","tags":["v179","formula-card","physics","流體連續"],"defaultPrep":5,"defaultAns":55,"prep":5,"ans":55,"s":"<b>公式</b>：A₁v₁ = A₂v₂\n<b>何時用</b>：穩定、不可壓縮流體在不同截面流動。\n<b>符號／單位</b>：A：管道截面積（m²）；v：流速（m/s）；Av：體積流率（m³/s）。\n<b>應用</b>：管徑變小時，流速必須增加。\n<b>注意</b>：若流體可壓縮，需要用質量流率 ρAv。","short":"A₁v₁ = A₂v₂","cn":""},{"type":"physics_cards","cat":"PHYSICS FORMULA CARDS","topic":"伯努力","q":"伯努力方程式？","hint":"先自己說出公式、各符號與使用時機，再按「Flip Formula」看背面。每張只抓一個核心關係式。","tags":["v179","formula-card","physics","伯努力"],"defaultPrep":5,"defaultAns":55,"prep":5,"ans":55,"s":"<b>公式</b>：P + ½ρv² + ρgh = constant\n<b>何時用</b>：理想、穩定、不可壓縮、近似無黏性流體沿流線流動。\n<b>符號／單位</b>：P：靜壓（Pa）；ρ：流體密度（kg/m³）；v：流速（m/s）；g：重力加速度（m/s²）；h：高度（m）。\n<b>應用</b>：同高度下若流速增加，靜壓常降低。\n<b>注意</b>：實際流體有黏滯與損失時要額外考慮能量損失。","short":"P + ½ρv² + ρgh = constant","cn":""},{"type":"physics_cards","cat":"PHYSICS FORMULA CARDS","topic":"熱學","q":"顯熱公式 Q = mcΔT 怎麼用？","hint":"先自己說出公式、各符號與使用時機，再按「Flip Formula」看背面。每張只抓一個核心關係式。","tags":["v179","formula-card","physics","熱學"],"defaultPrep":5,"defaultAns":55,"prep":5,"ans":55,"s":"<b>公式</b>：Q = mcΔT\n<b>何時用</b>：物質沒有發生相變，只改變溫度。\n<b>符號／單位</b>：Q：熱量（J）；m：質量（kg）；c：比熱容（J/(kg·°C) 或 J/(kg·K)）；ΔT：溫度變化（°C 或 K）。\n<b>應用</b>：同質量下，比熱 c 越大，同樣升溫所需熱量越多。\n<b>注意</b>：此式不適用於正在熔化或沸騰的相變過程。","short":"Q = mcΔT","cn":""},{"type":"physics_cards","cat":"PHYSICS FORMULA CARDS","topic":"熱學","q":"相變潛熱公式？","hint":"先自己說出公式、各符號與使用時機，再按「Flip Formula」看背面。每張只抓一個核心關係式。","tags":["v179","formula-card","physics","熱學"],"defaultPrep":5,"defaultAns":55,"prep":5,"ans":55,"s":"<b>公式</b>：Q = mL\n<b>何時用</b>：熔化、凝固、汽化、液化等相變且溫度近似不變。\n<b>符號／單位</b>：Q：相變吸收或放出的熱量（J）；m：質量（kg）；L：潛熱（J/kg）。\n<b>應用</b>：沸水繼續吸熱時可汽化，但溫度不一定繼續上升。\n<b>注意</b>：不同相變使用不同潛熱 L。","short":"Q = mL","cn":""},{"type":"physics_cards","cat":"PHYSICS FORMULA CARDS","topic":"熱平衡","q":"兩物體混合後的熱平衡怎麼列？","hint":"先自己說出公式、各符號與使用時機，再按「Flip Formula」看背面。每張只抓一個核心關係式。","tags":["v179","formula-card","physics","熱平衡"],"defaultPrep":5,"defaultAns":55,"prep":5,"ans":55,"s":"<b>公式</b>：ΣQ = 0；常見：m₁c₁(T₁−T_f)=m₂c₂(T_f−T₂)\n<b>何時用</b>：隔熱近似下，熱物體放出的熱 = 冷物體吸收的熱。\n<b>符號／單位</b>：Q：熱量（J）；m：質量（kg）；c：比熱容（J/(kg·°C)）；T：溫度（°C 或 K）；T_f：平衡後溫度。\n<b>應用</b>：熱水與冷水混合，若無相變與熱損失，可用此式求末溫。\n<b>注意</b>：先判斷誰放熱、誰吸熱；末溫通常介於兩初溫之間。","short":"ΣQ = 0；常見：m₁c₁(T₁−T_f)=m₂c₂(T_f−T₂)","cn":""},{"type":"physics_cards","cat":"PHYSICS FORMULA CARDS","topic":"熱膨脹","q":"線膨脹公式？","hint":"先自己說出公式、各符號與使用時機，再按「Flip Formula」看背面。每張只抓一個核心關係式。","tags":["v179","formula-card","physics","熱膨脹"],"defaultPrep":5,"defaultAns":55,"prep":5,"ans":55,"s":"<b>公式</b>：ΔL = αL₀ΔT\n<b>何時用</b>：固體因溫度改變產生小幅長度變化。\n<b>符號／單位</b>：ΔL：長度改變量（m）；α：線膨脹係數（1/°C 或 1/K）；L₀：原長（m）；ΔT：溫度變化（°C 或 K）。\n<b>應用</b>：金屬橋梁、鐵軌需預留熱膨脹空間。\n<b>注意</b>：此為小變化線性近似。","short":"ΔL = αL₀ΔT","cn":""},{"type":"physics_cards","cat":"PHYSICS FORMULA CARDS","topic":"氣體","q":"理想氣體／綜合氣體定律怎麼用？","hint":"先自己說出公式、各符號與使用時機，再按「Flip Formula」看背面。每張只抓一個核心關係式。","tags":["v179","formula-card","physics","氣體"],"defaultPrep":5,"defaultAns":55,"prep":5,"ans":55,"s":"<b>公式</b>：PV = nRT；定量氣體可用 P₁V₁/T₁ = P₂V₂/T₂\n<b>何時用</b>：氣體壓力、體積、絕對溫度之間的關係。\n<b>符號／單位</b>：P：氣體壓力（Pa）；V：體積（m³）；n：莫耳數（mol）；R：理想氣體常數 8.314 J/(mol·K)；T：絕對溫度（K）。\n<b>應用</b>：密閉定量氣體升溫，若體積固定，壓力會增加。\n<b>注意</b>：氣體公式中的溫度一定要換成 Kelvin。","short":"PV = nRT；定量氣體可用 P₁V₁/T₁ = P₂V₂/T₂","cn":""},{"type":"physics_cards","cat":"PHYSICS FORMULA CARDS","topic":"波動","q":"波速、頻率、波長的公式？","hint":"先自己說出公式、各符號與使用時機，再按「Flip Formula」看背面。每張只抓一個核心關係式。","tags":["v179","formula-card","physics","波動"],"defaultPrep":5,"defaultAns":55,"prep":5,"ans":55,"s":"<b>公式</b>：v = fλ\n<b>何時用</b>：任何週期波的速度、頻率、波長互換。\n<b>符號／單位</b>：v：波速（m/s）；f：頻率（Hz）；λ：波長（m）。\n<b>應用</b>：若波速固定，頻率加倍，波長變一半。\n<b>注意</b>：波跨介質時頻率由波源決定，通常不變；速度與波長會改變。","short":"v = fλ","cn":""},{"type":"physics_cards","cat":"PHYSICS FORMULA CARDS","topic":"波動","q":"週期與頻率關係？","hint":"先自己說出公式、各符號與使用時機，再按「Flip Formula」看背面。每張只抓一個核心關係式。","tags":["v179","formula-card","physics","波動"],"defaultPrep":5,"defaultAns":55,"prep":5,"ans":55,"s":"<b>公式</b>：T = 1/f；f = 1/T\n<b>何時用</b>：週期與每秒振動次數互換。\n<b>符號／單位</b>：T：週期／完成一次振動所需時間（s）；f：頻率／每秒振動次數（Hz = s⁻¹）。\n<b>應用</b>：80 Hz 的波，週期 T = 1/80 = 0.0125 s。\n<b>注意</b>：頻率越高，週期越短。","short":"T = 1/f；f = 1/T","cn":""},{"type":"physics_cards","cat":"PHYSICS FORMULA CARDS","topic":"聲波","q":"回音測距為什麼要除以 2？","hint":"先自己說出公式、各符號與使用時機，再按「Flip Formula」看背面。每張只抓一個核心關係式。","tags":["v179","formula-card","physics","聲波"],"defaultPrep":5,"defaultAns":55,"prep":5,"ans":55,"s":"<b>公式</b>：d = vt/2\n<b>何時用</b>：聲音發出後反射回來，量測往返時間。\n<b>符號／單位</b>：d：單程距離（m）；v：波速／聲速（m/s）；t：量測到的往返時間（s）。\n<b>應用</b>：聲速 340 m/s，回音 2 s 後回來，距離 = 340 m。\n<b>注意</b>：量到的是來回時間，所以單程距離必須除以 2。","short":"d = vt/2","cn":""},{"type":"physics_cards","cat":"PHYSICS FORMULA CARDS","topic":"光學","q":"針孔成像的大小比例？","hint":"先自己說出公式、各符號與使用時機，再按「Flip Formula」看背面。每張只抓一個核心關係式。","tags":["v179","formula-card","physics","光學"],"defaultPrep":5,"defaultAns":55,"prep":5,"ans":55,"s":"<b>公式</b>：h_i/h_o = d_i/d_o\n<b>何時用</b>：針孔成像用相似三角形求像高、物高或距離。\n<b>符號／單位</b>：h_i：像高；h_o：物高；d_i：像距；d_o：物距；四者使用一致的長度單位（如 cm 或 m）。\n<b>應用</b>：物高 6 cm、物距 30 cm、像距 15 cm，像高 3 cm。\n<b>注意</b>：這是針孔相似三角形，不是薄透鏡公式。","short":"h_i/h_o = d_i/d_o","cn":""},{"type":"physics_cards","cat":"PHYSICS FORMULA CARDS","topic":"電學","q":"電流與電量關係？","hint":"先自己說出公式、各符號與使用時機，再按「Flip Formula」看背面。每張只抓一個核心關係式。","tags":["v179","formula-card","physics","電學"],"defaultPrep":5,"defaultAns":55,"prep":5,"ans":55,"s":"<b>公式</b>：I = Q/t；因此 Q = It\n<b>何時用</b>：一段時間內有多少電荷通過導體截面。\n<b>符號／單位</b>：I：電流（A，安培）；Q：電量（C，庫侖）；t：時間（s）。\n<b>應用</b>：2 A 電流持續 5 s，通過電量 10 C。\n<b>注意</b>：電流方向依傳統正電荷方向定義。","short":"I = Q/t；因此 Q = It","cn":""},{"type":"physics_cards","cat":"PHYSICS FORMULA CARDS","topic":"電學","q":"歐姆定律？","hint":"先自己說出公式、各符號與使用時機，再按「Flip Formula」看背面。每張只抓一個核心關係式。","tags":["v179","formula-card","physics","電學"],"defaultPrep":5,"defaultAns":55,"prep":5,"ans":55,"s":"<b>公式</b>：V = IR\n<b>何時用</b>：歐姆性電阻在狀態近似不變時，電壓、電流、電阻互換。\n<b>符號／單位</b>：V：電壓（V，伏特）；I：電流（A，安培）；R：電阻（Ω，歐姆）。\n<b>應用</b>：12 V 加在 6 Ω 電阻上，I = 2 A。\n<b>注意</b>：非歐姆元件或溫度大幅改變時，R 不一定固定。","short":"V = IR","cn":""},{"type":"physics_cards","cat":"PHYSICS FORMULA CARDS","topic":"電路","q":"串聯與並聯的等效電阻？","hint":"先自己說出公式、各符號與使用時機，再按「Flip Formula」看背面。每張只抓一個核心關係式。","tags":["v179","formula-card","physics","電路"],"defaultPrep":5,"defaultAns":55,"prep":5,"ans":55,"s":"<b>公式</b>：串聯：R_eq = R₁+R₂+…；並聯：1/R_eq = 1/R₁+1/R₂+…\n<b>何時用</b>：簡化多電阻電路。\n<b>符號／單位</b>：R_eq：等效電阻（Ω）；R₁、R₂…：各電阻（Ω）。\n<b>應用</b>：兩個 6 Ω 並聯，等效電阻為 3 Ω。\n<b>注意</b>：串聯電流相同；並聯各支路電壓相同。","short":"串聯：R_eq = R₁+R₂+…；並聯：1/R_eq = 1/R₁+1/R₂+…","cn":""},{"type":"physics_cards","cat":"PHYSICS FORMULA CARDS","topic":"電功率","q":"電功率有哪些等價公式？","hint":"先自己說出公式、各符號與使用時機，再按「Flip Formula」看背面。每張只抓一個核心關係式。","tags":["v179","formula-card","physics","電功率"],"defaultPrep":5,"defaultAns":55,"prep":5,"ans":55,"s":"<b>公式</b>：P = VI = I²R = V²/R\n<b>何時用</b>：電阻性電路求功率，依已知量選最方便形式。\n<b>符號／單位</b>：P：電功率（W，瓦特）；V：電壓（V，伏特）；I：電流（A，安培）；R：電阻（Ω，歐姆）。\n<b>應用</b>：12 V、2 A 負載功率 P=24 W。\n<b>注意</b>：I²R 與 V²/R 是由歐姆定律推得，適用於電阻性負載。","short":"P = VI = I²R = V²/R","cn":""},{"type":"physics_cards","cat":"PHYSICS FORMULA CARDS","topic":"電能","q":"電能公式？","hint":"先自己說出公式、各符號與使用時機，再按「Flip Formula」看背面。每張只抓一個核心關係式。","tags":["v179","formula-card","physics","電能"],"defaultPrep":5,"defaultAns":55,"prep":5,"ans":55,"s":"<b>公式</b>：E = Pt = VIt\n<b>何時用</b>：電器在一段時間內消耗或轉換多少電能。\n<b>符號／單位</b>：E：電能（J，焦耳；家用電常用 kWh）；P：功率（W）；t：時間（s 或 h，須與能量單位配合）；V：電壓（V）；I：電流（A）。\n<b>應用</b>：1000 W 電器使用 2 h = 2 kWh。\n<b>注意</b>：1 kWh = 3.6×10⁶ J。","short":"E = Pt = VIt","cn":""},{"type":"physics_cards","cat":"PHYSICS FORMULA CARDS","topic":"電熱","q":"焦耳熱公式？","hint":"先自己說出公式、各符號與使用時機，再按「Flip Formula」看背面。每張只抓一個核心關係式。","tags":["v179","formula-card","physics","電熱"],"defaultPrep":5,"defaultAns":55,"prep":5,"ans":55,"s":"<b>公式</b>：Q = I²Rt\n<b>何時用</b>：電流通過電阻產生熱量。\n<b>符號／單位</b>：Q：產生的熱量（J）；I：電流（A）；R：電阻（Ω）；t：時間（s）。\n<b>應用</b>：電流加倍、其他相同時，產熱量變 4 倍。\n<b>注意</b>：若已知電功率，也可用 Q=Pt。","short":"Q = I²Rt","cn":""}];
+  const norm=s=>String(s||'').normalize('NFKC').toLowerCase().replace(/\s+/g,' ').trim();
+  const existing=new Set(bank.filter(q=>q?.type==='physics_cards').map(q=>norm(q.q)));
+  let added=0;
+  for(const q of formulaCards){
+    if(existing.has(norm(q.q))) continue;
+    bank.push(q); existing.add(norm(q.q)); added++;
+  }
+
+  if(typeof cats!=='undefined' && !cats.some(x=>x[0]==='physics_cards')){
+    const favIndex=cats.findIndex(x=>x[0]==='favorites');
+    cats.splice(favIndex>=0?favIndex:cats.length,0,['physics_cards','Physics Formula Cards']);
+  }
+  const modeSelect=document.getElementById('modeSelect');
+  if(modeSelect && ![...modeSelect.options].some(o=>o.value==='physics_cards')){
+    const opt=document.createElement('option');
+    opt.value='physics_cards'; opt.textContent='Physics Formula Cards';
+    const fav=[...modeSelect.options].find(o=>o.value==='favorites');
+    modeSelect.insertBefore(opt,fav||null);
+  }
+
+  // Keep flash-card timing consistent with Aviation Quick Cards.
+  const prevDefaults=getDefaultForMode;
+  getDefaultForMode=function(mode){
+    if(mode==='physics_cards') return [5,55];
+    return prevDefaults(mode);
+  };
+
+  // Robust timer-off state. The v178 phone control grid uses display:flex!important,
+  // so an explicit body state is required to hide Start on phones as well as desktop.
+  const prevSetTimerUI=setTimerEnabledUI;
+  setTimerEnabledUI=function(){
+    prevSetTimerUI();
+    const enabled=document.getElementById('timerEnabled')?.value==='true';
+    document.body.classList.toggle('timer-disabled',!enabled);
+  };
+
+  const prevLoad=loadQuestion;
+  loadQuestion=function(item,push=true){
+    prevLoad(item,push);
+    const isFormula=item?.type==='physics_cards';
+    const isQuick=isFormula || item?.type==='flight_cards';
+    document.body.classList.toggle('flight-card-mode',isQuick);
+    document.body.classList.toggle('physics-card-mode',isFormula);
+    const sh=document.getElementById('suggestedHeading');
+    const ch=document.getElementById('chineseHeading');
+    const cp=document.getElementById('chinese');
+    const label=document.getElementById('answerLabel');
+    if(isFormula){
+      if(sh) sh.textContent='Formula / 公式與應用';
+      if(ch) ch.style.display='none';
+      if(cp) cp.style.display='none';
+      if(label) label.textContent='REVIEW TIME';
+    }
+  };
+
+  const prevShow=showAnswer;
+  showAnswer=function(show){
+    prevShow(show);
+    if(current?.type==='physics_cards'){
+      const btn=document.getElementById('showBtn');
+      const box=document.getElementById('answerBox');
+      if(btn) btn.textContent=(box?.style.display==='block')?'Hide Back':'Flip Formula';
+    }
+  };
+
+  // Apply the mobile timer state before the first user interaction.
+  const syncTimerState=()=>{
+    const enabled=document.getElementById('timerEnabled')?.value==='true';
+    document.body.classList.toggle('timer-disabled',!enabled);
+  };
+  document.getElementById('timerEnabled')?.addEventListener('change',syncTimerState);
+  document.addEventListener('DOMContentLoaded',()=>{
+    syncTimerState();
+    try{renderTabs();updateStats();}catch(e){}
+  });
+
+  document.title='TRIUMPH Pilot Trainer v179';
+  const logo=document.querySelector('.logo');
+  if(logo) logo.innerHTML='TRIUMPH Pilot Trainer v179<span class="creator">created by Ying Chen</span><small>PILOT SELECTION TRAINER</small>';
+  const hint=document.getElementById('hint');
+  if(hint) hint.textContent='v179：修正手機關閉計時後 Start 仍顯示；新增 50 張 Physics Formula Cards，使用翻牌方式複習物理公式、單位、使用時機與應用。';
+  window.TRIUMPH_V179_QA={version:'v179',physicsFormulaCards:bank.filter(q=>q?.type==='physics_cards').length,added,timerMobileFix:true};
+})();
+</script>
+
+
+<style id="v180-theme-formula-audio-style">
+/* v180 — remove gray from the selectable palette; deepen blue and green. */
+body[data-theme="blue"]{
+  --bg1:#07111c;--bg2:#01050a;--card:#0a1522;--text:#f3f7fb;--muted:#9fb0c2;
+  --line:#263b51;--accent:#668ebc;--navy:#020b15;--soft:#102236;--green:#3b574b;
+  --danger:#a24f4f;--shadow:0 24px 70px rgba(0,0,0,.52);--panel:#071321;
+}
+body[data-theme="blue"] input,body[data-theme="blue"] select,body[data-theme="blue"] textarea{
+  background:#0f2134;color:#f3f7fb;border-color:#2c455f
+}
+body[data-theme="blue"] .dt-overlay{
+  --dt-bg:#01050a;--dt-card:#071321;--dt-soft:#0c1c2e;--dt-elevated:#0a192a;
+  --dt-line:#2c4863;--dt-text:#f4f8fc;--dt-muted:#a0b2c5;--dt-score:#6894ba;
+}
+body[data-theme="green"]{
+  --bg1:#323b31;--bg2:#151b15;--card:#2c352b;--text:#f3f1e7;--muted:#b8beaf;
+  --line:#566151;--accent:#b79d5d;--navy:#1c231c;--soft:#3a4638;--green:#2d392d;
+  --danger:#944e49;--shadow:0 24px 70px rgba(7,10,7,.54);--panel:#273026;
+}
+body[data-theme="green"] input,body[data-theme="green"] select,body[data-theme="green"] textarea{
+  background:#354133;color:#f3f1e7;border-color:#5f6b59
+}
+body[data-theme="green"] .dt-overlay{
+  --dt-bg:#151b15;--dt-card:#293228;--dt-soft:#333e31;--dt-elevated:#2d382c;
+  --dt-line:#5b6855;--dt-text:#f6f4ea;--dt-muted:#b9c0b0;--dt-score:#b79d5d;
+}
+/* English theme labels stay compact enough for portrait phones. */
+@media(max-width:640px){
+  .theme{gap:6px!important;flex-wrap:nowrap!important;width:100%!important}
+  .theme .chip{padding:9px 8px!important;font-size:11.5px!important;min-width:0!important;flex:1 1 0!important}
+  .theme .timer-quick{flex:0 0 46px!important;min-width:46px!important}
+}
+/* Formula cards contain mixed Math + Physics content from v180 onward. */
+body.physics-card-mode #suggested{font-size:18px;line-height:1.74}
+body.physics-card-mode #suggested b{color:var(--accent)}
+@media(max-width:640px){body.physics-card-mode #suggested{font-size:16px!important;line-height:1.7!important}}
+</style>
+
+
+<script id="v180-math-physics-formula-and-theme-update">
+(() => {
+  if(typeof bank==='undefined' || !Array.isArray(bank)) return;
+  const mathCards=[{"type":"physics_cards","cat":"MATH FORMULA CARDS","topic":"百分比","q":"百分比增加／減少怎麼快速算？","hint":"先自己說出公式、各符號與使用時機，再按「Flip Formula」看背面。每張只抓一個核心關係式。","tags":["v180","formula-card","math","百分比"],"defaultPrep":5,"defaultAns":55,"prep":5,"ans":55,"s":"<b>公式</b>：新值 = 原值 × (1 ± r)\n<b>何時用</b>：題目說增加或減少某百分比，直接用倍率一次完成。\n<b>符號／單位</b>：r：變動率（小數，例如 15% = 0.15）；原值、新值：單位與題目相同。\n<b>應用</b>：100 增加 20% → 100×1.2 = 120；減少 20% → 100×0.8 = 80。\n<b>注意</b>：增加 r 用 1+r；減少 r 用 1−r。","short":"新值 = 原值 × (1 ± r)","cn":""},{"type":"physics_cards","cat":"MATH FORMULA CARDS","topic":"百分比","q":"已知變動後數值，怎麼反推原值？","hint":"先自己說出公式、各符號與使用時機，再按「Flip Formula」看背面。每張只抓一個核心關係式。","tags":["v180","formula-card","math","百分比"],"defaultPrep":5,"defaultAns":55,"prep":5,"ans":55,"s":"<b>公式</b>：原值 = 新值 ÷ (1 ± r)\n<b>何時用</b>：題目給「增加／減少後」的結果，要倒推變動前數值。\n<b>符號／單位</b>：r：變動率（小數）；原值、新值：單位與題目相同。\n<b>應用</b>：某數增加 25% 後為 150，原值 = 150÷1.25 = 120。\n<b>注意</b>：不能直接用新值減掉 25%；百分比是以原值為基準。","short":"原值 = 新值 ÷ (1 ± r)","cn":""},{"type":"physics_cards","cat":"MATH FORMULA CARDS","topic":"比與比例","q":"比例式 a:b = c:d 怎麼解？","hint":"先自己說出公式、各符號與使用時機，再按「Flip Formula」看背面。每張只抓一個核心關係式。","tags":["v180","formula-card","math","比與比例"],"defaultPrep":5,"defaultAns":55,"prep":5,"ans":55,"s":"<b>公式</b>：a/b = c/d ⇒ ad = bc\n<b>何時用</b>：兩組比例相等、求未知數時使用交叉相乘。\n<b>符號／單位</b>：a、b、c、d：比例中的數值，可有相同或可換算單位。\n<b>應用</b>：3:5 = x:20 → 3×20 = 5x → x=12。\n<b>注意</b>：先確保兩邊比較的是同一種量。","short":"a/b = c/d ⇒ ad = bc","cn":""},{"type":"physics_cards","cat":"MATH FORMULA CARDS","topic":"比例","q":"正比關係的公式？","hint":"先自己說出公式、各符號與使用時機，再按「Flip Formula」看背面。每張只抓一個核心關係式。","tags":["v180","formula-card","math","比例"],"defaultPrep":5,"defaultAns":55,"prep":5,"ans":55,"s":"<b>公式</b>：y = kx\n<b>何時用</b>：y 隨 x 按固定倍率變化，且圖形通過原點。\n<b>符號／單位</b>：x、y：互相關聯的量；k：比例常數，單位為 y 單位 ÷ x 單位。\n<b>應用</b>：若 4 kg 售價 200 元，k=50 元/kg，7 kg 售價 350 元。\n<b>注意</b>：正比不是一般直線 y=mx+b；正比必須 b=0。","short":"y = kx","cn":""},{"type":"physics_cards","cat":"MATH FORMULA CARDS","topic":"比例","q":"反比關係的公式？","hint":"先自己說出公式、各符號與使用時機，再按「Flip Formula」看背面。每張只抓一個核心關係式。","tags":["v180","formula-card","math","比例"],"defaultPrep":5,"defaultAns":55,"prep":5,"ans":55,"s":"<b>公式</b>：y = k/x，亦即 xy = k\n<b>何時用</b>：一個量變大時另一個按反比例變小，乘積保持固定。\n<b>符號／單位</b>：x、y：互為反比的量；k：反比常數，單位為 x 單位 × y 單位。\n<b>應用</b>：固定距離下，速度加倍，所需時間變一半。\n<b>注意</b>：確認乘積是否固定，而不是只看到一增一減就判定反比。","short":"y = k/x，亦即 xy = k","cn":""},{"type":"physics_cards","cat":"MATH FORMULA CARDS","topic":"平均","q":"算術平均數公式？","hint":"先自己說出公式、各符號與使用時機，再按「Flip Formula」看背面。每張只抓一個核心關係式。","tags":["v180","formula-card","math","平均"],"defaultPrep":5,"defaultAns":55,"prep":5,"ans":55,"s":"<b>公式</b>：x̄ = (x₁+x₂+…+xₙ)/n\n<b>何時用</b>：多個等權重數值求平均。\n<b>符號／單位</b>：x̄：平均值；x₁…xₙ：各資料值；n：資料個數。平均值單位與原資料相同。\n<b>應用</b>：80、90、100 的平均 = 270/3 = 90。\n<b>注意</b>：若各項權重不同，要改用加權平均。","short":"x̄ = (x₁+x₂+…+xₙ)/n","cn":""},{"type":"physics_cards","cat":"MATH FORMULA CARDS","topic":"平均","q":"加權平均怎麼算？","hint":"先自己說出公式、各符號與使用時機，再按「Flip Formula」看背面。每張只抓一個核心關係式。","tags":["v180","formula-card","math","平均"],"defaultPrep":5,"defaultAns":55,"prep":5,"ans":55,"s":"<b>公式</b>：x̄ = Σ(wᵢxᵢ) / Σwᵢ\n<b>何時用</b>：成績、價格、比例等各項重要程度不同時。\n<b>符號／單位</b>：xᵢ：各數值；wᵢ：權重；Σ：加總。平均值單位與 xᵢ 相同。\n<b>應用</b>：期中 40%、期末 60%，成績 80 與 90 → 0.4×80+0.6×90=86。\n<b>注意</b>：權重可用百分比或比例，但分母要與權重表示方式一致。","short":"x̄ = Σ(wᵢxᵢ) / Σwᵢ","cn":""},{"type":"physics_cards","cat":"MATH FORMULA CARDS","topic":"濃度","q":"百分濃度怎麼算？","hint":"先自己說出公式、各符號與使用時機，再按「Flip Formula」看背面。每張只抓一個核心關係式。","tags":["v180","formula-card","math","濃度"],"defaultPrep":5,"defaultAns":55,"prep":5,"ans":55,"s":"<b>公式</b>：濃度(%) = 溶質量 / 溶液總量 × 100%\n<b>何時用</b>：混合液、鹽水、酒精濃度等問題。\n<b>符號／單位</b>：溶質量：要追蹤的成分；溶液總量：全部混合物；兩者單位需一致。\n<b>應用</b>：20 g 鹽加入 180 g 水，總量 200 g，濃度 = 10%。\n<b>注意</b>：分母是溶液總量，不是只有溶劑。","short":"濃度(%) = 溶質量 / 溶液總量 × 100%","cn":""},{"type":"physics_cards","cat":"MATH FORMULA CARDS","topic":"速率","q":"距離、速度、時間的核心關係？","hint":"先自己說出公式、各符號與使用時機，再按「Flip Formula」看背面。每張只抓一個核心關係式。","tags":["v180","formula-card","math","速率"],"defaultPrep":5,"defaultAns":55,"prep":5,"ans":55,"s":"<b>公式</b>：d = vt；v = d/t；t = d/v\n<b>何時用</b>：等速運動或平均速度已知時，三者互換。\n<b>符號／單位</b>：d：距離（m、km、NM 等）；v：速度（m/s、km/h、kt 等）；t：時間（s、h 等）。\n<b>應用</b>：120 km 以 60 km/h 行駛，t=2 h。\n<b>注意</b>：距離與速度的單位必須和時間相容。","short":"d = vt；v = d/t；t = d/v","cn":""},{"type":"physics_cards","cat":"MATH FORMULA CARDS","topic":"工作率","q":"多人合作的工作率怎麼加？","hint":"先自己說出公式、各符號與使用時機，再按「Flip Formula」看背面。每張只抓一個核心關係式。","tags":["v180","formula-card","math","工作率"],"defaultPrep":5,"defaultAns":55,"prep":5,"ans":55,"s":"<b>公式</b>：1/T = 1/T₁ + 1/T₂ + …\n<b>何時用</b>：兩人或多台機器同時完成同一工作，求合做時間。\n<b>符號／單位</b>：T：合做時間；T₁、T₂：各自單獨完成時間；時間單位需一致。\n<b>應用</b>：A 6 小時、B 3 小時完成，合做率=1/6+1/3=1/2，所以 T=2 小時。\n<b>注意</b>：加的是「每單位時間完成多少工作」，不是直接相加完成時間。","short":"1/T = 1/T₁ + 1/T₂ + …","cn":""},{"type":"physics_cards","cat":"MATH FORMULA CARDS","topic":"一次方程式","q":"ax + b = c 怎麼解？","hint":"先自己說出公式、各符號與使用時機，再按「Flip Formula」看背面。每張只抓一個核心關係式。","tags":["v180","formula-card","math","一次方程式"],"defaultPrep":5,"defaultAns":55,"prep":5,"ans":55,"s":"<b>公式</b>：x = (c − b)/a，a ≠ 0\n<b>何時用</b>：單一未知數的一次方程式。\n<b>符號／單位</b>：x：未知數；a：x 的係數；b、c：常數。\n<b>應用</b>：3x+5=20 → x=(20−5)/3=5。\n<b>注意</b>：移項本質是等式兩邊做相同運算。","short":"x = (c − b)/a，a ≠ 0","cn":""},{"type":"physics_cards","cat":"MATH FORMULA CARDS","topic":"座標","q":"兩點斜率公式？","hint":"先自己說出公式、各符號與使用時機，再按「Flip Formula」看背面。每張只抓一個核心關係式。","tags":["v180","formula-card","math","座標"],"defaultPrep":5,"defaultAns":55,"prep":5,"ans":55,"s":"<b>公式</b>：m = (y₂ − y₁)/(x₂ − x₁)\n<b>何時用</b>：已知直線上兩點，求直線傾斜程度。\n<b>符號／單位</b>：m：斜率（y 單位 / x 單位）；(x₁,y₁)、(x₂,y₂)：兩點座標。\n<b>應用</b>：(1,2) 到 (4,8)，m=(8−2)/(4−1)=2。\n<b>注意</b>：若 x₂=x₁，分母為 0，直線為垂直線，斜率不存在。","short":"m = (y₂ − y₁)/(x₂ − x₁)","cn":""},{"type":"physics_cards","cat":"MATH FORMULA CARDS","topic":"直線","q":"斜截式 y = mx + b 各代表什麼？","hint":"先自己說出公式、各符號與使用時機，再按「Flip Formula」看背面。每張只抓一個核心關係式。","tags":["v180","formula-card","math","直線"],"defaultPrep":5,"defaultAns":55,"prep":5,"ans":55,"s":"<b>公式</b>：y = mx + b\n<b>何時用</b>：已知斜率與 y 截距，或要快速描述一條非垂直直線。\n<b>符號／單位</b>：m：斜率；b：y 截距；x、y：座標變數。\n<b>應用</b>：y=2x+3 表示斜率 2，通過 (0,3)。\n<b>注意</b>：b 是 x=0 時的 y 值，不是 x 截距。","short":"y = mx + b","cn":""},{"type":"physics_cards","cat":"MATH FORMULA CARDS","topic":"直線","q":"點斜式什麼時候最好用？","hint":"先自己說出公式、各符號與使用時機，再按「Flip Formula」看背面。每張只抓一個核心關係式。","tags":["v180","formula-card","math","直線"],"defaultPrep":5,"defaultAns":55,"prep":5,"ans":55,"s":"<b>公式</b>：y − y₁ = m(x − x₁)\n<b>何時用</b>：已知一個點與斜率，要寫出直線方程式。\n<b>符號／單位</b>：m：斜率；(x₁,y₁)：已知點；x、y：任意點座標。\n<b>應用</b>：斜率 3 且通過 (2,5)：y−5=3(x−2)。\n<b>注意</b>：代入已知點時要保留括號與正負號。","short":"y − y₁ = m(x − x₁)","cn":""},{"type":"physics_cards","cat":"MATH FORMULA CARDS","topic":"座標","q":"兩點中點公式？","hint":"先自己說出公式、各符號與使用時機，再按「Flip Formula」看背面。每張只抓一個核心關係式。","tags":["v180","formula-card","math","座標"],"defaultPrep":5,"defaultAns":55,"prep":5,"ans":55,"s":"<b>公式</b>：M = ((x₁+x₂)/2, (y₁+y₂)/2)\n<b>何時用</b>：求線段正中央位置。\n<b>符號／單位</b>：M：中點；x₁,y₁,x₂,y₂：端點座標。\n<b>應用</b>：(2,4) 與 (8,10) 的中點為 (5,7)。\n<b>注意</b>：x 座標與 y 座標要分開平均。","short":"M = ((x₁+x₂)/2, (y₁+y₂)/2)","cn":""},{"type":"physics_cards","cat":"MATH FORMULA CARDS","topic":"座標","q":"平面兩點距離公式？","hint":"先自己說出公式、各符號與使用時機，再按「Flip Formula」看背面。每張只抓一個核心關係式。","tags":["v180","formula-card","math","座標"],"defaultPrep":5,"defaultAns":55,"prep":5,"ans":55,"s":"<b>公式</b>：d = √[(x₂−x₁)² + (y₂−y₁)²]\n<b>何時用</b>：求座標平面上兩點的直線距離。\n<b>符號／單位</b>：d：距離；x、y：座標。d 的單位與座標單位相同。\n<b>應用</b>：(0,0) 到 (3,4) 的距離 = 5。\n<b>注意</b>：本質是把水平差與垂直差套入畢氏定理。","short":"d = √[(x₂−x₁)² + (y₂−y₁)²]","cn":""},{"type":"physics_cards","cat":"MATH FORMULA CARDS","topic":"二次方程式","q":"二次公式？","hint":"先自己說出公式、各符號與使用時機，再按「Flip Formula」看背面。每張只抓一個核心關係式。","tags":["v180","formula-card","math","二次方程式"],"defaultPrep":5,"defaultAns":55,"prep":5,"ans":55,"s":"<b>公式</b>：x = [−b ± √(b²−4ac)] / (2a)\n<b>何時用</b>：ax²+bx+c=0 無法方便因式分解時求根。\n<b>符號／單位</b>：a、b、c：二次式係數（a≠0）；x：未知數。\n<b>應用</b>：x²−5x+6=0 → x=(5±1)/2 → 2 或 3。\n<b>注意</b>：整個分子都要除以 2a，最常見失誤是漏括號。","short":"x = [−b ± √(b²−4ac)] / (2a)","cn":""},{"type":"physics_cards","cat":"MATH FORMULA CARDS","topic":"二次方程式","q":"判別式怎麼判斷根的數量？","hint":"先自己說出公式、各符號與使用時機，再按「Flip Formula」看背面。每張只抓一個核心關係式。","tags":["v180","formula-card","math","二次方程式"],"defaultPrep":5,"defaultAns":55,"prep":5,"ans":55,"s":"<b>公式</b>：Δ = b² − 4ac\n<b>何時用</b>：不必完整解方程式，先判斷實根情況。\n<b>符號／單位</b>：Δ：判別式；a、b、c：ax²+bx+c 的係數。\n<b>應用</b>：Δ>0 有兩相異實根；Δ=0 有一重根；Δ<0 無實根。\n<b>注意</b>：題目若只問根的性質，不需要繼續套二次公式。","short":"Δ = b² − 4ac","cn":""},{"type":"physics_cards","cat":"MATH FORMULA CARDS","topic":"二次函數","q":"拋物線頂點的 x 座標？","hint":"先自己說出公式、各符號與使用時機，再按「Flip Formula」看背面。每張只抓一個核心關係式。","tags":["v180","formula-card","math","二次函數"],"defaultPrep":5,"defaultAns":55,"prep":5,"ans":55,"s":"<b>公式</b>：x_v = −b/(2a)\n<b>何時用</b>：y=ax²+bx+c 求最大／最小值位置。\n<b>符號／單位</b>：x_v：頂點 x 座標；a、b：二次函數係數。\n<b>應用</b>：y=x²−6x+5，頂點 x=3，再代回求 y。\n<b>注意</b>：a>0 開口向上有最小值；a<0 開口向下有最大值。","short":"x_v = −b/(2a)","cn":""},{"type":"physics_cards","cat":"MATH FORMULA CARDS","topic":"二次方程式","q":"兩根和與積（韋達定理）？","hint":"先自己說出公式、各符號與使用時機，再按「Flip Formula」看背面。每張只抓一個核心關係式。","tags":["v180","formula-card","math","二次方程式"],"defaultPrep":5,"defaultAns":55,"prep":5,"ans":55,"s":"<b>公式</b>：若 ax²+bx+c=0 的根為 α、β：α+β=−b/a；αβ=c/a\n<b>何時用</b>：知道二次式係數，快速求根的和、積或反推係數。\n<b>符號／單位</b>：α、β：兩根；a、b、c：二次式係數。\n<b>應用</b>：2x²−5x+3=0，兩根和=5/2，積=3/2。\n<b>注意</b>：只適用於以 ax²+bx+c=0 形式表示的二次方程式。","short":"若 ax²+bx+c=0 的根為 α、β：α+β=−b/a；αβ=c/a","cn":""},{"type":"physics_cards","cat":"MATH FORMULA CARDS","topic":"指數","q":"同底數相乘的指數律？","hint":"先自己說出公式、各符號與使用時機，再按「Flip Formula」看背面。每張只抓一個核心關係式。","tags":["v180","formula-card","math","指數"],"defaultPrep":5,"defaultAns":55,"prep":5,"ans":55,"s":"<b>公式</b>：a^m · a^n = a^(m+n)\n<b>何時用</b>：同一底數的冪相乘。\n<b>符號／單位</b>：a：底數；m、n：指數。\n<b>應用</b>：2³×2⁴=2⁷=128。\n<b>注意</b>：只有底數相同時才能直接把指數相加。","short":"a^m · a^n = a^(m+n)","cn":""},{"type":"physics_cards","cat":"MATH FORMULA CARDS","topic":"指數","q":"同底數相除與冪的冪？","hint":"先自己說出公式、各符號與使用時機，再按「Flip Formula」看背面。每張只抓一個核心關係式。","tags":["v180","formula-card","math","指數"],"defaultPrep":5,"defaultAns":55,"prep":5,"ans":55,"s":"<b>公式</b>：a^m/a^n = a^(m−n)；(a^m)^n = a^(mn)\n<b>何時用</b>：化簡指數式。\n<b>符號／單位</b>：a：底數（除法時 a≠0）；m、n：指數。\n<b>應用</b>：3⁵/3²=3³；(2³)⁴=2¹²。\n<b>注意</b>：相除是指數相減；冪的冪是指數相乘，不要混淆。","short":"a^m/a^n = a^(m−n)；(a^m)^n = a^(mn)","cn":""},{"type":"physics_cards","cat":"MATH FORMULA CARDS","topic":"指數","q":"負指數與分數指數？","hint":"先自己說出公式、各符號與使用時機，再按「Flip Formula」看背面。每張只抓一個核心關係式。","tags":["v180","formula-card","math","指數"],"defaultPrep":5,"defaultAns":55,"prep":5,"ans":55,"s":"<b>公式</b>：a^(−n)=1/a^n；a^(1/n)=ⁿ√a\n<b>何時用</b>：把倒數、根號與指數形式互換。\n<b>符號／單位</b>：a：底數；n：正整數。實數範圍下偶次根需注意 a≥0。\n<b>應用</b>：8^(1/3)=2；2^(−3)=1/8。\n<b>注意</b>：負號在指數上表示倒數，不代表整個值一定為負。","short":"a^(−n)=1/a^n；a^(1/n)=ⁿ√a","cn":""},{"type":"physics_cards","cat":"MATH FORMULA CARDS","topic":"科學記號","q":"科學記號乘除怎麼算？","hint":"先自己說出公式、各符號與使用時機，再按「Flip Formula」看背面。每張只抓一個核心關係式。","tags":["v180","formula-card","math","科學記號"],"defaultPrep":5,"defaultAns":55,"prep":5,"ans":55,"s":"<b>公式</b>：(a×10^m)(b×10^n)=ab×10^(m+n)\n<b>何時用</b>：很大或很小的數值計算與數量級比較。\n<b>符號／單位</b>：a、b：通常調整到 1≤|a|<10；m、n：10 的整數次方。\n<b>應用</b>：(3×10⁴)(2×10⁻²)=6×10²。\n<b>注意</b>：最後要把前面的係數整理成標準科學記號。","short":"(a×10^m)(b×10^n)=ab×10^(m+n)","cn":""},{"type":"physics_cards","cat":"MATH FORMULA CARDS","topic":"數列","q":"等差數列第 n 項？","hint":"先自己說出公式、各符號與使用時機，再按「Flip Formula」看背面。每張只抓一個核心關係式。","tags":["v180","formula-card","math","數列"],"defaultPrep":5,"defaultAns":55,"prep":5,"ans":55,"s":"<b>公式</b>：a_n = a₁ + (n−1)d\n<b>何時用</b>：每一項與前一項差固定。\n<b>符號／單位</b>：a_n：第 n 項；a₁：首項；d：公差；n：項次。\n<b>應用</b>：3,7,11,… 第 10 項 = 3+9×4=39。\n<b>注意</b>：從首項到第 n 項只有 n−1 個間隔。","short":"a_n = a₁ + (n−1)d","cn":""},{"type":"physics_cards","cat":"MATH FORMULA CARDS","topic":"數列","q":"等差數列前 n 項和？","hint":"先自己說出公式、各符號與使用時機，再按「Flip Formula」看背面。每張只抓一個核心關係式。","tags":["v180","formula-card","math","數列"],"defaultPrep":5,"defaultAns":55,"prep":5,"ans":55,"s":"<b>公式</b>：S_n = n(a₁+a_n)/2 = n[2a₁+(n−1)d]/2\n<b>何時用</b>：求等差數列前若干項總和。\n<b>符號／單位</b>：S_n：前 n 項和；a₁：首項；a_n：第 n 項；d：公差。\n<b>應用</b>：1+2+…+100 = 100×101/2 = 5050。\n<b>注意</b>：若末項未知，可先用第 n 項公式求 a_n。","short":"S_n = n(a₁+a_n)/2 = n[2a₁+(n−1)d]/2","cn":""},{"type":"physics_cards","cat":"MATH FORMULA CARDS","topic":"數列","q":"等比數列第 n 項？","hint":"先自己說出公式、各符號與使用時機，再按「Flip Formula」看背面。每張只抓一個核心關係式。","tags":["v180","formula-card","math","數列"],"defaultPrep":5,"defaultAns":55,"prep":5,"ans":55,"s":"<b>公式</b>：a_n = a₁r^(n−1)\n<b>何時用</b>：每一項與前一項倍率固定。\n<b>符號／單位</b>：a_n：第 n 項；a₁：首項；r：公比；n：項次。\n<b>應用</b>：2,6,18,… 第 5 項 = 2×3⁴=162。\n<b>注意</b>：公比可以是負數或分數。","short":"a_n = a₁r^(n−1)","cn":""},{"type":"physics_cards","cat":"MATH FORMULA CARDS","topic":"數列","q":"等比數列前 n 項和？","hint":"先自己說出公式、各符號與使用時機，再按「Flip Formula」看背面。每張只抓一個核心關係式。","tags":["v180","formula-card","math","數列"],"defaultPrep":5,"defaultAns":55,"prep":5,"ans":55,"s":"<b>公式</b>：S_n = a₁(1−r^n)/(1−r)，r ≠ 1\n<b>何時用</b>：求有限等比數列總和。\n<b>符號／單位</b>：S_n：前 n 項和；a₁：首項；r：公比；n：項數。\n<b>應用</b>：1+2+4+8 = 1(1−2⁴)/(1−2)=15。\n<b>注意</b>：r=1 時每項相同，直接用 S_n=na₁。","short":"S_n = a₁(1−r^n)/(1−r)，r ≠ 1","cn":""},{"type":"physics_cards","cat":"MATH FORMULA CARDS","topic":"利息","q":"單利公式？","hint":"先自己說出公式、各符號與使用時機，再按「Flip Formula」看背面。每張只抓一個核心關係式。","tags":["v180","formula-card","math","利息"],"defaultPrep":5,"defaultAns":55,"prep":5,"ans":55,"s":"<b>公式</b>：I = Prt；A = P(1+rt)\n<b>何時用</b>：本金只按原本金計息，不把利息滾入下一期。\n<b>符號／單位</b>：P：本金；r：每期利率（小數）；t：期數；I：利息；A：本利和，金額單位一致。\n<b>應用</b>：10,000 元、年利率 5%、2 年，利息=10000×0.05×2=1000。\n<b>注意</b>：r 與 t 的期間單位要一致，例如年利率配年數。","short":"I = Prt；A = P(1+rt)","cn":""},{"type":"physics_cards","cat":"MATH FORMULA CARDS","topic":"利息","q":"複利公式？","hint":"先自己說出公式、各符號與使用時機，再按「Flip Formula」看背面。每張只抓一個核心關係式。","tags":["v180","formula-card","math","利息"],"defaultPrep":5,"defaultAns":55,"prep":5,"ans":55,"s":"<b>公式</b>：A = P(1+r)^n\n<b>何時用</b>：每期利息加入本金後再繼續計息。\n<b>符號／單位</b>：P：本金；r：每期利率；n：期數；A：期末本利和。\n<b>應用</b>：10,000 元以 5% 複利 2 期 → 10000×1.05²=11025。\n<b>注意</b>：若一年複利多次，要把每期利率與總期數一起換算。","short":"A = P(1+r)^n","cn":""},{"type":"physics_cards","cat":"MATH FORMULA CARDS","topic":"幾何","q":"畢氏定理？","hint":"先自己說出公式、各符號與使用時機，再按「Flip Formula」看背面。每張只抓一個核心關係式。","tags":["v180","formula-card","math","幾何"],"defaultPrep":5,"defaultAns":55,"prep":5,"ans":55,"s":"<b>公式</b>：a² + b² = c²\n<b>何時用</b>：直角三角形已知兩邊求第三邊。\n<b>符號／單位</b>：a、b：兩股長；c：斜邊，且 c 對著 90°；長度單位一致。\n<b>應用</b>：3-4-5 直角三角形：3²+4²=5²。\n<b>注意</b>：只有直角三角形才能直接使用此式。","short":"a² + b² = c²","cn":""},{"type":"physics_cards","cat":"MATH FORMULA CARDS","topic":"三角函數","q":"sin、cos、tan 怎麼記？","hint":"先自己說出公式、各符號與使用時機，再按「Flip Formula」看背面。每張只抓一個核心關係式。","tags":["v180","formula-card","math","三角函數"],"defaultPrep":5,"defaultAns":55,"prep":5,"ans":55,"s":"<b>公式</b>：sinθ = 對邊/斜邊；cosθ = 鄰邊/斜邊；tanθ = 對邊/鄰邊\n<b>何時用</b>：直角三角形中由角度與邊長互求。\n<b>符號／單位</b>：θ：銳角；對邊、鄰邊、斜邊：相對於 θ 的三角形邊長。\n<b>應用</b>：若 θ=30°、斜邊 10，對邊=10sin30°=5。\n<b>注意</b>：先確認哪一邊是相對於指定角 θ 的對邊與鄰邊。","short":"sinθ = 對邊/斜邊；cosθ = 鄰邊/斜邊；tanθ = 對邊/鄰邊","cn":""},{"type":"physics_cards","cat":"MATH FORMULA CARDS","topic":"三角形","q":"三角形基本面積公式？","hint":"先自己說出公式、各符號與使用時機，再按「Flip Formula」看背面。每張只抓一個核心關係式。","tags":["v180","formula-card","math","三角形"],"defaultPrep":5,"defaultAns":55,"prep":5,"ans":55,"s":"<b>公式</b>：A = ½bh\n<b>何時用</b>：已知底與其垂直高度。\n<b>符號／單位</b>：A：面積（平方單位）；b：底邊長；h：對應垂直高度。\n<b>應用</b>：底 8、高 5，面積=20。\n<b>注意</b>：h 必須與選定底邊垂直。","short":"A = ½bh","cn":""},{"type":"physics_cards","cat":"MATH FORMULA CARDS","topic":"三角形","q":"已知兩邊夾角怎麼算三角形面積？","hint":"先自己說出公式、各符號與使用時機，再按「Flip Formula」看背面。每張只抓一個核心關係式。","tags":["v180","formula-card","math","三角形"],"defaultPrep":5,"defaultAns":55,"prep":5,"ans":55,"s":"<b>公式</b>：A = ½ab sinC\n<b>何時用</b>：已知兩邊 a、b 以及它們的夾角 C。\n<b>符號／單位</b>：A：面積；a、b：兩邊長；C：兩邊的夾角。\n<b>應用</b>：a=6、b=10、C=30°，A=½×6×10×0.5=15。\n<b>注意</b>：必須使用 a、b 的「夾角」C。","short":"A = ½ab sinC","cn":""},{"type":"physics_cards","cat":"MATH FORMULA CARDS","topic":"四邊形","q":"長方形面積與周長？","hint":"先自己說出公式、各符號與使用時機，再按「Flip Formula」看背面。每張只抓一個核心關係式。","tags":["v180","formula-card","math","四邊形"],"defaultPrep":5,"defaultAns":55,"prep":5,"ans":55,"s":"<b>公式</b>：A = lw；P = 2(l+w)\n<b>何時用</b>：長方形尺寸、面積、周長互求。\n<b>符號／單位</b>：A：面積（平方單位）；P：周長（長度單位）；l：長；w：寬。\n<b>應用</b>：l=8、w=3 → A=24，P=22。\n<b>注意</b>：面積與周長單位不同：cm² 與 cm 不可混淆。","short":"A = lw；P = 2(l+w)","cn":""},{"type":"physics_cards","cat":"MATH FORMULA CARDS","topic":"圓","q":"圓周長與面積？","hint":"先自己說出公式、各符號與使用時機，再按「Flip Formula」看背面。每張只抓一個核心關係式。","tags":["v180","formula-card","math","圓"],"defaultPrep":5,"defaultAns":55,"prep":5,"ans":55,"s":"<b>公式</b>：C = 2πr = πd；A = πr²\n<b>何時用</b>：圓的周長、面積與半徑／直徑互求。\n<b>符號／單位</b>：C：圓周長；A：面積；r：半徑；d：直徑=2r；π≈3.1416。\n<b>應用</b>：r=5 → C=10π，A=25π。\n<b>注意</b>：面積中的半徑要平方。","short":"C = 2πr = πd；A = πr²","cn":""},{"type":"physics_cards","cat":"MATH FORMULA CARDS","topic":"圓","q":"弧長公式？","hint":"先自己說出公式、各符號與使用時機，再按「Flip Formula」看背面。每張只抓一個核心關係式。","tags":["v180","formula-card","math","圓"],"defaultPrep":5,"defaultAns":55,"prep":5,"ans":55,"s":"<b>公式</b>：s = (θ/360°)·2πr；若 θ 用 rad，s=rθ\n<b>何時用</b>：已知圓心角與半徑求一段圓弧長。\n<b>符號／單位</b>：s：弧長；r：半徑；θ：圓心角（° 或 rad，依公式）。\n<b>應用</b>：r=10、θ=90° → s=5π。\n<b>注意</b>：度數制與弧度制公式不要混用。","short":"s = (θ/360°)·2πr；若 θ 用 rad，s=rθ","cn":""},{"type":"physics_cards","cat":"MATH FORMULA CARDS","topic":"圓","q":"扇形面積公式？","hint":"先自己說出公式、各符號與使用時機，再按「Flip Formula」看背面。每張只抓一個核心關係式。","tags":["v180","formula-card","math","圓"],"defaultPrep":5,"defaultAns":55,"prep":5,"ans":55,"s":"<b>公式</b>：A_sector = (θ/360°)·πr²；若 θ 用 rad，A=½r²θ\n<b>何時用</b>：已知圓心角與半徑求扇形面積。\n<b>符號／單位</b>：A_sector：扇形面積；r：半徑；θ：圓心角。\n<b>應用</b>：半徑 6、角度 60° → 面積=6π。\n<b>注意</b>：先確認 θ 是度數還是弧度。","short":"A_sector = (θ/360°)·πr²；若 θ 用 rad，A=½r²θ","cn":""},{"type":"physics_cards","cat":"MATH FORMULA CARDS","topic":"四邊形","q":"梯形面積公式？","hint":"先自己說出公式、各符號與使用時機，再按「Flip Formula」看背面。每張只抓一個核心關係式。","tags":["v180","formula-card","math","四邊形"],"defaultPrep":5,"defaultAns":55,"prep":5,"ans":55,"s":"<b>公式</b>：A = ½(a+b)h\n<b>何時用</b>：有一組平行邊的梯形求面積。\n<b>符號／單位</b>：a、b：兩條平行邊長；h：兩平行邊間垂直距離；A：面積。\n<b>應用</b>：上底 4、下底 10、高 3 → A=21。\n<b>注意</b>：h 不是斜腰長，而是垂直高度。","short":"A = ½(a+b)h","cn":""},{"type":"physics_cards","cat":"MATH FORMULA CARDS","topic":"立體幾何","q":"長方體體積？","hint":"先自己說出公式、各符號與使用時機，再按「Flip Formula」看背面。每張只抓一個核心關係式。","tags":["v180","formula-card","math","立體幾何"],"defaultPrep":5,"defaultAns":55,"prep":5,"ans":55,"s":"<b>公式</b>：V = lwh\n<b>何時用</b>：盒子、長方體體積與尺寸互求。\n<b>符號／單位</b>：V：體積（立方單位）；l：長；w：寬；h：高。\n<b>應用</b>：2×3×5 的長方體，V=30。\n<b>注意</b>：三個長度要先換成同一單位。","short":"V = lwh","cn":""},{"type":"physics_cards","cat":"MATH FORMULA CARDS","topic":"立體幾何","q":"圓柱體積？","hint":"先自己說出公式、各符號與使用時機，再按「Flip Formula」看背面。每張只抓一個核心關係式。","tags":["v180","formula-card","math","立體幾何"],"defaultPrep":5,"defaultAns":55,"prep":5,"ans":55,"s":"<b>公式</b>：V = πr²h\n<b>何時用</b>：圓柱、油桶、圓形容器的體積。\n<b>符號／單位</b>：V：體積；r：底面半徑；h：圓柱高度。\n<b>應用</b>：r=2、h=5 → V=20π。\n<b>注意</b>：底面積是 πr²，再乘高度。","short":"V = πr²h","cn":""},{"type":"physics_cards","cat":"MATH FORMULA CARDS","topic":"立體幾何","q":"圓錐體積？","hint":"先自己說出公式、各符號與使用時機，再按「Flip Formula」看背面。每張只抓一個核心關係式。","tags":["v180","formula-card","math","立體幾何"],"defaultPrep":5,"defaultAns":55,"prep":5,"ans":55,"s":"<b>公式</b>：V = ⅓πr²h\n<b>何時用</b>：圓錐或錐形容器體積。\n<b>符號／單位</b>：V：體積；r：底面半徑；h：垂直高度。\n<b>應用</b>：同底同高的圓錐體積是圓柱的 1/3。\n<b>注意</b>：h 是垂直高度，不是斜高。","short":"V = ⅓πr²h","cn":""},{"type":"physics_cards","cat":"MATH FORMULA CARDS","topic":"立體幾何","q":"球體積與表面積？","hint":"先自己說出公式、各符號與使用時機，再按「Flip Formula」看背面。每張只抓一個核心關係式。","tags":["v180","formula-card","math","立體幾何"],"defaultPrep":5,"defaultAns":55,"prep":5,"ans":55,"s":"<b>公式</b>：V = 4πr³/3；A = 4πr²\n<b>何時用</b>：球體的體積與表面積互求。\n<b>符號／單位</b>：V：體積；A：表面積；r：半徑。\n<b>應用</b>：r=3 → V=36π，A=36π。\n<b>注意</b>：體積用 r³；表面積用 r²。","short":"V = 4πr³/3；A = 4πr²","cn":""},{"type":"physics_cards","cat":"MATH FORMULA CARDS","topic":"相似形","q":"相似圖形的長度、面積、體積倍率？","hint":"先自己說出公式、各符號與使用時機，再按「Flip Formula」看背面。每張只抓一個核心關係式。","tags":["v180","formula-card","math","相似形"],"defaultPrep":5,"defaultAns":55,"prep":5,"ans":55,"s":"<b>公式</b>：若長度比 = k，則面積比 = k²，體積比 = k³\n<b>何時用</b>：模型縮放、相似三角形、相似立體。\n<b>符號／單位</b>：k：對應長度倍率（無單位）；面積倍率 k²；體積倍率 k³。\n<b>應用</b>：長度放大 2 倍，面積變 4 倍，體積變 8 倍。\n<b>注意</b>：不要把長度倍率直接套到面積或體積。","short":"若長度比 = k，則面積比 = k²，體積比 = k³","cn":""},{"type":"physics_cards","cat":"MATH FORMULA CARDS","topic":"座標圓","q":"圓的標準方程式？","hint":"先自己說出公式、各符號與使用時機，再按「Flip Formula」看背面。每張只抓一個核心關係式。","tags":["v180","formula-card","math","座標圓"],"defaultPrep":5,"defaultAns":55,"prep":5,"ans":55,"s":"<b>公式</b>：(x−h)² + (y−k)² = r²\n<b>何時用</b>：已知圓心與半徑，寫圓方程式或反推圓心半徑。\n<b>符號／單位</b>：(h,k)：圓心座標；r：半徑；(x,y)：圓上任意點。\n<b>應用</b>：(x−2)²+(y+3)²=25 → 圓心 (2,−3)，半徑 5。\n<b>注意</b>：括號內符號與圓心座標相反。","short":"(x−h)² + (y−k)² = r²","cn":""},{"type":"physics_cards","cat":"MATH FORMULA CARDS","topic":"機率","q":"基本機率公式？","hint":"先自己說出公式、各符號與使用時機，再按「Flip Formula」看背面。每張只抓一個核心關係式。","tags":["v180","formula-card","math","機率"],"defaultPrep":5,"defaultAns":55,"prep":5,"ans":55,"s":"<b>公式</b>：P(A) = 有利結果數 / 全部等可能結果數\n<b>何時用</b>：有限且每個基本結果等可能時。\n<b>符號／單位</b>：P(A)：事件 A 的機率，介於 0 與 1；結果數為計數值。\n<b>應用</b>：公平骰子擲出偶數：3/6=1/2。\n<b>注意</b>：若結果不是等可能，不能只用個數相除。","short":"P(A) = 有利結果數 / 全部等可能結果數","cn":""},{"type":"physics_cards","cat":"MATH FORMULA CARDS","topic":"機率","q":"餘事件公式？","hint":"先自己說出公式、各符號與使用時機，再按「Flip Formula」看背面。每張只抓一個核心關係式。","tags":["v180","formula-card","math","機率"],"defaultPrep":5,"defaultAns":55,"prep":5,"ans":55,"s":"<b>公式</b>：P(Aᶜ) = 1 − P(A)\n<b>何時用</b>：「至少一次」「不發生」等題型，直接算反面較簡單時。\n<b>符號／單位</b>：Aᶜ：A 不發生的事件；P：機率（0 到 1）。\n<b>應用</b>：至少一次成功 = 1 − 一次都沒成功的機率。\n<b>注意</b>：先確認餘事件真的涵蓋所有 A 以外結果。","short":"P(Aᶜ) = 1 − P(A)","cn":""},{"type":"physics_cards","cat":"MATH FORMULA CARDS","topic":"機率","q":"兩事件至少一個發生的加法公式？","hint":"先自己說出公式、各符號與使用時機，再按「Flip Formula」看背面。每張只抓一個核心關係式。","tags":["v180","formula-card","math","機率"],"defaultPrep":5,"defaultAns":55,"prep":5,"ans":55,"s":"<b>公式</b>：P(A∪B) = P(A)+P(B)−P(A∩B)\n<b>何時用</b>：求 A 或 B 發生，且兩事件可能重疊。\n<b>符號／單位</b>：A∪B：A 或 B；A∩B：A 與 B 同時；P：機率。\n<b>應用</b>：P(A)=0.6、P(B)=0.5、P(A∩B)=0.3 → 聯集=0.8。\n<b>注意</b>：若 A、B 互斥，交集為 0，才可直接相加。","short":"P(A∪B) = P(A)+P(B)−P(A∩B)","cn":""},{"type":"physics_cards","cat":"MATH FORMULA CARDS","topic":"機率","q":"獨立事件同時發生怎麼算？","hint":"先自己說出公式、各符號與使用時機，再按「Flip Formula」看背面。每張只抓一個核心關係式。","tags":["v180","formula-card","math","機率"],"defaultPrep":5,"defaultAns":55,"prep":5,"ans":55,"s":"<b>公式</b>：若 A、B 獨立：P(A∩B)=P(A)P(B)\n<b>何時用</b>：兩事件互不影響，求同時發生機率。\n<b>符號／單位</b>：A∩B：A 與 B 同時；P(A)、P(B)：各自機率。\n<b>應用</b>：兩次公平擲硬幣都正面：1/2×1/2=1/4。\n<b>注意</b>：「獨立」與「互斥」不同；互斥事件通常不是獨立。","short":"若 A、B 獨立：P(A∩B)=P(A)P(B)","cn":""},{"type":"physics_cards","cat":"MATH FORMULA CARDS","topic":"排列組合","q":"排列與組合公式怎麼分？","hint":"先自己說出公式、各符號與使用時機，再按「Flip Formula」看背面。每張只抓一個核心關係式。","tags":["v180","formula-card","math","排列組合"],"defaultPrep":5,"defaultAns":55,"prep":5,"ans":55,"s":"<b>公式</b>：nP_r = n!/(n−r)!；nC_r = n!/[r!(n−r)!]\n<b>何時用</b>：從 n 個不同物件選 r 個；順序重要用排列，不重要用組合。\n<b>符號／單位</b>：n：總物件數；r：選取數；!：階乘。nP_r、nC_r 都是計數值。\n<b>應用</b>：5 人選 2 人排正副隊長：5P2=20；只選 2 人小組：5C2=10。\n<b>注意</b>：先問「交換順序算不算不同結果」再決定 P 或 C。","short":"nP_r = n!/(n−r)!；nC_r = n!/[r!(n−r)!]","cn":""}];
+  const norm=s=>String(s||'').normalize('NFKC').toLowerCase().replace(/\s+/g,' ').trim();
+  const existing=new Set(bank.filter(q=>q?.type==='physics_cards').map(q=>norm(q.q)));
+  let addedMath=0;
+  for(const q of mathCards){
+    if(existing.has(norm(q.q))) continue;
+    bank.push(q); existing.add(norm(q.q)); addedMath++;
+  }
+
+  // Rename the combined deck without changing its internal mode key so saved state remains compatible.
+  if(typeof cats!=='undefined'){
+    const row=cats.find(x=>x[0]==='physics_cards');
+    if(row) row[1]='Math & Physics Formula Cards';
+  }
+  const modeSelect=document.getElementById('modeSelect');
+  if(modeSelect){
+    const opt=[...modeSelect.options].find(o=>o.value==='physics_cards');
+    if(opt) opt.textContent='Math & Physics Formula Cards';
+  }
+
+  // Gray theme was retired in v180. Any saved gray preference migrates to White.
+  document.querySelectorAll('.theme [data-theme="gray"]').forEach(el=>el.remove());
+  if(document.body.dataset.theme==='gray') document.body.dataset.theme='white';
+  if(typeof state!=='undefined' && state.theme==='gray'){
+    state.theme='white';
+    try{ save(); }catch(e){}
+  }
+
+  // English color labels.
+  const labels={white:'White',black:'Black',blue:'Blue',green:'Green'};
+  document.querySelectorAll('.theme [data-theme]').forEach(btn=>{
+    const t=btn.dataset.theme;
+    if(labels[t]) btn.textContent=labels[t];
+  });
+
+  // Re-render after the v179 deck extension has finished.
+  try{ renderTabs(); updateStats(); }catch(e){}
+
+  document.title='TRIUMPH Pilot Trainer v180';
+  const logo=document.querySelector('.logo');
+  if(logo) logo.innerHTML='TRIUMPH Pilot Trainer v180<span class="creator">created by Ying Chen</span><small>PILOT SELECTION TRAINER</small>';
+  const hint=document.getElementById('hint');
+  if(hint) hint.textContent='v180：公式卡擴充為 Math & Physics 共 100 張並補上中文符號／單位說明；取消 Gray 主題，Blue／Green 再加深；主題改英文顯示；提示音音量加入喇叭圖示。';
+
+  const formulaCount=bank.filter(q=>q?.type==='physics_cards').length;
+  const physicsCount=bank.filter(q=>q?.type==='physics_cards' && q?.tags?.includes('physics')).length;
+  const mathCount=bank.filter(q=>q?.type==='physics_cards' && q?.tags?.includes('math')).length;
+  window.TRIUMPH_V180_QA={version:'v180',formulaCards:formulaCount,physicsCards:physicsCount,mathCards:mathCount,addedMath,grayThemeRemoved:true};
+})();
+</script>
+
+
+<style id="v181-card-controls-and-reveal-style">
+/* v181 — timer-off cleanup: Reset only controls timers, so it disappears with Start. */
+body.timer-disabled #startPauseBtn,
+body.timer-disabled #resetBtn{
+  display:none!important;
+}
+
+/* Show / Flip is a separate action from navigation, timing, and reset.
+   A restrained aviation-amber / bronze treatment keeps the hierarchy clear. */
+#showBtn{
+  background:linear-gradient(135deg,#c98236,#e0a151)!important;
+  color:#fffaf2!important;
+  border:1px solid #b87531!important;
+  box-shadow:0 8px 20px rgba(166,99,38,.18)!important;
+}
+#showBtn:hover{filter:brightness(1.04)}
+#showBtn:active{transform:scale(.985)}
+body[data-theme="black"] #showBtn{
+  background:linear-gradient(135deg,#96551f,#b66b2a)!important;
+  color:#fff7ec!important;
+  border-color:#c47b39!important;
+}
+body[data-theme="blue"] #showBtn{
+  background:linear-gradient(135deg,#9b622c,#ba7b38)!important;
+  color:#fff9ef!important;
+  border-color:#c58b4f!important;
+}
+body[data-theme="green"] #showBtn{
+  background:linear-gradient(135deg,#9d6a32,#b98545)!important;
+  color:#fff9ed!important;
+  border-color:#c39358!important;
+}
+</style>
+
+<script id="v181-card-controls-update">
+(() => {
+  const isCardMode = () => {
+    const mode = document.getElementById('modeSelect')?.value;
+    return mode === 'flight_cards' || mode === 'physics_cards';
+  };
+
+  function syncV181Controls(){
+    const modeSelect = document.getElementById('modeSelect');
+    const newBtn = document.getElementById('newBtn');
+    const timerEnabled = document.getElementById('timerEnabled');
+
+    // Dedicated flash-card decks use the shorter navigation label.
+    if(newBtn) newBtn.textContent = isCardMode() ? 'Next' : 'New Question';
+
+    // Keep both timer-only controls hidden whenever timing is disabled.
+    const timerOn = timerEnabled ? timerEnabled.value === 'true' : true;
+    document.body.classList.toggle('timer-disabled', !timerOn);
+  }
+
+  const modeSelect = document.getElementById('modeSelect');
+  if(modeSelect) modeSelect.addEventListener('change', syncV181Controls);
+
+  // Category tabs set modeSelect.value programmatically, so a tab click needs its own sync.
+  const tabs = document.getElementById('tabs');
+  if(tabs) tabs.addEventListener('click', () => setTimeout(syncV181Controls, 0));
+
+  const timerSelect = document.getElementById('timerEnabled');
+  if(timerSelect) timerSelect.addEventListener('change', syncV181Controls);
+
+  document.addEventListener('DOMContentLoaded', syncV181Controls);
+  syncV181Controls();
+
+  document.title='TRIUMPH Pilot Trainer v181';
+  const logo=document.querySelector('.logo');
+  if(logo) logo.innerHTML='TRIUMPH Pilot Trainer v181<span class="creator">created by Ying Chen</span><small>PILOT SELECTION TRAINER</small>';
+  const hint=document.getElementById('hint');
+  if(hint) hint.textContent='v181：關閉計時時同步隱藏 Start／Reset；Aviation Quick Cards 與 Math & Physics Formula Cards 的切題按鍵簡化為 Next；Show Answer／Flip Card／Flip Formula 改為獨立的琥珀銅色。';
+
+  window.TRIUMPH_V181_QA={
+    version:'v181',
+    timerOffHidesReset:true,
+    cardNextLabel:'Next',
+    revealButtonStyle:'aviation amber bronze'
+  };
 })();
 </script>
 
