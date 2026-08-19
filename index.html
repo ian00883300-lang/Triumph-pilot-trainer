@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="zh-Hant"><head><meta charset="UTF-8"><title>TRIUMPH Pilot Trainer v183</title><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<!DOCTYPE html><html lang="zh-Hant"><head><meta charset="UTF-8"><title>TRIUMPH Pilot Trainer v184</title><meta name="viewport" content="width=device-width,initial-scale=1.0">
 <meta name="theme-color" content="#0b1c31">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -1101,15 +1101,15 @@ body[data-theme="green"] .dt-overlay{
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="TRIUMPH Pilot">
-<link rel="manifest" href="./triumph-pilot.webmanifest?v=183">
-<link rel="icon" type="image/png" sizes="192x192" href="./triumph-icon-192.png?v=183">
-<link rel="icon" type="image/png" sizes="512x512" href="./triumph-icon-512.png?v=183">
-<link rel="apple-touch-icon" sizes="180x180" href="./triumph-apple-touch-icon.png?v=183">
+<link rel="manifest" href="./triumph-pilot.webmanifest?v=184">
+<link rel="icon" type="image/png" sizes="192x192" href="./triumph-icon-192.png?v=184">
+<link rel="icon" type="image/png" sizes="512x512" href="./triumph-icon-512.png?v=184">
+<link rel="apple-touch-icon" sizes="180x180" href="./triumph-apple-touch-icon.png?v=184">
 
 
-<script id="triumph-v183-cache-bootstrap">
+<script id="triumph-v184-cache-bootstrap">
 (() => {
-  const CURRENT_VERSION = "v183";
+  const CURRENT_VERSION = "v184";
   window.TRIUMPH_CACHE_VERSION = CURRENT_VERSION;
 
   // Fast-open policy:
@@ -1117,7 +1117,7 @@ body[data-theme="green"] .dt-overlay{
   // updates do not show an older cached trainer before the new build arrives.
   if ("serviceWorker" in navigator) {
     window.addEventListener("load", () => {
-      navigator.serviceWorker.register("./sw.js?v=183", {
+      navigator.serviceWorker.register("./sw.js?v=184", {
         scope: "./",
         updateViaCache: "none"
       }).catch(() => {});
@@ -1403,7 +1403,7 @@ body[data-theme="green"] .dt-overlay{
 
 
 
-</head><body data-theme="white"><div class="app"><main class="main card"><div class="header"><div class="logo">TRIUMPH Pilot Trainer v183<span class="creator">created by Ying Chen</span><small>PILOT SELECTION TRAINER</small></div><div class="theme"><button class="chip" data-theme="white">White</button><button class="chip" data-theme="black">Black</button><button class="chip" data-theme="blue">Blue</button><button class="chip" data-theme="green">Green</button><button class="chip timer-quick active" id="timerQuickToggle" type="button" title="開啟／關閉計時" aria-label="開啟／關閉計時" aria-pressed="true">⏰</button></div><div class="badge" id="sessionBadge">Today: 0 questions</div></div>
+</head><body data-theme="white"><div class="app"><main class="main card"><div class="header"><div class="logo">TRIUMPH Pilot Trainer v184<span class="creator">created by Ying Chen</span><small>PILOT SELECTION TRAINER</small></div><div class="theme"><button class="chip" data-theme="white">White</button><button class="chip" data-theme="black">Black</button><button class="chip" data-theme="blue">Blue</button><button class="chip" data-theme="green">Green</button><button class="chip timer-quick active" id="timerQuickToggle" type="button" title="開啟／關閉計時" aria-label="開啟／關閉計時" aria-pressed="true">⏰</button></div><div class="badge" id="sessionBadge">Today: 0 questions</div></div>
 <div class="dt-entry-wrap">
   <button type="button" class="dt-entry" id="dailyTestLaunch">
     <span class="dt-entry-icon">✓</span>
@@ -1414,7 +1414,7 @@ body[data-theme="green"] .dt-overlay{
     <span class="dt-entry-arrow">Start →</span>
   </button>
 </div>
-<div class="tabs" id="tabs"></div><section class="questionbox"><div class="category" id="category">READY</div><h1 class="question" id="question">Click “New Question” to start your training.</h1><div class="hint" id="hint">v183：手機 Previous／New・Next 改為同列；Blue 的 New／Next 統一提高辨識；答案按鍵改黃橘色；Previous 改淺藍色。</div><div id="tags"></div><div class="diagram" id="diagramBox"></div><div id="subqBox"></div><div class="choices" id="choices"></div><div class="timerrow" id="timerRow"><div class="timercard" id="prepCard"><div class="timerlabel">PREPARATION</div><div class="timer" id="prepTimer">00:30</div><div class="barwrap"><div class="bar" id="prepProgress"></div></div></div><div class="timercard"><div class="timerlabel" id="answerLabel">ANSWER</div><div class="timer" id="answerTimer">01:30</div><div class="barwrap"><div class="bar" id="answerProgress"></div></div></div></div><div class="controls"><button class="btn primary" id="newBtn">New Question</button><button class="btn secondary" id="prevBtn">Previous</button><button class="btn green" id="startPauseBtn">Start</button><button class="btn secondary" id="showBtn">Show Answer</button><button class="btn secondary" id="favBtn"><span id="starIcon">☆</span> Favorite</button><button class="btn danger" id="resetBtn">Reset</button></div><div class="subnav" id="subqNav"><button class="btn secondary" id="subPrevBtn">題組上一小題</button><button class="btn secondary" id="subNextBtn">題組下一小題</button></div><div class="answer" id="answerBox"><div id="acronymBox"></div><h3 id="suggestedHeading">Suggested Answer / Explanation</h3><p id="suggested"></p><div id="legacyAnswerMeta" hidden><p id="short"></p><div id="v100Meta"><div id="v100Difficulty"></div><div id="v100Method"></div><div id="v100Trap"></div><div id="v100Connection"></div></div></div><h3 id="chineseHeading">中文詳解 / 考試理解</h3><p id="chinese"></p></div></section></main><aside class="side"><section class="sidecard card"><h3>Practice Settings</h3><label>模式</label><select id="modeSelect"><option value="all">全部題庫</option><option value="pilot">Interview EN</option><option value="interview_cn">Interview CN</option><option value="aviation">Aviation EN</option><option value="aviation_cn">Aviation CN</option><option value="toeic11">TOEIC Q11</option><option value="toeic567">TOEIC Q5–7</option><option value="math_en">Math&Physics EN</option><option value="math_cn">Math&Physics CN</option><option value="classical_cn">Classical CN</option><option value="flight_cards">Aviation Quick Cards</option><option value="favorites">Favorites Only</option></select><select id="timerEnabled" hidden aria-hidden="true"><option value="true">開啟計時</option><option value="false">關閉計時</option></select><div id="mathDifficultySetting" hidden><label>Math 難易度</label><select id="difficultySelect"><option value="all">全部難度</option><option value="basic">Basic 基礎</option><option value="intermediate">Intermediate 中階</option><option value="advanced">Advanced 進階</option></select></div><label>準備時間（秒）</label><input type="number" id="prepSeconds" value="30"><label>回答/思考時間（秒）</label><input type="number" id="answerSeconds" value="90"><div class="setting-switch-row" id="soundSwitchRow">
+<div class="tabs" id="tabs"></div><section class="questionbox"><div class="category" id="category">READY</div><h1 class="question" id="question">Click “New Question” to start your training.</h1><div class="hint" id="hint">v184：Previous 改 Disney 深海藍綠；Favorite 改大地色；Math & Physics Formula Cards 擴充至 120 張，並加強較薄弱的公式背面說明。</div><div id="tags"></div><div class="diagram" id="diagramBox"></div><div id="subqBox"></div><div class="choices" id="choices"></div><div class="timerrow" id="timerRow"><div class="timercard" id="prepCard"><div class="timerlabel">PREPARATION</div><div class="timer" id="prepTimer">00:30</div><div class="barwrap"><div class="bar" id="prepProgress"></div></div></div><div class="timercard"><div class="timerlabel" id="answerLabel">ANSWER</div><div class="timer" id="answerTimer">01:30</div><div class="barwrap"><div class="bar" id="answerProgress"></div></div></div></div><div class="controls"><button class="btn primary" id="newBtn">New Question</button><button class="btn secondary" id="prevBtn">Previous</button><button class="btn green" id="startPauseBtn">Start</button><button class="btn secondary" id="showBtn">Show Answer</button><button class="btn secondary" id="favBtn"><span id="starIcon">☆</span> Favorite</button><button class="btn danger" id="resetBtn">Reset</button></div><div class="subnav" id="subqNav"><button class="btn secondary" id="subPrevBtn">題組上一小題</button><button class="btn secondary" id="subNextBtn">題組下一小題</button></div><div class="answer" id="answerBox"><div id="acronymBox"></div><h3 id="suggestedHeading">Suggested Answer / Explanation</h3><p id="suggested"></p><div id="legacyAnswerMeta" hidden><p id="short"></p><div id="v100Meta"><div id="v100Difficulty"></div><div id="v100Method"></div><div id="v100Trap"></div><div id="v100Connection"></div></div></div><h3 id="chineseHeading">中文詳解 / 考試理解</h3><p id="chinese"></p></div></section></main><aside class="side"><section class="sidecard card"><h3>Practice Settings</h3><label>模式</label><select id="modeSelect"><option value="all">全部題庫</option><option value="pilot">Interview EN</option><option value="interview_cn">Interview CN</option><option value="aviation">Aviation EN</option><option value="aviation_cn">Aviation CN</option><option value="toeic11">TOEIC Q11</option><option value="toeic567">TOEIC Q5–7</option><option value="math_en">Math&Physics EN</option><option value="math_cn">Math&Physics CN</option><option value="classical_cn">Classical CN</option><option value="flight_cards">Aviation Quick Cards</option><option value="favorites">Favorites Only</option></select><select id="timerEnabled" hidden aria-hidden="true"><option value="true">開啟計時</option><option value="false">關閉計時</option></select><div id="mathDifficultySetting" hidden><label>Math 難易度</label><select id="difficultySelect"><option value="all">全部難度</option><option value="basic">Basic 基礎</option><option value="intermediate">Intermediate 中階</option><option value="advanced">Advanced 進階</option></select></div><label>準備時間（秒）</label><input type="number" id="prepSeconds" value="30"><label>回答/思考時間（秒）</label><input type="number" id="answerSeconds" value="90"><div class="setting-switch-row" id="soundSwitchRow">
   <div class="setting-switch-copy">
     <strong>提示音</strong>
     <span>控制題庫、心算與飛行記憶全部音效</span>
@@ -1424,9 +1424,9 @@ body[data-theme="green"] .dt-overlay{
   </button>
 </div>
 <select id="soundEnabled" hidden aria-hidden="true"><option value="true">開啟提示音</option><option value="false">關閉提示音</option></select><label>提示音音量 <span aria-hidden="true">🔊</span></label><input type="range" id="soundVolume" min="0" max="150" value="120"><div class="hint" style="font-size:12px">全域音效：題庫倒數、心算倒數與答題、飛行記憶指令完成及任務完成。</div><button class="btn secondary" id="applyDefaultsBtn" style="width:100%;margin-top:10px">套用此題庫預設時間</button><button class="btn memory-launch" id="flightMemoryBtn">✈ 飛行指令記憶訓練</button><button class="btn mental-launch" id="mentalMathBtn">∑ 數學心算 Mental Math</button></section><section class="sidecard card"><h3>Question Bank</h3><div class="stats"><div class="stat"><span>目前題庫</span><b id="currentMode">ALL</b></div><div class="stat"><span>題庫數量</span><b id="bankCount">0</b></div><div class="stat"><span>目前題號</span><b id="currentIndex">-</b></div><div class="stat"><span>已練題數</span><b id="doneCount">0</b></div><div class="stat"><span>收藏題</span><b id="favCount">0</b></div></div><div class="controls"><button class="btn secondary" id="copyBtn">複製題目</button><button class="btn danger" id="clearDataBtn">清除儲存</button></div></section><section class="sidecard card" id="v100Dashboard"><h3>v100 Performance</h3><div class="stats"><div class="stat"><span>答對題數</span><b id="correctCount">0</b></div><div class="stat"><span>答錯題數</span><b id="wrongCount">0</b></div><div class="stat"><span>作答正確率</span><b id="accuracyRate">-</b></div><div class="stat"><span>錯題待複習</span><b id="reviewCount">0</b></div></div><div class="controls"><button class="btn secondary" id="reviewWrongBtn">Review Wrong</button><button class="btn secondary" id="markMasteredBtn">Mark Mastered</button></div></section><section class="sidecard card"><h3>Favorites</h3><div id="favoriteSyncStatus" style="font-size:12px;color:var(--muted);margin:-4px 0 10px">跨版本收藏同步中…</div><div id="favoriteList"></div></section><section class="sidecard card"><h3>Your Notes</h3><textarea id="notes" placeholder="這題的卡點、公式、單字、回答弱點..."></textarea></section></aside></div>
-<script id="v183-first-paint-version-guard">
+<script id="v184-first-paint-version-guard">
 (() => {
-  const CURRENT='TRIUMPH Pilot Trainer v183';
+  const CURRENT='TRIUMPH Pilot Trainer v184';
   const titleEl=document.querySelector('title');
   const logo=document.querySelector('.logo');
   const enforce=()=>{
@@ -10644,11 +10644,11 @@ body[data-theme="green"] .dt-overlay{
   // Keep the first rendered shell on the current build. Older versions updated
   // the header only after the multi-megabyte question bank had finished parsing,
   // which made mobile users briefly see the previous version while opening.
-  document.title='TRIUMPH Pilot Trainer v183';
+  document.title='TRIUMPH Pilot Trainer v184';
   const logo=document.querySelector('.logo');
-  if(logo) logo.innerHTML='TRIUMPH Pilot Trainer v183<span class="creator">created by Ying Chen</span><small>PILOT SELECTION TRAINER</small>';
+  if(logo) logo.innerHTML='TRIUMPH Pilot Trainer v184<span class="creator">created by Ying Chen</span><small>PILOT SELECTION TRAINER</small>';
   const hint=document.getElementById('hint');
-  if(hint) hint.textContent='v183：手機 Previous／New・Next 改為同列；Blue 的 New／Next 統一提高辨識；答案按鍵改黃橘色；Previous 改淺藍色。';
+  if(hint) hint.textContent='v184：Previous 改 Disney 深海藍綠；Favorite 改大地色；Math & Physics Formula Cards 擴充至 120 張，並加強較薄弱的公式背面說明。';
 
   window.TRIUMPH_V183_QA={
     version:'v183',
@@ -10752,5 +10752,83 @@ body[data-theme="blue"] #newBtn{
   box-shadow:0 8px 20px rgba(48,111,157,.31)!important;
 }
 </style>
+
+
+<style id="v184-disney-earth-formula-quality-style">
+/* v184 — Previous: Disney-inspired deep ocean teal sampled from the user's reference icon. */
+#prevBtn{
+  background:linear-gradient(145deg,#143647 0%,#126477 58%,#58a9b7 100%)!important;
+  color:#fff!important;
+  border:1px solid #4e9cab!important;
+  box-shadow:0 8px 20px rgba(24,111,130,.24)!important;
+}
+#prevBtn:hover{filter:brightness(1.045)}
+#prevBtn:active{transform:scale(.985)}
+body[data-theme="black"] #prevBtn,
+body[data-theme="blue"] #prevBtn,
+body[data-theme="green"] #prevBtn{
+  background:linear-gradient(145deg,#102f40 0%,#0f6072 58%,#4e9eac 100%)!important;
+  color:#fff!important;
+  border-color:#4b91a0!important;
+}
+
+/* Favorite: warm earth / sand-brown sampled from the user's reference icons. */
+#favBtn{
+  background:linear-gradient(145deg,#c1a581 0%,#a88b6d 62%,#9b7e63 100%)!important;
+  color:#fff!important;
+  border:1px solid #92755c!important;
+  box-shadow:0 8px 20px rgba(125,96,70,.20)!important;
+}
+#favBtn #starIcon{color:#fff!important}
+#favBtn:hover{filter:brightness(1.035)}
+#favBtn:active{transform:scale(.985)}
+body[data-theme="black"] #favBtn,
+body[data-theme="blue"] #favBtn,
+body[data-theme="green"] #favBtn{
+  background:linear-gradient(145deg,#b79b79 0%,#9f8166 65%,#8f725a 100%)!important;
+  color:#fff!important;
+  border-color:#b59b7d!important;
+}
+</style>
+<script id="v184-formula-quality-and-version-update">
+(() => {
+  if(typeof bank==='undefined' || !Array.isArray(bank)) return;
+  const upgrades={"重量怎麼算？":"<b>公式</b>：F_g = mg\n<b>何時用</b>：求物體在某地重力場中受到的重量；也常作為斜面、升降機、支持力題目的起點。\n<b>符號／單位</b>：F_g：重量／重力（N，牛頓）；m：質量（kg）；g：重力加速度（m/s²，地表附近常取 9.8 或題目指定 10）。\n<b>應用</b>：60 kg 的人在 g=9.8 m/s² 時，重量約 588 N；若題目取 g=10，則約 600 N。\n<b>注意</b>：質量 kg 不因地點改變；重量 N 會隨 g 改變。升降機中的「體重計讀值」通常是支持力 N，不一定等於 mg。","功率常用哪兩個公式？":"<b>公式</b>：平均功率 P = W/t；瞬時功率 P = F·v = Fv cosθ，若力與速度同方向則 P = Fv\n<b>何時用</b>：比較做功快慢；或物體以某速度被穩定拉動／提升時，由力與速度直接求功率。\n<b>符號／單位</b>：P：功率（W = J/s）；W：功（J）；t：時間（s）；F：力（N）；v：速度（m/s）；θ：力與速度夾角。\n<b>應用</b>：4000 N 的提升力以 1 m/s 穩定向上移動，P = 4000×1 = 4000 W。若速度加倍而所需力相同，功率也加倍。\n<b>注意</b>：P=Fv 只是在 F 與 v 同方向時的簡化式；一般要用內積 F·v。","動能公式？":"<b>公式</b>：K = ½mv²\n<b>何時用</b>：已知質量與速率求運動能量；也常與功—動能定理、機械能守恆一起使用。\n<b>符號／單位</b>：K：動能（J）；m：質量（kg）；v：速率（m/s）。\n<b>應用</b>：2 kg 物體以 10 m/s 運動，K=100 J；若速度加倍成 20 m/s，動能變成 400 J，也就是 4 倍。\n<b>注意</b>：動能與 v² 成正比，因此「速度增加 10%」不代表動能只增加 10%；動能沒有方向正負，但速度方向會影響動量。","壓力公式？":"<b>公式</b>：P = F⊥/A\n<b>何時用</b>：力近似均勻作用在某面積上，求平均壓力；液壓、接觸面受力與機械題都常見。\n<b>符號／單位</b>：P：壓力（Pa = N/m²）；F⊥：垂直於受力面的力（N）；A：受力面積（m²）。\n<b>應用</b>：1000 N 均勻作用在 0.02 m² 上，P=50,000 Pa。相同作用力下，面積減半，壓力加倍。\n<b>注意</b>：要用「垂直於表面」的力分量；面積若以 cm² 給出，需先換成 m² 再求 Pa。","連續方程式？":"<b>公式</b>：不可壓縮穩定流：A₁v₁ = A₂v₂ = Q_v\n<b>何時用</b>：同一管流在不同截面比較流速；適用於穩定、近似不可壓縮流體。\n<b>符號／單位</b>：A：管道截面積（m²）；v：平均流速（m/s）；Q_v=Av：體積流率（m³/s）。\n<b>應用</b>：若截面積縮成原本一半，為維持相同體積流率，流速要增為 2 倍。\n<b>注意</b>：對可壓縮流體要用質量守恆 ρAv=常數；因此高速氣流不能一律直接把 A₁v₁=A₂v₂ 當成精確式。","相變潛熱公式？":"<b>公式</b>：Q = mL\n<b>何時用</b>：熔化、凝固、汽化、液化等相變階段；理想情況下物質吸／放熱但溫度暫時不變。\n<b>符號／單位</b>：Q：相變熱量（J）；m：質量（kg）；L：比潛熱（J/kg），依熔化潛熱或汽化潛熱選用。\n<b>應用</b>：0.50 kg 的冰若熔化潛熱 L_f=3.34×10⁵ J/kg，完全熔化需 Q=1.67×10⁵ J。\n<b>注意</b>：如果題目同時包含升溫與相變，要分段計算：先用 Q=mcΔT，到相變時再用 Q=mL。","波速、頻率、波長的公式？":"<b>公式</b>：v = fλ\n<b>何時用</b>：週期波的波速、頻率與波長互換；聲波、繩波、電磁波都可用此基本關係。\n<b>符號／單位</b>：v：波速（m/s）；f：頻率（Hz = s⁻¹）；λ：波長（m）。\n<b>應用</b>：波速 340 m/s、頻率 680 Hz，波長 λ=0.50 m。若介質不變使 v 固定，頻率加倍時波長減半。\n<b>注意</b>：波進入不同介質時頻率通常由波源決定而保持不變，改變的是波速與波長。","電流與電量關係？":"<b>公式</b>：I = ΔQ/Δt；若電流恆定，Q = It\n<b>何時用</b>：描述每秒通過導體截面的電荷量，或由電流與時間求總電量。\n<b>符號／單位</b>：I：電流（A = C/s）；Q：電量（C，庫侖）；t：時間（s）。\n<b>應用</b>：2 A 電流持續 30 s，通過的電量 Q=60 C。\n<b>注意</b>：I 是電荷流率，不是電子移動速度；若電流隨時間改變，總電量要由 I–t 圖下面積或積分求得。","歐姆定律？":"<b>公式</b>：V = IR\n<b>何時用</b>：歐姆性元件在溫度與物理狀態近似不變時，電壓、電流、電阻三者互換。\n<b>符號／單位</b>：V：電位差（V，伏特）；I：電流（A，安培）；R：電阻（Ω，歐姆）。\n<b>應用</b>：12 V 加在 6 Ω 電阻上，I=2 A；若同一電阻電壓加倍，電流也加倍。\n<b>注意</b>：不是所有元件都維持固定 R，例如燈絲、二極體可能呈非線性 V–I 關係。","焦耳熱公式？":"<b>公式</b>：Q = I²Rt；也可由 Q = VIt = (V²/R)t 轉換\n<b>何時用</b>：電流流過電阻，把電能轉成熱能；電熱器、導線發熱與保險絲題常見。\n<b>符號／單位</b>：Q：熱量／電能（J）；I：電流（A）；R：電阻（Ω）；V：電壓（V）；t：時間（s）。\n<b>應用</b>：I=2 A、R=5 Ω、t=10 s，Q=2²×5×10=200 J。\n<b>注意</b>：在 R、t 固定時，Q 與 I² 成正比，所以電流加倍會產生 4 倍熱量；選哪個等價式要看題目已知量。","三角形基本面積公式？":"<b>公式</b>：A = ½bh\n<b>何時用</b>：已知任一底邊 b 與「對應的垂直高度」h 時，是最直接的三角形面積公式。\n<b>符號／單位</b>：A：面積（cm²、m² 等平方單位）；b：所選底邊長；h：該底邊到對面頂點的垂直距離。\n<b>應用</b>：底 8 cm、高 5 cm，A=½×8×5=20 cm²。鈍角三角形的高可能落在底邊延長線上，公式仍成立。\n<b>注意</b>：h 不是任意一條邊，也不是斜邊；一定要與所選底邊垂直。","長方體體積？":"<b>公式</b>：V = lwh = 底面積 × 高\n<b>何時用</b>：長方體、盒子、長方形水槽等體積與尺寸互求。\n<b>符號／單位</b>：V：體積（cm³、m³ 等）；l：長；w：寬；h：高，三者必須使用一致長度單位。\n<b>應用</b>：2 m × 3 m × 5 m 的長方體，V=30 m³；若要換成公升，1 m³=1000 L。\n<b>注意</b>：體積是三次方單位；若尺寸混用 cm、m，先統一單位再相乘。","圓柱體積？":"<b>公式</b>：V = πr²h = 底面積 × 高\n<b>何時用</b>：圓柱、油桶、直筒容器、管狀儲槽等體積問題。\n<b>符號／單位</b>：V：體積（立方單位）；r：底面半徑；h：兩底面間的垂直高度；π≈3.1416。\n<b>應用</b>：r=2 m、h=5 m，V=20π≈62.8 m³。若給直徑 d，先用 r=d/2。\n<b>注意</b>：最常見錯誤是把直徑直接代入 r，或忘記半徑要平方。","圓錐體積？":"<b>公式</b>：V = ⅓πr²h\n<b>何時用</b>：正圓錐、錐形容器或「同底同高」圓柱與圓錐的體積比較。\n<b>符號／單位</b>：V：體積；r：底面半徑；h：底面到頂點的垂直高度；π≈3.1416。\n<b>應用</b>：r=3、h=4，V=⅓×π×9×4=12π；同底同高圓柱的體積會是 36π，因此圓錐正好是 1/3。\n<b>注意</b>：h 是垂直高度，不是母線／斜高；若只給斜高，通常要先用畢氏定理求 h。","球體積與表面積？":"<b>公式</b>：體積 V = 4πr³/3；表面積 A = 4πr²\n<b>何時用</b>：球形容器、球體半徑與體積／表面積的互換，或比較尺度變化。\n<b>符號／單位</b>：V：體積（立方單位）；A：表面積（平方單位）；r：球半徑。\n<b>應用</b>：r=3，V=36π、A=36π；若半徑加倍，表面積變 4 倍，體積變 8 倍。\n<b>注意</b>：兩個數值有時巧合相同，但單位與物理意義完全不同；體積用 r³，表面積用 r²。","同底數相乘的指數律？":"<b>公式</b>：a^m · a^n = a^(m+n)\n<b>何時用</b>：底數完全相同的冪相乘，用指數相加快速化簡。\n<b>符號／單位</b>：a：底數；m、n：指數。代數式本身通常無特定單位，若 a 代表物理量仍要留意量綱。\n<b>應用</b>：2³×2⁴=2⁷=128；x²·x⁵=x⁷。\n<b>注意</b>：只能在「相乘且同底數」時相加指數；例如 2³+2⁴ 不能寫成 2⁷，(a+b)^n 也不能拆成 a^n+b^n。","梯形面積公式？":"<b>公式</b>：A = ½(a+b)h = 平行邊平均長 × 高\n<b>何時用</b>：四邊形具有一組平行邊，且已知兩條平行邊與其垂直距離。\n<b>符號／單位</b>：a、b：兩條平行邊長；h：兩平行邊間的垂直距離；A：面積（平方單位）。\n<b>應用</b>：上底 4、下底 10、高 3，A=½×14×3=21。也可理解為平均寬度 7 乘高度 3。\n<b>注意</b>：h 不是斜腰長；若只給斜邊，通常需先利用直角三角形求垂直高度。"};
+  let strengthened=0;
+  for(const q of bank){
+    if(q?.type==='physics_cards' && upgrades[q.q]){
+      q.s=upgrades[q.q];
+      strengthened++;
+    }
+  }
+
+  const added=[{"type":"physics_cards","cat":"PHYSICS FORMULA CARDS","topic":"運動圖表","q":"速度—時間圖怎麼看斜率與面積？","hint":"先自己說出公式、各符號與使用時機，再按「Flip Formula」看背面。每張只抓一個核心關係式。","tags":["v184","formula-card","physics","運動圖表"],"defaultPrep":5,"defaultAns":55,"prep":5,"ans":55,"s":"<b>公式</b>：v–t 圖斜率 = a = Δv/Δt；v–t 圖在時間區間下的「帶正負面積」= 位移 Δx\n<b>何時用</b>：題目用速度—時間圖描述運動，要判斷加速度、位移或是否改變方向。\n<b>符號／單位</b>：v：速度（m/s）；t：時間（s）；a：加速度（m/s²）；Δx：位移（m）。圖下面積的單位 (m/s)×s = m。\n<b>應用</b>：速度由 0 線性增加到 20 m/s、歷時 4 s，斜率 a=5 m/s²；位移等於三角形面積 ½×4×20=40 m。\n<b>注意</b>：速度在時間軸下方時面積為負位移；若題目問「路程」，要把各段面積取絕對值再相加。","short":"v–t 斜率 = a；v–t 帶符號面積 = 位移","cn":""},{"type":"physics_cards","cat":"PHYSICS FORMULA CARDS","topic":"水平拋射","q":"水平拋射的落地時間與水平距離？","hint":"先自己說出公式、各符號與使用時機，再按「Flip Formula」看背面。每張只抓一個核心關係式。","tags":["v184","formula-card","physics","水平拋射"],"defaultPrep":5,"defaultAns":55,"prep":5,"ans":55,"s":"<b>公式</b>：由高度 h 水平拋出：t = √(2h/g)；水平距離 R = vₓt\n<b>何時用</b>：忽略空氣阻力、物體初速度只有水平方向，從高度 h 落到較低的水平面。\n<b>符號／單位</b>：h：垂直落差（m）；g：重力加速度（m/s²）；t：飛行時間（s）；vₓ：水平速度（m/s）；R：水平位移（m）。\n<b>應用</b>：h=20 m、g=10、vₓ=15 m/s，t=2 s，R=30 m。\n<b>注意</b>：水平速度不決定「落下多久」；落地時間由垂直運動決定。水平與垂直方向要分開分析。","short":"t = √(2h/g)；R = vₓt","cn":""},{"type":"physics_cards","cat":"PHYSICS FORMULA CARDS","topic":"功與能","q":"功—動能定理是什麼？","hint":"先自己說出公式、各符號與使用時機，再按「Flip Formula」看背面。每張只抓一個核心關係式。","tags":["v184","formula-card","physics","功與能"],"defaultPrep":5,"defaultAns":55,"prep":5,"ans":55,"s":"<b>公式</b>：W_net = ΔK = K₂ − K₁ = ½m(v₂²−v₁²)\n<b>何時用</b>：已知合力做功、位移或速度變化，而不想直接處理時間；特別適合摩擦、斜面、煞車距離。\n<b>符號／單位</b>：W_net：所有力合計所做的淨功（J）；K：動能（J）；m：質量（kg）；v：速率（m/s）。\n<b>應用</b>：若淨功 +300 J，物體動能增加 300 J；若摩擦做 −300 J，動能就減少 300 J。\n<b>注意</b>：是「所有力的淨功」對應動能改變；單一力做的功除非它就是唯一做功者，不能直接等同 ΔK。","short":"W_net = ΔK","cn":""},{"type":"physics_cards","cat":"PHYSICS FORMULA CARDS","topic":"萬有引力","q":"萬有引力公式？","hint":"先自己說出公式、各符號與使用時機，再按「Flip Formula」看背面。每張只抓一個核心關係式。","tags":["v184","formula-card","physics","萬有引力"],"defaultPrep":5,"defaultAns":55,"prep":5,"ans":55,"s":"<b>公式</b>：F = Gm₁m₂/r²\n<b>何時用</b>：兩個有質量物體之間的引力，尤其是行星、衛星或離地高度不可忽略時。\n<b>符號／單位</b>：F：引力（N）；G≈6.67×10⁻¹¹ N·m²/kg²；m₁、m₂：質量（kg）；r：兩物體質心距離（m）。\n<b>應用</b>：若距離變成 2 倍而質量不變，引力變成原來的 1/4；距離變 3 倍則變 1/9。\n<b>注意</b>：r 是「中心到中心」距離，不是只看離地高度；近地面的 mg 是此定律在地表附近的簡化結果。","short":"F = Gm₁m₂/r²","cn":""},{"type":"physics_cards","cat":"PHYSICS FORMULA CARDS","topic":"簡諧運動","q":"彈簧振子的週期公式？","hint":"先自己說出公式、各符號與使用時機，再按「Flip Formula」看背面。每張只抓一個核心關係式。","tags":["v184","formula-card","physics","簡諧運動"],"defaultPrep":5,"defaultAns":55,"prep":5,"ans":55,"s":"<b>公式</b>：T = 2π√(m/k)；f = 1/T\n<b>何時用</b>：理想質點—彈簧系統在胡克定律範圍內做小振幅簡諧運動。\n<b>符號／單位</b>：T：週期（s）；f：頻率（Hz）；m：振動質量（kg）；k：彈簧常數（N/m）。\n<b>應用</b>：質量變成 4 倍時，週期變成 2 倍；彈簧變硬、k 變成 4 倍時，週期變成一半。\n<b>注意</b>：理想公式中週期與振幅無關，但前提是彈簧線性、阻尼可忽略。","short":"T = 2π√(m/k)","cn":""},{"type":"physics_cards","cat":"PHYSICS FORMULA CARDS","topic":"單擺","q":"小角度單擺週期公式？","hint":"先自己說出公式、各符號與使用時機，再按「Flip Formula」看背面。每張只抓一個核心關係式。","tags":["v184","formula-card","physics","單擺"],"defaultPrep":5,"defaultAns":55,"prep":5,"ans":55,"s":"<b>公式</b>：T = 2π√(L/g)；f = 1/T\n<b>何時用</b>：擺角不大（常以約 10° 內作近似）、阻力可忽略的簡單單擺。\n<b>符號／單位</b>：T：週期（s）；L：支點到擺錘質心的擺長（m）；g：重力加速度（m/s²）；f：頻率（Hz）。\n<b>應用</b>：擺長變成 4 倍，週期變 2 倍；同一擺移到 g 較小的地方，週期會變長。\n<b>注意</b>：小角度近似下週期與擺錘質量無關；大振幅時此簡式會低估真實週期。","short":"T = 2π√(L/g)","cn":""},{"type":"physics_cards","cat":"PHYSICS FORMULA CARDS","topic":"折射","q":"史涅耳定律（折射定律）？","hint":"先自己說出公式、各符號與使用時機，再按「Flip Formula」看背面。每張只抓一個核心關係式。","tags":["v184","formula-card","physics","折射"],"defaultPrep":5,"defaultAns":55,"prep":5,"ans":55,"s":"<b>公式</b>：n₁sinθ₁ = n₂sinθ₂；且 n = c/v\n<b>何時用</b>：光從一種透明介質進入另一種介質，求入射角、折射角或折射率。\n<b>符號／單位</b>：n：折射率（無單位）；θ：光線與「法線」的夾角；c：真空光速；v：介質中光速。\n<b>應用</b>：光由空氣進入玻璃（n 增加）時，通常向法線偏折，因此折射角小於入射角。\n<b>注意</b>：角度是相對「法線」不是相對表面量；由高折射率射向低折射率時還可能出現全反射。","short":"n₁sinθ₁ = n₂sinθ₂","cn":""},{"type":"physics_cards","cat":"PHYSICS FORMULA CARDS","topic":"透鏡","q":"薄透鏡成像與放大率公式？","hint":"先自己說出公式、各符號與使用時機，再按「Flip Formula」看背面。每張只抓一個核心關係式。","tags":["v184","formula-card","physics","透鏡"],"defaultPrep":5,"defaultAns":55,"prep":5,"ans":55,"s":"<b>公式</b>：1/f = 1/dₒ + 1/dᵢ；放大率 M = hᵢ/hₒ = −dᵢ/dₒ\n<b>何時用</b>：薄透鏡近軸成像，已知焦距、物距、像距或像大小互求。\n<b>符號／單位</b>：f：焦距；dₒ：物距；dᵢ：像距；hₒ、hᵢ：物高與像高；M：放大率（無單位）。距離要使用一致符號規則與單位。\n<b>應用</b>：若 |M|=2，像的高度大小是物體 2 倍；M<0 通常表示倒立實像。\n<b>注意</b>：不同課本的正負號慣例可能不同，考試時以題目／課本規則為準；公式本身不能取代成像光路判斷。","short":"1/f = 1/dₒ + 1/dᵢ；M = −dᵢ/dₒ","cn":""},{"type":"physics_cards","cat":"PHYSICS FORMULA CARDS","topic":"靜電力","q":"庫侖定律？","hint":"先自己說出公式、各符號與使用時機，再按「Flip Formula」看背面。每張只抓一個核心關係式。","tags":["v184","formula-card","physics","靜電力"],"defaultPrep":5,"defaultAns":55,"prep":5,"ans":55,"s":"<b>公式</b>：F = k|q₁q₂|/r²\n<b>何時用</b>：兩個可近似為點電荷的帶電體之間求靜電力大小。\n<b>符號／單位</b>：F：靜電力（N）；k≈8.99×10⁹ N·m²/C²；q₁、q₂：電量（C）；r：兩電荷距離（m）。\n<b>應用</b>：距離加倍，力變成 1/4；兩電荷同號相斥、異號相吸。\n<b>注意</b>：公式先給「大小」，方向要另外由電荷正負判斷；多個電荷存在時要把各電力當向量相加。","short":"F = k|q₁q₂|/r²","cn":""},{"type":"physics_cards","cat":"PHYSICS FORMULA CARDS","topic":"電場","q":"點電荷的電場強度？","hint":"先自己說出公式、各符號與使用時機，再按「Flip Formula」看背面。每張只抓一個核心關係式。","tags":["v184","formula-card","physics","電場"],"defaultPrep":5,"defaultAns":55,"prep":5,"ans":55,"s":"<b>公式</b>：E = F/q₀；點電荷 Q 造成的電場 E = k|Q|/r²\n<b>何時用</b>：描述某位置每單位正試驗電荷會受到多大的電力，或由點電荷求周圍電場。\n<b>符號／單位</b>：E：電場強度（N/C，也等價 V/m）；F：試驗電荷受力（N）；q₀：試驗電荷（C）；Q：場源電荷；r：距離（m）。\n<b>應用</b>：若 E=500 N/C，放入 +2×10⁻⁶ C 電荷，受力大小 F=qE=1.0×10⁻³ N。\n<b>注意</b>：電場方向定義為「正試驗電荷」受力方向；負電荷實際受力方向與 E 相反。","short":"E = F/q₀ = k|Q|/r²","cn":""},{"type":"physics_cards","cat":"MATH FORMULA CARDS","topic":"角度","q":"角度與弧度怎麼互換？","hint":"先自己說出公式、各符號與使用時機，再按「Flip Formula」看背面。每張只抓一個核心關係式。","tags":["v184","formula-card","math","角度"],"defaultPrep":5,"defaultAns":55,"prep":5,"ans":55,"s":"<b>公式</b>：θ(rad) = θ(°)×π/180；θ(°) = θ(rad)×180/π\n<b>何時用</b>：三角函數、弧長、角速度或計算機題目在 degree 與 radian 之間切換。\n<b>符號／單位</b>：θ：角度；rad：弧度；°：度。π rad = 180°。\n<b>應用</b>：60° = π/3 rad；2π/3 rad = 120°。\n<b>注意</b>：計算機 DEG/RAD 模式錯誤是常見失分來源；套 s=rθ 或 A=½r²θ 時 θ 必須用弧度。","short":"θ(rad)=θ(°)π/180","cn":""},{"type":"physics_cards","cat":"MATH FORMULA CARDS","topic":"三角形","q":"正弦定理？","hint":"先自己說出公式、各符號與使用時機，再按「Flip Formula」看背面。每張只抓一個核心關係式。","tags":["v184","formula-card","math","三角形"],"defaultPrep":5,"defaultAns":55,"prep":5,"ans":55,"s":"<b>公式</b>：a/sinA = b/sinB = c/sinC = 2R\n<b>何時用</b>：非直角三角形，已知「一組對邊—對角」再加另一邊或角，求剩餘邊角。\n<b>符號／單位</b>：a、b、c：分別對著 A、B、C 的邊長；R：外接圓半徑。\n<b>應用</b>：若 a=10、A=30°、B=45°，則 b = 10·sin45°/sin30° ≈14.14。\n<b>注意</b>：邊一定要配對「正對面的角」；SSA 情況可能出現兩個解，需要檢查三角形是否唯一。","short":"a/sinA = b/sinB = c/sinC","cn":""},{"type":"physics_cards","cat":"MATH FORMULA CARDS","topic":"三角形","q":"餘弦定理？","hint":"先自己說出公式、各符號與使用時機，再按「Flip Formula」看背面。每張只抓一個核心關係式。","tags":["v184","formula-card","math","三角形"],"defaultPrep":5,"defaultAns":55,"prep":5,"ans":55,"s":"<b>公式</b>：c² = a²+b²−2ab cosC（其餘邊循環類推）\n<b>何時用</b>：非直角三角形已知兩邊夾角求第三邊，或三邊已知求角。\n<b>符號／單位</b>：a、b、c：邊長；C：邊 c 的對角，也就是 a、b 的夾角。\n<b>應用</b>：a=3、b=4、C=90° 時 cos90°=0，得到 c²=3²+4²，退化成畢氏定理。\n<b>注意</b>：式中的 C 必須是 a、b 夾角；求角時要注意反餘弦的計算機模式。","short":"c² = a²+b²−2ab cosC","cn":""},{"type":"physics_cards","cat":"MATH FORMULA CARDS","topic":"三角形","q":"海龍公式怎麼算三角形面積？","hint":"先自己說出公式、各符號與使用時機，再按「Flip Formula」看背面。每張只抓一個核心關係式。","tags":["v184","formula-card","math","三角形"],"defaultPrep":5,"defaultAns":55,"prep":5,"ans":55,"s":"<b>公式</b>：s = (a+b+c)/2；A = √[s(s−a)(s−b)(s−c)]\n<b>何時用</b>：只知道三角形三邊，沒有高度或角度時直接求面積。\n<b>符號／單位</b>：a、b、c：三邊長；s：半周長；A：面積（平方單位）。\n<b>應用</b>：3–4–5 三角形，s=6，A=√(6×3×2×1)=6。\n<b>注意</b>：先確認三邊滿足三角形不等式；s 是「半周長」不是周長。","short":"s=(a+b+c)/2；A=√[s(s−a)(s−b)(s−c)]","cn":""},{"type":"physics_cards","cat":"MATH FORMULA CARDS","topic":"三角函數","q":"最常用的三角恆等式？","hint":"先自己說出公式、各符號與使用時機，再按「Flip Formula」看背面。每張只抓一個核心關係式。","tags":["v184","formula-card","math","三角函數"],"defaultPrep":5,"defaultAns":55,"prep":5,"ans":55,"s":"<b>公式</b>：sin²θ + cos²θ = 1；tanθ = sinθ/cosθ（cosθ≠0）\n<b>何時用</b>：已知 sin、cos、tan 中一個量推另一個，或化簡三角式。\n<b>符號／單位</b>：θ：角度；sin、cos、tan 為三角比，皆無單位。\n<b>應用</b>：若 θ 為銳角且 sinθ=3/5，則 cosθ=4/5，tanθ=3/4。\n<b>注意</b>：由平方開根號時正負號要依 θ 所在象限決定；直角三角形題通常 θ 為銳角才可直接取正值。","short":"sin²θ+cos²θ=1；tanθ=sinθ/cosθ","cn":""},{"type":"physics_cards","cat":"MATH FORMULA CARDS","topic":"直線","q":"平行與垂直直線的斜率關係？","hint":"先自己說出公式、各符號與使用時機，再按「Flip Formula」看背面。每張只抓一個核心關係式。","tags":["v184","formula-card","math","直線"],"defaultPrep":5,"defaultAns":55,"prep":5,"ans":55,"s":"<b>公式</b>：平行（非垂直線）：m₁=m₂；垂直（斜率皆存在）：m₁m₂=−1\n<b>何時用</b>：已知一條直線斜率，求通過指定點的平行線／垂直線，或判斷兩線關係。\n<b>符號／單位</b>：m₁、m₂：兩直線斜率。若 x、y 單位相同，斜率可視為無單位；否則為 y 單位/x 單位。\n<b>應用</b>：一線斜率 2，垂直線斜率為 −1/2；平行線仍為 2。\n<b>注意</b>：垂直線 x=c 的斜率不存在，水平線 y=c 斜率 0，這類要直接用幾何關係處理。","short":"平行 m₁=m₂；垂直 m₁m₂=−1","cn":""},{"type":"physics_cards","cat":"MATH FORMULA CARDS","topic":"二次函數","q":"二次函數頂點式怎麼看？","hint":"先自己說出公式、各符號與使用時機，再按「Flip Formula」看背面。每張只抓一個核心關係式。","tags":["v184","formula-card","math","二次函數"],"defaultPrep":5,"defaultAns":55,"prep":5,"ans":55,"s":"<b>公式</b>：y = a(x−h)²+k；頂點 = (h,k)，對稱軸 x=h\n<b>何時用</b>：快速判讀拋物線頂點、最大／最小值與平移；也可由一般式配方法轉成頂點式。\n<b>符號／單位</b>：a：開口方向與寬窄；h、k：頂點座標。若原式 y=ax²+bx+c，h=−b/(2a)，k=f(h)。\n<b>應用</b>：y=2(x−3)²−5 的頂點 (3,−5)，最小值 −5，對稱軸 x=3。\n<b>注意</b>：括號是 (x−h)，所以 y=(x+2)² 的 h=−2；a<0 時頂點是最大值。","short":"y=a(x−h)²+k；頂點(h,k)","cn":""},{"type":"physics_cards","cat":"MATH FORMULA CARDS","topic":"對數","q":"對數的乘除與次方律？","hint":"先自己說出公式、各符號與使用時機，再按「Flip Formula」看背面。每張只抓一個核心關係式。","tags":["v184","formula-card","math","對數"],"defaultPrep":5,"defaultAns":55,"prep":5,"ans":55,"s":"<b>公式</b>：logₐ(xy)=logₐx+logₐy；logₐ(x/y)=logₐx−logₐy；logₐ(x^r)=r logₐx\n<b>何時用</b>：把乘除與冪次轉成加減乘，化簡對數式或解指數方程。\n<b>符號／單位</b>：a：底數，須 a>0 且 a≠1；x、y：真數，須 >0；r：實數。\n<b>應用</b>：log₁₀(1000×10)=3+1=4；log₂(8²)=2log₂8=6。\n<b>注意</b>：log(x+y) 沒有對應的拆分公式；只能對乘、除、次方使用這些法則。","short":"logₐ(xy)=logₐx+logₐy 等","cn":""},{"type":"physics_cards","cat":"MATH FORMULA CARDS","topic":"對數","q":"對數換底公式？","hint":"先自己說出公式、各符號與使用時機，再按「Flip Formula」看背面。每張只抓一個核心關係式。","tags":["v184","formula-card","math","對數"],"defaultPrep":5,"defaultAns":55,"prep":5,"ans":55,"s":"<b>公式</b>：logₐb = log_cb / log_ca；常用 logₐb = ln b / ln a\n<b>何時用</b>：計算機只有 log 或 ln，但題目底數是 2、3、5 等其他數值時。\n<b>符號／單位</b>：a：原底數（a>0、a≠1）；b：真數（b>0）；c：任意合法新底數。對數結果無單位。\n<b>應用</b>：log₂10 = ln10/ln2 ≈3.322。\n<b>注意</b>：分子是「真數 b」的對數，分母是「底數 a」的對數；順序顛倒會得到倒數。","short":"logₐb = ln b / ln a","cn":""},{"type":"physics_cards","cat":"MATH FORMULA CARDS","topic":"成長模型","q":"固定百分比成長／衰減公式？","hint":"先自己說出公式、各符號與使用時機，再按「Flip Formula」看背面。每張只抓一個核心關係式。","tags":["v184","formula-card","math","成長模型"],"defaultPrep":5,"defaultAns":55,"prep":5,"ans":55,"s":"<b>公式</b>：A_n = A₀(1+r)^n；衰減可寫 A_n=A₀(1−r)^n\n<b>何時用</b>：每一期都按「當期數值」增加或減少固定百分比，例如人口、資產、折舊、細菌數。\n<b>符號／單位</b>：A₀：初始值；A_n：n 期後值；r：每期變動率（小數）；n：期數。A_n 單位與 A₀ 相同。\n<b>應用</b>：100 每期成長 10%，3 期後 100×1.1³≈133.1；不是 100+30。\n<b>注意</b>：這是「複合百分比」模型；若每期增加固定數量而非固定百分比，應使用等差關係而不是指數成長。","short":"A_n=A₀(1±r)^n","cn":""}];
+  const norm=s=>String(s||'').normalize('NFKC').toLowerCase().replace(/\s+/g,' ').trim();
+  const existing=new Set(bank.filter(q=>q?.type==='physics_cards').map(q=>norm(q.q)));
+  let addedCount=0;
+  for(const q of added){
+    if(existing.has(norm(q.q))) continue;
+    bank.push(q);
+    existing.add(norm(q.q));
+    addedCount++;
+  }
+
+  try{ renderTabs(); updateStats(); }catch(e){}
+  document.title='TRIUMPH Pilot Trainer v184';
+  const logo=document.querySelector('.logo');
+  if(logo) logo.innerHTML='TRIUMPH Pilot Trainer v184<span class="creator">created by Ying Chen</span><small>PILOT SELECTION TRAINER</small>';
+  const hint=document.getElementById('hint');
+  if(hint) hint.textContent='v184：Previous 改 Disney 深海藍綠；Favorite 改大地色；Math & Physics Formula Cards 擴充至 120 張，並加強較薄弱的公式背面說明。';
+
+  const formulaCount=bank.filter(q=>q?.type==='physics_cards').length;
+  const physicsCount=bank.filter(q=>q?.type==='physics_cards' && q?.tags?.includes('physics')).length;
+  const mathCount=bank.filter(q=>q?.type==='physics_cards' && q?.tags?.includes('math')).length;
+  window.TRIUMPH_V184_QA={
+    version:'v184',formulaCards:formulaCount,physicsCards:physicsCount,mathCards:mathCount,
+    addedFormulaCards:addedCount,strengthenedFormulaCards:strengthened,
+    previousStyle:'Disney ocean teal',favoriteStyle:'earth sand brown'
+  };
+})();
+</script>
 
 </body></html>
