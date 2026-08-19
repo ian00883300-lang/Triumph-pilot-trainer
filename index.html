@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="zh-Hant"><head><meta charset="UTF-8"><title>TRIUMPH Pilot Trainer v182</title><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<!DOCTYPE html><html lang="zh-Hant"><head><meta charset="UTF-8"><title>TRIUMPH Pilot Trainer v183</title><meta name="viewport" content="width=device-width,initial-scale=1.0">
 <meta name="theme-color" content="#0b1c31">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -1101,23 +1101,23 @@ body[data-theme="green"] .dt-overlay{
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="TRIUMPH Pilot">
-<link rel="manifest" href="./triumph-pilot.webmanifest?v=182">
-<link rel="icon" type="image/png" sizes="192x192" href="./triumph-icon-192.png?v=182">
-<link rel="icon" type="image/png" sizes="512x512" href="./triumph-icon-512.png?v=182">
-<link rel="apple-touch-icon" sizes="180x180" href="./triumph-apple-touch-icon.png?v=182">
+<link rel="manifest" href="./triumph-pilot.webmanifest?v=183">
+<link rel="icon" type="image/png" sizes="192x192" href="./triumph-icon-192.png?v=183">
+<link rel="icon" type="image/png" sizes="512x512" href="./triumph-icon-512.png?v=183">
+<link rel="apple-touch-icon" sizes="180x180" href="./triumph-apple-touch-icon.png?v=183">
 
 
-<script id="triumph-v182-cache-bootstrap">
+<script id="triumph-v183-cache-bootstrap">
 (() => {
-  const CURRENT_VERSION = "v182";
+  const CURRENT_VERSION = "v183";
   window.TRIUMPH_CACHE_VERSION = CURRENT_VERSION;
 
   // Fast-open policy:
-  // v182 uses a network-first service worker for HTML navigation so GitHub
+  // v183 uses a network-first service worker for HTML navigation so GitHub
   // updates do not show an older cached trainer before the new build arrives.
   if ("serviceWorker" in navigator) {
     window.addEventListener("load", () => {
-      navigator.serviceWorker.register("./sw.js?v=182", {
+      navigator.serviceWorker.register("./sw.js?v=183", {
         scope: "./",
         updateViaCache: "none"
       }).catch(() => {});
@@ -1400,7 +1400,10 @@ body[data-theme="green"] .dt-overlay{
 }
 </style>
 
-</head><body data-theme="white"><div class="app"><main class="main card"><div class="header"><div class="logo">TRIUMPH Pilot Trainer v182<span class="creator">created by Ying Chen</span><small>PILOT SELECTION TRAINER</small></div><div class="theme"><button class="chip" data-theme="white">White</button><button class="chip" data-theme="black">Black</button><button class="chip" data-theme="blue">Blue</button><button class="chip" data-theme="green">Green</button><button class="chip timer-quick active" id="timerQuickToggle" type="button" title="開啟／關閉計時" aria-label="開啟／關閉計時" aria-pressed="true">⏰</button></div><div class="badge" id="sessionBadge">Today: 0 questions</div></div>
+
+
+
+</head><body data-theme="white"><div class="app"><main class="main card"><div class="header"><div class="logo">TRIUMPH Pilot Trainer v183<span class="creator">created by Ying Chen</span><small>PILOT SELECTION TRAINER</small></div><div class="theme"><button class="chip" data-theme="white">White</button><button class="chip" data-theme="black">Black</button><button class="chip" data-theme="blue">Blue</button><button class="chip" data-theme="green">Green</button><button class="chip timer-quick active" id="timerQuickToggle" type="button" title="開啟／關閉計時" aria-label="開啟／關閉計時" aria-pressed="true">⏰</button></div><div class="badge" id="sessionBadge">Today: 0 questions</div></div>
 <div class="dt-entry-wrap">
   <button type="button" class="dt-entry" id="dailyTestLaunch">
     <span class="dt-entry-icon">✓</span>
@@ -1411,7 +1414,7 @@ body[data-theme="green"] .dt-overlay{
     <span class="dt-entry-arrow">Start →</span>
   </button>
 </div>
-<div class="tabs" id="tabs"></div><section class="questionbox"><div class="category" id="category">READY</div><h1 class="question" id="question">Click “New Question” to start your training.</h1><div class="hint" id="hint">v182：Cards 導覽改為 Previous／Next 同列；答案翻牌改為霧紫色；Blue 的 Next 增強辨識；Green 再加深；GitHub 首屏與快取載入優化。</div><div id="tags"></div><div class="diagram" id="diagramBox"></div><div id="subqBox"></div><div class="choices" id="choices"></div><div class="timerrow" id="timerRow"><div class="timercard" id="prepCard"><div class="timerlabel">PREPARATION</div><div class="timer" id="prepTimer">00:30</div><div class="barwrap"><div class="bar" id="prepProgress"></div></div></div><div class="timercard"><div class="timerlabel" id="answerLabel">ANSWER</div><div class="timer" id="answerTimer">01:30</div><div class="barwrap"><div class="bar" id="answerProgress"></div></div></div></div><div class="controls"><button class="btn primary" id="newBtn">New Question</button><button class="btn secondary" id="prevBtn">Previous</button><button class="btn green" id="startPauseBtn">Start</button><button class="btn secondary" id="showBtn">Show Answer</button><button class="btn secondary" id="favBtn"><span id="starIcon">☆</span> Favorite</button><button class="btn danger" id="resetBtn">Reset</button></div><div class="subnav" id="subqNav"><button class="btn secondary" id="subPrevBtn">題組上一小題</button><button class="btn secondary" id="subNextBtn">題組下一小題</button></div><div class="answer" id="answerBox"><div id="acronymBox"></div><h3 id="suggestedHeading">Suggested Answer / Explanation</h3><p id="suggested"></p><div id="legacyAnswerMeta" hidden><p id="short"></p><div id="v100Meta"><div id="v100Difficulty"></div><div id="v100Method"></div><div id="v100Trap"></div><div id="v100Connection"></div></div></div><h3 id="chineseHeading">中文詳解 / 考試理解</h3><p id="chinese"></p></div></section></main><aside class="side"><section class="sidecard card"><h3>Practice Settings</h3><label>模式</label><select id="modeSelect"><option value="all">全部題庫</option><option value="pilot">Interview EN</option><option value="interview_cn">Interview CN</option><option value="aviation">Aviation EN</option><option value="aviation_cn">Aviation CN</option><option value="toeic11">TOEIC Q11</option><option value="toeic567">TOEIC Q5–7</option><option value="math_en">Math&Physics EN</option><option value="math_cn">Math&Physics CN</option><option value="classical_cn">Classical CN</option><option value="flight_cards">Aviation Quick Cards</option><option value="favorites">Favorites Only</option></select><select id="timerEnabled" hidden aria-hidden="true"><option value="true">開啟計時</option><option value="false">關閉計時</option></select><div id="mathDifficultySetting" hidden><label>Math 難易度</label><select id="difficultySelect"><option value="all">全部難度</option><option value="basic">Basic 基礎</option><option value="intermediate">Intermediate 中階</option><option value="advanced">Advanced 進階</option></select></div><label>準備時間（秒）</label><input type="number" id="prepSeconds" value="30"><label>回答/思考時間（秒）</label><input type="number" id="answerSeconds" value="90"><div class="setting-switch-row" id="soundSwitchRow">
+<div class="tabs" id="tabs"></div><section class="questionbox"><div class="category" id="category">READY</div><h1 class="question" id="question">Click “New Question” to start your training.</h1><div class="hint" id="hint">v183：手機 Previous／New・Next 改為同列；Blue 的 New／Next 統一提高辨識；答案按鍵改黃橘色；Previous 改淺藍色。</div><div id="tags"></div><div class="diagram" id="diagramBox"></div><div id="subqBox"></div><div class="choices" id="choices"></div><div class="timerrow" id="timerRow"><div class="timercard" id="prepCard"><div class="timerlabel">PREPARATION</div><div class="timer" id="prepTimer">00:30</div><div class="barwrap"><div class="bar" id="prepProgress"></div></div></div><div class="timercard"><div class="timerlabel" id="answerLabel">ANSWER</div><div class="timer" id="answerTimer">01:30</div><div class="barwrap"><div class="bar" id="answerProgress"></div></div></div></div><div class="controls"><button class="btn primary" id="newBtn">New Question</button><button class="btn secondary" id="prevBtn">Previous</button><button class="btn green" id="startPauseBtn">Start</button><button class="btn secondary" id="showBtn">Show Answer</button><button class="btn secondary" id="favBtn"><span id="starIcon">☆</span> Favorite</button><button class="btn danger" id="resetBtn">Reset</button></div><div class="subnav" id="subqNav"><button class="btn secondary" id="subPrevBtn">題組上一小題</button><button class="btn secondary" id="subNextBtn">題組下一小題</button></div><div class="answer" id="answerBox"><div id="acronymBox"></div><h3 id="suggestedHeading">Suggested Answer / Explanation</h3><p id="suggested"></p><div id="legacyAnswerMeta" hidden><p id="short"></p><div id="v100Meta"><div id="v100Difficulty"></div><div id="v100Method"></div><div id="v100Trap"></div><div id="v100Connection"></div></div></div><h3 id="chineseHeading">中文詳解 / 考試理解</h3><p id="chinese"></p></div></section></main><aside class="side"><section class="sidecard card"><h3>Practice Settings</h3><label>模式</label><select id="modeSelect"><option value="all">全部題庫</option><option value="pilot">Interview EN</option><option value="interview_cn">Interview CN</option><option value="aviation">Aviation EN</option><option value="aviation_cn">Aviation CN</option><option value="toeic11">TOEIC Q11</option><option value="toeic567">TOEIC Q5–7</option><option value="math_en">Math&Physics EN</option><option value="math_cn">Math&Physics CN</option><option value="classical_cn">Classical CN</option><option value="flight_cards">Aviation Quick Cards</option><option value="favorites">Favorites Only</option></select><select id="timerEnabled" hidden aria-hidden="true"><option value="true">開啟計時</option><option value="false">關閉計時</option></select><div id="mathDifficultySetting" hidden><label>Math 難易度</label><select id="difficultySelect"><option value="all">全部難度</option><option value="basic">Basic 基礎</option><option value="intermediate">Intermediate 中階</option><option value="advanced">Advanced 進階</option></select></div><label>準備時間（秒）</label><input type="number" id="prepSeconds" value="30"><label>回答/思考時間（秒）</label><input type="number" id="answerSeconds" value="90"><div class="setting-switch-row" id="soundSwitchRow">
   <div class="setting-switch-copy">
     <strong>提示音</strong>
     <span>控制題庫、心算與飛行記憶全部音效</span>
@@ -1421,9 +1424,9 @@ body[data-theme="green"] .dt-overlay{
   </button>
 </div>
 <select id="soundEnabled" hidden aria-hidden="true"><option value="true">開啟提示音</option><option value="false">關閉提示音</option></select><label>提示音音量 <span aria-hidden="true">🔊</span></label><input type="range" id="soundVolume" min="0" max="150" value="120"><div class="hint" style="font-size:12px">全域音效：題庫倒數、心算倒數與答題、飛行記憶指令完成及任務完成。</div><button class="btn secondary" id="applyDefaultsBtn" style="width:100%;margin-top:10px">套用此題庫預設時間</button><button class="btn memory-launch" id="flightMemoryBtn">✈ 飛行指令記憶訓練</button><button class="btn mental-launch" id="mentalMathBtn">∑ 數學心算 Mental Math</button></section><section class="sidecard card"><h3>Question Bank</h3><div class="stats"><div class="stat"><span>目前題庫</span><b id="currentMode">ALL</b></div><div class="stat"><span>題庫數量</span><b id="bankCount">0</b></div><div class="stat"><span>目前題號</span><b id="currentIndex">-</b></div><div class="stat"><span>已練題數</span><b id="doneCount">0</b></div><div class="stat"><span>收藏題</span><b id="favCount">0</b></div></div><div class="controls"><button class="btn secondary" id="copyBtn">複製題目</button><button class="btn danger" id="clearDataBtn">清除儲存</button></div></section><section class="sidecard card" id="v100Dashboard"><h3>v100 Performance</h3><div class="stats"><div class="stat"><span>答對題數</span><b id="correctCount">0</b></div><div class="stat"><span>答錯題數</span><b id="wrongCount">0</b></div><div class="stat"><span>作答正確率</span><b id="accuracyRate">-</b></div><div class="stat"><span>錯題待複習</span><b id="reviewCount">0</b></div></div><div class="controls"><button class="btn secondary" id="reviewWrongBtn">Review Wrong</button><button class="btn secondary" id="markMasteredBtn">Mark Mastered</button></div></section><section class="sidecard card"><h3>Favorites</h3><div id="favoriteSyncStatus" style="font-size:12px;color:var(--muted);margin:-4px 0 10px">跨版本收藏同步中…</div><div id="favoriteList"></div></section><section class="sidecard card"><h3>Your Notes</h3><textarea id="notes" placeholder="這題的卡點、公式、單字、回答弱點..."></textarea></section></aside></div>
-<script id="v182-first-paint-version-guard">
+<script id="v183-first-paint-version-guard">
 (() => {
-  const CURRENT='TRIUMPH Pilot Trainer v182';
+  const CURRENT='TRIUMPH Pilot Trainer v183';
   const titleEl=document.querySelector('title');
   const logo=document.querySelector('.logo');
   const enforce=()=>{
@@ -10489,8 +10492,8 @@ body.physics-card-mode #suggested b{color:var(--accent)}
 </script>
 
 
-<style id="v182-card-navigation-theme-and-reveal-style">
-/* v182 — timer-only controls disappear completely when timing is disabled. */
+<style id="v183-base-card-navigation-theme-and-reveal-style">
+/* v183 base — timer-only controls disappear completely when timing is disabled. */
 body.timer-disabled #startPauseBtn,
 body.timer-disabled #resetBtn{
   display:none!important;
@@ -10608,14 +10611,14 @@ body[data-theme="green"] .dt-overlay{
 }
 </style>
 
-<script id="v182-card-controls-and-fast-open-update">
+<script id="v183-card-controls-and-fast-open-update">
 (() => {
   const isCardMode = () => {
     const mode = document.getElementById('modeSelect')?.value;
     return mode === 'flight_cards' || mode === 'physics_cards';
   };
 
-  function syncV182Controls(){
+  function syncV183Controls(){
     const newBtn = document.getElementById('newBtn');
     const timerEnabled = document.getElementById('timerEnabled');
 
@@ -10626,37 +10629,128 @@ body[data-theme="green"] .dt-overlay{
   }
 
   const modeSelect = document.getElementById('modeSelect');
-  if(modeSelect) modeSelect.addEventListener('change', syncV182Controls);
+  if(modeSelect) modeSelect.addEventListener('change', syncV183Controls);
 
   // Category tabs update modeSelect programmatically.
   const tabs = document.getElementById('tabs');
-  if(tabs) tabs.addEventListener('click', () => setTimeout(syncV182Controls, 0));
+  if(tabs) tabs.addEventListener('click', () => setTimeout(syncV183Controls, 0));
 
   const timerSelect = document.getElementById('timerEnabled');
-  if(timerSelect) timerSelect.addEventListener('change', syncV182Controls);
+  if(timerSelect) timerSelect.addEventListener('change', syncV183Controls);
 
-  document.addEventListener('DOMContentLoaded', syncV182Controls);
-  syncV182Controls();
+  document.addEventListener('DOMContentLoaded', syncV183Controls);
+  syncV183Controls();
 
   // Keep the first rendered shell on the current build. Older versions updated
   // the header only after the multi-megabyte question bank had finished parsing,
   // which made mobile users briefly see the previous version while opening.
-  document.title='TRIUMPH Pilot Trainer v182';
+  document.title='TRIUMPH Pilot Trainer v183';
   const logo=document.querySelector('.logo');
-  if(logo) logo.innerHTML='TRIUMPH Pilot Trainer v182<span class="creator">created by Ying Chen</span><small>PILOT SELECTION TRAINER</small>';
+  if(logo) logo.innerHTML='TRIUMPH Pilot Trainer v183<span class="creator">created by Ying Chen</span><small>PILOT SELECTION TRAINER</small>';
   const hint=document.getElementById('hint');
-  if(hint) hint.textContent='v182：Cards 導覽改為 Previous／Next 同列；答案翻牌改為霧紫色；Blue 的 Next 增強辨識；Green 再加深；GitHub 首屏與快取載入優化。';
+  if(hint) hint.textContent='v183：手機 Previous／New・Next 改為同列；Blue 的 New／Next 統一提高辨識；答案按鍵改黃橘色；Previous 改淺藍色。';
 
-  window.TRIUMPH_V182_QA={
-    version:'v182',
+  window.TRIUMPH_V183_QA={
+    version:'v183',
     cardNavigation:'Previous | Next',
-    revealButtonStyle:'muted cockpit violet',
+    revealButtonStyle:'warm yellow-orange',
     blueNextContrast:true,
+    blueNewAndNextSameStyle:true,
+    previousButtonStyle:'light blue',
+    mobileNavigation:'Previous | New/Next same row',
     deeperGreen:true,
     staticFirstPaintVersion:true,
     navigationCachePolicy:'network-first'
   };
 })();
 </script>
+
+<style id="v183-mobile-navigation-and-action-colors">
+/* v183 — phone navigation: Previous and New/Next stay on the same row.
+   This applies to normal banks and both flash-card decks. */
+@media(max-width:640px){
+  .questionbox > .controls{
+    display:grid!important;
+    grid-template-columns:minmax(0,1fr) minmax(0,1fr)!important;
+    gap:10px!important;
+    width:100%!important;
+    align-items:stretch!important;
+  }
+  .questionbox > .controls .btn{
+    width:100%!important;
+    min-width:0!important;
+    margin:0!important;
+    display:flex!important;
+    align-items:center!important;
+    justify-content:center!important;
+    text-align:center!important;
+  }
+  #prevBtn{
+    order:1!important;
+    grid-column:1!important;
+    width:100%!important;
+    justify-self:stretch!important;
+  }
+  #newBtn{
+    order:2!important;
+    grid-column:2!important;
+    width:100%!important;
+    justify-self:stretch!important;
+  }
+  #startPauseBtn{
+    order:3!important;
+    grid-column:1 / -1!important;
+  }
+  #showBtn{
+    order:4!important;
+    grid-column:1!important;
+  }
+  #favBtn{
+    order:5!important;
+    grid-column:2!important;
+  }
+  #resetBtn{
+    order:6!important;
+    grid-column:1 / -1!important;
+    width:calc(50% - 5px)!important;
+    justify-self:center!important;
+  }
+}
+
+/* Previous: soft light-blue navigation cue. */
+#prevBtn{
+  background:linear-gradient(135deg,#dcebf5,#bfd8e9)!important;
+  color:#17344d!important;
+  border:1px solid #aec9dc!important;
+  box-shadow:0 7px 18px rgba(73,119,153,.12)!important;
+}
+#prevBtn:hover{filter:brightness(1.025)}
+#prevBtn:active{transform:scale(.985)}
+
+/* Answer / Flip action: warm yellow-orange sampled from the supplied iOS icon reference. */
+#showBtn{
+  background:linear-gradient(145deg,#f3b660,#e99b45)!important;
+  color:#2d210f!important;
+  border:1px solid #d88935!important;
+  box-shadow:0 8px 20px rgba(201,126,39,.20)!important;
+}
+#showBtn:hover{filter:brightness(1.035)}
+#showBtn:active{transform:scale(.985)}
+body[data-theme="black"] #showBtn,
+body[data-theme="blue"] #showBtn,
+body[data-theme="green"] #showBtn{
+  background:linear-gradient(145deg,#f3b660,#e99b45)!important;
+  color:#2d210f!important;
+  border-color:#d88935!important;
+}
+
+/* Blue theme: New Question and card-mode Next use exactly the same high-contrast treatment. */
+body[data-theme="blue"] #newBtn{
+  background:linear-gradient(135deg,#356f9f,#4b8cbd)!important;
+  color:#fff!important;
+  border:1px solid #6aa2ca!important;
+  box-shadow:0 8px 20px rgba(48,111,157,.31)!important;
+}
+</style>
 
 </body></html>
