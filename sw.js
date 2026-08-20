@@ -1,8 +1,8 @@
-/* TRIUMPH Pilot Trainer v182 service worker
+/* TRIUMPH Pilot Trainer v188 service worker
    Online navigation: network first (bypass browser HTTP cache).
    Offline fallback: most recently fetched index.html.
 */
-const CACHE_NAME = 'triumph-pilot-v182';
+const CACHE_NAME = 'triumph-pilot-v188';
 const INDEX_FALLBACK = './index.html';
 
 self.addEventListener('install', () => {
