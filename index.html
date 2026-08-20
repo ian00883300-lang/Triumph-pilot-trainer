@@ -1101,10 +1101,10 @@ body[data-theme="green"] .dt-overlay{
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="TRIUMPH Pilot">
-<link rel="manifest" href="./triumph-pilot.webmanifest?v=185">
-<link rel="icon" type="image/png" sizes="192x192" href="./triumph-icon-192.png?v=185">
-<link rel="icon" type="image/png" sizes="512x512" href="./triumph-icon-512.png?v=185">
-<link rel="apple-touch-icon" sizes="180x180" href="./triumph-apple-touch-icon.png?v=185">
+<link rel="manifest" href="./triumph-pilot.webmanifest?v=186">
+<link rel="icon" type="image/png" sizes="192x192" href="./triumph-icon-192.png?v=186">
+<link rel="icon" type="image/png" sizes="512x512" href="./triumph-icon-512.png?v=186">
+<link rel="apple-touch-icon" sizes="180x180" href="./triumph-apple-touch-icon.png?v=186">
 
 
 <script id="triumph-v184-cache-bootstrap">
@@ -1117,7 +1117,7 @@ body[data-theme="green"] .dt-overlay{
   // updates do not show an older cached trainer before the new build arrives.
   if ("serviceWorker" in navigator) {
     window.addEventListener("load", () => {
-      navigator.serviceWorker.register("./sw.js?v=185", {
+      navigator.serviceWorker.register("./sw.js?v=186", {
         scope: "./",
         updateViaCache: "none"
       }).catch(() => {});
@@ -1403,7 +1403,7 @@ body[data-theme="green"] .dt-overlay{
 
 
 
-</head><body data-theme="white"><div class="app"><main class="main card"><div class="header"><div class="logo">TRIUMPH Pilot Trainer v185<span class="creator">created by Ying Chen</span><small>PILOT SELECTION TRAINER</small></div><div class="theme"><button class="chip" data-theme="white">White</button><button class="chip" data-theme="black">Black</button><button class="chip" data-theme="blue">Blue</button><button class="chip" data-theme="green">Green</button><button class="chip timer-quick active" id="timerQuickToggle" type="button" title="開啟／關閉計時" aria-label="開啟／關閉計時" aria-pressed="true">⏰</button></div><div class="badge" id="sessionBadge">Today: 0 questions</div></div>
+</head><body data-theme="white"><div class="app"><main class="main card"><div class="header"><div class="logo">TRIUMPH Pilot Trainer v186<span class="creator">created by Ying Chen</span><small>PILOT SELECTION TRAINER</small></div><div class="theme"><button class="chip" data-theme="white">White</button><button class="chip" data-theme="black">Black</button><button class="chip" data-theme="blue">Blue</button><button class="chip" data-theme="green">Green</button><button class="chip timer-quick active" id="timerQuickToggle" type="button" title="開啟／關閉計時" aria-label="開啟／關閉計時" aria-pressed="true">⏰</button></div><div class="badge" id="sessionBadge">Today: 0 questions</div></div>
 <div class="dt-entry-wrap">
   <button type="button" class="dt-entry" id="dailyTestLaunch">
     <span class="dt-entry-icon">✓</span>
@@ -1414,7 +1414,7 @@ body[data-theme="green"] .dt-overlay{
     <span class="dt-entry-arrow">Start →</span>
   </button>
 </div>
-<div class="tabs" id="tabs"></div><section class="questionbox"><div class="category" id="category">READY</div><h1 class="question" id="question">Click “New Question” to start your training.</h1><div class="hint" id="hint">v185：所有彩色按鍵統一改為漸層風格；Previous 維持 Disney 藍綠漸層、Favorite 改大地色漸層；Math & Physics Formula Cards 再補強並擴充。</div><div id="tags"></div><div class="diagram" id="diagramBox"></div><div id="subqBox"></div><div class="choices" id="choices"></div><div class="timerrow" id="timerRow"><div class="timercard" id="prepCard"><div class="timerlabel">PREPARATION</div><div class="timer" id="prepTimer">00:30</div><div class="barwrap"><div class="bar" id="prepProgress"></div></div></div><div class="timercard"><div class="timerlabel" id="answerLabel">ANSWER</div><div class="timer" id="answerTimer">01:30</div><div class="barwrap"><div class="bar" id="answerProgress"></div></div></div></div><div class="controls"><button class="btn primary" id="newBtn">New Question</button><button class="btn secondary" id="prevBtn">Previous</button><button class="btn green" id="startPauseBtn">Start</button><button class="btn secondary" id="showBtn">Show Answer</button><button class="btn secondary" id="favBtn"><span id="starIcon">☆</span> Favorite</button><button class="btn danger" id="resetBtn">Reset</button></div><div class="subnav" id="subqNav"><button class="btn secondary" id="subPrevBtn">題組上一小題</button><button class="btn secondary" id="subNextBtn">題組下一小題</button></div><div class="answer" id="answerBox"><div id="acronymBox"></div><h3 id="suggestedHeading">Suggested Answer / Explanation</h3><p id="suggested"></p><div id="legacyAnswerMeta" hidden><p id="short"></p><div id="v100Meta"><div id="v100Difficulty"></div><div id="v100Method"></div><div id="v100Trap"></div><div id="v100Connection"></div></div></div><h3 id="chineseHeading">中文詳解 / 考試理解</h3><p id="chinese"></p></div></section></main><aside class="side"><section class="sidecard card"><h3>Practice Settings</h3><label>模式</label><select id="modeSelect"><option value="all">全部題庫</option><option value="pilot">Interview EN</option><option value="interview_cn">Interview CN</option><option value="aviation">Aviation EN</option><option value="aviation_cn">Aviation CN</option><option value="toeic11">TOEIC Q11</option><option value="toeic567">TOEIC Q5–7</option><option value="math_en">Math&Physics EN</option><option value="math_cn">Math&Physics CN</option><option value="classical_cn">Classical CN</option><option value="flight_cards">Aviation Quick Cards</option><option value="favorites">Favorites Only</option></select><select id="timerEnabled" hidden aria-hidden="true"><option value="true">開啟計時</option><option value="false">關閉計時</option></select><div id="mathDifficultySetting" hidden><label>Math 難易度</label><select id="difficultySelect"><option value="all">全部難度</option><option value="basic">Basic 基礎</option><option value="intermediate">Intermediate 中階</option><option value="advanced">Advanced 進階</option></select></div><label>準備時間（秒）</label><input type="number" id="prepSeconds" value="30"><label>回答/思考時間（秒）</label><input type="number" id="answerSeconds" value="90"><div class="setting-switch-row" id="soundSwitchRow">
+<div class="tabs" id="tabs"></div><section class="questionbox"><div class="category" id="category">READY</div><h1 class="question" id="question">Click “New Question” to start your training.</h1><div class="hint" id="hint">v186：修正三筆題目／答案不一致；圓與弦答案改為 12 cm；ISA 標準溫度遞減率與中英解析重新校正；同組考生表現較佳的面試回答改為直接回應題意。</div><div id="tags"></div><div class="diagram" id="diagramBox"></div><div id="subqBox"></div><div class="choices" id="choices"></div><div class="timerrow" id="timerRow"><div class="timercard" id="prepCard"><div class="timerlabel">PREPARATION</div><div class="timer" id="prepTimer">00:30</div><div class="barwrap"><div class="bar" id="prepProgress"></div></div></div><div class="timercard"><div class="timerlabel" id="answerLabel">ANSWER</div><div class="timer" id="answerTimer">01:30</div><div class="barwrap"><div class="bar" id="answerProgress"></div></div></div></div><div class="controls"><button class="btn primary" id="newBtn">New Question</button><button class="btn secondary" id="prevBtn">Previous</button><button class="btn green" id="startPauseBtn">Start</button><button class="btn secondary" id="showBtn">Show Answer</button><button class="btn secondary" id="favBtn"><span id="starIcon">☆</span> Favorite</button><button class="btn danger" id="resetBtn">Reset</button></div><div class="subnav" id="subqNav"><button class="btn secondary" id="subPrevBtn">題組上一小題</button><button class="btn secondary" id="subNextBtn">題組下一小題</button></div><div class="answer" id="answerBox"><div id="acronymBox"></div><h3 id="suggestedHeading">Suggested Answer / Explanation</h3><p id="suggested"></p><div id="legacyAnswerMeta" hidden><p id="short"></p><div id="v100Meta"><div id="v100Difficulty"></div><div id="v100Method"></div><div id="v100Trap"></div><div id="v100Connection"></div></div></div><h3 id="chineseHeading">中文詳解 / 考試理解</h3><p id="chinese"></p></div></section></main><aside class="side"><section class="sidecard card"><h3>Practice Settings</h3><label>模式</label><select id="modeSelect"><option value="all">全部題庫</option><option value="pilot">Interview EN</option><option value="interview_cn">Interview CN</option><option value="aviation">Aviation EN</option><option value="aviation_cn">Aviation CN</option><option value="toeic11">TOEIC Q11</option><option value="toeic567">TOEIC Q5–7</option><option value="math_en">Math&Physics EN</option><option value="math_cn">Math&Physics CN</option><option value="classical_cn">Classical CN</option><option value="flight_cards">Aviation Quick Cards</option><option value="favorites">Favorites Only</option></select><select id="timerEnabled" hidden aria-hidden="true"><option value="true">開啟計時</option><option value="false">關閉計時</option></select><div id="mathDifficultySetting" hidden><label>Math 難易度</label><select id="difficultySelect"><option value="all">全部難度</option><option value="basic">Basic 基礎</option><option value="intermediate">Intermediate 中階</option><option value="advanced">Advanced 進階</option></select></div><label>準備時間（秒）</label><input type="number" id="prepSeconds" value="30"><label>回答/思考時間（秒）</label><input type="number" id="answerSeconds" value="90"><div class="setting-switch-row" id="soundSwitchRow">
   <div class="setting-switch-copy">
     <strong>提示音</strong>
     <span>控制題庫、心算與飛行記憶全部音效</span>
@@ -10963,6 +10963,84 @@ body[data-theme="blue"] .dt-timer-start{
     gradientButtons:true,
     previousStyle:'Disney teal gradient',
     favoriteStyle:'earth-tone gradient'
+  };
+})();
+</script>
+
+
+<script id="v186-three-question-final-qa-repair">
+(() => {
+  const VERSION='v186';
+  const findQ = (text, type) => bank.find(q => q && q.q === text && (!type || q.type === type));
+
+  // 1) Circle chord: the perpendicular from the centre bisects the 10 cm chord.
+  //    Half chord = 5 cm; d = sqrt(13^2 - 5^2) = 12 cm.
+  const circleCN = findQ('半徑 13 cm 的圓，一條弦長 10 cm，圓心到弦的垂直距離是多少？','math_cn');
+  if(circleCN){
+    circleCN.choices=['8 cm','12 cm','15 cm','16 cm'];
+    circleCN.correct=1;
+    circleCN.short='12 cm';
+    circleCN.s='【使用觀念】圓心到弦的垂線會平分弦。\n\n弦長 10 cm，所以半弦 = 5 cm。把「圓心、弦中點、弦端點」連起來會形成直角三角形，其中斜邊是半徑 13 cm。\n\n【計算】\nd² + 5² = 13²\nd² = 169 − 25 = 144\nd = 12 cm\n\n【答案】B. 12 cm\n\n【快速檢查】5-12-13 是常見直角三角形，因此結果合理。';
+    circleCN.cn='';
+    circleCN.tags=[...(circleCN.tags||[]).filter(t=>t!=='v173-choice-reviewed'),'v186-answer-repaired'];
+  }
+  const circleEN = findQ('A circle has radius 13 cm and a chord of length 10 cm. What is the perpendicular distance from center to chord?','math_en');
+  if(circleEN){
+    circleEN.choices=['8 cm','12 cm','15 cm','16 cm'];
+    circleEN.correct=1;
+    circleEN.short='12 cm';
+    circleEN.s='The perpendicular from the center to a chord bisects the chord, so half of the 10 cm chord is 5 cm. This forms a right triangle with hypotenuse 13 cm.\n\nd² + 5² = 13²\nd² = 169 − 25 = 144\nd = 12 cm.\n\nFinal answer: B. 12 cm.';
+    circleEN.cn='【中文完整解析】\n圓心到弦的垂線會平分弦，所以半弦為 5 cm。由直角三角形：d²+5²=13²，因此 d²=144，d=12 cm。答案為 B. 12 cm。';
+    circleEN.tags=[...(circleEN.tags||[]).filter(t=>t!=='v173-choice-reviewed'),'v186-answer-repaired'];
+  }
+
+  // 2) ISA lapse rate: fix the mismatched teamwork/CRM translation and remove stray acronyms.
+  const isaEN = findQ('What is the normal temperature lapse rate in ISA?','pilot');
+  if(isaEN){
+    isaEN.acronyms=[];
+    isaEN.s='In the ISA troposphere, the standard temperature lapse rate is approximately 6.5°C per 1,000 meters, or about 2°C per 1,000 feet, up to the tropopause at roughly 11 km. For a quick estimate, if sea-level standard temperature is 15°C, the ISA temperature at 5,000 ft is about 5°C. This relationship is useful when considering density altitude and aircraft performance.';
+    isaEN.short='ISA troposphere: about 2°C per 1,000 ft (6.5°C per km), up to about 11 km.';
+    isaEN.cn='【中文題目】ISA 中正常溫度遞減率是多少？\n\n【中文翻譯／解析】\n在 ISA 的對流層中，標準溫度遞減率約為每上升 1,000 呎下降 2°C，較精確可記為每 1,000 公尺下降 6.5°C。這個標準大致適用到約 11 km 的對流層頂。\n\n例如海平面 ISA 標準溫度為 15°C，5,000 呎約下降 10°C，因此可快速估成約 5°C。這個概念常用來理解密度高度與飛機性能。';
+    isaEN.tags=[...(isaEN.tags||[]),'v186-answer-repaired'];
+  }
+  const isaCN = findQ('ISA 的標準溫度遞減率是多少？','interview_cn');
+  if(isaCN){
+    isaCN.acronyms=[];
+    isaCN.s='在 ISA 的對流層中，標準溫度遞減率約為每上升 1,000 呎下降 2°C，較精確可記為每 1,000 公尺下降 6.5°C，大致適用到約 11 km 的對流層頂。若用海平面標準溫度 15°C 快速估算，5,000 呎的 ISA 溫度約為 5°C。這個關係也會影響我們對密度高度與飛機性能的理解。';
+    isaCN.short='約 2°C / 1,000 ft；約 6.5°C / km。';
+    isaCN.cn='【English explanation】In the ISA troposphere, the standard temperature lapse rate is about 2°C per 1,000 ft, or 6.5°C per km, up to roughly 11 km. It is useful for quick temperature estimates and for understanding density-altitude and performance effects.';
+    isaCN.tags=[...(isaCN.tags||[]),'v186-answer-repaired'];
+  }
+
+  // 3) Group-selection interview: answer the comparison question directly instead of giving a generic teamwork answer.
+  const peerCN = findQ('如果同組考生表現比你好，你會怎麼想？','interview_cn');
+  if(peerCN){
+    peerCN.s='如果同組考生表現比我好，我會先承認他的表現確實值得學習，而不是因為比較而慌張或否定自己。甄選的當下我會把注意力放回自己的任務，保持穩定，把我能做好的部分做好；如果是團體活動，我也會繼續配合團隊，而不是為了凸顯自己去搶話或壓過別人。結束後，我會回頭觀察他做得好的地方，例如表達方式、判斷速度或團隊互動，找出自己可以改進的部分。我認為飛行員需要能接受別人比自己強，也要願意從他人身上學習；真正重要的是保持成熟、可訓練性與團隊合作，而不是把每個人都當成競爭對手。';
+    peerCN.short='承認對方優點 → 專注自己的表現 → 團隊不內耗 → 事後學習改進。';
+    peerCN.cn='【English explanation】If another candidate performs better than I do, I would acknowledge it and learn from what they did well instead of becoming defensive. During the selection, I would stay focused on my own task and continue supporting the team rather than competing for attention. Afterward, I would review the gap and improve. In aviation, maturity means accepting that others may be stronger in some areas and using that as an opportunity to learn.';
+    peerCN.tags=[...(peerCN.tags||[]),'v186-answer-repaired'];
+  }
+
+  // Explicitly remove the erroneous v173 circle override if it has already run.
+  // This final check makes the displayed correct choice and the explanation agree.
+  if(circleCN && circleCN.choices[circleCN.correct] !== '12 cm'){
+    circleCN.choices=['8 cm','12 cm','15 cm','16 cm'];
+    circleCN.correct=1;
+  }
+
+  document.title='TRIUMPH Pilot Trainer v186';
+  const logo=document.querySelector('.logo');
+  if(logo) logo.innerHTML='TRIUMPH Pilot Trainer v186<span class="creator">created by Ying Chen</span><small>PILOT SELECTION TRAINER</small>';
+  const hint=document.getElementById('hint');
+  if(hint) hint.textContent='v186：修正三筆題目／答案不一致；圓與弦答案改為 12 cm；ISA 標準溫度遞減率與中英解析重新校正；同組考生表現較佳的面試回答改為直接回應題意。';
+
+  window.TRIUMPH_V186_QA={
+    version:VERSION,
+    repaired:[
+      {q:'半徑 13 cm 的圓，一條弦長 10 cm，圓心到弦的垂直距離是多少？',answer:'12 cm',correctIndex:1},
+      {q:'What is the normal temperature lapse rate in ISA?',answer:'2°C/1000 ft ≈ 6.5°C/km'},
+      {q:'如果同組考生表現比你好，你會怎麼想？',answer:'direct comparison / learning / teamwork response'}
+    ]
   };
 })();
 </script>
