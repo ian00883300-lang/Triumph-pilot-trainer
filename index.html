@@ -1101,10 +1101,10 @@ body[data-theme="green"] .dt-overlay{
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="TRIUMPH Pilot">
-<link rel="manifest" href="./triumph-pilot.webmanifest?v=186">
-<link rel="icon" type="image/png" sizes="192x192" href="./triumph-icon-192.png?v=186">
-<link rel="icon" type="image/png" sizes="512x512" href="./triumph-icon-512.png?v=186">
-<link rel="apple-touch-icon" sizes="180x180" href="./triumph-apple-touch-icon.png?v=186">
+<link rel="manifest" href="./triumph-pilot.webmanifest?v=187">
+<link rel="icon" type="image/png" sizes="192x192" href="./triumph-icon-192.png?v=187">
+<link rel="icon" type="image/png" sizes="512x512" href="./triumph-icon-512.png?v=187">
+<link rel="apple-touch-icon" sizes="180x180" href="./triumph-apple-touch-icon.png?v=187">
 
 
 <script id="triumph-v184-cache-bootstrap">
@@ -1117,7 +1117,7 @@ body[data-theme="green"] .dt-overlay{
   // updates do not show an older cached trainer before the new build arrives.
   if ("serviceWorker" in navigator) {
     window.addEventListener("load", () => {
-      navigator.serviceWorker.register("./sw.js?v=186", {
+      navigator.serviceWorker.register("./sw.js?v=187", {
         scope: "./",
         updateViaCache: "none"
       }).catch(() => {});
@@ -1403,7 +1403,7 @@ body[data-theme="green"] .dt-overlay{
 
 
 
-</head><body data-theme="white"><div class="app"><main class="main card"><div class="header"><div class="logo">TRIUMPH Pilot Trainer v186<span class="creator">created by Ying Chen</span><small>PILOT SELECTION TRAINER</small></div><div class="theme"><button class="chip" data-theme="white">White</button><button class="chip" data-theme="black">Black</button><button class="chip" data-theme="blue">Blue</button><button class="chip" data-theme="green">Green</button><button class="chip timer-quick active" id="timerQuickToggle" type="button" title="開啟／關閉計時" aria-label="開啟／關閉計時" aria-pressed="true">⏰</button></div><div class="badge" id="sessionBadge">Today: 0 questions</div></div>
+</head><body data-theme="white"><div class="app"><main class="main card"><div class="header"><div class="logo">TRIUMPH Pilot Trainer v187<span class="creator">created by Ying Chen</span><small>PILOT SELECTION TRAINER</small></div><div class="theme"><button class="chip" data-theme="white">White</button><button class="chip" data-theme="black">Black</button><button class="chip" data-theme="blue">Blue</button><button class="chip" data-theme="green">Green</button><button class="chip timer-quick active" id="timerQuickToggle" type="button" title="開啟／關閉計時" aria-label="開啟／關閉計時" aria-pressed="true">⏰</button></div><div class="badge" id="sessionBadge">Today: 0 questions</div></div>
 <div class="dt-entry-wrap">
   <button type="button" class="dt-entry" id="dailyTestLaunch">
     <span class="dt-entry-icon">✓</span>
@@ -1414,7 +1414,7 @@ body[data-theme="green"] .dt-overlay{
     <span class="dt-entry-arrow">Start →</span>
   </button>
 </div>
-<div class="tabs" id="tabs"></div><section class="questionbox"><div class="category" id="category">READY</div><h1 class="question" id="question">Click “New Question” to start your training.</h1><div class="hint" id="hint">v186：修正三筆題目／答案不一致；圓與弦答案改為 12 cm；ISA 標準溫度遞減率與中英解析重新校正；同組考生表現較佳的面試回答改為直接回應題意。</div><div id="tags"></div><div class="diagram" id="diagramBox"></div><div id="subqBox"></div><div class="choices" id="choices"></div><div class="timerrow" id="timerRow"><div class="timercard" id="prepCard"><div class="timerlabel">PREPARATION</div><div class="timer" id="prepTimer">00:30</div><div class="barwrap"><div class="bar" id="prepProgress"></div></div></div><div class="timercard"><div class="timerlabel" id="answerLabel">ANSWER</div><div class="timer" id="answerTimer">01:30</div><div class="barwrap"><div class="bar" id="answerProgress"></div></div></div></div><div class="controls"><button class="btn primary" id="newBtn">New Question</button><button class="btn secondary" id="prevBtn">Previous</button><button class="btn green" id="startPauseBtn">Start</button><button class="btn secondary" id="showBtn">Show Answer</button><button class="btn secondary" id="favBtn"><span id="starIcon">☆</span> Favorite</button><button class="btn danger" id="resetBtn">Reset</button></div><div class="subnav" id="subqNav"><button class="btn secondary" id="subPrevBtn">題組上一小題</button><button class="btn secondary" id="subNextBtn">題組下一小題</button></div><div class="answer" id="answerBox"><div id="acronymBox"></div><h3 id="suggestedHeading">Suggested Answer / Explanation</h3><p id="suggested"></p><div id="legacyAnswerMeta" hidden><p id="short"></p><div id="v100Meta"><div id="v100Difficulty"></div><div id="v100Method"></div><div id="v100Trap"></div><div id="v100Connection"></div></div></div><h3 id="chineseHeading">中文詳解 / 考試理解</h3><p id="chinese"></p></div></section></main><aside class="side"><section class="sidecard card"><h3>Practice Settings</h3><label>模式</label><select id="modeSelect"><option value="all">全部題庫</option><option value="pilot">Interview EN</option><option value="interview_cn">Interview CN</option><option value="aviation">Aviation EN</option><option value="aviation_cn">Aviation CN</option><option value="toeic11">TOEIC Q11</option><option value="toeic567">TOEIC Q5–7</option><option value="math_en">Math&Physics EN</option><option value="math_cn">Math&Physics CN</option><option value="classical_cn">Classical CN</option><option value="flight_cards">Aviation Quick Cards</option><option value="favorites">Favorites Only</option></select><select id="timerEnabled" hidden aria-hidden="true"><option value="true">開啟計時</option><option value="false">關閉計時</option></select><div id="mathDifficultySetting" hidden><label>Math 難易度</label><select id="difficultySelect"><option value="all">全部難度</option><option value="basic">Basic 基礎</option><option value="intermediate">Intermediate 中階</option><option value="advanced">Advanced 進階</option></select></div><label>準備時間（秒）</label><input type="number" id="prepSeconds" value="30"><label>回答/思考時間（秒）</label><input type="number" id="answerSeconds" value="90"><div class="setting-switch-row" id="soundSwitchRow">
+<div class="tabs" id="tabs"></div><section class="questionbox"><div class="category" id="category">READY</div><h1 class="question" id="question">Click “New Question” to start your training.</h1><div class="hint" id="hint">v187：修正 iPad 上飛行指令記憶訓練頂部超出邊界；加入 iPad 安全邊界、真正置中的標題列與較穩定的內距配置。</div><div id="tags"></div><div class="diagram" id="diagramBox"></div><div id="subqBox"></div><div class="choices" id="choices"></div><div class="timerrow" id="timerRow"><div class="timercard" id="prepCard"><div class="timerlabel">PREPARATION</div><div class="timer" id="prepTimer">00:30</div><div class="barwrap"><div class="bar" id="prepProgress"></div></div></div><div class="timercard"><div class="timerlabel" id="answerLabel">ANSWER</div><div class="timer" id="answerTimer">01:30</div><div class="barwrap"><div class="bar" id="answerProgress"></div></div></div></div><div class="controls"><button class="btn primary" id="newBtn">New Question</button><button class="btn secondary" id="prevBtn">Previous</button><button class="btn green" id="startPauseBtn">Start</button><button class="btn secondary" id="showBtn">Show Answer</button><button class="btn secondary" id="favBtn"><span id="starIcon">☆</span> Favorite</button><button class="btn danger" id="resetBtn">Reset</button></div><div class="subnav" id="subqNav"><button class="btn secondary" id="subPrevBtn">題組上一小題</button><button class="btn secondary" id="subNextBtn">題組下一小題</button></div><div class="answer" id="answerBox"><div id="acronymBox"></div><h3 id="suggestedHeading">Suggested Answer / Explanation</h3><p id="suggested"></p><div id="legacyAnswerMeta" hidden><p id="short"></p><div id="v100Meta"><div id="v100Difficulty"></div><div id="v100Method"></div><div id="v100Trap"></div><div id="v100Connection"></div></div></div><h3 id="chineseHeading">中文詳解 / 考試理解</h3><p id="chinese"></p></div></section></main><aside class="side"><section class="sidecard card"><h3>Practice Settings</h3><label>模式</label><select id="modeSelect"><option value="all">全部題庫</option><option value="pilot">Interview EN</option><option value="interview_cn">Interview CN</option><option value="aviation">Aviation EN</option><option value="aviation_cn">Aviation CN</option><option value="toeic11">TOEIC Q11</option><option value="toeic567">TOEIC Q5–7</option><option value="math_en">Math&Physics EN</option><option value="math_cn">Math&Physics CN</option><option value="classical_cn">Classical CN</option><option value="flight_cards">Aviation Quick Cards</option><option value="favorites">Favorites Only</option></select><select id="timerEnabled" hidden aria-hidden="true"><option value="true">開啟計時</option><option value="false">關閉計時</option></select><div id="mathDifficultySetting" hidden><label>Math 難易度</label><select id="difficultySelect"><option value="all">全部難度</option><option value="basic">Basic 基礎</option><option value="intermediate">Intermediate 中階</option><option value="advanced">Advanced 進階</option></select></div><label>準備時間（秒）</label><input type="number" id="prepSeconds" value="30"><label>回答/思考時間（秒）</label><input type="number" id="answerSeconds" value="90"><div class="setting-switch-row" id="soundSwitchRow">
   <div class="setting-switch-copy">
     <strong>提示音</strong>
     <span>控制題庫、心算與飛行記憶全部音效</span>
@@ -11041,6 +11041,118 @@ body[data-theme="blue"] .dt-timer-start{
       {q:'What is the normal temperature lapse rate in ISA?',answer:'2°C/1000 ft ≈ 6.5°C/km'},
       {q:'如果同組考生表現比你好，你會怎麼想？',answer:'direct comparison / learning / teamwork response'}
     ]
+  };
+})();
+</script>
+
+
+<style id="v187-ipad-flight-memory-boundary-fix">
+/* v187 — iPad boundary fix for the flight-command memory overlay.
+   The top header now respects safe areas, stays visually centered,
+   and the whole shell is kept slightly smaller on iPad widths. */
+.fm-overlay{
+  overscroll-behavior:contain;
+}
+.fm-overlay .fm-shell{
+  width:min(100%, 980px)!important;
+  max-width:980px!important;
+  margin:0 auto!important;
+  padding:calc(env(safe-area-inset-top,0px) + 26px) 20px calc(env(safe-area-inset-bottom,0px) + 64px)!important;
+}
+@media (min-width: 768px) and (max-width: 1366px){
+  .fm-overlay .fm-shell{
+    width:min(100%, 940px)!important;
+    max-width:940px!important;
+    padding:calc(env(safe-area-inset-top,0px) + 28px) 24px calc(env(safe-area-inset-bottom,0px) + 58px)!important;
+  }
+  .fm-overlay .fm-top{
+    display:grid!important;
+    grid-template-columns:minmax(72px,1fr) auto minmax(72px,1fr)!important;
+    align-items:start!important;
+    column-gap:18px!important;
+    row-gap:0!important;
+    padding-bottom:20px!important;
+    margin-bottom:24px!important;
+  }
+  .fm-overlay .fm-top::before{
+    content:"";
+    display:block;
+    min-width:72px;
+  }
+  .fm-overlay .fm-brand{
+    grid-column:2!important;
+    justify-self:center!important;
+    width:100%!important;
+    max-width:680px!important;
+    min-width:0!important;
+    text-align:center!important;
+  }
+  .fm-overlay .fm-close{
+    grid-column:3!important;
+    justify-self:end!important;
+    align-self:start!important;
+    margin-top:2px!important;
+  }
+  .fm-overlay .fm-title{
+    font-size:clamp(28px,4vw,46px)!important;
+    line-height:1.14!important;
+    letter-spacing:.06em!important;
+    margin:0 auto!important;
+    max-width:100%!important;
+    word-break:keep-all!important;
+  }
+  .fm-overlay .fm-sub{
+    font-size:clamp(11px,1.45vw,16px)!important;
+    letter-spacing:.11em!important;
+    line-height:1.45!important;
+    max-width:100%!important;
+    word-break:break-word!important;
+  }
+  .fm-overlay .fm-card{
+    padding:26px 24px!important;
+    border-radius:24px!important;
+  }
+  .fm-overlay .fm-range-row{
+    display:grid!important;
+    grid-template-columns:minmax(0,1fr) auto!important;
+    align-items:center!important;
+    gap:18px!important;
+  }
+  .fm-overlay .fm-range-row input{
+    width:100%!important;
+    min-width:0!important;
+  }
+  .fm-overlay .fm-count{
+    min-width:100px!important;
+  }
+}
+@media (min-width:768px) and (max-width:1024px){
+  .fm-overlay .fm-shell{
+    width:min(100%, 900px)!important;
+    max-width:900px!important;
+    padding-left:22px!important;
+    padding-right:22px!important;
+  }
+  .fm-overlay .fm-title{
+    font-size:38px!important;
+  }
+  .fm-overlay .fm-sub{
+    font-size:14px!important;
+  }
+}
+</style>
+<script id="v187-ipad-flight-memory-boundary-fix-script">
+(() => {
+  document.title='TRIUMPH Pilot Trainer v187';
+  const logo=document.querySelector('.logo');
+  if(logo) logo.innerHTML='TRIUMPH Pilot Trainer v187<span class="creator">created by Ying Chen</span><small>PILOT SELECTION TRAINER</small>';
+  const hint=document.getElementById('hint');
+  if(hint) hint.textContent='v187：修正 iPad 上飛行指令記憶訓練頂部超出邊界；加入 iPad 安全邊界、真正置中的標題列與較穩定的內距配置。';
+  window.TRIUMPH_V187_QA = {
+    version:'v187',
+    fix:'iPad flight memory overlay top boundary / safe-area / centered header',
+    shellMaxWidth:940,
+    safeAreaAware:true
   };
 })();
 </script>
