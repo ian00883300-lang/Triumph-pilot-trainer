@@ -1,4 +1,4 @@
-/* TRIUMPH Pilot Trainer v191 hotfix service worker — 2026-08-22
+/* TRIUMPH Pilot Trainer v193 service worker — 2026-08-22
    Goals:
    1) Faster repeat launches: serve the last usable app shell immediately, then refresh it in the background.
    2) Keep the previous cache as a warm fallback during service-worker upgrades instead of forcing a second 6 MB navigation.
@@ -7,10 +7,10 @@
    The main index.html is currently about 6 MB, so network-first + no-store on every launch can make iPhone/iPad startup feel very slow.
 */
 
-const CACHE_NAME = 'triumph-pilot-v191-hotfix-20260822';
+const CACHE_NAME = 'triumph-pilot-v193-20260822';
 const CACHE_PREFIX = 'triumph-pilot-';
 const INDEX_URL = new URL('./index.html', self.location.href).href;
-const PATCH_ID = 'triumph-v191-hotfix-20260822';
+const PATCH_ID = 'triumph-v193-runtime-20260822';
 
 const RUNTIME_PATCH = `
 <style id="${PATCH_ID}">

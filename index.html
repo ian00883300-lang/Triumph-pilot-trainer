@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="zh-Hant"><head><meta charset="UTF-8"><title>TRIUMPH Pilot Trainer v191</title><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<!DOCTYPE html><html lang="zh-Hant"><head><meta charset="UTF-8"><title>TRIUMPH Pilot Trainer v193</title><meta name="viewport" content="width=device-width,initial-scale=1.0">
 <meta name="theme-color" content="#0b1c31">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -1109,7 +1109,7 @@ body[data-theme="green"] .dt-overlay{
 
 <script id="triumph-current-cache-bootstrap">
 (() => {
-  const CURRENT_VERSION = "v191";
+  const CURRENT_VERSION = "v193";
   window.TRIUMPH_CACHE_VERSION = CURRENT_VERSION;
 
   // Fast-open policy:
@@ -1117,7 +1117,7 @@ body[data-theme="green"] .dt-overlay{
   // updates do not show an older cached trainer before the new build arrives.
   if ("serviceWorker" in navigator) {
     window.addEventListener("load", () => {
-      navigator.serviceWorker.register("./sw.js?v=191", {
+      navigator.serviceWorker.register("./sw.js?v=193", {
         scope: "./",
         updateViaCache: "none"
       }).catch(() => {});
@@ -1403,7 +1403,7 @@ body[data-theme="green"] .dt-overlay{
 
 
 
-</head><body data-theme="white"><div class="app"><main class="main card"><div class="header"><div class="logo">TRIUMPH Pilot Trainer v191<span class="creator">created by Ying Chen</span><small>PILOT SELECTION TRAINER</small></div><div class="theme"><button class="chip" data-theme="white">White</button><button class="chip" data-theme="black">Black</button><button class="chip" data-theme="blue">Blue</button><button class="chip" data-theme="green">Green</button><button class="chip timer-quick active" id="timerQuickToggle" type="button" title="開啟／關閉計時" aria-label="開啟／關閉計時" aria-pressed="true">⏰</button></div><div class="badge" id="sessionBadge">Today: 0 questions</div></div>
+</head><body data-theme="white"><div class="app"><main class="main card"><div class="header"><div class="logo">TRIUMPH Pilot Trainer v193<span class="creator">created by Ying Chen</span><small>PILOT SELECTION TRAINER</small></div><div class="theme"><button class="chip" data-theme="white">White</button><button class="chip" data-theme="black">Black</button><button class="chip" data-theme="blue">Blue</button><button class="chip" data-theme="green">Green</button><button class="chip timer-quick active" id="timerQuickToggle" type="button" title="開啟／關閉計時" aria-label="開啟／關閉計時" aria-pressed="true">⏰</button></div><div class="badge" id="sessionBadge">Today: 0 questions</div></div>
 <div class="dt-entry-wrap">
   <button type="button" class="dt-entry" id="dailyTestLaunch">
     <span class="dt-entry-icon">✓</span>
@@ -1414,7 +1414,7 @@ body[data-theme="green"] .dt-overlay{
     <span class="dt-entry-arrow">Start →</span>
   </button>
 </div>
-<div class="tabs" id="tabs"></div><section class="questionbox"><div class="category" id="category">READY</div><h1 class="question" id="question">Click “New Question” to start your training.</h1><div class="hint" id="hint">v191：校正 Interview／Aviation 題目與答案、依面試素材擴充題庫；飛行記憶速度改用 IAS，完整提示重新對齊。</div><div id="tags"></div><div class="diagram" id="diagramBox"></div><div id="subqBox"></div><div class="choices" id="choices"></div><div class="timerrow" id="timerRow"><div class="timercard" id="prepCard"><div class="timerlabel">PREPARATION</div><div class="timer" id="prepTimer">00:30</div><div class="barwrap"><div class="bar" id="prepProgress"></div></div></div><div class="timercard"><div class="timerlabel" id="answerLabel">ANSWER</div><div class="timer" id="answerTimer">01:30</div><div class="barwrap"><div class="bar" id="answerProgress"></div></div></div></div><div class="controls"><button class="btn primary" id="newBtn">New Question</button><button class="btn secondary" id="prevBtn">Previous</button><button class="btn green" id="startPauseBtn">Start</button><button class="btn secondary" id="showBtn">Show Answer</button><button class="btn secondary" id="favBtn"><span id="starIcon">☆</span> Favorite</button><button class="btn danger" id="resetBtn">Reset</button></div><div class="subnav" id="subqNav"><button class="btn secondary" id="subPrevBtn">題組上一小題</button><button class="btn secondary" id="subNextBtn">題組下一小題</button></div><div class="answer" id="answerBox"><div id="acronymBox"></div><h3 id="suggestedHeading">Suggested Answer / Explanation</h3><p id="suggested"></p><div id="legacyAnswerMeta" hidden><p id="short"></p><div id="v100Meta"><div id="v100Difficulty"></div><div id="v100Method"></div><div id="v100Trap"></div><div id="v100Connection"></div></div></div><h3 id="chineseHeading">中文詳解 / 考試理解</h3><p id="chinese"></p></div></section></main><aside class="side"><section class="sidecard card"><h3>Practice Settings</h3><label>模式</label><select id="modeSelect"><option value="all">全部題庫</option><option value="pilot">Interview EN</option><option value="interview_cn">Interview CN</option><option value="aviation">Aviation EN</option><option value="aviation_cn">Aviation CN</option><option value="toeic11">TOEIC Q11</option><option value="toeic567">TOEIC Q5–7</option><option value="math_en">Math&Physics EN</option><option value="math_cn">Math&Physics CN</option><option value="classical_cn">Classical CN</option><option value="flight_cards">Aviation Quick Cards</option><option value="favorites">Favorites Only</option></select><select id="timerEnabled" hidden aria-hidden="true"><option value="true">開啟計時</option><option value="false">關閉計時</option></select><div id="mathDifficultySetting" hidden><label>Math 難易度</label><select id="difficultySelect"><option value="all">全部難度</option><option value="basic">Basic 基礎</option><option value="intermediate">Intermediate 中階</option><option value="advanced">Advanced 進階</option></select></div><label>準備時間（秒）</label><input type="number" id="prepSeconds" value="30"><label>回答/思考時間（秒）</label><input type="number" id="answerSeconds" value="90"><div class="setting-switch-row" id="soundSwitchRow">
+<div class="tabs" id="tabs"></div><section class="questionbox"><div class="category" id="category">READY</div><h1 class="question" id="question">Click “New Question” to start your training.</h1><div class="hint" id="hint">v193：飛行記憶 Increase 指令恢復 SPD；航空知識題庫 IAS 保留。</div><div id="tags"></div><div class="diagram" id="diagramBox"></div><div id="subqBox"></div><div class="choices" id="choices"></div><div class="timerrow" id="timerRow"><div class="timercard" id="prepCard"><div class="timerlabel">PREPARATION</div><div class="timer" id="prepTimer">00:30</div><div class="barwrap"><div class="bar" id="prepProgress"></div></div></div><div class="timercard"><div class="timerlabel" id="answerLabel">ANSWER</div><div class="timer" id="answerTimer">01:30</div><div class="barwrap"><div class="bar" id="answerProgress"></div></div></div></div><div class="controls"><button class="btn primary" id="newBtn">New Question</button><button class="btn secondary" id="prevBtn">Previous</button><button class="btn green" id="startPauseBtn">Start</button><button class="btn secondary" id="showBtn">Show Answer</button><button class="btn secondary" id="favBtn"><span id="starIcon">☆</span> Favorite</button><button class="btn danger" id="resetBtn">Reset</button></div><div class="subnav" id="subqNav"><button class="btn secondary" id="subPrevBtn">題組上一小題</button><button class="btn secondary" id="subNextBtn">題組下一小題</button></div><div class="answer" id="answerBox"><div id="acronymBox"></div><h3 id="suggestedHeading">Suggested Answer / Explanation</h3><p id="suggested"></p><div id="legacyAnswerMeta" hidden><p id="short"></p><div id="v100Meta"><div id="v100Difficulty"></div><div id="v100Method"></div><div id="v100Trap"></div><div id="v100Connection"></div></div></div><h3 id="chineseHeading">中文詳解 / 考試理解</h3><p id="chinese"></p></div></section></main><aside class="side"><section class="sidecard card"><h3>Practice Settings</h3><label>模式</label><select id="modeSelect"><option value="all">全部題庫</option><option value="pilot">Interview EN</option><option value="interview_cn">Interview CN</option><option value="aviation">Aviation EN</option><option value="aviation_cn">Aviation CN</option><option value="toeic11">TOEIC Q11</option><option value="toeic567">TOEIC Q5–7</option><option value="math_en">Math&Physics EN</option><option value="math_cn">Math&Physics CN</option><option value="classical_cn">Classical CN</option><option value="flight_cards">Aviation Quick Cards</option><option value="favorites">Favorites Only</option></select><select id="timerEnabled" hidden aria-hidden="true"><option value="true">開啟計時</option><option value="false">關閉計時</option></select><div id="mathDifficultySetting" hidden><label>Math 難易度</label><select id="difficultySelect"><option value="all">全部難度</option><option value="basic">Basic 基礎</option><option value="intermediate">Intermediate 中階</option><option value="advanced">Advanced 進階</option></select></div><label>準備時間（秒）</label><input type="number" id="prepSeconds" value="30"><label>回答/思考時間（秒）</label><input type="number" id="answerSeconds" value="90"><div class="setting-switch-row" id="soundSwitchRow">
   <div class="setting-switch-copy">
     <strong>提示音</strong>
     <span>控制題庫、心算與飛行記憶全部音效</span>
@@ -1426,9 +1426,9 @@ body[data-theme="green"] .dt-overlay{
 <select id="soundEnabled" hidden aria-hidden="true"><option value="true">開啟提示音</option><option value="false">關閉提示音</option></select><label>提示音音量 <span aria-hidden="true">🔊</span></label><input type="range" id="soundVolume" min="0" max="150" value="120"><div class="hint" style="font-size:12px">全域音效：題庫倒數、心算倒數與答題、飛行記憶指令完成及任務完成。</div><button class="btn secondary" id="applyDefaultsBtn" style="width:100%;margin-top:10px">套用此題庫預設時間</button><button class="btn memory-launch" id="flightMemoryBtn">✈ 飛行指令記憶訓練</button><button class="btn mental-launch" id="mentalMathBtn">∑ 數學心算 Mental Math</button></section><section class="sidecard card"><h3>Question Bank</h3><div class="stats"><div class="stat"><span>目前題庫</span><b id="currentMode">ALL</b></div><div class="stat"><span>題庫數量</span><b id="bankCount">0</b></div><div class="stat"><span>目前題號</span><b id="currentIndex">-</b></div><div class="stat"><span>已練題數</span><b id="doneCount">0</b></div><div class="stat"><span>收藏題</span><b id="favCount">0</b></div></div><div class="controls"><button class="btn secondary" id="copyBtn">複製題目</button><button class="btn danger" id="clearDataBtn">清除儲存</button></div></section><section class="sidecard card" id="v100Dashboard"><h3>v100 Performance</h3><div class="stats"><div class="stat"><span>答對題數</span><b id="correctCount">0</b></div><div class="stat"><span>答錯題數</span><b id="wrongCount">0</b></div><div class="stat"><span>作答正確率</span><b id="accuracyRate">-</b></div><div class="stat"><span>錯題待複習</span><b id="reviewCount">0</b></div></div><div class="controls"><button class="btn secondary" id="reviewWrongBtn">Review Wrong</button><button class="btn secondary" id="markMasteredBtn">Mark Mastered</button></div></section><section class="sidecard card"><h3>Favorites</h3><div id="favoriteSyncStatus" style="font-size:12px;color:var(--muted);margin:-4px 0 10px">跨版本收藏同步中…</div><div id="favoriteList"></div></section><section class="sidecard card"><h3>Your Notes</h3><textarea id="notes" placeholder="這題的卡點、公式、單字、回答弱點..."></textarea></section></aside></div>
 <script id="triumph-current-version-guard">
 (() => {
-  const BUILD='v191';
+  const BUILD='v193';
   const CURRENT='TRIUMPH Pilot Trainer '+BUILD;
-  const INITIAL_HINT='v191：校正 Interview／Aviation 題目與答案、依面試素材擴充題庫；飛行記憶速度改用 IAS，完整提示重新對齊。';
+  const INITIAL_HINT='v193：飛行記憶 Increase 指令恢復 SPD；航空知識題庫 IAS 保留。';
   window.TRIUMPH_BUILD_VERSION=BUILD;
   const enforceIdentity=()=>{
     const titleEl=document.querySelector('title');
@@ -1848,7 +1848,7 @@ window.addEventListener('DOMContentLoaded',init);
          direction=fmPick(['Increase','Reduce'],[]);
        }
 
-       item={type,direction,value:speed,text:direction+' IAS to '+speed+' kt'};
+       item={type,direction,value:speed,text:direction+(direction==='Increase'?' SPD to ':' IAS to ')+speed+' kt'};
      }
 
      const exactDuplicate=usedText.has(item.text);
@@ -11455,7 +11455,7 @@ body.overlay-active > .app{
 
   // IAS calibration card.
   if(!bank.some(x=>x?.type==='flight_cards'&&norm(x.q)===norm('ATC 指定 230 knots 的速度通常指哪一種空速'))){
-    bank.push({type:'flight_cards',cat:'AVIATION QUICK CARDS',topic:'ATC / Airspeed',q:'ATC 指定 230 knots 的速度通常指哪一種空速？',hint:'先想 5–10 秒，再按「Flip Card」看背面。',tags:['v191','quick-card','ATC','IAS'],defaultPrep:5,defaultAns:55,prep:5,ans:55,s:'在一般以 knots 下達的 ATC speed control 中，目標通常以 <b>IAS／KIAS（Indicated Airspeed）</b> 執行；高空速度管制則可能以 Mach 指定。<br><br>例如：<b>Increase speed to 230 knots</b>，可理解成把指示空速調整到約 <b>230 KIAS</b>，實際執行仍以 ATC 指示、機型限制與 SOP 為準。<br><br>因此 TRIUMPH 的飛行記憶速度指令改成 <b>Increase IAS to 230 kt</b>，避免把 SPD 當成一種空速名稱。',short:'knots speed assignment → 通常 IAS/KIAS；高空可能用 Mach。',cn:''});
+    bank.push({type:'flight_cards',cat:'AVIATION QUICK CARDS',topic:'ATC / Airspeed',q:'ATC 指定 230 knots 的速度通常指哪一種空速？',hint:'先想 5–10 秒，再按「Flip Card」看背面。',tags:['v191','quick-card','ATC','IAS'],defaultPrep:5,defaultAns:55,prep:5,ans:55,s:'在一般以 knots 下達的 ATC speed control 中，目標通常以 <b>IAS／KIAS（Indicated Airspeed）</b> 執行；高空速度管制則可能以 Mach 指定。<br><br>例如：<b>Increase speed to 230 knots</b>，可理解成把指示空速調整到約 <b>230 KIAS</b>，實際執行仍以 ATC 指示、機型限制與 SOP 為準。<br><br>TRIUMPH 的飛行記憶練習沿用標準指令標籤 <b>Increase SPD to 230 kt</b>；航空知識上，仍應依題目、ATC 指示、飛行階段與 SOP 判斷適用的 IAS/KIAS 或 Mach。',short:'knots speed assignment → 通常 IAS/KIAS；高空可能用 Mach。',cn:''});
   }
 
   try{if(typeof renderTabs==='function')renderTabs();if(typeof updateStats==='function')updateStats();}catch(_){}
@@ -11468,6 +11468,110 @@ body.overlay-active > .app{
   const apply=()=>{document.title=CURRENT;const logo=document.querySelector('.logo');if(logo)logo.innerHTML=CURRENT+'<span class="creator">created by Ying Chen</span><small>PILOT SELECTION TRAINER</small>';const hint=document.getElementById('hint');if(hint)hint.textContent='v191：校正 Interview／Aviation 題目與答案、依面試素材擴充題庫；飛行記憶速度改用 IAS，完整提示重新對齊。';};
   apply();document.addEventListener('DOMContentLoaded',apply,{once:true});window.addEventListener('load',apply,{once:true});
   window.TRIUMPH_V191_QA={version:'v191',interviewCalibration:true,iasFlightMemory:true,alignedFullHint:true};
+})();
+</script>
+
+
+<style id="v192-ui-hotfix">
+/* v192: complete Flight Memory hint = centered information block, readable left-aligned rows. */
+html body .fm-hidden-command.full-hint-mode{ text-align:center!important; padding-left:18px!important; padding-right:18px!important; }
+html body .fm-hidden-command.full-hint-mode .fm-full-hint-title{ text-align:center!important; }
+html body .fm-hidden-command.full-hint-mode .fm-full-hint-list{ display:grid!important; gap:7px!important; width:max-content!important; max-width:100%!important; margin-left:auto!important; margin-right:auto!important; }
+html body .fm-hidden-command.full-hint-mode .fm-full-hint-row{ display:grid!important; grid-template-columns:2.2em auto!important; gap:8px!important; align-items:start!important; line-height:1.4!important; }
+html body .fm-hidden-command.full-hint-mode .fm-full-hint-num{ text-align:right!important; font-variant-numeric:tabular-nums!important; font-weight:800!important; }
+html body .fm-hidden-command.full-hint-mode .fm-full-hint-text{ text-align:left!important; min-width:0!important; overflow-wrap:normal!important; word-break:normal!important; }
+/* Timer ON = neutral theme-aware surface; OFF = same surface, dimmed icon + red slash. */
+html body #timerQuickToggle.timer-quick, html body #timerQuickToggle.timer-quick.active{ background:var(--soft)!important; color:var(--text)!important; border:1px solid var(--line)!important; box-shadow:none!important; filter:none!important; }
+html body #timerQuickToggle.timer-quick.active{opacity:1!important}
+html body #timerQuickToggle.timer-quick:not(.active){opacity:.55!important;filter:grayscale(.45)!important}
+html body #timerQuickToggle.timer-quick:not(.active)::after{content:""!important;position:absolute!important;left:7px!important;right:7px!important;top:50%!important;height:2px!important;background:#d75b5b!important;transform:rotate(-35deg)!important;border-radius:2px!important}
+html body #dtTimerToggle.dt-timer-toggle, html body #dtTimerToggle.dt-timer-toggle.active{position:relative!important;background:var(--dt-soft,var(--soft))!important;color:var(--dt-text,var(--text))!important;border:1px solid var(--dt-line,var(--line))!important;box-shadow:none!important;filter:none!important}
+html body #dtTimerToggle.dt-timer-toggle.active{opacity:1!important}
+html body #dtTimerToggle.dt-timer-toggle:not(.active){opacity:.55!important;filter:grayscale(.45)!important}
+html body #dtTimerToggle.dt-timer-toggle:not(.active)::after{content:""!important;position:absolute!important;left:8px!important;right:8px!important;top:50%!important;height:2px!important;background:#d75b5b!important;transform:rotate(-35deg)!important;border-radius:2px!important;pointer-events:none!important}
+@media(max-width:620px){html body .fm-hidden-command.full-hint-mode{padding-left:12px!important;padding-right:12px!important}.fm-hidden-command.full-hint-mode .fm-full-hint-row{grid-template-columns:2em auto!important;gap:7px!important}}
+</style>
+
+<script id="v192-content-qa">
+(() => {
+  if(typeof bank==='undefined' || !Array.isArray(bank)) return;
+  const DATA={"companies": [{"q": "請簡述你對中華航空的認識", "s": "我對中華航空的認識可以分成四個部分。第一，華航自 1959 年成立，是台灣主要的國際航空公司之一，也是 SkyTeam 成員，航網涵蓋亞洲、北美、歐洲與大洋洲。第二，華航的特色是客運與貨運並重；截至 2026 年 5 月底營運 82 架飛機，其中 64 架客機、18 架貨機，機隊包含 A321neo、A350-900、777-300ER，以及 747-400F、777F 等，代表公司同時具備區域、長程與貨運任務的完整營運經驗。第三，我注意到華航持續進行機隊更新、航網合作與永續發展，這表示公司不只重視營運規模，也持續強化未來競爭力。對我而言，最吸引我的不是單一機型或航點，而是華航成熟的國際營運環境，以及在 SOP、安全、CRM 與跨部門合作下累積的制度。我希望如果有機會加入，能先把訓練要求與標準程序做到扎實，成為可靠的副駕駛，再隨著經驗累積承擔更多責任。", "short": "1959 成立 → SkyTeam → 客貨運並重 → 完整機隊與國際航網 → 安全、SOP、CRM → 長期發展。", "cn": "【English Explanation】\nMy understanding of China Airlines can be summarized in four areas. First, China Airlines was founded in 1959 and is one of Taiwan’s major international carriers as well as a SkyTeam member, with a network covering Asia, North America, Europe, and Oceania. Second, it has strong capabilities in both passenger and cargo operations. As of the end of May 2026, it operated 82 aircraft, including 64 passenger aircraft and 18 freighters, with types such as the A321neo, A350-900, 777-300ER, 747-400F, and 777F. I also see continuous fleet renewal, network cooperation, and sustainability initiatives. What attracts me most is the mature international operating environment and the emphasis on SOPs, safety, CRM, and teamwork. If I have the opportunity to join, I want to build a solid foundation in training, become a dependable first officer, and take on greater responsibility as I gain experience."}, {"q": "請簡述你對長榮航空的認識", "s": "我對長榮航空的認識主要是安全、紀律、國際航網與穩定營運。長榮於 1989 年成立，2013 年加入 Star Alliance；截至 2026 年 8 月，航網涵蓋亞、歐、美、澳四大洲六十多個航點，機隊規模接近 90 架。現役主力包含 777-300ER、787-9、787-10 與 777F，並已規劃引進 A350-1000 與 A321neo，顯示公司正在進行下一階段的機隊更新。長榮的品牌特色不只是服務品質，我認為更重要的是把安全、程序與一致性放在營運核心。對飛行員而言，這代表必須重視 SOP、CRM、標準通話、穩定決策與持續學習。我希望在這種制度清楚、要求嚴謹的環境中接受訓練，讓自己的紀律與團隊合作能力轉化成每天都能被信任的表現，並以長期職涯的角度在公司發展。", "short": "1989 成立 → Star Alliance → 全球客貨運航網 → 777/787/777F → A350-1000/A321neo 更新 → 安全與紀律。", "cn": "【English Explanation】\nMy understanding of EVA Air is centered on safety, discipline, an international network, and stable operations. EVA Air was founded in 1989 and joined Star Alliance in 2013. By 2026, its network covered more than sixty destinations across Asia, Europe, North America, and Oceania, with a fleet of close to ninety aircraft. Its major aircraft include the 777-300ER, 787-9, 787-10, and 777F, while the A350-1000 and A321neo are planned for the next stage of fleet renewal. To me, EVA Air is known not only for service quality but also for a culture that emphasizes safety, procedures, and consistency. As a pilot, that means respecting SOPs, CRM, standard communication, sound decision-making, and continuous learning. I would like to develop in this disciplined environment and build a long-term career through reliable daily performance."}, {"q": "請簡述你對星宇航空的認識", "s": "我對星宇航空的認識是，它雖然是較新的航空公司，但定位非常清楚：以高品質、精品化旅運體驗和新世代機隊建立差異化品牌。星宇於 2018 年成立、2020 年開始營運，以桃園為主要樞紐，採全 Airbus 機隊，包括 A321neo、A330-900neo、A350-900，並在 2026 年導入 A350-1000。航網也由亞洲與北美持續向外拓展，台北－布拉格在 2026 年 8 月成為星宇第一條歐洲航線。對我來說，星宇最吸引人的地方是公司仍在快速成長；這代表機隊、航網與職涯機會持續增加，但同時更要求員工在變化中維持標準化、安全與團隊協作。我希望如果加入，能在新世代機隊與擴張中的航網環境裡持續學習，同時把 SOP、CRM 與穩定執行放在第一位，和公司一起把成長建立在安全與一致的專業標準上。", "short": "2018 成立／2020 營運 → 精品化定位 → 全 Airbus 新世代機隊 → A350-1000 → 北美與歐洲擴張 → 成長中仍守住安全與標準化。", "cn": "【English Explanation】\nMy understanding of STARLUX Airlines is that, although it is a relatively young airline, its positioning is very clear: it differentiates itself through a premium travel experience and a modern fleet. Founded in 2018 and operating since 2020, STARLUX uses Taoyuan as its main hub and operates an all-Airbus fleet including the A321neo, A330-900neo, A350-900, and, from 2026, the A350-1000. Its network has continued to expand from Asia into North America and Europe, with Taipei–Prague becoming its first European route in August 2026. What attracts me is the growth environment. Growth creates opportunities, but it also requires strong standardization, safety discipline, adaptability, and teamwork. If I join, I want to keep learning in a modern fleet environment while always putting SOPs, CRM, and consistent execution first."}], "optics": {"In a uniform medium, what is the basic propagation behavior of light?": [["Travels in straight lines", "Automatically bends around all obstacles", "Propagates only upward", "Its speed is always zero"], "Travels in straight lines."], "Using the simplified ordering in the current study notes, which sequence gives light speed from fastest to slowest?": [["Vacuum > air > liquid > solid", "Solid > liquid > air > vacuum", "Air > vacuum > solid > liquid", "Liquid > vacuum > air > solid"], "Vacuum > air > liquid > solid."], "An opaque object placed in front of a light source forms a shadow. Which idea explains this most directly?": [["Light travels in straight lines and is blocked by the object", "Light always passes through opaque objects", "Light exists only in a vacuum", "All light stops when it touches an object"], "Light travels in straight lines and is blocked by the object."], "What is the typical image formed by a single pinhole on a screen behind it?": [["A real image inverted vertically and horizontally", "Always an upright virtual image", "Only horizontally inverted; vertically unchanged", "No image is formed"], "A real image inverted vertically and horizontally."], "With object and pinhole fixed, what usually happens when the screen moves closer to the pinhole?": [["The image becomes smaller and generally brighter", "The image becomes larger and darker", "The size remains unchanged", "The image always disappears"], "The image becomes smaller and generally brighter."], "With object and pinhole fixed, what usually happens when the screen is moved farther away?": [["The image becomes larger and generally darker", "The image becomes smaller and brighter", "The image is always upright", "Image distance increases but size remains unchanged"], "The image becomes larger and generally darker."], "If the pinhole is made noticeably larger while other conditions stay the same, what is most likely?": [["Brighter, but less sharp", "Darker and sharper", "Brightness and sharpness remain unchanged", "It always becomes a virtual image"], "Brighter, but less sharp."], "If an opaque board has two separated small pinholes, what is most likely seen on the screen behind it?": [["Two slightly displaced images are formed", "The two pinholes always combine into one sharper image", "No image is formed", "Only a straight line remains"], "Two slightly displaced images are formed."], "In a pinhole setup with fixed object distance, the screen moves from 40 cm to 80 cm behind the pinhole. How does the image size change?": [["Becomes half as large", "Remains unchanged", "Approximately doubles", "Approximately quadruples"], "Approximately doubles."]}};
+  const norm=v=>String(v??'').trim().replace(/\s+/g,' ').toLowerCase();
+  const addTag=(x,t)=>{x.tags=Array.from(new Set([...(x.tags||[]),t]));};
+  const exact=(q,type)=>bank.filter(x=>(!type||x.type===type)&&norm(x.q)===norm(q));
+  const codeIn=(text,code)=>{const tokens=String(text??'').toUpperCase().match(/[A-Z0-9]+(?:-[A-Z0-9]+)*/g)||[];return tokens.includes(String(code??'').toUpperCase());};
+
+  // 1) Transition altitude / transition level: remove the unrelated TCAS TA expansion.
+  const taCn='過渡高度（Transition Altitude）是爬升時由「高度 Altitude」切換成「飛航空層 Flight Level」的基準高度。在過渡高度以下，使用當地 QNH 讓高度表顯示海平面基準高度；爬升通過過渡高度時，改設標準氣壓 1013.25 hPa（29.92 inHg）。過渡高度層（Transition Level）則是過渡高度上方最低可用的 Flight Level；下降通過過渡高度層時，由標準氣壓改回當地 QNH。兩者之間稱為過渡層（transition layer）。實務上，過渡高度通常是公布的固定高度，而過渡高度層會依 QNH 等條件決定，以確保兩者之間保留足夠垂直間隔。';
+  const taEn='Transition altitude is the altitude used as the reference for changing from altitude to flight levels during climb. At or below it, the altimeter uses the appropriate local QNH; when climbing through it, the altimeter is set to standard pressure, 1013.25 hPa or 29.92 inHg. Transition level is the lowest usable flight level above the transition altitude; when descending through it, the altimeter is changed from standard pressure back to local QNH. The airspace between them is the transition layer. In practice, transition altitude is normally published as a fixed altitude, while transition level can vary with QNH to preserve adequate vertical separation.';
+  exact('過渡高度與過渡高度層在實務上有什麼差別？','aviation_cn').forEach(x=>{x.s=taCn;x.short='爬升通過過渡高度：QNH → 1013.25 hPa；下降通過過渡高度層：1013.25 hPa → QNH。';x.cn='【English Explanation】\n'+taEn;x.acronyms=[];addTag(x,'v192-acronym-fixed');});
+  exact('What is the practical difference between transition altitude and transition level?','aviation').forEach(x=>{x.s=taEn;x.short='Climb through transition altitude: QNH → standard; descend through transition level: standard → QNH.';x.cn='【中文完整翻譯】\n'+taCn;x.acronyms=[];addTag(x,'v192-acronym-fixed');});
+
+  // Global acronym QA: only show "Stands For" when the abbreviation is actually visible in the prompt/question/options.
+  // This prevents answer-only abbreviations from leaking or creating irrelevant expansions before the answer is shown.
+  for(const x of bank){
+    if(!Array.isArray(x.acronyms) || !x.acronyms.length) continue;
+    const visible=[x.q,x.hint,...(Array.isArray(x.choices)?x.choices:[])].join(' ');
+    x.acronyms=x.acronyms.filter(a=>a&&a.code&&codeIn(visible,a.code));
+  }
+
+  // 2) Hydrostatic pressure: the numbers are correct; make gauge vs absolute pressure explicit.
+  exact('水槽與大氣相通。若大氣壓為 101 kPa，淡水水面下 6 m 處的絕對壓力是多少？取 ρ=1000 kg/m³、g=9.8 m/s²。','math_cn').forEach(x=>{
+    x.hint='先分清楚「表壓」與「絕對壓力」：水柱造成的是 ρgh，題目問絕對壓力時還要加上大氣壓。';
+    x.s='【先判斷題目要什麼】\n題目問的是「絕對壓力」，不是只有水柱造成的表壓。因為水槽與大氣相通，所以水面本身已承受 101 kPa 的大氣壓。\n\n【Step 1：算水深 6 m 造成的表壓】\nP_g = ρgh = 1000 × 9.8 × 6 = 58,800 Pa = 58.8 kPa。\n\n【Step 2：換成絕對壓力】\nP_abs = P_atm + P_g = 101 + 58.8 = 159.8 kPa。\n\n【為什麼 A 不是答案？】\n58.8 kPa 只代表水柱相對於大氣增加的壓力，也就是表壓；如果題目問「水面下 6 m 的表壓」才會選 58.8 kPa。\n\n【答案】C. 159.8 kPa';
+    x.short='表壓 58.8 kPa；絕對壓力 = 101 + 58.8 = 159.8 kPa。';
+    x.cn='【English Explanation】\nBecause the tank is open to the atmosphere, the water surface already has an atmospheric pressure of 101 kPa. The 6 m water column adds a gauge pressure of ρgh = 1000 × 9.8 × 6 = 58.8 kPa. Therefore, the absolute pressure is 101 + 58.8 = 159.8 kPa. The value 58.8 kPa would be correct only if the question asked for gauge pressure.';
+    addTag(x,'v192-explanation-expanded');
+  });
+
+  // 3) Descent gradient: explain formula, meaning, 3-degree reasonableness check, and why fpm cannot be found without GS.
+  exact('An aircraft must descend 5,400 ft over 18 NM. What is the average descent gradient?','math_en').forEach(x=>{
+    x.s='【Step 1: Identify the quantity】\nA descent gradient in ft/NM tells us how much altitude is lost for each nautical mile traveled horizontally.\n\n【Step 2: Use the basic relationship】\nAverage descent gradient = vertical distance ÷ horizontal distance\n= 5,400 ft ÷ 18 NM\n= 300 ft/NM.\n\n【Interpretation】\nThe aircraft must lose an average of 300 ft for every 1 NM flown.\n\n【Reasonableness check】\nA 3° descent path is roughly 318 ft/NM, so 300 ft/NM is close to a normal 3°-type descent path and is reasonable.\n\n【Important distinction】\nThis question asks for geometric descent gradient, not vertical speed in ft/min. To calculate ft/min, ground speed is also required. For example, at 180 kt GS = 3 NM/min, 300 ft/NM would correspond to about 900 ft/min.\n\n【Final answer】C. 300 ft/NM.';
+    x.short='300 ft/NM — lose 300 ft per NM; ft/min would additionally require groundspeed.';
+    x.cn='【中文完整解析】\n【Step 1：先判斷題目在問什麼】\n下降梯度 ft/NM 表示飛機每水平飛行 1 海里，需要下降多少英呎。\n\n【Step 2：套用關係式】\n平均下降梯度 = 垂直下降高度 ÷ 水平距離\n= 5,400 ft ÷ 18 NM\n= 300 ft/NM。\n\n【物理意義】\n也就是飛機每前進 1 NM，平均要下降 300 ft。\n\n【合理性檢查】\n常見的 3° 下滑路徑約為 318 ft/NM，所以 300 ft/NM 很接近一般 3° 路徑，答案合理。\n\n【不要和下降率混淆】\n本題問的是 ft/NM，不是 ft/min。若要算每分鐘下降率，還需要 Ground Speed。例如 GS 180 kt = 3 NM/min，則 300 × 3 ≈ 900 ft/min。\n\n【答案】C. 300 ft/NM。';
+    addTag(x,'v192-explanation-expanded');
+  });
+  exact('飛機需在18海里內下降5,400呎，平均下降梯度是多少？','math_cn').forEach(x=>{
+    x.s='【解題觀念】下降梯度 ft/NM = 垂直下降高度 ÷ 水平距離。\n\n5,400 ft ÷ 18 NM = 300 ft/NM，也就是每前進 1 NM 平均下降 300 ft。\n\n【合理性檢查】3° 下滑路徑約 318 ft/NM，因此 300 ft/NM 屬合理範圍。\n\n【注意】ft/NM 是幾何下降梯度，不是 ft/min；若要算下降率還需要 Ground Speed。\n\n【答案】300 ft/NM。';
+    x.short='300 ft/NM；每 1 NM 下降 300 ft。';
+    addTag(x,'v192-explanation-expanded');
+  });
+
+  // 4) Replace the generic company card with China Airlines, then add EVA Air and STARLUX as separate cards.
+  const generic=exact('請簡述你對公司的認識','interview_cn');
+  const existingCompany=new Set(bank.filter(x=>x.type==='interview_cn').map(x=>norm(x.q)));
+  DATA.companies.forEach((c,idx)=>{
+    let x=idx===0 && generic.length ? generic[0] : bank.find(v=>v.type==='interview_cn'&&norm(v.q)===norm(c.q));
+    if(!x){x={type:'interview_cn',cat:'INTERVIEW CN',q:c.q,hint:'回答公司定位、具體營運特色，再連結安全、訓練與你能如何長期貢獻。',tags:['interview-cn','v192','airline-company-knowledge'],defaultPrep:30,defaultAns:90,prep:30,ans:90,s:c.s,short:c.short,cn:c.cn};bank.push(x);}
+    x.q=c.q;x.hint='回答公司定位、具體營運特色，再連結安全、訓練與你能如何長期貢獻。';x.s=c.s;x.short=c.short;x.cn=c.cn;x.tags=Array.from(new Set([...(x.tags||[]),'v192','airline-company-knowledge','2026-official-checked']));
+  });
+  // Remove any remaining duplicate generic CN company cards.
+  for(let i=bank.length-1;i>=0;i--){if(bank[i]?.type==='interview_cn'&&norm(bank[i].q)===norm('請簡述你對公司的認識'))bank.splice(i,1);}
+
+  // 5) English Math & Physics choices must be English. Audit/fix all nine optics cards found with Chinese choices.
+  for(const [q,pair] of Object.entries(DATA.optics)){
+    exact(q,'math_en').forEach(x=>{x.choices=pair[0];x.short=pair[1];addTag(x,'v192-english-choices');});
+  }
+  exact('In a pinhole setup with fixed object distance, the screen moves from 40 cm to 80 cm behind the pinhole. How does the image size change?','math_en').forEach(x=>{
+    x.s='【Relationship】\nFor a pinhole image, similar triangles give: image height / object height = image distance / object distance.\n\nBecause the object distance is fixed, image height is directly proportional to image distance. The screen distance changes from 40 cm to 80 cm, so the image distance doubles: 80 / 40 = 2. Therefore the image height also becomes about twice as large.\n\nMoving the screen farther away generally spreads the available light over a larger image area, so the image may also appear dimmer.\n\n【Final answer】C. Approximately doubles.';
+    x.short='Approximately doubles.';
+    x.cn='【中文題目】針孔與物體距離固定，紙屏由針孔後 40 cm 移到 80 cm，成像大小如何變化？\n【中文完整解析】\n依相似三角形：像高 / 物高 = 像距 / 物距。物距固定時，像高與像距成正比。像距從 40 cm 增加到 80 cm，80 ÷ 40 = 2，因此影像高度約變成原來的 2 倍。紙屏拉遠後，同樣的光分布在較大的影像面積上，通常也會讓影像看起來較暗。\n【答案】約變成兩倍。';
+    addTag(x,'v192-explanation-expanded');
+  });
+
+  // Refresh UI counts after adding the two extra company cards.
+  try{if(typeof renderTabs==='function')renderTabs();if(typeof updateStats==='function')updateStats();}catch(_e){}
+  window.TRIUMPH_V192_QA={version:'v192',acronymLeakFixed:true,pressureVerified:true,descentGradientExpanded:true,companyCards:3,englishOpticsChoicesFixed:Object.keys(DATA.optics).length};
+})();
+</script>
+
+<script id="v192-final-build-stamp">
+(() => {
+  const CURRENT='TRIUMPH Pilot Trainer v192';
+  const HINT='v192：修正縮寫誤判、數理詳解、三家航空公司面試題與英文題目選項。';
+  const apply=()=>{document.title=CURRENT;const logo=document.querySelector('.logo');if(logo)logo.innerHTML=CURRENT+'<span class="creator">created by Ying Chen</span><small>PILOT SELECTION TRAINER</small>';const hint=document.getElementById('hint');if(hint&&/Click|v1\d\d|校正|修正/.test(hint.textContent||''))hint.textContent=HINT;};
+  apply();document.addEventListener('DOMContentLoaded',apply,{once:true});window.addEventListener('load',apply,{once:true});
+  window.TRIUMPH_BUILD_VERSION='v192';
 })();
 </script>
 
