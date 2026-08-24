@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="zh-Hant"><head><meta charset="UTF-8"><title>TRIUMPH Pilot Trainer v205</title><meta name="viewport" content="width=device-width,initial-scale=1.0,viewport-fit=cover">
+<!DOCTYPE html><html lang="zh-Hant"><head><meta charset="UTF-8"><title>TRIUMPH Pilot Trainer v207</title><meta name="viewport" content="width=device-width,initial-scale=1.0,viewport-fit=cover">
 <meta name="theme-color" content="#0b1c31">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -1109,7 +1109,7 @@ body[data-theme="green"] .dt-overlay{
 
 <script id="triumph-current-cache-bootstrap">
 (() => {
-  const CURRENT_VERSION = "v205";
+  const CURRENT_VERSION = "v207";
   window.TRIUMPH_CACHE_VERSION = CURRENT_VERSION;
 
   // Fast-open policy:
@@ -1403,7 +1403,7 @@ body[data-theme="green"] .dt-overlay{
 
 
 
-</head><body data-theme="white" class="timer-disabled"><div class="app"><main class="main card"><div class="header"><div class="logo">TRIUMPH Pilot Trainer v205<span class="creator">created by Ying Chen</span><small>PILOT SELECTION TRAINER</small></div><div class="theme"><button class="chip" data-theme="white">White</button><button class="chip" data-theme="black">Black</button><button class="chip" data-theme="blue">Blue</button><button class="chip" data-theme="green">Green</button><button class="chip timer-quick" id="timerQuickToggle" type="button" title="計時已關閉｜點擊開啟" aria-label="開啟／關閉計時" aria-pressed="false">⏰</button><button class="chip stopwatch-quick stopwatch-off" id="stopwatchQuickToggle" type="button" title="碼表已關閉｜點擊開啟" aria-label="開啟／關閉碼表" aria-expanded="false" aria-pressed="false">⏱️</button></div><div class="badge" id="sessionBadge">Today: 0 questions</div></div>
+</head><body data-theme="white" class="timer-disabled"><div class="app"><main class="main card"><div class="header"><div class="logo">TRIUMPH Pilot Trainer v207<span class="creator">created by Ying Chen</span><small>PILOT SELECTION TRAINER</small></div><div class="theme"><button class="chip" data-theme="white">White</button><button class="chip" data-theme="black">Black</button><button class="chip" data-theme="blue">Blue</button><button class="chip" data-theme="green">Green</button><button class="chip timer-quick" id="timerQuickToggle" type="button" title="計時已關閉｜點擊開啟" aria-label="開啟／關閉計時" aria-pressed="false">⏰</button><button class="chip stopwatch-quick stopwatch-off" id="stopwatchQuickToggle" type="button" title="碼表已關閉｜點擊開啟" aria-label="開啟／關閉碼表" aria-expanded="false" aria-pressed="false">⏱️</button></div><div class="badge" id="sessionBadge">Today: 0 questions</div></div>
 <div class="dt-entry-wrap">
   <button type="button" class="dt-entry" id="dailyTestLaunch">
     <span class="dt-entry-icon">✓</span>
@@ -1416,14 +1416,14 @@ body[data-theme="green"] .dt-overlay{
 </div>
 <div class="tabs" id="tabs"></div><section class="questionbox">
 <div class="inline-stopwatch main-inline-stopwatch" id="mainInlineStopwatch" hidden aria-label="練習碼表">
-  <div class="inline-stopwatch-display is-hidden" id="mainStopwatchDisplay" aria-live="off">--:--.--</div>
+  <div class="inline-stopwatch-display" id="mainStopwatchDisplay" aria-live="off">00:00.00</div>
   <div class="inline-stopwatch-controls">
     <button type="button" class="inline-stopwatch-btn" id="mainStopwatchToggle" aria-label="開始碼表" title="開始">▶</button>
     <button type="button" class="inline-stopwatch-btn" id="mainStopwatchReset" aria-label="重設碼表" title="重設">↺</button>
     <button type="button" class="inline-stopwatch-btn" id="mainStopwatchVisibility" aria-label="顯示時間" title="顯示／隱藏時間">👁</button>
   </div>
 </div>
-<div class="category" id="category">READY</div><h1 class="question" id="question">Click “New Question” to start your training.</h1><div class="hint" id="hint">v205：電腦與平板碼表改為時間＋控制鍵單列排列並縮小字體；手機維持上下排列；飛行記憶完整提示標題置中。</div><div id="tags"></div><div class="diagram" id="diagramBox"></div><div id="subqBox"></div><div class="choices" id="choices"></div><div class="timerrow" id="timerRow" style="display:none"><div class="timercard" id="prepCard"><div class="timerlabel">PREPARATION</div><div class="timer" id="prepTimer">00:30</div><div class="barwrap"><div class="bar" id="prepProgress"></div></div></div><div class="timercard"><div class="timerlabel" id="answerLabel">ANSWER</div><div class="timer" id="answerTimer">01:30</div><div class="barwrap"><div class="bar" id="answerProgress"></div></div></div></div><div class="controls"><button class="btn primary" id="newBtn">New Question</button><button class="btn secondary" id="prevBtn">Previous</button><button class="btn green" id="startPauseBtn">Start</button><button class="btn secondary" id="showBtn">Show Answer</button><button class="btn secondary" id="favBtn"><span id="starIcon">☆</span> Favorite</button><button class="btn danger" id="resetBtn">Reset</button></div><div class="subnav" id="subqNav"><button class="btn secondary" id="subPrevBtn">題組上一小題</button><button class="btn secondary" id="subNextBtn">題組下一小題</button></div><div class="answer" id="answerBox"><div id="acronymBox"></div><h3 id="suggestedHeading">Suggested Answer / Explanation</h3><p id="suggested"></p><div id="legacyAnswerMeta" hidden><p id="short"></p><div id="v100Meta"><div id="v100Difficulty"></div><div id="v100Method"></div><div id="v100Trap"></div><div id="v100Connection"></div></div></div><h3 id="chineseHeading">中文詳解 / 考試理解</h3><p id="chinese"></p></div></section></main><aside class="side"><section class="sidecard card"><h3>Practice Settings</h3><label>模式</label><select id="modeSelect"><option value="all">全部題庫</option><option value="pilot">Interview EN</option><option value="interview_cn">Interview CN</option><option value="aviation">Aviation EN</option><option value="aviation_cn">Aviation CN</option><option value="toeic11">TOEIC Q11</option><option value="toeic567">TOEIC Q5–7</option><option value="math_en">Math&Physics EN</option><option value="math_cn">Math&Physics CN</option><option value="classical_cn">Classical CN</option><option value="flight_cards">Aviation Quick Cards</option><option value="favorites">Favorites Only</option></select><select id="timerEnabled" hidden aria-hidden="true"><option value="true">開啟計時</option><option value="false">關閉計時</option></select><div id="mathDifficultySetting" hidden><label>Math 難易度</label><select id="difficultySelect"><option value="all">全部難度</option><option value="basic">Basic 基礎</option><option value="intermediate">Intermediate 中階</option><option value="advanced">Advanced 進階</option></select></div><label>準備時間（秒）</label><input type="number" id="prepSeconds" value="30"><label>回答/思考時間（秒）</label><input type="number" id="answerSeconds" value="90"><div class="setting-switch-row" id="soundSwitchRow">
+<div class="category" id="category">READY</div><h1 class="question" id="question">Click “New Question” to start your training.</h1><div class="hint" id="hint">v207：碼表開啟時先顯示時間；飛行記憶離開即停止並重設碼表；首頁碼表字體縮小 15%、控制鍵縮小 10%。</div><div id="tags"></div><div class="diagram" id="diagramBox"></div><div id="subqBox"></div><div class="choices" id="choices"></div><div class="timerrow" id="timerRow" style="display:none"><div class="timercard" id="prepCard"><div class="timerlabel">PREPARATION</div><div class="timer" id="prepTimer">00:30</div><div class="barwrap"><div class="bar" id="prepProgress"></div></div></div><div class="timercard"><div class="timerlabel" id="answerLabel">ANSWER</div><div class="timer" id="answerTimer">01:30</div><div class="barwrap"><div class="bar" id="answerProgress"></div></div></div></div><div class="controls"><button class="btn primary" id="newBtn">New Question</button><button class="btn secondary" id="prevBtn">Previous</button><button class="btn green" id="startPauseBtn">Start</button><button class="btn secondary" id="showBtn">Show Answer</button><button class="btn secondary" id="favBtn"><span id="starIcon">☆</span> Favorite</button><button class="btn danger" id="resetBtn">Reset</button></div><div class="subnav" id="subqNav"><button class="btn secondary" id="subPrevBtn">題組上一小題</button><button class="btn secondary" id="subNextBtn">題組下一小題</button></div><div class="answer" id="answerBox"><div id="acronymBox"></div><h3 id="suggestedHeading">Suggested Answer / Explanation</h3><p id="suggested"></p><div id="legacyAnswerMeta" hidden><p id="short"></p><div id="v100Meta"><div id="v100Difficulty"></div><div id="v100Method"></div><div id="v100Trap"></div><div id="v100Connection"></div></div></div><h3 id="chineseHeading">中文詳解 / 考試理解</h3><p id="chinese"></p></div></section></main><aside class="side"><section class="sidecard card"><h3>Practice Settings</h3><label>模式</label><select id="modeSelect"><option value="all">全部題庫</option><option value="pilot">Interview EN</option><option value="interview_cn">Interview CN</option><option value="aviation">Aviation EN</option><option value="aviation_cn">Aviation CN</option><option value="toeic11">TOEIC Q11</option><option value="toeic567">TOEIC Q5–7</option><option value="math_en">Math&Physics EN</option><option value="math_cn">Math&Physics CN</option><option value="classical_cn">Classical CN</option><option value="flight_cards">Aviation Quick Cards</option><option value="favorites">Favorites Only</option></select><select id="timerEnabled" hidden aria-hidden="true"><option value="true">開啟計時</option><option value="false">關閉計時</option></select><div id="mathDifficultySetting" hidden><label>Math 難易度</label><select id="difficultySelect"><option value="all">全部難度</option><option value="basic">Basic 基礎</option><option value="intermediate">Intermediate 中階</option><option value="advanced">Advanced 進階</option></select></div><label>準備時間（秒）</label><input type="number" id="prepSeconds" value="30"><label>回答/思考時間（秒）</label><input type="number" id="answerSeconds" value="90"><div class="setting-switch-row" id="soundSwitchRow">
   <div class="setting-switch-copy">
     <strong>提示音</strong>
     <span>控制題庫、心算與飛行記憶全部音效</span>
@@ -1435,9 +1435,9 @@ body[data-theme="green"] .dt-overlay{
 <select id="soundEnabled" hidden aria-hidden="true"><option value="true">開啟提示音</option><option value="false">關閉提示音</option></select><label>提示音音量 <span aria-hidden="true">🔊</span></label><input type="range" id="soundVolume" min="0" max="150" value="120"><div class="hint" style="font-size:12px">全域音效：題庫倒數、心算倒數與答題、飛行記憶指令完成及任務完成。</div><button class="btn secondary" id="applyDefaultsBtn" style="width:100%;margin-top:10px">套用此題庫預設時間</button><button class="btn memory-launch" id="flightMemoryBtn">✈ 飛行指令記憶訓練</button><button class="btn mental-launch" id="mentalMathBtn">∑ 數學心算 Mental Math</button></section><section class="sidecard card"><h3>Question Bank</h3><div class="stats"><div class="stat"><span>目前題庫</span><b id="currentMode">ALL</b></div><div class="stat"><span>題庫數量</span><b id="bankCount">0</b></div><div class="stat"><span>目前題號</span><b id="currentIndex">-</b></div><div class="stat"><span>已練題數</span><b id="doneCount">0</b></div><div class="stat"><span>收藏題</span><b id="favCount">0</b></div></div><div class="controls"><button class="btn secondary" id="copyBtn" title="複製目前題目與選項，方便貼到筆記或聊天室。">複製目前題目</button><button class="btn danger" id="clearDataBtn" title="清除這台裝置上的收藏、備註、答題進度與統計。">重設本機紀錄</button></div><div class="hint" style="margin-top:8px;font-size:12px">複製目前題目：方便貼到筆記或聊天室。重設本機紀錄：會清除這台裝置上的收藏題、答題進度、備註與統計。</div></section><section class="sidecard card" id="v100Dashboard"><h3>v100 Performance</h3><div class="stats"><div class="stat"><span>答對題數</span><b id="correctCount">0</b></div><div class="stat"><span>答錯題數</span><b id="wrongCount">0</b></div><div class="stat"><span>作答正確率</span><b id="accuracyRate">-</b></div><div class="stat"><span>錯題待複習</span><b id="reviewCount">0</b></div></div><div class="controls"><button class="btn secondary" id="reviewWrongBtn">Review Wrong</button><button class="btn secondary" id="markMasteredBtn">Mark Mastered</button></div></section><section class="sidecard card"><h3>Favorites</h3><div id="favoriteSyncStatus" style="font-size:12px;color:var(--muted);margin:-4px 0 10px">跨版本收藏同步中…</div><div id="favoriteList"></div></section><section class="sidecard card"><h3>Your Notes</h3><textarea id="notes" placeholder="這題的卡點、公式、單字、回答弱點..."></textarea></section></aside></div>
 <script id="triumph-current-version-guard">
 (() => {
-  const BUILD='v205';
+  const BUILD='v207';
   const CURRENT='TRIUMPH Pilot Trainer '+BUILD;
-  const INITIAL_HINT='v205：電腦與平板碼表改為時間＋控制鍵單列排列並縮小字體；手機維持上下排列；飛行記憶完整提示標題置中。';
+  const INITIAL_HINT='v207：碼表開啟時先顯示時間；飛行記憶離開即停止並重設碼表；首頁碼表字體縮小 15%、控制鍵縮小 10%。';
   window.TRIUMPH_BUILD_VERSION=BUILD;
   const enforceIdentity=()=>{
     const titleEl=document.querySelector('title');
@@ -1707,7 +1707,7 @@ window.addEventListener('DOMContentLoaded',init);
   <section class="fm-card" id="fmMemorize" hidden><div class="fm-command-head"><h2>飛行指令記憶</h2><div class="fm-countdown">◷ 倒數時間：<span id="fmCountdown">30</span></div></div><ol class="fm-command-list" id="fmCommandList"></ol><button class="fm-btn" id="fmStartNow">直接開始</button></section>
   <section class="fm-card fm-exec" id="fmExecute" hidden><div class="fm-step" id="fmStepText">執行第 1 / 6 個指令</div><div class="fm-big-timer" id="fmRunTimer">00:00</div>
 <div class="fm-stopwatch" id="fmStopwatch" aria-label="飛行記憶碼表">
-  <div class="fm-stopwatch-time is-hidden" id="fmStopwatchDisplay">--:--.--</div>
+  <div class="fm-stopwatch-time" id="fmStopwatchDisplay">00:00.00</div>
   <div class="fm-stopwatch-controls">
     <button type="button" class="fm-stopwatch-btn" id="fmStopwatchToggle" aria-label="開始碼表" title="開始">▶</button>
     <button type="button" class="fm-stopwatch-btn" id="fmStopwatchReset" aria-label="重設碼表" title="重設">↺</button>
@@ -1928,8 +1928,27 @@ window.addEventListener('DOMContentLoaded',init);
    }
    return best.map(x=>x.text);
  }
- function open(){ $m('fmOverlay').classList.add('open');$m('fmOverlay').setAttribute('aria-hidden','false');show('fmSetup');document.body.style.overflow='hidden'; }
- function close(){clearInterval(memorizeTimer);clearInterval(runTimer);$m('fmOverlay').classList.remove('open');$m('fmOverlay').setAttribute('aria-hidden','true');document.body.style.overflow='';}
+ function open(){
+   if(window.TRIUMPH_STOPWATCH_FLIGHT){
+     window.TRIUMPH_STOPWATCH_FLIGHT.stopReset();
+     window.TRIUMPH_STOPWATCH_FLIGHT.setHidden(false);
+   }
+   $m('fmOverlay').classList.add('open');
+   $m('fmOverlay').setAttribute('aria-hidden','false');
+   show('fmSetup');
+   document.body.style.overflow='hidden';
+ }
+ function close(){
+   clearInterval(memorizeTimer);
+   clearInterval(runTimer);
+   if(window.TRIUMPH_STOPWATCH_FLIGHT){
+     window.TRIUMPH_STOPWATCH_FLIGHT.stopReset();
+     window.TRIUMPH_STOPWATCH_FLIGHT.setHidden(false);
+   }
+   $m('fmOverlay').classList.remove('open');
+   $m('fmOverlay').setAttribute('aria-hidden','true');
+   document.body.style.overflow='';
+ }
  function beginMemory(){cmds=generate(Number($m('fmRange').value));idx=0;times=[];hints=0;fullHints=0;clearTimeout(hintTimer);memLeft=30;$m('fmCommandList').innerHTML=cmds.map((c,i)=>'<li><span class="num">'+(i+1)+'.</span><span>'+c+'</span></li>').join('');$m('fmCountdown').textContent=memLeft;show('fmMemorize');clearInterval(memorizeTimer);memorizeTimer=setInterval(()=>{memLeft--;$m('fmCountdown').textContent=memLeft;if(memLeft<=0)beginExecution();},1000);}
  function beginExecution(){clearInterval(memorizeTimer);show('fmExecute');idx=0;startAt=performance.now();lastAt=startAt;$m('fmHiddenText').textContent='指令已隱藏，請依記憶操作模擬機。';updateStep();clearInterval(runTimer);runTimer=setInterval(()=>{$m('fmRunTimer').textContent=format((performance.now()-startAt)/1000)},250);}
  function updateStep(){$m('fmStepText').textContent='執行第 '+(idx+1)+' / '+cmds.length+' 個指令';}
@@ -12268,17 +12287,17 @@ html body #dtTimerToggle.dt-timer-toggle:not(.active){
 <script id="v200-final-identity">
 (() => {
   const apply=()=>{
-    document.title="TRIUMPH Pilot Trainer v205";
+    document.title="TRIUMPH Pilot Trainer v207";
     const logo=document.querySelector(".logo");
-    if(logo) logo.innerHTML='TRIUMPH Pilot Trainer v205<span class="creator">created by Ying Chen</span><small>PILOT SELECTION TRAINER</small>';
+    if(logo) logo.innerHTML='TRIUMPH Pilot Trainer v207<span class="creator">created by Ying Chen</span><small>PILOT SELECTION TRAINER</small>';
     const hint=document.getElementById("hint");
     if(hint && /^v\d+：/.test(hint.textContent||"")){
-      hint.textContent="v205：電腦與平板碼表改為時間＋控制鍵單列排列並縮小字體；手機維持上下排列；飛行記憶完整提示標題置中。";
+      hint.textContent="v207：碼表開啟時先顯示時間；飛行記憶離開即停止並重設碼表；首頁碼表字體縮小 15%、控制鍵縮小 10%。";
     }
   };
   apply();
   document.addEventListener("DOMContentLoaded",apply,{once:true});
-  window.TRIUMPH_BUILD_VERSION="v205";
+  window.TRIUMPH_BUILD_VERSION="v207";
 })();
 </script>
 
@@ -12475,8 +12494,25 @@ html body .theme #stopwatchQuickToggle.stopwatch-quick{
     visibility?.addEventListener("click",toggleVisibility);
     paint();
 
+    function setHidden(value){
+      state.hidden=!!value;
+      paint();
+    }
+
+    function stopReset(){
+      cancelAnimationFrame(state.raf);
+      state.running=false;
+      state.accumulated=0;
+      state.startedAt=0;
+      paint();
+    }
+
     return {
-      toggleRun,reset:doReset,toggleVisibility,
+      toggleRun,
+      reset:doReset,
+      toggleVisibility,
+      setHidden,
+      stopReset,
       get running(){return state.running},
       get hidden(){return state.hidden},
       get elapsed(){return elapsed()}
@@ -12492,7 +12528,7 @@ html body .theme #stopwatchQuickToggle.stopwatch-quick{
       toggle:document.getElementById("mainStopwatchToggle"),
       reset:document.getElementById("mainStopwatchReset"),
       visibility:document.getElementById("mainStopwatchVisibility"),
-      initialHidden:true
+      initialHidden:false
     });
 
     quick?.addEventListener("click",()=>{
@@ -12503,7 +12539,9 @@ html body .theme #stopwatchQuickToggle.stopwatch-quick{
       quick.setAttribute("aria-expanded",String(opening));
       quick.setAttribute("aria-pressed",String(opening));
       quick.title=opening ? "碼表已開啟｜點擊關閉" : "碼表已關閉｜點擊開啟";
-      /* Showing/hiding the stopwatch does NOT start, pause, or reset it. */
+      if(opening) main.setHidden(false);
+      /* Closing the panel does not pause/reset the main stopwatch.
+         It can keep timing while changing questions/banks. */
     });
 
     const flight=createStopwatch({
@@ -12511,7 +12549,7 @@ html body .theme #stopwatchQuickToggle.stopwatch-quick{
       toggle:document.getElementById("fmStopwatchToggle"),
       reset:document.getElementById("fmStopwatchReset"),
       visibility:document.getElementById("fmStopwatchVisibility"),
-      initialHidden:true
+      initialHidden:false
     });
 
     /* The two stopwatches are deliberately independent:
@@ -12530,17 +12568,17 @@ html body .theme #stopwatchQuickToggle.stopwatch-quick{
 <script id="v201-final-identity">
 (() => {
   const apply=()=>{
-    document.title="TRIUMPH Pilot Trainer v205";
+    document.title="TRIUMPH Pilot Trainer v207";
     const logo=document.querySelector(".logo");
-    if(logo) logo.innerHTML='TRIUMPH Pilot Trainer v205<span class="creator">created by Ying Chen</span><small>PILOT SELECTION TRAINER</small>';
+    if(logo) logo.innerHTML='TRIUMPH Pilot Trainer v207<span class="creator">created by Ying Chen</span><small>PILOT SELECTION TRAINER</small>';
     const hint=document.getElementById("hint");
     if(hint && /^v\d+：/.test(hint.textContent||"")){
-      hint.textContent="v205：電腦與平板碼表改為時間＋控制鍵單列排列並縮小字體；手機維持上下排列；飛行記憶完整提示標題置中。";
+      hint.textContent="v207：碼表開啟時先顯示時間；飛行記憶離開即停止並重設碼表；首頁碼表字體縮小 15%、控制鍵縮小 10%。";
     }
   };
   apply();
   document.addEventListener("DOMContentLoaded",apply,{once:true});
-  window.TRIUMPH_BUILD_VERSION="v205";
+  window.TRIUMPH_BUILD_VERSION="v207";
 })();
 </script>
 
@@ -12697,17 +12735,17 @@ body.timer-disabled #resetBtn{
 <script id="v203-final-identity">
 (() => {
   const apply=()=>{
-    document.title="TRIUMPH Pilot Trainer v205";
+    document.title="TRIUMPH Pilot Trainer v207";
     const logo=document.querySelector(".logo");
-    if(logo) logo.innerHTML='TRIUMPH Pilot Trainer v205<span class="creator">created by Ying Chen</span><small>PILOT SELECTION TRAINER</small>';
+    if(logo) logo.innerHTML='TRIUMPH Pilot Trainer v207<span class="creator">created by Ying Chen</span><small>PILOT SELECTION TRAINER</small>';
     const hint=document.getElementById("hint");
     if(hint && /^v\d+：/.test(hint.textContent||"")){
-      hint.textContent="v205：電腦與平板碼表改為時間＋控制鍵單列排列並縮小字體；手機維持上下排列；飛行記憶完整提示標題置中。";
+      hint.textContent="v207：碼表開啟時先顯示時間；飛行記憶離開即停止並重設碼表；首頁碼表字體縮小 15%、控制鍵縮小 10%。";
     }
   };
   apply();
   document.addEventListener("DOMContentLoaded",apply,{once:true});
-  window.TRIUMPH_BUILD_VERSION="v205";
+  window.TRIUMPH_BUILD_VERSION="v207";
 })();
 </script>
 
@@ -12769,17 +12807,17 @@ html body .fm-stopwatch{
 <script id="v204-final-identity">
 (() => {
   const apply=()=>{
-    document.title="TRIUMPH Pilot Trainer v205";
+    document.title="TRIUMPH Pilot Trainer v207";
     const logo=document.querySelector(".logo");
-    if(logo) logo.innerHTML='TRIUMPH Pilot Trainer v205<span class="creator">created by Ying Chen</span><small>PILOT SELECTION TRAINER</small>';
+    if(logo) logo.innerHTML='TRIUMPH Pilot Trainer v207<span class="creator">created by Ying Chen</span><small>PILOT SELECTION TRAINER</small>';
     const hint=document.getElementById("hint");
     if(hint && /^v\d+：/.test(hint.textContent||"")){
-      hint.textContent="v205：電腦與平板碼表改為時間＋控制鍵單列排列並縮小字體；手機維持上下排列；飛行記憶完整提示標題置中。";
+      hint.textContent="v207：碼表開啟時先顯示時間；飛行記憶離開即停止並重設碼表；首頁碼表字體縮小 15%、控制鍵縮小 10%。";
     }
   };
   apply();
   document.addEventListener("DOMContentLoaded",apply,{once:true});
-  window.TRIUMPH_BUILD_VERSION="v205";
+  window.TRIUMPH_BUILD_VERSION="v207";
 })();
 </script>
 
@@ -12849,17 +12887,244 @@ html body .fm-hidden-command.full-hint-mode .fm-full-hint-title{
 <script id="v205-final-identity">
 (() => {
   const apply=()=>{
-    document.title="TRIUMPH Pilot Trainer v205";
+    document.title="TRIUMPH Pilot Trainer v207";
     const logo=document.querySelector(".logo");
-    if(logo) logo.innerHTML='TRIUMPH Pilot Trainer v205<span class="creator">created by Ying Chen</span><small>PILOT SELECTION TRAINER</small>';
+    if(logo) logo.innerHTML='TRIUMPH Pilot Trainer v207<span class="creator">created by Ying Chen</span><small>PILOT SELECTION TRAINER</small>';
     const hint=document.getElementById("hint");
     if(hint && /^v\d+：/.test(hint.textContent||"")){
-      hint.textContent="v205：電腦與平板碼表改為時間＋控制鍵單列排列並縮小字體；手機維持上下排列；飛行記憶完整提示標題置中。";
+      hint.textContent="v207：碼表開啟時先顯示時間；飛行記憶離開即停止並重設碼表；首頁碼表字體縮小 15%、控制鍵縮小 10%。";
     }
   };
   apply();
   document.addEventListener("DOMContentLoaded",apply,{once:true});
-  window.TRIUMPH_BUILD_VERSION="v205";
+  window.TRIUMPH_BUILD_VERSION="v207";
+})();
+</script>
+
+
+<script id="v206-experience-claim-qa">
+(() => {
+  if (typeof bank === "undefined" || !Array.isArray(bank)) return;
+
+  const n = v => String(v ?? "").normalize("NFKC").toLowerCase();
+
+  /* Facts the user has actually provided and may legitimately describe as experience:
+     - ~10 years managing the family tea business, customers, suppliers, inventory,
+       high-value transactions, 2022-2023 inventory/risk adjustment
+     - soccer captain / central midfielder, collegiate competition, international teammates
+     - Austria/Czech travel; 3-month English study in Cebu; adapting overseas
+     - actual cadet-pilot preparation: English, math/physics, aviation knowledge,
+       simulator practice, Class 1 medical and structured preparation
+     - Marketing and Logistics Management education
+  */
+  const realAnchors = [
+    "tea business","family business","tea-leaf","tea leaf","supplier","inventory","cash flow",
+    "high-value","high value","negotiat","2022","2023","nt$30","30 million","several million",
+    "soccer","football","captain","central midfielder","midfielder","collegiate tournament",
+    "cebu","philippines","austria","czech","overseas","language school","study english",
+    "marketing and logistics","southern taiwan university",
+    "simulator","class 1 medical","aviation knowledge","math and physics","english speaking",
+    "pilot preparation","cadet pilot preparation",
+    "茶行","茶葉","供應商","庫存","現金流","高金額","高額交易","談判","三千萬元","3000 萬",
+    "足球","隊長","中場","大專盃","交換學生",
+    "宿霧","菲律賓","奧地利","捷克","海外","語言學習","英文能力",
+    "行銷與物流管理","南臺科技大學","模擬機","甲類體檢","航空知識","數理","培訓機師準備"
+  ];
+
+  const hypotheticalMarkers = [
+    "if ","what would you do","how would you","would you","what if","suppose","imagine",
+    "captain","atc","bird strike","smoke","medical emergency","landing gear","bomb threat",
+    "hijacking","emergency","engine failure","incapacitated","checklist","sop",
+    "如果","假如","假設","你會怎麼","若","機長","鳥擊","失能","緊急","炸彈","劫機",
+    "起落架","檢查表"
+  ];
+
+  const knowledgeMarkers = [
+    "what is ","what are ","what does ","why is ","why does ","why can ",
+    "how many ","calculate","heading","temperature lapse","isa","stall","lift","drag",
+    "fuel planning","crm","tem","authority gradient","flight instruments",
+    "什麼是","什麼叫","為什麼","多少","計算","航向","溫度遞減率","升力","失速","阻力",
+    "燃油規劃","儀表"
+  ];
+
+  const unsupportedSpecificEpisodeMarkers = [
+    "difficult customer","conflict","disagreed with a teammate","negative feedback",
+    "had to apologize","admit you were wrong","helped a teammate improve",
+    "corrected a mistake","made a mistake","biggest failure","tell me about a failure",
+    "failed a stage check","worked with someone you did not like",
+    "困難客戶","衝突","不同意隊友","負面回饋","道歉","承認錯誤","幫助隊友進步",
+    "修正錯誤","最大的失敗","失敗經驗"
+  ];
+
+  function includesAny(s, list){ return list.some(x => s.includes(x)); }
+
+  function isClearlyRealExperience(q){
+    const qtxt=n(q.q);
+    const all=n([q.q,q.s,q.cn,(q.tags||[]).join(" "),q.topic].join(" "));
+
+    /* Hypothetical/technical questions should never be phrased as if they happened. */
+    if (includesAny(qtxt,hypotheticalMarkers) || includesAny(qtxt,knowledgeMarkers)) return false;
+
+    /* These ask for a specific episode that has not been supplied in the autobiography.
+       Only keep experience language if the answer itself explicitly anchors to a verified
+       episode such as the 2022-23 inventory decision. */
+    if (includesAny(qtxt,unsupportedSpecificEpisodeMarkers)){
+      return includesAny(all,["2022","2023","inventory strategy","market volatility",
+                              "庫存策略","市場波動","大專盃","collegiate tournament",
+                              "cebu","宿霧"]);
+    }
+
+    return includesAny(all,realAnchors);
+  }
+
+  function cleanEN(s){
+    s=String(s||"");
+
+    /* Remove unsupported "experience" lead-ins without changing the core answer. */
+    s=s.replace(/\bIn my own experience,\s*/gi,"");
+    s=s.replace(/\bIn my experience,\s*/gi,"");
+
+    s=s.replace(/\bThis experience taught me to ([^.]+)\./gi,
+      (_,x)=>`In this situation, the key is to ${x}.`);
+    s=s.replace(/\bThis taught me to ([^.]+)\./gi,
+      (_,x)=>`The key is to ${x}.`);
+    s=s.replace(/\bThis experience taught me that ([^.]+)\./gi,
+      (_,x)=>`The key principle is that ${x}.`);
+    s=s.replace(/\bThis taught me that ([^.]+)\./gi,
+      (_,x)=>`The key principle is that ${x}.`);
+
+    /* Common generic claims that imply an event happened when it did not. */
+    s=s.replace(/\bI have learned that hiding mistakes damages trust and increases risk\./gi,
+      "I believe hiding mistakes damages trust and increases risk.");
+    s=s.replace(/\bI have learned that ([^.]+)\./gi,
+      "From my preparation, I understand that $1.");
+
+    /* Repair a few common template transitions after removing "In my own experience". */
+    s=s.replace(/([.!?]\s*)if the item affects safety,/gi,"$1If the item affects safety,");
+    s=s.replace(/([.!?]\s*)then I would/gi,"$1Then I would");
+    s=s.replace(/\s{2,}/g," ").replace(/\n +/g,"\n").trim();
+    return s;
+  }
+
+  function cleanZH(s){
+    s=String(s||"");
+
+    s=s.replace(/以我自己的經驗來說[，,]\s*/g,"");
+    s=s.replace(/以我的經驗來說[，,]\s*/g,"");
+    s=s.replace(/以我的經驗[，,]\s*/g,"");
+
+    s=s.replace(/這段經驗讓我學到要([^。]+)。/g,"在這種情況下，重點是要$1。");
+    s=s.replace(/這讓我學到要([^。]+)。/g,"對我來說，重點是要$1。");
+    s=s.replace(/這段經驗讓我學到([^。]+)。/g,"這題真正重要的是$1。");
+    s=s.replace(/這個經驗讓我學到([^。]+)。/g,"這題真正重要的是$1。");
+
+    s=s.replace(/我學到隱藏錯誤會破壞信任並增加風險。/g,
+                "我認為隱藏錯誤會破壞信任並增加風險。");
+    s=s.replace(/我學到([^。]+)。/g,"從目前的準備與學習中，我理解到$1。");
+
+    s=s.replace(/\n +/g,"\n").trim();
+    return s;
+  }
+
+  let reviewed=0, changed=0, keptReal=0;
+  const examples=[];
+
+  for(const q of bank){
+    if(!q || !/INTERVIEW|AVIATION/.test(String(q.cat||""))) continue;
+
+    const hasClaim =
+      /This experience taught me|This taught me|In my own experience|In my experience/i.test(String(q.s||"")) ||
+      /這段經驗讓我學到|這讓我學到|以我自己的經驗|以我的經驗/.test(String(q.s||"")) ||
+      /這段經驗讓我學到|這讓我學到|以我自己的經驗|以我的經驗/.test(String(q.cn||""));
+
+    if(!hasClaim) continue;
+    reviewed++;
+
+    if(isClearlyRealExperience(q)){
+      keptReal++;
+      q.tags=[...new Set([...(q.tags||[]),"v206-real-experience-verified"])];
+      continue;
+    }
+
+    const beforeS=String(q.s||"");
+    const beforeCN=String(q.cn||"");
+
+    q.s = /[\u3400-\u9fff]/.test(beforeS) ? cleanZH(beforeS) : cleanEN(beforeS);
+    q.cn = cleanZH(beforeCN);
+
+    if(q.s!==beforeS || q.cn!==beforeCN){
+      changed++;
+      q.tags=[...new Set([...(q.tags||[]),"v206-no-fake-experience"])];
+      if(examples.length<12) examples.push(q.q);
+    }
+  }
+
+  window.TRIUMPH_V206_EXPERIENCE_QA={
+    reviewed,changed,keptReal,examples,
+    policy:"Only verified autobiography/work/football/overseas-study/preparation experiences may use experience-learning wording. Hypothetical, technical, or unsupported episode questions use principle/decision wording instead."
+  };
+})();
+</script>
+
+<script id="v206-final-identity">
+(() => {
+  const apply=()=>{
+    document.title="TRIUMPH Pilot Trainer v207";
+    const logo=document.querySelector(".logo");
+    if(logo) logo.innerHTML='TRIUMPH Pilot Trainer v207<span class="creator">created by Ying Chen</span><small>PILOT SELECTION TRAINER</small>';
+    const hint=document.getElementById("hint");
+    if(hint && /^v\d+：/.test(hint.textContent||"")){
+      hint.textContent="v207：碼表開啟時先顯示時間；飛行記憶離開即停止並重設碼表；首頁碼表字體縮小 15%、控制鍵縮小 10%。";
+    }
+  };
+  apply();
+  document.addEventListener("DOMContentLoaded",apply,{once:true});
+  window.TRIUMPH_BUILD_VERSION="v207";
+})();
+</script>
+
+
+<style id="v207-stopwatch-sizing">
+/* Main/home stopwatch only:
+   ~15% smaller time display and ~10% smaller control buttons.
+   Flight Memory stopwatch sizing is intentionally unchanged. */
+@media (min-width:621px){
+  html body .main-inline-stopwatch .inline-stopwatch-display{
+    font-size:27px!important; /* 32px -> ~27px */
+  }
+  html body .main-inline-stopwatch .inline-stopwatch-btn{
+    min-height:40px!important; /* 44px -> ~40px */
+    font-size:18px!important;
+    border-radius:12px!important;
+  }
+}
+
+@media (max-width:620px){
+  html body .main-inline-stopwatch .inline-stopwatch-display{
+    font-size:clamp(29px,5.1vw,41px)!important;
+  }
+  html body .main-inline-stopwatch .inline-stopwatch-btn{
+    min-height:41px!important; /* 46px -> ~41px */
+    font-size:18px!important;
+    border-radius:12px!important;
+  }
+}
+</style>
+
+<script id="v207-final-identity">
+(() => {
+  const apply=()=>{
+    document.title="TRIUMPH Pilot Trainer v207";
+    const logo=document.querySelector(".logo");
+    if(logo) logo.innerHTML='TRIUMPH Pilot Trainer v207<span class="creator">created by Ying Chen</span><small>PILOT SELECTION TRAINER</small>';
+    const hint=document.getElementById("hint");
+    if(hint && /^v\d+：/.test(hint.textContent||"")){
+      hint.textContent="v207：碼表開啟時先顯示時間；飛行記憶離開即停止並重設碼表；首頁碼表字體縮小 15%、控制鍵縮小 10%。";
+    }
+  };
+  apply();
+  document.addEventListener("DOMContentLoaded",apply,{once:true});
+  window.TRIUMPH_BUILD_VERSION="v207";
 })();
 </script>
 
