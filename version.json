@@ -1,14 +1,11 @@
 {
-  "version": "v177",
-  "build": "2026-08-19-mobile-layout-theme-torque-fix",
+  "version": "v215",
+  "build": "2026-09-18-answer-language-review",
   "entry": "./index.html",
   "changes": [
-    "Repair torque-equilibrium multiple-choice mismatch, including 150 N × 3 m / 225 N = 2.0 m",
-    "Reduce mobile outer and inner frame width",
-    "Disable text-wrap:balance / overflow-wrap:anywhere for normal question wrapping",
-    "Add created by Ying Chen below title",
-    "Gray theme slightly more gray",
-    "Navy theme darker",
-    "Matte army green theme darker"
+    "Rewrite supervisor and SkyTeam interview answers",
+    "Review bilingual interview answers and translate mixed-language EN choices",
+    "Refresh dated airline facts",
+    "Hide redundant Chinese translation on Chinese questions"
   ]
 }

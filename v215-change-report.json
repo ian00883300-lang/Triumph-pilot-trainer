@@ -1,0 +1,3073 @@
+{
+  "base": "09b727bdeba7e6da20abe7471e8c16bf6b6ece72",
+  "scanned": 4192,
+  "changed": 330,
+  "changes": [
+    {
+      "type": "pilot",
+      "q": "Describe your boss or supervisor.",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short",
+        "cn"
+      ]
+    },
+    {
+      "type": "interview_cn",
+      "q": "你如何看待你的老闆或上司?",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short"
+      ]
+    },
+    {
+      "type": "pilot",
+      "q": "What do you know about SkyTeam?",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short",
+        "cn"
+      ]
+    },
+    {
+      "type": "interview_cn",
+      "q": "你對天合聯盟了解多少？",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short"
+      ]
+    },
+    {
+      "type": "pilot",
+      "q": "What do you know about Star Alliance?",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short",
+        "cn"
+      ]
+    },
+    {
+      "type": "pilot",
+      "q": "Have you heard about Star Alliance? What's the benefit AIR joining Star Alliance?",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short",
+        "cn"
+      ]
+    },
+    {
+      "type": "interview_cn",
+      "q": "你對星空聯盟了解多少？",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short"
+      ]
+    },
+    {
+      "type": "interview_cn",
+      "q": "你知道星空聯盟嗎?加入星空聯盟帶來甚麼影響?",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short"
+      ]
+    },
+    {
+      "type": "pilot",
+      "q": "How many times do the hands of a clock overlap in 12 hours?",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short",
+        "cn"
+      ]
+    },
+    {
+      "type": "interview_cn",
+      "q": "時鐘指針在 12 小時內重疊幾次？",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short"
+      ]
+    },
+    {
+      "type": "pilot",
+      "q": "What is 99 times 99?",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short",
+        "cn"
+      ]
+    },
+    {
+      "type": "interview_cn",
+      "q": "99 乘以 99 等於多少？",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short"
+      ]
+    },
+    {
+      "type": "pilot",
+      "q": "What is 99 times 101?",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short",
+        "cn"
+      ]
+    },
+    {
+      "type": "interview_cn",
+      "q": "99 乘以 101 等於多少？",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short"
+      ]
+    },
+    {
+      "type": "pilot",
+      "q": "What is 101 times 101?",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short",
+        "cn"
+      ]
+    },
+    {
+      "type": "interview_cn",
+      "q": "101 乘以 101 等於多少？",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short"
+      ]
+    },
+    {
+      "type": "pilot",
+      "q": "At a standard rate turn of 3 degrees per second, how long does a 90-degree turn take?",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short",
+        "cn"
+      ]
+    },
+    {
+      "type": "interview_cn",
+      "q": "標準轉彎率每秒 3 度，轉 90 度需要多久？",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short"
+      ]
+    },
+    {
+      "type": "pilot",
+      "q": "How long does a 180-degree standard rate turn take?",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short",
+        "cn"
+      ]
+    },
+    {
+      "type": "interview_cn",
+      "q": "標準轉彎率轉 180 度需要多久？",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short"
+      ]
+    },
+    {
+      "type": "pilot",
+      "q": "If heading is 270 and you turn right 90 degrees, what is the new heading?",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short",
+        "cn"
+      ]
+    },
+    {
+      "type": "interview_cn",
+      "q": "航向 270 右轉 90 度，新航向是多少？",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short"
+      ]
+    },
+    {
+      "type": "pilot",
+      "q": "If heading is 045 and you turn left 90 degrees, what is the new heading?",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short",
+        "cn"
+      ]
+    },
+    {
+      "type": "interview_cn",
+      "q": "航向 045 左轉 90 度，新航向是多少？",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short"
+      ]
+    },
+    {
+      "type": "pilot",
+      "q": "What are the six basic flight instruments?",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short",
+        "cn"
+      ]
+    },
+    {
+      "type": "pilot",
+      "q": "Do you know 6 basic cockpit instruments?",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short",
+        "cn"
+      ]
+    },
+    {
+      "type": "interview_cn",
+      "q": "六大基本飛行儀表是什麼？",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short"
+      ]
+    },
+    {
+      "type": "interview_cn",
+      "q": "你了解飛機有哪6個基本的儀表嗎?",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short"
+      ]
+    },
+    {
+      "type": "pilot",
+      "q": "What is the difference between Boeing 777 and Boeing 747?",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short",
+        "cn"
+      ]
+    },
+    {
+      "type": "pilot",
+      "q": "Compare Boeing 777 and 747 for me.",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short",
+        "cn"
+      ]
+    },
+    {
+      "type": "interview_cn",
+      "q": "波音 777 和波音 747 有什麼差異？",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short"
+      ]
+    },
+    {
+      "type": "interview_cn",
+      "q": "請說明 777與747的差異。",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short"
+      ]
+    },
+    {
+      "type": "pilot",
+      "q": "Why is takeoff distance longer on a hot day?",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short",
+        "cn"
+      ]
+    },
+    {
+      "type": "pilot",
+      "q": "When airplanes take off in hot weather, do they require a longer or shorter runway?",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short",
+        "cn"
+      ]
+    },
+    {
+      "type": "interview_cn",
+      "q": "為什麼炎熱天氣起飛距離會變長？",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short"
+      ]
+    },
+    {
+      "type": "interview_cn",
+      "q": "你知道在較炎熱的天氣起飛，跑道需要較長或較短?",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short"
+      ]
+    },
+    {
+      "type": "pilot",
+      "q": "What is TEM?",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short",
+        "cn"
+      ]
+    },
+    {
+      "type": "interview_cn",
+      "q": "什麼是 TEM？",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short"
+      ]
+    },
+    {
+      "type": "pilot",
+      "q": "What is authority gradient?",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short",
+        "cn"
+      ]
+    },
+    {
+      "type": "interview_cn",
+      "q": "什麼是權威梯度？",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short"
+      ]
+    },
+    {
+      "type": "pilot",
+      "q": "What is CRM in your own words?",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short",
+        "cn"
+      ]
+    },
+    {
+      "type": "interview_cn",
+      "q": "請用自己的話說明 CRM。",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short"
+      ]
+    },
+    {
+      "type": "pilot",
+      "q": "If the captain skips a checklist, what would you do?",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short",
+        "cn"
+      ]
+    },
+    {
+      "type": "interview_cn",
+      "q": "如果機長跳過檢查單，你會怎麼做？",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short"
+      ]
+    },
+    {
+      "type": "pilot",
+      "q": "If the captain violates SOP, what would you do?",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short",
+        "cn"
+      ]
+    },
+    {
+      "type": "pilot",
+      "q": "If a captain violates SOP, what would you do?",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short",
+        "cn"
+      ]
+    },
+    {
+      "type": "pilot",
+      "q": "How would you challenge a captain respectfully?",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short",
+        "cn"
+      ]
+    },
+    {
+      "type": "interview_cn",
+      "q": "如果機長違反 SOP，你會怎麼做？",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short"
+      ]
+    },
+    {
+      "type": "interview_cn",
+      "q": "你會如何尊重地提醒或挑戰機長？",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short"
+      ]
+    },
+    {
+      "type": "pilot",
+      "q": "What was your favorite subject in school?",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short",
+        "cn"
+      ]
+    },
+    {
+      "type": "interview_cn",
+      "q": "你在學校最喜歡的科目是什麼？",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short"
+      ]
+    },
+    {
+      "type": "pilot",
+      "q": "What was your weakest subject in school?",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short",
+        "cn"
+      ]
+    },
+    {
+      "type": "interview_cn",
+      "q": "你在學校最弱的科目是什麼？",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short"
+      ]
+    },
+    {
+      "type": "pilot",
+      "q": "What activities did you join in college?",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short",
+        "cn"
+      ]
+    },
+    {
+      "type": "pilot",
+      "q": "Tell me about your football team experience.",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short",
+        "cn"
+      ]
+    },
+    {
+      "type": "pilot",
+      "q": "Did you hold any leadership position in school?",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short",
+        "cn"
+      ]
+    },
+    {
+      "type": "pilot",
+      "q": "What school activity did you participate in?",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short",
+        "cn"
+      ]
+    },
+    {
+      "type": "pilot",
+      "q": "Did you hold any leadership positions at university?",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short",
+        "cn"
+      ]
+    },
+    {
+      "type": "pilot",
+      "q": "Did you join any activities in school?",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short",
+        "cn"
+      ]
+    },
+    {
+      "type": "interview_cn",
+      "q": "你大學參加過哪些活動？",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short"
+      ]
+    },
+    {
+      "type": "interview_cn",
+      "q": "請談談你的足球隊經驗。",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short"
+      ]
+    },
+    {
+      "type": "interview_cn",
+      "q": "你在學校有擔任過領導職務嗎？",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short"
+      ]
+    },
+    {
+      "type": "interview_cn",
+      "q": "你參加學校什麼社團?",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short"
+      ]
+    },
+    {
+      "type": "interview_cn",
+      "q": "你在參加社團期間有擔任任何幹部嗎?",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short"
+      ]
+    },
+    {
+      "type": "interview_cn",
+      "q": "你在校時有參加學校或任何的團體活動嗎?",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short"
+      ]
+    },
+    {
+      "type": "pilot",
+      "q": "Were you a leader or a follower in a team?",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short",
+        "cn"
+      ]
+    },
+    {
+      "type": "interview_cn",
+      "q": "你在團隊中是領導者還是跟隨者？",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short"
+      ]
+    },
+    {
+      "type": "pilot",
+      "q": "What makes a good leader?",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short",
+        "cn"
+      ]
+    },
+    {
+      "type": "interview_cn",
+      "q": "什麼特質會成就一位好領導者？",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short"
+      ]
+    },
+    {
+      "type": "pilot",
+      "q": "How do you motivate a teammate who is falling behind?",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short",
+        "cn"
+      ]
+    },
+    {
+      "type": "pilot",
+      "q": "Tell me about a time you helped a teammate improve.",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short",
+        "cn"
+      ]
+    },
+    {
+      "type": "pilot",
+      "q": "What would you do if a teammate in training keeps making mistakes?",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short",
+        "cn"
+      ]
+    },
+    {
+      "type": "pilot",
+      "q": "What would you do if a teammate became discouraged during training?",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short",
+        "cn"
+      ]
+    },
+    {
+      "type": "interview_cn",
+      "q": "你如何鼓勵落後的隊友？",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short"
+      ]
+    },
+    {
+      "type": "interview_cn",
+      "q": "請分享一次你幫助隊友進步的經驗。",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short"
+      ]
+    },
+    {
+      "type": "interview_cn",
+      "q": "如果訓練中的隊友一直犯錯，你會怎麼做？",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short"
+      ]
+    },
+    {
+      "type": "pilot",
+      "q": "Describe your current job.",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short",
+        "cn"
+      ]
+    },
+    {
+      "type": "pilot",
+      "q": "What is your daily work like?",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short",
+        "cn"
+      ]
+    },
+    {
+      "type": "interview_cn",
+      "q": "請描述你目前的工作。",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short"
+      ]
+    },
+    {
+      "type": "interview_cn",
+      "q": "你日常工作內容是什麼？",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short"
+      ]
+    },
+    {
+      "type": "pilot",
+      "q": "Tell me about a difficult customer.",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short",
+        "cn"
+      ]
+    },
+    {
+      "type": "pilot",
+      "q": "Tell me about a time you handled a difficult customer.",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short",
+        "cn"
+      ]
+    },
+    {
+      "type": "interview_cn",
+      "q": "請分享一次面對困難客戶的經驗。",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short"
+      ]
+    },
+    {
+      "type": "interview_cn",
+      "q": "請分享一次你處理難纏客戶的經驗。",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short"
+      ]
+    },
+    {
+      "type": "interview_cn",
+      "q": "請說明你處理過的困難客戶。",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short"
+      ]
+    },
+    {
+      "type": "pilot",
+      "q": "Tell me about a high-value negotiation.",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short",
+        "cn"
+      ]
+    },
+    {
+      "type": "pilot",
+      "q": "Tell me about a high-value transaction you handled.",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short",
+        "cn"
+      ]
+    },
+    {
+      "type": "interview_cn",
+      "q": "請分享一次高金額談判的經驗。",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short"
+      ]
+    },
+    {
+      "type": "interview_cn",
+      "q": "請分享一次你處理高金額交易的經驗。",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short"
+      ]
+    },
+    {
+      "type": "pilot",
+      "q": "What did you learn from running a tea business?",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short",
+        "cn"
+      ]
+    },
+    {
+      "type": "pilot",
+      "q": "What did you learn from managing a tea business?",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short",
+        "cn"
+      ]
+    },
+    {
+      "type": "interview_cn",
+      "q": "經營茶行讓你學到什麼？",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short"
+      ]
+    },
+    {
+      "type": "interview_cn",
+      "q": "經營茶行讓你學到了什麼？",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short"
+      ]
+    },
+    {
+      "type": "pilot",
+      "q": "How do you deal with market changes?",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short",
+        "cn"
+      ]
+    },
+    {
+      "type": "pilot",
+      "q": "Tell me about a time you solved a problem with limited information.",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short",
+        "cn"
+      ]
+    },
+    {
+      "type": "pilot",
+      "q": "Tell me about a time you made a difficult decision.",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short",
+        "cn"
+      ]
+    },
+    {
+      "type": "interview_cn",
+      "q": "你如何面對市場變化？",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short"
+      ]
+    },
+    {
+      "type": "interview_cn",
+      "q": "請分享一次你在資訊有限下解決問題的經驗。",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short"
+      ]
+    },
+    {
+      "type": "interview_cn",
+      "q": "請分享一次你做出困難決定的經驗。",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short"
+      ]
+    },
+    {
+      "type": "pilot",
+      "q": "What negative thing would your boss say about you?",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short",
+        "cn"
+      ]
+    },
+    {
+      "type": "pilot",
+      "q": "What negative comment might your previous supervisor or colleague make about you?",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short",
+        "cn"
+      ]
+    },
+    {
+      "type": "interview_cn",
+      "q": "你的主管可能會說你什麼負面特質？",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short"
+      ]
+    },
+    {
+      "type": "interview_cn",
+      "q": "你的主管或同事可能會怎麼批評你？",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short"
+      ]
+    },
+    {
+      "type": "pilot",
+      "q": "Your answer is not convincing. What would you do?",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short",
+        "cn"
+      ]
+    },
+    {
+      "type": "interview_cn",
+      "q": "如果考官說你的答案不夠有說服力，你會怎麼做？",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short"
+      ]
+    },
+    {
+      "type": "pilot",
+      "q": "What superpower would you choose?",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short",
+        "cn"
+      ]
+    },
+    {
+      "type": "interview_cn",
+      "q": "如果可以選擇一種超能力，你會選什麼？",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short"
+      ]
+    },
+    {
+      "type": "pilot",
+      "q": "Why did you study Marketing and Logistics Management?",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short",
+        "cn"
+      ]
+    },
+    {
+      "type": "pilot",
+      "q": "Why did you choose your major?",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short",
+        "cn"
+      ]
+    },
+    {
+      "type": "interview_cn",
+      "q": "你為什麼讀行銷與物流管理？",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short"
+      ]
+    },
+    {
+      "type": "interview_cn",
+      "q": "你為何選擇當主修?",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short"
+      ]
+    },
+    {
+      "type": "pilot",
+      "q": "How did your major help you in your current job?",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short",
+        "cn"
+      ]
+    },
+    {
+      "type": "interview_cn",
+      "q": "你的科系如何幫助你現在的工作？",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short"
+      ]
+    },
+    {
+      "type": "pilot",
+      "q": "Tell me about a time you worked with someone you did not like.",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short",
+        "cn"
+      ]
+    },
+    {
+      "type": "interview_cn",
+      "q": "請分享一次你和不喜歡的人合作的經驗。",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short"
+      ]
+    },
+    {
+      "type": "pilot",
+      "q": "Tell me about a time you had to apologize.",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short",
+        "cn"
+      ]
+    },
+    {
+      "type": "interview_cn",
+      "q": "請分享一次你必須道歉的經驗。",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short"
+      ]
+    },
+    {
+      "type": "pilot",
+      "q": "If the instructor dislikes you, how would you handle it?",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short",
+        "cn"
+      ]
+    },
+    {
+      "type": "interview_cn",
+      "q": "如果教官不喜歡你，你會怎麼處理？",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short"
+      ]
+    },
+    {
+      "type": "pilot",
+      "q": "How do you prepare aviation knowledge?",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short",
+        "cn"
+      ]
+    },
+    {
+      "type": "interview_cn",
+      "q": "你如何準備航空知識？",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short"
+      ]
+    },
+    {
+      "type": "pilot",
+      "q": "What if you are assigned to a base away from home?",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short",
+        "cn"
+      ]
+    },
+    {
+      "type": "interview_cn",
+      "q": "如果你被分發到離家很遠的基地，你能接受嗎？",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short"
+      ]
+    },
+    {
+      "type": "pilot",
+      "q": "What if you have to fly on holidays?",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short",
+        "cn"
+      ]
+    },
+    {
+      "type": "interview_cn",
+      "q": "如果你必須在假日飛行，你能接受嗎？",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short"
+      ]
+    },
+    {
+      "type": "pilot",
+      "q": "If you cannot return home often during training, can you accept it?",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short",
+        "cn"
+      ]
+    },
+    {
+      "type": "pilot",
+      "q": "If you cannot go home for a long time during training, can you accept it?",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short",
+        "cn"
+      ]
+    },
+    {
+      "type": "pilot",
+      "q": "If you couldn't return to Taiwan for one year because of overseas training, could you accept that?",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short",
+        "cn"
+      ]
+    },
+    {
+      "type": "interview_cn",
+      "q": "如果受訓期間不能常常回家，你能接受嗎？",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short"
+      ]
+    },
+    {
+      "type": "interview_cn",
+      "q": "如果訓練期間長時間不能回家，你能接受嗎？",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short"
+      ]
+    },
+    {
+      "type": "interview_cn",
+      "q": "如果在國外受訓一年的時間想念家鄉，你會怎麼做?",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short"
+      ]
+    },
+    {
+      "type": "pilot",
+      "q": "What would you do if you are not selected this time?",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short",
+        "cn"
+      ]
+    },
+    {
+      "type": "pilot",
+      "q": "What is your plan if you do not pass the first selection?",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short",
+        "cn"
+      ]
+    },
+    {
+      "type": "pilot",
+      "q": "If you fail this interview what will you do?",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short",
+        "cn"
+      ]
+    },
+    {
+      "type": "pilot",
+      "q": "If you do not pass this interview, what are you going to do?",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short",
+        "cn"
+      ]
+    },
+    {
+      "type": "interview_cn",
+      "q": "如果這次沒有被錄取，你會怎麼做？",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short"
+      ]
+    },
+    {
+      "type": "interview_cn",
+      "q": "如果我現在把你刷掉，你的下一步是什麼?",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short"
+      ]
+    },
+    {
+      "type": "pilot",
+      "q": "If another candidate performs better than you, how would you feel?",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short",
+        "cn"
+      ]
+    },
+    {
+      "type": "pilot",
+      "q": "How would you react if another cadet performs better than you?",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short",
+        "cn"
+      ]
+    },
+    {
+      "type": "interview_cn",
+      "q": "如果其他候選人表現比你好，你會怎麼想？",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short"
+      ]
+    },
+    {
+      "type": "pilot",
+      "q": "How do you handle being corrected in front of others?",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short",
+        "cn"
+      ]
+    },
+    {
+      "type": "interview_cn",
+      "q": "你如何面對當眾被糾正？",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short"
+      ]
+    },
+    {
+      "type": "pilot",
+      "q": "How do you manage family responsibility and pilot preparation?",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short",
+        "cn"
+      ]
+    },
+    {
+      "type": "interview_cn",
+      "q": "你如何兼顧家庭責任與培訓準備？",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short"
+      ]
+    },
+    {
+      "type": "pilot",
+      "q": "Why should we believe you can complete training?",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short",
+        "cn"
+      ]
+    },
+    {
+      "type": "interview_cn",
+      "q": "我們為什麼應該相信你能完成訓練？",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short"
+      ]
+    },
+    {
+      "type": "pilot",
+      "q": "What is the most difficult part of becoming a pilot for you?",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short",
+        "cn"
+      ]
+    },
+    {
+      "type": "interview_cn",
+      "q": "對你來說，成為飛行員最困難的部分是什麼？",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short"
+      ]
+    },
+    {
+      "type": "pilot",
+      "q": "How would you respond if an instruction from a senior pilot was unclear?",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short",
+        "cn"
+      ]
+    },
+    {
+      "type": "pilot",
+      "q": "If your simulator performance was below standard, what would you do next?",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short",
+        "cn"
+      ]
+    },
+    {
+      "type": "pilot",
+      "q": "If training becomes much harder than expected, how would you handle it?",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short",
+        "cn"
+      ]
+    },
+    {
+      "type": "pilot",
+      "q": "What would you do if you felt behind during training?",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short",
+        "cn"
+      ]
+    },
+    {
+      "type": "pilot",
+      "q": "If you fail a stage check during pilot training, how would you respond?",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short",
+        "cn"
+      ]
+    },
+    {
+      "type": "pilot",
+      "q": "How would you handle a situation where you are not improving as fast as other cadets?",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short",
+        "cn"
+      ]
+    },
+    {
+      "type": "pilot",
+      "q": "How would you handle a training setback during cadet pilot training?",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short",
+        "cn"
+      ]
+    },
+    {
+      "type": "pilot",
+      "q": "Why is honesty important for a pilot?",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short",
+        "cn"
+      ]
+    },
+    {
+      "type": "pilot",
+      "q": "How do you keep learning after achieving a goal?",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short",
+        "cn"
+      ]
+    },
+    {
+      "type": "pilot",
+      "q": "How do you keep learning after reaching a goal?",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short",
+        "cn"
+      ]
+    },
+    {
+      "type": "pilot",
+      "q": "How do you manage high expectations for yourself?",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short",
+        "cn"
+      ]
+    },
+    {
+      "type": "pilot",
+      "q": "What does safe decision-making mean to you?",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short",
+        "cn"
+      ]
+    },
+    {
+      "type": "pilot",
+      "q": "How would you handle a teammate who is quiet but seems confused?",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short",
+        "cn"
+      ]
+    },
+    {
+      "type": "pilot",
+      "q": "What would you do if you notice yourself becoming overconfident?",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short",
+        "cn"
+      ]
+    },
+    {
+      "type": "aviation",
+      "q": "What is ETOPS and why is it important for twin-engine aircraft?",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short",
+        "cn"
+      ]
+    },
+    {
+      "type": "aviation_cn",
+      "q": "什麼是 ETOPS？為什麼它對雙發飛機很重要？",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short"
+      ]
+    },
+    {
+      "type": "math_en",
+      "q": "Materials A/B total 40 kg and 23,200; prices 680 and 480/kg. How many kg of A?",
+      "reason": "math-explanation-translation",
+      "fields": [
+        "s",
+        "cn"
+      ]
+    },
+    {
+      "type": "math_en",
+      "q": "If 3 < (2x−1)/5 ≤ 7, how many integer x values?",
+      "reason": "english-choice-translation",
+      "fields": [
+        "choices",
+        "short",
+        "s",
+        "cn"
+      ]
+    },
+    {
+      "type": "math_en",
+      "q": "A takes x hours alone, B x+3; together 2 hours. Find x.",
+      "reason": "math-explanation-translation",
+      "fields": [
+        "s",
+        "cn"
+      ]
+    },
+    {
+      "type": "math_en",
+      "q": "Plans A=1,800+120x and B=3,000+80x. At what x are costs equal?",
+      "reason": "math-explanation-translation",
+      "fields": [
+        "s",
+        "cn"
+      ]
+    },
+    {
+      "type": "math_en",
+      "q": "A:B=3:5; after A increases by 18, ratio becomes 3:4. Original A+B?",
+      "reason": "math-explanation-translation",
+      "fields": [
+        "s",
+        "cn"
+      ]
+    },
+    {
+      "type": "math_en",
+      "q": "Rectangle perimeter 40 m. Maximum area?",
+      "reason": "math-explanation-translation",
+      "fields": [
+        "s",
+        "cn"
+      ]
+    },
+    {
+      "type": "math_en",
+      "q": "Sector r=9 cm, angle120°, pi=3.14. Perimeter?",
+      "reason": "math-explanation-translation",
+      "fields": [
+        "s",
+        "cn"
+      ]
+    },
+    {
+      "type": "math_en",
+      "q": "Circle radius17 cm, chord16 cm. Center-to-chord distance?",
+      "reason": "math-explanation-translation",
+      "fields": [
+        "s",
+        "cn"
+      ]
+    },
+    {
+      "type": "math_en",
+      "q": "Triangle A(0,0),B(8,0),C(2,6) area?",
+      "reason": "math-explanation-translation",
+      "fields": [
+        "s",
+        "cn"
+      ]
+    },
+    {
+      "type": "math_en",
+      "q": "From rest accelerate2 m/s² for8s, then constant speed12s. Total displacement?",
+      "reason": "math-explanation-translation",
+      "fields": [
+        "s",
+        "cn"
+      ]
+    },
+    {
+      "type": "math_en",
+      "q": "20 m/s, reaction0.8s, then decel4 m/s². Total stopping distance?",
+      "reason": "math-explanation-translation",
+      "fields": [
+        "s",
+        "cn"
+      ]
+    },
+    {
+      "type": "math_en",
+      "q": "120km at80km/h, stop0.5h, then90km at60km/h. Average speed?",
+      "reason": "math-explanation-translation",
+      "fields": [
+        "s",
+        "cn"
+      ]
+    },
+    {
+      "type": "math_en",
+      "q": "m=3.6kg,V=.004m³ in water. Float/sink and density?",
+      "reason": "math-explanation-translation",
+      "fields": [
+        "s",
+        "cn"
+      ]
+    },
+    {
+      "type": "math_en",
+      "q": "1.5kW device2.4h/day for30days. Energy?",
+      "reason": "math-explanation-translation",
+      "fields": [
+        "s",
+        "cn"
+      ]
+    },
+    {
+      "type": "math_en",
+      "q": "12V across parallel4Ω/6Ω, supply limit5A. Exceeded?",
+      "reason": "math-explanation-translation",
+      "fields": [
+        "s",
+        "cn"
+      ]
+    },
+    {
+      "type": "math_en",
+      "q": "After2h flight divert70NM at GS140kt. Total flight time?",
+      "reason": "math-explanation-translation",
+      "fields": [
+        "s",
+        "cn"
+      ]
+    },
+    {
+      "type": "aviation",
+      "q": "You are preparing for departure and the ATIS changes from Bravo to Charlie. Why must pilots obtain the latest ATIS before taxi?",
+      "reason": "english-answer-language",
+      "fields": [
+        "s"
+      ]
+    },
+    {
+      "type": "aviation",
+      "q": "What would you do if ATC instructions are unclear during taxi?",
+      "reason": "english-answer-language",
+      "fields": [
+        "s"
+      ]
+    },
+    {
+      "type": "aviation",
+      "q": "What information does a METAR provide?",
+      "reason": "english-answer-language",
+      "fields": [
+        "s"
+      ]
+    },
+    {
+      "type": "aviation",
+      "q": "How is TAF different from METAR?",
+      "reason": "english-answer-language",
+      "fields": [
+        "s"
+      ]
+    },
+    {
+      "type": "aviation",
+      "q": "What is a SID and why do aircraft follow it after departure?",
+      "reason": "english-answer-language",
+      "fields": [
+        "s"
+      ]
+    },
+    {
+      "type": "aviation",
+      "q": "What is a STAR and why is it useful before approach?",
+      "reason": "english-answer-language",
+      "fields": [
+        "s"
+      ]
+    },
+    {
+      "type": "aviation",
+      "q": "What is TCAS and what should pilots do after an RA?",
+      "reason": "english-answer-language",
+      "fields": [
+        "s"
+      ]
+    },
+    {
+      "type": "aviation",
+      "q": "What is EGPWS and what kind of accident does it help prevent?",
+      "reason": "english-answer-language",
+      "fields": [
+        "s"
+      ]
+    },
+    {
+      "type": "aviation",
+      "q": "What is NOTAM and why should pilots review it?",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short",
+        "cn"
+      ]
+    },
+    {
+      "type": "aviation",
+      "q": "What is FIR and what happens when an aircraft crosses an FIR boundary?",
+      "reason": "english-answer-language",
+      "fields": [
+        "s"
+      ]
+    },
+    {
+      "type": "aviation",
+      "q": "What is RNAV?",
+      "reason": "english-answer-language",
+      "fields": [
+        "s"
+      ]
+    },
+    {
+      "type": "aviation",
+      "q": "What is RNP and how is it related to RNAV?",
+      "reason": "english-answer-language",
+      "fields": [
+        "s"
+      ]
+    },
+    {
+      "type": "aviation",
+      "q": "What is MEL and can an aircraft fly with something broken?",
+      "reason": "english-answer-language",
+      "fields": [
+        "s"
+      ]
+    },
+    {
+      "type": "aviation",
+      "q": "What is the difference between VMC and IMC?",
+      "reason": "english-answer-language",
+      "fields": [
+        "s"
+      ]
+    },
+    {
+      "type": "aviation",
+      "q": "Why is readback important in ATC communication?",
+      "reason": "english-answer-language",
+      "fields": [
+        "s"
+      ]
+    },
+    {
+      "type": "aviation",
+      "q": "What is holding and why might ATC assign it?",
+      "reason": "english-answer-language",
+      "fields": [
+        "s"
+      ]
+    },
+    {
+      "type": "aviation",
+      "q": "Why is communication with cabin crew important?",
+      "reason": "english-answer-language",
+      "fields": [
+        "s"
+      ]
+    },
+    {
+      "type": "aviation",
+      "q": "Why is passenger communication important during abnormal situations?",
+      "reason": "english-answer-language",
+      "fields": [
+        "s"
+      ]
+    },
+    {
+      "type": "aviation",
+      "q": "What is NOTAM and why must pilots review it before flight?",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short",
+        "cn"
+      ]
+    },
+    {
+      "type": "aviation_cn",
+      "q": "什麼是 NOTAM？為什麼飛行員應該查看？",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short"
+      ]
+    },
+    {
+      "type": "pilot",
+      "q": "Why can an aircraft fly?",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short",
+        "cn"
+      ]
+    },
+    {
+      "type": "interview_cn",
+      "q": "飛機為什麼能飛？",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short",
+        "cn"
+      ]
+    },
+    {
+      "type": "pilot",
+      "q": "What is your motto?",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short",
+        "cn"
+      ]
+    },
+    {
+      "type": "interview_cn",
+      "q": "你的座右銘是什麼？",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short"
+      ]
+    },
+    {
+      "type": "pilot",
+      "q": "What do you value most in life?",
+      "reason": "answer-and-translation",
+      "fields": [
+        "short",
+        "cn"
+      ]
+    },
+    {
+      "type": "interview_cn",
+      "q": "你人生中最重視什麼？",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short"
+      ]
+    },
+    {
+      "type": "pilot",
+      "q": "What is your most unforgettable memory?",
+      "reason": "answer-and-translation",
+      "fields": [
+        "short",
+        "cn"
+      ]
+    },
+    {
+      "type": "interview_cn",
+      "q": "你最難忘的回憶是什麼？",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short"
+      ]
+    },
+    {
+      "type": "pilot",
+      "q": "What was your proudest moment in school?",
+      "reason": "answer-and-translation",
+      "fields": [
+        "short",
+        "cn"
+      ]
+    },
+    {
+      "type": "interview_cn",
+      "q": "你在學校最自豪的時刻是什麼？",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short"
+      ]
+    },
+    {
+      "type": "pilot",
+      "q": "What did you learn from studying overseas?",
+      "reason": "answer-and-translation",
+      "fields": [
+        "short",
+        "cn"
+      ]
+    },
+    {
+      "type": "interview_cn",
+      "q": "海外學習讓你學到了什麼？",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short"
+      ]
+    },
+    {
+      "type": "pilot",
+      "q": "Did you go to an interview for other airlines?",
+      "reason": "answer-and-translation",
+      "fields": [
+        "short",
+        "cn"
+      ]
+    },
+    {
+      "type": "interview_cn",
+      "q": "你曾經到其他的航空公司面試嗎?",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short"
+      ]
+    },
+    {
+      "type": "pilot",
+      "q": "Tell me three reasons why I should hire you.",
+      "reason": "answer-and-translation",
+      "fields": [
+        "short",
+        "cn"
+      ]
+    },
+    {
+      "type": "interview_cn",
+      "q": "請提出三個錄取你的理由(道理跟履歷上的缺點相同)。",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short"
+      ]
+    },
+    {
+      "type": "pilot",
+      "q": "Being a pilot is demanding. Why are you confident that you can handle the job?",
+      "reason": "answer-and-translation",
+      "fields": [
+        "short",
+        "cn"
+      ]
+    },
+    {
+      "type": "interview_cn",
+      "q": "飛行員的工作不容易，我認為你做不來，你認為呢?",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short"
+      ]
+    },
+    {
+      "type": "pilot",
+      "q": "Do you have any questions for us?",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short",
+        "cn"
+      ]
+    },
+    {
+      "type": "pilot",
+      "q": "Do you have any questions to ask?",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short",
+        "cn"
+      ]
+    },
+    {
+      "type": "pilot",
+      "q": "Thank you very much for coming to this interview. Do you have any questions?",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short",
+        "cn"
+      ]
+    },
+    {
+      "type": "interview_cn",
+      "q": "我們的面試到此差不多了，請問你有什麼問題嗎?",
+      "reason": "answer-and-translation",
+      "fields": [
+        "s",
+        "short"
+      ]
+    },
+    {
+      "type": "pilot",
+      "q": "What do you know about STARLUX Airlines?",
+      "reason": "official-route-update",
+      "fields": [
+        "s",
+        "cn"
+      ]
+    },
+    {
+      "type": "interview_cn",
+      "q": "你對星宇航空了解多少？",
+      "reason": "official-route-update",
+      "fields": [
+        "s",
+        "cn"
+      ]
+    },
+    {
+      "type": "math_en",
+      "q": "The statement \"a car can reach 180 km/h\" most directly describes which quantity?",
+      "reason": "english-choice-translation",
+      "fields": [
+        "choices",
+        "short"
+      ]
+    },
+    {
+      "type": "math_en",
+      "q": "Which statement completely describes velocity?",
+      "reason": "english-choice-translation",
+      "fields": [
+        "choices",
+        "short"
+      ]
+    },
+    {
+      "type": "math_en",
+      "q": "An apple rests on a table. Which pair is a Newton's third-law action-reaction pair?",
+      "reason": "english-choice-translation",
+      "fields": [
+        "choices",
+        "short"
+      ]
+    },
+    {
+      "type": "math_en",
+      "q": "When an elevator accelerates upward, how does a person's apparent weight compare with normal weight?",
+      "reason": "english-choice-translation",
+      "fields": [
+        "choices",
+        "short"
+      ]
+    },
+    {
+      "type": "math_en",
+      "q": "When an elevator accelerates downward, how does apparent weight compare with normal weight?",
+      "reason": "english-choice-translation",
+      "fields": [
+        "choices",
+        "short"
+      ]
+    },
+    {
+      "type": "math_en",
+      "q": "In circular motion, speed triples while all other quantities stay constant. By what factor does centripetal force change?",
+      "reason": "english-choice-translation",
+      "fields": [
+        "choices",
+        "short"
+      ]
+    },
+    {
+      "type": "math_en",
+      "q": "When an elevator begins accelerating upward, how does the spring-scale reading of a hanging mass change compared with rest?",
+      "reason": "english-choice-translation",
+      "fields": [
+        "choices",
+        "short"
+      ]
+    },
+    {
+      "type": "math_en",
+      "q": "A rocket accelerates upward at 4g. Approximately how many times normal Earth weight does an astronaut's scale reading become?",
+      "reason": "english-choice-translation",
+      "fields": [
+        "choices",
+        "short"
+      ]
+    },
+    {
+      "type": "math_en",
+      "q": "In general, which order of sound speed from fastest to slowest is most reasonable?",
+      "reason": "english-choice-translation",
+      "fields": [
+        "choices",
+        "short"
+      ]
+    },
+    {
+      "type": "math_en",
+      "q": "For a long straight wire carrying DC current, what is the magnetic-field-line shape around the wire?",
+      "reason": "english-choice-translation",
+      "fields": [
+        "choices",
+        "short"
+      ]
+    },
+    {
+      "type": "math_en",
+      "q": "To electroplate silver onto a copper spoon, which setup is most reasonable?",
+      "reason": "english-choice-translation",
+      "fields": [
+        "choices",
+        "short"
+      ]
+    },
+    {
+      "type": "math_en",
+      "q": "An electric fan primarily converts electrical energy into which form?",
+      "reason": "english-choice-translation",
+      "fields": [
+        "choices",
+        "short"
+      ]
+    },
+    {
+      "type": "math_en",
+      "q": "Ideally, as an object falls freely, gravitational potential energy mainly converts into what?",
+      "reason": "english-choice-translation",
+      "fields": [
+        "choices",
+        "short"
+      ]
+    },
+    {
+      "type": "math_en",
+      "q": "Which is a chemical change?",
+      "reason": "english-choice-translation",
+      "fields": [
+        "choices",
+        "short"
+      ]
+    },
+    {
+      "type": "math_en",
+      "q": "A price rises 20% and then falls 20%. How does the final price compare with the original?",
+      "reason": "english-choice-translation",
+      "fields": [
+        "choices",
+        "short"
+      ]
+    },
+    {
+      "type": "math_en",
+      "q": "If a+b is even and bc is odd, which statement must be true?",
+      "reason": "english-choice-translation",
+      "fields": [
+        "choices",
+        "short"
+      ]
+    },
+    {
+      "type": "math_en",
+      "q": "A box has balls numbered 1-5. Let a be P(second>first) without replacement and b with replacement. Which is correct?",
+      "reason": "english-choice-translation",
+      "fields": [
+        "choices",
+        "short"
+      ]
+    },
+    {
+      "type": "math_en",
+      "q": "A rectangle has sides A and B. After subtracting the same positive x from both dimensions, the new rectangle remains similar to the original and actually changes size. What must be true?",
+      "reason": "english-choice-translation",
+      "fields": [
+        "choices",
+        "short"
+      ]
+    },
+    {
+      "type": "math_en",
+      "q": "A fan mounted on a sailboat blows toward a sail on the same boat. In an idealized closed-system view, what is most reasonable?",
+      "reason": "english-choice-translation",
+      "fields": [
+        "choices",
+        "short"
+      ]
+    },
+    {
+      "type": "math_en",
+      "q": "A set of flight-training equipment costs 2,400 after a 20% discount. What was the original price?",
+      "reason": "english-choice-translation",
+      "fields": [
+        "choices",
+        "short",
+        "s"
+      ]
+    },
+    {
+      "type": "math_en",
+      "q": "A tea shipment is sold at 75% of its original quoted price for 90,000. What was the original quote?",
+      "reason": "english-choice-translation",
+      "fields": [
+        "choices",
+        "short",
+        "s"
+      ]
+    },
+    {
+      "type": "math_en",
+      "q": "An early-bird training fee is 15% below the regular price and costs 34,000. What is the regular price?",
+      "reason": "english-choice-translation",
+      "fields": [
+        "choices",
+        "short",
+        "s"
+      ]
+    },
+    {
+      "type": "math_en",
+      "q": "A promotional ticket costs 70% of the normal fare and sells for 14,700. What is the normal fare?",
+      "reason": "english-choice-translation",
+      "fields": [
+        "choices",
+        "short",
+        "s"
+      ]
+    },
+    {
+      "type": "math_en",
+      "q": "A fare rises by 20% and is then discounted by 10%. If the original fare is 10,000, what is the final fare?",
+      "reason": "english-choice-translation",
+      "fields": [
+        "choices",
+        "short",
+        "s"
+      ]
+    },
+    {
+      "type": "math_en",
+      "q": "Inventory value falls 15% and then rises 10%. Starting from 200,000, what is the final value?",
+      "reason": "english-choice-translation",
+      "fields": [
+        "choices",
+        "short",
+        "s"
+      ]
+    },
+    {
+      "type": "math_en",
+      "q": "Passenger count rises 25% and then another 8%. Starting from 20,000 passengers, what is the final count?",
+      "reason": "english-choice-translation",
+      "fields": [
+        "choices",
+        "short",
+        "s"
+      ]
+    },
+    {
+      "type": "math_en",
+      "q": "Unit cost falls 12% and then rises 5%. Starting from 500, what is the final cost?",
+      "reason": "english-choice-translation",
+      "fields": [
+        "choices",
+        "short",
+        "s"
+      ]
+    },
+    {
+      "type": "math_en",
+      "q": "A finishes a job in 6 hours and B in 4 hours. How long together?",
+      "reason": "english-choice-translation",
+      "fields": [
+        "choices",
+        "short"
+      ]
+    },
+    {
+      "type": "math_en",
+      "q": "The same 100 N force acts at 0.4 m and 1.2 m lever arms. How many times larger is the second torque?",
+      "reason": "english-choice-translation",
+      "fields": [
+        "choices",
+        "short"
+      ]
+    },
+    {
+      "type": "math_en",
+      "q": "A class has 360 people, 10% absent, and attendees split 5:4. How many are in the larger group?",
+      "reason": "english-choice-translation",
+      "fields": [
+        "choices",
+        "short",
+        "s"
+      ]
+    },
+    {
+      "type": "math_en",
+      "q": "From 1,500 boxes, 20% are sold; the remainder is split 1:2:3. How many go to the third area?",
+      "reason": "english-choice-translation",
+      "fields": [
+        "choices",
+        "short",
+        "s"
+      ]
+    },
+    {
+      "type": "math_en",
+      "q": "Make 18 L of 28% solution from 40% and 16%. How many liters of 40%?",
+      "reason": "english-choice-translation",
+      "fields": [
+        "choices"
+      ]
+    },
+    {
+      "type": "math_en",
+      "q": "2kg cart6m/s sticks to stationary4kg. Common speed?",
+      "reason": "question-assumptions",
+      "fields": [
+        "choices",
+        "short",
+        "q"
+      ]
+    },
+    {
+      "type": "math_en",
+      "q": "20% win500,30%100,50%0. Expected payout?",
+      "reason": "english-choice-translation",
+      "fields": [
+        "choices",
+        "short",
+        "s"
+      ]
+    },
+    {
+      "type": "math_en",
+      "q": "100 people:65 English,55 Japanese,30 both. At least one?",
+      "reason": "english-choice-translation",
+      "fields": [
+        "choices",
+        "short",
+        "s"
+      ]
+    },
+    {
+      "type": "math_en",
+      "q": "With sunlight from the right, what phase is seen at marked position A?",
+      "reason": "english-choice-translation",
+      "fields": [
+        "choices",
+        "short",
+        "s"
+      ]
+    },
+    {
+      "type": "math_en",
+      "q": "With sunlight from the right, what phase is seen at marked position C?",
+      "reason": "english-choice-translation",
+      "fields": [
+        "choices",
+        "short",
+        "s"
+      ]
+    },
+    {
+      "type": "math_en",
+      "q": "With sunlight from the right, what phase is seen at marked position E?",
+      "reason": "english-choice-translation",
+      "fields": [
+        "choices",
+        "short",
+        "s"
+      ]
+    },
+    {
+      "type": "math_en",
+      "q": "With sunlight from the right, what phase is seen at marked position G?",
+      "reason": "english-choice-translation",
+      "fields": [
+        "choices",
+        "short",
+        "s"
+      ]
+    },
+    {
+      "type": "math_en",
+      "q": "When does a full moon usually rise?",
+      "reason": "english-choice-translation",
+      "fields": [
+        "choices",
+        "short",
+        "s"
+      ]
+    },
+    {
+      "type": "math_en",
+      "q": "When does a first-quarter moon roughly rise and set?",
+      "reason": "english-choice-translation",
+      "fields": [
+        "choices",
+        "short",
+        "s"
+      ]
+    },
+    {
+      "type": "math_en",
+      "q": "Why is the 27.3-day sidereal month shorter than the 29.5-day synodic month?",
+      "reason": "english-choice-translation",
+      "fields": [
+        "choices",
+        "short",
+        "s"
+      ]
+    },
+    {
+      "type": "math_en",
+      "q": "Why not an eclipse every new/full moon?",
+      "reason": "english-choice-translation",
+      "fields": [
+        "choices",
+        "short",
+        "s"
+      ]
+    },
+    {
+      "type": "math_en",
+      "q": "Why are spring tides common near new/full moon?",
+      "reason": "english-choice-translation",
+      "fields": [
+        "choices",
+        "short",
+        "s"
+      ]
+    },
+    {
+      "type": "math_en",
+      "q": "Why are neap tides common near quarter phases?",
+      "reason": "english-choice-translation",
+      "fields": [
+        "choices",
+        "short",
+        "s"
+      ]
+    },
+    {
+      "type": "math_en",
+      "q": "Why do we see roughly the same lunar face?",
+      "reason": "english-choice-translation",
+      "fields": [
+        "choices",
+        "short",
+        "s"
+      ]
+    },
+    {
+      "type": "math_en",
+      "q": "Main reason Northern Hemisphere summers are warmer?",
+      "reason": "english-choice-translation",
+      "fields": [
+        "choices",
+        "short",
+        "s"
+      ]
+    },
+    {
+      "type": "math_en",
+      "q": "Near NH winter solstice, how do Taiwan daylight and noon Sun altitude compare with summer?",
+      "reason": "english-choice-translation",
+      "fields": [
+        "choices",
+        "short",
+        "s"
+      ]
+    },
+    {
+      "type": "math_en",
+      "q": "Near an equinox, what is generally true about day/night?",
+      "reason": "english-choice-translation",
+      "fields": [
+        "choices",
+        "short",
+        "s"
+      ]
+    },
+    {
+      "type": "math_en",
+      "q": "Polaris altitude ~25°. Approx latitude?",
+      "reason": "english-choice-translation",
+      "fields": [
+        "choices",
+        "short",
+        "s"
+      ]
+    },
+    {
+      "type": "math_en",
+      "q": "Why do stars appear to move east-to-west nightly?",
+      "reason": "english-choice-translation",
+      "fields": [
+        "choices",
+        "short",
+        "s"
+      ]
+    },
+    {
+      "type": "math_en",
+      "q": "Best explanation of outer-planet retrograde motion?",
+      "reason": "english-choice-translation",
+      "fields": [
+        "choices",
+        "short",
+        "s"
+      ]
+    },
+    {
+      "type": "math_en",
+      "q": "Why does pressure generally decrease with altitude?",
+      "reason": "english-choice-translation",
+      "fields": [
+        "choices",
+        "short",
+        "s"
+      ]
+    },
+    {
+      "type": "math_en",
+      "q": "Air cools to dew point with vapor content unchanged. What happens?",
+      "reason": "english-choice-translation",
+      "fields": [
+        "choices",
+        "short",
+        "s"
+      ]
+    },
+    {
+      "type": "math_en",
+      "q": "Daytime sea breeze near-surface direction?",
+      "reason": "english-choice-translation",
+      "fields": [
+        "choices",
+        "short",
+        "s"
+      ]
+    },
+    {
+      "type": "math_en",
+      "q": "Typical air motion at a cold front?",
+      "reason": "english-choice-translation",
+      "fields": [
+        "choices",
+        "short",
+        "s"
+      ]
+    },
+    {
+      "type": "math_en",
+      "q": "Near-surface mature tropical cyclone circulation in NH?",
+      "reason": "english-choice-translation",
+      "fields": [
+        "choices",
+        "short",
+        "s"
+      ]
+    },
+    {
+      "type": "math_en",
+      "q": "Why can an inversion trap pollution?",
+      "reason": "english-choice-translation",
+      "fields": [
+        "choices",
+        "short",
+        "s"
+      ]
+    },
+    {
+      "type": "math_en",
+      "q": "Correct comparison of P and S waves?",
+      "reason": "english-choice-translation",
+      "fields": [
+        "choices",
+        "short",
+        "s"
+      ]
+    },
+    {
+      "type": "math_en",
+      "q": "Why multiple seismic stations for epicenter?",
+      "reason": "english-choice-translation",
+      "fields": [
+        "choices",
+        "short",
+        "s"
+      ]
+    },
+    {
+      "type": "math_en",
+      "q": "Oceanic-continental convergence usually produces?",
+      "reason": "english-choice-translation",
+      "fields": [
+        "choices",
+        "short",
+        "s"
+      ]
+    },
+    {
+      "type": "math_en",
+      "q": "Mid-ocean ridge corresponds to which boundary?",
+      "reason": "english-choice-translation",
+      "fields": [
+        "choices",
+        "short",
+        "s"
+      ]
+    },
+    {
+      "type": "math_en",
+      "q": "Typical transform-boundary motion?",
+      "reason": "english-choice-translation",
+      "fields": [
+        "choices",
+        "short",
+        "s"
+      ]
+    },
+    {
+      "type": "math_en",
+      "q": "What seafloor event most effectively makes a large tsunami?",
+      "reason": "english-choice-translation",
+      "fields": [
+        "choices",
+        "short",
+        "s"
+      ]
+    },
+    {
+      "type": "math_en",
+      "q": "Sedimentary rock under heat/pressure without melting becomes?",
+      "reason": "english-choice-translation",
+      "fields": [
+        "choices",
+        "short",
+        "s"
+      ]
+    },
+    {
+      "type": "math_en",
+      "q": "Main difference between weathering and erosion?",
+      "reason": "english-choice-translation",
+      "fields": [
+        "choices",
+        "short",
+        "s"
+      ]
+    },
+    {
+      "type": "aviation",
+      "q": "Explain the difference between IAS, TAS, and GS during cruise.",
+      "reason": "english-short-answer",
+      "fields": [
+        "short"
+      ]
+    },
+    {
+      "type": "aviation",
+      "q": "What is density altitude and why is it dangerous on hot days?",
+      "reason": "english-short-answer",
+      "fields": [
+        "short"
+      ]
+    },
+    {
+      "type": "aviation",
+      "q": "What is controlled flight into terrain?",
+      "reason": "english-short-answer",
+      "fields": [
+        "short"
+      ]
+    },
+    {
+      "type": "aviation",
+      "q": "What is an attitude indicator and why is it important?",
+      "reason": "english-short-answer",
+      "fields": [
+        "short"
+      ]
+    },
+    {
+      "type": "aviation",
+      "q": "What is the pitot-static system and which instruments depend on it?",
+      "reason": "english-short-answer",
+      "fields": [
+        "short"
+      ]
+    },
+    {
+      "type": "aviation",
+      "q": "What are the six basic flight instruments?",
+      "reason": "english-short-answer",
+      "fields": [
+        "short"
+      ]
+    },
+    {
+      "type": "aviation",
+      "q": "What is the ILS localizer frequency range and channel structure?",
+      "reason": "english-short-answer",
+      "fields": [
+        "short"
+      ]
+    },
+    {
+      "type": "aviation",
+      "q": "When climbing or descending toward a target altitude, when should you begin the level-off?",
+      "reason": "english-short-answer",
+      "fields": [
+        "short"
+      ]
+    },
+    {
+      "type": "aviation",
+      "q": "How does a Heading Indicator or Directional Gyro work, and why does it need correction?",
+      "reason": "english-short-answer",
+      "fields": [
+        "short"
+      ]
+    },
+    {
+      "type": "aviation",
+      "q": "Why is the Attitude Indicator often used as the center of a basic instrument scan?",
+      "reason": "english-short-answer",
+      "fields": [
+        "short"
+      ]
+    },
+    {
+      "type": "aviation",
+      "q": "What is the lift equation, and what does each term mean?",
+      "reason": "english-short-answer",
+      "fields": [
+        "short"
+      ]
+    },
+    {
+      "type": "aviation",
+      "q": "What does an altimeter indicate with QNH, QFE, and 1013.25 hPa settings?",
+      "reason": "english-short-answer",
+      "fields": [
+        "short"
+      ]
+    },
+    {
+      "type": "aviation",
+      "q": "Is a standard-rate turn always flown at 30 degrees of bank?",
+      "reason": "english-short-answer",
+      "fields": [
+        "short"
+      ]
+    },
+    {
+      "type": "aviation",
+      "q": "What does two white and two red PAPI lights mean?",
+      "reason": "english-short-answer",
+      "fields": [
+        "short"
+      ]
+    },
+    {
+      "type": "aviation",
+      "q": "What four phases can be used to organize a manual acceleration or deceleration?",
+      "reason": "english-short-answer",
+      "fields": [
+        "short"
+      ]
+    },
+    {
+      "type": "aviation",
+      "q": "What are four useful phases of a manual turn?",
+      "reason": "english-short-answer",
+      "fields": [
+        "short"
+      ]
+    },
+    {
+      "type": "aviation",
+      "q": "How can seat or body references help with runway-centerline alignment on a visual approach?",
+      "reason": "english-short-answer",
+      "fields": [
+        "short"
+      ]
+    },
+    {
+      "type": "aviation",
+      "q": "Should approach speed always be VREF plus 5 to 10 knots?",
+      "reason": "english-short-answer",
+      "fields": [
+        "short"
+      ]
+    },
+    {
+      "type": "aviation",
+      "q": "What is the real trim objective in straight-and-level, unaccelerated flight?",
+      "reason": "english-short-answer",
+      "fields": [
+        "short"
+      ]
+    },
+    {
+      "type": "aviation",
+      "q": "In what directions do thrust and drag act?",
+      "reason": "english-short-answer",
+      "fields": [
+        "short"
+      ]
+    },
+    {
+      "type": "aviation",
+      "q": "How can energy management help explain airspeed and altitude in manual flight?",
+      "reason": "english-short-answer",
+      "fields": [
+        "short"
+      ]
+    },
+    {
+      "type": "aviation",
+      "q": "Why should you avoid immediately making a large opposite control correction after a power change?",
+      "reason": "english-short-answer",
+      "fields": [
+        "short"
+      ]
+    },
+    {
+      "type": "aviation",
+      "q": "After accelerating or decelerating, should you trim pitch or trim the VSI?",
+      "reason": "english-short-answer",
+      "fields": [
+        "short"
+      ]
+    },
+    {
+      "type": "aviation",
+      "q": "What mainly determines lift coefficient CL, and what happens at its limit?",
+      "reason": "english-short-answer",
+      "fields": [
+        "short"
+      ]
+    },
+    {
+      "type": "aviation",
+      "q": "What does Airbus Normal Law provide, and what does sidestick input represent?",
+      "reason": "english-short-answer",
+      "fields": [
+        "short"
+      ]
+    },
+    {
+      "type": "aviation",
+      "q": "What is the operational paired-frequency range for an ILS glide slope?",
+      "reason": "english-short-answer",
+      "fields": [
+        "short"
+      ]
+    },
+    {
+      "type": "aviation",
+      "q": "How can you estimate vertical speed for a three-degree glide path from groundspeed?",
+      "reason": "english-short-answer",
+      "fields": [
+        "short"
+      ]
+    },
+    {
+      "type": "aviation",
+      "q": "How far before the target heading should you begin rolling out of a turn?",
+      "reason": "english-short-answer",
+      "fields": [
+        "short"
+      ]
+    },
+    {
+      "type": "aviation",
+      "q": "Why does an ILS localizer use 90 Hz and 150 Hz modulation, and what is DDM?",
+      "reason": "english-short-answer",
+      "fields": [
+        "short"
+      ]
+    },
+    {
+      "type": "aviation",
+      "q": "What is the key operational difference between Airbus Direct Law and Normal Law?",
+      "reason": "english-short-answer",
+      "fields": [
+        "short"
+      ]
+    },
+    {
+      "type": "aviation",
+      "q": "How should attention be divided between instruments and outside visual references on a visual approach?",
+      "reason": "english-short-answer",
+      "fields": [
+        "short"
+      ]
+    },
+    {
+      "type": "aviation",
+      "q": "What are the typical ILS glide-slope angle and vertical beam width?",
+      "reason": "english-short-answer",
+      "fields": [
+        "short"
+      ]
+    },
+    {
+      "type": "aviation",
+      "q": "What does the speed-trend arrow or vector on a PFD speed tape indicate?",
+      "reason": "english-short-answer",
+      "fields": [
+        "short"
+      ]
+    },
+    {
+      "type": "aviation_cn",
+      "q": "什麼是 NOTAM？為什麼飛行員起飛前必須查看？",
+      "reason": "paired-chinese-sync",
+      "fields": [
+        "s",
+        "short"
+      ]
+    },
+    {
+      "type": "pilot",
+      "q": "What do you know about China Airlines?",
+      "reason": "official-fleet-update",
+      "fields": [
+        "s",
+        "cn"
+      ]
+    },
+    {
+      "type": "interview_cn",
+      "q": "你對中華航空了解多少？",
+      "reason": "official-fleet-update",
+      "fields": [
+        "s",
+        "cn"
+      ]
+    },
+    {
+      "type": "pilot",
+      "q": "Which aircraft types does China Airlines operate, and how large is its fleet?",
+      "reason": "official-fleet-update",
+      "fields": [
+        "s",
+        "short",
+        "cn"
+      ]
+    },
+    {
+      "type": "interview_cn",
+      "q": "中華航空目前使用哪些機型？機隊共幾架？",
+      "reason": "official-fleet-update",
+      "fields": [
+        "s",
+        "short",
+        "cn"
+      ]
+    },
+    {
+      "type": "pilot",
+      "q": "Which aircraft types does STARLUX Airlines operate, and how large is its fleet?",
+      "reason": "dated-figure-clarification",
+      "fields": [
+        "s",
+        "cn"
+      ]
+    },
+    {
+      "type": "interview_cn",
+      "q": "星宇航空目前使用哪些機型？機隊共幾架？",
+      "reason": "dated-figure-clarification",
+      "fields": [
+        "s",
+        "cn"
+      ]
+    }
+  ]
+}

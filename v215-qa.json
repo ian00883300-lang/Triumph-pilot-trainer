@@ -1,0 +1,92 @@
+{
+  "title": "TRIUMPH Pilot Trainer v215",
+  "count": 4192,
+  "applied": 330,
+  "issues": {
+    "blankAnswers": [],
+    "missingENTranslations": [],
+    "mixedENChoices": [],
+    "chineseInENAnswers": [],
+    "invalidChoices": []
+  },
+  "errors": [],
+  "tested": [
+    {
+      "i": 1580,
+      "q": "你如何看待你的老闆或上司?",
+      "secondary": "none"
+    },
+    {
+      "i": 727,
+      "q": "What do you know about SkyTeam?",
+      "secondary": "block"
+    },
+    {
+      "i": 728,
+      "q": "你對天合聯盟了解多少？",
+      "secondary": "none"
+    },
+    {
+      "i": 1579,
+      "q": "Describe your boss or supervisor.",
+      "secondary": "block"
+    },
+    {
+      "i": 3358,
+      "q": "A 2 kg cart moving to the right at 6 m/s sticks to a stationary 4 kg cart. Neglect external horizontal impulse. What is their common velocity just after impact?",
+      "secondary": "block"
+    },
+    {
+      "i": 3359,
+      "q": "k=200N/m，壓縮0.30m，全部轉為1kg物體動能，速度？",
+      "secondary": "none"
+    },
+    {
+      "i": 3951,
+      "q": "Which aircraft types does China Airlines operate, and how large is its fleet?",
+      "secondary": "block"
+    },
+    {
+      "i": 3952,
+      "q": "中華航空目前使用哪些機型？機隊共幾架？",
+      "secondary": "none"
+    },
+    {
+      "i": 0,
+      "q": "Tell me about yourself.",
+      "secondary": "block"
+    },
+    {
+      "i": 542,
+      "q": "What do you know about China Airlines?",
+      "secondary": "block"
+    },
+    {
+      "i": 543,
+      "q": "你對中華航空了解多少？",
+      "secondary": "none"
+    },
+    {
+      "i": 3957,
+      "q": "范仲淹－《岳陽樓記》：「不以物喜，不以己悲。」最適合連結哪一項飛行員能力？",
+      "secondary": "block"
+    },
+    {
+      "i": 0,
+      "q": "Tell me about yourself.",
+      "secondary": "block"
+    }
+  ],
+  "daily": [
+    {
+      "type": "interview_cn",
+      "question": "你對星宇航空了解多少？",
+      "answerVisible": true
+    },
+    {
+      "type": "pilot",
+      "question": "What was your worst subject in school, and how did you handle it?",
+      "answerVisible": true
+    }
+  ]
+}
