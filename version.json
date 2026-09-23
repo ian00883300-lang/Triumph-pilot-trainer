@@ -1,11 +1,9 @@
 {
-  "version": "v215",
-  "build": "2026-09-18-answer-language-review",
+  "version": "v216",
+  "build": "2026-09-23-math-formula-review",
   "entry": "./index.html",
   "changes": [
-    "Rewrite supervisor and SkyTeam interview answers",
-    "Review bilingual interview answers and translate mixed-language EN choices",
-    "Refresh dated airline facts",
-    "Hide redundant Chinese translation on Chinese questions"
+    "Add 58 math formula cards covering the supplied 22 units",
+    "Correct or clarify 83 existing formula cards; preserve v215 interview and language fixes"
   ]
 }

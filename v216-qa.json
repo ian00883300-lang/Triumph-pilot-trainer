@@ -1,0 +1,619 @@
+{
+  "version": "v216",
+  "baseCommit": "6db3f809aeb9c6dd3a6c8be1ea3876f3faeed812",
+  "title": "TRIUMPH Pilot Trainer v216",
+  "scripts": 119,
+  "numericalChecks": 96,
+  "numeric": [
+    {
+      "label": "number line distance",
+      "actual": 8,
+      "expected": 8
+    },
+    {
+      "label": "negative exponent",
+      "actual": 0.125,
+      "expected": 0.125
+    },
+    {
+      "label": "negative base even power",
+      "actual": 16,
+      "expected": 16
+    },
+    {
+      "label": "outside minus",
+      "actual": -16,
+      "expected": -16
+    },
+    {
+      "label": "division does not distribute in denominator",
+      "actual": 2,
+      "expected": 2
+    },
+    {
+      "label": "wrong distributed sum",
+      "actual": 9,
+      "expected": 9
+    },
+    {
+      "label": "11 divisibility",
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "label": "gcd/lcm product",
+      "actual": 8640,
+      "expected": 8640
+    },
+    {
+      "label": "fraction sum",
+      "actual": 0.9166666666666666,
+      "expected": 0.9166666666666666
+    },
+    {
+      "label": "fraction division",
+      "actual": 0.8333333333333333,
+      "expected": 0.8333333333333334
+    },
+    {
+      "label": "discount inverse",
+      "actual": 800,
+      "expected": 800
+    },
+    {
+      "label": "linear system sum",
+      "actual": 7,
+      "expected": 7
+    },
+    {
+      "label": "linear system difference",
+      "actual": 1,
+      "expected": 1
+    },
+    {
+      "label": "negative inequality boundary and excluded point",
+      "passed": true
+    },
+    {
+      "label": "grouped mean estimate",
+      "actual": 11,
+      "expected": 11
+    },
+    {
+      "label": "square identity",
+      "actual": 9999,
+      "expected": 9999
+    },
+    {
+      "label": "square sum",
+      "actual": 58,
+      "expected": 58
+    },
+    {
+      "label": "square product",
+      "actual": 21,
+      "expected": 21
+    },
+    {
+      "label": "polynomial division x=-5",
+      "actual": 26,
+      "expected": 26
+    },
+    {
+      "label": "factorization x=-5",
+      "actual": 18,
+      "expected": 18
+    },
+    {
+      "label": "polynomial division x=-4",
+      "actual": 17,
+      "expected": 17
+    },
+    {
+      "label": "factorization x=-4",
+      "actual": 7,
+      "expected": 7
+    },
+    {
+      "label": "polynomial division x=-3",
+      "actual": 10,
+      "expected": 10
+    },
+    {
+      "label": "factorization x=-3",
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "label": "polynomial division x=-2",
+      "actual": 5,
+      "expected": 5
+    },
+    {
+      "label": "factorization x=-2",
+      "actual": -3,
+      "expected": -3
+    },
+    {
+      "label": "polynomial division x=-1",
+      "actual": 2,
+      "expected": 2
+    },
+    {
+      "label": "factorization x=-1",
+      "actual": -2,
+      "expected": -2
+    },
+    {
+      "label": "polynomial division x=0",
+      "actual": 1,
+      "expected": 1
+    },
+    {
+      "label": "factorization x=0",
+      "actual": 3,
+      "expected": 3
+    },
+    {
+      "label": "polynomial division x=1",
+      "actual": 2,
+      "expected": 2
+    },
+    {
+      "label": "factorization x=1",
+      "actual": 12,
+      "expected": 12
+    },
+    {
+      "label": "polynomial division x=2",
+      "actual": 5,
+      "expected": 5
+    },
+    {
+      "label": "factorization x=2",
+      "actual": 25,
+      "expected": 25
+    },
+    {
+      "label": "polynomial division x=3",
+      "actual": 10,
+      "expected": 10
+    },
+    {
+      "label": "factorization x=3",
+      "actual": 42,
+      "expected": 42
+    },
+    {
+      "label": "polynomial division x=4",
+      "actual": 17,
+      "expected": 17
+    },
+    {
+      "label": "factorization x=4",
+      "actual": 63,
+      "expected": 63
+    },
+    {
+      "label": "polynomial division x=5",
+      "actual": 26,
+      "expected": 26
+    },
+    {
+      "label": "factorization x=5",
+      "actual": 88,
+      "expected": 88
+    },
+    {
+      "label": "principal sqrt",
+      "actual": 5,
+      "expected": 5
+    },
+    {
+      "label": "conjugate rationalization",
+      "actual": 0.2739514717088982,
+      "expected": 0.2739514717088982
+    },
+    {
+      "label": "altitude",
+      "actual": 2.4,
+      "expected": 2.4
+    },
+    {
+      "label": "altitude square",
+      "actual": 5.760000000000001,
+      "expected": 5.76
+    },
+    {
+      "label": "Pythagorean 3,4,5",
+      "actual": 25,
+      "expected": 25
+    },
+    {
+      "label": "Pythagorean 5,12,13",
+      "actual": 169,
+      "expected": 169
+    },
+    {
+      "label": "Pythagorean 7,24,25",
+      "actual": 625,
+      "expected": 625
+    },
+    {
+      "label": "Pythagorean 8,15,17",
+      "actual": 289,
+      "expected": 289
+    },
+    {
+      "label": "Pythagorean 9,40,41",
+      "actual": 1681,
+      "expected": 1681
+    },
+    {
+      "label": "Pythagorean 20,21,29",
+      "actual": 841,
+      "expected": 841
+    },
+    {
+      "label": "quadratic root -0.5",
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "label": "quadratic root -3",
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "label": "complete square root 1",
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "label": "complete square root 5",
+      "actual": 0,
+      "expected": 0
+    },
+    {
+      "label": "arithmetic sum",
+      "actual": 40,
+      "expected": 40
+    },
+    {
+      "label": "geometric negative ratio",
+      "actual": -3,
+      "expected": -3
+    },
+    {
+      "label": "regular hexagon inner",
+      "actual": 120,
+      "expected": 120
+    },
+    {
+      "label": "hinge 60 degrees",
+      "actual": 12.999999999999996,
+      "expected": 13
+    },
+    {
+      "label": "isosceles trapezoid leg",
+      "actual": 5,
+      "expected": 5
+    },
+    {
+      "label": "trapezoid area",
+      "actual": 28,
+      "expected": 28
+    },
+    {
+      "label": "rhombus area",
+      "actual": 24,
+      "expected": 24
+    },
+    {
+      "label": "linked ratio",
+      "actual": 70,
+      "expected": 70
+    },
+    {
+      "label": "intercept length",
+      "actual": 6,
+      "expected": 6
+    },
+    {
+      "label": "midsegment ratio",
+      "actual": 5,
+      "expected": 5
+    },
+    {
+      "label": "three parallel lines",
+      "actual": 0.6,
+      "expected": 0.6
+    },
+    {
+      "label": "slope angle",
+      "actual": 4.573921259900861,
+      "expected": 4.57
+    },
+    {
+      "label": "chord length",
+      "actual": 8,
+      "expected": 8
+    },
+    {
+      "label": "tangential quadrilateral",
+      "actual": 6,
+      "expected": 6
+    },
+    {
+      "label": "equilateral height",
+      "actual": 5.196152422706632,
+      "expected": 5.196152422706632
+    },
+    {
+      "label": "equilateral area",
+      "actual": 15.588457268119896,
+      "expected": 15.588457268119894
+    },
+    {
+      "label": "right incircle",
+      "actual": 1,
+      "expected": 1
+    },
+    {
+      "label": "centroid distance",
+      "actual": 0.8,
+      "expected": 0.8
+    },
+    {
+      "label": "vertex example",
+      "actual": 3,
+      "expected": 3
+    },
+    {
+      "label": "vertex symmetry",
+      "actual": 3,
+      "expected": 3
+    },
+    {
+      "label": "without replacement red red",
+      "actual": 0.3333333333333333,
+      "expected": 0.3333333333333333
+    },
+    {
+      "label": "red blue or blue red",
+      "actual": 0.6666666666666666,
+      "expected": 0.6666666666666666
+    },
+    {
+      "label": "cylinder surface coefficient",
+      "actual": 48,
+      "expected": 48
+    },
+    {
+      "label": "cone slant",
+      "actual": 5,
+      "expected": 5
+    },
+    {
+      "label": "cone sector angle",
+      "actual": 216,
+      "expected": 216
+    },
+    {
+      "label": "average speed return",
+      "actual": 2,
+      "expected": 2
+    },
+    {
+      "label": "spring compression force",
+      "actual": 20,
+      "expected": 20
+    },
+    {
+      "label": "gas pressure",
+      "actual": 150,
+      "expected": 150
+    },
+    {
+      "label": "work energy all forces",
+      "actual": 300,
+      "expected": 300
+    },
+    {
+      "label": "lens distance",
+      "actual": 14.999999999999996,
+      "expected": 15
+    },
+    {
+      "label": "impulse reversal",
+      "actual": -16,
+      "expected": -16
+    },
+    {
+      "label": "average collision force",
+      "actual": -200,
+      "expected": -200
+    },
+    {
+      "label": "projectile range",
+      "actual": 40,
+      "expected": 40
+    },
+    {
+      "label": "capacitor charge microC",
+      "actual": 120,
+      "expected": 120
+    },
+    {
+      "label": "pipe open",
+      "actual": 200,
+      "expected": 200
+    },
+    {
+      "label": "pipe half closed",
+      "actual": 100,
+      "expected": 100
+    },
+    {
+      "label": "binomial coefficient",
+      "actual": 40,
+      "expected": 40
+    },
+    {
+      "label": "rotation reversing distance",
+      "actual": 1.5,
+      "expected": 1.5
+    },
+    {
+      "label": "parallel folded angle",
+      "actual": 60,
+      "expected": 60
+    },
+    {
+      "label": "shared height",
+      "actual": 12,
+      "expected": 12
+    },
+    {
+      "label": "second triangle hypotenuse",
+      "actual": 15,
+      "expected": 15
+    },
+    {
+      "label": "box diagonal",
+      "actual": 7,
+      "expected": 7
+    }
+  ],
+  "formulaCards": 195,
+  "existingKeysPreserved": true,
+  "nonFormulaBankUnchanged": true,
+  "renderedAll": 195,
+  "layouts": [
+    {
+      "width": 390,
+      "q": "數線距離、相反數與倒數怎麼分？",
+      "docWidth": 390,
+      "answer": "block",
+      "secondary": "none"
+    },
+    {
+      "width": 390,
+      "q": "根式乘除與分母有理化？",
+      "docWidth": 390,
+      "answer": "block",
+      "secondary": "none"
+    },
+    {
+      "width": 390,
+      "q": "正圓錐表面積、母線與展開扇形？",
+      "docWidth": 390,
+      "answer": "block",
+      "secondary": "none"
+    },
+    {
+      "width": 390,
+      "q": "三角形內心、內切圓與面積？",
+      "docWidth": 390,
+      "answer": "block",
+      "secondary": "none"
+    },
+    {
+      "width": 768,
+      "q": "數線距離、相反數與倒數怎麼分？",
+      "docWidth": 768,
+      "answer": "block",
+      "secondary": "none"
+    },
+    {
+      "width": 768,
+      "q": "根式乘除與分母有理化？",
+      "docWidth": 768,
+      "answer": "block",
+      "secondary": "none"
+    },
+    {
+      "width": 768,
+      "q": "正圓錐表面積、母線與展開扇形？",
+      "docWidth": 768,
+      "answer": "block",
+      "secondary": "none"
+    },
+    {
+      "width": 768,
+      "q": "三角形內心、內切圓與面積？",
+      "docWidth": 768,
+      "answer": "block",
+      "secondary": "none"
+    },
+    {
+      "width": 1440,
+      "q": "數線距離、相反數與倒數怎麼分？",
+      "docWidth": 1440,
+      "answer": "block",
+      "secondary": "none"
+    },
+    {
+      "width": 1440,
+      "q": "根式乘除與分母有理化？",
+      "docWidth": 1440,
+      "answer": "block",
+      "secondary": "none"
+    },
+    {
+      "width": 1440,
+      "q": "正圓錐表面積、母線與展開扇形？",
+      "docWidth": 1440,
+      "answer": "block",
+      "secondary": "none"
+    },
+    {
+      "width": 1440,
+      "q": "三角形內心、內切圓與面積？",
+      "docWidth": 1440,
+      "answer": "block",
+      "secondary": "none"
+    }
+  ],
+  "languages": [
+    {
+      "type": "interview_cn",
+      "answer": "block",
+      "cn": "none"
+    },
+    {
+      "type": "pilot",
+      "answer": "block",
+      "cn": "block"
+    },
+    {
+      "type": "math_cn",
+      "answer": "block",
+      "cn": "none"
+    },
+    {
+      "type": "physics_cards",
+      "answer": "block",
+      "cn": "none"
+    }
+  ],
+  "savedStatePreserved": true,
+  "sw": {
+    "active": "http://127.0.0.1:65501/sw.js?v=216",
+    "caches": [
+      "triumph-pilot-v216"
+    ]
+  },
+  "errors": [],
+  "offlineReloadPassed": true,
+  "formulaTextIntegrityPassed": true,
+  "nextAndPreviousPassed": true,
+  "geometryDiagramsVisuallyReviewed": 4,
+  "browser": "Microsoft Edge (Chromium), automated desktop and responsive viewport checks",
+  "htmlSHA256": "0920bd13ab9024c4fe94611049d8bd7af8cac9da003dad6b8bc880e12f062c72",
+  "runtimeFilesSHA256": {
+    "index.html": "0920bd13ab9024c4fe94611049d8bd7af8cac9da003dad6b8bc880e12f062c72",
+    "sw.js": "88faf43b3f9e032aa0f026430eb09f977265f1d342011bf001d1704a3790a3e1",
+    "version.json": "cac852c2a1fdcdb5e384c0914db9b6d2a81feaf313664aa77a972fabe2b5e853"
+  }
+}
