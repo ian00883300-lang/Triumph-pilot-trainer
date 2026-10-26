@@ -1,10 +1,5 @@
 {
-  "version": "v218",
-  "build": "2026-10-23-fast-start",
-  "entry": "./index.html",
-  "changes": [
-    "Cached navigation first with small background version checks",
-    "No forced reload or destructive cache activation",
-    "Optimize repeated similarity calculations without changing bank content"
-  ]
+  "version": "v219",
+  "build": "2026-10-26-interview-review",
+  "entry": "./index.html"
 }
