@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="zh-Hant"><head><meta charset="UTF-8"><title>TRIUMPH Pilot Trainer v225</title><meta name="viewport" content="width=device-width,initial-scale=1.0,viewport-fit=cover">
+<!DOCTYPE html><html lang="zh-Hant"><head><meta charset="UTF-8"><title>TRIUMPH Pilot Trainer v226</title><meta name="viewport" content="width=device-width,initial-scale=1.0,viewport-fit=cover">
 <meta name="theme-color" content="#0b1c31">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -1110,7 +1110,7 @@ body[data-theme="green"] .dt-overlay{
 <script id="v218-normalization-cache">window.TRIUMPH_memoText=function(fn){const cache=new Map();return function(value){if(typeof value!=='string')return fn(value);if(cache.has(value))return cache.get(value);const result=fn(value);if(cache.size>=8192)cache.clear();cache.set(value,result);return result;};};</script>
 <script id="triumph-current-cache-bootstrap">
 (() => {
-  const BUILD = 'v225';
+  const BUILD = 'v226';
   window.TRIUMPH_CACHE_VERSION = BUILD;
   if (!('serviceWorker' in navigator) || !/^https?:$/.test(location.protocol)) return;
   // A stable script URL avoids old HTML repeatedly registering an older query
@@ -1447,7 +1447,7 @@ body[data-theme="green"] .dt-overlay{
 <select id="soundEnabled" hidden aria-hidden="true"><option value="true">開啟提示音</option><option value="false">關閉提示音</option></select><label>提示音音量 <span aria-hidden="true">🔊</span></label><input type="range" id="soundVolume" min="0" max="150" value="120"><div class="hint" style="font-size:12px">全域音效：題庫倒數、心算倒數與答題、飛行記憶指令完成及任務完成。</div><button class="btn secondary" id="applyDefaultsBtn" style="width:100%;margin-top:10px">套用此題庫預設時間</button><button class="btn memory-launch" id="flightMemoryBtn">✈ 飛行指令記憶訓練</button><button class="btn mental-launch" id="mentalMathBtn">∑ 數學心算 Mental Math</button></section><section class="sidecard card"><h3>Question Bank</h3><div class="stats"><div class="stat"><span>目前題庫</span><b id="currentMode">ALL</b></div><div class="stat"><span>題庫數量</span><b id="bankCount">0</b></div><div class="stat"><span>目前題號</span><b id="currentIndex">-</b></div><div class="stat"><span>已練題數</span><b id="doneCount">0</b></div><div class="stat"><span>收藏題</span><b id="favCount">0</b></div></div><div class="controls"><button class="btn secondary" id="copyBtn" title="複製目前題目與選項，方便貼到筆記或聊天室。">複製目前題目</button><button class="btn danger" id="clearDataBtn" title="清除這台裝置上的收藏、備註、答題進度與統計。">重設本機紀錄</button></div><div class="hint" style="margin-top:8px;font-size:12px">複製目前題目：方便貼到筆記或聊天室。重設本機紀錄：會清除這台裝置上的收藏題、答題進度、備註與統計。</div></section><section class="sidecard card" id="v100Dashboard"><h3>v100 Performance</h3><div class="stats"><div class="stat"><span>答對題數</span><b id="correctCount">0</b></div><div class="stat"><span>答錯題數</span><b id="wrongCount">0</b></div><div class="stat"><span>作答正確率</span><b id="accuracyRate">-</b></div><div class="stat"><span>錯題待複習</span><b id="reviewCount">0</b></div></div><div class="controls"><button class="btn secondary" id="reviewWrongBtn">Review Wrong</button><button class="btn secondary" id="markMasteredBtn">Mark Mastered</button></div></section><section class="sidecard card"><h3>Favorites</h3><div id="favoriteSyncStatus" style="font-size:12px;color:var(--muted);margin:-4px 0 10px">跨版本收藏同步中…</div><div id="favoriteList"></div></section><section class="sidecard card"><h3>Your Notes</h3><textarea id="notes" placeholder="這題的卡點、公式、單字、回答弱點..."></textarea></section></aside></div>
 <script id="triumph-current-version-guard">
 (() => {
-  const BUILD='v225';
+  const BUILD='v226';
   const CURRENT='TRIUMPH Pilot Trainer '+BUILD;
   const INITIAL_HINT='v210：重建 Classical CN 題庫；依國語文學科中心 65 篇古典名篇建立 325 題，補作者/出處、主旨、生活或機師應用、字詞注音與完整選項辨析，並移除舊題近重複。';
   window.TRIUMPH_BUILD_VERSION=BUILD;
@@ -1856,7 +1856,7 @@ window.addEventListener('DOMContentLoaded',init);
        const direction=fmPick(['Left','Right'],previousDirections.length===2&&previousDirections[0]===previousDirections[1]?[previousDirections[0]]:[]);
        const angle=fmPick([30,45,60,90],lastSame?[lastSame.value]:[]);
        const bank=fmPick([10,15,20,25,30],lastSame?[lastSame.bank]:[]);
-       item={type,direction,value:angle,bank,text:'Turn '+direction.toLowerCase()+' '+angle+' degrees with '+bank+' degrees of bank'};
+       item={type,direction,value:angle,bank,text:'Turn '+direction.toLowerCase()+' '+angle+' degrees with '+bank+' degrees bank'};
      }else{
        const direction=lastSame
          ? (lastSame.direction==='Increase'?'Reduce':'Increase')
@@ -1865,7 +1865,7 @@ window.addEventListener('DOMContentLoaded',init);
          ? [260,270,280,290,300]
          : [180,190,200,210,220,230,240],[]);
 
-       item={type,direction,value:speed,text:direction+(direction==='Increase'?' SPD to ':' IAS to ')+speed+' kt'};
+       item={type,direction,value:speed,text:direction+(direction==='Increase'?' SPD ':' IAS ')+speed+' kt'};
      }
 
      const exactDuplicate=usedText.has(item.text);
@@ -14192,8 +14192,8 @@ for(const p of data.patches){
 }
 for(const q of data.added){if(bank.some(item=>item.cat===q.cat&&item.q===q.q))throw Error('v220 duplicate addition');bank.push(q);}
 window.TRIUMPH_V220_QA={total:bank.length,patched:data.patches.length,added:data.added.length};
-const ready=()=>{document.title='TRIUMPH Pilot Trainer v225';window.TRIUMPH_BUILD_VERSION='v225';
- const logo=document.querySelector('.logo');if(logo)logo.innerHTML='TRIUMPH Pilot Trainer v225<span class="creator">created by Ying Chen</span><small>PILOT SELECTION TRAINER</small>';
+const ready=()=>{document.title='TRIUMPH Pilot Trainer v226';window.TRIUMPH_BUILD_VERSION='v226';
+ const logo=document.querySelector('.logo');if(logo)logo.innerHTML='TRIUMPH Pilot Trainer v226<span class="creator">created by Ying Chen</span><small>PILOT SELECTION TRAINER</small>';
  if(typeof current!=='undefined'&&current){const hint=document.getElementById('hint');if(hint)hint.textContent=current.hint||'';}
  if(typeof updateStats==='function')updateStats();
 };ready();document.addEventListener('DOMContentLoaded',ready);

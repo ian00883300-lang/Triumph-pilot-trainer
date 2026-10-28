@@ -14,10 +14,10 @@ for(let n=3;n<=10;n++)for(let run=0;run<1000;run++){
  let type,m;
  if(m=text.match(/^(Climb|Descend) ([\d,]+) feet from current altitude\.$/)){
  type='alt';assert.ok([1000,1500,2000,2500].includes(Number(m[2].replace(',',''))));coverage.add(m[1]);
- }else if(m=text.match(/^Turn (left|right) (\d+) degrees with (\d+) degrees of bank$/)){
+ }else if(m=text.match(/^Turn (left|right) (\d+) degrees with (\d+) degrees bank$/)){
  type='turn';assert.ok([30,45,60,90].includes(+m[2]));assert.ok([10,15,20,25,30].includes(+m[3]));coverage.add('turn'+m[2]);coverage.add('bank'+m[3]);
  }else{
- type='spd';m=text.match(/^(Increase SPD|Reduce IAS) to (\d+) kt$/);assert.ok(m,text);
+ type='spd';m=text.match(/^(Increase SPD|Reduce IAS) (\d+) kt$/);assert.ok(m,text);
  const up=m[1]==='Increase SPD';const speed=+m[2];assert.ok(speed%10===0&&speed>=(up?260:180)&&speed<=(up?300:240));speeds.push(up);coverage.add(m[1]+speed);
  }
  assert.notEqual(type,last);last=type;
