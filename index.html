@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="zh-Hant"><head><meta charset="UTF-8"><title>TRIUMPH Pilot Trainer v221</title><meta name="viewport" content="width=device-width,initial-scale=1.0,viewport-fit=cover">
+<!DOCTYPE html><html lang="zh-Hant"><head><meta charset="UTF-8"><title>TRIUMPH Pilot Trainer v222</title><meta name="viewport" content="width=device-width,initial-scale=1.0,viewport-fit=cover">
 <meta name="theme-color" content="#0b1c31">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -1110,7 +1110,7 @@ body[data-theme="green"] .dt-overlay{
 <script id="v218-normalization-cache">window.TRIUMPH_memoText=function(fn){const cache=new Map();return function(value){if(typeof value!=='string')return fn(value);if(cache.has(value))return cache.get(value);const result=fn(value);if(cache.size>=8192)cache.clear();cache.set(value,result);return result;};};</script>
 <script id="triumph-current-cache-bootstrap">
 (() => {
-  const BUILD = 'v221';
+  const BUILD = 'v222';
   window.TRIUMPH_CACHE_VERSION = BUILD;
   if (!('serviceWorker' in navigator) || !/^https?:$/.test(location.protocol)) return;
   // A stable script URL avoids old HTML repeatedly registering an older query
@@ -1447,7 +1447,7 @@ body[data-theme="green"] .dt-overlay{
 <select id="soundEnabled" hidden aria-hidden="true"><option value="true">開啟提示音</option><option value="false">關閉提示音</option></select><label>提示音音量 <span aria-hidden="true">🔊</span></label><input type="range" id="soundVolume" min="0" max="150" value="120"><div class="hint" style="font-size:12px">全域音效：題庫倒數、心算倒數與答題、飛行記憶指令完成及任務完成。</div><button class="btn secondary" id="applyDefaultsBtn" style="width:100%;margin-top:10px">套用此題庫預設時間</button><button class="btn memory-launch" id="flightMemoryBtn">✈ 飛行指令記憶訓練</button><button class="btn mental-launch" id="mentalMathBtn">∑ 數學心算 Mental Math</button></section><section class="sidecard card"><h3>Question Bank</h3><div class="stats"><div class="stat"><span>目前題庫</span><b id="currentMode">ALL</b></div><div class="stat"><span>題庫數量</span><b id="bankCount">0</b></div><div class="stat"><span>目前題號</span><b id="currentIndex">-</b></div><div class="stat"><span>已練題數</span><b id="doneCount">0</b></div><div class="stat"><span>收藏題</span><b id="favCount">0</b></div></div><div class="controls"><button class="btn secondary" id="copyBtn" title="複製目前題目與選項，方便貼到筆記或聊天室。">複製目前題目</button><button class="btn danger" id="clearDataBtn" title="清除這台裝置上的收藏、備註、答題進度與統計。">重設本機紀錄</button></div><div class="hint" style="margin-top:8px;font-size:12px">複製目前題目：方便貼到筆記或聊天室。重設本機紀錄：會清除這台裝置上的收藏題、答題進度、備註與統計。</div></section><section class="sidecard card" id="v100Dashboard"><h3>v100 Performance</h3><div class="stats"><div class="stat"><span>答對題數</span><b id="correctCount">0</b></div><div class="stat"><span>答錯題數</span><b id="wrongCount">0</b></div><div class="stat"><span>作答正確率</span><b id="accuracyRate">-</b></div><div class="stat"><span>錯題待複習</span><b id="reviewCount">0</b></div></div><div class="controls"><button class="btn secondary" id="reviewWrongBtn">Review Wrong</button><button class="btn secondary" id="markMasteredBtn">Mark Mastered</button></div></section><section class="sidecard card"><h3>Favorites</h3><div id="favoriteSyncStatus" style="font-size:12px;color:var(--muted);margin:-4px 0 10px">跨版本收藏同步中…</div><div id="favoriteList"></div></section><section class="sidecard card"><h3>Your Notes</h3><textarea id="notes" placeholder="這題的卡點、公式、單字、回答弱點..."></textarea></section></aside></div>
 <script id="triumph-current-version-guard">
 (() => {
-  const BUILD='v221';
+  const BUILD='v222';
   const CURRENT='TRIUMPH Pilot Trainer '+BUILD;
   const INITIAL_HINT='v210：重建 Classical CN 題庫；依國語文學科中心 65 篇古典名篇建立 325 題，補作者/出處、主旨、生活或機師應用、字詞注音與完整選項辨析，並移除舊題近重複。';
   window.TRIUMPH_BUILD_VERSION=BUILD;
@@ -1849,34 +1849,21 @@ window.addEventListener('DOMContentLoaded',init);
      if(type==='alt'){
        const previousDirections=sameType.slice(-2).map(x=>x.direction);
        const direction=fmPick(['Climb','Descend'],previousDirections.length===2&&previousDirections[0]===previousDirections[1]?[previousDirections[0]]:[]);
-       const amount=fmPick([1000,1500,2000,2500,3000],lastSame?[lastSame.value]:[]);
+       const amount=fmPick([1000,1500,2000,2500],lastSame?[lastSame.value]:[]);
        item={type,direction,value:amount,text:direction+' '+amount.toLocaleString('en-US')+' feet from current altitude.'};
      }else if(type==='turn'){
        const previousDirections=sameType.slice(-2).map(x=>x.direction);
        const direction=fmPick(['Left','Right'],previousDirections.length===2&&previousDirections[0]===previousDirections[1]?[previousDirections[0]]:[]);
-       const angle=fmPick([30,40,60,70,90,120],lastSame?[lastSame.value]:[]);
-       const bank=fmPick([15,20,25,30],lastSame?[lastSame.bank]:[]);
+       const angle=fmPick([30,45,60,90],lastSame?[lastSame.value]:[]);
+       const bank=fmPick([10,15,20,25,30],lastSame?[lastSame.bank]:[]);
        item={type,direction,value:angle,bank,text:'Turn '+direction.toLowerCase()+' '+angle+' degrees with '+bank+' degrees of bank'};
      }else{
-       const speedPool=[180,190,200,210,220,230,240,250,260,270,280];
-       let speed;
-       let direction;
-
-       if(lastSame){
-         // A later speed command must be logically consistent with the
-         // previously commanded target speed.
-         // Example: 220 kt -> 240 kt must be "Increase", not "Reduce".
-         const candidates=speedPool.filter(v=>v!==lastSame.value && Math.abs(v-lastSame.value)>=20);
-         speed=fmPick(candidates.length?candidates:speedPool,[lastSame.value]);
-         direction=speed>lastSame.value?'Increase':'Reduce';
-       }else{
-         // No earlier speed target exists in this memory sequence, so there is
-         // no prior commanded speed from which direction can be inferred.
-         // Keep the first command varied; all subsequent speed commands are
-         // state-consistent.
-         speed=fmPick(speedPool,[]);
-         direction=fmPick(['Increase','Reduce'],[]);
-       }
+       const direction=lastSame
+         ? (lastSame.direction==='Increase'?'Reduce':'Increase')
+         : fmPick(['Increase','Reduce'],[]);
+       const speed=fmPick(direction==='Increase'
+         ? [260,270,280,290,300]
+         : [180,190,200,210,220,230,240],[]);
 
        item={type,direction,value:speed,text:direction+(direction==='Increase'?' SPD to ':' IAS to ')+speed+' kt'};
      }
@@ -1885,7 +1872,7 @@ window.addEventListener('DOMContentLoaded',init);
      const adjacentSameType=last&&last.type===item.type;
      const adjacentSameDirection=last&&last.direction===item.direction;
      const tooSimilarValue=lastSame&&Math.abs(Number(item.value)-Number(lastSame.value))<
-       (type==='spd'?20:type==='alt'?500:20);
+       (type==='spd'?20:type==='alt'?500:15);
 
      if(!exactDuplicate&&!adjacentSameType&&!adjacentSameDirection&&!tooSimilarValue) return item;
    }
@@ -1900,8 +1887,8 @@ window.addEventListener('DOMContentLoaded',init);
      while(seq.length<n){
        const last=seq[seq.length-1];
        const minCount=Math.min(...types.map(t=>counts[t]));
-       let candidates=types.filter(t=>t!==last&&counts[t]<=minCount+1);
-       if(!candidates.length)candidates=types.filter(t=>t!==last);
+       let candidates=types.filter(t=>t!==last&&(t!=='spd'||counts.spd<2)&&counts[t]<=minCount+1);
+       if(!candidates.length)candidates=types.filter(t=>t!==last&&(t!=='spd'||counts.spd<2));
        const chosen=random(candidates);
        seq.push(chosen);counts[chosen]++;
      }
@@ -1968,7 +1955,7 @@ window.addEventListener('DOMContentLoaded',init);
  function resetHintBox(){if($m('fmExecute')&&!$m('fmExecute').hidden){$m('fmHiddenText').classList.remove('full-hint-mode','hint-visible');$m('fmHiddenText').textContent='指令已隱藏，請依記憶操作模擬機。';}}
  function hint(){hints++;clearTimeout(hintTimer);const box=$m('fmHiddenText');box.classList.remove('full-hint-mode');box.classList.add('hint-visible');box.textContent=cmds[idx];hintTimer=setTimeout(resetHintBox,2500);}
  function fullHint(){hints++;fullHints++;clearTimeout(hintTimer);const box=$m('fmHiddenText');box.classList.remove('hint-visible');box.classList.add('full-hint-mode');box.innerHTML='<div class="fm-full-hint-wrap"><div class="fm-full-hint-title">完整提示</div><div class="fm-full-hint-list">'+cmds.map((c,i)=>'<div class="fm-full-hint-row"><span class="fm-full-hint-num">'+(i+1)+'.</span><span class="fm-full-hint-text">'+c+'</span></div>').join('')+'</div></div>';hintTimer=setTimeout(resetHintBox,4500);}
- function finish(aborted=false){if(!aborted){fmTone(1040,.13,'triangle');setTimeout(()=>fmTone(1320,.18,'triangle'),150);}clearInterval(runTimer);clearTimeout(hintTimer);const total=(performance.now()-startAt)/1000;const completed=times.length;const progress=cmds.length?Math.round(completed/cmds.length*100):0;show('fmReport');if($m('fmProgress'))$m('fmProgress').textContent=completed+' / '+cmds.length+' · '+progress+'%'+(aborted?'（提前中止）':'');$m('fmTotal').textContent=formatChineseDuration(total);$m('fmHints').textContent=hints+' 次'+(fullHints?'（完整 '+fullHints+' 次）':'');$m('fmReportRows').innerHTML=cmds.map((c,i)=>'<tr><td>'+(i+1)+'. '+c+(i>=completed?' <span style="opacity:.6">（未完成）</span>':'')+'</td><td>'+(i<completed?format(times[i]):'—')+'</td></tr>').join('');const avg=completed?times.reduce((a,b)=>a+b,0)/completed:0;let coach=aborted?'本次提前中止，完成 '+completed+' / '+cmds.length+' 個指令；報告仍保留本次總用時與已完成項目的個別時間。':(hints===0?'未查看提示，代表短期記憶保持完整。':'本次查看 '+hints+' 次提示，可先維持相同題數，直到能不看提示完成。');if(aborted&&hints>0)coach+=' 本次共查看 '+hints+' 次提示'+(fullHints?'，其中完整提示 '+fullHints+' 次':'')+'。';if(completed){if(avg<15)coach+=' 已完成項目平均 '+avg.toFixed(1)+' 秒，操作節奏非常流暢。';else if(avg<30)coach+=' 已完成項目平均 '+avg.toFixed(1)+' 秒，節奏穩定。';else coach+=' 已完成項目平均 '+avg.toFixed(1)+' 秒，建議先確認正確與順序，再追求速度。';}else coach+=' 尚未完成任何指令，因此沒有單項平均時間。';$m('fmCoach').innerHTML='<b>教官評語：</b> '+coach;try{localStorage.setItem('triumph_fm_last',JSON.stringify({date:new Date().toISOString(),commands:cmds,times,total,hints,fullHints,aborted,completed,generator:'constraint-v190'}));}catch(e){} }
+ function finish(aborted=false){if(!aborted){fmTone(1040,.13,'triangle');setTimeout(()=>fmTone(1320,.18,'triangle'),150);}clearInterval(runTimer);clearTimeout(hintTimer);const total=(performance.now()-startAt)/1000;const completed=times.length;const progress=cmds.length?Math.round(completed/cmds.length*100):0;show('fmReport');if($m('fmProgress'))$m('fmProgress').textContent=completed+' / '+cmds.length+' · '+progress+'%'+(aborted?'（提前中止）':'');$m('fmTotal').textContent=formatChineseDuration(total);$m('fmHints').textContent=hints+' 次'+(fullHints?'（完整 '+fullHints+' 次）':'');$m('fmReportRows').innerHTML=cmds.map((c,i)=>'<tr><td>'+(i+1)+'. '+c+(i>=completed?' <span style="opacity:.6">（未完成）</span>':'')+'</td><td>'+(i<completed?format(times[i]):'—')+'</td></tr>').join('');const avg=completed?times.reduce((a,b)=>a+b,0)/completed:0;let coach=aborted?'本次提前中止，完成 '+completed+' / '+cmds.length+' 個指令；報告仍保留本次總用時與已完成項目的個別時間。':(hints===0?'未查看提示，代表短期記憶保持完整。':'本次查看 '+hints+' 次提示，可先維持相同題數，直到能不看提示完成。');if(aborted&&hints>0)coach+=' 本次共查看 '+hints+' 次提示'+(fullHints?'，其中完整提示 '+fullHints+' 次':'')+'。';if(completed){if(avg<15)coach+=' 已完成項目平均 '+avg.toFixed(1)+' 秒，操作節奏非常流暢。';else if(avg<30)coach+=' 已完成項目平均 '+avg.toFixed(1)+' 秒，節奏穩定。';else coach+=' 已完成項目平均 '+avg.toFixed(1)+' 秒，建議先確認正確與順序，再追求速度。';}else coach+=' 尚未完成任何指令，因此沒有單項平均時間。';$m('fmCoach').innerHTML='<b>教官評語：</b> '+coach;try{localStorage.setItem('triumph_fm_last',JSON.stringify({date:new Date().toISOString(),commands:cmds,times,total,hints,fullHints,aborted,completed,generator:'constraint-v222'}));}catch(e){} }
  document.addEventListener('DOMContentLoaded',()=>{
   // v107: airline switch UI was removed; bind the trainer directly.
   $m('flightMemoryBtn').onclick=open;$m('fmClose').onclick=close;$m('fmRange').oninput=()=>{$m('fmCount').textContent=$m('fmRange').value};$m('fmGenerate').onclick=beginMemory;$m('fmStartNow').onclick=beginExecution;$m('fmComplete').onclick=complete;$m('fmHint').onclick=hint;$m('fmFullHint').onclick=fullHint;$m('fmAbort').onclick=()=>{if(confirm('確定提前中止並查看本次成績？'))finish(true)};$m('fmRestart').onclick=()=>show('fmSetup');
@@ -14204,8 +14191,8 @@ for(const p of data.patches){
 }
 for(const q of data.added){if(bank.some(item=>item.cat===q.cat&&item.q===q.q))throw Error('v220 duplicate addition');bank.push(q);}
 window.TRIUMPH_V220_QA={total:bank.length,patched:data.patches.length,added:data.added.length};
-const ready=()=>{document.title='TRIUMPH Pilot Trainer v221';window.TRIUMPH_BUILD_VERSION='v221';
- const logo=document.querySelector('.logo');if(logo)logo.innerHTML='TRIUMPH Pilot Trainer v221<span class="creator">created by Ying Chen</span><small>PILOT SELECTION TRAINER</small>';
+const ready=()=>{document.title='TRIUMPH Pilot Trainer v222';window.TRIUMPH_BUILD_VERSION='v222';
+ const logo=document.querySelector('.logo');if(logo)logo.innerHTML='TRIUMPH Pilot Trainer v222<span class="creator">created by Ying Chen</span><small>PILOT SELECTION TRAINER</small>';
  if(typeof current!=='undefined'&&current){const hint=document.getElementById('hint');if(hint)hint.textContent=current.hint||'';}
  if(typeof updateStats==='function')updateStats();
 };ready();document.addEventListener('DOMContentLoaded',ready);

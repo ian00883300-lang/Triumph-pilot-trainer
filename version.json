@@ -1,5 +1,5 @@
 {
-  "version": "v221",
-  "build": "2026-10-28-flight-command-wording",
+  "version": "v222",
+  "build": "2026-10-28-flight-command-rules",
   "entry": "./index.html"
 }
