@@ -1,6 +1,6 @@
-/* TRIUMPH v223: cached navigation first; small version check in the background.
+/* TRIUMPH v224: cached navigation first; small version check in the background.
    Never delete a usable older cache during activation and never force a reload. */
-const CACHE_NAME = 'triumph-pilot-v223';
+const CACHE_NAME = 'triumph-pilot-v224';
 const APP_URL = new URL('./index.html', self.registration.scope).href;
 const VERSION_URL = new URL('./version.json', self.registration.scope).href;
 const ROOT_URL = new URL('./', self.registration.scope).href;
