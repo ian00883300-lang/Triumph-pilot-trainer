@@ -1,0 +1,1172 @@
+{
+  "base_version": "v219",
+  "version": "v220",
+  "review_date": "2026-10-28",
+  "patches": [
+    {
+      "index": 466,
+      "type": "pilot",
+      "cat": "INTERVIEW EN",
+      "question": "What did you eat for breakfast today?",
+      "values": {
+        "s": "I had a balanced breakfast with protein, carbohydrates, and water. I try to avoid arriving hungry or overly full because stable energy helps concentration during an interview or training day.",
+        "hint": "Answer the question directly. For knowledge questions, give the result and a short reason; use a genuine example when requested.",
+        "tags": [
+          "pilot",
+          "interview",
+          "FTTW19-37",
+          "v26",
+          "personal",
+          "v139-semantic-qa",
+          "v220-reviewed"
+        ]
+      }
+    },
+    {
+      "index": 510,
+      "type": "pilot",
+      "cat": "INTERVIEW EN",
+      "question": "What is TEM and how is it related to CRM?",
+      "values": {
+        "s": "TEM stands for Threat and Error Management. It focuses on identifying threats, managing errors, and preventing undesired aircraft states. CRM is the teamwork and resource-management foundation that helps crews apply TEM effectively. For example, bad weather is a threat, a wrong altitude selection is an error, and an unstable approach is an undesired aircraft state.",
+        "cn": "【中文題目】什麼是 TEM？它和 CRM 有什麼關係？\n【中文完整翻譯】\nTEM是Threat and Error Management，意指威脅與錯誤管理。它著重辨識威脅、管理錯誤，並避免飛機進入不希望的狀態。CRM則是讓機組有效運用TEM的團隊合作與資源管理基礎。例如惡劣天氣是威脅，選錯高度是錯誤，不穩定進場則是不希望的飛機狀態。",
+        "short": "TEM stands for Threat and Error Management",
+        "tags": [
+          "pilot",
+          "interview",
+          "FTTW19-37",
+          "v26",
+          "CRM",
+          "TEM",
+          "aviation",
+          "v220-reviewed"
+        ]
+      }
+    },
+    {
+      "index": 511,
+      "type": "interview_cn",
+      "cat": "INTERVIEW CN",
+      "question": "什麼是 TEM？它和 CRM 有什麼關係？",
+      "values": {
+        "s": "TEM是Threat and Error Management，意指威脅與錯誤管理。它著重辨識威脅、管理錯誤，並避免飛機進入不希望的狀態。CRM則是讓機組有效運用TEM的團隊合作與資源管理基礎。例如惡劣天氣是威脅，選錯高度是錯誤，不穩定進場則是不希望的飛機狀態。",
+        "cn": "",
+        "short": "TEM是Threat and Error Management，意指威脅與錯誤管理",
+        "tags": [
+          "pilot",
+          "interview_cn",
+          "FTTW19-37",
+          "v26",
+          "CRM",
+          "TEM",
+          "aviation",
+          "v220-reviewed"
+        ]
+      }
+    },
+    {
+      "index": 512,
+      "type": "pilot",
+      "cat": "INTERVIEW EN",
+      "question": "Explain authority gradient.",
+      "values": {
+        "s": "Authority gradient describes the difference in perceived authority between crew members. If the gradient is too steep, junior crew may hesitate to speak up; if it is too flat, leadership may become unclear. A healthy cockpit needs respect for authority, but also open safety communication. The goal is not to remove rank, but to ensure safety concerns can be voiced clearly.",
+        "cn": "【中文題目】請解釋權威梯度。\n【中文完整翻譯】\n權威梯度是機組成員之間感受到的權威差距。梯度過大時，資淺組員可能不敢發言；如果職責與領導不清楚，也可能影響協調。健康的駕駛艙需要尊重指揮權，也需要開放的安全溝通。目的不是取消職位區別，而是確保安全疑慮能被清楚提出。",
+        "short": "Authority gradient describes the difference in perceived authority between crew members",
+        "tags": [
+          "pilot",
+          "interview",
+          "FTTW19-37",
+          "v26",
+          "CRM",
+          "authority",
+          "v220-reviewed"
+        ]
+      }
+    },
+    {
+      "index": 513,
+      "type": "interview_cn",
+      "cat": "INTERVIEW CN",
+      "question": "請解釋權威梯度。",
+      "values": {
+        "s": "權威梯度是機組成員之間感受到的權威差距。梯度過大時，資淺組員可能不敢發言；如果職責與領導不清楚，也可能影響協調。健康的駕駛艙需要尊重指揮權，也需要開放的安全溝通。目的不是取消職位區別，而是確保安全疑慮能被清楚提出。",
+        "cn": "",
+        "short": "權威梯度是機組成員之間感受到的權威差距",
+        "tags": [
+          "pilot",
+          "interview_cn",
+          "FTTW19-37",
+          "v26",
+          "CRM",
+          "authority",
+          "v220-reviewed"
+        ]
+      }
+    },
+    {
+      "index": 514,
+      "type": "pilot",
+      "cat": "INTERVIEW EN",
+      "question": "How should cockpit crew cooperate during an abnormal situation?",
+      "values": {
+        "s": "During an abnormal situation, the crew must maintain control of the aircraft and manage workload before becoming absorbed in the fault. Flying and monitoring duties should remain clearly assigned, with checklist and communication tasks handled according to the aircraft and company procedures. Clear callouts, cross-checking and shared situational awareness help prevent the response from creating another problem. I understand these principles as an applicant; the exact actions require formal training.",
+        "cn": "【中文題目】異常狀況下，駕駛艙組員應如何合作？\n【中文完整翻譯】\n異常狀況下，機組應先維持飛機控制並管理工作負荷，避免全員只顧故障。操控及監控職責要清楚分配，檢查單和通訊則依機型與公司程序處理。清楚喊話、交互確認及共同情境意識，有助避免處理異常時再製造問題。我是以應徵者身分說明原則，具體操作仍須正式訓練。",
+        "short": "During an abnormal situation, the crew must maintain control of the aircraft and manage workload before becoming absorbed in the fault",
+        "tags": [
+          "pilot",
+          "interview",
+          "FTTW19-37",
+          "v26",
+          "CRM",
+          "scenario",
+          "qa-duplicate-answer",
+          "v220-reviewed"
+        ]
+      }
+    },
+    {
+      "index": 515,
+      "type": "interview_cn",
+      "cat": "INTERVIEW CN",
+      "question": "異常狀況下，駕駛艙組員應如何合作？",
+      "values": {
+        "s": "異常狀況下，機組應先維持飛機控制並管理工作負荷，避免全員只顧故障。操控及監控職責要清楚分配，檢查單和通訊則依機型與公司程序處理。清楚喊話、交互確認及共同情境意識，有助避免處理異常時再製造問題。我是以應徵者身分說明原則，具體操作仍須正式訓練。",
+        "cn": "",
+        "short": "異常狀況下，機組應先維持飛機控制並管理工作負荷，避免全員只顧故障",
+        "tags": [
+          "pilot",
+          "interview_cn",
+          "FTTW19-37",
+          "v26",
+          "CRM",
+          "scenario",
+          "v220-reviewed"
+        ]
+      }
+    },
+    {
+      "index": 516,
+      "type": "pilot",
+      "cat": "INTERVIEW EN",
+      "question": "A passenger has a medical emergency. What should the captain consider?",
+      "values": {
+        "s": "My first priority would be to maintain safe flight operations while coordinating the response. The cabin crew would assess the passenger and request medical assistance on board if available. In the cockpit, we would gather the passenger’s condition, review the nearest suitable airports, weather, fuel, and operational support, then decide whether diversion is necessary. ATC and the company would be informed early. The decision should balance urgency with the safety of the entire flight.",
+        "cn": "【中文題目】乘客發生醫療緊急狀況時，機長應考量什麼？\n【中文完整翻譯】\n我會優先維持安全飛航，同時協調應變。客艙組員會評估旅客狀況，並在可行時尋求機上醫療協助。駕駛艙則需掌握旅客病況，評估最近的合適機場、天氣、燃油與營運支援，再決定是否備降。也應及早通知ATC與公司。決策必須同時考慮醫療急迫性及整個航班的安全。",
+        "short": "My first priority would be to maintain safe flight operations while coordinating the response",
+        "tags": [
+          "pilot",
+          "interview",
+          "FTTW19-37",
+          "v26",
+          "scenario",
+          "medical",
+          "v220-reviewed"
+        ]
+      }
+    },
+    {
+      "index": 517,
+      "type": "interview_cn",
+      "cat": "INTERVIEW CN",
+      "question": "乘客發生醫療緊急狀況時，機長應考量什麼？",
+      "values": {
+        "s": "我會優先維持安全飛航，同時協調應變。客艙組員會評估旅客狀況，並在可行時尋求機上醫療協助。駕駛艙則需掌握旅客病況，評估最近的合適機場、天氣、燃油與營運支援，再決定是否備降。也應及早通知ATC與公司。決策必須同時考慮醫療急迫性及整個航班的安全。",
+        "cn": "",
+        "short": "我會優先維持安全飛航，同時協調應變",
+        "tags": [
+          "pilot",
+          "interview_cn",
+          "FTTW19-37",
+          "v26",
+          "scenario",
+          "medical",
+          "v220-reviewed"
+        ]
+      }
+    },
+    {
+      "index": 520,
+      "type": "pilot",
+      "cat": "INTERVIEW EN",
+      "question": "What would you do if the captain became incapacitated?",
+      "values": {
+        "s": "My understanding is that maintaining safe control of the aircraft comes first. The remaining qualified pilot would follow the aircraft and company procedures, request appropriate assistance, coordinate with cabin crew and ATC, and assess a suitable landing or diversion. As a cadet applicant, I have not performed this procedure; I am explaining the priorities I have studied, not claiming operational experience.",
+        "cn": "【中文題目】如果機長失能，你會怎麼做？\n【中文完整翻譯】\n我的理解是先維持飛機安全控制。其餘具資格的飛行員會依機型與公司程序，尋求適當協助、協調客艙與ATC，並評估合適的落地或備降安排。我是培訓機師應徵者，沒有實際執行這項程序；這是在說明學過的優先原則，不是宣稱自己有操作經驗。",
+        "short": "My understanding is that maintaining safe control of the aircraft comes first",
+        "tags": [
+          "pilot",
+          "interview",
+          "FTTW19-37",
+          "v26",
+          "scenario",
+          "CRM",
+          "v220-reviewed"
+        ]
+      }
+    },
+    {
+      "index": 521,
+      "type": "interview_cn",
+      "cat": "INTERVIEW CN",
+      "question": "如果機長失能，你會怎麼做？",
+      "values": {
+        "s": "我的理解是先維持飛機安全控制。其餘具資格的飛行員會依機型與公司程序，尋求適當協助、協調客艙與ATC，並評估合適的落地或備降安排。我是培訓機師應徵者，沒有實際執行這項程序；這是在說明學過的優先原則，不是宣稱自己有操作經驗。",
+        "cn": "",
+        "short": "我的理解是先維持飛機安全控制",
+        "tags": [
+          "pilot",
+          "interview_cn",
+          "FTTW19-37",
+          "v26",
+          "scenario",
+          "CRM",
+          "v199-hypothetical-not-experience",
+          "v220-reviewed"
+        ]
+      }
+    },
+    {
+      "index": 550,
+      "type": "pilot",
+      "cat": "INTERVIEW EN",
+      "question": "Sell me this pencil.",
+      "values": {
+        "s": "May I ask what you normally use a pencil for: quick notes, sketches, or calculations that may need correcting? If you need to revise ideas as you work, a pencil lets you put them down and make changes. You can try writing with this one to see whether the grip and marks suit you. If it meets your needs, I can explain the actual price. I would not promise special materials or performance that I have not verified.",
+        "cn": "【中文題目】請把這支鉛筆推銷給我。\n【中文完整翻譯】\n請問您平常較常用鉛筆做快速筆記、草圖，還是需要修改的計算？如果需要邊想邊修正，鉛筆能讓您先寫下想法再調整。您可以先試寫，確認握感與筆跡是否合用；如果符合需求，我再說明實際價格。我不會承諾尚未確認的特殊材質或產品性能。",
+        "short": "May I ask what you normally use a pencil for: quick notes, sketches, or calculations that may need correcting? If you need to revise ideas as you work, a pencil lets you put them down and make changes",
+        "tags": [
+          "pilot",
+          "interview",
+          "FTTW19-37",
+          "v26",
+          "unexpected",
+          "sales",
+          "v220-reviewed"
+        ]
+      }
+    },
+    {
+      "index": 552,
+      "type": "pilot",
+      "cat": "INTERVIEW EN",
+      "question": "If you were an animal, what would you be?",
+      "values": {
+        "s": "I would choose an eagle, not because it sounds powerful, but because it represents focus, awareness, and patience. An eagle observes the environment before taking action. I think this connects with aviation because pilots need situational awareness, disciplined decision-making, and respect for the environment. The answer is simple, but the reason should reflect professional qualities.",
+        "cn": "【中文題目】如果你是一種動物，你會是什麼？\n【中文完整翻譯】\n我會選老鷹，不是因為它看起來強大，而是它代表專注、觀察與耐心。老鷹會先觀察環境，再採取行動。我認為這能連結飛行員所需的情境意識、有紀律的判斷及對環境的尊重。比喻本身可以簡單，但理由應反映專業特質。",
+        "short": "I would choose an eagle, not because it sounds powerful, but because it represents focus, awareness, and patience",
+        "tags": [
+          "pilot",
+          "interview",
+          "FTTW19-37",
+          "v26",
+          "unexpected",
+          "personality",
+          "v220-reviewed"
+        ]
+      }
+    },
+    {
+      "index": 553,
+      "type": "interview_cn",
+      "cat": "INTERVIEW CN",
+      "question": "如果你是一種動物，你會是什麼？",
+      "values": {
+        "s": "我會選老鷹，不是因為它看起來強大，而是它代表專注、觀察與耐心。老鷹會先觀察環境，再採取行動。我認為這能連結飛行員所需的情境意識、有紀律的判斷及對環境的尊重。比喻本身可以簡單，但理由應反映專業特質。",
+        "cn": "",
+        "short": "我會選老鷹，不是因為它看起來強大，而是它代表專注、觀察與耐心",
+        "tags": [
+          "pilot",
+          "interview_cn",
+          "FTTW19-37",
+          "v26",
+          "unexpected",
+          "personality",
+          "v220-reviewed"
+        ]
+      }
+    },
+    {
+      "index": 558,
+      "type": "pilot",
+      "cat": "INTERVIEW EN",
+      "question": "What is one thing you do not want me to know about you?",
+      "values": {
+        "s": "I would be honest about my qualifications, limitations and matters relevant to safe training. That does not require sharing every private detail. If a question contains an inaccurate assumption, I would clarify it respectfully. If I am asked about a genuine weakness or setback, I would explain it honestly and describe the work I am doing to improve rather than hide it or invent a perfect story.",
+        "cn": "【中文題目】有什麼事情是你不希望我知道的？\n【中文完整翻譯】\n我會誠實說明資格、能力限制及與安全訓練相關的事項，但這不代表必須公開所有私人細節。如果問題前提不正確，我會禮貌澄清；若談到真實弱點或挫折，我會如實說明及交代改善行動，不會隱瞞，也不編造完美故事。",
+        "short": "I would be honest about my qualifications, limitations and matters relevant to safe training",
+        "tags": [
+          "pilot",
+          "interview",
+          "FTTW19-37",
+          "v26",
+          "unexpected",
+          "integrity",
+          "v220-reviewed"
+        ]
+      }
+    },
+    {
+      "index": 559,
+      "type": "interview_cn",
+      "cat": "INTERVIEW CN",
+      "question": "有什麼事情是你不希望我知道的？",
+      "values": {
+        "s": "我會誠實說明資格、能力限制及與安全訓練相關的事項，但這不代表必須公開所有私人細節。如果問題前提不正確，我會禮貌澄清；若談到真實弱點或挫折，我會如實說明及交代改善行動，不會隱瞞，也不編造完美故事。",
+        "cn": "",
+        "short": "我會誠實說明資格、能力限制及與安全訓練相關的事項，但這不代表必須公開所有私人細節",
+        "tags": [
+          "pilot",
+          "interview_cn",
+          "FTTW19-37",
+          "v26",
+          "unexpected",
+          "integrity",
+          "v220-reviewed"
+        ]
+      }
+    },
+    {
+      "index": 560,
+      "type": "pilot",
+      "cat": "INTERVIEW EN",
+      "question": "Calculate 99 times 101 mentally.",
+      "values": {
+        "s": "99 times 101 equals 9,999. I would calculate it as (100 - 1)(100 + 1), which is 100 squared minus 1 squared. That gives 10,000 - 1 = 9,999. For mental math, I try to use structure rather than brute force.",
+        "hint": "Answer the question directly. For knowledge questions, give the result and a short reason; use a genuine example when requested.",
+        "tags": [
+          "pilot",
+          "interview",
+          "FTTW19-37",
+          "v26",
+          "rapid fire",
+          "mental math",
+          "v220-reviewed"
+        ]
+      }
+    },
+    {
+      "index": 562,
+      "type": "pilot",
+      "cat": "INTERVIEW EN",
+      "question": "If heading is 090 and you turn left 60 degrees, what is the new heading?",
+      "values": {
+        "s": "The new heading is 030. From 090, turning left means subtracting 60 degrees. 090 minus 060 equals 030. For heading questions, I always check whether the turn is left or right before calculating.",
+        "hint": "Answer the question directly. For knowledge questions, give the result and a short reason; use a genuine example when requested.",
+        "tags": [
+          "pilot",
+          "interview",
+          "FTTW19-37",
+          "v26",
+          "rapid fire",
+          "heading",
+          "v220-reviewed"
+        ]
+      }
+    },
+    {
+      "index": 564,
+      "type": "pilot",
+      "cat": "INTERVIEW EN",
+      "question": "At a standard rate turn of 3 degrees per second, how long does it take to turn 90 degrees?",
+      "values": {
+        "s": "It takes 30 seconds. A standard rate turn is 3 degrees per second, so 90 divided by 3 equals 30. I would answer directly and then briefly explain the calculation if needed.",
+        "hint": "Answer the question directly. For knowledge questions, give the result and a short reason; use a genuine example when requested.",
+        "tags": [
+          "pilot",
+          "interview",
+          "FTTW19-37",
+          "v26",
+          "rapid fire",
+          "turn rate",
+          "v220-reviewed"
+        ]
+      }
+    },
+    {
+      "index": 566,
+      "type": "pilot",
+      "cat": "INTERVIEW EN",
+      "question": "What is the ISA temperature at sea level?",
+      "values": {
+        "s": "The ISA temperature at mean sea level is 15 degrees Celsius. ISA stands for International Standard Atmosphere and provides reference conditions for comparing atmospheric and aircraft-performance data. It is a standard reference, not the actual temperature at every airport.",
+        "hint": "Answer the question directly. For knowledge questions, give the result and a short reason; use a genuine example when requested.",
+        "cn": "【中文題目】ISA 海平面標準溫度是多少？\n【中文完整翻譯】\nISA在平均海平面的標準溫度是15°C。ISA是國際標準大氣，提供比較大氣與飛機性能資料的參考條件；它是標準基準，不代表每座機場的實際氣溫。",
+        "short": "The ISA temperature at mean sea level is 15 degrees Celsius",
+        "tags": [
+          "pilot",
+          "interview",
+          "FTTW19-37",
+          "v26",
+          "rapid fire",
+          "ISA",
+          "v220-reviewed"
+        ]
+      }
+    },
+    {
+      "index": 567,
+      "type": "interview_cn",
+      "cat": "INTERVIEW CN",
+      "question": "ISA 海平面標準溫度是多少？",
+      "values": {
+        "s": "ISA在平均海平面的標準溫度是15°C。ISA是國際標準大氣，提供比較大氣與飛機性能資料的參考條件；它是標準基準，不代表每座機場的實際氣溫。",
+        "cn": "",
+        "short": "ISA在平均海平面的標準溫度是15°C",
+        "tags": [
+          "pilot",
+          "interview_cn",
+          "FTTW19-37",
+          "v26",
+          "rapid fire",
+          "ISA",
+          "v220-reviewed"
+        ]
+      }
+    },
+    {
+      "index": 568,
+      "type": "pilot",
+      "cat": "INTERVIEW EN",
+      "question": "If the temperature lapse rate is about 2°C per 1000 ft, what is ISA temperature at 10,000 ft?",
+      "values": {
+        "s": "At 10,000 ft, ISA temperature is about -5 degrees Celsius. Starting from 15°C at sea level, the temperature decreases about 2°C per 1,000 ft. Ten thousand feet gives a 20°C decrease, so 15 - 20 = -5°C.",
+        "hint": "Answer the question directly. For knowledge questions, give the result and a short reason; use a genuine example when requested.",
+        "tags": [
+          "pilot",
+          "interview",
+          "FTTW19-37",
+          "v26",
+          "rapid fire",
+          "temperature",
+          "v220-reviewed"
+        ]
+      }
+    },
+    {
+      "index": 610,
+      "type": "interview_cn",
+      "cat": "INTERVIEW CN",
+      "question": "請把這支鉛筆推銷給我。",
+      "values": {
+        "s": "請問您平常較常用鉛筆做快速筆記、草圖，還是需要修改的計算？如果需要邊想邊修正，鉛筆能讓您先寫下想法再調整。您可以先試寫，確認握感與筆跡是否合用；如果符合需求，我再說明實際價格。我不會承諾尚未確認的特殊材質或產品性能。",
+        "cn": "",
+        "short": "請問您平常較常用鉛筆做快速筆記、草圖，還是需要修改的計算？如果需要邊想邊修正，鉛筆能讓您先寫下想法再調整",
+        "tags": [
+          "interview_cn",
+          "FTTW19-37",
+          "unexpected",
+          "v206-real-experience-verified",
+          "v220-reviewed"
+        ]
+      }
+    },
+    {
+      "index": 747,
+      "type": "pilot",
+      "cat": "INTERVIEW EN",
+      "question": "What is your biggest failure?",
+      "values": {
+        "s": "One failure that changed my decision-making was a tea transaction in 2021. I relied on market-price information that I believed was current, but a later quotation showed a gap. That was not the same as a confirmed cash loss or a guaranteed better sale. I had to acknowledge the weakness in my information checks. We increased the frequency of price updates and added checks before negotiations and transactions. I learned that accountability means changing the process, not simply promising to be more careful.",
+        "cn": "【中文題目】你最大的失敗是什麼？\n【中文完整翻譯】\n一次改變我決策方式的失敗，是2021年的茶葉交易。我依賴自己以為即時的市場價格，後續報價卻顯示落差；這不等於已確認的現金虧損，也不能保證當時必定能用更好的價格成交。我必須承認資訊核對的缺口。之後我們提高行情更新頻率，並在議價及成交前增加核對。我學到，負責任是改變流程，而不是只承諾下次小心。",
+        "short": "One failure that changed my decision-making was a tea transaction in 2021",
+        "tags": [
+          "pilot",
+          "interview",
+          "FTTW19-37",
+          "behavioral",
+          "Interview EN",
+          "qa-duplicate-answer",
+          "v220-reviewed"
+        ]
+      }
+    },
+    {
+      "index": 748,
+      "type": "interview_cn",
+      "cat": "INTERVIEW CN",
+      "question": "你最大的失敗是什麼？",
+      "values": {
+        "s": "一次改變我決策方式的失敗，是2021年的茶葉交易。我依賴自己以為即時的市場價格，後續報價卻顯示落差；這不等於已確認的現金虧損，也不能保證當時必定能用更好的價格成交。我必須承認資訊核對的缺口。之後我們提高行情更新頻率，並在議價及成交前增加核對。我學到，負責任是改變流程，而不是只承諾下次小心。",
+        "cn": "",
+        "short": "一次改變我決策方式的失敗，是2021年的茶葉交易",
+        "tags": [
+          "interview_cn",
+          "FTTW19-37",
+          "behavioral",
+          "qa-duplicate-answer",
+          "v146-reviewed",
+          "answer-aligned",
+          "v220-reviewed"
+        ]
+      }
+    },
+    {
+      "index": 902,
+      "type": "pilot",
+      "cat": "INTERVIEW EN",
+      "question": "Which answer best reflects professional humility?",
+      "values": {
+        "s": "Professional humility combines preparation and confidence with openness to correction.",
+        "hint": "Answer the question directly. For knowledge questions, give the result and a short reason; use a genuine example when requested.",
+        "tags": [
+          "interview",
+          "v136",
+          "quality",
+          "v220-reviewed"
+        ]
+      }
+    },
+    {
+      "index": 989,
+      "type": "pilot",
+      "cat": "INTERVIEW EN",
+      "question": "Which response best answers “Why should we select you as a cadet pilot?”",
+      "values": {
+        "s": "The third answer is evidence-based, humble, and trainable. It connects past behavior to future performance without underestimating training.",
+        "hint": "Answer the question directly. For knowledge questions, give the result and a short reason; use a genuine example when requested.",
+        "tags": [
+          "interview",
+          "v133",
+          "selection",
+          "v220-reviewed"
+        ]
+      }
+    },
+    {
+      "index": 1348,
+      "type": "pilot",
+      "cat": "INTERVIEW EN",
+      "question": "How did you come here?",
+      "values": {
+        "s": "I came by [the transport I actually used]. I planned the route and allowed extra time for [the relevant traffic or transfer conditions]. For most local journeys, I use [my actual usual transport]. I would give the real journey details rather than recite several alternative options.",
+        "hint": "Fill in today’s real transport and timing. This is a draft, not a claim that you drove or used public transport.",
+        "needsPersonalization": true,
+        "cn": "【中文參考答案】\n我今天搭乘[實際交通方式]前來，事先規劃路線，並為[實際交通或轉乘情況]預留時間。平常最常使用的是[真正慣用的交通方式]。我會說明真實行程，不背誦多種交通方式選項。",
+        "tags": [
+          "interview",
+          "uploaded-v109",
+          "v139-semantic-qa",
+          "v220-reviewed"
+        ]
+      }
+    },
+    {
+      "index": 1349,
+      "type": "interview_cn",
+      "cat": "INTERVIEW CN",
+      "question": "你如何來的?最常使用的交通工具為何?",
+      "values": {
+        "s": "我今天搭乘[實際交通方式]前來，事先規劃路線，並為[實際交通或轉乘情況]預留時間。平常最常使用的是[真正慣用的交通方式]。我會說明真實行程，不背誦多種交通方式選項。",
+        "cn": "",
+        "hint": "待本人填寫：請依當日行程及平常使用習慣，填入真實交通方式。",
+        "needsPersonalization": true,
+        "tags": [
+          "interview-cn",
+          "uploaded-v109",
+          "v139-semantic-qa",
+          "v220-reviewed"
+        ]
+      }
+    },
+    {
+      "index": 1407,
+      "type": "pilot",
+      "cat": "INTERVIEW EN",
+      "question": "What aircraft types are in our fleet?",
+      "values": {
+        "s": "Choose the airline you are interviewing with; do not recite all three as if they were one fleet.\nChina Airlines: its September 30, 2026 snapshot includes Airbus A350-900, A330-300 and A321neo passenger aircraft, Boeing 777-300ER and 737-800 passenger aircraft, and 747-400F and 777F freighters.\nEVA Air: its October 1, 2026 table lists 777-300ER, 787-9, 787-10, A330-300 and A321-200 passenger aircraft plus 777F freighters; A350-1000 and A321neo are listed for future delivery.\nSTARLUX: its August 17, 2026 announcement lists A321neo, A330neo, A350-900 and A350-1000 passenger aircraft.\nState the reference date and distinguish aircraft in service from orders; recheck changes before the interview.",
+        "cn": "【中文題目】知道我們公司擁有哪些機種嗎?\n【中文完整翻譯】\n請選擇應徵的航空公司回答，不要把三家公司的機型混成同一個機隊。\n中華航空：2026 年 9 月 30 日資料包括 Airbus A350-900、A330-300、A321neo 客機，Boeing 777-300ER、737-800 客機，以及 747-400F、777F 貨機。\n長榮航空：2026 年 10 月 1 日表格列有 777-300ER、787-9、787-10、A330-300、A321-200 客機與 777F 貨機；A350-1000、A321neo 列為未來交付。\n星宇航空：2026 年 8 月 17 日公告列有 A321neo、A330neo、A350-900、A350-1000 客機。\n回答時應說明資料日期，區分營運機隊與訂單，並在面試前確認後續變動。",
+        "short": "Choose the airline you are interviewing with; do not recite all three as if they were one fleet.\nChina Airlines: its September 30, 2026 snapshot includes Airbus A350-900, A330-300 and A321neo passenger aircraft, Boeing 777-300ER and 737-800 passenger aircraft, and 747-400F and 777F freighters.\nEVA Air: its October 1, 2026 table lists 777-300ER, 787-9, 787-10, A330-300 and A321-200 passenger aircraft plus 777F freighters; A350-1000 and A321neo are listed for future delivery.\nSTARLUX: its August 17, 2026 announcement lists A321neo, A330neo, A350-900 and A350-1000 passenger aircraft.\nState the reference date and distinguish aircraft in service from orders; recheck changes before the interview.",
+        "tags": [
+          "interview",
+          "uploaded-v109",
+          "v139-semantic-qa",
+          "qa-duplicate-answer",
+          "v146-reviewed",
+          "answer-aligned",
+          "v220-reviewed"
+        ]
+      }
+    },
+    {
+      "index": 1408,
+      "type": "interview_cn",
+      "cat": "INTERVIEW CN",
+      "question": "知道我們公司擁有哪些機種嗎?",
+      "values": {
+        "s": "請選擇應徵的航空公司回答，不要把三家公司的機型混成同一個機隊。\n中華航空：2026 年 9 月 30 日資料包括 Airbus A350-900、A330-300、A321neo 客機，Boeing 777-300ER、737-800 客機，以及 747-400F、777F 貨機。\n長榮航空：2026 年 10 月 1 日表格列有 777-300ER、787-9、787-10、A330-300、A321-200 客機與 777F 貨機；A350-1000、A321neo 列為未來交付。\n星宇航空：2026 年 8 月 17 日公告列有 A321neo、A330neo、A350-900、A350-1000 客機。\n回答時應說明資料日期，區分營運機隊與訂單，並在面試前確認後續變動。",
+        "cn": "",
+        "short": "請選擇應徵的航空公司回答，不要把三家公司的機型混成同一個機隊",
+        "tags": [
+          "interview-cn",
+          "uploaded-v109",
+          "v139-semantic-qa",
+          "v220-reviewed"
+        ]
+      }
+    },
+    {
+      "index": 1430,
+      "type": "pilot",
+      "cat": "INTERVIEW EN",
+      "question": "Have you heard about Star Alliance? What's the benefit AIR joining Star Alliance?",
+      "values": {
+        "q": "What benefits can an airline gain from joining Star Alliance?",
+        "tags": [
+          "interview",
+          "uploaded-v109",
+          "v139-semantic-qa",
+          "v220-reviewed"
+        ]
+      }
+    },
+    {
+      "index": 1438,
+      "type": "pilot",
+      "cat": "INTERVIEW EN",
+      "question": "Tell me what pilot's duty and daily work briefly.",
+      "values": {
+        "q": "Could you briefly describe a pilot’s duties and a typical working day?",
+        "tags": [
+          "interview",
+          "uploaded-v109",
+          "v139-semantic-qa",
+          "qa-duplicate-answer",
+          "v220-reviewed"
+        ]
+      }
+    },
+    {
+      "index": 1449,
+      "type": "pilot",
+      "cat": "INTERVIEW EN",
+      "question": "Your father was a pilot. How did he influence your motivation to apply cadet pilot?",
+      "values": {
+        "s": "My motivation must be a decision I can explain and take responsibility for myself. Family opinions can help me consider the training schedule, financial arrangements and handover of business responsibilities, but they cannot replace my own research and preparation. I would distinguish what my family has actually agreed to from arrangements I still need to discuss. I would not claim that a relative is a pilot or has influenced me in a particular way unless that is true.",
+        "hint": "Answer the question directly. For knowledge questions, give the result and a short reason; use a genuine example when requested.",
+        "q": "How do you distinguish family influence from your own motivation to become a pilot?",
+        "cn": "【中文題目】你如何區分家人的影響與自己想成為機師的動機？\n【中文完整翻譯】\n動機必須是我能自行說明及負責的決定。家人的意見可以幫助評估受訓作息、財務安排及事業交接，但不能取代自己的職涯研究與準備。我會區分家人已確定同意的內容和仍需討論的安排，也不會在未確認的情況下，宣稱親屬是機師或以某種方式影響我。",
+        "short": "My motivation must be a decision I can explain and take responsibility for myself",
+        "tags": [
+          "interview",
+          "uploaded-v109",
+          "v139-semantic-qa",
+          "v220-reviewed"
+        ]
+      }
+    },
+    {
+      "index": 1450,
+      "type": "interview_cn",
+      "cat": "INTERVIEW CN",
+      "question": "你說你的爸爸是飛行員，他對你的報考有何影響?",
+      "values": {
+        "q": "你如何區分家人的影響與自己想成為機師的動機？",
+        "s": "動機必須是我能自行說明及負責的決定。家人的意見可以幫助評估受訓作息、財務安排及事業交接，但不能取代自己的職涯研究與準備。我會區分家人已確定同意的內容和仍需討論的安排，也不會在未確認的情況下，宣稱親屬是機師或以某種方式影響我。",
+        "cn": "",
+        "short": "動機必須是我能自行說明及負責的決定",
+        "tags": [
+          "interview-cn",
+          "uploaded-v109",
+          "v139-semantic-qa",
+          "v220-reviewed"
+        ]
+      }
+    },
+    {
+      "index": 1487,
+      "type": "pilot",
+      "cat": "INTERVIEW EN",
+      "question": "What makes you special? How are you different from others your age?",
+      "values": {
+        "s": "What differentiates me is the combination of ten years of business responsibility, mature risk awareness, and a deliberate transition into aviation supported by systematic preparation.",
+        "hint": "Answer the question directly. For knowledge questions, give the result and a short reason; use a genuine example when requested.",
+        "tags": [
+          "interview",
+          "uploaded-v109",
+          "v139-semantic-qa",
+          "v220-reviewed"
+        ]
+      }
+    },
+    {
+      "index": 1491,
+      "type": "pilot",
+      "cat": "INTERVIEW EN",
+      "question": "Have you ever found yourself in a frustrating situation? How did you handle the situation?",
+      "values": {
+        "s": "One frustrating situation was [a real setback]. I first identified what had actually happened and which part I could control. I then [specific action], rather than simply increasing effort without changing the method. The result was [observable outcome or remaining gap]. What I learned was [specific lesson], and I now check progress using [real measure].",
+        "cn": "【中文題目】你是容易沮喪的人嗎?如果碰到令你沮喪的情況，你是如何處理的?\n【中文完整翻譯】\n一次讓我感到挫折的情況是[真實事件]。我先確認發生了什麼，以及自己能控制的部分，再採取[具體行動]，而不是只增加投入卻不改方法。結果是[可觀察的成果或仍有的缺口]。我學到[具體教訓]，現在會用[實際衡量方式]檢查進展。",
+        "short": "One frustrating situation was [a real setback]",
+        "hint": "Personalization required: replace every bracket with one verified personal example before practising this answer.",
+        "needsPersonalization": true,
+        "tags": [
+          "interview",
+          "uploaded-v109",
+          "v139-semantic-qa",
+          "v220-reviewed"
+        ]
+      }
+    },
+    {
+      "index": 1492,
+      "type": "interview_cn",
+      "cat": "INTERVIEW CN",
+      "question": "你是容易沮喪的人嗎?如果碰到令你沮喪的情況，你是如何處理的?",
+      "values": {
+        "s": "一次讓我感到挫折的情況是[真實事件]。我先確認發生了什麼，以及自己能控制的部分，再採取[具體行動]，而不是只增加投入卻不改方法。結果是[可觀察的成果或仍有的缺口]。我學到[具體教訓]，現在會用[實際衡量方式]檢查進展。",
+        "cn": "",
+        "short": "一次讓我感到挫折的情況是[真實事件]",
+        "hint": "待本人填寫：請將方括號替換成真實經歷後再練習，不可把草稿當成已發生事實。",
+        "needsPersonalization": true,
+        "tags": [
+          "interview-cn",
+          "uploaded-v109",
+          "v139-semantic-qa",
+          "v220-reviewed"
+        ]
+      }
+    },
+    {
+      "index": 1493,
+      "type": "pilot",
+      "cat": "INTERVIEW EN",
+      "question": "Tell me about a time you ran into a difficult situation and how you solved it.",
+      "values": {
+        "s": "A difficult situation was the change in market conditions during our 2022–2023 inventory adjustment. I needed to consider cash flow, turnover and downside exposure instead of treating every item as something we had to keep. I reviewed the information and discussed a staged adjustment with my family. The important lesson was to make the reasoning explicit and follow through, while distinguishing my contribution from the overall business result.",
+        "cn": "【中文題目】請說說一個你曾經遇過的困境，以及如何處理?\n【中文完整翻譯】\n一個困難情境是2022至2023年庫存調整期間的市場變化。我需要同時考慮現金流、周轉及下行曝險，而不是認為每項商品都必須保留。我檢視資訊，與家人討論分階段調整。重要的學習是把決策理由說清楚並持續執行，同時區分自己的貢獻與整體事業成果。",
+        "short": "A difficult situation was the change in market conditions during our 2022–2023 inventory adjustment",
+        "tags": [
+          "interview",
+          "uploaded-v109",
+          "v139-semantic-qa",
+          "qa-duplicate-answer",
+          "v220-reviewed"
+        ]
+      }
+    },
+    {
+      "index": 1494,
+      "type": "interview_cn",
+      "cat": "INTERVIEW CN",
+      "question": "請說說一個你曾經遇過的困境，以及如何處理?",
+      "values": {
+        "s": "一個困難情境是2022至2023年庫存調整期間的市場變化。我需要同時考慮現金流、周轉及下行曝險，而不是認為每項商品都必須保留。我檢視資訊，與家人討論分階段調整。重要的學習是把決策理由說清楚並持續執行，同時區分自己的貢獻與整體事業成果。",
+        "cn": "",
+        "short": "一個困難情境是2022至2023年庫存調整期間的市場變化",
+        "tags": [
+          "interview-cn",
+          "uploaded-v109",
+          "v139-semantic-qa",
+          "v220-reviewed"
+        ]
+      }
+    },
+    {
+      "index": 1499,
+      "type": "pilot",
+      "cat": "INTERVIEW EN",
+      "question": "What would you do if you disagreed with your supervisor's ideas or suggestions?",
+      "values": {
+        "s": "I would first check that I understood my supervisor’s objective and constraints. I would explain the specific point of disagreement using evidence, offer an alternative and listen to the response. If the decision is within the supervisor’s authority and does not conflict with safety, law or applicable procedures, I would support its implementation. If a safety concern remains, I would use the appropriate escalation process rather than remain silent or turn it into a personal dispute.",
+        "cn": "【中文題目】如果你與主管的想法或意見相左\n【中文完整翻譯】\n我會先確認自己理解主管的目標與限制，再用證據說明具體分歧、提出替代方案並聽取回應。若決定在主管權限內，且不違反安全、法律或適用程序，我會支持執行；若仍有安全疑慮，就循適當管道提出，不保持沉默，也不把問題變成人身爭執。",
+        "short": "I would first check that I understood my supervisor’s objective and constraints",
+        "tags": [
+          "interview",
+          "uploaded-v109",
+          "v139-semantic-qa",
+          "qa-duplicate-answer",
+          "v220-reviewed"
+        ]
+      }
+    },
+    {
+      "index": 1500,
+      "type": "interview_cn",
+      "cat": "INTERVIEW CN",
+      "question": "如果你與主管的想法或意見相左",
+      "values": {
+        "s": "我會先確認自己理解主管的目標與限制，再用證據說明具體分歧、提出替代方案並聽取回應。若決定在主管權限內，且不違反安全、法律或適用程序，我會支持執行；若仍有安全疑慮，就循適當管道提出，不保持沉默，也不把問題變成人身爭執。",
+        "cn": "",
+        "short": "我會先確認自己理解主管的目標與限制，再用證據說明具體分歧、提出替代方案並聽取回應",
+        "tags": [
+          "interview-cn",
+          "uploaded-v109",
+          "v139-semantic-qa",
+          "v220-reviewed"
+        ]
+      }
+    },
+    {
+      "index": 1503,
+      "type": "pilot",
+      "cat": "INTERVIEW EN",
+      "question": "Have you ever been homesick? What did you do to overcome the feeling?",
+      "values": {
+        "s": "Yes. I manage homesickness by keeping a stable routine, maintaining regular contact with family, and staying focused on the purpose of the training.",
+        "hint": "Answer the question directly. For knowledge questions, give the result and a short reason; use a genuine example when requested.",
+        "tags": [
+          "interview",
+          "uploaded-v109",
+          "v139-semantic-qa",
+          "v220-reviewed"
+        ]
+      }
+    },
+    {
+      "index": 1509,
+      "type": "pilot",
+      "cat": "INTERVIEW EN",
+      "question": "Have you ever had to make a quick decision in a different situation or had only a short period of time to come up with a solution to a difficult problem? Give me an example.",
+      "values": {
+        "s": "One time-limited decision I can describe is [a real event]. I had [the actual time available] and knew [confirmed facts], while [uncertainty] remained. I identified what could not safely be compromised, consulted [the person actually involved] if time allowed, and chose [my actual action]. The result was [verified outcome]. Afterward, I reviewed whether the decision process or information checks needed improving.",
+        "cn": "【中文題目】平時碰到問題時你是否能夠很快的下一個決定或解決難題?請舉一個實例。\n【中文完整翻譯】\n一次需要限時決策的真實情境是[事件]。我當時有[實際可用時間]，已知[確認事實]，但仍有[不確定之處]。我先辨識不能犧牲的條件，在時間允許時詢問[實際參與的人]，再選擇[真正採取的行動]。結果是[已確認成果]，事後則檢討決策流程及資訊核對是否需要改善。",
+        "short": "One time-limited decision I can describe is [a real event]",
+        "hint": "Personalization required: replace every bracket with one verified personal example before practising this answer.",
+        "needsPersonalization": true,
+        "tags": [
+          "interview",
+          "uploaded-v109",
+          "v139-semantic-qa",
+          "qa-duplicate-answer",
+          "v220-reviewed"
+        ]
+      }
+    },
+    {
+      "index": 1510,
+      "type": "interview_cn",
+      "cat": "INTERVIEW CN",
+      "question": "平時碰到問題時你是否能夠很快的下一個決定或解決難題?請舉一個實例。",
+      "values": {
+        "s": "一次需要限時決策的真實情境是[事件]。我當時有[實際可用時間]，已知[確認事實]，但仍有[不確定之處]。我先辨識不能犧牲的條件，在時間允許時詢問[實際參與的人]，再選擇[真正採取的行動]。結果是[已確認成果]，事後則檢討決策流程及資訊核對是否需要改善。",
+        "cn": "",
+        "short": "一次需要限時決策的真實情境是[事件]",
+        "hint": "待本人填寫：請將方括號替換成真實經歷後再練習，不可把草稿當成已發生事實。",
+        "needsPersonalization": true,
+        "tags": [
+          "interview-cn",
+          "uploaded-v109",
+          "v139-semantic-qa",
+          "v220-reviewed"
+        ]
+      }
+    },
+    {
+      "index": 1513,
+      "type": "pilot",
+      "cat": "INTERVIEW EN",
+      "question": "If your salary need to be lowered due to an increase in fuel costs, what's your feedback?",
+      "values": {
+        "q": "If your salary were reduced because fuel costs increased, how would you respond?",
+        "tags": [
+          "interview",
+          "uploaded-v109",
+          "v139-semantic-qa",
+          "v220-reviewed"
+        ]
+      }
+    },
+    {
+      "index": 1517,
+      "type": "pilot",
+      "cat": "INTERVIEW EN",
+      "question": "If one flight crew says she is interested in you, how will you do?",
+      "values": {
+        "q": "If a colleague expressed a romantic interest in you, how would you handle it professionally?",
+        "tags": [
+          "interview",
+          "uploaded-v109",
+          "v139-semantic-qa",
+          "v140-semantic-repair",
+          "v220-reviewed"
+        ]
+      }
+    },
+    {
+      "index": 1531,
+      "type": "pilot",
+      "cat": "INTERVIEW EN",
+      "question": "I have decided to fail you. Is there anything you want to say?",
+      "values": {
+        "s": "Thank you for being direct. Before we finish, may I briefly clarify one point that I have not demonstrated well? I would address the specific concern with a genuine example, or acknowledge that I do not yet have the evidence required. If the decision is final, I would respect it and ask about feedback through the permitted process. I would not argue, make new unsupported claims or promise that enthusiasm alone can replace the required standard.",
+        "cn": "【中文題目】我已經決定把你刷掉，你還有任何需要補充的嗎?\n【中文完整翻譯】\n謝謝您直接說明。結束前，能否讓我簡短補充一項今天沒有充分展現的能力？我會針對具體疑慮提供真實例子，或承認自己目前仍缺少必要證據。如果決定已確定，我會尊重結果，依允許的方式尋求回饋，不爭辯、不臨時增加無根據的說法，也不把熱情當成專業標準的替代品。",
+        "short": "Thank you for being direct",
+        "tags": [
+          "interview",
+          "uploaded-v109",
+          "v139-semantic-qa",
+          "qa-duplicate-answer",
+          "v220-reviewed"
+        ]
+      }
+    },
+    {
+      "index": 1532,
+      "type": "interview_cn",
+      "cat": "INTERVIEW CN",
+      "question": "我已經決定把你刷掉，你還有任何需要補充的嗎?",
+      "values": {
+        "s": "謝謝您直接說明。結束前，能否讓我簡短補充一項今天沒有充分展現的能力？我會針對具體疑慮提供真實例子，或承認自己目前仍缺少必要證據。如果決定已確定，我會尊重結果，依允許的方式尋求回饋，不爭辯、不臨時增加無根據的說法，也不把熱情當成專業標準的替代品。",
+        "cn": "",
+        "short": "謝謝您直接說明",
+        "tags": [
+          "interview-cn",
+          "uploaded-v109",
+          "v139-semantic-qa",
+          "qa-duplicate-answer",
+          "v220-reviewed"
+        ]
+      }
+    },
+    {
+      "index": 1533,
+      "type": "pilot",
+      "cat": "INTERVIEW EN",
+      "question": "Since you majored in language, are you worried about engineering subjects in your cadet training?",
+      "values": {
+        "q": "Coming from a non-engineering background, how are you preparing for the technical subjects in pilot training?",
+        "tags": [
+          "interview",
+          "uploaded-v109",
+          "v139-semantic-qa",
+          "v220-reviewed"
+        ]
+      }
+    },
+    {
+      "index": 1534,
+      "type": "interview_cn",
+      "cat": "INTERVIEW CN",
+      "question": "你是文組的學生，對於理工科目了解嗎?會不會擔心未來理工科目會考倒你?",
+      "values": {
+        "q": "非理工背景的你，如何準備飛行訓練的技術科目？",
+        "tags": [
+          "interview-cn",
+          "uploaded-v109",
+          "v139-semantic-qa",
+          "v220-reviewed"
+        ]
+      }
+    },
+    {
+      "index": 1543,
+      "type": "pilot",
+      "cat": "INTERVIEW EN",
+      "question": "What if I told you that your performance today in here is not good enough to convince me to hire you? What do you want to say to impress me?",
+      "values": {
+        "q": "If today’s performance has not convinced us to hire you, what would you add?",
+        "s": "I would like to make three points more concrete. My business work has required long-term responsibility and careful decisions. My preparation requires me to identify errors and change how I practise, not only accumulate study hours. Finally, I understand that a cadet must accept instruction and demonstrate standards consistently. I would connect whichever point concerns you most to one real example, and be clear about any evidence I still need to strengthen.",
+        "cn": "【中文題目】如果我現在跟你說你今天的面試還不足以說服我錄用你，最後的三分鐘，你有任何要補充的嗎?\n【中文完整翻譯】\n我想把三點說得更具體：事業工作讓我面對長期責任與審慎決策；準備甄試時，我需要辨識錯誤、改變練習方法，而不只是累積時數；我也理解培訓學員必須接受指導並持續達到標準。我會針對您最在意的一點補充真實例子，也說清楚自己還需要加強的證據。",
+        "short": "I would like to make three points more concrete",
+        "tags": [
+          "interview",
+          "uploaded-v109",
+          "v139-semantic-qa",
+          "qa-duplicate-answer",
+          "v220-reviewed"
+        ]
+      }
+    },
+    {
+      "index": 1544,
+      "type": "interview_cn",
+      "cat": "INTERVIEW CN",
+      "question": "如果我現在跟你說你今天的面試還不足以說服我錄用你，最後的三分鐘，你有任何要補充的嗎?",
+      "values": {
+        "s": "我想把三點說得更具體：事業工作讓我面對長期責任與審慎決策；準備甄試時，我需要辨識錯誤、改變練習方法，而不只是累積時數；我也理解培訓學員必須接受指導並持續達到標準。我會針對您最在意的一點補充真實例子，也說清楚自己還需要加強的證據。",
+        "cn": "",
+        "short": "我想把三點說得更具體：事業工作讓我面對長期責任與審慎決策；準備甄試時，我需要辨識錯誤、改變練習方法，而不只是累積時數；我也理解培訓學員必須接受指導並持續達到標準",
+        "tags": [
+          "interview-cn",
+          "uploaded-v109",
+          "v139-semantic-qa",
+          "qa-duplicate-answer",
+          "v220-reviewed"
+        ]
+      }
+    },
+    {
+      "index": 1547,
+      "type": "pilot",
+      "cat": "INTERVIEW EN",
+      "question": "From your resume; I see you have studied at a university for five years. Can you tell me what yo did during that extra one year?",
+      "values": {
+        "q": "Your resume appears to show five years at university. Could you clarify the timeline?",
+        "s": "I would first check that the dates in the question match my academic record and correct any inaccurate premise politely. If there was an additional year, I would explain the actual reason, what I completed and what changed in my planning. I would not invent a reason for a gap that did not exist or claim achievements I could not support.",
+        "cn": "【中文題目】履歷看起來顯示你在大學就讀五年，能否釐清學習時間？\n【中文完整翻譯】\n我會先核對問題中的日期是否符合實際學歷，若前提不正確就禮貌更正。如果確實多了一年，才說明真實原因、完成的事情及規劃方式的改變，不會為不存在的空白編理由，也不宣稱無法支持的成果。",
+        "short": "I would first check that the dates in the question match my academic record and correct any inaccurate premise politely",
+        "hint": "Conditional résumé question: verify the actual academic timeline first; do not invent an extra year.",
+        "tags": [
+          "interview",
+          "uploaded-v109",
+          "v139-semantic-qa",
+          "v220-reviewed"
+        ]
+      }
+    },
+    {
+      "index": 1548,
+      "type": "interview_cn",
+      "cat": "INTERVIEW CN",
+      "question": "在履歷表中，看到你大學讀了五年，你可以跟我們解釋一下原因和多出這一年你在做什麼嗎?",
+      "values": {
+        "q": "履歷看起來顯示你在大學就讀五年，能否釐清學習時間？",
+        "s": "我會先核對問題中的日期是否符合實際學歷，若前提不正確就禮貌更正。如果確實多了一年，才說明真實原因、完成的事情及規劃方式的改變，不會為不存在的空白編理由，也不宣稱無法支持的成果。",
+        "cn": "",
+        "short": "我會先核對問題中的日期是否符合實際學歷，若前提不正確就禮貌更正",
+        "hint": "條件題：先核對實際學習時間，不要新增未發生的延畢經歷。",
+        "tags": [
+          "interview-cn",
+          "uploaded-v109",
+          "v139-semantic-qa",
+          "v220-reviewed"
+        ]
+      }
+    },
+    {
+      "index": 1553,
+      "type": "pilot",
+      "cat": "INTERVIEW EN",
+      "question": "You majored in Why didn't you try to find a job in that field after graduation?",
+      "values": {
+        "q": "How did your studies influence your work in the family business?",
+        "s": "My studies gave me a foundation in communication, planning and coordinating resources. In the family tea business, those areas connect to understanding customer needs, managing inventory and explaining decisions. Business experience is not flight experience, but it gives me examples of responsibility and systematic work. I still need to learn aviation-specific knowledge and demonstrate it through formal training.",
+        "cn": "【中文題目】你的大學所學如何影響你在家族事業中的工作？\n【中文完整翻譯】\n大學所學讓我建立溝通、規劃及資源協調的基礎。在家族茶葉事業中，這些能力能連結理解客戶需求、管理庫存及說明決策。商業經驗不是飛行經驗，但能提供責任感與系統工作方式的例子；航空專業知識仍須重新學習，並透過正式訓練證明能力。",
+        "short": "My studies gave me a foundation in communication, planning and coordinating resources",
+        "tags": [
+          "interview",
+          "uploaded-v109",
+          "v139-semantic-qa",
+          "qa-duplicate-answer",
+          "v220-reviewed"
+        ]
+      }
+    },
+    {
+      "index": 1554,
+      "type": "interview_cn",
+      "cat": "INTERVIEW CN",
+      "question": "你主修，畢業後為何沒有從事相關工作?",
+      "values": {
+        "q": "你的大學所學如何影響你在家族事業中的工作？",
+        "s": "大學所學讓我建立溝通、規劃及資源協調的基礎。在家族茶葉事業中，這些能力能連結理解客戶需求、管理庫存及說明決策。商業經驗不是飛行經驗，但能提供責任感與系統工作方式的例子；航空專業知識仍須重新學習，並透過正式訓練證明能力。",
+        "cn": "",
+        "short": "大學所學讓我建立溝通、規劃及資源協調的基礎",
+        "tags": [
+          "interview-cn",
+          "uploaded-v109",
+          "v139-semantic-qa",
+          "v220-reviewed"
+        ]
+      }
+    }
+  ],
+  "added": [
+    {
+      "type": "pilot",
+      "cat": "INTERVIEW EN",
+      "q": "How would you use AI to prepare for pilot selection without becoming dependent on it?",
+      "s": "I use AI as a practice partner, not as an authority on aircraft procedures. It can help me organize questions and practise explaining an idea, but I would verify technical claims against current authoritative material and check that any personal example is genuinely mine. I would also practise answering without assistance. If I cannot explain a point or identify its source, I am not ready to present it as knowledge.",
+      "cn": "【中文題目】你會如何使用AI準備機師甄試，同時避免過度依賴？\n【中文完整翻譯】\n我會把AI當作練習夥伴，而不是飛機程序的權威。它能協助整理問題及練習表達，但技術內容仍須用現行可靠資料核對，個人例子也必須確實是自己的經歷。我也會安排不依賴工具的口說練習；如果無法自行解釋或交代來源，就還不適合把它當作已掌握的知識。",
+      "hint": "Original practice; follow applicable training and company rules.",
+      "short": "I use AI as a practice partner, not as an authority on aircraft procedures",
+      "tags": [
+        "interview",
+        "v220-reviewed"
+      ],
+      "defaultPrep": 30,
+      "defaultAns": 90,
+      "prep": 30,
+      "ans": 90
+    },
+    {
+      "type": "interview_cn",
+      "cat": "INTERVIEW CN",
+      "q": "你會如何使用AI準備機師甄試，同時避免過度依賴？",
+      "s": "我會把AI當作練習夥伴，而不是飛機程序的權威。它能協助整理問題及練習表達，但技術內容仍須用現行可靠資料核對，個人例子也必須確實是自己的經歷。我也會安排不依賴工具的口說練習；如果無法自行解釋或交代來源，就還不適合把它當作已掌握的知識。",
+      "cn": "",
+      "hint": "原創練習；以實際訓練、適用規範與公司規定為準。",
+      "short": "我會把AI當作練習夥伴，而不是飛機程序的權威。它能協助整理問題及練習表達，但技術內容仍須用現行可靠資料核對，個人例子也必須確實是自己的經歷。我也會安排不依賴工具的口說練習；如果無法自行解釋或交代來源，就還不適合把它當作已掌握的知識。",
+      "tags": [
+        "interview",
+        "v220-reviewed"
+      ],
+      "defaultPrep": 30,
+      "defaultAns": 90,
+      "prep": 30,
+      "ans": 90
+    },
+    {
+      "type": "pilot",
+      "cat": "INTERVIEW EN",
+      "q": "You notice an error that has not caused any apparent harm. How would you handle it?",
+      "s": "I would first help prevent the error from affecting safety, within my training and responsibilities. I would notify the appropriate instructor or supervisor and use the applicable reporting process, describing what I observed and what remains uncertain. An apparently harmless outcome does not prove that the underlying risk was acceptable. I would cooperate with the review and follow up on corrective action rather than conceal the event or assign blame without evidence.",
+      "cn": "【中文題目】你發現一項目前看似沒有造成損害的錯誤，會如何處理？\n【中文完整翻譯】\n我會先在自己的訓練與職責範圍內，協助避免錯誤影響安全，再通知適當的教官或主管，依適用程序說明所見事實及尚未確認之處。看似沒有損害，不代表原本的風險可以接受。我會配合後續檢視與改善，而不是隱瞞事件，或在沒有證據時先責怪他人。",
+      "hint": "Original practice; follow applicable training and company rules.",
+      "short": "I would first help prevent the error from affecting safety, within my training and responsibilities",
+      "tags": [
+        "interview",
+        "v220-reviewed"
+      ],
+      "defaultPrep": 30,
+      "defaultAns": 90,
+      "prep": 30,
+      "ans": 90
+    },
+    {
+      "type": "interview_cn",
+      "cat": "INTERVIEW CN",
+      "q": "你發現一項目前看似沒有造成損害的錯誤，會如何處理？",
+      "s": "我會先在自己的訓練與職責範圍內，協助避免錯誤影響安全，再通知適當的教官或主管，依適用程序說明所見事實及尚未確認之處。看似沒有損害，不代表原本的風險可以接受。我會配合後續檢視與改善，而不是隱瞞事件，或在沒有證據時先責怪他人。",
+      "cn": "",
+      "hint": "原創練習；以實際訓練、適用規範與公司規定為準。",
+      "short": "我會先在自己的訓練與職責範圍內，協助避免錯誤影響安全，再通知適當的教官或主管，依適用程序說明所見事實及尚未確認之處。看似沒有損害，不代表原本的風險可以接受。我會配合後續檢視與改善，而不是隱瞞事件，或在沒有證據時先責怪他人。",
+      "tags": [
+        "interview",
+        "v220-reviewed"
+      ],
+      "defaultPrep": 30,
+      "defaultAns": 90,
+      "prep": 30,
+      "ans": 90
+    },
+    {
+      "type": "pilot",
+      "cat": "INTERVIEW EN",
+      "q": "A friend asks you to share a screenshot of internal training material. What would you do?",
+      "s": "I would check the organization’s sharing rules and whether the material contains confidential information or personal data. I would not forward it simply because the request came from a friend. If permission is unclear, I would ask the appropriate person and offer a public source instead. Professionalism includes protecting information as well as communicating clearly; I would follow the organization’s reporting process if information had already been disclosed improperly.",
+      "cn": "【中文題目】朋友想請你分享內部訓練資料的截圖，你會怎麼做？\n【中文完整翻譯】\n我會先確認機構的分享規定，以及內容是否含機密或個人資料，不會因為對方是朋友就直接轉傳。如果授權不明確，我會向適當人員確認，並優先提供公開來源。專業也包括保護資訊；如果資料已經被不當揭露，就依機構規定處理及回報，不自行掩飾。",
+      "hint": "Original practice; follow applicable training and company rules.",
+      "short": "I would check the organization’s sharing rules and whether the material contains confidential information or personal data",
+      "tags": [
+        "interview",
+        "v220-reviewed"
+      ],
+      "defaultPrep": 30,
+      "defaultAns": 90,
+      "prep": 30,
+      "ans": 90
+    },
+    {
+      "type": "interview_cn",
+      "cat": "INTERVIEW CN",
+      "q": "朋友想請你分享內部訓練資料的截圖，你會怎麼做？",
+      "s": "我會先確認機構的分享規定，以及內容是否含機密或個人資料，不會因為對方是朋友就直接轉傳。如果授權不明確，我會向適當人員確認，並優先提供公開來源。專業也包括保護資訊；如果資料已經被不當揭露，就依機構規定處理及回報，不自行掩飾。",
+      "cn": "",
+      "hint": "原創練習；以實際訓練、適用規範與公司規定為準。",
+      "short": "我會先確認機構的分享規定，以及內容是否含機密或個人資料，不會因為對方是朋友就直接轉傳。如果授權不明確，我會向適當人員確認，並優先提供公開來源。專業也包括保護資訊；如果資料已經被不當揭露，就依機構規定處理及回報，不自行掩飾。",
+      "tags": [
+        "interview",
+        "v220-reviewed"
+      ],
+      "defaultPrep": 30,
+      "defaultAns": 90,
+      "prep": 30,
+      "ans": 90
+    }
+  ],
+  "baseline_total": 4254,
+  "baseline_non_interview_sha256": "93975ec36cfbef889494941d14786e92dd2e327503758efa84a4d7e9693d6092"
+}

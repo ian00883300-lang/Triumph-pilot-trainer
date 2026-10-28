@@ -1,0 +1,236 @@
+{
+  "review_date": "2026-10-28",
+  "repository": "ian00883300-lang/Triumph-pilot-trainer",
+  "base_commit": "67889254920966c013c8e45100b776346e5dff91",
+  "runtime_version": "v219",
+  "runtime_total_cards": 4254,
+  "interview_cards": 1051,
+  "method": "結構與重複答案全量掃描，模板與明確中英文題目對照後人工重點檢閱。非全部外部事實認證。",
+  "external_facts_revalidated": false,
+  "application_bank_modified": false,
+  "metrics": {
+    "INTERVIEW EN": {
+      "cards": 539,
+      "blank_main_answers": 0,
+      "duplicate_answer_groups": 57,
+      "cards_in_duplicate_groups": 164,
+      "unflagged_cards": 452,
+      "unflagged_duplicate_groups": 29,
+      "unflagged_cards_in_duplicate_groups": 72
+    },
+    "INTERVIEW CN": {
+      "cards": 512,
+      "blank_main_answers": 0,
+      "duplicate_answer_groups": 65,
+      "cards_in_duplicate_groups": 158,
+      "unflagged_cards": 461,
+      "unflagged_duplicate_groups": 41,
+      "unflagged_cards_in_duplicate_groups": 96
+    }
+  },
+  "findings": [
+    {
+      "priority": "P1",
+      "runtime_index": 510,
+      "category": "INTERVIEW EN",
+      "question": "What is TEM and how is it related to CRM?",
+      "field": "cn",
+      "issue": "中文翻譯被泛用模板取代，未對應英文主答案。"
+    },
+    {
+      "priority": "P1",
+      "runtime_index": 512,
+      "category": "INTERVIEW EN",
+      "question": "Explain authority gradient.",
+      "field": "cn",
+      "issue": "中文翻譯被泛用模板取代，未對應英文主答案。"
+    },
+    {
+      "priority": "P1",
+      "runtime_index": 516,
+      "category": "INTERVIEW EN",
+      "question": "A passenger has a medical emergency. What should the captain consider?",
+      "field": "cn",
+      "issue": "中文翻譯被泛用模板取代，未對應英文主答案。"
+    },
+    {
+      "priority": "P1",
+      "runtime_index": 520,
+      "category": "INTERVIEW EN",
+      "question": "What would you do if the captain became incapacitated?",
+      "field": "cn",
+      "issue": "中文翻譯被泛用模板取代，未對應英文主答案。"
+    },
+    {
+      "priority": "P1",
+      "runtime_index": 550,
+      "category": "INTERVIEW EN",
+      "question": "Sell me this pencil.",
+      "field": "cn",
+      "issue": "中文翻譯被泛用模板取代，未對應英文主答案。"
+    },
+    {
+      "priority": "P1",
+      "runtime_index": 552,
+      "category": "INTERVIEW EN",
+      "question": "If you were an animal, what would you be?",
+      "field": "cn",
+      "issue": "中文翻譯被泛用模板取代，未對應英文主答案。"
+    },
+    {
+      "priority": "P1",
+      "runtime_index": 558,
+      "category": "INTERVIEW EN",
+      "question": "What is one thing you do not want me to know about you?",
+      "field": "cn",
+      "issue": "中文翻譯被泛用模板取代，未對應英文主答案。"
+    },
+    {
+      "priority": "P1",
+      "runtime_index": 566,
+      "category": "INTERVIEW EN",
+      "question": "What is the ISA temperature at sea level?",
+      "field": "cn",
+      "issue": "中文翻譯被泛用模板取代，未對應英文主答案。"
+    },
+    {
+      "priority": "P1",
+      "runtime_index": 747,
+      "category": "INTERVIEW EN",
+      "question": "What is your biggest failure?",
+      "field": "s",
+      "issue": "過去經驗題回答假設性考核失敗；中英文事件不一致。"
+    },
+    {
+      "priority": "P1",
+      "runtime_index": 1449,
+      "category": "INTERVIEW EN",
+      "question": "Your father was a pilot. How did he influence your motivation to apply cadet pilot?",
+      "field": "q/s",
+      "issue": "預設父親為機師，需本人確認或標為條件題。"
+    },
+    {
+      "priority": "P2",
+      "runtime_index": 1408,
+      "category": "INTERVIEW CN",
+      "question": "知道我們公司擁有哪些機種嗎?",
+      "field": "s",
+      "issue": "問機型卻只回答會研究公司。"
+    },
+    {
+      "priority": "P2",
+      "runtime_index": 1532,
+      "category": "INTERVIEW CN",
+      "question": "我已經決定把你刷掉，你還有任何需要補充的嗎?",
+      "field": "s",
+      "issue": "當下最後補充被回答成事後落選檢討。"
+    },
+    {
+      "priority": "P2",
+      "runtime_index": 1544,
+      "category": "INTERVIEW CN",
+      "question": "如果我現在跟你說你今天的面試還不足以說服我錄用你，最後的三分鐘，你有任何要補充的嗎?",
+      "field": "s",
+      "issue": "中文答案與英文1543的當下補充理由不對應。"
+    },
+    {
+      "priority": "P2",
+      "runtime_index": 1553,
+      "category": "INTERVIEW EN",
+      "question": "You majored in Why didn't you try to find a job in that field after graduation?",
+      "field": "q/s",
+      "issue": "題幹缺詞，答案未說明畢業後職涯選擇。"
+    },
+    {
+      "priority": "P2",
+      "runtime_index": 1513,
+      "category": "INTERVIEW EN",
+      "question": "If your salary need to be lowered due to an increase in fuel costs, what's your feedback?",
+      "field": "q",
+      "issue": "salary need文法及what is your feedback語氣需修正。"
+    },
+    {
+      "priority": "P2",
+      "runtime_index": 1430,
+      "category": "INTERVIEW EN",
+      "question": "Have you heard about Star Alliance? What's the benefit AIR joining Star Alliance?",
+      "field": "q",
+      "issue": "AIR joining題幹缺詞。"
+    },
+    {
+      "priority": "P2",
+      "runtime_index": 1438,
+      "category": "INTERVIEW EN",
+      "question": "Tell me what pilot's duty and daily work briefly.",
+      "field": "q",
+      "issue": "pilot's duty句法需修正。"
+    },
+    {
+      "priority": "P2",
+      "runtime_index": 1517,
+      "category": "INTERVIEW EN",
+      "question": "If one flight crew says she is interested in you, how will you do?",
+      "field": "q",
+      "issue": "flight crew/she/how will you do用法與性別前提需整理。"
+    },
+    {
+      "priority": "P2",
+      "runtime_index": 1547,
+      "category": "INTERVIEW EN",
+      "question": "From your resume; I see you have studied at a university for five years. Can you tell me what yo did during that extra one year?",
+      "field": "q",
+      "issue": "yo拼字錯誤；五年就學前提需確認。"
+    }
+  ],
+  "teaching_instruction_in_main_answer": [
+    {
+      "runtime_index": 466,
+      "question": "What did you eat for breakfast today?"
+    },
+    {
+      "runtime_index": 560,
+      "question": "Calculate 99 times 101 mentally."
+    },
+    {
+      "runtime_index": 562,
+      "question": "If heading is 090 and you turn left 60 degrees, what is the new heading?"
+    },
+    {
+      "runtime_index": 564,
+      "question": "At a standard rate turn of 3 degrees per second, how long does it take to turn 90 degrees?"
+    },
+    {
+      "runtime_index": 566,
+      "question": "What is the ISA temperature at sea level?"
+    },
+    {
+      "runtime_index": 568,
+      "question": "If the temperature lapse rate is about 2°C per 1000 ft, what is ISA temperature at 10,000 ft?"
+    },
+    {
+      "runtime_index": 902,
+      "question": "Which answer best reflects professional humility?"
+    },
+    {
+      "runtime_index": 989,
+      "question": "Which response best answers “Why should we select you as a cadet pilot?”"
+    },
+    {
+      "runtime_index": 1449,
+      "question": "Your father was a pilot. How did he influence your motivation to apply cadet pilot?"
+    },
+    {
+      "runtime_index": 1487,
+      "question": "What makes you special? How are you different from others your age?"
+    },
+    {
+      "runtime_index": 1503,
+      "question": "Have you ever been homesick? What did you do to overcome the feeling?"
+    }
+  ],
+  "proposed_new_topics": [
+    "AI-assisted preparation and independent verification",
+    "Reporting an error without apparent harm",
+    "Internal training material and confidentiality"
+  ]
+}
