@@ -1,5 +1,5 @@
 {
-  "version": "v224",
-  "build": "2026-10-28-read-do-full-page",
+  "version": "v225",
+  "build": "2026-10-28-read-do-compact",
   "entry": "./index.html"
 }

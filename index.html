@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="zh-Hant"><head><meta charset="UTF-8"><title>TRIUMPH Pilot Trainer v224</title><meta name="viewport" content="width=device-width,initial-scale=1.0,viewport-fit=cover">
+<!DOCTYPE html><html lang="zh-Hant"><head><meta charset="UTF-8"><title>TRIUMPH Pilot Trainer v225</title><meta name="viewport" content="width=device-width,initial-scale=1.0,viewport-fit=cover">
 <meta name="theme-color" content="#0b1c31">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -1110,7 +1110,7 @@ body[data-theme="green"] .dt-overlay{
 <script id="v218-normalization-cache">window.TRIUMPH_memoText=function(fn){const cache=new Map();return function(value){if(typeof value!=='string')return fn(value);if(cache.has(value))return cache.get(value);const result=fn(value);if(cache.size>=8192)cache.clear();cache.set(value,result);return result;};};</script>
 <script id="triumph-current-cache-bootstrap">
 (() => {
-  const BUILD = 'v224';
+  const BUILD = 'v225';
   window.TRIUMPH_CACHE_VERSION = BUILD;
   if (!('serviceWorker' in navigator) || !/^https?:$/.test(location.protocol)) return;
   // A stable script URL avoids old HTML repeatedly registering an older query
@@ -1447,7 +1447,7 @@ body[data-theme="green"] .dt-overlay{
 <select id="soundEnabled" hidden aria-hidden="true"><option value="true">開啟提示音</option><option value="false">關閉提示音</option></select><label>提示音音量 <span aria-hidden="true">🔊</span></label><input type="range" id="soundVolume" min="0" max="150" value="120"><div class="hint" style="font-size:12px">全域音效：題庫倒數、心算倒數與答題、飛行記憶指令完成及任務完成。</div><button class="btn secondary" id="applyDefaultsBtn" style="width:100%;margin-top:10px">套用此題庫預設時間</button><button class="btn memory-launch" id="flightMemoryBtn">✈ 飛行指令記憶訓練</button><button class="btn mental-launch" id="mentalMathBtn">∑ 數學心算 Mental Math</button></section><section class="sidecard card"><h3>Question Bank</h3><div class="stats"><div class="stat"><span>目前題庫</span><b id="currentMode">ALL</b></div><div class="stat"><span>題庫數量</span><b id="bankCount">0</b></div><div class="stat"><span>目前題號</span><b id="currentIndex">-</b></div><div class="stat"><span>已練題數</span><b id="doneCount">0</b></div><div class="stat"><span>收藏題</span><b id="favCount">0</b></div></div><div class="controls"><button class="btn secondary" id="copyBtn" title="複製目前題目與選項，方便貼到筆記或聊天室。">複製目前題目</button><button class="btn danger" id="clearDataBtn" title="清除這台裝置上的收藏、備註、答題進度與統計。">重設本機紀錄</button></div><div class="hint" style="margin-top:8px;font-size:12px">複製目前題目：方便貼到筆記或聊天室。重設本機紀錄：會清除這台裝置上的收藏題、答題進度、備註與統計。</div></section><section class="sidecard card" id="v100Dashboard"><h3>v100 Performance</h3><div class="stats"><div class="stat"><span>答對題數</span><b id="correctCount">0</b></div><div class="stat"><span>答錯題數</span><b id="wrongCount">0</b></div><div class="stat"><span>作答正確率</span><b id="accuracyRate">-</b></div><div class="stat"><span>錯題待複習</span><b id="reviewCount">0</b></div></div><div class="controls"><button class="btn secondary" id="reviewWrongBtn">Review Wrong</button><button class="btn secondary" id="markMasteredBtn">Mark Mastered</button></div></section><section class="sidecard card"><h3>Favorites</h3><div id="favoriteSyncStatus" style="font-size:12px;color:var(--muted);margin:-4px 0 10px">跨版本收藏同步中…</div><div id="favoriteList"></div></section><section class="sidecard card"><h3>Your Notes</h3><textarea id="notes" placeholder="這題的卡點、公式、單字、回答弱點..."></textarea></section></aside></div>
 <script id="triumph-current-version-guard">
 (() => {
-  const BUILD='v224';
+  const BUILD='v225';
   const CURRENT='TRIUMPH Pilot Trainer '+BUILD;
   const INITIAL_HINT='v210：重建 Classical CN 題庫；依國語文學科中心 65 篇古典名篇建立 325 題，補作者/出處、主旨、生活或機師應用、字詞注音與完整選項辨析，並移除舊題近重複。';
   window.TRIUMPH_BUILD_VERSION=BUILD;
@@ -14192,8 +14192,8 @@ for(const p of data.patches){
 }
 for(const q of data.added){if(bank.some(item=>item.cat===q.cat&&item.q===q.q))throw Error('v220 duplicate addition');bank.push(q);}
 window.TRIUMPH_V220_QA={total:bank.length,patched:data.patches.length,added:data.added.length};
-const ready=()=>{document.title='TRIUMPH Pilot Trainer v224';window.TRIUMPH_BUILD_VERSION='v224';
- const logo=document.querySelector('.logo');if(logo)logo.innerHTML='TRIUMPH Pilot Trainer v224<span class="creator">created by Ying Chen</span><small>PILOT SELECTION TRAINER</small>';
+const ready=()=>{document.title='TRIUMPH Pilot Trainer v225';window.TRIUMPH_BUILD_VERSION='v225';
+ const logo=document.querySelector('.logo');if(logo)logo.innerHTML='TRIUMPH Pilot Trainer v225<span class="creator">created by Ying Chen</span><small>PILOT SELECTION TRAINER</small>';
  if(typeof current!=='undefined'&&current){const hint=document.getElementById('hint');if(hint)hint.textContent=current.hint||'';}
  if(typeof updateStats==='function')updateStats();
 };ready();document.addEventListener('DOMContentLoaded',ready);
@@ -14213,6 +14213,35 @@ const ready=()=>{document.title='TRIUMPH Pilot Trainer v224';window.TRIUMPH_BUIL
 #rdMath{border:1px solid #8196b6;border-radius:14px;padding:20px}#rdMath input{width:140px;max-width:100%;padding:10px;border:1px solid #9bb0cd;border-radius:8px;background:#f6f8ff;color:#172c39}#rdMathQuestion{font-size:24px;margin:10px 0}#rdSummary{line-height:1.7;font-weight:600}#rdMathForm{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
 body #readDoBtn{background:linear-gradient(115deg,#19365f,#355885)!important;color:#fff!important;border-color:#8296b8!important}
 @media(max-width:540px){#rdDialog{padding-left:14px;padding-right:14px}.rd-head{padding:60px 0 24px}.rd-head h2{font-size:36px}#rdDialog #rdClose{top:0}#rdSetup,#rdSession{padding:18px}.rd-actions button{flex:1}.rd-count{padding:10px;font-size:22px}.rd-range{gap:12px}.rd-scale{font-size:11px}#rdList{padding-left:24px}.rd-timers div{padding:12px}}
+/* Keep the safe-area backdrop continuous and reserve space only for device insets. */
+html.rd-open,html.rd-open body{background:#0c1934!important;overscroll-behavior:none}
+#rdDialog{padding-top:max(8px,env(safe-area-inset-top));padding-bottom:max(8px,env(safe-area-inset-bottom));background:#0c1934}
+.rd-timers,#rdStatus{text-align:center}#rdList small:empty{display:none}
+#rdDialog.rd-active .rd-page{max-width:1200px}
+#rdDialog.rd-active .rd-head{padding:8px 65px 10px;margin-bottom:10px;min-height:52px}
+#rdDialog.rd-active .rd-head h2{font-size:24px;line-height:32px}
+#rdDialog.rd-active .rd-kicker,#rdDialog.rd-active .rd-sub{display:none}
+#rdDialog.rd-active #rdClose{top:2px;min-height:40px;padding:8px 12px}
+#rdDialog.rd-active #rdSession{padding:10px;border-radius:14px}
+#rdDialog.rd-active .rd-timers{margin:0;gap:8px}
+#rdDialog.rd-active .rd-timers div{padding:7px;font-size:13px}
+#rdDialog.rd-active .rd-timers strong{font-size:24px;margin-top:3px}
+#rdDialog.rd-active #rdStatus{margin:6px 0;font-size:14px}
+#rdDialog.rd-active .rd-actions{margin:6px 0;gap:8px}
+#rdDialog.rd-active .rd-actions button{min-height:44px;padding:8px 12px}
+#rdDialog.rd-active #rdList{margin:8px 0;padding:0;list-style:none;counter-reset:rd-command;display:grid;gap:5px}
+#rdDialog.rd-active #rdList li{counter-increment:rd-command;position:relative;margin:0;padding:6px 8px 6px 30px;line-height:1.3;font-size:15px;border-radius:8px;min-width:0}
+#rdDialog.rd-active #rdList li::before{content:counter(rd-command) '.';position:absolute;left:8px;top:6px;color:#c4d4eb}
+#rdDialog.rd-active #rdList small{font-size:11px;line-height:1.2}
+#rdDialog.rd-active #rdMath{padding:8px;border-radius:10px;font-size:13px}
+#rdDialog.rd-active #rdMathQuestion{display:inline-block;margin:0 0 5px 12px;font-size:18px}
+#rdDialog.rd-active #rdMathForm{gap:6px}
+#rdDialog.rd-active #rdMath input{padding:6px;min-height:40px;flex:1;min-width:60px;width:100px}
+#rdDialog.rd-active #rdMath button{min-height:40px;padding:6px 14px}
+#rdDialog.rd-active #rdMathFeedback:empty,#rdDialog.rd-active #rdSummary:empty{display:none}
+#rdDialog.rd-active #rdMathFeedback{margin:5px 0}
+@media(min-width:700px){#rdDialog.rd-active #rdList{grid-template-columns:1fr 1fr}#rdDialog.rd-active #rdList li{font-size:17px;padding-top:10px;padding-bottom:10px}}
+@media(max-width:420px){#rdDialog.rd-active{padding-left:8px;padding-right:8px}#rdDialog.rd-active #rdSession{padding:8px}#rdDialog.rd-active[data-count="10"] #rdList li,#rdDialog.rd-active[data-count="9"] #rdList li{font-size:14px;padding-top:4px;padding-bottom:4px}}
 </style>
 <dialog id="rdDialog" aria-labelledby="rdTitle">
  <div class="rd-page">
@@ -14249,7 +14278,7 @@ body #readDoBtn{background:linear-gradient(115deg,#19365f,#355885)!important;col
  function paint(){
   $('rdStatus').textContent=running?(paused?'已暫停 · ':'')+`第 ${step+1} / ${commands.length} 條指令`:'訓練完成';
   $('rdPause').textContent=paused?'繼續':'暫停';$('rdPause').disabled=!running;$('rdComplete').disabled=!running||paused;
-  [...$('rdList').children].forEach((li,i)=>{li.classList.toggle('done',i<step);if(running&&i===step)li.setAttribute('aria-current','step');else li.removeAttribute('aria-current');li.querySelector('small').textContent=i<step?'✓ 已完成 · '+format(splits[i]):i===step&&running?'目前指令':'待完成';});
+  [...$('rdList').children].forEach((li,i)=>{li.classList.toggle('done',i<step);if(running&&i===step)li.setAttribute('aria-current','step');else li.removeAttribute('aria-current');li.querySelector('small').textContent=i<step?'✓ 已完成 · '+format(splits[i]):'';});
   const disabled=!running||paused||!!math[step]?.submitted;$('rdMathAnswer').disabled=disabled;$('rdMathSubmit').disabled=disabled;tick();
  }
  function nextMath(){
@@ -14259,11 +14288,11 @@ body #readDoBtn{background:linear-gradient(115deg,#19365f,#355885)!important;col
   math[step]={question:`${a} ${op} ${b}`,answer:op==='+'?a+b:op==='−'?a-b:a*b,submitted:false};
   $('rdMathQuestion').textContent=math[step].question;$('rdMathAnswer').value='';$('rdMathFeedback').textContent='';
  }
- function reset(){clearInterval(ticker);running=false;paused=false;$('rdSetup').hidden=false;$('rdSession').hidden=true;}
- let previousOverflow='';
- launch.onclick=()=>{reset();previousOverflow=document.body.style.overflow;document.body.style.overflow='hidden';dialog.showModal();dialog.scrollTop=0;};
+ function reset(){clearInterval(ticker);running=false;paused=false;dialog.classList.remove('rd-active');$('rdSetup').hidden=false;$('rdSession').hidden=true;}
+ let previousOverflow='';let previousThemes=[];
+ launch.onclick=()=>{reset();previousThemes=[...document.querySelectorAll('meta[name="theme-color"]')].map(m=>[m,m.content]);previousThemes.forEach(([m])=>m.content='#0c1934');document.documentElement.classList.add('rd-open');previousOverflow=document.body.style.overflow;document.body.style.overflow='hidden';dialog.showModal();dialog.scrollTop=0;};
  $('rdMathEnabled').onchange=()=>$('rdToggleState').textContent=$('rdMathEnabled').checked?'ON':'OFF';
- function close(){if(running&&!confirm('結束本次 Read and Do 訓練？'))return;reset();dialog.close();document.body.style.overflow=previousOverflow;launch.focus();}
+ function close(){if(running&&!confirm('結束本次 Read and Do 訓練？'))return;reset();dialog.close();document.documentElement.classList.remove('rd-open');previousThemes.forEach(([m,color])=>m.content=color);document.body.style.overflow=previousOverflow;launch.focus();}
  $('rdClose').onclick=close;dialog.addEventListener('cancel',e=>{e.preventDefault();close();});
  $('rdCount').oninput=()=>$('rdCountValue').textContent=$('rdCount').value;
  $('rdStart').onclick=()=>{
@@ -14271,7 +14300,7 @@ body #readDoBtn{background:linear-gradient(115deg,#19365f,#355885)!important;col
   splits=[];math=[];step=0;elapsed=0;splitStart=0;paused=false;mathEnabled=$('rdMathEnabled').checked;
   $('rdList').replaceChildren(...commands.map(text=>{const li=document.createElement('li');const label=document.createElement('span');label.textContent=text;li.append(label,document.createElement('small'));return li;}));
   $('rdSetup').hidden=true;$('rdSession').hidden=false;$('rdRestart').hidden=true;$('rdSummary').textContent='';$('rdMath').hidden=!mathEnabled;
-  nextMath();running=true;anchor=performance.now();paint();clearInterval(ticker);ticker=setInterval(tick,50);$('rdComplete').focus();
+  dialog.classList.add('rd-active');dialog.dataset.count=String(commands.length);dialog.scrollTop=0;nextMath();running=true;anchor=performance.now();paint();clearInterval(ticker);ticker=setInterval(tick,50);$('rdComplete').focus({preventScroll:true});
  };
  $('rdPause').onclick=()=>{if(!running)return;if(paused){anchor=performance.now();paused=false;}else{elapsed=time();paused=true;}paint();};
  $('rdComplete').onclick=()=>{
