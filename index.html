@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="zh-Hant"><head><meta charset="UTF-8"><title>TRIUMPH Pilot Trainer v222</title><meta name="viewport" content="width=device-width,initial-scale=1.0,viewport-fit=cover">
+<!DOCTYPE html><html lang="zh-Hant"><head><meta charset="UTF-8"><title>TRIUMPH Pilot Trainer v223</title><meta name="viewport" content="width=device-width,initial-scale=1.0,viewport-fit=cover">
 <meta name="theme-color" content="#0b1c31">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -1110,7 +1110,7 @@ body[data-theme="green"] .dt-overlay{
 <script id="v218-normalization-cache">window.TRIUMPH_memoText=function(fn){const cache=new Map();return function(value){if(typeof value!=='string')return fn(value);if(cache.has(value))return cache.get(value);const result=fn(value);if(cache.size>=8192)cache.clear();cache.set(value,result);return result;};};</script>
 <script id="triumph-current-cache-bootstrap">
 (() => {
-  const BUILD = 'v222';
+  const BUILD = 'v223';
   window.TRIUMPH_CACHE_VERSION = BUILD;
   if (!('serviceWorker' in navigator) || !/^https?:$/.test(location.protocol)) return;
   // A stable script URL avoids old HTML repeatedly registering an older query
@@ -1447,7 +1447,7 @@ body[data-theme="green"] .dt-overlay{
 <select id="soundEnabled" hidden aria-hidden="true"><option value="true">開啟提示音</option><option value="false">關閉提示音</option></select><label>提示音音量 <span aria-hidden="true">🔊</span></label><input type="range" id="soundVolume" min="0" max="150" value="120"><div class="hint" style="font-size:12px">全域音效：題庫倒數、心算倒數與答題、飛行記憶指令完成及任務完成。</div><button class="btn secondary" id="applyDefaultsBtn" style="width:100%;margin-top:10px">套用此題庫預設時間</button><button class="btn memory-launch" id="flightMemoryBtn">✈ 飛行指令記憶訓練</button><button class="btn mental-launch" id="mentalMathBtn">∑ 數學心算 Mental Math</button></section><section class="sidecard card"><h3>Question Bank</h3><div class="stats"><div class="stat"><span>目前題庫</span><b id="currentMode">ALL</b></div><div class="stat"><span>題庫數量</span><b id="bankCount">0</b></div><div class="stat"><span>目前題號</span><b id="currentIndex">-</b></div><div class="stat"><span>已練題數</span><b id="doneCount">0</b></div><div class="stat"><span>收藏題</span><b id="favCount">0</b></div></div><div class="controls"><button class="btn secondary" id="copyBtn" title="複製目前題目與選項，方便貼到筆記或聊天室。">複製目前題目</button><button class="btn danger" id="clearDataBtn" title="清除這台裝置上的收藏、備註、答題進度與統計。">重設本機紀錄</button></div><div class="hint" style="margin-top:8px;font-size:12px">複製目前題目：方便貼到筆記或聊天室。重設本機紀錄：會清除這台裝置上的收藏題、答題進度、備註與統計。</div></section><section class="sidecard card" id="v100Dashboard"><h3>v100 Performance</h3><div class="stats"><div class="stat"><span>答對題數</span><b id="correctCount">0</b></div><div class="stat"><span>答錯題數</span><b id="wrongCount">0</b></div><div class="stat"><span>作答正確率</span><b id="accuracyRate">-</b></div><div class="stat"><span>錯題待複習</span><b id="reviewCount">0</b></div></div><div class="controls"><button class="btn secondary" id="reviewWrongBtn">Review Wrong</button><button class="btn secondary" id="markMasteredBtn">Mark Mastered</button></div></section><section class="sidecard card"><h3>Favorites</h3><div id="favoriteSyncStatus" style="font-size:12px;color:var(--muted);margin:-4px 0 10px">跨版本收藏同步中…</div><div id="favoriteList"></div></section><section class="sidecard card"><h3>Your Notes</h3><textarea id="notes" placeholder="這題的卡點、公式、單字、回答弱點..."></textarea></section></aside></div>
 <script id="triumph-current-version-guard">
 (() => {
-  const BUILD='v222';
+  const BUILD='v223';
   const CURRENT='TRIUMPH Pilot Trainer '+BUILD;
   const INITIAL_HINT='v210：重建 Classical CN 題庫；依國語文學科中心 65 篇古典名篇建立 325 題，補作者/出處、主旨、生活或機師應用、字詞注音與完整選項辨析，並移除舊題近重複。';
   window.TRIUMPH_BUILD_VERSION=BUILD;
@@ -1895,7 +1895,7 @@ window.addEventListener('DOMContentLoaded',init);
      const spread=Math.max(...Object.values(counts))-Math.min(...Object.values(counts));
      const score=100-spread*12-seq.reduce((p,t,i)=>p+(i&&seq[i-1]===t?40:0),0);
      if(!best||score>best.score)best={seq,score};
-     if(score>=96)break;
+     if(score>=100-12*Math.max(n%3===0?0:1,Math.ceil((n-2)/2)-2))break;
    }
    return best.seq;
  }
@@ -1923,10 +1923,11 @@ window.addEventListener('DOMContentLoaded',init);
      for(const type of types)history.push(fmBuildCommand(type,history));
      const score=fmSequenceScore(history);
      if(score>bestScore){best=history;bestScore=score;}
-     if(score>=92)break;
+     if(score>=100-5*Math.max(n%3===0?0:1,Math.ceil((n-2)/2)-2))break;
    }
    return best.map(x=>x.text);
  }
+ window.TRIUMPH_FLIGHT_COMMANDS=Object.freeze({generate});
  function open(){
    if(window.TRIUMPH_STOPWATCH_FLIGHT){
      window.TRIUMPH_STOPWATCH_FLIGHT.stopReset();
@@ -14191,11 +14192,91 @@ for(const p of data.patches){
 }
 for(const q of data.added){if(bank.some(item=>item.cat===q.cat&&item.q===q.q))throw Error('v220 duplicate addition');bank.push(q);}
 window.TRIUMPH_V220_QA={total:bank.length,patched:data.patches.length,added:data.added.length};
-const ready=()=>{document.title='TRIUMPH Pilot Trainer v222';window.TRIUMPH_BUILD_VERSION='v222';
- const logo=document.querySelector('.logo');if(logo)logo.innerHTML='TRIUMPH Pilot Trainer v222<span class="creator">created by Ying Chen</span><small>PILOT SELECTION TRAINER</small>';
+const ready=()=>{document.title='TRIUMPH Pilot Trainer v223';window.TRIUMPH_BUILD_VERSION='v223';
+ const logo=document.querySelector('.logo');if(logo)logo.innerHTML='TRIUMPH Pilot Trainer v223<span class="creator">created by Ying Chen</span><small>PILOT SELECTION TRAINER</small>';
  if(typeof current!=='undefined'&&current){const hint=document.getElementById('hint');if(hint)hint.textContent=current.hint||'';}
  if(typeof updateStats==='function')updateStats();
 };ready();document.addEventListener('DOMContentLoaded',ready);
 })();
 </script>
+<style id="read-do-style">
+#rdDialog{width:min(850px,calc(100% - 24px));max-height:calc(100dvh - 24px);box-sizing:border-box;border:1px solid #80949d;border-radius:20px;padding:22px;background:#f4f6f3;color:#172c39;overflow:auto}
+#rdDialog::backdrop{background:#06121dcc}#rdDialog *{box-sizing:border-box}
+#rdDialog button{min-height:44px;padding:10px 16px;border-radius:12px;border:1px solid #657c87;background:#234c62;color:white;cursor:pointer;font:inherit}
+#rdDialog button:disabled{opacity:.45;cursor:default}#rdDialog input{font:inherit}#rdDialog input[type=checkbox]{width:22px;height:22px;vertical-align:middle}
+.rd-head,.rd-actions{display:flex;align-items:center;gap:12px;justify-content:space-between;flex-wrap:wrap}.rd-head h2{margin:0}.rd-actions{justify-content:flex-start;margin:16px 0}
+.rd-timers{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:16px 0}.rd-timers div{background:#e0e9e8;padding:14px;border-radius:12px}.rd-timers strong{display:block;font:600 clamp(22px,5vw,32px) monospace;margin-top:8px}
+#rdList{padding-left:28px}#rdList li{padding:14px 10px;margin:8px 0;border:2px solid transparent;border-radius:10px;overflow-wrap:anywhere;line-height:1.5}#rdList li[aria-current=step]{border-color:#246984;background:#e0eff4}#rdList li.done{background:#e3eddf}#rdList small{display:block;color:#36515c}
+#rdMath{border:1px solid #879ba3;border-radius:12px;padding:16px}#rdMath input{width:140px;max-width:100%;padding:10px;border:1px solid #7c929b;border-radius:8px;background:white;color:#172c39}#rdMathQuestion{font-size:24px;margin:10px 0}#rdSummary{line-height:1.7;font-weight:600}#rdCount{width:100%}
+@media(max-width:450px){#rdDialog{padding:16px}.rd-actions button{flex:1}#rdList{padding-left:24px}}
+</style>
+<dialog id="rdDialog" aria-labelledby="rdTitle">
+ <div class="rd-head"><h2 id="rdTitle">Read and Do</h2><button id="rdClose" type="button">關閉</button></div>
+ <p>全程查看指令，邊唸邊操作；每完成一條指令，按下完成以記錄用時。</p>
+ <section id="rdSetup">
+  <label for="rdCount">指令題數：<strong id="rdCountValue">7</strong> 題</label>
+  <input id="rdCount" type="range" min="4" max="10" value="7" step="1">
+  <label><input id="rdMathEnabled" type="checkbox"> 啟用心算干擾訓練</label>
+  <p>暫停期間不計時。心算每條指令一題，可略過，結束後顯示作答統計。</p>
+  <button id="rdStart" type="button">開始訓練</button>
+ </section>
+ <section id="rdSession" hidden>
+  <div class="rd-timers"><div>總用時<strong id="rdTotal">00:00.00</strong></div><div>目前指令用時<strong id="rdSplit">00:00.00</strong></div></div>
+  <p id="rdStatus" role="status"></p>
+  <div class="rd-actions"><button id="rdComplete" type="button">完成這個指令</button><button id="rdPause" type="button">暫停</button></div>
+  <ol id="rdList"></ol>
+  <section id="rdMath" hidden aria-label="心算干擾訓練"><strong>心算干擾</strong><div id="rdMathQuestion"></div><form id="rdMathForm"><label for="rdMathAnswer">答案</label> <input id="rdMathAnswer" inputmode="numeric" autocomplete="off"><button id="rdMathSubmit" type="submit">送出</button></form><p id="rdMathFeedback" role="status"></p></section>
+  <p id="rdSummary" role="status"></p>
+  <button id="rdRestart" type="button" hidden>重新設定訓練</button>
+ </section>
+</dialog>
+<script id="read-do-training">
+(()=>{
+ 'use strict';
+ const $=id=>document.getElementById(id),dialog=$('rdDialog');
+ const launch=document.createElement('button');launch.id='readDoBtn';launch.type='button';launch.className='btn memory-launch';launch.textContent='Read and Do · 看指令操作';
+ $('flightMemoryBtn').after(launch);
+ let commands=[],splits=[],math=[],step=0,running=false,paused=false,elapsed=0,anchor=0,splitStart=0,ticker=null,mathEnabled=false;
+ function time(){return elapsed+(running&&!paused?performance.now()-anchor:0);}
+ function format(ms){const cs=Math.floor(Math.max(0,ms)/10);return String(Math.floor(cs/6000)).padStart(2,'0')+':'+String(Math.floor(cs/100)%60).padStart(2,'0')+'.'+String(cs%100).padStart(2,'0');}
+ function tick(){const t=time();$('rdTotal').textContent=format(t);$('rdSplit').textContent=format(running?t-splitStart:(splits.at(-1)||0));}
+ function paint(){
+  $('rdStatus').textContent=running?(paused?'已暫停 · ':'')+`第 ${step+1} / ${commands.length} 條指令`:'訓練完成';
+  $('rdPause').textContent=paused?'繼續':'暫停';$('rdPause').disabled=!running;$('rdComplete').disabled=!running||paused;
+  [...$('rdList').children].forEach((li,i)=>{li.classList.toggle('done',i<step);if(running&&i===step)li.setAttribute('aria-current','step');else li.removeAttribute('aria-current');li.querySelector('small').textContent=i<step?'✓ 已完成 · '+format(splits[i]):i===step&&running?'目前指令':'待完成';});
+  const disabled=!running||paused||!!math[step]?.submitted;$('rdMathAnswer').disabled=disabled;$('rdMathSubmit').disabled=disabled;tick();
+ }
+ function nextMath(){
+  if(!mathEnabled)return;
+  const op=['+','−','×'][Math.floor(Math.random()*3)];let a,b;
+  if(op==='×'){a=10+Math.floor(Math.random()*90);b=10+Math.floor(Math.random()*90);}else{a=100+Math.floor(Math.random()*900);b=100+Math.floor(Math.random()*900);if(op==='−'&&b>a)[a,b]=[b,a];}
+  math[step]={question:`${a} ${op} ${b}`,answer:op==='+'?a+b:op==='−'?a-b:a*b,submitted:false};
+  $('rdMathQuestion').textContent=math[step].question;$('rdMathAnswer').value='';$('rdMathFeedback').textContent='';
+ }
+ function reset(){clearInterval(ticker);running=false;paused=false;$('rdSetup').hidden=false;$('rdSession').hidden=true;}
+ launch.onclick=()=>{reset();dialog.showModal();};
+ function close(){if(running&&!confirm('結束本次 Read and Do 訓練？'))return;reset();dialog.close();launch.focus();}
+ $('rdClose').onclick=close;dialog.addEventListener('cancel',e=>{e.preventDefault();close();});
+ $('rdCount').oninput=()=>$('rdCountValue').textContent=$('rdCount').value;
+ $('rdStart').onclick=()=>{
+  commands=window.TRIUMPH_FLIGHT_COMMANDS.generate(Math.max(4,Math.min(10,Number($('rdCount').value)||7)));
+  splits=[];math=[];step=0;elapsed=0;splitStart=0;paused=false;mathEnabled=$('rdMathEnabled').checked;
+  $('rdList').replaceChildren(...commands.map(text=>{const li=document.createElement('li');const label=document.createElement('span');label.textContent=text;li.append(label,document.createElement('small'));return li;}));
+  $('rdSetup').hidden=true;$('rdSession').hidden=false;$('rdRestart').hidden=true;$('rdSummary').textContent='';$('rdMath').hidden=!mathEnabled;
+  nextMath();running=true;anchor=performance.now();paint();clearInterval(ticker);ticker=setInterval(tick,50);$('rdComplete').focus();
+ };
+ $('rdPause').onclick=()=>{if(!running)return;if(paused){anchor=performance.now();paused=false;}else{elapsed=time();paused=true;}paint();};
+ $('rdComplete').onclick=()=>{
+  if(!running||paused)return;const t=time();splits.push(t-splitStart);splitStart=t;step++;
+  if(step===commands.length){elapsed=t;running=false;clearInterval(ticker);$('rdMath').hidden=true;$('rdRestart').hidden=false;
+   const answered=math.filter(x=>x.submitted).length,correct=math.filter(x=>x.submitted&&x.correct).length;
+   $('rdSummary').textContent=`完成 ${step} / ${commands.length} 條指令 · 總用時 ${format(t)}`+(mathEnabled?` · 心算 ${correct} 題正確／${answered} 題已作答／${commands.length-answered} 題未作答`:'');
+   try{localStorage.setItem('triumph_read_do_last',JSON.stringify({date:new Date().toISOString(),commands,splitsMs:splits,totalMs:t,mathEnabled,math}));}catch(e){}
+  }else nextMath();paint();
+ };
+ $('rdMathForm').onsubmit=e=>{e.preventDefault();if(!running||paused||!mathEnabled||math[step].submitted)return;const raw=$('rdMathAnswer').value.trim();if(!raw||!Number.isFinite(Number(raw))){$('rdMathFeedback').textContent='請輸入數字答案。';return;}const q=math[step];q.given=Number(raw);q.submitted=true;q.correct=q.given===q.answer;$('rdMathFeedback').textContent=q.correct?'正確 ✓':`錯誤 · 你的答案 ${q.given} · 正確答案 ${q.answer}`;paint();};
+ $('rdRestart').onclick=reset;
+})();
+</script>
+
 </body></html>

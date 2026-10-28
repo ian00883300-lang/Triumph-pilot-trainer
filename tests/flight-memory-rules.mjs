@@ -5,9 +5,9 @@ const html=fs.readFileSync(new URL('../index.html',import.meta.url),'utf8');
 for(const m of html.matchAll(/<script\b[^>]*>([\s\S]*?)<\/script>/g))new vm.Script(m[1]);
 const start=html.indexOf(' function random(a)');
 const end=html.indexOf(' function open(){',start);
-const ctx=vm.createContext({});vm.runInContext(html.slice(start,end),ctx);
+const ctx=vm.createContext({window:{}});vm.runInContext(html.slice(start,end),ctx);
 const coverage=new Set();
-for(let n=3;n<=7;n++)for(let run=0;run<1000;run++){
+for(let n=3;n<=10;n++)for(let run=0;run<1000;run++){
  const commands=vm.runInContext(`generate(${n})`,ctx);assert.equal(commands.length,n);
  let last=null;const speeds=[];
  for(const text of commands){
@@ -25,4 +25,4 @@ for(let n=3;n<=7;n++)for(let run=0;run<1000;run++){
  assert.ok(speeds.length<=2);if(speeds.length===2)assert.notEqual(speeds[0],speeds[1]);
 }
 for(const v of ['Climb','Descend','turn30','turn45','turn60','turn90','bank10','bank30','Increase SPD260','Increase SPD300','Reduce IAS180','Reduce IAS240'])assert.ok(coverage.has(v),v);
-console.log('PASS: 5,000 sequences, lengths 3–7, all ranges, no adjacent same type, at most two opposite speed commands, boundary coverage, inline syntax.');
+console.log('PASS: 8,000 sequences, lengths 3–10, all ranges, no adjacent same type, at most two opposite speed commands, boundary coverage, inline syntax.');
