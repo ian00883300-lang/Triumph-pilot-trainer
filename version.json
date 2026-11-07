@@ -1,5 +1,5 @@
 {
-  "version": "v228",
-  "build": "2026-11-07-read-do-speed-deadline",
+  "version": "v229",
+  "build": "2026-11-07-variable-speed-deadlines",
   "entry": "./index.html"
 }
