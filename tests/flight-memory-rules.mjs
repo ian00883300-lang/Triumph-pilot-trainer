@@ -14,7 +14,7 @@ for(let n=3;n<=10;n++)for(let run=0;run<1000;run++){
  let type,m;
  if(m=text.match(/^(Climb|Descend) ([\d,]+) feet from current altitude\.$/)){
  type='alt';assert.ok([1000,1500,2000,2500].includes(Number(m[2].replace(',',''))));coverage.add(m[1]);
- }else if(m=text.match(/^Turn (left|right) (\d+) degrees with (\d+) degrees bank$/)){
+ }else if(m=text.match(/^Turn (left|right) (\d+) degrees from current HDG with (\d+) degrees bank$/)){
  type='turn';assert.ok([30,45,60,90].includes(+m[2]));assert.ok([10,15,20,25,30].includes(+m[3]));coverage.add('turn'+m[2]);coverage.add('bank'+m[3]);
  }else{
  type='spd';m=text.match(/^(Increase SPD|Reduce IAS) (\d+) kt$/);assert.ok(m,text);
